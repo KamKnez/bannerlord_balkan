@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: XML prüfen
+        run: python3 tools/validate_xml.py
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: C# bauen
+        run: dotnet build src/BalkanMod/BalkanMod.csproj -c Release
+
+      - name: Modulordner als Artefakt hochladen
+        uses: actions/upload-artifact@v4
+        with:
+          name: BalkanMod
+          path: Module/BalkanMod/

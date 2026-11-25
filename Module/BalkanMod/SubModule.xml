@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Id value="BalkanMod"/>
+  <Name value="Balkan 1700 (working title)"/>
+  <Version value="v0.0.1"/>
+  <DefaultModule value="false"/>
+  <ModuleCategory value="Singleplayer"/>
+  <ModuleType value="Community"/>
+  <DependedModules>
+    <DependedModule Id="Native" DependentVersion="v1.5.7" Optional="false"/>
+    <DependedModule Id="SandBoxCore" DependentVersion="v1.5.7" Optional="false"/>
+    <DependedModule Id="Sandbox" DependentVersion="v1.5.7" Optional="false"/>
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="BalkanMod"/>
+      <DLLName value="BalkanMod.dll"/>
+      <SubModuleClassType value="BalkanMod.SubModule"/>
+      <Tags/>
+    </SubModule>
+  </SubModules>
+  <Xmls/>
+</Module>
