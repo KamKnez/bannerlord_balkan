@@ -18,6 +18,9 @@ jobs:
       - name: XML prüfen
         run: python3 tools/validate_xml.py
 
+      - name: Namenslisten prüfen
+        run: python3 tools/validate_names.py
+
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"

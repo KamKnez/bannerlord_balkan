@@ -37,6 +37,7 @@ wird der Modulordner nach dem Bauen direkt ins Spiel kopiert.
 |---|---|
 | `Module/BalkanMod/` | Der Modulordner, wie er im Spiel liegt: `SubModule.xml`, `ModuleData/` (XML-Daten, Sprachen) |
 | `src/BalkanMod/` | C#-Code der Mod |
+| `data/` | Rohdaten wie Namenslisten, aus denen die XML-Dateien entstehen |
 | `tools/` | Prüfskripte (z. B. `validate_xml.py`) |
 | `docs/` | Recherche und Design-Dokumente (ab Phase 1) |
 
@@ -45,6 +46,7 @@ wird der Modulordner nach dem Bauen direkt ins Spiel kopiert.
 Bei jedem Push und Pull Request laufen:
 
 - `python3 tools/validate_xml.py`: alle XML-Dateien wohlgeformt, `SubModule.xml` vollständig, Sprachdateien vorhanden.
+- `python3 tools/validate_names.py`: Namenslisten unter `data/namen/` vollständig und ohne Dopplungen.
 - `dotnet build`: der C#-Code baut gegen die Referenz-DLLs des Spiels.
 
 ## Sprachen
