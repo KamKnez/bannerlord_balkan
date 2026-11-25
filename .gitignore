@@ -1,0 +1,7 @@
+bin/
+obj/
+*.user
+.vs/
+.idea/
+# Build-Ausgabe der DLL im Modulordner
+Module/BalkanMod/bin/

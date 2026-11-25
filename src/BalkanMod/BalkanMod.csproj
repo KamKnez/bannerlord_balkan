@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>BalkanMod</AssemblyName>
+    <RootNamespace>BalkanMod</RootNamespace>
+    <Version>0.0.1</Version>
+    <!-- Spielversion, gegen die gebaut wird -->
+    <GameVersion>1.5.7.125802</GameVersion>
+    <ModuleId>BalkanMod</ModuleId>
+    <ModuleDir>$(MSBuildThisFileDirectory)..\..\Module\$(ModuleId)\</ModuleDir>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>$(ModuleDir)bin\Win64_Shipping_Client\</OutputPath>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Nur Metadaten der Spiel-DLLs (BUTR, MIT-Lizenz), damit auch ohne installiertes Spiel gebaut werden kann -->
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion)" PrivateAssets="all" IncludeAssets="compile" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <!--
+    Optional: Wenn GameFolder gesetzt ist (z. B. dotnet build -p:GameFolder="C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord"),
+    wird der ganze Modulordner nach dem Build in den Modules-Ordner des Spiels kopiert.
+  -->
+  <Target Name="CopyModuleToGame" AfterTargets="Build" Condition="'$(GameFolder)' != ''">
+    <ItemGroup>
+      <ModuleFiles Include="$(ModuleDir)**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ModuleFiles)" DestinationFiles="@(ModuleFiles->'$(GameFolder)\Modules\$(ModuleId)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>
