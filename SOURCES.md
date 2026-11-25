@@ -19,3 +19,8 @@ Quellen für historische Angaben. Erste Prüfung über Wikipedia, für das Desig
 - [Croatian Military Frontier](https://en.wikipedia.org/wiki/Croatian_Military_Frontier): Statuta Valachorum 1630, Siedler.
 - [Leonardo Foscolo](https://en.wikipedia.org/wiki/Leonardo_Foscolo): Venezianische Eroberungen in Dalmatien im Kandia-Krieg.
 - [List of Ottoman governors of Bosnia](https://en.wikipedia.org/wiki/List_of_Ottoman_governors_of_Bosnia): Paschas 1590–1650.
+
+## Technik
+
+- [Bannerlord Documentation](https://docs.bannerlordmodding.com/): SubModule.xml, SPCultures, NPCCharacters, Items, Siedlungen.
+- [How settlements work](https://docs.bannerlordmodding.com/_tutorials/new_settlements): settlements.xml und Kartenszene.
