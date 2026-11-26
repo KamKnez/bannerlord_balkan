@@ -578,7 +578,7 @@
 				<equipment slot="Horse" id="Item.noble_horse_southern" />
 				<equipment slot="HorseHarness" id="Item.half_mail_and_plate_barding" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
