@@ -5,6 +5,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "serben"
+bild = "sturgia"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "serbs"
 art = "neu"
 vorlage = "sturgia"

@@ -3,6 +3,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "ragusaner"
+bild = "empire"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "ragusa"
 art = "neu"
 vorlage = "empire"

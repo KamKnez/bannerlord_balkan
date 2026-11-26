@@ -2,6 +2,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "kroaten"
+bild = "vlandia"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "vlandia"
 art = "anpassen"
 praefix = "hr"

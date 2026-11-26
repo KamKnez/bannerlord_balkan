@@ -3,6 +3,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "venezianer"
+bild = "empire"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "venice"
 art = "neu"
 vorlage = "empire"

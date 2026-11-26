@@ -4,6 +4,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "tuerken"
+bild = "aserai"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "turks"
 art = "neu"
 vorlage = "aserai"

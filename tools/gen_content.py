@@ -38,6 +38,9 @@ OUT_ITEMS = MODULE_DATA / "balkan_items.xml"
 OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
 OUT_ROSTERS = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_EquipmentRosters.xslt"
 OUT_STRINGS = MODULE_DATA / "balkan_strings.xml"
+OUT_CC_TABLE = ROOT / "src" / "BalkanMod" / "CharacterCreation" / "BalkanCultureTable.g.cs"
+# Kulturbilder des Spiels für die Charaktererstellung (Brush-Stile in Native/GUI/Brushes/CharacterCreation.xml)
+CULTURE_IMAGES = ("empire", "vlandia", "sturgia", "aserai", "khuzait", "battania")
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
 OUT_TRADE = MODULE_DATA / "balkan_handel.xml"
 
@@ -237,6 +240,15 @@ def build_game_texts(cultures, strings):
         desc = strings.add(f"balkan_culture_{key}_desc", c["text"]["en"].strip(), c["text"]["de"].strip())
         lines.append(f"\t<string id={quoteattr('str_culture_rich_name.' + cid)} text={quoteattr(rich)} />")
         lines.append(f"\t<string id={quoteattr('str_culture_description.' + cid)} text={quoteattr(desc)} />")
+    # Namen der Familie im Story-Modus (Vater, Mutter, Geschwister), je Kultur aus der Namensliste
+    family = (("str_player_father_name", "maennlich", 0), ("str_player_brother_name", "maennlich", 1),
+              ("str_player_little_brother_name", "maennlich", 2), ("str_player_mother_name", "weiblich", 0),
+              ("str_player_little_sister_name", "weiblich", 1))
+    for c in cultures:
+        for sid, section, index in family:
+            names = c["_namen"][section]
+            name = names[index % len(names)]
+            lines.append(f"\t<string id={quoteattr(sid + '.' + c['kultur_id'])} text={quoteattr('{=!}' + name)} />")
     # Feste Spieltexte: Fernkampf-Formation heißt Musketiere (die Sprachaufnahme „Bowmen“ bleibt),
     # Waffenklasse Armbrust heißt Feuerwaffe, Bolzen heißen Kugeln (Inventar und Gegenstands-Infos)
     fixed = (
@@ -327,7 +339,9 @@ def build_rosters(cultures):
     Das Spiel sucht Ausrüstung für Lords, Kinder, Herrscher, Gefährten usw. über die Kultur der Vorlage
     (EquipmentRoster culture="Culture.x"). Ohne eigene Vorlagen findet es für eine neue Kultur nichts und
     stürzt beim Start der Kampagne ab. Darum bekommt jede neue Kultur eine Kopie aller Vorlagen ihrer
-    Vorlage-Kultur (neue Id: <id>_balkan_<kultur>).
+    Vorlage-Kultur (neue Id: <id>_balkan_<kultur>). Die Vorlagen der Charaktererstellung sucht das Spiel über
+    den Namen (z. B. father_char_creation_farmer_sturgia); deren Kopien heißen nach der neuen Kultur
+    (father_char_creation_farmer_serbs).
     """
     out = [
         '<?xml version="1.0" encoding="utf-8"?>',
@@ -349,7 +363,11 @@ def build_rosters(cultures):
             out += [
                 "\t\t<xsl:copy>",
                 '\t\t\t<xsl:apply-templates select="@*" />',
-                f"\t\t\t<xsl:attribute name=\"id\"><xsl:value-of select=\"concat(@id, '_balkan_{cid}')\" /></xsl:attribute>",
+                '\t\t\t<xsl:attribute name="id"><xsl:choose>',
+                f"\t\t\t\t<xsl:when test=\"contains(@id, 'char_creation') and contains(@id, '_{template}')\">"
+                f"<xsl:value-of select=\"concat(substring-before(@id, '_{template}'), '_{cid}', substring-after(@id, '_{template}'))\" /></xsl:when>",
+                f"\t\t\t\t<xsl:otherwise><xsl:value-of select=\"concat(@id, '_balkan_{cid}')\" /></xsl:otherwise>",
+                '\t\t\t</xsl:choose></xsl:attribute>',
                 f'\t\t\t<xsl:attribute name="culture">Culture.{cid}</xsl:attribute>',
                 '\t\t\t<xsl:apply-templates select="node()" />',
                 "\t\t</xsl:copy>",
@@ -357,6 +375,31 @@ def build_rosters(cultures):
         out.append("\t</xsl:template>")
     out.append("</xsl:stylesheet>")
     return "\n".join(out) + "\n"
+
+
+def build_cc_table(cultures):
+    """C#-Tabelle für die Charaktererstellung: wählbare Kulturen, ihre Vorlage und ihr Bild."""
+    rows = []
+    for c in cultures:
+        template = c["vorlage"] if c["art"] == "neu" else c["kultur_id"]
+        rows.append(f'            {{ "{c["kultur_id"]}", ("{template}", "{c["bild"]}") }},')
+    return "\n".join([
+        "// Erzeugt von tools/gen_content.py aus data/kulturen/. Nicht von Hand ändern.",
+        "using System.Collections.Generic;",
+        "",
+        "namespace BalkanMod.CharacterCreation",
+        "{",
+        "    internal static class BalkanCultureTable",
+        "    {",
+        "        /// <summary>Kultur-Id der wählbaren Kulturen: Vorlage-Kultur des Spiels und Kulturbild.</summary>",
+        "        public static readonly Dictionary<string, (string Template, string Image)> Cultures =",
+        "            new Dictionary<string, (string Template, string Image)>",
+        "        {",
+        *rows,
+        "        };",
+        "    }",
+        "}",
+    ]) + "\n"
 
 
 def build_de(strings):
@@ -383,6 +426,8 @@ def check_definitions(cultures):
         where = c["_datei"]
         if c["art"] not in ("anpassen", "neu"):
             errors.append(f"{where}: art muss 'anpassen' oder 'neu' sein")
+        if c.get("bild") not in CULTURE_IMAGES:
+            errors.append(f"{c.get('schluessel', '?')}: bild muss eines von {CULTURE_IMAGES} sein")
         if c["art"] == "neu" and not c.get("vorlage"):
             errors.append(f"{where}: neue Kultur braucht eine vorlage")
         keys = [t["id"] for t in c["truppe"]]
@@ -970,6 +1015,7 @@ def generate():
         OUT_ROSTERS: build_rosters(cultures),
         OUT_TRADE: build_trade(trade, cultures),
         OUT_STRINGS: build_game_texts(cultures, strings),
+        OUT_CC_TABLE: build_cc_table(cultures),
     }
     files.update(build_realms(realms, strings))
     files[OUT_DE] = build_de(strings)

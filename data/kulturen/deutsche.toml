@@ -4,6 +4,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "deutsche"
+bild = "vlandia"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "germans"
 art = "neu"
 vorlage = "vlandia"
