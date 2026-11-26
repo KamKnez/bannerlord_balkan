@@ -1,0 +1,50 @@
+# Texte der Charaktererstellung, die für alle Kulturen gelten. Schlüssel = Text-Id des Spiels; der Text ersetzt den
+# des Spiels auf Englisch und Deutsch. Aufbau: siehe README.md
+
+# Jugend: Einleitung
+[5kbeAC7k]
+en = "On the war-torn Balkan frontier, some women as well as men learn to fight from an early age. You..."
+de = "An der vom Krieg zerrissenen Grenze des Balkans lernen manche Frauen wie Männer schon früh das Kämpfen. Ihr ..."
+
+[F7OO5SAa]
+en = "As a youngster growing up on the frontier between Emperor, Sultan and Doge, war was never too far away. You..."
+de = "Während Eurer Jugend an der Grenze zwischen Kaiser, Sultan und Doge war der Krieg nie weit weg. Ihr ..."
+
+# Jugend: Optionen
+[bhE2i6OU]
+en = "served as a nobleman's groom."
+de = "habt als Stallbursche eines Adligen gedient."
+
+[i3k7YtA8]
+en = "You were chosen by a knight to accompany a minor nobleman of the realm. You were not given major responsibilities - mostly carrying messages and tending to his horse - but it did give you a chance to see how campaigns were planned and men were deployed in battle."
+de = "Ihr wurdet von einem Ritter auserwählt, einen niederen Adligen des Reiches zu begleiten. Ihr erhieltet keine bedeutenden Aufgaben, sondern musstet hauptsächlich Botschaften tragen und Euch um sein Pferd kümmern. Doch so konntet Ihr sehen, wie Feldzüge geplant und Männer in der Schlacht aufgestellt werden."
+
+[wNHqFlDL]
+en = "You were chosen by your superior officer to serve a general as a courier. You were not given major responsibilities - mostly carrying messages and tending to his horse - but it did give you a chance to see how campaigns were planned and men were deployed in battle."
+de = "Ihr wurdet von Eurem Vorgesetzten ausgewählt, einem General als Kurier zu dienen. Ihr erhieltet keine bedeutenden Aufgaben, sondern musstet hauptsächlich Botschaften tragen und Euch um sein Pferd kümmern. Doch so konntet Ihr sehen, wie Feldzüge geplant und Männer in der Schlacht aufgestellt werden."
+
+[888lmJqs]
+en = "Every army on the frontier values good light cavalry and is sure to recruit borderers with the skills to fill those ranks. You were a good enough rider that your neighbours pitched in to buy you a small horse and a good bow so that you could fulfil their levy obligations."
+de = "Jedes Heer an der Grenze weiß gute leichte Reiterei zu schätzen und wirbt Grenzbewohner mit den nötigen Fähigkeiten an. Ihr konntet so gut reiten, dass Eure Nachbarn zusammenlegten, um Euch ein kleines Pferd und einen guten Bogen zu kaufen, damit Ihr ihre Pflicht zum Aufgebot erfüllen konntet."
+
+[sYuN6hPD]
+en = "Every army on the frontier values good light cavalry and is sure to recruit borderers with the skills to fill those ranks. You were a good enough rider that your neighbours pitched in to buy you a small horse and a sheaf of javelins so that you could fulfil their levy obligations."
+de = "Jedes Heer an der Grenze weiß gute leichte Reiterei zu schätzen und wirbt Grenzbewohner mit den nötigen Fähigkeiten an. Ihr konntet so gut reiten, dass Eure Nachbarn zusammenlegten, um Euch ein kleines Pferd und ein Bündel Wurfspeere zu kaufen, damit Ihr ihre Pflicht zum Aufgebot erfüllen konntet."
+
+[afH90aNs]
+en = "Levies armed with spear and shield, drawn from smallholding farmers, have always been the backbone of the armies of the Balkans."
+de = "Mit Speer und Schild bewaffnete Aufgebote aus den Familien der Kleinbauern waren schon immer das Rückgrat der Heere des Balkans."
+
+# Bildung und Erwachsenenalter
+[1SUTcF0J]
+en = "The gang leaders who kept watch over the slums of the frontier towns were always in need of poor youth to run messages and back them up in turf wars, while thrill-seeking merchants' sons and daughters sometimes slummed it in their company as well."
+de = "Die Bandenführer, die in den Armenvierteln der Grenzstädte das Sagen hatten, suchten immer arme Kinder als Boten oder Kämpfer für ihre Revierkämpfe. Auch Söhne und Töchter reicher Kaufleute mischten sich gelegentlich unter sie, um ein Abenteuer zu erleben."
+
+[I3PcdaaL]
+en = "Wolves and bears are a constant menace to the flocks in the mountains of the Balkans. You went with a group of your fellow villagers and fired the shot that brought down the beast."
+de = "Wölfe und Bären sind eine ständige Gefahr für die Herden in den Bergen des Balkans. Ihr seid mit einer Gruppe anderer Dorfbewohner ausgezogen und habt den Schuss abgegeben, der das Untier zu Fall gebracht hat."
+
+# Zusammenfassung am Ende
+[W6pKpEoT]
+en = "You prepare to set off for a grand adventure in the Balkans! Here is your character. Continue if you are ready, or go back to make changes."
+de = "Ihr macht Euch daran, zu einem großen Abenteuer auf dem Balkan aufzubrechen! Hier ist Euer Charakter. Wenn Ihr fertig seid, fahrt fort oder geht zurück, um weitere Änderungen vorzunehmen."

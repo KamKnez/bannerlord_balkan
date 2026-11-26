@@ -1,0 +1,24 @@
+# Lebensläufe der Türken (Vorlage Aserai). Aufbau: siehe README.md
+[aserai_kinsfolk_option]
+titel = { en = "Kin of a sipahi", de = "die Sippe eines Sipahis" }
+text = { en = "Your family were a lesser branch of an old sipahi house in Rumelia. Your father's timar paid for a good horse but not for the armour of the heavy cavalry, so he rode with the light horsemen of the Sultan's armies.", de = "Eure Familie war ein Nebenzweig eines alten Sipahi-Hauses in Rumelien. Der Timar Eures Vaters reichte für ein gutes Pferd, nicht aber für die Rüstung der schweren Reiterei, und so ritt er mit den leichten Reitern der Heere des Sultans." }
+
+[aserai_slave_option]
+titel = { en = "Servants of the Porte", de = "Diener der Pforte" }
+text = { en = "Your father was taken as a boy in the devşirme and raised as a servant of the Porte. He rode with the armoured horse of the Sultan's household, and when he left the service he received land of his own and married your mother.", de = "Euer Vater wurde als Knabe in der Knabenlese ausgehoben und als Diener der Pforte erzogen. Er ritt mit der gepanzerten Reiterei des Sultans, und als er aus dem Dienst schied, erhielt er eigenes Land und heiratete Eure Mutter." }
+
+[aserai_physician_option]
+titel = { en = "Physicians", de = "Ärzte" }
+text = { en = "Your family were respected physicians in a city of Rumelia, schooled in the medicine of the old masters. They set bones and cured the sick, and pashas and kadis sought their advice.", de = "Eure Familie waren angesehene Ärzte in einer Stadt Rumeliens, geschult in der Heilkunst der alten Meister. Sie richteten Knochen und heilten Kranke, und Paschas wie Kadis suchten ihren Rat." }
+
+[aserai_farmer_option]
+titel = { en = "Peasants of Rumelia", de = "Bauern in Rumelien" }
+text = { en = "Your family tilled wheat fields on the plains of Rumelia. Your father marched with the azaps, the foot soldiers raised from the villages for the Sultan's campaigns.", de = "Eure Familie bestellte Weizenfelder in den Ebenen Rumeliens. Euer Vater zog mit den Azaps, dem Fußvolk, das die Dörfer für die Feldzüge des Sultans stellten." }
+
+[aserai_herder_option]
+titel = { en = "Yörük nomads", de = "Yörük-Nomaden" }
+text = { en = "Your family were Yörük, nomads who moved their sheep and goats between summer pastures in the mountains and winter camps on the plains, as their ancestors had done since they came from Anatolia.", de = "Eure Familie waren Yörük, Nomaden, die ihre Schafe und Ziegen zwischen Sommerweiden in den Bergen und Winterlagern in den Ebenen trieben, wie es ihre Vorfahren seit ihrer Ankunft aus Anatolien taten." }
+
+[aserai_artisan_option]
+titel = { en = "Back-alley toughs", de = "Raufbolde der Gassen" }
+text = { en = "Your father worked for a kabadayı, one of the strongmen who keep order in the poorer quarters of the towns. He settled quarrels over debts, dice and insults, and his heavy staff settled the rest.", de = "Euer Vater arbeitete für einen Kabadayı, einen der starken Männer, die in den ärmeren Vierteln der Städte für Ordnung sorgen. Er schlichtete Streit um Schulden, Würfel und Beleidigungen, und den Rest erledigte sein schwerer Stab." }

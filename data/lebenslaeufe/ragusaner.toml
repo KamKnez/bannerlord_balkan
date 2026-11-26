@@ -1,0 +1,24 @@
+# Lebensläufe der Ragusaner (Vorlage Imperium). Aufbau: siehe README.md
+[empire_lanlord_option]
+titel = { en = "A patrician's retainers", de = "das Gefolge eines Patriziers" }
+text = { en = "Your father was a trusted man of a patrician family of Dubrovnik and managed their estates in Konavle. When the Republic called its few horsemen to guard the border, he rode with them as a lancer.", de = "Euer Vater war ein Vertrauter einer Patrizierfamilie aus Dubrovnik und verwaltete ihre Güter in Konavle. Wenn die Republik ihre wenigen Reiter zum Schutz der Grenze rief, ritt er als Lanzenreiter mit." }
+
+[empire_merchant_option]
+titel = { en = "Merchants", de = "Kaufleute" }
+text = { en = "Your family were merchants of Dubrovnik who traded between the Ottoman Balkans and Italy. They sent caravans inland to Sarajevo and Belgrade and belonged to the Brotherhood of St Anthony, the fraternity of the city's wealthy commoners.", de = "Eure Familie waren Kaufleute aus Dubrovnik, die zwischen dem osmanischen Balkan und Italien handelten. Sie schickten Karawanen ins Landesinnere nach Sarajevo und Belgrad und gehörten zur Bruderschaft des heiligen Antonius, der Vereinigung der reichen Bürger der Stadt." }
+
+[empire_farmer_option]
+titel = { en = "Smallholders", de = "Kleinbauern" }
+text = { en = "Your family farmed terraced vineyards and olive groves on the Pelješac peninsula. They had just enough to feed themselves and sell a little, and like all subjects of the Republic they served in its militia.", de = "Eure Familie bewirtschaftete Weinterrassen und Olivenhaine auf der Halbinsel Pelješac. Sie hatten genug zum Leben und ein wenig zum Verkaufen und dienten wie alle Untertanen der Republik in ihrer Miliz." }
+
+[empire_artisan_option]
+titel = { en = "Artisans", de = "Handwerker" }
+text = { en = "Your family owned a workshop in Dubrovnik, making cloth, soap or wax candles for the ships. Your father had a small voice in the fraternity of his craft and stood guard on the city walls.", de = "Eure Familie besaß eine Werkstatt in Dubrovnik und stellte Tuch, Seife oder Wachskerzen für die Schiffe her. Euer Vater hatte eine kleine Stimme in der Bruderschaft seines Handwerks und hielt Wache auf den Stadtmauern." }
+
+[empire_hunter_option]
+titel = { en = "Foresters", de = "Waldleute" }
+text = { en = "Your family lived in a village in the hills behind the city but owned no land. Your father took whatever work he could find and spent long days in the hills hunting and trapping, always wary of the Republic's wardens.", de = "Eure Familie lebte in einem Dorf in den Bergen hinter der Stadt, besaß aber kein Land. Euer Vater nahm jede Arbeit an, die er fand, und verbrachte lange Tage jagend und Fallen stellend in den Bergen, immer auf der Hut vor den Aufsehern der Republik." }
+
+[empire_vagabond_option]
+titel = { en = "Harbour poor", de = "Arme am Hafen" }
+text = { en = "Your family were among the poor who crowded the harbour of Dubrovnik and lived from odd jobs on the quays and in the shipyards of Gruž. Sometimes they ran goods for smugglers, and you saw the dark side of life early.", de = "Eure Familie gehörte zu den Armen, die sich am Hafen von Dubrovnik drängten und von Gelegenheitsarbeit auf den Kais und in den Werften von Gruž lebten. Manchmal schafften sie Ware für Schmuggler, und Ihr habt früh die dunkle Seite des Lebens gesehen." }
