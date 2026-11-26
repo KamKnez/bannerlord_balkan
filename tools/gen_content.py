@@ -673,6 +673,9 @@ AMMO_MODELS = {
     # Kugelbeutel: Beutel und Kugel der Schleudersteine aus dem Spiel, statt eines Bolzenköchers
     "kugelbeutel": ("bo_axe_short", 10),
 }
+# Fliegende Kugel. Das NW-Modell "musket_bullet" liegt in Assets/napoleonic_warfare/ bereit; sobald es in
+# AssetPackages/pack0.tpac mitgepackt ist, hier auf "musket_bullet" umstellen. Bis dahin der Schleuderstein.
+BULLET_FLYING_MESH = "sling_ammo_flying"
 WEAPON_ART = ("gewehr", "pistole", "munition")
 GUN_FIELDS = ("gewicht", "schaden", "geschoss", "genauigkeit", "tempo", "handhabung", "schwierigkeit")
 AMMO_FIELDS = ("gewicht", "schaden", "anzahl")
@@ -782,7 +785,7 @@ def ammo_xml(w, name):
     if pouch:
         meshes = ['\t\tbody_name="bo_sling_ammo"', f'\t\tholster_body_name="{holster_body}"',
                   '\t\tmesh="sling_ammo"', '\t\tholster_mesh="stone_holster"',
-                  '\t\tholster_mesh_with_weapon="stone_holster"', '\t\tflying_mesh="sling_ammo_flying"']
+                  '\t\tholster_mesh_with_weapon="stone_holster"', f'\t\tflying_mesh="{BULLET_FLYING_MESH}"']
         holsters = '\t\titem_holsters="throwing_stone:throwing_stone_2">'
         sticking = []
         flags = 'AttachAmmoToVisual="true" Consumable="true" AmmoBreaksOnBounceBack="true"'
@@ -812,9 +815,10 @@ def ammo_xml(w, name):
         f'\t\t\t\tthrust_damage="{w["schaden"]}"',
         '\t\t\t\tthrust_damage_type="Pierce"',
         '\t\t\t\tspeed_rating="0"',
-        '\t\t\t\tmissile_speed="10"',
+        f'\t\t\t\tmissile_speed="{200 if pouch else 10}"',
         f'\t\t\t\tweapon_length="{length}"',
         '\t\t\t\titem_usage=""',
+        '\t\t\t\tpassby_sound_code="balkan_bullet_passby"' if pouch else
         '\t\t\t\tpassby_sound_code="event:/mission/combat/missile/passby"',
         '\t\t\t\trotation="180, 0, 0"',
         '\t\t\t\tphysics_material="missile"',
