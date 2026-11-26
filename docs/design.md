@@ -125,6 +125,11 @@ Die Werte sind Richtwerte im Vergleich zur schweren Armbrust des Spiels. Wir sti
 
 Ziel: Eine Salve ist gefährlich, danach entscheiden Nahkampf und Reiterei.
 
+**Umsetzung v0.1:** Arkebuse (Haramije, Schiavoni, Miliz), Luntenschloss-Muskete (Musketiere, Tüfekçi),
+Lange Balkan-Flinte (Scharfschützen der Stufe 3 bis 4), Schwere Muskete (Veteranen) und Reiterpistole (Reiter,
+Husaren, Kürassiere, Cappelletti). Dazu Musketenkugeln (12 Schuss) und Pistolenpatronen (4 Schuss).
+Die Pistole lässt sich als einzige Feuerwaffe auf dem Pferd nachladen.
+
 ## 7. Besondere Systeme (Phase 3, C#)
 
 - **Militärgrenze:** Grenz-Dörfer liefern billige, gute Grenzer. Dafür zahlen sie weniger Steuern. Frisch eroberte Gebiete sind dünn besiedelt, Neusiedlung erhöht langsam den Wohlstand.
@@ -164,7 +169,7 @@ Fertig ist v0.1, wenn:
 2. Königreiche und Clans, Lords mit Grundausrüstung
 3. Truppenbäume und Ausrüstung
 4. Siedlungen umbenennen (umgesetzt per XSLT), Wappen und Kriege zu Spielbeginn
-5. Musketen und Pistolen (Werte), Balance-Runde nach Spieltest
+5. Musketen und Pistolen (Werte, umgesetzt in `data/waffen.toml`), Balance-Runde nach Spieltest
 
 ## 11. Entscheidungen und offene Fragen
 

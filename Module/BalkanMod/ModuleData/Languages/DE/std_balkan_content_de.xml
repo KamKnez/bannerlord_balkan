@@ -5,6 +5,13 @@
     <tag language="Deutsch" />
   </tags>
   <strings>
+    <string id="balkan_item_arquebus" text="Arkebuse" />
+    <string id="balkan_item_musket" text="Luntenschloss-Muskete" />
+    <string id="balkan_item_long_musket" text="Lange Balkan-Flinte" />
+    <string id="balkan_item_heavy_musket" text="Schwere Muskete" />
+    <string id="balkan_item_pistol" text="Reiterpistole" />
+    <string id="balkan_item_musket_balls" text="Musketenkugeln und Pulver" />
+    <string id="balkan_item_pistol_balls" text="Pistolenpatronen" />
     <string id="balkan_bs_peasant" text="Bosnischer Bauer" />
     <string id="balkan_bs_azap" text="Azap" />
     <string id="balkan_bs_tufekci" text="Tüfekçi" />
