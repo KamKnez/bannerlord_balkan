@@ -140,8 +140,8 @@
 	<xsl:template match="Settlement[@id='castle_village_V1_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Garčin</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V1_1_text}Garčin is a village near Brod. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Županja</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V1_1_text}Županja is a village near Brod. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
