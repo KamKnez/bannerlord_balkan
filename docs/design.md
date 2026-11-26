@@ -170,6 +170,22 @@ Nur Atmosphäre, Ereignisse und kleine Effekte, keine offene Magie.
 
 Eigene Kampagnen-Szenarien, Spielerstarts und Modifikatoren für die Sandbox sind in [szenarien.md](szenarien.md) gesammelt. Entschieden ist die Kampagnenstruktur: eine offene Sandbox „Zwischen den Kriegen“ ab 1699 mit historischen Ereignissen zu ihren Daten, dazu ein geführter Aufstieg mit einer Startgeschichte je Volk als Einstieg. In v0.1 kommt nur das Standard-Szenario „Nach Karlowitz“, die Ereignisse und Startgeschichten folgen in Phase 3.
 
+## 8b. Aufträge (Quests)
+
+Die normalen Bannerlord-Aufträge funktionieren und ihre Mechanik passt: Banditen jagen, Waren liefern, Herden treiben,
+Fehden schlichten. In manchen Texten stecken aber noch Calradia-Begriffe und Calradia-Waren.
+
+- **Feinschliff, nicht erst am Ende:** Wenn wir ein Volk ersetzen, passen wir im selben Schritt die Quest-Texte an,
+  die dieses Volk betreffen (Begriffe, Ortsbezüge, Waren). Die gröbsten Reste wie Vlandia und Aserai sind schon entfernt.
+- **Später eigene Aufträge**, die zur Zeit passen:
+
+| Auftrag | Idee |
+|---|---|
+| Grenzwache an der Save | Für einige Tage einen Abschnitt der Grenze halten und Übergriffe abwehren |
+| Hajduken-Überfälle | Eine Hajduken-Bande stellen oder, auf der anderen Seite, sie mit Waffen versorgen |
+| Gefangenenfreikauf | Gefangene über die Grenze zurückkaufen, mit Verhandlung oder Lösegeld |
+| Schmuggel nach Venedig | Waren an den Zöllen vorbei in eine venezianische Küstenstadt bringen |
+
 ## 9. Umfang der ersten Version (v0.1)
 
 Fertig ist v0.1, wenn:
