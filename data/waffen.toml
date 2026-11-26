@@ -18,6 +18,11 @@
 #   handhabung    Handhabung (nur Waffen)
 #   schwierigkeit benötigter Armbrust-Wert (nur Waffen)
 #   anzahl        Schuss pro Beutel (nur Munition)
+#
+# Umstellen auf echte Modelle (z. B. aus einer Musketen-Mod als optionaler Abhängigkeit):
+# Die Ids bleiben gleich, damit Truppen und Spielstände weiter passen. Es ändern sich nur
+# modell (und bei Bedarf Kollisionskörper und Sitz der Munition in GUN_MODELS bzw. AMMO_MODELS
+# in tools/gen_content.py) sowie gegebenenfalls Klang und Mechanik.
 # Ausgabe: Module/BalkanMod/ModuleData/balkan_items.xml (über tools/gen_content.py)
 
 [[waffe]]
