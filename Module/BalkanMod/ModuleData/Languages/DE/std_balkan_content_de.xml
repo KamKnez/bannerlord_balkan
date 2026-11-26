@@ -158,6 +158,8 @@
     <string id="balkan_culture_ungarn_desc" text="Nach anderthalb Jahrhunderten Krieg füllen sich die ungarischen Ebenen langsam wieder mit Menschen. Die Hajdúk, einst Viehtreiber, kämpfen zu Fuß mit Muskete und Säbel, und die leichten Husaren des ungarischen Adels sind in allen Heeren Europas berühmt geworden." />
     <string id="balkan_culture_venezianer_rich" text="Venezianer" />
     <string id="balkan_culture_venezianer_desc" text="Die Durchlauchtigste Republik Venedig beherrscht die Adria von ihrer Lagune aus. An der dalmatinischen Küste verwalten ihre Provveditori ummauerte Häfen voller Kaufleute, Seeleute und Soldaten. Italienische Pikeniere und Musketiere halten die Mauern, dalmatinische Schiavoni und albanische Cappelletti führen den Kleinkrieg im Hinterland." />
+    <string id="balkan_formation_ranged" text="Schützen" />
+    <string id="balkan_formation_ranged_class" text="Schützen" />
     <string id="balkan_kingdom_vlandia" text="Habsburgermonarchie" />
     <string id="balkan_kingdom_vlandia_short" text="Habsburger" />
     <string id="balkan_kingdom_vlandia_title" text="Königreich Kroatien-Slawonien unter der Habsburger Krone" />
