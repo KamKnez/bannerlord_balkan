@@ -163,7 +163,7 @@ Fertig ist v0.1, wenn:
 1. Kulturen und Namen (Personen, Clans) für die 4 Königreiche
 2. Königreiche und Clans, Lords mit Grundausrüstung
 3. Truppenbäume und Ausrüstung
-4. Siedlungen umbenennen und verteilen (C# mit Unit-Tests)
+4. Siedlungen umbenennen (umgesetzt per XSLT), Wappen und Kriege zu Spielbeginn
 5. Musketen und Pistolen (Werte), Balance-Runde nach Spieltest
 
 ## 11. Entscheidungen und offene Fragen
@@ -183,6 +183,9 @@ Fertig ist v0.1, wenn:
   Frau; weil der Rektor immer ein Mann aus dem Adel war, übernimmt ein anderer Lord des Clans (Frano Gozze).
   Venedig und Ragusa wechseln mit ihren Siedlungen zu den neuen Kulturen. Wappen und Kriege zu Spielbeginn sind
   noch die von Calradia.
+- **Siedlungen (umgesetzt):** Alle 203 Städte, Burgen und Dörfer der vier Reiche tragen echte Namen, per XSLT statt
+  C# (Daten unter `[orte]` in `data/reiche/`). Die Zuordnung folgt der Lage auf der Karte, Hauptstädte sind fest.
+  Die Beschreibungstexte der Orte sind noch die von Calradia.
 - **Noch offen bei den Truppen:** Deutsche, Ungarn, Türken (Janitscharen), Serben (Grenzer, Martolosen) und Morlaken
   kommen als zusätzliche Truppen in die Party-Vorlagen der Lords, sobald die Königreiche stehen.
 - **Offen:** Der Beylerbey heißt vorerst „Mehmed“ (Platzhalter). Wer war um 1700 Beylerbey von Bosnien und wer Provveditore generale in Dalmatien? Das wird in der Recherche weiter geprüft.

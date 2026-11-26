@@ -4,7 +4,7 @@
 Quellen:
   data/kulturen/*.toml   Kulturen, Truppenbäume, Miliz und Lord-Parteien
   data/namen/*.txt       Namenslisten (siehe data/namen/README.md)
-  data/reiche/*.toml     Königreiche, Clans, Lords und Kultur der Siedlungen
+  data/reiche/*.toml     Königreiche, Clans, Lords, Namen und Kultur der Siedlungen
 
 Ergebnis (nicht von Hand ändern, sondern hier neu erzeugen):
   Module/BalkanMod/ModuleData/balkan_troops.xml                 NPCCharacters (Truppen)
@@ -365,6 +365,7 @@ def check_realms(realms, cultures):
     culture_ids = {c["kultur_id"] for c in cultures}
     errors = []
     seen = {}
+    place_names = {}
     for r in realms:
         where = r["_datei"]
         if f"Kingdom.{r['reich_id']}" not in vanilla:
@@ -376,12 +377,20 @@ def check_realms(realms, cultures):
             errors.append(f"{where}: herrscher {r['herrscher']} gehört zu keinem Clan der Datei")
         checks = [("Faction", c["id"]) for c in r["clan"]] + [("Hero", x) for x in lords]
         checks += [("Settlement", x) for x in r["siedlungen"]]
+        checks += [("Settlement", x) for x in r.get("orte", {})]
         for kind, obj in checks:
             if f"{kind}.{obj}" not in vanilla:
                 errors.append(f"{where}: {kind}.{obj} gibt es im Spiel nicht")
-            if (kind, obj) in seen:
+            if (kind, obj) in seen and seen[(kind, obj)] != where:
                 errors.append(f"{where}: {kind}.{obj} steht auch in {seen[(kind, obj)]}")
             seen[(kind, obj)] = where
+        for sid, name in r.get("orte", {}).items():
+            label = name if isinstance(name, str) else name.get("en", "")
+            if not label.strip():
+                errors.append(f"{where}: Ort {sid} hat keinen Namen")
+            elif label in place_names:
+                errors.append(f"{where}: Ortsname '{label}' gibt es schon ({place_names[label]})")
+            place_names[label] = f"{where}: {sid}"
         if r["siedlungen"] and not r["kultur_wechseln"]:
             errors.append(f"{where}: siedlungen nur mit kultur_wechseln = true")
     return errors
@@ -461,8 +470,14 @@ def build_realms(realms, strings):
                 else:
                     # alte Lebensläufe der Calradia-Herrscher passen nicht mehr
                     t["Heroes"] += patch_template("Hero", lord["id"], {}, drop=("text",))
-        for sid in r["siedlungen"]:
-            t["Settlements"] += patch_template("Settlement", sid, {"culture": culture})
+        orte = r.get("orte", {})
+        for sid in list(r["siedlungen"]) + [x for x in orte if x not in r["siedlungen"]]:
+            sattrs = {}
+            if sid in orte:
+                sattrs["name"] = text_value(strings, f"balkan_settlement_{sid}", orte[sid])
+            if sid in r["siedlungen"]:
+                sattrs["culture"] = culture
+            t["Settlements"] += patch_template("Settlement", sid, sattrs)
     return {OUT_REALMS[k]: xslt_doc(v) for k, v in t.items()}
 
 

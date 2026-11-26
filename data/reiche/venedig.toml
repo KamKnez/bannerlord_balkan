@@ -273,3 +273,55 @@ weiblich = true  # 26 Jahre, vorher Euresa
 id = "lord_WE9_u2"
 name = "Antonio"
 weiblich = false  # 37 Jahre, vorher Torvasis
+
+# ---------------------------------------------------------------- Orte
+
+# Neue Namen der Städte, Burgen und Dörfer (Kommentar: Name in Calradia).
+# Zugeordnet nach der Lage auf der Karte, die Hauptstadt des Reichs ist fest gesetzt.
+
+[orte]
+town_EW1 = "Rab"                            # Lageta
+town_EW2 = "Zadar"                          # Zeonica
+town_EW3 = "Hvar"                           # Jalmarys
+town_EW4 = "Šibenik"                        # Ortysia
+town_EW5 = "Kotor"                          # Amitatys
+town_EW6 = "Split"                          # Rhotae
+castle_EW1 = "Trogir"                       # Garontor Castle
+castle_EW2 = "Sinj"                         # Thorios Castle
+castle_EW3 = "Makarska"                     # Onica Castle
+castle_EW4 = "Knin"                         # Thractorae Castle
+castle_EW5 = "Novigrad"                     # Veron Castle
+castle_EW6 = "Klis"                         # Hertogea Castle
+castle_EW7 = "Omiš"                         # Oristocorys Castle
+castle_EW8 = "Vrlika"                       # Gersegos Castle
+castle_village_EW1_1 = "Seget"              # Garontor
+castle_village_EW1_2 = "Okrug"              # Lysia
+castle_village_EW2_1 = "Trilj"              # Thorios
+castle_village_EW2_2 = "Otok"               # Bergum
+castle_village_EW3_1 = "Tučepi"             # Onica
+castle_village_EW3_2 = "Baška Voda"         # Tarcutis
+castle_village_EW4_1 = "Drniš"              # Thractorae
+castle_village_EW4_2 = "Kistanje"           # Gamardan
+castle_village_EW5_1 = "Posedarje"          # Veron
+castle_village_EW5_2 = "Obrovac"            # Goleryn
+castle_village_EW6_1 = "Dugopolje"          # Hertogea
+castle_village_EW6_2 = "Kučine"             # Nideon
+castle_village_EW7_1 = "Jesenice"           # Oristocorys
+castle_village_EW7_2 = "Kostanje"           # Elvania
+castle_village_EW8_1 = "Kijevo"             # Gersegos
+castle_village_EW8_2 = "Cetina"             # Vathea
+village_EW1_1 = "Lopar"                     # Primessos
+village_EW1_2 = "Pag"                       # Montos
+village_EW2_2 = "Nin"                       # Neocorys
+village_EW2_3 = "Biograd"                   # Alsasos
+village_EW2_4 = "Preko"                     # Zeocorys
+village_EW3_2 = "Stari Grad"                # Aegosca
+village_EW3_3 = "Jelsa"                     # Dradios
+village_EW4_1 = "Skradin"                   # Arpotis
+village_EW4_3 = "Vodice"                    # Vinela
+village_EW4_4 = "Primošten"                 # Garengolia
+village_EW5_1 = "Perast"                    # Elipa
+village_EW5_2 = "Risan"                     # Phasos
+village_EW6_1 = "Kaštel Sućurac"            # Carphenion
+village_EW6_3 = "Solin"                     # Thersenion
+village_EW6_4 = "Stobreč"                   # Leblenion

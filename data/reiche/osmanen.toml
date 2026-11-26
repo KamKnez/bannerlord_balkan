@@ -275,3 +275,67 @@ weiblich = true  # 19 Jahre, vorher Dhila
 id = "lord_A9_u"
 name = "Mustafa"
 weiblich = false  # 29 Jahre, vorher Qaban
+
+# ---------------------------------------------------------------- Orte
+
+# Neue Namen der Städte, Burgen und Dörfer (Kommentar: Name in Calradia).
+# Zugeordnet nach der Lage auf der Karte, die Hauptstadt des Reichs ist fest gesetzt.
+
+[orte]
+town_A1 = "Sarajevo"                        # Quyaz
+town_A2 = "Beograd"                         # Husn Fulq
+town_A3 = "Foča"                            # Iyakis
+town_A4 = "Tuzla"                           # Razih
+town_A5 = "Novi Pazar"                      # Hubyar
+town_A6 = "Banja Luka"                      # Sanala
+town_A7 = "Mostar"                          # Askar
+town_A8 = "Travnik"                         # Qasira
+castle_A1 = "Bihać"                         # Tubilis Castle
+castle_A2 = "Stolac"                        # Sahel Castle
+castle_A3 = "Ključ"                         # Ain Baliq Castle
+castle_A4 = "Jajce"                         # Medeni Castle
+castle_A5 = "Počitelj"                      # Jamayeh Castle
+castle_A6 = "Srebrenik"                     # Shibal Zumr Castle
+castle_A7 = "Doboj"                         # Uqba Castle
+castle_A8 = "Zvornik"                       # Tamnuh Castle
+castle_A9 = "Livno"                         # Barihal Castle
+castle_village_A1_1 = "Cazin"               # Tubilis
+castle_village_A1_2 = "Ostrožac"            # Fanab
+castle_village_A2_1 = "Ljubinje"            # Sahel
+castle_village_A2_2 = "Berkovići"           # Asmait
+castle_village_A3_1 = "Sanski Most"         # Ain Baliq
+castle_village_A3_2 = "Petrovac"            # Deir Hawa
+castle_village_A4_1 = "Varcar Vakuf"        # Medeni
+castle_village_A4_2 = "Šipovo"              # Qidnar
+castle_village_A5_1 = "Čapljina"            # Jamayeh
+castle_village_A5_2 = "Gabela"              # Hunab
+castle_village_A6_1 = "Brčko"               # Shibal Zumr
+castle_village_A6_2 = "Gradačac"            # Lamesa
+castle_village_A7_1 = "Maglaj"              # Uqba
+castle_village_A7_2 = "Tešanj"              # Bunqaz
+castle_village_A8_1 = "Bijeljina"           # Tamnuh
+castle_village_A8_2 = "Kozluk"              # Kuqa
+castle_village_A9_1 = "Duvno"               # Barihal
+castle_village_A9_2 = "Glamoč"              # Wadar
+village_A1_1 = "Ilidža"                     # Tasheba
+village_A1_2 = "Vogošća"                    # Baq
+village_A1_4 = "Hadžići"                    # Hiblet
+village_A2_2 = "Grocka"                     # Abu Khih
+village_A2_3 = "Smederevo"                  # Hoqqa
+village_A3_1 = "Ustikolina"                 # Abba
+village_A3_3 = "Goražde"                    # Bir Seif
+village_A4_1 = "Lukavac"                    # Qablab
+village_A4_2 = "Živinice"                   # Mussum
+village_A4_4 = "Kalesija"                   # Doqa
+village_A5_1 = "Sjenica"                    # Mahloul
+village_A5_2 = "Tutin"                      # Liwas
+village_A5_3 = "Raška"                      # Waltas
+village_A6_1 = "Laktaši"                    # Mijayit
+village_A6_2 = "Kotor Varoš"                # Hamoshawat
+village_A6_3 = "Čelinac"                    # Jahasim
+village_A6_4 = "Prnjavor"                   # Nahlan
+village_A7_2 = "Blagaj"                     # Bait Hatif
+village_A7_3 = "Buna"                       # Mabwaz
+village_A7_4 = "Žitomislić"                 # Zalm
+village_A8_1 = "Vitez"                      # Ezbet Nahul
+village_A8_2 = "Busovača"                   # Abghan
