@@ -236,6 +236,20 @@ def build_game_texts(cultures, strings):
         desc = strings.add(f"balkan_culture_{key}_desc", c["text"]["en"].strip(), c["text"]["de"].strip())
         lines.append(f"\t<string id={quoteattr('str_culture_rich_name.' + cid)} text={quoteattr(rich)} />")
         lines.append(f"\t<string id={quoteattr('str_culture_description.' + cid)} text={quoteattr(desc)} />")
+    # Feste Spieltexte: Fernkampf-Formation heißt Musketiere (die Sprachaufnahme „Bowmen“ bleibt),
+    # Waffenklasse Armbrust heißt Feuerwaffe, Bolzen heißen Kugeln (Inventar und Gegenstands-Infos)
+    fixed = (
+        ("str_troop_group_name.1", "balkan_formation_ranged", "Musketeers", "Schützen"),
+        ("str_formation_class_string.Ranged", "balkan_formation_ranged_class", "Musketeers", "Schützen"),
+        ("str_inventory_weapon.Crossbow", "balkan_class_firearm", "Firearm", "Feuerwaffe"),
+        ("str_inventory_type_10", "balkan_class_firearm", "Firearm", "Feuerwaffe"),
+        ("str_inventory_flag_crossbow", "balkan_class_firearm", "Firearm", "Feuerwaffe"),
+        ("str_inventory_weapon.Bolt", "balkan_class_shot", "Shot", "Kugeln"),
+        ("str_inventory_type_6", "balkan_class_shot", "Shot", "Kugeln"),
+    )
+    for sid, key, en, de in fixed:
+        text = strings.add(key, en, de)
+        lines.append(f"\t<string id={quoteattr(sid)} text={quoteattr(text)} />")
     lines.append("</strings>")
     return "\n".join(lines) + "\n"
 
@@ -646,14 +660,18 @@ GUN_MODELS = {
 }
 # Modelle aus Napoleonic Warfare: eigene Lade- und Schussanimationen (ModuleData/item_usage_sets.xml usw.,
 # gepackt in AssetPackages/pack0.tpac). Werte wie in NW: Bewegungssatz, Sitz in der Hand, Länge, Ladephasen.
+# Vorerst nutzen sie die Armbrust-Bewegungen ("crossbow"): Mit den NW-Bewegungssätzen ("musket", "rifle")
+# schießt die KI nicht, sie greift gleich zum Säbel (Spieltest 26.11.). Die NW-Dateien bleiben in ModuleData.
 NW_GUNS = {
-    "newmusket": {"usage": "musket"},
-    "newrifle": {"usage": "rifle"},
+    "newmusket": {"usage": "crossbow"},
+    "newrifle": {"usage": "crossbow"},
 }
 # Munitionsmodelle: Köcher-Körper, Länge
 AMMO_MODELS = {
     "bolt_bl_a": ("bo_axe_short", 47),
     "bolt_bl_c": ("bo_bolt_bl_c_quiver", 37),
+    # Kugelbeutel: Beutel und Kugel der Schleudersteine aus dem Spiel, statt eines Bolzenköchers
+    "kugelbeutel": ("bo_axe_short", 10),
 }
 WEAPON_ART = ("gewehr", "pistole", "munition")
 GUN_FIELDS = ("gewicht", "schaden", "geschoss", "genauigkeit", "tempo", "handhabung", "schwierigkeit")
@@ -709,7 +727,7 @@ def gun_xml(w, name):
         usage = nw["usage"]
         holster = ['\t\titem_holsters="crossbow_back">']
         placement = ['\t\t\t\tposition="0, -0.05, 0"', '\t\t\t\trotation="1, 1, 10"']
-        length, phases, center = "120", "4", "0,0,0.1"
+        length, phases, center = "120", "2", "0,0,0.1"
     else:
         usage = "crossbow_light" if pistol else "crossbow"
         holster = ['\t\titem_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"',
@@ -760,22 +778,32 @@ def gun_xml(w, name):
 def ammo_xml(w, name):
     holster_body, length = AMMO_MODELS[w["modell"]]
     m = w["modell"]
+    pouch = m == "kugelbeutel"
+    if pouch:
+        meshes = ['\t\tbody_name="bo_sling_ammo"', f'\t\tholster_body_name="{holster_body}"',
+                  '\t\tmesh="sling_ammo"', '\t\tholster_mesh="stone_holster"',
+                  '\t\tholster_mesh_with_weapon="stone_holster"', '\t\tflying_mesh="sling_ammo_flying"']
+        holsters = '\t\titem_holsters="throwing_stone:throwing_stone_2">'
+        sticking = []
+        flags = 'AttachAmmoToVisual="true" Consumable="true" AmmoBreaksOnBounceBack="true"'
+    else:
+        meshes = ['\t\tbody_name="bo_capsule_arrow"', f'\t\tholster_body_name="{holster_body}"',
+                  f'\t\tmesh="{m}"', f'\t\tholster_mesh="{m}_quiver"',
+                  f'\t\tholster_mesh_with_weapon="{m}_quiver"', '\t\tflying_mesh="bolt_bl_flying"']
+        holsters = '\t\titem_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">'
+        sticking = [f'\t\t\t\tsticking_position="0,-0.{length},0"', '\t\t\t\tsticking_rotation="90,0,0"']
+        flags = 'AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" AmmoBreaksOnBounceBack="true"'
     out = [
         "\t<Item",
         f"\t\tid={quoteattr(w['id'])}",
         f"\t\tname={quoteattr(name)}",
-        '\t\tbody_name="bo_capsule_arrow"',
-        f'\t\tholster_body_name="{holster_body}"',
-        f'\t\tmesh="{m}"',
-        f'\t\tholster_mesh="{m}_quiver"',
-        f'\t\tholster_mesh_with_weapon="{m}_quiver"',
-        '\t\tflying_mesh="bolt_bl_flying"',
+        *meshes,
         f'\t\tculture="Culture.{w["kultur"]}"',
         f'\t\tweight="{w["gewicht"]}"',
         '\t\tappearance="1"',
         f'\t\tvalue="{w["preis"]}"',
         '\t\tType="Bolts"',
-        '\t\titem_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">',
+        holsters,
         "\t\t<ItemComponent>",
         "\t\t\t<Weapon",
         '\t\t\t\tweapon_class="Bolt"',
@@ -790,12 +818,10 @@ def ammo_xml(w, name):
         '\t\t\t\tpassby_sound_code="event:/mission/combat/missile/passby"',
         '\t\t\t\trotation="180, 0, 0"',
         '\t\t\t\tphysics_material="missile"',
-        f'\t\t\t\tsticking_position="0,-0.{length},0"',
-        '\t\t\t\tsticking_rotation="90,0,0"',
+        *sticking,
         '\t\t\t\tcenter_of_mass="0,0,-0.1"',
         '\t\t\t\tmodifier_group="bolt">',
-        '\t\t\t\t<WeaponFlags AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" '
-        'AmmoBreaksOnBounceBack="true" />',
+        f'\t\t\t\t<WeaponFlags {flags} />',
         "\t\t\t</Weapon>",
         "\t\t</ItemComponent>",
         '\t\t<Flags ForceAttachOffHandPrimaryItemBone="true" />',

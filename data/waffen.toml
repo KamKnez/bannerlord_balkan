@@ -110,7 +110,7 @@ schwierigkeit = 0
 id = "balkan_musket_balls"
 name = { en = "Musket Balls and Powder", de = "Musketenkugeln und Pulver" }
 art = "munition"
-modell = "bolt_bl_c"
+modell = "kugelbeutel"
 kultur = "vlandia"
 gewicht = 0.05
 preis = 60
@@ -121,7 +121,7 @@ anzahl = 12
 id = "balkan_pistol_balls"
 name = { en = "Pistol Cartridges", de = "Pistolenpatronen" }
 art = "munition"
-modell = "bolt_bl_a"
+modell = "kugelbeutel"
 kultur = "vlandia"
 gewicht = 0.04
 preis = 40
