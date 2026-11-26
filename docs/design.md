@@ -199,6 +199,12 @@ eine bewusste Spielentscheidung.
 - **Ablauf:** Zuerst Unruhen und Gerüchte, dann eine Rebellen-Fraktion mit eigenen Anführern aus dem Volk, die
   Siedlungen ihres Volkes übernimmt. Gelingt der Aufstand, entsteht ein neues Königreich.
 - **Für den Spieler:** Man kann den Aufstand niederschlagen, unterstützen oder sich ihm anschließen.
+- **Gewollte Folge:** Osmanen und Habsburger können dadurch stark schrumpfen, und überall entstehen Kleinstaaten.
+  Damit das Spiel nicht zerfasert, gibt es Grenzen:
+  - eine Höchstzahl an Neugründungen gleichzeitig (einstellbar),
+  - eine Mindestgröße: Ein neuer Staat braucht mindestens eine Stadt oder Burg, sonst bleibt er Rebellenbande,
+  - die alten Reiche können abgefallene Gebiete zurückerobern,
+  - Kleinstaaten desselben Volkes oder Nachbarn können sich zusammenschließen (Bündnis oder Vereinigung).
 - **Abschaltbar** über die Spieloptionen, für alle, die bei der Lage von 1700 bleiben wollen.
 - Baut auf dem Rebellionssystem des Spiels auf (siehe Modifikator „Civil Unrest“) und braucht die betroffenen Gebiete
   auf der Karte.
