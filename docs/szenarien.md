@@ -42,7 +42,7 @@ neuen Karte angepasst werden.
 | Start | Ziel | Wann |
 |---|---|---|
 | Grenzer (Kroate oder Serbe an der Militärgrenze) | Hauptmann der Militärgrenze werden | v0.1 oder kurz danach |
-| Bauer an der Save (Kroate oder Serbe aus Županja, arm, in Bauernkleidung) | Offizier der Grenzer werden (Clanstufe 3 im Dienst der Habsburger) | jetzt; Startort Županja mit der neuen Karte |
+| Bauer an der Save (Kroate oder Serbe aus Županja, arm, in Bauernkleidung) | Offizier der Grenzer werden (Clanstufe 3 im Dienst der Habsburger) | jetzt |
 | Bosniake | Kapitän (Kapetan) einer Grenzfestung werden | v0.1 oder kurz danach |
 | Hajduke | Eine eigene Bande aufbauen und anführen | v0.1 oder kurz danach |
 | Venezianer oder Dalmatiner | Kommandant einer Küstenfestung werden *(Idee)* | nach v0.1 |

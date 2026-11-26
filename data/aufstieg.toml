@@ -68,9 +68,8 @@ vlandia = { balkan_hr_haramija = 3, balkan_hr_peasant = 3 }
 [[start]]
 id = "bauer"
 kulturen = ["vlandia", "serbs"]
-# Županja an der Save (Brod-Abschnitt der Militärgrenze). Das Dorf kommt mit der neuen Karte; bis dahin Garčin,
-# das Dorf der Burg Brod auf der jetzigen Karte. Mit der neuen Karte die Id von Županja eintragen.
-ort = "castle_village_V1_1"   # Garčin, später Županja
+# Županja an der Save (Brod-Abschnitt der Militärgrenze), das Dorf der Burg Brod.
+ort = "castle_village_V1_1"   # Županja
 reich = "vlandia"
 auftraggeber = "ort"
 gold = -800
