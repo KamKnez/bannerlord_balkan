@@ -75,7 +75,7 @@ bricht beim Laden des Geländes mit „could not get new memory“ ab. Gearbeite
 Bosnien und Dalmatien, dreimal so dicht wie in Calradia. Deshalb liegen 33 Sitze der vier Mod-Reiche jetzt dort,
 wo die Reiche um 1700 wirklich lagen (Quelle `verlegt` in `data/weltkarte/orte.csv`): Habsburger bis Wien, Buda,
 Pressburg und Klausenburg, Osmanen bis Sofia, Saloniki und Edirne, Venedig mit Venedig, Korfu und der Morea,
-Ragusa vorläufig entlang der Küste bis Epirus. Im Kern bleiben 136 Orte. Kein Ort liegt auf einer Insel, weil die Karte
+Ragusa vorläufig entlang der Küste bis Epirus. Um Dubrovnik bleiben nur Dubrovnik und Ston. Kein Ort liegt auf einer Insel, weil die Karte
 ohne Schiffe gespielt wird. Die Dörfer verlegter Sitze haben noch
 keine Namen. Die Namen im Spiel (`[orte]` in `data/reiche/`) sind noch nicht nachgezogen.
 
