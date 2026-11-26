@@ -50,8 +50,10 @@ namespace BalkanMod.CampaignModels
         }
 
         /// <summary>
-        /// ExplainedNumber zählt Faktoren zusammen (1 + Summe). Damit zwei Einstellungen sich multiplizieren,
-        /// rechnen wir den zweiten Faktor auf das bisherige Ergebnis um.
+        /// Multipliziert das Ergebnis mit factor. ExplainedNumber rechnet (Grundwert + Zuschläge) * (1 + Summe der Faktoren).
+        /// Ein Zuschlag wird also noch mit den Faktoren des Spiels (Wald, Nacht, Schnee, Herde ...) multipliziert. Damit am
+        /// Ende genau factor herauskommt, teilen wir den Zuschlag vorher durch (1 + Summe der Faktoren).
+        /// Beispiel 2,0x im Wald (-30 %): vorher ergab das nur 1,7x, jetzt 2,0x.
         /// </summary>
         private static void AddFactor(ref ExplainedNumber number, float factor, TextObject text)
         {
@@ -66,7 +68,13 @@ namespace BalkanMod.CampaignModels
                 return;
             }
 
-            number.Add(before * (factor - 1f), text, null);
+            var multiplier = 1f + number.SumOfFactors;
+            if (multiplier <= 0.01f)
+            {
+                return;
+            }
+
+            number.Add(before * (factor - 1f) / multiplier, text, null);
         }
     }
 }

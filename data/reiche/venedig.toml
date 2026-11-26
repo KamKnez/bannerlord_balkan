@@ -170,8 +170,8 @@ name = "Domenico"
 weiblich = false  # 35 Jahre, vorher Tynops
 [[clan.lord]]
 id = "lord_1_40_1"
-name = "Giacomo"
-weiblich = false  # 33 Jahre, vorher Catella
+name = "Elena"
+weiblich = true  # 33 Jahre, vorher Catella
 [[clan.lord]]
 id = "lord_1_46"
 name = "Leonardo"
@@ -190,16 +190,16 @@ name = "Bernardo"
 weiblich = false  # 38 Jahre, vorher Desporion
 [[clan.lord]]
 id = "lord_1_45_1"
-name = "Daniele"
-weiblich = false  # 38 Jahre, vorher Agnala
+name = "Jelena"
+weiblich = true  # 38 Jahre, vorher Agnala
 [[clan.lord]]
 id = "lord_1_45_2"
 name = "Vettor"
 weiblich = false  # 19 Jahre, vorher Phostor
 [[clan.lord]]
 id = "lord_1_45_3"
-name = "Alvise"
-weiblich = false  # 18 Jahre, vorher Nereida
+name = "Katarina"
+weiblich = true  # 18 Jahre, vorher Nereida
 [[clan.lord]]
 id = "lord_1_57"
 name = "Francesco"
@@ -234,8 +234,8 @@ name = "Marco"
 weiblich = false  # 35 Jahre, vorher Sejaron
 [[clan.lord]]
 id = "lord_1_62_1"
-name = "Pietro"
-weiblich = false  # 35 Jahre, vorher Arytha
+name = "Isabella"
+weiblich = true  # 35 Jahre, vorher Arytha
 
 [[clan]]
 id = "clan_empire_west_7"  # vorher Corenios, Oberhaupt Hero.lord_1_53

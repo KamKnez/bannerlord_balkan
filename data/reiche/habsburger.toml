@@ -354,8 +354,12 @@ village_V8_3 = "Gleisdorf"                  # Remental
 village_V9_1 = "Mohács"                     # Alantas
 village_V9_2 = "Siklós"                     # Halisvust
 
-# Dörfer mit eigener Kultur: Ihre Bewohner bieten Rekruten dieser Kultur an (data/kulturen/).
+# Orte mit eigener Kultur: Ihre Bewohner bieten Rekruten dieser Kultur an (data/kulturen/).
+# Meist Dörfer; auch Städte und Burgen sind erlaubt (dann auch Garnison, Miliz und Notabeln in dieser Kultur).
 [dorfkultur]
+town_V5 = "germans"             # Ljubljana (Laibach, Krain)
+town_V8 = "germans"             # Graz (Steiermark)
+town_V9 = "hungarians"          # Pécs (Fünfkirchen)
 village_V8_1 = "germans"        # Leibnitz
 village_V8_2 = "germans"        # Voitsberg
 village_V8_3 = "germans"        # Gleisdorf

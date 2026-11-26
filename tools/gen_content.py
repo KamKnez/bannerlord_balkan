@@ -442,8 +442,8 @@ def check_realms(realms, cultures):
             if seat is not None and r.get("dorftext") and seat not in orte:
                 errors.append(f"{where}: Dorf {sid}: Sitz {seat} steht nicht in [orte]")
         for sid, cid in r.get("dorfkultur", {}).items():
-            if sid not in orte or seat_of(sid) is None:
-                errors.append(f"{where}: dorfkultur: {sid} ist kein Dorf aus [orte]")
+            if sid not in orte:
+                errors.append(f"{where}: dorfkultur: {sid} steht nicht in [orte]")
             if cid not in culture_ids:
                 errors.append(f"{where}: dorfkultur: Kultur {cid} ist in data/kulturen nicht definiert")
         for v in r.get("dorftext", []):
@@ -668,6 +668,8 @@ def check_weapons(weapons, vanilla_ids):
         for field in AMMO_FIELDS if art == "munition" else GUN_FIELDS:
             if field not in w:
                 errors.append(f"{wid}: Feld {field} fehlt")
+        if "preis" not in w or not isinstance(w["preis"], int) or w["preis"] <= 0:
+            errors.append(f"{wid}: preis (Denare, ganze Zahl > 0) fehlt")
         if art != "munition" and not 0 <= w.get("genauigkeit", 0) <= 100:
             errors.append(f"{wid}: genauigkeit muss 0 bis 100 sein")
     return errors
@@ -689,6 +691,7 @@ def gun_xml(w, name):
         f'\t\tculture="Culture.{w["kultur"]}"',
         f'\t\tweight="{w["gewicht"]}"',
         '\t\tappearance="0.6"',
+        f'\t\tvalue="{w["preis"]}"',
         f'\t\tdifficulty="{w["schwierigkeit"]}"',
         '\t\tType="Crossbow"',
         f'\t\tAmmoOffset="{ammo_offset}"',
@@ -736,6 +739,7 @@ def ammo_xml(w, name):
         f'\t\tculture="Culture.{w["kultur"]}"',
         f'\t\tweight="{w["gewicht"]}"',
         '\t\tappearance="1"',
+        f'\t\tvalue="{w["preis"]}"',
         '\t\tType="Bolts"',
         '\t\titem_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">',
         "\t\t<ItemComponent>",

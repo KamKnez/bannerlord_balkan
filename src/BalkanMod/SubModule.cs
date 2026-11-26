@@ -52,8 +52,10 @@ namespace BalkanMod
             {
                 // Reisegeschwindigkeit auf der Karte (Faktoren im MCM-Menü)
                 campaignStarter.AddModel(new BalkanPartySpeedModel());
-                // Muskete, Pistole und Munition für die Spielfigur zu Beginn
+                // Arkebuse, Pistole und Munition für die Spielfigur zu Beginn
                 campaignStarter.AddBehavior(new StartingFirearmsBehavior());
+                // Notabeln bekommen die Kultur ihrer Siedlung (Rekruten und Namen passend zur Kultur)
+                campaignStarter.AddBehavior(new NotableCultureBehavior());
             }
         }
     }
