@@ -236,10 +236,19 @@ def build_game_texts(cultures, strings):
         desc = strings.add(f"balkan_culture_{key}_desc", c["text"]["en"].strip(), c["text"]["de"].strip())
         lines.append(f"\t<string id={quoteattr('str_culture_rich_name.' + cid)} text={quoteattr(rich)} />")
         lines.append(f"\t<string id={quoteattr('str_culture_description.' + cid)} text={quoteattr(desc)} />")
-    # Fernkampf-Formation: Musketiere statt Bogenschützen (die Sprachaufnahme „Bowmen“ bleibt)
-    for sid, key in (("str_troop_group_name.1", "balkan_formation_ranged"),
-                     ("str_formation_class_string.Ranged", "balkan_formation_ranged_class")):
-        text = strings.add(key, "Musketeers", "Schützen")
+    # Feste Spieltexte: Fernkampf-Formation heißt Musketiere (die Sprachaufnahme „Bowmen“ bleibt),
+    # Waffenklasse Armbrust heißt Feuerwaffe, Bolzen heißen Kugeln (Inventar und Gegenstands-Infos)
+    fixed = (
+        ("str_troop_group_name.1", "balkan_formation_ranged", "Musketeers", "Schützen"),
+        ("str_formation_class_string.Ranged", "balkan_formation_ranged_class", "Musketeers", "Schützen"),
+        ("str_inventory_weapon.Crossbow", "balkan_class_firearm", "Firearm", "Feuerwaffe"),
+        ("str_inventory_type_10", "balkan_class_firearm", "Firearm", "Feuerwaffe"),
+        ("str_inventory_flag_crossbow", "balkan_class_firearm", "Firearm", "Feuerwaffe"),
+        ("str_inventory_weapon.Bolt", "balkan_class_shot", "Shot", "Kugeln"),
+        ("str_inventory_type_6", "balkan_class_shot", "Shot", "Kugeln"),
+    )
+    for sid, key, en, de in fixed:
+        text = strings.add(key, en, de)
         lines.append(f"\t<string id={quoteattr(sid)} text={quoteattr(text)} />")
     lines.append("</strings>")
     return "\n".join(lines) + "\n"

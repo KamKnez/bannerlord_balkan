@@ -160,6 +160,8 @@
     <string id="balkan_culture_venezianer_desc" text="Die Durchlauchtigste Republik Venedig beherrscht die Adria von ihrer Lagune aus. An der dalmatinischen Küste verwalten ihre Provveditori ummauerte Häfen voller Kaufleute, Seeleute und Soldaten. Italienische Pikeniere und Musketiere halten die Mauern, dalmatinische Schiavoni und albanische Cappelletti führen den Kleinkrieg im Hinterland." />
     <string id="balkan_formation_ranged" text="Schützen" />
     <string id="balkan_formation_ranged_class" text="Schützen" />
+    <string id="balkan_class_firearm" text="Feuerwaffe" />
+    <string id="balkan_class_shot" text="Kugeln" />
     <string id="balkan_kingdom_vlandia" text="Habsburgermonarchie" />
     <string id="balkan_kingdom_vlandia_short" text="Habsburger" />
     <string id="balkan_kingdom_vlandia_title" text="Königreich Kroatien-Slawonien unter der Habsburger Krone" />

@@ -19,4 +19,9 @@
 	<string id="str_culture_description.venice" text="{=balkan_culture_venezianer_desc}The Most Serene Republic of Venice rules the Adriatic from its lagoon. Along the Dalmatian coast its provveditori govern walled ports filled with merchants, sailors and soldiers. Italian pikemen and musketeers hold the walls, while Dalmatian schiavoni and Albanian cappelletti fight the war of raids in the hinterland." />
 	<string id="str_troop_group_name.1" text="{=balkan_formation_ranged}Musketeers" />
 	<string id="str_formation_class_string.Ranged" text="{=balkan_formation_ranged_class}Musketeers" />
+	<string id="str_inventory_weapon.Crossbow" text="{=balkan_class_firearm}Firearm" />
+	<string id="str_inventory_type_10" text="{=balkan_class_firearm}Firearm" />
+	<string id="str_inventory_flag_crossbow" text="{=balkan_class_firearm}Firearm" />
+	<string id="str_inventory_weapon.Bolt" text="{=balkan_class_shot}Shot" />
+	<string id="str_inventory_type_6" text="{=balkan_class_shot}Shot" />
 </strings>
