@@ -283,3 +283,62 @@ weiblich = true  # 22 Jahre, vorher Elendara
 id = "lord_V11_c2"
 name = "Petar"
 weiblich = false  # 19 Jahre, vorher Dagunic
+
+# ---------------------------------------------------------------- Orte
+
+# Neue Namen der Städte, Burgen und Dörfer (Kommentar: Name in Calradia).
+# Zugeordnet nach der Lage auf der Karte, die Hauptstadt des Reichs ist fest gesetzt.
+
+[orte]
+town_V1 = "Zagreb"                          # Sargot
+town_V2 = "Osijek"                          # Ocs Hall
+town_V3 = "Varaždin"                        # Pravend
+town_V5 = "Ljubljana"                       # Galend
+town_V6 = "Karlovac"                        # Jaculan
+town_V7 = "Požega"                          # Charas
+town_V8 = "Graz"                            # Ostican
+town_V9 = "Pécs"                            # Rovalt
+castle_V1 = "Brod"                          # Usanc Castle
+castle_V2 = "Senj"                          # Hongard Castle
+castle_V3 = "Ogulin"                        # Drapand Castle
+castle_V4 = "Sisak"                         # Ormanfard Castle
+castle_V5 = "Koprivnica"                    # Tirby Castle
+castle_V6 = "Virovitica"                    # Caleus Castle
+castle_V7 = "Udbina"                        # Talivel Castle
+castle_V8 = "Kostajnica"                    # Verecsand Castle
+castle_village_V1_1 = "Garčin"              # Usanc
+castle_village_V2_1 = "Krivi Put"           # Hongard
+castle_village_V2_2 = "Jablanac"            # Ferton
+castle_village_V3_1 = "Josipdol"            # Drapand
+castle_village_V3_2 = "Modruš"              # Valanby
+castle_village_V4_1 = "Petrinja"            # Ormanfard
+castle_village_V5_1 = "Đurđevac"            # Tirby
+castle_village_V5_2 = "Drnje"               # Sirindac
+castle_village_V6_1 = "Slatina"             # Caleus
+castle_village_V6_2 = "Pitomača"            # Deriat
+castle_village_V7_1 = "Korenica"            # Talivel
+castle_village_V7_2 = "Bunić"               # Rodetan
+castle_village_V8_1 = "Dubica"              # Verecsand
+castle_village_V8_2 = "Majur"               # Marin
+village_V1_1 = "Sesvete"                    # Calioc
+village_V1_2 = "Samobor"                    # Etirfurd
+village_V2_1 = "Valpovo"                    # Mareiven
+village_V2_2 = "Bizovac"                    # Oritan
+village_V2_3 = "Čepin"                      # Fregian
+village_V3_2 = "Ivanec"                     # Rulund
+village_V3_3 = "Ludbreg"                    # Larnac
+village_V3_4 = "Varaždinske Toplice"        # Palisont
+village_V5_1 = "Kranj"                      # Furbec
+village_V5_2 = "Vrhnika"                    # Meroc
+village_V5_3 = "Domžale"                    # Nogrent
+village_V6_1 = "Duga Resa"                  # Arromanc
+village_V6_2 = "Ozalj"                      # Mot
+village_V6_3 = "Draganić"                   # Alorstan
+village_V6_4 = "Netretić"                   # Chornad
+village_V7_1 = "Pleternica"                 # Savinth
+village_V7_2 = "Kutjevo"                    # Vesin
+village_V8_1 = "Leibnitz"                   # Horsger
+village_V8_2 = "Voitsberg"                  # Cananc
+village_V8_3 = "Gleisdorf"                  # Remental
+village_V9_1 = "Mohács"                     # Alantas
+village_V9_2 = "Siklós"                     # Halisvust
