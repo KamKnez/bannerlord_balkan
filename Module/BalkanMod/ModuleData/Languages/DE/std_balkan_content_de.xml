@@ -405,6 +405,26 @@
     <string id="balkan_settlement_castle_village_EW8_2_text" text="Cetina ist ein Dorf bei Vrlika. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
     <string id="balkan_settlement_village_EW6_3_text" text="Solin liegt an der Küste bei Split. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
     <string id="balkan_settlement_village_EW6_4_text" text="Stobreč ist ein Dorf bei Split. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
+    <string id="balkan_event_karlowitz_1699" text="Der Friede von Karlowitz" />
+    <string id="balkan_event_karlowitz_1699_text" text="In Karlowitz hat der Sultan Frieden mit dem Kaiser und mit Venedig geschlossen. Slawonien und die Lika sind wieder habsburgisch, Venedig behält seine Eroberungen in Dalmatien. Die Grenzen sind entlang von Una, Save und den Dinarischen Bergen gezogen, doch niemand an der Grenze glaubt, dass der Frieden hält." />
+    <string id="balkan_event_venedig_krieg_1714" text="Der Sultan erklärt Venedig den Krieg" />
+    <string id="balkan_event_venedig_krieg_1714_text" text="Die Pforte will Morea zurück. Großwesir Silahdar Ali Pascha hat der Republik den Krieg erklärt, und die Grenzbegs Bosniens sammeln schon ihre Männer gegen Dalmatien." />
+    <string id="balkan_event_habsburg_krieg_1716" text="Der Kaiser tritt in den Krieg ein" />
+    <string id="balkan_event_habsburg_krieg_1716_text" text="Kaiser Karl VI. hat sein Bündnis mit Venedig erneuert. Prinz Eugen von Savoyen sammelt das kaiserliche Heer bei Peterwardein, und entlang der ganzen Militärgrenze greifen die Grenzer zu ihren Musketen." />
+    <string id="balkan_event_passarowitz_1718" text="Der Friede von Passarowitz" />
+    <string id="balkan_event_passarowitz_1718_text" text="In Passarowitz haben der Kaiser, Venedig und der Sultan Frieden geschlossen. Der Kaiser gewinnt Belgrad und das Banat, Venedig verliert Morea, behält aber seine Gewinne in Dalmatien. An der Grenze wird es wieder still, vorerst." />
+    <string id="balkan_rise_grenzer" text="Grenzer an der Militärgrenze" />
+    <string id="balkan_rise_grenzer_text" text="Eure Familie hat Land an der Militärgrenze, frei von Leibeigenschaft gegen Kriegsdienst. Ihr habt Euch mit ein paar Männern aus Eurem Dorf beim Generalat in Karlovac gemeldet. Der General hat Euch eine Hauptmannsstelle versprochen, wenn Ihr Euch im Dienst des Kaisers bewährt." />
+    <string id="balkan_rise_grenzer_goal" text="Werdet Hauptmann der Militärgrenze: Dient den Habsburgern, bis sie Euch als Vasall aufnehmen." />
+    <string id="balkan_rise_grenzer_success" text="Das Generalat hat Euch zum Hauptmann der Militärgrenze gemacht. Von nun an geht Ihr Euren eigenen Weg." />
+    <string id="balkan_rise_kapetan" text="Aus dem Haus eines Grenzbegs" />
+    <string id="balkan_rise_kapetan_text" text="Eure Familie dient seit Generationen den Kapetanije der Krajina. Mit ein paar Azaps aus dem Dorf Eures Vaters seid Ihr nach Banja Luka gekommen. Der Beylerbey braucht Männer, die eine Festung gegen die Deutschen halten können, und es kümmert ihn nicht, aus welchem Haus Ihr kommt." />
+    <string id="balkan_rise_kapetan_goal" text="Werdet Kapetan einer Grenzfestung: Besitzt als Mitglied des Osmanischen Reichs eine eigene Burg." />
+    <string id="balkan_rise_kapetan_success" text="Eine Festung der Grenze gehört Euch, und man nennt Euch Kapetan. Von nun an geht Ihr Euren eigenen Weg." />
+    <string id="balkan_rise_hajduk" text="Hajduk in den Bergen" />
+    <string id="balkan_rise_hajduk_text" text="Die Männer des Subaşı haben Euer Haus wegen einer Schuld niedergebrannt, die Euer Vater nie hatte. Mit einer Handvoll Freunde seid Ihr in die Wälder über der Drina gegangen. Die Dörfler bringen Euch Brot und Nachrichten, und der Pascha hat einen Preis auf Euren Kopf ausgesetzt." />
+    <string id="balkan_rise_hajduk_goal" text="Baut Eure eigene Bande auf: Führt mindestens {COUNT} Männer an." />
+    <string id="balkan_rise_hajduk_success" text="Eure Bande ist von der Drina bis zum Meer bekannt, und die Lieder erzählen schon von Euch. Von nun an geht Ihr Euren eigenen Weg." />
     <string id="balkan_bg_bosniaken_aserai_kinsfolk" text="die Sippe eines Begs" />
     <string id="balkan_bg_bosniaken_aserai_kinsfolk_text" text="Eure Familie war ein Nebenzweig eines alten bosnischen Begs-Hauses. Der Timar Eures Vaters reichte für ein gutes Pferd, nicht aber für die Rüstung der schweren Reiterei, und so ritt er mit den leichten Reitern, die über die Grenze streifen." />
     <string id="balkan_bg_bosniaken_aserai_slave" text="das Haus eines Kapetans" />

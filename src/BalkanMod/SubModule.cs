@@ -2,6 +2,7 @@ using BalkanMod.CampaignBehaviors;
 using BalkanMod.CampaignModels;
 using BalkanMod.CharacterCreation;
 using BalkanMod.Missions;
+using BalkanMod.Story;
 using BalkanMod.TimeControl;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
@@ -81,6 +82,10 @@ namespace BalkanMod
                 campaignStarter.AddBehavior(new BalkanMarketBehavior());
                 // Bei der Charaktererstellung nur die acht Kulturen der Mod
                 campaignStarter.AddBehavior(new BalkanCharacterCreationBehavior());
+                // Zwischen den Kriegen: Kriege und Frieden zu ihren Daten (data/ereignisse.toml)
+                campaignStarter.AddBehavior(new HistoricalEventsBehavior());
+                // Geführter Aufstieg: Startgeschichte mit Ziel (data/aufstieg.toml)
+                campaignStarter.AddBehavior(new GuidedRiseBehavior());
             }
         }
 
