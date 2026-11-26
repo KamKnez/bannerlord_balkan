@@ -17,6 +17,9 @@
 			<xsl:attribute name="color">FF1A1A1A</xsl:attribute>
 			<xsl:attribute name="color2">FFE8C547</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_4_1</xsl:attribute>
+			<xsl:attribute name="banner_key">11.15.15.4345.4345.764.764.1.0.0.164.149.149.512.512.764.764.1.0.0</xsl:attribute>
+			<xsl:attribute name="primary_banner_color">0xffF7BF46</xsl:attribute>
+			<xsl:attribute name="secondary_banner_color">0xff211f1f</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -32,6 +35,9 @@
 			<xsl:attribute name="color">FF9E1B1B</xsl:attribute>
 			<xsl:attribute name="color2">FF1E6B3A</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_3_1</xsl:attribute>
+			<xsl:attribute name="banner_key">11.83.83.4345.4345.764.764.1.0.0.463.172.172.466.466.764.764.1.0.0</xsl:attribute>
+			<xsl:attribute name="primary_banner_color">0xffD22D33</xsl:attribute>
+			<xsl:attribute name="secondary_banner_color">0xffffffff</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -48,6 +54,9 @@
 			<xsl:attribute name="color2">FF1F3E8C</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_1_47</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
+			<xsl:attribute name="banner_key">11.33.33.4345.4345.764.764.1.0.0.162.146.146.512.512.764.764.1.0.0</xsl:attribute>
+			<xsl:attribute name="primary_banner_color">0xffefece5</xsl:attribute>
+			<xsl:attribute name="secondary_banner_color">0xff2C4D86</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -64,6 +73,9 @@
 			<xsl:attribute name="color2">FFE8C547</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_1_7</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="banner_key">11.14.14.4345.4345.764.764.1.0.0.160.15.15.497.497.764.764.1.0.0</xsl:attribute>
+			<xsl:attribute name="primary_banner_color">0xff8D291A</xsl:attribute>
+			<xsl:attribute name="secondary_banner_color">0xffF7BF46</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

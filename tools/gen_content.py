@@ -391,6 +391,14 @@ def check_realms(realms, cultures):
             elif label in place_names:
                 errors.append(f"{where}: Ortsname '{label}' gibt es schon ({place_names[label]})")
             place_names[label] = f"{where}: {sid}"
+        w = r.get("wappen")
+        if w is not None:
+            for key in ("hintergrund", "farbe"):
+                v = w.get(key)
+                if not (isinstance(v, list) and len(v) == 2 and isinstance(v[0], int) and str(v[1]).lower().startswith("0xff")):
+                    errors.append(f"{where}: wappen.{key} muss [Nummer, \"0xffRRGGBB\"] sein")
+            if not isinstance(w.get("zeichen"), int) or not isinstance(w.get("groesse"), int):
+                errors.append(f"{where}: wappen.zeichen und wappen.groesse müssen Zahlen sein")
         if r["siedlungen"] and not r["kultur_wechseln"]:
             errors.append(f"{where}: siedlungen nur mit kultur_wechseln = true")
     return errors
@@ -451,6 +459,16 @@ def build_realms(realms, strings):
         }
         if r["kultur_wechseln"]:
             kattrs["culture"] = culture
+        if "wappen" in r:
+            w = r["wappen"]
+            bg, fg = w["hintergrund"], w["farbe"]
+            kattrs["banner_key"] = (
+                f"11.{bg[0]}.{bg[0]}.4345.4345.764.764.1.0.0."
+                f"{w['zeichen']}.{fg[0]}.{fg[0]}.{w['groesse']}.{w['groesse']}.764.764.1.0.0"
+            )
+            # Die Clans des Reichs übernehmen diese Farben im Spiel (Clan.UpdateBannerColorsAccordingToKingdom)
+            kattrs["primary_banner_color"] = bg[1]
+            kattrs["secondary_banner_color"] = fg[1]
         t["Kingdoms"] += patch_template("Kingdom", key, kattrs)
         for c in r["clan"]:
             cattrs = {"name": text_value(strings, f"balkan_{c['id']}", c["name"])}

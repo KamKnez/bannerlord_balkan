@@ -186,6 +186,9 @@ Fertig ist v0.1, wenn:
 - **Siedlungen (umgesetzt):** Alle 203 Städte, Burgen und Dörfer der vier Reiche tragen echte Namen, per XSLT statt
   C# (Daten unter `[orte]` in `data/reiche/`). Die Zuordnung folgt der Lage auf der Karte, Hauptstädte sind fest.
   Die Beschreibungstexte der Orte sind noch die von Calradia.
+- **Wappen (umgesetzt, vorläufig):** Habsburger schwarzer Adler auf Gold, Osmanen weißes Zeichen auf Rot, Venedig
+  goldener Löwe auf Rot, Ragusa blaues Zeichen auf Weiß. Die Zeichen stammen aus dem Banner-Editor des Spiels
+  (Adler des Imperiums, Löwe von Vlandia); passendere Zeichen werden nach dem Spieltest ausgesucht.
 - **Noch offen bei den Truppen:** Deutsche, Ungarn, Türken (Janitscharen), Serben (Grenzer, Martolosen) und Morlaken
   kommen als zusätzliche Truppen in die Party-Vorlagen der Lords, sobald die Königreiche stehen.
 - **Offen:** Der Beylerbey heißt vorerst „Mehmed“ (Platzhalter). Wer war um 1700 Beylerbey von Bosnien und wer Provveditore generale in Dalmatien? Das wird in der Recherche weiter geprüft.

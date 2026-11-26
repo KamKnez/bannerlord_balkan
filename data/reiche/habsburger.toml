@@ -28,6 +28,14 @@ en = "Adam Batthyány is Ban of Croatia. He fought in the great war against the 
 de = "Adam Batthyány ist Ban von Kroatien. Er hat im großen Türkenkrieg gekämpft und muss nun sichern, was gewonnen wurde."
 
 
+# Wappen: schwarzer Adler (Zeichen des Westlichen Imperiums) auf Gold.
+# Zeichen und Farben sind Nummern aus Native/ModuleData/banner_icons.xml (Farbe: Nummer und Wert).
+[wappen]
+zeichen = 164
+groesse = 512
+hintergrund = [15, "0xffF7BF46"]
+farbe = [149, "0xff211f1f"]
+
 [[clan]]
 id = "clan_vlandia_1"  # vorher dey Meroc, Oberhaupt Hero.lord_4_1
 name = "Batthyány"
