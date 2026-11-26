@@ -47,6 +47,7 @@ namespace BalkanMod
             _loadedMessageShown = true;
             // Charaktererstellung mit den Kulturen der Mod; erst hier, weil StoryMode.dll jetzt geladen ist
             CultureTemplateScope.Apply(_harmony);
+            BalkanBackgrounds.Apply(_harmony);
             // Gefecht: nur die Kulturen und Truppen der Mod
             CustomBattlePatches.Apply(_harmony);
             var text = new TextObject("{=balkanmod_loaded}Balkan mod loaded.");

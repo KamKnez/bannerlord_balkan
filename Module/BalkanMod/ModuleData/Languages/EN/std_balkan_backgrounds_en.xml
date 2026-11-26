@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Erzeugt von tools/gen_content.py aus data/. Nicht von Hand ändern. -->
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="English" />
+  </tags>
+  <strings>
+    <string id="5kbeAC7k" text="On the war-torn Balkan frontier, some women as well as men learn to fight from an early age. You..." />
+    <string id="F7OO5SAa" text="As a youngster growing up on the frontier between Emperor, Sultan and Doge, war was never too far away. You..." />
+    <string id="bhE2i6OU" text="served as a nobleman's groom." />
+    <string id="i3k7YtA8" text="You were chosen by a knight to accompany a minor nobleman of the realm. You were not given major responsibilities - mostly carrying messages and tending to his horse - but it did give you a chance to see how campaigns were planned and men were deployed in battle." />
+    <string id="wNHqFlDL" text="You were chosen by your superior officer to serve a general as a courier. You were not given major responsibilities - mostly carrying messages and tending to his horse - but it did give you a chance to see how campaigns were planned and men were deployed in battle." />
+    <string id="888lmJqs" text="Every army on the frontier values good light cavalry and is sure to recruit borderers with the skills to fill those ranks. You were a good enough rider that your neighbours pitched in to buy you a small horse and a good bow so that you could fulfil their levy obligations." />
+    <string id="sYuN6hPD" text="Every army on the frontier values good light cavalry and is sure to recruit borderers with the skills to fill those ranks. You were a good enough rider that your neighbours pitched in to buy you a small horse and a sheaf of javelins so that you could fulfil their levy obligations." />
+    <string id="afH90aNs" text="Levies armed with spear and shield, drawn from smallholding farmers, have always been the backbone of the armies of the Balkans." />
+    <string id="1SUTcF0J" text="The gang leaders who kept watch over the slums of the frontier towns were always in need of poor youth to run messages and back them up in turf wars, while thrill-seeking merchants' sons and daughters sometimes slummed it in their company as well." />
+    <string id="I3PcdaaL" text="Wolves and bears are a constant menace to the flocks in the mountains of the Balkans. You went with a group of your fellow villagers and fired the shot that brought down the beast." />
+    <string id="W6pKpEoT" text="You prepare to set off for a grand adventure in the Balkans! Here is your character. Continue if you are ready, or go back to make changes." />
+  </strings>
+</base>

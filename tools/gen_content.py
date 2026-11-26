@@ -21,6 +21,7 @@ Aufruf:
   python3 tools/gen_content.py           Dateien schreiben
   python3 tools/gen_content.py --check   nur prüfen, ob die Dateien aktuell sind (für die CI)
 """
+import re
 import sys
 import tomllib
 from pathlib import Path
@@ -49,6 +50,23 @@ VILLAGE_TYPES = {
 # Kulturbilder des Spiels für die Charaktererstellung (Brush-Stile in Native/GUI/Brushes/CharacterCreation.xml)
 CULTURE_IMAGES = ("empire", "vlandia", "sturgia", "aserai", "khuzait", "battania")
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
+OUT_EN_BACKGROUNDS = MODULE_DATA / "Languages" / "EN" / "std_balkan_backgrounds_en.xml"
+OUT_BG_TABLE = ROOT / "src" / "BalkanMod" / "CharacterCreation" / "BalkanBackgroundTable.g.cs"
+# Eltern-Optionen der Charaktererstellung je Vorlage-Kultur (CharacterCreationCampaignBehavior, v1.5.7)
+BACKGROUND_OPTIONS = {
+    "empire": ("empire_lanlord_option", "empire_merchant_option", "empire_farmer_option", "empire_artisan_option",
+               "empire_hunter_option", "empire_vagabond_option"),
+    "vlandia": ("vlandia_retainer_option", "vlandia_merchant_option", "vlandia_farmer_option",
+                "vlandia_blacksmith_option", "vlandia_hunter_option", "vlandia_mercenary_option"),
+    "sturgia": ("sturgia_companion_option", "sturgia_trader_option", "sturgia_farmer_option",
+                "sturgia_artisan_option", "sturgia_hunter_option", "sturgia_vagabond_option"),
+    "aserai": ("aserai_kinsfolk_option", "aserai_slave_option", "aserai_physician_option", "aserai_farmer_option",
+               "aserai_herder_option", "aserai_artisan_option"),
+    "battania": ("battania_retainer_option", "battania_healer_option", "battania_farmer_option",
+                 "battania_artisan_option", "battania_hunter_option", "battania_bard_option"),
+    "khuzait": ("khuzait_retainer_option", "khuzait_merhant_option", "khuzait_mercenary_option",
+                "khuzait_farmer_option", "khuzait_healer_option", "khuzait_nomad_herder_option"),
+}
 OUT_TRADE = MODULE_DATA / "balkan_handel.xml"
 
 OUT_REALMS = {
@@ -407,6 +425,98 @@ def build_cc_table(cultures):
         "    }",
         "}",
     ]) + "\n"
+
+
+def culture_template(c):
+    return c["vorlage"] if c["art"] == "neu" else c["kultur_id"]
+
+
+def load_backgrounds():
+    folder = DATA / "lebenslaeufe"
+    result = {}
+    for path in sorted(folder.glob("*.toml")):
+        with path.open("rb") as fh:
+            result[path.stem] = tomllib.load(fh)
+    return result
+
+
+def check_backgrounds(backgrounds, cultures):
+    errors = []
+    keys = {c["schluessel"]: c for c in cultures}
+    for name, data in backgrounds.items():
+        where = f"data/lebenslaeufe/{name}.toml"
+        if name == "allgemein":
+            for tid_, entry in data.items():
+                if not re.fullmatch(r"[A-Za-z0-9]{8}", tid_):
+                    errors.append(f"{where}: [{tid_}] ist keine Text-Id des Spiels (8 Zeichen)")
+                if set(entry) != {"en", "de"}:
+                    errors.append(f"{where}: [{tid_}] braucht genau en und de")
+            continue
+        c = keys.get(name)
+        if c is None:
+            errors.append(f"{where}: keine Kultur mit schluessel = \"{name}\"")
+            continue
+        allowed = BACKGROUND_OPTIONS.get(culture_template(c), ())
+        for option, entry in data.items():
+            if option not in allowed:
+                errors.append(f"{where}: [{option}] gibt es bei der Vorlage {culture_template(c)} nicht "
+                              f"(erlaubt: {', '.join(allowed)})")
+            for field in ("titel", "text"):
+                if set(entry.get(field, {})) != {"en", "de"}:
+                    errors.append(f"{where}: [{option}] {field} braucht en und de")
+    return errors
+
+
+def build_backgrounds(backgrounds, cultures, strings):
+    """Eigene Lebensläufe: C#-Tabelle (Kultur, Option) -> Texte, und Ersatz von Spieltexten nach Text-Id."""
+    keys = {c["schluessel"]: c for c in cultures}
+    rows = []
+    for name, data in backgrounds.items():
+        if name == "allgemein":
+            continue
+        cid = keys[name]["kultur_id"]
+        for option, entry in data.items():
+            short = option.removesuffix("_option")
+            title = strings.add(f"balkan_bg_{name}_{short}", entry["titel"]["en"], entry["titel"]["de"])
+            text = strings.add(f"balkan_bg_{name}_{short}_text", entry["text"]["en"].strip(),
+                               entry["text"]["de"].strip())
+            rows.append(f'            {{ ("{cid}", "{option}"), ({cs_string(title)}, {cs_string(text)}) }},')
+    table = "\n".join([
+        "// Erzeugt von tools/gen_content.py aus data/lebenslaeufe/. Nicht von Hand ändern.",
+        "using System.Collections.Generic;",
+        "",
+        "namespace BalkanMod.CharacterCreation",
+        "{",
+        "    internal static class BalkanBackgroundTable",
+        "    {",
+        "        /// <summary>(Kultur-Id, Option der Charaktererstellung) -> eigener Titel und Text.</summary>",
+        "        public static readonly Dictionary<(string Culture, string Option), (string Title, string Text)> Options =",
+        "            new Dictionary<(string Culture, string Option), (string Title, string Text)>",
+        "        {",
+        *rows,
+        "        };",
+        "    }",
+        "}",
+    ]) + "\n"
+    en = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        HEADER,
+        '<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" '
+        'xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">',
+        "  <tags>",
+        '    <tag language="English" />',
+        "  </tags>",
+        "  <strings>",
+    ]
+    for tid_, entry in backgrounds.get("allgemein", {}).items():
+        strings.add(tid_, entry["en"], entry["de"])
+        en.append(f"    <string id={quoteattr(tid_)} text={quoteattr(entry['en'])} />")
+    en += ["  </strings>", "</base>"]
+    return table, "\n".join(en) + "\n"
+
+
+def cs_string(value):
+    return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
 def build_de(strings):
@@ -1052,6 +1162,10 @@ def generate():
     errors = check_trade(trade, cultures, weapons, vanilla_ids)
     if errors:
         raise SystemExit("Fehler in data/handel.toml:\n  - " + "\n  - ".join(errors))
+    backgrounds = load_backgrounds()
+    errors = check_backgrounds(backgrounds, cultures)
+    if errors:
+        raise SystemExit("Fehler in data/lebenslaeufe:\n  - " + "\n  - ".join(errors))
     strings = Strings()
     files = {
         OUT_ITEMS: build_items(weapons, strings),
@@ -1064,6 +1178,7 @@ def generate():
         OUT_CC_TABLE: build_cc_table(cultures),
     }
     files.update(build_realms(realms, strings))
+    files[OUT_BG_TABLE], files[OUT_EN_BACKGROUNDS] = build_backgrounds(backgrounds, cultures, strings)
     files[OUT_DE] = build_de(strings)
     return files
 

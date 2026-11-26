@@ -1,0 +1,24 @@
+# Lebensläufe der Kroaten (Vorlage Vlandia). Aufbau: siehe README.md
+[vlandia_retainer_option]
+titel = { en = "A magnate's retainers", de = "das Gefolge eines Magnaten" }
+text = { en = "Your father was the bailiff of a Croatian magnate, one of the great houses like the Draškovićs or the Erdődys. He looked after his lord's estates, settled disputes in the villages and trained the levy. In war he rode with the lord's armoured horse.", de = "Euer Vater war Verwalter eines kroatischen Magnaten, eines der großen Häuser wie der Drašković oder der Erdődy. Er kümmerte sich um die Güter seines Herrn, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit der gepanzerten Reiterei seines Herrn." }
+
+[vlandia_merchant_option]
+titel = { en = "Merchants of Zagreb", de = "Kaufleute aus Zagreb" }
+text = { en = "Your family were merchants in Gradec, the free royal town on the hill of Zagreb. They sent wagons to Carniola, Styria and the Venetian coast and sat in the merchants' guild.", de = "Eure Familie waren Kaufleute in Gradec, der freien königlichen Stadt auf dem Hügel von Zagreb. Sie schickten Wagen nach Krain, in die Steiermark und an die venezianische Küste und saßen in der Kaufmannszunft." }
+
+[vlandia_farmer_option]
+titel = { en = "Frontiersmen", de = "Grenzer" }
+text = { en = "Your family held land on the Military Frontier. They owed no labour to any lord, but every man in the house took up his musket when the Turks came across the Una. They had just enough to live on and a little to sell.", de = "Eure Familie hatte Land an der Militärgrenze. Sie schuldeten keinem Herrn Fron, doch jeder Mann im Haus griff zur Muskete, wenn die Türken über die Una kamen. Sie hatten genug zum Leben und ein wenig zum Verkaufen." }
+
+[vlandia_blacksmith_option]
+titel = { en = "Town smiths", de = "Schmiede in der Stadt" }
+text = { en = "Your family owned a smithy in Karlovac, the star-shaped fortress on the Kupa. Your father had a small voice in the town council and served in the citizens' militia.", de = "Eure Familie besaß eine Schmiede in Karlovac, der sternförmigen Festung an der Kupa. Euer Vater hatte eine kleine Stimme im Stadtrat und diente in der Bürgerwehr." }
+
+[vlandia_hunter_option]
+titel = { en = "Hunters", de = "Jäger" }
+text = { en = "Your family lived in a village in the forests of Gorski Kotar but owned no land. Your father took whatever work he could find and spent long days in the woods hunting and trapping, always wary of the count's gamekeepers.", de = "Eure Familie lebte in einem Dorf in den Wäldern des Gorski Kotar, besaß aber kein Land. Euer Vater nahm jede Arbeit an, die er fand, und verbrachte lange Tage jagend und Fallen stellend im Wald, immer auf der Hut vor den Jägern des Grafen." }
+
+[vlandia_mercenary_option]
+titel = { en = "Soldiers for hire", de = "Söldner" }
+text = { en = "Your father served in one of the Croat companies the Emperor hired out across Europe, men who had known war so long that they never took well to peace. Their marksmen were valued from the Rhine to the Danube. Your mother followed the baggage train and took you along in the wake of bloody campaigns.", de = "Euer Vater diente in einer der kroatischen Kompanien, die der Kaiser in ganz Europa einsetzte, Männer, die den Krieg so lange kannten, dass sie mit dem Frieden nie zurechtkamen. Ihre Schützen waren vom Rhein bis zur Donau gefragt. Eure Mutter zog mit dem Tross und nahm Euch mit auf blutige Feldzüge." }

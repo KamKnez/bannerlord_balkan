@@ -1,0 +1,24 @@
+# Lebensläufe der Serben (Vorlage Sturgia). Aufbau: siehe README.md
+[sturgia_companion_option]
+titel = { en = "A vojvoda's companions", de = "das Gefolge eines Vojvoden" }
+text = { en = "Your father belonged to the armed household of a Serbian vojvoda. He sat at his lord's table, looked after his villages and stood at his side in the front rank in battle. When the Patriarch led the people north across the Danube, they went with him.", de = "Euer Vater gehörte zum bewaffneten Haus eines serbischen Vojvoden. Er saß an der Tafel seines Herrn, kümmerte sich um dessen Dörfer und stand im Kampf in der ersten Reihe an seiner Seite. Als der Patriarch das Volk nach Norden über die Donau führte, zogen sie mit ihm." }
+
+[sturgia_trader_option]
+titel = { en = "River traders", de = "Flusshändler" }
+text = { en = "Your family were merchants in one of the towns on the Danube and the Sava. They shipped wool, hides, wax and honey upriver to the Habsburg lands and brought back cloth and iron.", de = "Eure Familie waren Kaufleute in einer der Städte an Donau und Save. Sie verschifften Wolle, Häute, Wachs und Honig flussaufwärts in die habsburgischen Länder und brachten Tuch und Eisen zurück." }
+
+[sturgia_farmer_option]
+titel = { en = "A zadruga's farmers", de = "Bauern einer Zadruga" }
+text = { en = "Your family belonged to a zadruga, a great household of brothers and cousins who worked their land together under one elder. They had just enough to live on and sent their sons when the levy was called.", de = "Eure Familie gehörte zu einer Zadruga, einem großen Haus von Brüdern und Vettern, die ihr Land gemeinsam unter einem Ältesten bestellten. Sie hatten genug zum Leben und schickten ihre Söhne, wenn das Aufgebot gerufen wurde." }
+
+[sturgia_artisan_option]
+titel = { en = "Town artisans", de = "Handwerker in der Stadt" }
+text = { en = "Your family owned a workshop in a town, working copper, leather and wool brought in from the villages. Your father had a small voice in his esnaf, the guild of his craft, and served in the town watch.", de = "Eure Familie besaß eine Werkstatt in einer Stadt und verarbeitete Kupfer, Leder und Wolle aus den Dörfern. Euer Vater hatte eine kleine Stimme in seinem Esnaf, der Zunft seines Handwerks, und diente in der Stadtwache." }
+
+[sturgia_hunter_option]
+titel = { en = "Forest folk", de = "Waldleute" }
+text = { en = "Your family wanted nothing to do with pashas or tax collectors. They lived deep in the oak forests of Šumadija, clearing fields for a year or two before moving on, and hunted fox, hare, marten and wolf.", de = "Eure Familie wollte mit Paschas und Steuereintreibern nichts zu tun haben. Sie lebten tief in den Eichenwäldern der Šumadija, rodeten Felder für ein, zwei Jahre und zogen dann weiter, und sie jagten Fuchs, Hase, Marder und Wolf." }
+
+[sturgia_vagabond_option]
+titel = { en = "Refugees", de = "Flüchtlinge" }
+text = { en = "Your family were among the refugees the wars had driven from their villages. They lived in shacks outside the walls of the river towns and took whatever work they could find. Sometimes they ran errands for smugglers and for the men who sold the hajduks' plunder.", de = "Eure Familie gehörte zu den Flüchtlingen, die die Kriege aus ihren Dörfern vertrieben hatten. Sie lebten in Hütten vor den Mauern der Flussstädte und nahmen jede Arbeit an, die sie fanden. Manchmal liefen sie Botengänge für Schmuggler und für die Hehler der Hajduken." }

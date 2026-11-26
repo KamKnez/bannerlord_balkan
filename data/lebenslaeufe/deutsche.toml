@@ -1,0 +1,24 @@
+# Lebensläufe der Deutschen (Vorlage Vlandia). Aufbau: siehe README.md
+[vlandia_retainer_option]
+titel = { en = "A count's retainers", de = "das Gefolge eines Grafen" }
+text = { en = "Your father was steward to an imperial count who had been given lands in Slavonia after the Turks were driven out. He looked after the estates, settled disputes in the villages and trained the levy. In war he rode with the count's cuirassiers.", de = "Euer Vater war Verwalter eines Reichsgrafen, der nach der Vertreibung der Türken Güter in Slawonien erhalten hatte. Er kümmerte sich um die Güter, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit den Kürassieren des Grafen." }
+
+[vlandia_merchant_option]
+titel = { en = "Burghers", de = "Bürger" }
+text = { en = "Your family were merchants who traded along the Danube between Vienna, Buda and Belgrade. They shipped cloth and iron goods downriver, brought back hides and cattle, and sat in the merchants' guild of their town.", de = "Eure Familie waren Kaufleute, die an der Donau zwischen Wien, Ofen und Belgrad handelten. Sie brachten Tuch und Eisenwaren flussabwärts, kamen mit Häuten und Vieh zurück und saßen in der Kaufmannsgilde ihrer Stadt." }
+
+[vlandia_farmer_option]
+titel = { en = "Settlers", de = "Siedler" }
+text = { en = "Your family were among the Swabian colonists who took up land along the Danube after the Turks were driven out. They cleared the land, built their farmhouse and had just enough to feed themselves and sell a little. The men served in the militia.", de = "Eure Familie gehörte zu den schwäbischen Siedlern, die nach der Vertreibung der Türken Land an der Donau nahmen. Sie rodeten das Land, bauten ihren Hof und hatten genug zum Leben und ein wenig zum Verkaufen. Die Männer dienten in der Landwehr." }
+
+[vlandia_blacksmith_option]
+titel = { en = "Town smiths", de = "Schmiede in der Stadt" }
+text = { en = "Your family owned a smithy in Osijek, the garrison town on the Drava. Your father shod the cavalry's horses, had a small voice in the town council and served in the citizens' militia.", de = "Eure Familie besaß eine Schmiede in Osijek, der Garnisonsstadt an der Drau. Euer Vater beschlug die Pferde der Reiterei, hatte eine kleine Stimme im Stadtrat und diente in der Bürgerwehr." }
+
+[vlandia_hunter_option]
+titel = { en = "Hunters", de = "Jäger" }
+text = { en = "Your family lived in a village on the edge of the great oak forests of Slavonia but owned no land. Your father took whatever work he could find and spent long days hunting and trapping, always wary of the lord's gamekeepers.", de = "Eure Familie lebte in einem Dorf am Rand der großen Eichenwälder Slawoniens, besaß aber kein Land. Euer Vater nahm jede Arbeit an, die er fand, und verbrachte lange Tage jagend und Fallen stellend, immer auf der Hut vor den Jägern des Herrn." }
+
+[vlandia_mercenary_option]
+titel = { en = "A soldier's family", de = "eine Soldatenfamilie" }
+text = { en = "Your father served in one of the Emperor's regiments of foot, men who had marched from one war to the next since the siege of Vienna and never took well to peace. Their musketeers were valued wherever there was fighting. Your mother followed the baggage train and took you along in the wake of bloody campaigns.", de = "Euer Vater diente in einem der kaiserlichen Regimenter zu Fuß, Männer, die seit der Belagerung Wiens von einem Krieg in den nächsten zogen und mit dem Frieden nie zurechtkamen. Ihre Musketiere waren überall gefragt, wo gekämpft wurde. Eure Mutter zog mit dem Tross und nahm Euch mit auf blutige Feldzüge." }

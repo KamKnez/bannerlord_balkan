@@ -1,0 +1,24 @@
+# Lebensläufe der Venezianer und Dalmatiner (Vorlage Imperium). Aufbau: siehe README.md
+[empire_lanlord_option]
+titel = { en = "A noble's retainers", de = "das Gefolge eines Adligen" }
+text = { en = "Your father was a trusted man of a noble family of Zadar and managed their estates in the countryside. In war he rode with the Croatian horse that the Republic raises in Dalmatia, armed as a lancer.", de = "Euer Vater war ein Vertrauter einer Adelsfamilie aus Zadar und verwaltete ihre Güter auf dem Land. Im Krieg ritt er mit der kroatischen Reiterei, die die Republik in Dalmatien aufstellt, als Lanzenreiter." }
+
+[empire_merchant_option]
+titel = { en = "Merchants", de = "Kaufleute" }
+text = { en = "Your family were merchants in Split who shipped Dalmatian wine, oil and salt to Venice and sent caravans into the Bosnian hinterland. They had a seat in the town council.", de = "Eure Familie waren Kaufleute in Split, die dalmatinischen Wein, Öl und Salz nach Venedig verschifften und Karawanen ins bosnische Hinterland schickten. Sie hatten einen Sitz im Stadtrat." }
+
+[empire_farmer_option]
+titel = { en = "Colonists", de = "Kolonisten" }
+text = { en = "Your family took up land in the territory the Republic had just won behind the coast. They had just enough to feed themselves and sell a little, and the men served in the cernide, the rural militia.", de = "Eure Familie nahm Land in dem Gebiet, das die Republik gerade hinter der Küste gewonnen hatte. Sie hatten genug zum Leben und ein wenig zum Verkaufen, und die Männer dienten in den Cernide, der Landmiliz." }
+
+[empire_artisan_option]
+titel = { en = "Artisans", de = "Handwerker" }
+text = { en = "Your family owned a workshop in a Dalmatian town, building boats, weaving sails or twisting rope. Your father had a small voice in his scuola, the fraternity of his craft, and served in the town militia.", de = "Eure Familie besaß eine Werkstatt in einer dalmatinischen Stadt und baute Boote, webte Segel oder drehte Seile. Euer Vater hatte eine kleine Stimme in seiner Scuola, der Bruderschaft seines Handwerks, und diente in der Stadtmiliz." }
+
+[empire_hunter_option]
+titel = { en = "Foresters", de = "Waldleute" }
+text = { en = "Your family lived in a village in the Zagora hills but owned no land. Your father took whatever work he could find and spent long days hunting and trapping, always wary of the counts' wardens.", de = "Eure Familie lebte in einem Dorf in den Hügeln der Zagora, besaß aber kein Land. Euer Vater nahm jede Arbeit an, die er fand, und verbrachte lange Tage jagend und Fallen stellend, immer auf der Hut vor den Aufsehern der Grafen." }
+
+[empire_vagabond_option]
+titel = { en = "Harbour poor", de = "Arme am Hafen" }
+text = { en = "Your family were among the poor who crowded the harbours of Split and Zadar and took whatever work they could find on the quays. Sometimes they worked for the smugglers of the coast, and you saw the dark side of life early.", de = "Eure Familie gehörte zu den Armen, die sich an den Häfen von Split und Zadar drängten und jede Arbeit auf den Kais annahmen. Manchmal arbeiteten sie für die Schmuggler der Küste, und Ihr habt früh die dunkle Seite des Lebens gesehen." }

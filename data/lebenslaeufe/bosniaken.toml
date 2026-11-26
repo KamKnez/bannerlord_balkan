@@ -1,0 +1,24 @@
+# Lebensläufe der Bosniaken (Vorlage Aserai). Aufbau: siehe README.md
+[aserai_kinsfolk_option]
+titel = { en = "Kin of a beg", de = "die Sippe eines Begs" }
+text = { en = "Your family were a lesser branch of an old Bosnian begs' house. Your father's timar paid for a good horse but not for the armour of the heavy cavalry, so he rode with the light horsemen who raid across the frontier.", de = "Eure Familie war ein Nebenzweig eines alten bosnischen Begs-Hauses. Der Timar Eures Vaters reichte für ein gutes Pferd, nicht aber für die Rüstung der schweren Reiterei, und so ritt er mit den leichten Reitern, die über die Grenze streifen." }
+
+[aserai_slave_option]
+titel = { en = "A kapetan's household", de = "das Haus eines Kapetans" }
+text = { en = "Your father served in the armed household of a frontier kapetan and rode with his armoured horsemen against Habsburg and Venetian raiders. For his valour he was given land of his own, and then he married your mother.", de = "Euer Vater diente im bewaffneten Haus eines Grenzkapetans und ritt mit dessen gepanzerten Reitern gegen habsburgische und venezianische Streifscharen. Für seine Tapferkeit erhielt er eigenes Land, und dann heiratete er Eure Mutter." }
+
+[aserai_physician_option]
+titel = { en = "Physicians", de = "Ärzte" }
+text = { en = "Your family were respected physicians in the čaršija of Sarajevo. They set bones, treated fevers and mixed remedies from the herbs of the hills. Even the begs sent for them.", de = "Eure Familie waren angesehene Ärzte in der Čaršija von Sarajevo. Sie richteten Knochen, behandelten Fieber und mischten Arzneien aus den Kräutern der Berge. Selbst die Begs ließen nach ihnen schicken." }
+
+[aserai_farmer_option]
+titel = { en = "Valley farmers", de = "Bauern im Tal" }
+text = { en = "Your family farmed wheat and plums in a valley along the Bosna. Your father marched with the foot soldiers of the kapetanija when the frontier forts called for men.", de = "Eure Familie baute Weizen und Pflaumen in einem Tal an der Bosna an. Euer Vater zog mit dem Fußvolk der Kapetanija, wenn die Grenzfestungen Männer brauchten." }
+
+[aserai_herder_option]
+titel = { en = "Highland herders", de = "Hirten im Hochland" }
+text = { en = "Your family drove their flocks up to the high pastures of the Dinaric mountains every summer and brought them back down to the valleys before the snows.", de = "Eure Familie trieb ihre Herden jeden Sommer auf die hohen Weiden des Dinarischen Gebirges und vor dem ersten Schnee wieder hinab in die Täler." }
+
+[aserai_artisan_option]
+titel = { en = "Mahala toughs", de = "Raufbolde der Mahala" }
+text = { en = "Your father worked for one of the strongmen who keep order in the poorer mahalas of the town. He settled quarrels over debts, dice and insults, and his heavy stick settled the rest.", de = "Euer Vater arbeitete für einen der starken Männer, die in den ärmeren Mahalas der Stadt für Ordnung sorgen. Er schlichtete Streit um Schulden, Würfel und Beleidigungen, und den Rest erledigte sein schwerer Stock." }
