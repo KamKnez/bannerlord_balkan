@@ -265,6 +265,46 @@ robuste Mechaniken als viele, die nur der Spieler nutzt. Bevor eine Mechanik geb
 - **Tribut:** Kleine Staaten zahlen Tribut an Großmächte, zum Beispiel Ragusa an die Pforte. Bleibt der Tribut aus, droht Krieg.
 - **Nicht geplant:** diplomatische Gesandtschaften (zu aufwendig für die KI).
 
+### Jahreszeiten, Land und Krieg (ausgewählt)
+
+- **Jahreszeiten und Winter:** Im Winter ziehen Armeen langsamer, der Nachschub wird knapper, und die KI beendet
+  Feldzüge im Herbst und beginnt neue im Frühjahr. Historisch wurde im Winter kaum gekämpft.
+- **Längere Jahreszeiten (optional):** Damit die Jahre nicht so schnell vergehen. Im Grundspiel hat ein Jahr
+  84 Tage (4 Jahreszeiten zu je 3 Wochen zu je 7 Tagen). Laut den Referenz-Assemblies von v1.5.7 sind
+  `CampaignTime.DaysInWeek`, `WeeksInSeason` und `SeasonsInYear` veränderbare statische Felder, keine festen
+  Konstanten. Mehr Wochen pro Jahreszeit sind also wahrscheinlich möglich, zum Beispiel 6 statt 3 Wochen, also
+  168 Tage im Jahr. Das ist aber noch nicht im Spiel getestet. Risiken sind abgeleitete interne Werte, das Alter
+  der Figuren (das sonst nur halb so schnell steigt) und alte Spielstände. Der Wert wird deshalb nur beim Start
+  einer Kampagne gewählt und danach nicht mehr geändert. Unser eigener Code, der mit 84 Tagen rechnet
+  (`HistoricalEventsBehavior`), muss dann den Wert des Spiels lesen. Der vorhandene Zeitraffer (`BalkanTimeSpeed`)
+  macht die Jahre nicht länger, er spult nur schneller vor. *(prüfen)*
+- **Flüsse als Grenzen:** Save und Donau lassen sich nur an Brücken, Furten oder Fähren überqueren. Dadurch werden
+  Festungen wie Brod, Belgrad oder Petrovaradin zu Schlüsselpunkten. Das geht über die Karte (nicht begehbares
+  Gelände mit wenigen Übergängen), und die KI findet ihre Wege selbst.
+- **Söldnerkompanien:** fertige Truppen wie Albaner, Schweizer oder Kosaken, die man gegen viel Gold anheuert.
+  Sie bauen auf den Söldnertruppen und Banden des Spiels auf, die auch die KI schon anheuert.
+- **Nachkommen und Erbe:** Kinder erben den Ruf und die Feinde der Eltern. Dazu kommt Blutrache: Wird ein
+  Familienmitglied getötet, wird die Familie des Täters zum Feind. Das baut auf dem Erbsystem des Spiels auf.
+- **Kriegsmüdigkeit:** Lange Kriege senken Steuern und Moral. Ab einer Schwelle drängt die KI zum Frieden. Das baut
+  auf der Kriegsmüdigkeit auf, die das Spiel für Friedensentscheidungen schon kennt.
+- **Später und optional:** Rekrutierung nach Region (Grenzer nur an der Militärgrenze, Janitscharen nur in osmanischen
+  Städten, Husaren nur in Ungarn), weil das sonst zu kompliziert wird.
+
+### Reihenfolge und Grenze für die Stabilität
+
+Jede Erweiterung kommt einzeln, wird getestet und hat eine eigene Einstellung zum Abschalten. Erst wenn eine stabil
+läuft, kommt die nächste. Die Reihenfolge geht von „nutzt vorhandene Systeme“ zu „braucht eigene Logik“:
+
+1. **Nur Daten und Karte:** Flüsse als Grenzen, Söldnerkompanien, Handelsrouten, stärkere Hajduken.
+2. **Kleine Regeln an vorhandenen Systemen:** Winter (Tempo und Nachschub), Kriegsmüdigkeit, Tribut, Ruf als Held
+   oder Räuber.
+3. **Eigene Logik mit Spielständen:** Nachkommen und Blutrache, Gefangenschaft mit Galeere, Pilgerfahrten,
+   Aufstände (8c), Religion (8d).
+4. **Hohes Risiko, nur optional:** längere Jahreszeiten, Feldkanonen, Rekrutierung nach Region.
+
+**Genug für jetzt:** Mit dieser Liste ist der Plan voll. Neue Ideen kommen erst wieder dazu, wenn Stufe 1 und 2
+im Spiel laufen. Mehr gleichzeitig würde die KI überfordern und das Spiel instabil machen.
+
 ## 9. Umfang der ersten Version (v0.1)
 
 Fertig ist v0.1, wenn:
