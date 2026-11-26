@@ -6,14 +6,26 @@ getestet**; der erste Import ist der Test. Erzeugt wird alles mit den Skripten u
 
 ## Ausschnitt
 
-- Quadrat von 875 km um 44,6° N / 17,3° O: von Venedig bis hinter Belgrad und Niš, von Wien und Buda bis Durrës,
-  Ohrid und Apulien. Kroatien, Slawonien, Bosnien, Dalmatien, Ragusa, Montenegro und Serbien liegen in der Mitte.
+- Quadrat von 2050 km um 42,6° N / 24,3° O: von Venedig bis zur Krim und Kertsch, von Krakau, Lemberg und Kiew
+  bis Kreta und Zypern. Darin liegen Wien, Buda, der ganze Balkan, die Walachei und Moldau, Istanbul, Ankara,
+  Griechenland mit allen Inseln, Süditalien und Sizilien. So steht es auch im Design ([design.md](design.md)).
 - Raster wie Calradia: 16 × 16 Knoten zu 53 m, 256 Punkte je Knoten, also 848 × 848 Einheiten und 4096 × 4096
-  Bildpunkte. **Eine Einheit im Spiel ist rund ein Kilometer.**
-- Die Walachei liegt außerhalb. Ein Gelände lässt sich später nicht einfach ansetzen; wer sie will, ändert den
-  Ausschnitt in `tools/weltkarte/rahmen.py` und erzeugt alles neu (dann wird alles kleiner).
+  Bildpunkte. **Eine Einheit im Spiel sind rund 2,4 km**, ein Bildpunkt 500 m.
 - Höhen sind nicht maßstäblich: Das Spiel kennt eine einzige Wasserhöhe für Meer, Seen und Flüsse. Deshalb liegen
   alle Täler knapp über dem Wasser, und Berge zählen nach ihrer Höhe über dem Tal. Wasser steht auf **2,25**.
+
+### Was der Maßstab bedeutet
+
+- **Spieltempo:** Die Karte ist so groß wie Calradia, Reisen von Rand zu Rand dauern also gleich lang. Von Zagreb
+  nach Sarajevo sind es rund 120 Einheiten, von Wien nach Istanbul rund 530.
+- **Dichte:** Calradia hat 280 Orte auf derselben Fläche. Das Kernland (Kroatien, Bosnien, Dalmatien, Ragusa) ist
+  hier nur rund 170 × 170 Einheiten groß und hat Platz für etwa 40 Orte, nicht für 203. Vorläufig stehen dort
+  trotzdem alle 203, dicht gedrängt; die übrige Karte ist fast leer. Die Orte müssen in einer eigenen Runde neu
+  verteilt werden (siehe offene Punkte).
+- **Navmesh:** gleiche Fläche wie Calradia, also der gleiche Aufwand wie beim kleinen Ausschnitt. Mehr Küste und
+  Inseln, dafür weniger Flüsse: Gegraben sind nur große Flüsse (Donau, Save, Drau, Theiß, Dnjepr, Dnjestr, Pruth,
+  Olt, Morava, Vardar, Marica …) und die wichtigsten im Kernland (Una, Vrbas, Bosna, Drina, Neretva, Kupa, Cetina).
+- **Leistung:** Geländegröße wie im Spiel, also kein Mehraufwand für den Laptop.
 
 ## Dateien
 
@@ -46,13 +58,13 @@ Navmesh von Calradia sind nicht mitkopiert. Das Spiel benutzt diese Szene noch n
 
    | Stelle | x, y | Höhe |
    |---|---|---|
-   | Meeresboden weit draußen | z. B. 250, 250 | 0,0 |
-   | Zagreb | 325, 556 | rund 2,7 |
-   | Dinara | 353, 366 | rund 8,2 |
-   | Triglav | 167, 621 | rund 11,6 |
-   | höchster Punkt (Hohe Tauern) | 84, 701 | 14,2 |
+   | Meeresboden weit draußen | z. B. 600, 500 (Schwarzes Meer) | 0,0 |
+   | Zagreb | 158, 585 | rund 2,7 |
+   | Triglav | 93, 619 | rund 8,2 |
+   | Olymp | 356, 309 | rund 10,8 |
+   | höchster Punkt (Ätna) | 85, 220 | 12,5 |
 
-   Stimmen die Höhen nicht, Import mit anderem Scale wiederholen. Liegt Venedig unten links statt oben links,
+   Stimmen die Höhen nicht, Import mit anderem Scale wiederholen. Liegt Kreta oben statt unten,
    die Bilder aus `gespiegelt/` nehmen.
 4. **Masken:** je Ebene die Ebene anwählen, *Properties*, Strg+A, *Import Materialmap*:
 
@@ -74,25 +86,25 @@ Navmesh von Calradia sind nicht mitkopiert. Das Spiel benutzt diese Szene noch n
 - **Navmesh.** Ohne Navmesh bewegt sich auf der Karte nichts, und der Editor kann es für die Weltkarte nicht
   erzeugen oder importieren. `hilfskarte_gelaende.png` zeigt, was wohin gehört. Nummern der Flächen laut
   Community-Doku: 1 Ebene, 4 Wald, 7 Gebirge (unpassierbar), 8 See, 10 Wasser, 11 Fluss, 6 Furt.
-- **Flussübergänge.** Die Karte hat viele Flüsse (Save, Drau, Donau, Una, Vrbas, Bosna, Drina, Neretva …). Jeder
-  braucht Furten oder Brücken im Navmesh, sonst trennt er die Karte.
-- **Inseln.** Auf Inseln liegen Rab, Hvar, Lastovo und Orebić (die Halbinsel Pelješac ist auf der Karte an der
-  Landenge von Ston vom Festland getrennt), dazu die Dörfer Pag, Lopar, Preko, Okrug, Stari Grad, Jelsa, Polače,
-  Goveđari, Saplunara, Ubli, Pasadur und Skrivena Luka. Ohne Schiffe sind sie nur erreichbar, wenn das Navmesh
-  einen Übergang übers Wasser bekommt, oder sie ziehen aufs Festland um.
+- **Flussübergänge und Meerengen.** Jeder Fluss braucht Furten oder Brücken im Navmesh, sonst trennt er die
+  Karte. Bosporus und Dardanellen brauchen einen Übergang, sonst ist Kleinasien abgeschnitten.
+- **Inseln.** Ohne Schiffe sind Inseln nur erreichbar, wenn das Navmesh einen Übergang übers Wasser bekommt.
+  Derzeit stehen dort Hvar und ein paar Dörfer. Kreta, Zypern, Sizilien und die Ägäis sind Gelände ohne Orte.
 - Danach im Editor am Objekt `settlements_scripts`: *CheckPositions*, dann
   *ComputeAndSaveSettlementDistanceCache*.
 
 ## Offene Punkte
 
-- **Ragusa ist zu dicht.** 49 Orte auf 100 km Küste: Um Dubrovnik stehen die Orte bis zu 20 km neben ihrer
-  echten Lage, damit sich die Symbole nicht überdecken (Spalte `versatz_km`). Besser wäre, Ragusa später weniger
-  Orte zu geben.
+- **Orte neu verteilen (wichtigster Punkt).** Die 203 Orte der Mod stehen an ihrer echten Lage, soweit Platz
+  ist; im Gedränge um Dubrovnik und in Dalmatien liegen manche bis zu 70 km daneben (Spalte `versatz_km`). Für
+  diesen Maßstab sollten im Kernland rund 40 Orte bleiben und die übrigen an echte Orte in Ungarn, Serbien, der
+  Walachei, Bulgarien, Griechenland und Kleinasien umziehen, mit neuen Namen und Besitzern.
 - **Übrige Calradia-Reiche.** Die 190 Orte von Sturgia, Battania, Khuzait und dem Nördlichen Imperium stehen
-  vorläufig an echten Orten rundum (Wien, Buda, Venedig, Triest, Temeswar, Niš, Skadar …, Quelle `vorläufig` in
-  `data/weltkarte/orte.csv`), ihre Dörfer im Kreis darum. Namen und Besitzer sind noch die von Calradia.
+  vorläufig an echten Orten rundum (Wien, Buda, Krakau, Lemberg, Venedig, Neapel, Bukarest, Jassy, Kiew, die
+  Krim, Istanbul, Edirne, Saloniki, Athen, Smyrna, Ankara …, Quelle `vorläufig` in `data/weltkarte/orte.csv`),
+  ihre Dörfer im Kreis darum. Namen und Besitzer sind noch die von Calradia.
 - **Dorfkoordinaten** mit Quelle `geschätzt` sind aus dem Gedächtnis auf wenige Kilometer genau.
 - **Karte scharf schalten:** Erst wenn Gelände und Navmesh stehen, wird die Szene zu `Main_map` der Mod, und
   `siedlungen_positionen.xslt` (liegt in der Szene) kommt in die `SubModule.xml`. Bis dahin spielt die Mod auf
   Calradia.
-- Die heutigen Wälder, Stauseen und Flussläufe sind die von heute, nicht die von 1700.
+- Wälder, Stauseen und Flussläufe sind die von heute, nicht die von 1700.

@@ -3,8 +3,8 @@
 Aufruf: python3 siedlungen_setzen.py <Arbeitsordner> <Zielordner>
 
 Liest data/weltkarte/orte.csv (echte Koordinaten) und die Ids des Spiels aus tools/vanilla/ids_v1.5.7.txt.
-Jeder Ort kommt auf den nächsten begehbaren Punkt bei seiner echten Lage, mit Mindestabständen wie auf der
-Calradia-Karte (sonst überdecken sich die Symbole). Dörfer ohne eigenen Eintrag werden rund um ihre Stadt oder
+Jeder Ort kommt auf den nächsten begehbaren Punkt bei seiner echten Lage, mit Mindestabständen (etwas
+enger als auf der Calradia-Karte), damit sich die Symbole nicht überdecken. Dörfer ohne eigenen Eintrag werden rund um ihre Stadt oder
 Burg verteilt, Verstecke passend zu ihrer Art (Küste, Gebirge, Wald ...) über die Karte gestreut.
 Ergebnis: siedlungen.csv und vorschau.png im Zielordner.
 """
@@ -23,10 +23,10 @@ import rahmen as R
 arbeit, ziel = sys.argv[1], sys.argv[2]
 wurzel = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 RAND = 22.0                                  # Abstand zum Kartenrand in Einheiten
-ABSTAND = {("town", "town"): 14.0, ("town", "castle"): 10.0, ("castle", "castle"): 10.0,
-           ("town", "village"): 6.5, ("castle", "village"): 6.5, ("village", "village"): 6.0}
-ABSTAND_VERSTECK = 7.0
-DORF_UM_SITZ = 10.0                          # Abstand automatisch verteilter Dörfer zu ihrem Sitz
+ABSTAND = {("town", "town"): 10.0, ("town", "castle"): 7.5, ("castle", "castle"): 7.5,
+           ("town", "village"): 5.0, ("castle", "village"): 5.0, ("village", "village"): 4.5}
+ABSTAND_VERSTECK = 6.0
+DORF_UM_SITZ = 8.0                           # Abstand automatisch verteilter Dörfer zu ihrem Sitz
 
 spiel = np.load(f"{arbeit}/spielhoehe.npy")
 steigung = np.load(f"{arbeit}/steigung.npy")
@@ -49,7 +49,9 @@ platz = {"town": begehbar & (anteil_gross >= 0.35), "castle": begehbar & (anteil
 
 # Verstecke und automatisch verteilte Dörfer nur aufs Festland, nicht auf Inseln
 marken, _ = ndi.label(~meer)
-festland = marken == np.bincount(marken.ravel())[1:].argmax() + 1
+gr = np.bincount(marken.ravel())
+gr[0] = 0
+festland = gr[marken] > 0.015 * marken.size        # Europa und Kleinasien, keine Inseln
 platz["hideout"] &= festland
 
 
@@ -188,8 +190,8 @@ with open(f"{ziel}/siedlungen.csv", "w", newline="", encoding="utf-8") as f:
 inseln = sorted(z["name"] for z in zeilen.values() if z["name"] and not festland[
     int(R.spiel_zu_pixel(z["x"], z["y"])[1]), int(R.spiel_zu_pixel(z["x"], z["y"])[0])])
 print("Auf Inseln:", ", ".join(inseln))
-weit = sorted((z for z in zeilen.values() if z["versatz_km"] > 12 and z["name"]), key=lambda z: -z["versatz_km"])
-print(f"{len(zeilen)} Orte gesetzt; mehr als 12 km von der echten Lage: {len(weit)}")
+weit = sorted((z for z in zeilen.values() if z["versatz_km"] > 40 and z["name"]), key=lambda z: -z["versatz_km"])
+print(f"{len(zeilen)} Orte gesetzt; mehr als 40 km von der echten Lage: {len(weit)}")
 for z in weit[:40]:
     print(f"  {z['id']:22} {z['name']:18} {z['versatz_km']:.0f} km")
 

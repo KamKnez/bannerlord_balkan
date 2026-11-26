@@ -22,19 +22,14 @@ import rahmen as R
 ordner = sys.argv[1]
 if not hasattr(np, "in1d"):      # pysheds ruft noch np.in1d auf, das neuere numpy-Versionen nicht mehr haben
     np.in1d = np.isin
-FLUSS_AB_KM2 = 800.0        # ab diesem Einzugsgebiet wird ein verzeichneter Fluss gegraben
-NAH_AN_NE_KM = 7.0          # so nah muss der Lauf an einer Natural-Earth-Linie liegen
+FLUSS_AB_KM2 = 4000.0       # ab diesem Einzugsgebiet wird ein verzeichneter Fluss gegraben
+NAH_AN_NE_KM = 12.0         # so nah muss der Lauf an einer Natural-Earth-Linie liegen
 # Flüsse, die Natural Earth fehlen oder deren Oberlauf zu klein wäre: (Name, Breite, Länge) eines Punkts am
 # Oberlauf; ab dort wird talwärts bis zum Meer oder zum nächsten Fluss gegraben.
 STARTPUNKTE = [
-    ("Cetina", 43.93, 16.43), ("Krka", 44.04, 16.20), ("Zrmanja", 44.20, 16.07), ("Miljacka", 43.86, 18.43),
-    ("Bosna", 43.82, 18.27), ("Una", 44.50, 16.13), ("Vrbas", 43.98, 17.45), ("Neretva", 43.42, 18.10),
-    ("Sana", 44.52, 16.75), ("Kupa", 45.49, 14.85), ("Lim", 42.85, 19.87), ("Tara", 42.95, 19.45),
-    ("Piva", 43.15, 18.85), ("Ibar", 42.90, 20.87), ("Zapadna Morava", 43.85, 20.03), ("Kolubara", 44.27, 19.89),
-    ("Spreča", 44.42, 18.70), ("Lašva", 44.20, 17.60), ("Trebišnjica", 42.71, 18.35), ("Morača", 42.60, 19.33),
-    ("Vardar", 41.99, 21.43), ("Krka (Kranjska)", 45.89, 14.85), ("Mura", 47.07, 15.43), ("Rába", 47.00, 16.10),
-    ("Soča", 46.25, 13.60), ("Tagliamento", 46.37, 13.05), ("Piave", 46.14, 12.22), ("Brenta", 45.77, 11.73),
-    ("Bednja", 46.23, 16.20), ("Orljava", 45.33, 17.68), ("Bosut", 45.20, 18.80), ("Lika", 44.60, 15.37),
+    ("Cetina", 43.93, 16.43), ("Krka", 44.04, 16.20), ("Bosna", 43.82, 18.27), ("Una", 44.50, 16.13),
+    ("Vrbas", 43.98, 17.45), ("Neretva", 43.42, 18.10), ("Kupa", 45.49, 14.85), ("Morača", 42.60, 19.33),
+    ("Ibar", 42.90, 20.87), ("Zapadna Morava", 43.85, 20.03), ("Vardar", 41.99, 21.43),
 ]
 
 hoehe = np.load(f"{ordner}/hoehe.npy")
@@ -61,7 +56,7 @@ for name in ("ne_10m_rivers_lake_centerlines", "ne_10m_rivers_europe"):
         form = eintrag.shape
         daten = eintrag.record.as_dict()
         rang = int(daten.get("scalerank") or 12)
-        if rang >= 11 and not daten.get("name"):      # namenlose Kanäle und Bäche weglassen
+        if rang >= 10 or not daten.get("name"):       # nur größere, benannte Flüsse
             continue
         b = form.bbox
         if b[2] < 9 or b[0] > 26 or b[3] < 38 or b[1] > 51:
@@ -92,7 +87,8 @@ richtung = np.asarray(richtung)
 fuellung2 = np.asarray(gefuellt) - h2
 
 # In den Ebenen ist das Gefälle zu klein, um den Lauf aus den Höhen zu finden: dort gilt die Natural-Earth-Linie.
-relief = ndi.maximum_filter(h2, 25) - ndi.minimum_filter(np.where(meer2, 0, h2), 25)   # Höhenspanne in rund 10 km
+fenster = max(3, int(round(10000.0 / zelle)) | 1)
+relief = ndi.maximum_filter(h2, fenster) - ndi.minimum_filter(np.where(meer2, 0, h2), fenster)   # Höhenspanne in rund 10 km
 fluss2 = (einzug2 >= FLUSS_AB_KM2) & nah & (relief >= 90.0)
 # kurze Bruchstücke entfernen
 marken, _ = ndi.label(fluss2, structure=np.ones((3, 3)))
@@ -111,7 +107,7 @@ for name, lat, lon in STARTPUNKTE:
     z, s = z - 6 + dz, s - 6 + ds
     laenge = 0
     while 0 < z < n - 1 and 0 < s < n - 1 and not meer2[z, s] and richtung[z, s] in schritt:
-        if fluss2[z, s] and laenge > 3:
+        if (fluss2[z, s] and laenge > 3) or relief[z, s] < 60.0:    # bis zum nächsten Fluss oder zur Ebene
             break
         fluss2[z, s] = True
         dz, ds = schritt[int(richtung[z, s])]
@@ -121,10 +117,10 @@ for name, lat, lon in STARTPUNKTE:
 
 # zurück auf volle Auflösung
 gross = lambda a: np.repeat(np.repeat(a, 2, axis=0), 2, axis=1)
-einzug = gross(np.where(einzug2 >= 100.0, einzug2, 0)).astype(np.float32)
+einzug = gross(np.where(einzug2 >= FLUSS_AB_KM2 / 8, einzug2, 0)).astype(np.float32)
 halb = np.where(fluss2, 1.5 + 1.1 * np.log10(np.maximum(einzug2, FLUSS_AB_KM2) / FLUSS_AB_KM2), 0)
 rang2 = np.asarray(rang_bild).astype(np.float64)                     # 20 - Rang, 0 = keine Linie
-ne_breite = np.where(rang2 > 0, 2.0 + 0.3 * np.clip(rang2 - 8, 0, 8), 0)   # Rang 12: 2,0 ... Rang 4 und kleiner: 4,4
+ne_breite = np.where(rang2 > 0, 1.5 + 0.3 * np.clip(rang2 - 10, 0, 8), 0)  # Rang 9: 1,8 ... Rang 2: 3,9
 halb = np.maximum(halb, np.where((relief < 170.0) & ~meer2, ne_breite, 0))
 np.save(f"{ordner}/einzug.npy", einzug)
 np.save(f"{ordner}/fluss.npy", gross(halb).astype(np.float32))

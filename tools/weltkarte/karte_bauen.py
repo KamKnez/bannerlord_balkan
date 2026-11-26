@@ -29,7 +29,7 @@ meer |= gr[marken] > 0.005 * marken.size
 
 W = R.WASSERHOEHE
 LAND_UEBER_WASSER = 0.35     # so hoch liegt flaches Land über der Wasserfläche
-GIPFEL = 13.0                # Spielhöhe für BEZUG_M Meter über dem Tal
+GIPFEL = 9.0                 # Spielhöhe für BEZUG_M Meter über dem Tal
 BEZUG_M = 2800.0
 KRUEMMUNG = 1.15            # über 1: Hügelland bleibt flach und begehbar, Hochgebirge ragt heraus
 WASSERTIEFE = 0.6            # Flüsse und Seen
@@ -47,7 +47,7 @@ see = ndi.binary_dilation(see, iterations=3) & binnen
 
 # Talgrund: bekannte Höhen an Meer, Seen, Flüssen und Bächen, dazwischen geglättet interpoliert
 tal_hoehe = ndi.minimum_filter(hoehe, 5)
-bach = (einzug >= 150.0) & (fuellung < 20.0)
+bach = (einzug > 0) & (fuellung < 20.0)
 fest = meer | binnen | (fluss_halb > 0) | bach
 wert = np.where(meer, 0.0, np.where(fest, tal_hoehe, 0.0))
 zaehler = np.zeros_like(hoehe)

@@ -2,13 +2,13 @@
 
 Die Spielkarte ist wie Calradia ein Quadrat aus 16 x 16 Knoten zu je 53 m (848 x 848 Einheiten) mit
 256 Höhenpunkten je Knoten, also 4096 x 4096 Bildpunkten. Der Ausschnitt ist flächentreu (Lambert) um den
-Mittelpunkt abgebildet; eine Einheit im Spiel entspricht rund einem Kilometer.
+Mittelpunkt abgebildet; eine Einheit im Spiel entspricht rund 2,4 Kilometern.
 """
 import math
 
-MITTE_BREITE = 44.6      # Grad Nord
-MITTE_LAENGE = 17.3      # Grad Ost
-KANTE_KM = 875.0         # Kantenlänge des Ausschnitts
+MITTE_BREITE = 42.6      # Grad Nord
+MITTE_LAENGE = 24.3      # Grad Ost
+KANTE_KM = 2050.0        # Kantenlänge des Ausschnitts: Venedig bis Krim, Kiew bis Kreta und Zypern
 KNOTEN = 16
 KNOTEN_GROESSE = 53.0
 PUNKTE_JE_KNOTEN = 256
@@ -32,6 +32,18 @@ def geo_zu_meter(breite, laenge):
     x = _R * k * math.cos(p) * math.sin(l - l0)
     y = _R * k * (math.cos(p0) * math.sin(p) - math.sin(p0) * math.cos(p) * math.cos(l - l0))
     return x, y
+
+
+def meter_zu_geo(x, y):
+    """Umkehrung von geo_zu_meter."""
+    p0, l0 = math.radians(MITTE_BREITE), math.radians(MITTE_LAENGE)
+    rho = math.hypot(x, y)
+    if rho < 1e-9:
+        return MITTE_BREITE, MITTE_LAENGE
+    c = 2 * math.asin(min(1.0, rho / (2 * _R)))
+    breite = math.asin(math.cos(c) * math.sin(p0) + y * math.sin(c) * math.cos(p0) / rho)
+    laenge = l0 + math.atan2(x * math.sin(c), rho * math.cos(p0) * math.cos(c) - y * math.sin(p0) * math.sin(c))
+    return math.degrees(breite), math.degrees(laenge)
 
 
 def geo_zu_spiel(breite, laenge):

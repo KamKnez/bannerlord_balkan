@@ -15,12 +15,11 @@ Die Anleitung für den Import steht in [docs/weltkarte.md](../../docs/weltkarte.
 
 ## Neu erzeugen
 
-Braucht Python 3 mit `numpy scipy pillow rasterio pyshp pysheds` und rund 1 GB Platz. In einem Arbeitsordner `A`:
+Braucht Python 3 mit `numpy scipy pillow rasterio pyshp pysheds` und Netzzugang. In einem Arbeitsordner `A`:
 
-1. Copernicus-Kacheln nach `A/dem/` laden (10 bis 24 Grad Ost, 39 bis 49 Grad Nord), je Kachel
-   `https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N44_00_E018_00_DEM/Copernicus_DSM_COG_30_N44_00_E018_00_DEM.tif`.
-2. Natural Earth nach `A/ne/<name>/` entpacken: `ne_10m_rivers_lake_centerlines` und `ne_10m_rivers_europe`
+1. Natural Earth nach `A/ne/<name>/` entpacken: `ne_10m_rivers_lake_centerlines` und `ne_10m_rivers_europe`
    (`https://naturalearth.s3.amazonaws.com/10m_physical/<name>.zip`).
+2. Höhen und Landbedeckung lädt `quellen_lesen.py` selbst aus dem Netz (dauert rund zehn Minuten).
 3. Der Reihe nach, aus diesem Ordner:
 
 ```
