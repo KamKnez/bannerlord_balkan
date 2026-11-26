@@ -56,7 +56,8 @@ wird der Modulordner nach dem Bauen direkt ins Spiel kopiert.
 | `src/BalkanMod/` | C#-Code der Mod |
 | `data/` | Rohdaten, aus denen die XML-Dateien entstehen: Namenslisten, Kulturen und Truppen ([data/kulturen/](data/kulturen/README.md)), Königreiche, Clans und Lords ([data/reiche/](data/reiche/README.md)), Feuerwaffen ([data/waffen.toml](data/waffen.toml)), Läden ([data/handel.toml](data/handel.toml)) |
 | `tools/` | Generator `gen_content.py` und Prüfskripte |
-| `docs/` | Recherche und Design-Dokumente (ab Phase 1) |
+| `docs/` | Recherche und Design-Dokumente (ab Phase 1), Import der eigenen Weltkarte ([docs/weltkarte.md](docs/weltkarte.md)) |
+| `tools/weltkarte/`, `data/weltkarte/` | Erzeugt Höhenbild, Masken und Ortsplätze der Balkan-Weltkarte aus Geodaten ([Anleitung](tools/weltkarte/README.md)) |
 
 ## Automatische Prüfung
 

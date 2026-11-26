@@ -7,6 +7,7 @@
 | [recherche/03-geschichte-kern.md](recherche/03-geschichte-kern.md) | Historischer Überblick über den Kern (Kroatien, Slawonien, Bosnien-Herzegowina, Dalmatien) um 1700 |
 | [recherche/04-spielformate.md](recherche/04-spielformate.md) | Aufbau der Spieldateien (Kulturen, Truppen, Clans, Reiche, Lords, Siedlungen, XSLT-Patches), gelesen aus Bannerlord v1.5.7 |
 | [szenarien.md](szenarien.md) | Entwürfe für eigene Kampagnen-Szenarien, Spielerstarts und Modifikatoren |
+| [weltkarte.md](weltkarte.md) | Eigene Balkan-Weltkarte: Ausschnitt, Dateien, Import im Editor, was Handarbeit bleibt |
 | [design.md](design.md) | Design-Dokument: Fraktionen, Völker, Truppenbäume, Orte, Schusswaffen, Low Fantasy, Umfang v0.1 |
 
 Grundsätze: Grenzen und Lords wie um 1700 (nach Karlowitz), Truppen im Stil von 1600 bis 1680.
