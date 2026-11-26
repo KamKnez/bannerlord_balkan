@@ -170,6 +170,39 @@ Nur Atmosphäre, Ereignisse und kleine Effekte, keine offene Magie.
 
 Eigene Kampagnen-Szenarien, Spielerstarts und Modifikatoren für die Sandbox sind in [szenarien.md](szenarien.md) gesammelt. Entschieden ist die Kampagnenstruktur: eine offene Sandbox „Zwischen den Kriegen“ ab 1699 mit historischen Ereignissen zu ihren Daten, dazu ein geführter Aufstieg mit einer Startgeschichte je Volk als Einstieg. In v0.1 kommt nur das Standard-Szenario „Nach Karlowitz“, die Ereignisse und Startgeschichten folgen in Phase 3.
 
+## 8b. Aufträge (Quests)
+
+Die normalen Bannerlord-Aufträge funktionieren und ihre Mechanik passt: Banditen jagen, Waren liefern, Herden treiben,
+Fehden schlichten. In manchen Texten stecken aber noch Calradia-Begriffe und Calradia-Waren.
+
+- **Feinschliff, nicht erst am Ende:** Wenn wir ein Volk ersetzen, passen wir im selben Schritt die Quest-Texte an,
+  die dieses Volk betreffen (Begriffe, Ortsbezüge, Waren). Die gröbsten Reste wie Vlandia und Aserai sind schon entfernt.
+- **Später eigene Aufträge**, die zur Zeit passen:
+
+| Auftrag | Idee |
+|---|---|
+| Grenzwache an der Save | Für einige Tage einen Abschnitt der Grenze halten und Übergriffe abwehren |
+| Hajduken-Überfälle | Eine Hajduken-Bande stellen oder, auf der anderen Seite, sie mit Waffen versorgen |
+| Gefangenenfreikauf | Gefangene über die Grenze zurückkaufen, mit Verhandlung oder Lösegeld |
+| Schmuggel nach Venedig | Waren an den Zöllen vorbei in eine venezianische Küstenstadt bringen |
+
+## 8c. Aufstände der Völker (späte Erweiterung, abschaltbar)
+
+Damit das späte Spiel spannend bleibt: Nach einigen Jahren im Spiel können sich Völker innerhalb der großen Reiche
+erheben und Unabhängigkeit anstreben, zum Beispiel Serben, Bulgaren, Griechen, Rumänen oder Ungarn.
+Historisch kommt das eher zu früh, die großen Erhebungen folgen erst im 18. und 19. Jahrhundert, und sie bleiben deshalb
+eine bewusste Spielentscheidung.
+
+- **Bedingungen statt fester Daten:** Ein Aufstand wird wahrscheinlicher, wenn ein Volk unzufrieden ist (hohe Steuern,
+  Plünderungen, fremde Herren), das Reich im Krieg steht oder geschwächt ist (verlorene Städte, wenig Truppen).
+  Frühestens nach einigen Jahren Spielzeit.
+- **Ablauf:** Zuerst Unruhen und Gerüchte, dann eine Rebellen-Fraktion mit eigenen Anführern aus dem Volk, die
+  Siedlungen ihres Volkes übernimmt. Gelingt der Aufstand, entsteht ein neues Königreich.
+- **Für den Spieler:** Man kann den Aufstand niederschlagen, unterstützen oder sich ihm anschließen.
+- **Abschaltbar** über die Spieloptionen, für alle, die bei der Lage von 1700 bleiben wollen.
+- Baut auf dem Rebellionssystem des Spiels auf (siehe Modifikator „Civil Unrest“) und braucht die betroffenen Gebiete
+  auf der Karte.
+
 ## 9. Umfang der ersten Version (v0.1)
 
 Fertig ist v0.1, wenn:
