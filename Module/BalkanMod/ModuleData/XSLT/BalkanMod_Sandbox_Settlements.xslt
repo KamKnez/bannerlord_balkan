@@ -35,6 +35,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Ljubljana</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_V5_text}Ljubljana, called Laibach by the Germans, is the capital of the Duchy of Carniola. Baroque churches rise under the castle hill on the Ljubljanica.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.germans</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -59,6 +60,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Graz</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_V8_text}Graz is the capital of Inner Austria. From its great armoury, muskets, pikes and armour go south to the garrisons of the frontier.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.germans</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -67,6 +69,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Pécs</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_V9_text}Pécs was retaken in 1686. Its domed mosques are being turned into churches, and the old Hungarian bishopric is slowly rising again.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

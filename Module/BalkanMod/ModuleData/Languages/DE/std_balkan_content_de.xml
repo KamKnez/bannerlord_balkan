@@ -36,6 +36,10 @@
     <string id="balkan_de_squire" text="Deutscher Junker" />
     <string id="balkan_de_cuirassier" text="Deutscher Kürassier" />
     <string id="balkan_de_veteran_cuirassier" text="Kaiserlicher Kürassier" />
+    <string id="balkan_de_militia_pikeman" text="Bürgermiliz-Pikenier" />
+    <string id="balkan_de_militia_shooter" text="Bürgermiliz-Arkebusier" />
+    <string id="balkan_de_militia_veteran_pikeman" text="Bürgermiliz-Veteran mit Pike" />
+    <string id="balkan_de_militia_veteran_shooter" text="Bürgermiliz-Veteran mit Muskete" />
     <string id="balkan_hr_peasant" text="Kroatischer Bauer" />
     <string id="balkan_hr_haramija" text="Haramija" />
     <string id="balkan_hr_border_musketeer" text="Grenz-Musketier" />
@@ -72,6 +76,10 @@
     <string id="balkan_sr_hussar" text="Raizischer Husar" />
     <string id="balkan_sr_plemic" text="Serbischer Edelmann" />
     <string id="balkan_sr_vojvoda" text="Vojvoda" />
+    <string id="balkan_sr_militia_spearman" text="Serbischer Milizspeerträger" />
+    <string id="balkan_sr_militia_shooter" text="Serbischer Milizschütze" />
+    <string id="balkan_sr_militia_veteran_spearman" text="Serbischer Milizspeerträger (Veteran)" />
+    <string id="balkan_sr_militia_veteran_shooter" text="Serbischer Milizschütze (Veteran)" />
     <string id="balkan_tr_peasant" text="Türkischer Bauer" />
     <string id="balkan_tr_azap" text="Türkischer Azap" />
     <string id="balkan_tr_sekban" text="Sekban" />
@@ -81,6 +89,10 @@
     <string id="balkan_tr_odabasi" text="Janitscharen-Odabaşı" />
     <string id="balkan_tr_timarli_sipahi" text="Türkischer Timarli-Sipahi" />
     <string id="balkan_tr_sipahi" text="Kapıkulu-Sipahi" />
+    <string id="balkan_tr_militia_spearman" text="Yerli-Speerträger" />
+    <string id="balkan_tr_militia_shooter" text="Yerli-Tüfekçi" />
+    <string id="balkan_tr_militia_veteran_spearman" text="Yerli-Speerträger (Veteran)" />
+    <string id="balkan_tr_militia_veteran_shooter" text="Yerli-Tüfekçi (Veteran)" />
     <string id="balkan_hu_peasant" text="Ungarischer Bauer" />
     <string id="balkan_hu_hajdu_recruit" text="Junger Hajdú" />
     <string id="balkan_hu_hajdu" text="Hajdú" />
@@ -90,6 +102,10 @@
     <string id="balkan_hu_nemes" text="Ungarischer Edelmann" />
     <string id="balkan_hu_noble_hussar" text="Adeliger Husar" />
     <string id="balkan_hu_hussar_captain" text="Husarenhauptmann" />
+    <string id="balkan_hu_militia_spearman" text="Ungarische Stadtwache" />
+    <string id="balkan_hu_militia_shooter" text="Ungarischer Milizschütze" />
+    <string id="balkan_hu_militia_veteran_spearman" text="Ungarische Stadtwache (Veteran)" />
+    <string id="balkan_hu_militia_veteran_shooter" text="Ungarischer Milizschütze (Veteran)" />
     <string id="balkan_ve_recruit" text="Venezianischer Rekrut" />
     <string id="balkan_ve_fante" text="Fante" />
     <string id="balkan_ve_picchiere" text="Picchiere" />

@@ -32,10 +32,10 @@ Adel stammen die schweren Kürassiere des Kaisers.
 """
 
 [miliz]
-nahkampf = "recruit"
-fernkampf = "musketeer"
-nahkampf_elite = "pikeman"
-fernkampf_elite = "veteran_musketeer"
+nahkampf = "militia_pikeman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_pikeman"
+fernkampf_elite = "militia_veteran_shooter"
 
 [[lord_partei]]
 truppe = "peasant"
@@ -238,3 +238,59 @@ Head = "visored_helmet_over_mail_coif"
 Body = "coat_of_plates_over_mail"
 Gloves = "plated_strip_gauntlets"
 Leg = "mail_cavalier_boots"
+
+# ---------------------------------------------------------------- Bürgermiliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_pikeman"
+name = { en = "Burgher Militia Pikeman", de = "Bürgermiliz-Pikenier" }
+stufe = 2
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "simple_pike_t2"
+Item1 = "falchion_sword_t2"
+Head = "leather_cap"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Burgher Militia Arquebusier", de = "Bürgermiliz-Arkebusier" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "falchion_sword_t2"
+Head = "arming_cap"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_pikeman"
+name = { en = "Veteran Burgher Pikeman", de = "Bürgermiliz-Veteran mit Pike" }
+stufe = 3
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "simple_pike_t2"
+Item1 = "vlandia_sword_2_t3"
+Head = "kettle_hat_over_padded_coif"
+Body = "padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Burgher Musketeer", de = "Bürgermiliz-Veteran mit Muskete" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "vlandia_axe_1_t3"
+Head = "kettle_hat_over_padded_cloth"
+Body = "padded_coat"
+Leg = "leather_boots"

@@ -32,10 +32,10 @@ den Dienst zu Pferd erhalten.
 """
 
 [miliz]
-nahkampf = "acemi"
-fernkampf = "sekban"
-nahkampf_elite = "azap"
-fernkampf_elite = "janissary"
+nahkampf = "militia_spearman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_shooter"
 
 [[lord_partei]]
 truppe = "peasant"
@@ -220,4 +220,60 @@ Item3 = "desert_oval_shield"
 Head = "brass_aserai_helmet_open"
 Body = "desert_robe_over_mail"
 Gloves = "eastern_plated_leather_vambraces"
+Leg = "eastern_leather_boots"
+
+# ---------------------------------------------------------------- Yerli kulu: örtliche Besatzung der Städte und Burgen
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Yerli Spearman", de = "Yerli-Speerträger" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "aserai_sword_1_t2"
+Head = "wrapped_desert_cap"
+Body = "tied_cloth_tunic"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Yerli Tüfekçi", de = "Yerli-Tüfekçi" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_sword_1_t2"
+Head = "turban"
+Body = "tied_cloth_tunic"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Yerli Spearman", de = "Yerli-Speerträger (Veteran)" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "aserai_sword_2_t2"
+Head = "woven_turban"
+Body = "layered_robe"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Yerli Tüfekçi", de = "Yerli-Tüfekçi (Veteran)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_sword_2_t2"
+Head = "woven_turban"
+Body = "aserai_tunic_waistcoat"
 Leg = "eastern_leather_boots"

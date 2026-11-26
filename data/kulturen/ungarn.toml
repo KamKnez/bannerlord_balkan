@@ -32,10 +32,10 @@ allen Heeren Europas berühmt geworden.
 """
 
 [miliz]
-nahkampf = "hajdu_recruit"
-fernkampf = "hajdu_recruit"
-nahkampf_elite = "hajdu"
-fernkampf_elite = "veteran_hajdu"
+nahkampf = "militia_spearman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_shooter"
 
 [[lord_partei]]
 truppe = "peasant"
@@ -223,3 +223,61 @@ Body = "red_coat_over_mail"
 Cape = "leopard_pelt"
 Gloves = "studded_leather_vambraces"
 Leg = "leather_cavalier_boots"
+
+# ---------------------------------------------------------------- Stadtmiliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Hungarian Town Guard", de = "Ungarische Stadtwache" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "light_horsemans_kite_shield"
+Item2 = "simple_sabre_sword_t2"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Hungarian Militia Shooter", de = "Ungarischer Milizschütze" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "simple_sabre_sword_t2"
+Head = "padded_cap"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Hungarian Town Guard", de = "Ungarische Stadtwache (Veteran)" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "light_horsemans_kite_shield"
+Item2 = "khuzait_sword_2_t3"
+Head = "spiked_helmet"
+Body = "padded_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Hungarian Militia Shooter", de = "Ungarischer Milizschütze (Veteran)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_2_t3"
+Head = "fur_hat"
+Body = "woven_leather_coat"
+Leg = "eastern_leather_boots"
