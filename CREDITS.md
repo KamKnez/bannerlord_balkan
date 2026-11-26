@@ -7,6 +7,10 @@ Fremde Bausteine, die die Mod benutzt, mit Lizenz. Neue Einträge kommen nur mit
 | [Bannerlord.ReferenceAssemblies](https://github.com/BUTR/Bannerlord.ReferenceAssemblies) (BUTR) | Bauen gegen die Spiel-DLLs, nur beim Kompilieren, wird nicht mitgeliefert | MIT |
 | Mount & Blade II: Bannerlord (TaleWorlds Entertainment) | Spiel, Modding-Werkzeuge und vorhandene Spielinhalte | Bannerlord-EULA |
 | [Napoleonic Warfare – Open Source](https://www.nexusmods.com/mountandblade2bannerlord/mods/6101) (GunsAndPowder-Revived: Killer/Florian, DarthKiller454) | Modelle und Texturen der Muskete (`newmusket`) und der Büchse (`newrifle`) unter `Module/BalkanMod/Assets/napoleonic_warfare/` und `Module/BalkanMod/RuntimeDataCache/`; Schuss- und Ladeklänge unter `Module/BalkanMod/ModuleSounds/` | Freigegeben zur Nutzung in anderen Mods mit Namensnennung (laut Mod-Seite: „just credit us“) |
+| [Copernicus DEM GLO-90](https://doi.org/10.5270/ESA-c5d3d65) | Höhen der Weltkarte (`tools/weltkarte/`), nur als abgeleitetes Höhenbild | frei nutzbar mit Quellenangabe: © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018 provided under COPERNICUS by the European Union and ESA; all rights reserved |
+| [ESA WorldCover 2021 v200](https://doi.org/10.5281/zenodo.7254221) | Wald, Acker, Wiese und Wasser der Weltkarte, nur als abgeleitete Masken | CC BY 4.0, © ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium |
+| [Natural Earth](https://www.naturalearthdata.com/) (Flüsse 1:10 Mio.) | Flussläufe der Weltkarte in den Ebenen | gemeinfrei |
+| [GeoNames](https://www.geonames.org/) über [lutangar/cities.json](https://github.com/lutangar/cities.json) | Koordinaten der Orte in `data/weltkarte/orte.csv` (Quelle `GeoNames`) | CC BY 4.0 |
 
 ## Napoleonic Warfare
 
