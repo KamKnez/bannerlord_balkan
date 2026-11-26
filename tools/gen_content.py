@@ -38,6 +38,16 @@ OUT_ITEMS = MODULE_DATA / "balkan_items.xml"
 OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
 OUT_ROSTERS = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_EquipmentRosters.xslt"
 OUT_STRINGS = MODULE_DATA / "balkan_strings.xml"
+OUT_CC_TABLE = ROOT / "src" / "BalkanMod" / "CharacterCreation" / "BalkanCultureTable.g.cs"
+# Dorferzeugnisse des Spiels (VillageType, Sandbox/ModuleData/settlements.xml)
+VILLAGE_TYPES = {
+    "battanian_horse_ranch", "cattle_farm", "clay_mine", "date_farm", "desert_horse_ranch", "europe_horse_ranch",
+    "fisherman", "flax_plant", "iron_mine", "lumberjack", "olive_trees", "salt_mine", "sheep_farm", "silk_plant",
+    "silver_mine", "steppe_horse_ranch", "sturgian_horse_ranch", "swine_farm", "trapper", "vineyard",
+    "vlandian_horse_ranch", "wheat_farm",
+}
+# Kulturbilder des Spiels für die Charaktererstellung (Brush-Stile in Native/GUI/Brushes/CharacterCreation.xml)
+CULTURE_IMAGES = ("empire", "vlandia", "sturgia", "aserai", "khuzait", "battania")
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
 OUT_TRADE = MODULE_DATA / "balkan_handel.xml"
 
@@ -237,6 +247,15 @@ def build_game_texts(cultures, strings):
         desc = strings.add(f"balkan_culture_{key}_desc", c["text"]["en"].strip(), c["text"]["de"].strip())
         lines.append(f"\t<string id={quoteattr('str_culture_rich_name.' + cid)} text={quoteattr(rich)} />")
         lines.append(f"\t<string id={quoteattr('str_culture_description.' + cid)} text={quoteattr(desc)} />")
+    # Namen der Familie im Story-Modus (Vater, Mutter, Geschwister), je Kultur aus der Namensliste
+    family = (("str_player_father_name", "maennlich", 0), ("str_player_brother_name", "maennlich", 1),
+              ("str_player_little_brother_name", "maennlich", 2), ("str_player_mother_name", "weiblich", 0),
+              ("str_player_little_sister_name", "weiblich", 1))
+    for c in cultures:
+        for sid, section, index in family:
+            names = c["_namen"][section]
+            name = names[index % len(names)]
+            lines.append(f"\t<string id={quoteattr(sid + '.' + c['kultur_id'])} text={quoteattr('{=!}' + name)} />")
     # Feste Spieltexte: Fernkampf-Formation heißt Musketiere (die Sprachaufnahme „Bowmen“ bleibt),
     # Waffenklasse Armbrust heißt Feuerwaffe, Bolzen heißen Kugeln (Inventar und Gegenstands-Infos)
     fixed = (
@@ -327,7 +346,9 @@ def build_rosters(cultures):
     Das Spiel sucht Ausrüstung für Lords, Kinder, Herrscher, Gefährten usw. über die Kultur der Vorlage
     (EquipmentRoster culture="Culture.x"). Ohne eigene Vorlagen findet es für eine neue Kultur nichts und
     stürzt beim Start der Kampagne ab. Darum bekommt jede neue Kultur eine Kopie aller Vorlagen ihrer
-    Vorlage-Kultur (neue Id: <id>_balkan_<kultur>).
+    Vorlage-Kultur (neue Id: <id>_balkan_<kultur>). Die Vorlagen der Charaktererstellung sucht das Spiel über
+    den Namen (z. B. father_char_creation_farmer_sturgia); deren Kopien heißen nach der neuen Kultur
+    (father_char_creation_farmer_serbs).
     """
     out = [
         '<?xml version="1.0" encoding="utf-8"?>',
@@ -349,7 +370,11 @@ def build_rosters(cultures):
             out += [
                 "\t\t<xsl:copy>",
                 '\t\t\t<xsl:apply-templates select="@*" />',
-                f"\t\t\t<xsl:attribute name=\"id\"><xsl:value-of select=\"concat(@id, '_balkan_{cid}')\" /></xsl:attribute>",
+                '\t\t\t<xsl:attribute name="id"><xsl:choose>',
+                f"\t\t\t\t<xsl:when test=\"contains(@id, 'char_creation') and contains(@id, '_{template}')\">"
+                f"<xsl:value-of select=\"concat(substring-before(@id, '_{template}'), '_{cid}', substring-after(@id, '_{template}'))\" /></xsl:when>",
+                f"\t\t\t\t<xsl:otherwise><xsl:value-of select=\"concat(@id, '_balkan_{cid}')\" /></xsl:otherwise>",
+                '\t\t\t</xsl:choose></xsl:attribute>',
                 f'\t\t\t<xsl:attribute name="culture">Culture.{cid}</xsl:attribute>',
                 '\t\t\t<xsl:apply-templates select="node()" />',
                 "\t\t</xsl:copy>",
@@ -357,6 +382,31 @@ def build_rosters(cultures):
         out.append("\t</xsl:template>")
     out.append("</xsl:stylesheet>")
     return "\n".join(out) + "\n"
+
+
+def build_cc_table(cultures):
+    """C#-Tabelle für die Charaktererstellung: wählbare Kulturen, ihre Vorlage und ihr Bild."""
+    rows = []
+    for c in cultures:
+        template = c["vorlage"] if c["art"] == "neu" else c["kultur_id"]
+        rows.append(f'            {{ "{c["kultur_id"]}", ("{template}", "{c["bild"]}") }},')
+    return "\n".join([
+        "// Erzeugt von tools/gen_content.py aus data/kulturen/. Nicht von Hand ändern.",
+        "using System.Collections.Generic;",
+        "",
+        "namespace BalkanMod.CharacterCreation",
+        "{",
+        "    internal static class BalkanCultureTable",
+        "    {",
+        "        /// <summary>Kultur-Id der wählbaren Kulturen: Vorlage-Kultur des Spiels und Kulturbild.</summary>",
+        "        public static readonly Dictionary<string, (string Template, string Image)> Cultures =",
+        "            new Dictionary<string, (string Template, string Image)>",
+        "        {",
+        *rows,
+        "        };",
+        "    }",
+        "}",
+    ]) + "\n"
 
 
 def build_de(strings):
@@ -383,6 +433,8 @@ def check_definitions(cultures):
         where = c["_datei"]
         if c["art"] not in ("anpassen", "neu"):
             errors.append(f"{where}: art muss 'anpassen' oder 'neu' sein")
+        if c.get("bild") not in CULTURE_IMAGES:
+            errors.append(f"{c.get('schluessel', '?')}: bild muss eines von {CULTURE_IMAGES} sein")
         if c["art"] == "neu" and not c.get("vorlage"):
             errors.append(f"{where}: neue Kultur braucht eine vorlage")
         keys = [t["id"] for t in c["truppe"]]
@@ -415,6 +467,33 @@ def check_definitions(cultures):
         for r in refs:
             if r not in known:
                 errors.append(f"{where}: Truppe '{r}' wird verwendet, ist aber nicht definiert")
+        errors += check_noble_tree(c, where)
+    return errors
+
+
+def check_noble_tree(c, where):
+    """Der Adelsbaum geht wie im Spiel ohne Lücke von Stufe 2 bis 6 (jeder Schritt genau eine Stufe)."""
+    troops = {t["id"]: t for t in c["truppe"]}
+    errors = []
+    start = troops.get(c["elite_truppe"])
+    if not start:
+        return errors
+    if start["stufe"] != 2:
+        errors.append(f"{where}: Adelsbaum beginnt mit Stufe {start['stufe']} statt 2")
+    todo, top = [start], 0
+    while todo:
+        t = todo.pop()
+        top = max(top, t["stufe"])
+        for target in t.get("aufwerten", []):
+            nxt = troops.get(target)
+            if not nxt:
+                continue
+            if nxt["stufe"] != t["stufe"] + 1:
+                errors.append(f"{where}: Adelsbaum {t['id']} ({t['stufe']}) -> {target} ({nxt['stufe']}): "
+                              "Stufe muss um genau 1 steigen")
+            todo.append(nxt)
+    if top < 6:
+        errors.append(f"{where}: Adelsbaum erreicht nur Stufe {top}, nicht 6")
     return errors
 
 
@@ -443,6 +522,11 @@ def check_realms(realms, cultures):
             errors.append(f"{where}: Königreich {r['reich_id']} gibt es im Spiel nicht")
         if r["kultur_id"] not in culture_ids:
             errors.append(f"{where}: Kultur {r['kultur_id']} ist in data/kulturen nicht definiert")
+        for sid, vtype in r.get("dorftyp", {}).items():
+            if f"Settlement.{sid}" not in vanilla or not sid.startswith(("village_", "castle_village_")):
+                errors.append(f"{where}: dorftyp: {sid} ist kein Dorf des Spiels")
+            if vtype not in VILLAGE_TYPES:
+                errors.append(f"{where}: dorftyp {sid}: {vtype} muss eines von {sorted(VILLAGE_TYPES)} sein")
         lords = [l["id"] for c in r["clan"] for l in c["lord"]]
         if r["herrscher"] not in lords:
             errors.append(f"{where}: herrscher {r['herrscher']} gehört zu keinem Clan der Datei")
@@ -625,6 +709,13 @@ def build_realms(realms, strings):
             elif sid in r["siedlungen"]:
                 sattrs["culture"] = culture
             t["Settlements"] += patch_template("Settlement", sid, sattrs)
+        for sid, vtype in r.get("dorftyp", {}).items():
+            # Erzeugnis des Dorfs (Village village_type), z. B. Weizen statt Datteln
+            t["Settlements"] += [
+                f"\t<xsl:template match=\"Settlement[@id='{sid}']/Components/Village/@village_type\">",
+                f'\t\t<xsl:attribute name="village_type">VillageType.{vtype}</xsl:attribute>',
+                "\t</xsl:template>",
+            ]
     t["Kingdoms"] += build_wars(realms)
     return {OUT_REALMS[k]: xslt_doc(v) for k, v in t.items()}
 
@@ -674,6 +765,9 @@ AMMO_MODELS = {
     # Kugelbeutel: Beutel und Kugel der Schleudersteine aus dem Spiel, statt eines Bolzenköchers
     "kugelbeutel": ("bo_axe_short", 10),
 }
+# Fliegende Kugel. Das NW-Modell "musket_bullet" liegt in Assets/napoleonic_warfare/ bereit; sobald es in
+# AssetPackages/pack0.tpac mitgepackt ist, hier auf "musket_bullet" umstellen. Bis dahin der Schleuderstein.
+BULLET_FLYING_MESH = "sling_ammo_flying"
 WEAPON_ART = ("gewehr", "pistole", "munition")
 GUN_FIELDS = ("gewicht", "schaden", "geschoss", "genauigkeit", "tempo", "handhabung", "schwierigkeit")
 AMMO_FIELDS = ("gewicht", "schaden", "anzahl")
@@ -783,7 +877,7 @@ def ammo_xml(w, name):
     if pouch:
         meshes = ['\t\tbody_name="bo_sling_ammo"', f'\t\tholster_body_name="{holster_body}"',
                   '\t\tmesh="sling_ammo"', '\t\tholster_mesh="stone_holster"',
-                  '\t\tholster_mesh_with_weapon="stone_holster"', '\t\tflying_mesh="sling_ammo_flying"']
+                  '\t\tholster_mesh_with_weapon="stone_holster"', f'\t\tflying_mesh="{BULLET_FLYING_MESH}"']
         holsters = '\t\titem_holsters="throwing_stone:throwing_stone_2">'
         sticking = []
         flags = 'AttachAmmoToVisual="true" Consumable="true" AmmoBreaksOnBounceBack="true"'
@@ -813,9 +907,10 @@ def ammo_xml(w, name):
         f'\t\t\t\tthrust_damage="{w["schaden"]}"',
         '\t\t\t\tthrust_damage_type="Pierce"',
         '\t\t\t\tspeed_rating="0"',
-        '\t\t\t\tmissile_speed="10"',
+        f'\t\t\t\tmissile_speed="{200 if pouch else 10}"',
         f'\t\t\t\tweapon_length="{length}"',
         '\t\t\t\titem_usage=""',
+        '\t\t\t\tpassby_sound_code="balkan_bullet_passby"' if pouch else
         '\t\t\t\tpassby_sound_code="event:/mission/combat/missile/passby"',
         '\t\t\t\trotation="180, 0, 0"',
         '\t\t\t\tphysics_material="missile"',
@@ -1042,6 +1137,7 @@ def generate():
         OUT_ROSTERS: build_rosters(cultures),
         OUT_TRADE: build_trade(trade, cultures),
         OUT_STRINGS: build_game_texts(cultures, strings),
+        OUT_CC_TABLE: build_cc_table(cultures),
     }
     files.update(build_realms(realms, strings))
     files[OUT_DE] = build_de(strings)

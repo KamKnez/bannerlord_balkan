@@ -5,6 +5,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "serben"
+bild = "sturgia"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "serbs"
 art = "neu"
 vorlage = "sturgia"
@@ -217,7 +218,7 @@ gruppe = "Cavalry"
 profil = "reiter"
 basis = true
 gesicht = "fighter_sturgia_elite"
-aufwerten = ["vojvoda"]
+aufwerten = ["momak"]
 pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
 [[truppe.ausruestung]]
 Item0 = "khuzait_sword_2_t3"
@@ -228,11 +229,31 @@ Body = "padded_coat"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
+id = "momak"
+name = { en = "Momak", de = "Momak (Gefolgsreiter)" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["vojvoda"]
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_sword_3_t3"
+Item1 = "western_spear_2_t2"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "fur_hat"
+Body = "eastern_stitched_leather_coat"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
 id = "vojvoda"
 name = { en = "Vojvoda", de = "Vojvoda" }
 stufe = 4
 gruppe = "Cavalry"
 profil = "reiter"
+aufwerten = ["serdar"]
 benoetigt = "kriegspferd"
 gesicht = "fighter_sturgia_elite"
 pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
@@ -256,6 +277,45 @@ Cape = "leopard_pelt"
 Body = "stitched_leather_over_mail"
 Gloves = "studded_leather_vambraces"
 Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "serdar"
+name = { en = "Serdar", de = "Serdar" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+aufwerten = ["barjaktar"]
+gesicht = "fighter_sturgia_elite"
+pferd = { Horse = "t3_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "khuzait_noble_sword_1_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "khuzait_noble_helmet_with_feathers"
+Cape = "leopard_pelt"
+Body = "northern_brass_lamellar_over_mail"
+Gloves = "reinforced_leather_vambraces"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "barjaktar"
+name = { en = "Barjaktar", de = "Barjaktar (Bannerträger)" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_sturgia_elite"
+pferd = { Horse = "noble_horse_eastern", HorseHarness = "chain_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_3_t5"
+Item1 = "khuzait_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "khuzait_noble_helmet_with_fur"
+Cape = "leopard_pelt"
+Body = "brass_lamellar_over_mail"
+Gloves = "lordly_mail_mitten"
+Leg = "mail_cavalier_boots"
 
 # ---------------------------------------------------------------- Miliz (Besatzung der Städte und Burgen)
 

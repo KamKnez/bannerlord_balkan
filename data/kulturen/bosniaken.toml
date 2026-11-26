@@ -2,6 +2,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "bosniaken"
+bild = "battania"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "aserai"
 art = "anpassen"
 praefix = "bs"
@@ -9,7 +10,8 @@ namensliste = "bosniaken"
 farben = ["0xff1E6B3A", "0xffE3B04B"]
 # Bosniaken sind Südslawen: Gesichter der Imperialen statt der Aserai
 gesicht = "fighter_empire"
-zivil = ["empire_troop_civilian_template_t1", "empire_troop_civilian_template_t2", "empire_troop_civilian_template_t3"]
+# Alltagskleidung osmanisch (Turban, Kaftan) wie bei den Türken
+zivil = ["aserai_troop_civilian_template_t1", "aserai_troop_civilian_template_t2", "aserai_troop_civilian_template_t3"]
 basis_truppe = "peasant"
 elite_truppe = "timarli_sipahi"
 
@@ -337,6 +339,7 @@ name = { en = "Veteran Zaim", de = "Zaim-Veteran" }
 stufe = 5
 gruppe = "Cavalry"
 profil = "reiter"
+aufwerten = ["kapetan"]
 gesicht = "fighter_empire_tall"
 pferd = { Horse = "t3_aserai_horse", HorseHarness = "half_mail_and_plate_barding" }
 [[truppe.ausruestung]]
@@ -353,6 +356,31 @@ Item1 = "aserai_mace_5_t4"
 Item2 = "studded_adarga"
 Head = "southern_noble_helmet"
 Body = "aserai_chain_plate_armor_d"
+Gloves = "mail_mitten_f"
+Leg = "reinforced_suede_boots"
+
+[[truppe]]
+id = "kapetan"
+name = { en = "Bosnian Kapetan", de = "Bosnischer Kapetan" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "noble_horse_southern", HorseHarness = "half_mail_and_plate_barding" }
+[[truppe.ausruestung]]
+Item0 = "aserai_lance_1_t5"
+Item1 = "aserai_noble_sword_2_t5"
+Item2 = "studded_adarga"
+Head = "closed_desert_helmet_with_mail"
+Body = "aserai_full_scale_armor_on_chain"
+Gloves = "mail_mitten_f"
+Leg = "reinforced_suede_boots"
+[[truppe.ausruestung]]
+Item0 = "aserai_lance_1_t5"
+Item1 = "aserai_noble_sword_1_t5"
+Item2 = "studded_adarga"
+Head = "southern_noble_helmet"
+Body = "aserai_scale_armor_on_chain"
 Gloves = "mail_mitten_f"
 Leg = "reinforced_suede_boots"
 

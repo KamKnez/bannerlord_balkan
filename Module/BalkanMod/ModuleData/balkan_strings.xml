@@ -17,6 +17,46 @@
 	<string id="str_culture_description.hungarians" text="{=balkan_culture_ungarn_desc}After a century and a half of war the Hungarian plains are slowly filling with people again. The hajdús, once cattle drovers, fight on foot with musket and sabre, and the light hussars of the Hungarian nobility have become famous in every army of Europe." />
 	<string id="str_culture_rich_name.venice" text="{=balkan_culture_venezianer_rich}Venetians" />
 	<string id="str_culture_description.venice" text="{=balkan_culture_venezianer_desc}The Most Serene Republic of Venice rules the Adriatic from its lagoon. Along the Dalmatian coast its provveditori govern walled ports filled with merchants, sailors and soldiers. Italian pikemen and musketeers hold the walls, while Dalmatian schiavoni and Albanian cappelletti fight the war of raids in the hinterland." />
+	<string id="str_player_father_name.aserai" text="{=!}Mehmed" />
+	<string id="str_player_brother_name.aserai" text="{=!}Ahmed" />
+	<string id="str_player_little_brother_name.aserai" text="{=!}Mustafa" />
+	<string id="str_player_mother_name.aserai" text="{=!}Fatima" />
+	<string id="str_player_little_sister_name.aserai" text="{=!}Ajša" />
+	<string id="str_player_father_name.germans" text="{=!}Johann" />
+	<string id="str_player_brother_name.germans" text="{=!}Georg" />
+	<string id="str_player_little_brother_name.germans" text="{=!}Joseph" />
+	<string id="str_player_mother_name.germans" text="{=!}Anna" />
+	<string id="str_player_little_sister_name.germans" text="{=!}Maria" />
+	<string id="str_player_father_name.vlandia" text="{=!}Ivan" />
+	<string id="str_player_brother_name.vlandia" text="{=!}Juraj" />
+	<string id="str_player_little_brother_name.vlandia" text="{=!}Nikola" />
+	<string id="str_player_mother_name.vlandia" text="{=!}Katarina" />
+	<string id="str_player_little_sister_name.vlandia" text="{=!}Margareta" />
+	<string id="str_player_father_name.ragusa" text="{=!}Marin" />
+	<string id="str_player_brother_name.ragusa" text="{=!}Nikola" />
+	<string id="str_player_little_brother_name.ragusa" text="{=!}Frano" />
+	<string id="str_player_mother_name.ragusa" text="{=!}Mara" />
+	<string id="str_player_little_sister_name.ragusa" text="{=!}Nika" />
+	<string id="str_player_father_name.serbs" text="{=!}Stojan" />
+	<string id="str_player_brother_name.serbs" text="{=!}Ilija" />
+	<string id="str_player_little_brother_name.serbs" text="{=!}Jovan" />
+	<string id="str_player_mother_name.serbs" text="{=!}Jelena" />
+	<string id="str_player_little_sister_name.serbs" text="{=!}Milica" />
+	<string id="str_player_father_name.turks" text="{=!}Mehmed" />
+	<string id="str_player_brother_name.turks" text="{=!}Ahmed" />
+	<string id="str_player_little_brother_name.turks" text="{=!}Mustafa" />
+	<string id="str_player_mother_name.turks" text="{=!}Fatma" />
+	<string id="str_player_little_sister_name.turks" text="{=!}Ayşe" />
+	<string id="str_player_father_name.hungarians" text="{=!}János" />
+	<string id="str_player_brother_name.hungarians" text="{=!}István" />
+	<string id="str_player_little_brother_name.hungarians" text="{=!}Miklós" />
+	<string id="str_player_mother_name.hungarians" text="{=!}Katalin" />
+	<string id="str_player_little_sister_name.hungarians" text="{=!}Erzsébet" />
+	<string id="str_player_father_name.venice" text="{=!}Alvise" />
+	<string id="str_player_brother_name.venice" text="{=!}Francesco" />
+	<string id="str_player_little_brother_name.venice" text="{=!}Girolamo" />
+	<string id="str_player_mother_name.venice" text="{=!}Elena" />
+	<string id="str_player_little_sister_name.venice" text="{=!}Lucia" />
 	<string id="str_troop_group_name.1" text="{=balkan_formation_ranged}Musketeers" />
 	<string id="str_formation_class_string.Ranged" text="{=balkan_formation_ranged_class}Musketeers" />
 	<string id="str_inventory_weapon.Crossbow" text="{=balkan_class_firearm}Firearm" />

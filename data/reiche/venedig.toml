@@ -183,10 +183,10 @@ weiblich = false  # 19 Jahre, vorher Seorgys
 
 [[clan]]
 id = "clan_empire_west_5"  # vorher Lonalion, Oberhaupt Hero.lord_1_45
-name = "Janković"
+name = "Janković"  # Grafen von Ravni Kotari, orthodoxe Uskoken in venezianischem Dienst: serbische Vornamen
 [[clan.lord]]
 id = "lord_1_45"
-name = "Bernardo"
+name = "Zaviša"
 weiblich = false  # 38 Jahre, vorher Desporion
 [[clan.lord]]
 id = "lord_1_45_1"
@@ -194,7 +194,7 @@ name = "Jelena"
 weiblich = true  # 38 Jahre, vorher Agnala
 [[clan.lord]]
 id = "lord_1_45_2"
-name = "Vettor"
+name = "Stojan"
 weiblich = false  # 19 Jahre, vorher Phostor
 [[clan.lord]]
 id = "lord_1_45_3"
@@ -202,15 +202,15 @@ name = "Katarina"
 weiblich = true  # 18 Jahre, vorher Nereida
 [[clan.lord]]
 id = "lord_1_57"
-name = "Francesco"
+name = "Ilija"
 weiblich = false  # 25 Jahre, vorher Altenos
 [[clan.lord]]
 id = "lord_1_57_1"
-name = "Laura"
+name = "Anđelija"
 weiblich = true  # 24 Jahre, vorher Sophalia
 [[clan.lord]]
 id = "lord_1_57_2"
-name = "Cecilia"
+name = "Milica"
 weiblich = true  # 2 Jahre, vorher Jephalia
 
 [[clan]]
@@ -376,3 +376,7 @@ de = "{DORF} gehört zum Land von {SITZ}. Auf seinen steinigen Terrassen wachsen
 [[dorftext]]
 en = "{DORF} lies on the coast near {SITZ}. Its men fish for sardines and row in the galleys when Venice calls."
 de = "{DORF} liegt an der Küste bei {SITZ}. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft."
+
+[dorftyp]
+# Erzeugnis der Dörfer statt Datteln, Oliven im Binnenland und Wüstenpferden (VillageType des Spiels)
+castle_village_EW4_1 = "swine_farm"         # Drniš

@@ -4,6 +4,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "deutsche"
+bild = "vlandia"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "germans"
 art = "neu"
 vorlage = "vlandia"
@@ -199,7 +200,7 @@ gruppe = "Cavalry"
 profil = "reiter"
 basis = true
 gesicht = "fighter_vlandia_noble"
-aufwerten = ["cuirassier"]
+aufwerten = ["carabinier"]
 pferd = { Horse = "vlandia_horse", HorseHarness = "light_harness" }
 [[truppe.ausruestung]]
 Item0 = "vlandia_sword_2_t3"
@@ -207,6 +208,25 @@ Item1 = "western_spear_1_t2"
 Item2 = "horsemans_heater_shield"
 Head = "kettle_helmet_with_leather"
 Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "carabinier"
+name = { en = "Carabinier", de = "Karabinier" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_vlandia_noble"
+aufwerten = ["cuirassier"]
+pferd = { Horse = "t2_vlandia_horse", HorseHarness = "light_harness" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_sword_3_t4"
+Item1 = "balkan_pistol"
+Item2 = "balkan_pistol_balls"
+Item3 = "horsemans_heater_shield"
+Head = "kettle_hat_over_mail_coif"
+Body = "imperial_mail_over_leather"
+Gloves = "reinforced_leather_vambraces"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
@@ -244,6 +264,7 @@ name = { en = "Imperial Cuirassier", de = "Kaiserlicher Kürassier" }
 stufe = 5
 gruppe = "Cavalry"
 profil = "reiter"
+aufwerten = ["guard_cuirassier"]
 benoetigt = "kriegspferd"
 gesicht = "fighter_vlandia_noble"
 pferd = { Horse = "t3_vlandia_horse", HorseHarness = "halfchain_barding" }
@@ -265,6 +286,33 @@ Head = "northern_warlord_helmet"
 Body = "balkan_nw_cuirass"
 Gloves = "lordly_mail_mitten"
 Leg = "balkan_nw_jackboots"
+
+[[truppe]]
+id = "guard_cuirassier"
+name = { en = "Guard Cuirassier", de = "Garde-Kürassier" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_vlandia_noble"
+pferd = { Horse = "noble_horse_western", HorseHarness = "mail_and_plate_barding" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_3_t5"
+Item1 = "vlandia_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "western_plated_helmet"
+Body = "sturgian_fortified_armor"
+Gloves = "lordly_mail_mitten"
+Leg = "mail_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_3_t5"
+Item1 = "vlandia_noble_sword_1_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "peaked_helmet_over_mail_coif"
+Body = "coat_of_plates_over_mail"
+Gloves = "lordly_mail_mitten"
+Leg = "mail_cavalier_boots"
 
 # ---------------------------------------------------------------- Bürgermiliz (Besatzung der Städte und Burgen)
 

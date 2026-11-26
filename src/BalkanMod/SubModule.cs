@@ -1,6 +1,8 @@
 using BalkanMod.CampaignBehaviors;
 using BalkanMod.CampaignModels;
+using BalkanMod.CharacterCreation;
 using BalkanMod.Missions;
+using BalkanMod.TimeControl;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
 using TaleWorlds.CampaignSystem;
@@ -19,13 +21,15 @@ namespace BalkanMod
     {
         private bool _loadedMessageShown;
         private UIExtender _uiExtender;
+        private Harmony _harmony;
 
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
 
             // Zusätzliche Zeitraffer-Knöpfe auf der Karte (TimeControl/)
-            new Harmony("BalkanMod").PatchAll(typeof(SubModule).Assembly);
+            _harmony = new Harmony("BalkanMod");
+            _harmony.PatchAll(typeof(SubModule).Assembly);
             _uiExtender = UIExtender.Create("BalkanMod");
             _uiExtender.Register(typeof(SubModule).Assembly);
             _uiExtender.Enable();
@@ -41,6 +45,10 @@ namespace BalkanMod
             }
 
             _loadedMessageShown = true;
+            // Charaktererstellung mit den Kulturen der Mod; erst hier, weil StoryMode.dll jetzt geladen ist
+            CultureTemplateScope.Apply(_harmony);
+            // Gefecht: nur die Kulturen und Truppen der Mod
+            CustomBattlePatches.Apply(_harmony);
             var text = new TextObject("{=balkanmod_loaded}Balkan mod loaded.");
             InformationManager.DisplayMessage(new InformationMessage(text.ToString()));
         }
@@ -57,6 +65,9 @@ namespace BalkanMod
         {
             base.OnGameStart(game, gameStarterObject);
 
+            // Zeitraffer-Stufe vom vorigen Spielstand nicht mitnehmen
+            BalkanTimeSpeed.Reset();
+
             if (game.GameType is Campaign && gameStarterObject is CampaignGameStarter campaignStarter)
             {
                 // Reisegeschwindigkeit auf der Karte (Faktoren im MCM-Menü)
@@ -67,7 +78,16 @@ namespace BalkanMod
                 campaignStarter.AddBehavior(new NotableCultureBehavior());
                 // Läden der Balkan-Städte: Feuerwaffen und Kulturausrüstung rein, unpassende Calradia-Ware raus
                 campaignStarter.AddBehavior(new BalkanMarketBehavior());
+                // Bei der Charaktererstellung nur die acht Kulturen der Mod
+                campaignStarter.AddBehavior(new BalkanCharacterCreationBehavior());
             }
+        }
+
+        public override void OnGameEnd(Game game)
+        {
+            BalkanTimeSpeed.Deactivate();
+            BalkanTimeSpeed.Reset();
+            base.OnGameEnd(game);
         }
     }
 }

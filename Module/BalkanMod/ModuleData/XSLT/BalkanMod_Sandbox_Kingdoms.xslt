@@ -31,7 +31,7 @@
 			<xsl:attribute name="short_name">{=balkan_kingdom_aserai_short}Ottomans</xsl:attribute>
 			<xsl:attribute name="title">{=balkan_kingdom_aserai_title}Eyalet of Bosnia</xsl:attribute>
 			<xsl:attribute name="ruler_title">{=balkan_kingdom_aserai_ruler}Beylerbey</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_kingdom_aserai_text}Bosnia is now the frontier province of the Ottoman Empire. Since the sack of Sarajevo the beylerbey sits in Travnik, and the captaincies along the Una, Sava and Drina guard the border against Habsburgs and Venetians.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_aserai_text}Bosnia is now the frontier province of the Ottoman Empire. The beylerbey still holds court in burned Sarajevo, though Travnik is already being readied as his new seat, and the captaincies along the Una, Sava and Drina guard the border against Habsburgs and Venetians.</xsl:attribute>
 			<xsl:attribute name="color">FF9E1B1B</xsl:attribute>
 			<xsl:attribute name="color2">FF1E6B3A</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_3_1</xsl:attribute>

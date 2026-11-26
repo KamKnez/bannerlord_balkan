@@ -4,6 +4,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "ungarn"
+bild = "khuzait"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "hungarians"
 art = "neu"
 vorlage = "vlandia"
@@ -210,7 +211,7 @@ gruppe = "Cavalry"
 profil = "leichte_reiter"
 basis = true
 gesicht = "fighter_vlandia_noble"
-aufwerten = ["noble_hussar"]
+aufwerten = ["noble_rider"]
 pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
 [[truppe.ausruestung]]
 Item0 = "khuzait_sword_2_t3"
@@ -218,6 +219,26 @@ Item1 = "western_spear_1_t2"
 Item2 = "light_horsemans_kite_shield"
 Head = "fur_hat"
 Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "noble_rider"
+name = { en = "Noble Rider", de = "Adeliger Reiter" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+gesicht = "fighter_vlandia_noble"
+aufwerten = ["noble_hussar"]
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_sword_3_t3"
+Item1 = "western_spear_2_t2"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "fur_hat"
+Cape = "leopard_pelt"
+Body = "eastern_stitched_leather_coat"
+Gloves = "studded_leather_vambraces"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
@@ -257,6 +278,7 @@ name = { en = "Hussar Captain", de = "Husarenhauptmann" }
 stufe = 5
 gruppe = "Cavalry"
 profil = "leichte_reiter"
+aufwerten = ["banderial_hussar"]
 benoetigt = "kriegspferd"
 gesicht = "fighter_vlandia_noble"
 pferd = { Horse = "t3_khuzait_horse", HorseHarness = "steppe_half_barding" }
@@ -280,6 +302,25 @@ Cape = "leopard_pelt"
 Body = "balkan_nw_attila"
 Gloves = "reinforced_leather_vambraces"
 Leg = "balkan_nw_hussar_boots"
+
+[[truppe]]
+id = "banderial_hussar"
+name = { en = "Banderial Hussar", de = "Banderial-Husar" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+gesicht = "fighter_vlandia_noble"
+pferd = { Horse = "noble_horse_eastern", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_3_t5"
+Item1 = "khuzait_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "khuzait_noble_helmet_with_feathers"
+Cape = "leopard_pelt"
+Body = "brass_lamellar_over_mail"
+Gloves = "lordly_mail_mitten"
+Leg = "mail_cavalier_boots"
 
 # ---------------------------------------------------------------- Stadtmiliz (Besatzung der Städte und Burgen)
 

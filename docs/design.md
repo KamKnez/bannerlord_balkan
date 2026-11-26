@@ -168,7 +168,7 @@ Nur Atmosphäre, Ereignisse und kleine Effekte, keine offene Magie.
 
 ## 8a. Szenarien
 
-Eigene Kampagnen-Szenarien, Spielerstarts und Modifikatoren für die Sandbox sind in [szenarien.md](szenarien.md) gesammelt. In v0.1 kommt nur das Standard-Szenario „Nach Karlowitz“.
+Eigene Kampagnen-Szenarien, Spielerstarts und Modifikatoren für die Sandbox sind in [szenarien.md](szenarien.md) gesammelt. Entschieden ist die Kampagnenstruktur: eine offene Sandbox „Zwischen den Kriegen“ ab 1699 mit historischen Ereignissen zu ihren Daten, dazu ein geführter Aufstieg mit einer Startgeschichte je Volk als Einstieg. In v0.1 kommt nur das Standard-Szenario „Nach Karlowitz“, die Ereignisse und Startgeschichten folgen in Phase 3.
 
 ## 9. Umfang der ersten Version (v0.1)
 

@@ -10,5 +10,9 @@
     <module_sound name="balkan_musket_fire3" sound_category="mission_combat" path="balkan_musket_fire3.wav"/>
     <module_sound name="balkan_pistol_fire" sound_category="mission_combat" path="balkan_pistol_fire.wav"/>
     <module_sound name="balkan_musket_reload" sound_category="mission_foley" path="balkan_musket_reload.wav"/>
+    <module_sound name="balkan_bullet_passby" sound_category="mission_combat" path="balkan_bullet_passby1.wav"/>
+    <module_sound name="balkan_bullet_passby" sound_category="mission_combat" path="balkan_bullet_passby2.wav"/>
+    <module_sound name="balkan_bullet_passby" sound_category="mission_combat" path="balkan_bullet_passby3.wav"/>
+    <module_sound name="balkan_bullet_passby" sound_category="mission_combat" path="balkan_bullet_passby4.wav"/>
   </module_sounds>
 </base>

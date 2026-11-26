@@ -25,12 +25,13 @@ Die CI prüft mit `python3 tools/gen_content.py --check`, ob die erzeugten Datei
 | `kultur_id` | Id der Kultur im Spiel |
 | `art` | `anpassen` (vorhandene Calradia-Kultur ändern) oder `neu` (neue Kultur als Kopie von `vorlage`) |
 | `vorlage` | nur bei `neu`: Kultur, von der alle übrigen Werte kopiert werden (Stadtbewohner, Turniere, Notable usw.) |
+| `bild` | Kulturbild des Spiels bei der Charaktererstellung: `empire`, `vlandia`, `sturgia`, `aserai`, `khuzait` oder `battania` |
 | `praefix` | Kürzel in den Truppen-Ids: `balkan_<praefix>_<id>` |
 | `namensliste` | Datei unter `data/namen/` (Vornamen und Familiennamen für Clans) |
 | `farben` | zwei Farben als `0xAARRGGBB` |
 | `gesicht` | Standard-Gesichtsvorlage (`BodyProperty`) der Truppen |
 | `zivil` | Zivilkleidung für Stufe 1, 2 und 3+ |
-| `basis_truppe`, `elite_truppe` | Rekruten aus Dörfern: normaler Baum und Adelsbaum |
+| `basis_truppe`, `elite_truppe` | Rekruten aus Dörfern: normaler Baum und Adelsbaum (der Adelsbaum geht ohne Lücke von Stufe 2 bis 6, das prüft `tools/gen_content.py`) |
 | `[name]`, `[text]` | Name und Beschreibung, Englisch (`en`) und Deutsch (`de`) |
 | `[miliz]` | Miliz der Städte und Burgen |
 | `[[lord_partei]]` | Truppen, mit denen ein Lord dieser Kultur startet (`min` bis `max`) |

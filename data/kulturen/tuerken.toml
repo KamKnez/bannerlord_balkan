@@ -4,6 +4,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "tuerken"
+bild = "aserai"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "turks"
 art = "neu"
 vorlage = "aserai"
@@ -216,7 +217,7 @@ gruppe = "HorseArcher"
 profil = "berittene_schuetzen"
 basis = true
 gesicht = "fighter_aserai_noble"
-aufwerten = ["sipahi"]
+aufwerten = ["cebelu"]
 pferd = { Horse = "aserai_horse", HorseHarness = "aseran_village_harness" }
 [[truppe.ausruestung]]
 Item0 = "composite_bow"
@@ -228,11 +229,31 @@ Body = "aserai_tunic_waistcoat"
 Leg = "eastern_leather_boots"
 
 [[truppe]]
+id = "cebelu"
+name = { en = "Cebelu", de = "Cebelü (Gefolgsreiter)" }
+stufe = 3
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+gesicht = "fighter_aserai_noble"
+aufwerten = ["sipahi"]
+pferd = { Horse = "t2_aserai_horse", HorseHarness = "aseran_village_harness" }
+[[truppe.ausruestung]]
+Item0 = "composite_bow"
+Item1 = "default_arrows"
+Item2 = "aserai_sword_3_t3"
+Item3 = "eastern_spear_1_t2"
+Head = "pointed_skullcap_over_mail"
+Body = "eastern_stitched_leather_coat"
+Gloves = "eastern_plated_leather_vambraces"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
 id = "sipahi"
 name = { en = "Kapıkulu Sipahi", de = "Kapıkulu-Sipahi" }
 stufe = 4
 gruppe = "HorseArcher"
 profil = "berittene_schuetzen"
+aufwerten = ["zaim"]
 benoetigt = "kriegspferd"
 gesicht = "fighter_aserai_noble"
 pferd = { Horse = "t2_aserai_horse", HorseHarness = "desert_cloth_harness" }
@@ -253,6 +274,43 @@ Item3 = "desert_oval_shield"
 Head = "spiked_helmet"
 Body = "aserai_chain_plate_armor_a"
 Gloves = "eastern_plated_leather_vambraces"
+Leg = "reinforced_suede_boots"
+
+[[truppe]]
+id = "zaim"
+name = { en = "Zaim", de = "Zaim" }
+stufe = 5
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+aufwerten = ["silahdar"]
+gesicht = "fighter_aserai_noble"
+pferd = { Horse = "t3_aserai_horse", HorseHarness = "chain_horse_harness" }
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "piercing_arrows"
+Item2 = "aserai_sword_4_t4"
+Item3 = "desert_oval_shield"
+Head = "brass_aserai_helmet_b_open"
+Body = "aserai_scale_armor_on_chain"
+Gloves = "eastern_plated_leather_vambraces"
+Leg = "reinforced_suede_boots"
+
+[[truppe]]
+id = "silahdar"
+name = { en = "Silahdar", de = "Silahdar (Hofreiter des Sultans)" }
+stufe = 6
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+gesicht = "fighter_aserai_noble"
+pferd = { Horse = "noble_horse_southern", HorseHarness = "half_mail_and_plate_barding" }
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "piercing_arrows"
+Item2 = "aserai_noble_sword_2_t5"
+Item3 = "desert_oval_shield"
+Head = "southern_noble_helmet"
+Body = "aserai_full_scale_armor_on_chain"
+Gloves = "mail_mitten_f"
 Leg = "reinforced_suede_boots"
 
 # ---------------------------------------------------------------- Yerli kulu: örtliche Besatzung der Städte und Burgen
