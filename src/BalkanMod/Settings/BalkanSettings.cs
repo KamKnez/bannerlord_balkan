@@ -1,6 +1,7 @@
 using MCM.Abstractions.Attributes;
 using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Base.Global;
+using TaleWorlds.Localization;
 
 namespace BalkanMod.Settings
 {
@@ -12,7 +13,8 @@ namespace BalkanMod.Settings
     {
         public override string Id => "BalkanMod";
 
-        public override string DisplayName => "{=balkan_settings_name}Balkan 1700";
+        // Die Mod-Liste von MCM löst den Schlüssel {=...} nicht selbst auf, deshalb über TextObject.
+        public override string DisplayName => new TextObject("{=balkan_settings_name}Balkan 1700").ToString();
 
         public override string FolderName => "BalkanMod";
 

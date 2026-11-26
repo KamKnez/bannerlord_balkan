@@ -1,5 +1,6 @@
 using BalkanMod.CampaignBehaviors;
 using BalkanMod.CampaignModels;
+using BalkanMod.Missions;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
 using TaleWorlds.CampaignSystem;
@@ -44,6 +45,14 @@ namespace BalkanMod
             InformationManager.DisplayMessage(new InformationMessage(text.ToString()));
         }
 
+        public override void OnMissionBehaviorInitialize(Mission mission)
+        {
+            base.OnMissionBehaviorInitialize(mission);
+
+            // Musketenknall und Ladegeräusch für die Feuerwaffen der Mod
+            mission.AddMissionBehavior(new FirearmSoundBehavior());
+        }
+
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
             base.OnGameStart(game, gameStarterObject);
@@ -52,8 +61,10 @@ namespace BalkanMod
             {
                 // Reisegeschwindigkeit auf der Karte (Faktoren im MCM-Menü)
                 campaignStarter.AddModel(new BalkanPartySpeedModel());
-                // Muskete, Pistole und Munition für die Spielfigur zu Beginn
+                // Arkebuse, Pistole und Munition für die Spielfigur zu Beginn
                 campaignStarter.AddBehavior(new StartingFirearmsBehavior());
+                // Notabeln bekommen die Kultur ihrer Siedlung (Rekruten und Namen passend zur Kultur)
+                campaignStarter.AddBehavior(new NotableCultureBehavior());
             }
         }
     }

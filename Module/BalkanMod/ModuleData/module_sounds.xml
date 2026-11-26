@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Klänge der Feuerwaffen (Dateien in ModuleSounds/). Abgespielt von src/BalkanMod/Missions/FirearmSoundBehavior.cs.
+  Quelle: Napoleonic Warfare (GunsAndPowder-Revived), siehe CREDITS.md.
+-->
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="module_sound">
+  <module_sounds>
+    <module_sound name="balkan_musket_fire1" sound_category="mission_combat" path="balkan_musket_fire1.wav"/>
+    <module_sound name="balkan_musket_fire2" sound_category="mission_combat" path="balkan_musket_fire2.wav"/>
+    <module_sound name="balkan_musket_fire3" sound_category="mission_combat" path="balkan_musket_fire3.wav"/>
+    <module_sound name="balkan_pistol_fire" sound_category="mission_combat" path="balkan_pistol_fire.wav"/>
+    <module_sound name="balkan_musket_reload" sound_category="mission_foley" path="balkan_musket_reload.wav"/>
+  </module_sounds>
+</base>

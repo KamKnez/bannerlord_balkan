@@ -5,17 +5,20 @@ namespace BalkanMod.TimeControl
 {
     /// <summary>
     /// Zwei Knöpfe über der rechten Seite der Zeitsteuerung unten auf der Karte (SandBox/GUI/Prefabs/Map/MapBar.xml,
-    /// Widget "CenterPanel"). Datenquelle ist dort MapTimeControlVM, erweitert durch BalkanTimeControlMixin.
-    /// Weil die Knöpfe Kinder der Zeitsteuerung sind, verschwinden sie mit ihr (z. B. in Menüs ohne Zeitsteuerung).
+    /// Widget "CenterPanel"). Datenquelle ist MapTimeControlVM, erweitert durch BalkanTimeControlMixin.
+    ///
+    /// Die Knöpfe stehen als Geschwister direkt hinter der Zeitsteuerung im bildschirmfüllenden Fenster und nicht
+    /// mehr in ihr: Als Kinder lagen sie außerhalb der Fläche der Zeitsteuerung und bekamen deshalb keine Mausklicks,
+    /// nur die Tasten 4 und 5 gingen. Sichtbar sind sie nur, solange die Zeitsteuerung aktiv ist.
     /// </summary>
-    [PrefabExtension("MapBar", "descendant::MapCurrentTimeVisualWidget[@Id='CenterPanel']/Children")]
+    [PrefabExtension("MapBar", "descendant::MapCurrentTimeVisualWidget[@Id='CenterPanel']")]
     internal class BalkanTimeControlPrefab : PrefabExtensionInsertPatch
     {
-        public override InsertType Type => InsertType.Child;
+        public override InsertType Type => InsertType.Append;
 
         [PrefabExtensionText]
         public string Xml => @"
-<Widget Id=""BalkanFastForwardPanel"" WidthSizePolicy=""CoverChildren"" HeightSizePolicy=""CoverChildren"" HorizontalAlignment=""Right"" VerticalAlignment=""Top"" PositionXOffset=""-40"" PositionYOffset=""-30"" Sprite=""BlankWhiteSquare_9"" Color=""#000000AA"">
+<Widget Id=""BalkanFastForwardPanel"" DataSource=""{MapTimeControl}"" IsVisible=""@IsCenterPanelEnabled"" WidthSizePolicy=""CoverChildren"" HeightSizePolicy=""CoverChildren"" HorizontalAlignment=""Center"" VerticalAlignment=""Bottom"" PositionXOffset=""125"" MarginBottom=""63"" Sprite=""BlankWhiteSquare_9"" Color=""#000000AA"">
   <Children>
     <ListPanel WidthSizePolicy=""CoverChildren"" HeightSizePolicy=""CoverChildren"" MarginLeft=""4"" MarginRight=""4"" StackLayout.LayoutMethod=""HorizontalLeftToRight"">
       <Children>

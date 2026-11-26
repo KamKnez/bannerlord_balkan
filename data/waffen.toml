@@ -1,10 +1,14 @@
 # Feuerwaffen und Munition (v0.1).
 #
-# Die Gewehre nutzen Modelle aus der Mod Napoleonic Warfare (newmusket, newrifle; siehe CREDITS.md),
-# die Pistole noch das Modell einer Armbrust. Die Mechanik ist überall die der Armbrüste des Spiels
-# (siehe docs/design.md, Abschnitt 6). Die Werte sind Richtwerte und werden nach
+# Vorerst nutzen alle Feuerwaffen wieder Armbrust-Modelle des Spiels: Die Modelle aus Napoleonic Warfare
+# (newmusket, newrifle; siehe CREDITS.md) liegen unter Module/BalkanMod/Assets, werden vom Spiel (v1.5.7) aber nicht
+# geladen, die Waffe war im Spiel unsichtbar. Das Spiel lädt nur fertig gepackte Modelle (AssetPackages), die erzeugt
+# das Modding Kit. Danach hier wieder modell = "newmusket" bzw. "newrifle" eintragen.
+# Die Mechanik ist überall die der Armbrüste des Spiels (siehe docs/design.md, Abschnitt 6). Die Werte sind Richtwerte und werden nach
 # Spieltests angepasst. Zum Vergleich die schwere Armbrust (crossbow_d) des Spiels:
 # Schaden 93, Geschossgeschwindigkeit 90, Genauigkeit 99, Tempo 92, Handhabung 62.
+# Feuerwaffen treffen härter als Armbrüste, laden aber langsamer und streuen mehr. Der Schaden liegt
+# knapp darüber (90 bis 115 plus Kugel), damit nicht jeder Treffer auch schwer gepanzerte Truppen tötet.
 #
 # Felder einer Waffe:
 #   id            Gegenstands-Id, beginnt mit "balkan_"
@@ -12,6 +16,7 @@
 #   modell        Modell: Armbrust oder Bolzen aus dem Spiel, oder newmusket/newrifle aus Napoleonic Warfare
 #   kultur        Kultur, in deren Städten die Waffe eher angeboten wird
 #   gewicht       in kg
+#   preis         Grundpreis in Denaren (ohne Angabe würde das Spiel ihn aus dem Schaden berechnen)
 #   schaden       Stichschaden (Waffe) bzw. Zusatzschaden (Munition)
 #   geschoss      Geschossgeschwindigkeit (nur Waffen)
 #   genauigkeit   0 bis 100 (nur Waffen)
@@ -30,10 +35,11 @@
 id = "balkan_arquebus"
 name = { en = "Arquebus", de = "Arkebuse" }
 art = "gewehr"
-modell = "newrifle"
+modell = "crossbow_b"
 kultur = "vlandia"
 gewicht = 3.2
-schaden = 105
+preis = 800
+schaden = 90
 geschoss = 95
 genauigkeit = 78
 tempo = 66
@@ -44,10 +50,11 @@ schwierigkeit = 0
 id = "balkan_musket"
 name = { en = "Matchlock Musket", de = "Luntenschloss-Muskete" }
 art = "gewehr"
-modell = "newmusket"
+modell = "crossbow_c"
 kultur = "vlandia"
 gewicht = 4.5
-schaden = 120
+preis = 1200
+schaden = 100
 geschoss = 105
 genauigkeit = 80
 tempo = 60
@@ -58,10 +65,11 @@ schwierigkeit = 20
 id = "balkan_long_musket"
 name = { en = "Long Balkan Musket", de = "Lange Balkan-Flinte" }
 art = "gewehr"
-modell = "newmusket"
+modell = "crossbow_d"
 kultur = "aserai"
 gewicht = 4.2
-schaden = 115
+preis = 1800
+schaden = 100
 geschoss = 115
 genauigkeit = 90
 tempo = 60
@@ -72,10 +80,11 @@ schwierigkeit = 40
 id = "balkan_heavy_musket"
 name = { en = "Heavy Musket", de = "Schwere Muskete" }
 art = "gewehr"
-modell = "newmusket"
+modell = "crossbow_c"
 kultur = "vlandia"
 gewicht = 5.5
-schaden = 135
+preis = 2000
+schaden = 115
 geschoss = 110
 genauigkeit = 82
 tempo = 55
@@ -89,9 +98,10 @@ art = "pistole"
 modell = "crossbow_e"
 kultur = "vlandia"
 gewicht = 1.6
-schaden = 95
+preis = 900
+schaden = 85
 geschoss = 75
-genauigkeit = 65
+genauigkeit = 75
 tempo = 70
 handhabung = 60
 schwierigkeit = 0
@@ -103,6 +113,7 @@ art = "munition"
 modell = "bolt_bl_c"
 kultur = "vlandia"
 gewicht = 0.05
+preis = 60
 schaden = 5
 anzahl = 12
 
@@ -113,5 +124,6 @@ art = "munition"
 modell = "bolt_bl_a"
 kultur = "vlandia"
 gewicht = 0.04
+preis = 40
 schaden = 3
 anzahl = 4

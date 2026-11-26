@@ -4,14 +4,15 @@
 	<Item
 		id="balkan_arquebus"
 		name="{=balkan_item_arquebus}Arquebus"
-		body_name="bo_spear_b"
-		mesh="newrifle"
+		body_name="bo_cross_bow_heavy"
+		mesh="crossbow_b"
 		culture="Culture.vlandia"
 		weight="3.2"
 		appearance="0.6"
+		value="800"
 		difficulty="0"
 		Type="Crossbow"
-		AmmoOffset="0, 0, 0"
+		AmmoOffset="0.0, 0.02131, 0.24975"
 		item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
 		holster_position_shift="0.02,0,-0.4">
 		<ItemComponent>
@@ -24,14 +25,14 @@
 				missile_speed="95"
 				weapon_length="95"
 				accuracy="78"
-				thrust_damage="105"
+				thrust_damage="90"
 				thrust_damage_type="Pierce"
 				item_usage="crossbow"
 				reload_phase_count="2"
 				physics_material="wood_weapon"
 				center_of_mass="0,0,0.4"
 				modifier_group="crossbow">
-				<WeaponFlags RangedWeapon="true" HasString="false" CantReloadOnHorseback="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" />
+				<WeaponFlags RangedWeapon="true" HasString="true" CantReloadOnHorseback="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" />
 			</Weapon>
 		</ItemComponent>
 		<Flags />
@@ -39,14 +40,15 @@
 	<Item
 		id="balkan_musket"
 		name="{=balkan_item_musket}Matchlock Musket"
-		body_name="bo_spear_b"
-		mesh="newmusket"
+		body_name="bo_cross_bow_heavy"
+		mesh="crossbow_c"
 		culture="Culture.vlandia"
 		weight="4.5"
 		appearance="0.6"
+		value="1200"
 		difficulty="20"
 		Type="Crossbow"
-		AmmoOffset="0, 0, 0"
+		AmmoOffset="0.0, 0.02131, 0.24675"
 		item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
 		holster_position_shift="0.02,0,-0.4">
 		<ItemComponent>
@@ -59,14 +61,14 @@
 				missile_speed="105"
 				weapon_length="95"
 				accuracy="80"
-				thrust_damage="120"
+				thrust_damage="100"
 				thrust_damage_type="Pierce"
 				item_usage="crossbow"
 				reload_phase_count="2"
 				physics_material="wood_weapon"
 				center_of_mass="0,0,0.4"
 				modifier_group="crossbow">
-				<WeaponFlags RangedWeapon="true" HasString="false" CantReloadOnHorseback="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" />
+				<WeaponFlags RangedWeapon="true" HasString="true" CantReloadOnHorseback="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" />
 			</Weapon>
 		</ItemComponent>
 		<Flags />
@@ -74,14 +76,15 @@
 	<Item
 		id="balkan_long_musket"
 		name="{=balkan_item_long_musket}Long Balkan Musket"
-		body_name="bo_spear_b"
-		mesh="newmusket"
+		body_name="bo_composite_crossbows"
+		mesh="crossbow_d"
 		culture="Culture.aserai"
 		weight="4.2"
 		appearance="0.6"
+		value="1800"
 		difficulty="40"
 		Type="Crossbow"
-		AmmoOffset="0, 0, 0"
+		AmmoOffset="0.0, 0.02131, 0.22975"
 		item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
 		holster_position_shift="0.02,0,-0.4">
 		<ItemComponent>
@@ -94,14 +97,14 @@
 				missile_speed="115"
 				weapon_length="95"
 				accuracy="90"
-				thrust_damage="115"
+				thrust_damage="100"
 				thrust_damage_type="Pierce"
 				item_usage="crossbow"
 				reload_phase_count="2"
 				physics_material="wood_weapon"
 				center_of_mass="0,0,0.4"
 				modifier_group="crossbow">
-				<WeaponFlags RangedWeapon="true" HasString="false" CantReloadOnHorseback="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" />
+				<WeaponFlags RangedWeapon="true" HasString="true" CantReloadOnHorseback="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" />
 			</Weapon>
 		</ItemComponent>
 		<Flags />
@@ -109,14 +112,15 @@
 	<Item
 		id="balkan_heavy_musket"
 		name="{=balkan_item_heavy_musket}Heavy Musket"
-		body_name="bo_spear_b"
-		mesh="newmusket"
+		body_name="bo_cross_bow_heavy"
+		mesh="crossbow_c"
 		culture="Culture.vlandia"
 		weight="5.5"
 		appearance="0.6"
+		value="2000"
 		difficulty="60"
 		Type="Crossbow"
-		AmmoOffset="0, 0, 0"
+		AmmoOffset="0.0, 0.02131, 0.24675"
 		item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
 		holster_position_shift="0.02,0,-0.4">
 		<ItemComponent>
@@ -129,14 +133,14 @@
 				missile_speed="110"
 				weapon_length="95"
 				accuracy="82"
-				thrust_damage="135"
+				thrust_damage="115"
 				thrust_damage_type="Pierce"
 				item_usage="crossbow"
 				reload_phase_count="2"
 				physics_material="wood_weapon"
 				center_of_mass="0,0,0.4"
 				modifier_group="crossbow">
-				<WeaponFlags RangedWeapon="true" HasString="false" CantReloadOnHorseback="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" />
+				<WeaponFlags RangedWeapon="true" HasString="true" CantReloadOnHorseback="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" />
 			</Weapon>
 		</ItemComponent>
 		<Flags />
@@ -149,6 +153,7 @@
 		culture="Culture.vlandia"
 		weight="1.6"
 		appearance="0.6"
+		value="900"
 		difficulty="0"
 		Type="Crossbow"
 		AmmoOffset="0.0, 0.02131, 0.22975"
@@ -163,8 +168,8 @@
 				speed_rating="60"
 				missile_speed="75"
 				weapon_length="95"
-				accuracy="65"
-				thrust_damage="95"
+				accuracy="75"
+				thrust_damage="85"
 				thrust_damage_type="Pierce"
 				item_usage="crossbow_light"
 				reload_phase_count="2"
@@ -188,6 +193,7 @@
 		culture="Culture.vlandia"
 		weight="0.05"
 		appearance="1"
+		value="60"
 		Type="Bolts"
 		item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
 		<ItemComponent>
@@ -225,6 +231,7 @@
 		culture="Culture.vlandia"
 		weight="0.04"
 		appearance="1"
+		value="40"
 		Type="Bolts"
 		item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
 		<ItemComponent>

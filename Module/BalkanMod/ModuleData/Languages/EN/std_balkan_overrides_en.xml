@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Englische Texte, die Texte des Grundspiels überschreiben (gleiche Text-Id wie im Spiel).
+  Die deutschen Gegenstücke stehen in DE/std_balkanmod_de.xml.
+  TTWL7RLe: Name der Fertigkeit "Crossbow" (auch die Waffenklasse im Inventar), haV3nLYA: ihre Beschreibung.
+-->
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="English"/>
+  </tags>
+  <strings>
+    <string id="TTWL7RLe" text="Firearms"/>
+    <string id="haV3nLYA" text="Knowledge of loading, firing and maintaining muskets, pistols and crossbows."/>
+  </strings>
+</base>

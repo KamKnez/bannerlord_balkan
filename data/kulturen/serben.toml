@@ -33,10 +33,10 @@ oder traten in venezianische Dienste. Ihre Hajduken und Husaren sind auf allen S
 """
 
 [miliz]
-nahkampf = "shooter"
-fernkampf = "shooter"
-nahkampf_elite = "musketeer"
-fernkampf_elite = "hajduk"
+nahkampf = "militia_spearman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_shooter"
 
 [[lord_partei]]
 truppe = "peasant"
@@ -257,3 +257,59 @@ Cape = "leopard_pelt"
 Body = "stitched_leather_over_mail"
 Gloves = "studded_leather_vambraces"
 Leg = "leather_cavalier_boots"
+
+# ---------------------------------------------------------------- Miliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Serbian Militia Spearman", de = "Serbischer Milizspeerträger" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Serbian Militia Shooter", de = "Serbischer Milizschütze" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "peasant_hatchet_1_t1"
+Head = "nordic_fur_cap"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Serbian Militia Spearman", de = "Serbischer Milizspeerträger (Veteran)" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "padded_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Serbian Militia Shooter", de = "Serbischer Milizschütze (Veteran)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "woven_leather_coat"
+Leg = "eastern_leather_boots"

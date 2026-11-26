@@ -106,10 +106,10 @@
 			<xsl:attribute name="color2">0xffE8C547</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_de_peasant</xsl:attribute>
 			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_de_squire</xsl:attribute>
-			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_de_recruit</xsl:attribute>
-			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_de_musketeer</xsl:attribute>
-			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_de_pikeman</xsl:attribute>
-			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_de_veteran_musketeer</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_de_militia_pikeman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_de_militia_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_de_militia_veteran_pikeman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_de_militia_veteran_shooter</xsl:attribute>
 			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_deutsche</xsl:attribute>
 			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_deutsche</xsl:attribute>
 			<xsl:apply-templates select="node()" mode="balkan_deutsche" />
@@ -335,10 +335,10 @@
 			<xsl:attribute name="color2">0xff2F4F8F</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_sr_peasant</xsl:attribute>
 			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_sr_plemic</xsl:attribute>
-			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_sr_shooter</xsl:attribute>
-			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_sr_shooter</xsl:attribute>
-			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_sr_musketeer</xsl:attribute>
-			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_sr_hajduk</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_sr_militia_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_sr_militia_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_sr_militia_veteran_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_sr_militia_veteran_shooter</xsl:attribute>
 			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_serben</xsl:attribute>
 			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_serben</xsl:attribute>
 			<xsl:apply-templates select="node()" mode="balkan_serben" />
@@ -411,10 +411,10 @@
 			<xsl:attribute name="color2">0xffF4F1E8</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_tr_peasant</xsl:attribute>
 			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_tr_timarli_sipahi</xsl:attribute>
-			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_tr_acemi</xsl:attribute>
-			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_tr_sekban</xsl:attribute>
-			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_tr_azap</xsl:attribute>
-			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_tr_janissary</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_tr_militia_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_tr_militia_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_tr_militia_veteran_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_tr_militia_veteran_shooter</xsl:attribute>
 			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_tuerken</xsl:attribute>
 			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_tuerken</xsl:attribute>
 			<xsl:apply-templates select="node()" mode="balkan_tuerken" />
@@ -486,10 +486,10 @@
 			<xsl:attribute name="color2">0xffD8263A</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_hu_peasant</xsl:attribute>
 			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_hu_nemes</xsl:attribute>
-			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_hu_hajdu_recruit</xsl:attribute>
-			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_hu_hajdu_recruit</xsl:attribute>
-			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_hu_hajdu</xsl:attribute>
-			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_hu_veteran_hajdu</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_hu_militia_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_hu_militia_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_hu_militia_veteran_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_hu_militia_veteran_shooter</xsl:attribute>
 			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_ungarn</xsl:attribute>
 			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_ungarn</xsl:attribute>
 			<xsl:apply-templates select="node()" mode="balkan_ungarn" />
