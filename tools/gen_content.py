@@ -651,9 +651,11 @@ GUN_MODELS = {
 }
 # Modelle aus Napoleonic Warfare: eigene Lade- und Schussanimationen (ModuleData/item_usage_sets.xml usw.,
 # gepackt in AssetPackages/pack0.tpac). Werte wie in NW: Bewegungssatz, Sitz in der Hand, Länge, Ladephasen.
+# Vorerst nutzen sie die Armbrust-Bewegungen ("crossbow"): Mit den NW-Bewegungssätzen ("musket", "rifle")
+# schießt die KI nicht, sie greift gleich zum Säbel (Spieltest 26.11.). Die NW-Dateien bleiben in ModuleData.
 NW_GUNS = {
-    "newmusket": {"usage": "musket"},
-    "newrifle": {"usage": "rifle"},
+    "newmusket": {"usage": "crossbow"},
+    "newrifle": {"usage": "crossbow"},
 }
 # Munitionsmodelle: Köcher-Körper, Länge
 AMMO_MODELS = {
@@ -716,7 +718,7 @@ def gun_xml(w, name):
         usage = nw["usage"]
         holster = ['\t\titem_holsters="crossbow_back">']
         placement = ['\t\t\t\tposition="0, -0.05, 0"', '\t\t\t\trotation="1, 1, 10"']
-        length, phases, center = "120", "4", "0,0,0.1"
+        length, phases, center = "120", "2", "0,0,0.1"
     else:
         usage = "crossbow_light" if pistol else "crossbow"
         holster = ['\t\titem_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"',

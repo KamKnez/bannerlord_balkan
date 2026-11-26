@@ -28,8 +28,8 @@
 				accuracy="78"
 				thrust_damage="90"
 				thrust_damage_type="Pierce"
-				item_usage="musket"
-				reload_phase_count="4"
+				item_usage="crossbow"
+				reload_phase_count="2"
 				physics_material="wood_weapon"
 				center_of_mass="0,0,0.1"
 				modifier_group="crossbow">
@@ -65,8 +65,8 @@
 				accuracy="80"
 				thrust_damage="100"
 				thrust_damage_type="Pierce"
-				item_usage="musket"
-				reload_phase_count="4"
+				item_usage="crossbow"
+				reload_phase_count="2"
 				physics_material="wood_weapon"
 				center_of_mass="0,0,0.1"
 				modifier_group="crossbow">
@@ -102,8 +102,8 @@
 				accuracy="90"
 				thrust_damage="100"
 				thrust_damage_type="Pierce"
-				item_usage="rifle"
-				reload_phase_count="4"
+				item_usage="crossbow"
+				reload_phase_count="2"
 				physics_material="wood_weapon"
 				center_of_mass="0,0,0.1"
 				modifier_group="crossbow">
@@ -139,8 +139,8 @@
 				accuracy="82"
 				thrust_damage="115"
 				thrust_damage_type="Pierce"
-				item_usage="musket"
-				reload_phase_count="4"
+				item_usage="crossbow"
+				reload_phase_count="2"
 				physics_material="wood_weapon"
 				center_of_mass="0,0,0.1"
 				modifier_group="crossbow">
