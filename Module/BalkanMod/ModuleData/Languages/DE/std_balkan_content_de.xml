@@ -12,6 +12,27 @@
     <string id="balkan_item_pistol" text="Reiterpistole" />
     <string id="balkan_item_musket_balls" text="Musketenkugeln und Pulver" />
     <string id="balkan_item_pistol_balls" text="Pistolenpatronen" />
+    <string id="balkan_item_nw_tricorne" text="Dreispitz" />
+    <string id="balkan_item_nw_boerk" text="Janitscharen-Börk" />
+    <string id="balkan_item_nw_boerk_officer" text="Börk mit Messingschmuck" />
+    <string id="balkan_item_nw_kolpak" text="Husaren-Kolpak" />
+    <string id="balkan_item_nw_dolama_red" text="Janitscharen-Dolama, rotbraun" />
+    <string id="balkan_item_nw_dolama_green" text="Janitscharen-Dolama, grün" />
+    <string id="balkan_item_nw_dolama_dark" text="Janitscharen-Dolama, dunkel" />
+    <string id="balkan_item_nw_ottoman_officer" text="Offiziersrock mit Schärpe" />
+    <string id="balkan_item_nw_ottoman_shortcoat" text="kurze rote Jacke" />
+    <string id="balkan_item_nw_ottoman_tunic" text="Infanterie-Hemdrock mit Gürtel" />
+    <string id="balkan_item_nw_ottoman_trousers" text="Pluderhose (Şalvar)" />
+    <string id="balkan_item_nw_grenzer_coat" text="Grenzer-Rock" />
+    <string id="balkan_item_nw_grenzer_officer" text="Grenzer-Offiziersrock mit Schärpe" />
+    <string id="balkan_item_nw_dolman" text="Husaren-Dolman" />
+    <string id="balkan_item_nw_attila" text="Adels-Attila mit Schärpe" />
+    <string id="balkan_item_nw_insurrection" text="Ungarischer Waffenrock" />
+    <string id="balkan_item_nw_cuirass" text="Koller mit schwarzem Kürass" />
+    <string id="balkan_item_nw_kaftan_coat" text="langer Tuchmantel" />
+    <string id="balkan_item_nw_hungarian_pants" text="Ungarische Hose mit Schuhen" />
+    <string id="balkan_item_nw_hussar_boots" text="Husarenstiefel" />
+    <string id="balkan_item_nw_jackboots" text="Kürassier-Stulpenstiefel" />
     <string id="balkan_bs_peasant" text="Bosnischer Bauer" />
     <string id="balkan_bs_azap" text="Azap" />
     <string id="balkan_bs_tufekci" text="Tüfekçi" />

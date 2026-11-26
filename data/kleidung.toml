@@ -1,0 +1,226 @@
+# Kleidung aus Napoleonic Warfare (v0.1)
+#
+# tools/gen_content.py schreibt diese Teile nach Module/BalkanMod/ModuleData/balkan_items.xml. Die Modelle (mesh) stammen
+# aus Napoleonic Warfare und sind NICHT für eine Veröffentlichung freigegeben (siehe NICHT_FREIGEGEBEN.md). Im Spiel
+# sichtbar werden sie erst, wenn sie mit dem Modding Kit in AssetPackages/pack0.tpac gepackt sind.
+#
+# Felder: art = Kopf | Koerper | Beine; schutz_kopf/koerper/arme/beine = Rüstungswerte; gewicht in kg;
+# kultur = Kultur-Id im Spiel; material = Stoff (Standard), Leder oder Platte. Den Preis berechnet das Spiel.
+
+[[kleidung]]
+id = "balkan_nw_tricorne"
+name = { de = "Dreispitz", en = "Tricorne" }
+art = "Kopf"
+mesh = "gap_british_tricorne"
+kultur = "neutral_culture"
+schutz_kopf = 10
+gewicht = 0.4
+
+[[kleidung]]
+id = "balkan_nw_boerk"
+name = { de = "Janitscharen-Börk", en = "Janissary Börk" }
+art = "Kopf"
+mesh = "gap_janissary_hat"
+kultur = "turks"
+schutz_kopf = 10
+gewicht = 0.4
+
+[[kleidung]]
+id = "balkan_nw_boerk_officer"
+name = { de = "Börk mit Messingschmuck", en = "Janissary Officer Börk" }
+art = "Kopf"
+mesh = "gap_janissary_hat_officer"
+kultur = "turks"
+schutz_kopf = 12
+gewicht = 0.5
+
+[[kleidung]]
+id = "balkan_nw_kolpak"
+name = { de = "Husaren-Kolpak", en = "Hussar Kalpak" }
+art = "Kopf"
+mesh = "gap_british_hussar_colpack"
+kultur = "hungarians"
+schutz_kopf = 14
+gewicht = 0.6
+
+[[kleidung]]
+id = "balkan_nw_dolama_red"
+name = { de = "Janitscharen-Dolama, rotbraun", en = "Janissary Dolama (red)" }
+art = "Koerper"
+mesh = "gap_ottoman_greatcoat_orange"
+kultur = "turks"
+schutz_koerper = 16
+schutz_arme = 4
+schutz_beine = 8
+gewicht = 2.5
+
+[[kleidung]]
+id = "balkan_nw_dolama_green"
+name = { de = "Janitscharen-Dolama, grün", en = "Janissary Dolama (green)" }
+art = "Koerper"
+mesh = "gap_ottoman_greatcoat_green"
+kultur = "turks"
+schutz_koerper = 16
+schutz_arme = 4
+schutz_beine = 8
+gewicht = 2.5
+
+[[kleidung]]
+id = "balkan_nw_dolama_dark"
+name = { de = "Janitscharen-Dolama, dunkel", en = "Janissary Dolama (dark)" }
+art = "Koerper"
+mesh = "gap_ottoman_greatcoat_dark"
+kultur = "turks"
+schutz_koerper = 18
+schutz_arme = 5
+schutz_beine = 9
+gewicht = 2.8
+
+[[kleidung]]
+id = "balkan_nw_ottoman_officer"
+name = { de = "Offiziersrock mit Schärpe", en = "Ottoman Officer Coat" }
+art = "Koerper"
+mesh = "gap_ottoman_officer"
+kultur = "turks"
+schutz_koerper = 20
+schutz_arme = 7
+schutz_beine = 4
+gewicht = 2.4
+
+[[kleidung]]
+id = "balkan_nw_ottoman_shortcoat"
+name = { de = "kurze rote Jacke", en = "Ottoman Short Coat" }
+art = "Koerper"
+mesh = "gap_ottoman_shortcoat_red"
+kultur = "turks"
+schutz_koerper = 14
+schutz_arme = 4
+schutz_beine = 3
+gewicht = 1.8
+
+[[kleidung]]
+id = "balkan_nw_ottoman_tunic"
+name = { de = "Infanterie-Hemdrock mit Gürtel", en = "Ottoman Infantry Tunic" }
+art = "Koerper"
+mesh = "gap_ottoman_shorttunic"
+kultur = "aserai"
+schutz_koerper = 12
+schutz_arme = 3
+schutz_beine = 3
+gewicht = 1.4
+
+[[kleidung]]
+id = "balkan_nw_ottoman_trousers"
+name = { de = "Pluderhose (Şalvar)", en = "Ottoman Trousers" }
+art = "Beine"
+mesh = "gap_ottoman_trousers_blue"
+kultur = "turks"
+schutz_beine = 6
+gewicht = 0.8
+
+[[kleidung]]
+id = "balkan_nw_grenzer_coat"
+name = { de = "Grenzer-Rock", en = "Grenzer Coat" }
+art = "Koerper"
+mesh = "gap_austrian_grenzer"
+kultur = "vlandia"
+schutz_koerper = 16
+schutz_arme = 6
+schutz_beine = 6
+gewicht = 2.4
+
+[[kleidung]]
+id = "balkan_nw_grenzer_officer"
+name = { de = "Grenzer-Offiziersrock mit Schärpe", en = "Grenzer Officer Coat" }
+art = "Koerper"
+mesh = "gap_austrian_officer_grenzer_3"
+kultur = "vlandia"
+schutz_koerper = 20
+schutz_arme = 8
+schutz_beine = 7
+gewicht = 2.8
+
+[[kleidung]]
+id = "balkan_nw_dolman"
+name = { de = "Husaren-Dolman", en = "Hussar Dolman" }
+art = "Koerper"
+mesh = "gap_hussar_hungarian"
+kultur = "hungarians"
+schutz_koerper = 18
+schutz_arme = 7
+schutz_beine = 4
+gewicht = 2.5
+
+[[kleidung]]
+id = "balkan_nw_attila"
+name = { de = "Adels-Attila mit Schärpe", en = "Hungarian Noble Attila" }
+art = "Koerper"
+mesh = "gap_hungarian_officer_insurrection"
+kultur = "hungarians"
+schutz_koerper = 20
+schutz_arme = 8
+schutz_beine = 6
+gewicht = 2.8
+
+[[kleidung]]
+id = "balkan_nw_insurrection"
+name = { de = "Ungarischer Waffenrock", en = "Hungarian Coat" }
+art = "Koerper"
+mesh = "gap_hungarian_insurrection"
+kultur = "hungarians"
+schutz_koerper = 16
+schutz_arme = 6
+schutz_beine = 6
+gewicht = 2.4
+
+[[kleidung]]
+id = "balkan_nw_cuirass"
+name = { de = "Koller mit schwarzem Kürass", en = "Coat with Cuirass" }
+art = "Koerper"
+mesh = "gap_austrian_cuirassier"
+kultur = "germans"
+schutz_koerper = 44
+schutz_arme = 8
+schutz_beine = 8
+gewicht = 14.0
+material = "Platte"
+
+[[kleidung]]
+id = "balkan_nw_kaftan_coat"
+name = { de = "langer Tuchmantel", en = "Long Cloth Coat" }
+art = "Koerper"
+mesh = "gap_russian_partizan"
+kultur = "serbs"
+schutz_koerper = 14
+schutz_arme = 5
+schutz_beine = 8
+gewicht = 3.0
+
+[[kleidung]]
+id = "balkan_nw_hungarian_pants"
+name = { de = "Ungarische Hose mit Schuhen", en = "Hungarian Trousers" }
+art = "Beine"
+mesh = "gap_austrian_hungarian_pants"
+kultur = "hungarians"
+schutz_beine = 6
+gewicht = 0.9
+
+[[kleidung]]
+id = "balkan_nw_hussar_boots"
+name = { de = "Husarenstiefel", en = "Hussar Boots" }
+art = "Beine"
+mesh = "gap_hungarian_hussar_boots"
+kultur = "hungarians"
+schutz_beine = 8
+gewicht = 1.2
+material = "Leder"
+
+[[kleidung]]
+id = "balkan_nw_jackboots"
+name = { de = "Kürassier-Stulpenstiefel", en = "Cuirassier Jackboots" }
+art = "Beine"
+mesh = "gap_austrian_officer_boots"
+kultur = "germans"
+schutz_beine = 10
+gewicht = 1.6
+material = "Leder"

@@ -124,8 +124,8 @@
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_2_t2" />
 				<equipment slot="Head" id="Item.woven_turban" />
-				<equipment slot="Body" id="Item.long_padded_robe" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Body" id="Item.balkan_nw_ottoman_tunic" />
+				<equipment slot="Leg" id="Item.balkan_nw_ottoman_trousers" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.balkan_musket" />
@@ -913,7 +913,7 @@
 				<equipment slot="Item0" id="Item.balkan_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.vlandia_sword_2_t3" />
-				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Head" id="Item.balkan_nw_tricorne" />
 				<equipment slot="Body" id="Item.padded_coat" />
 				<equipment slot="Leg" id="Item.leather_boots" />
 			</EquipmentRoster>
@@ -955,7 +955,7 @@
 				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.vlandia_sword_3_t4" />
-				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Head" id="Item.balkan_nw_tricorne" />
 				<equipment slot="Body" id="Item.gambeson_b" />
 				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
 				<equipment slot="Leg" id="Item.strapped_leather_boots" />
@@ -1092,9 +1092,9 @@
 				<equipment slot="Item2" id="Item.balkan_pistol" />
 				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.battania_earmuff_helmet_b" />
-				<equipment slot="Body" id="Item.northern_coat_of_plates" />
+				<equipment slot="Body" id="Item.balkan_nw_cuirass" />
 				<equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
-				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_jackboots" />
 				<equipment slot="Horse" id="Item.t3_vlandia_horse" />
 				<equipment slot="HorseHarness" id="Item.halfchain_barding" />
 			</EquipmentRoster>
@@ -1144,9 +1144,9 @@
 				<equipment slot="Item2" id="Item.balkan_pistol" />
 				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.northern_warlord_helmet" />
-				<equipment slot="Body" id="Item.coat_of_plates_over_mail" />
+				<equipment slot="Body" id="Item.balkan_nw_cuirass" />
 				<equipment slot="Gloves" id="Item.lordly_mail_mitten" />
-				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_jackboots" />
 				<equipment slot="Horse" id="Item.t3_vlandia_horse" />
 				<equipment slot="HorseHarness" id="Item.halfchain_barding" />
 			</EquipmentRoster>
@@ -1459,10 +1459,9 @@
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
 				<equipment slot="Head" id="Item.fur_hat" />
-				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.padded_coat" />
+				<equipment slot="Body" id="Item.balkan_nw_grenzer_coat" />
 				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hungarian_pants" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.balkan_musket" />
@@ -1506,10 +1505,9 @@
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_3_t3" />
 				<equipment slot="Head" id="Item.fur_hat" />
-				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.gambeson_b" />
+				<equipment slot="Body" id="Item.balkan_nw_grenzer_coat" />
 				<equipment slot="Gloves" id="Item.studded_leather_vambraces" />
-				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hussar_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.balkan_long_musket" />
@@ -1562,10 +1560,9 @@
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_4_t4" />
 				<equipment slot="Head" id="Item.fur_hat" />
-				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.eastern_stitched_leather_coat" />
+				<equipment slot="Body" id="Item.balkan_nw_grenzer_officer" />
 				<equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
-				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hussar_boots" />
 			</EquipmentRoster>
 			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
@@ -1662,11 +1659,11 @@
 				<equipment slot="Item0" id="Item.khuzait_lance_2_t4" />
 				<equipment slot="Item1" id="Item.khuzait_sword_3_t3" />
 				<equipment slot="Item2" id="Item.light_horsemans_kite_shield" />
-				<equipment slot="Head" id="Item.fur_hat" />
-				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.eastern_stitched_leather_coat" />
+				<equipment slot="Head" id="Item.balkan_nw_kolpak" />
+				<equipment slot="Cape" id="Item.leopard_pelt" />
+				<equipment slot="Body" id="Item.balkan_nw_dolman" />
 				<equipment slot="Gloves" id="Item.studded_leather_vambraces" />
-				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hussar_boots" />
 				<equipment slot="Horse" id="Item.t2_khuzait_horse" />
 				<equipment slot="HorseHarness" id="Item.steppe_half_barding" />
 			</EquipmentRoster>
@@ -1815,9 +1812,9 @@
 				<equipment slot="Item1" id="Item.vlandia_sword_4_t4" />
 				<equipment slot="Item2" id="Item.heavy_heater_shield" />
 				<equipment slot="Head" id="Item.battania_earmuff_helmet_b" />
-				<equipment slot="Body" id="Item.northern_coat_of_plates" />
+				<equipment slot="Body" id="Item.balkan_nw_cuirass" />
 				<equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
-				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_jackboots" />
 				<equipment slot="Horse" id="Item.t3_vlandia_horse" />
 				<equipment slot="HorseHarness" id="Item.halfchain_barding" />
 			</EquipmentRoster>
@@ -1865,9 +1862,9 @@
 				<equipment slot="Item1" id="Item.vlandia_mace_2_t4" />
 				<equipment slot="Item2" id="Item.heavy_heater_shield" />
 				<equipment slot="Head" id="Item.northern_warlord_helmet" />
-				<equipment slot="Body" id="Item.coat_of_plates_over_mail" />
+				<equipment slot="Body" id="Item.balkan_nw_cuirass" />
 				<equipment slot="Gloves" id="Item.lordly_mail_mitten" />
-				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_jackboots" />
 				<equipment slot="Horse" id="Item.t3_vlandia_horse" />
 				<equipment slot="HorseHarness" id="Item.chain_barding" />
 			</EquipmentRoster>
@@ -2256,7 +2253,7 @@
 				<equipment slot="Item0" id="Item.balkan_arquebus" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_2_t3" />
-				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Head" id="Item.balkan_nw_tricorne" />
 				<equipment slot="Body" id="Item.woven_leather_coat" />
 				<equipment slot="Leg" id="Item.leather_boots" />
 			</EquipmentRoster>
@@ -2298,7 +2295,7 @@
 				<equipment slot="Item0" id="Item.balkan_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_3_t3" />
-				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Head" id="Item.balkan_nw_tricorne" />
 				<equipment slot="Body" id="Item.basic_imperial_leather_armor" />
 				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
 				<equipment slot="Leg" id="Item.folded_town_boots" />
@@ -2834,10 +2831,9 @@
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.ridged_sabre_sword_t4" />
 				<equipment slot="Head" id="Item.northern_fur_cap" />
-				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.woven_leather_coat" />
+				<equipment slot="Body" id="Item.balkan_nw_kaftan_coat" />
 				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hungarian_pants" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.balkan_long_musket" />
@@ -2945,11 +2941,11 @@
 				<equipment slot="Item1" id="Item.khuzait_sword_3_t3" />
 				<equipment slot="Item2" id="Item.balkan_pistol" />
 				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
-				<equipment slot="Head" id="Item.spiked_helmet" />
+				<equipment slot="Head" id="Item.balkan_nw_kolpak" />
 				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.eastern_stitched_leather_coat" />
+				<equipment slot="Body" id="Item.balkan_nw_dolman" />
 				<equipment slot="Gloves" id="Item.studded_leather_vambraces" />
-				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hussar_boots" />
 				<equipment slot="Horse" id="Item.t2_khuzait_horse" />
 				<equipment slot="HorseHarness" id="Item.steppe_half_barding" />
 			</EquipmentRoster>
@@ -3406,8 +3402,8 @@
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_2_t2" />
 				<equipment slot="Head" id="Item.woven_turban" />
-				<equipment slot="Body" id="Item.aserai_tunic_waistcoat" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Body" id="Item.balkan_nw_ottoman_shortcoat" />
+				<equipment slot="Leg" id="Item.balkan_nw_ottoman_trousers" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.balkan_musket" />
@@ -3482,17 +3478,17 @@
 				<equipment slot="Item0" id="Item.balkan_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_3_t3" />
-				<equipment slot="Head" id="Item.aserai_civil_d_hscarf" />
-				<equipment slot="Body" id="Item.long_padded_robe" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Head" id="Item.balkan_nw_boerk" />
+				<equipment slot="Body" id="Item.balkan_nw_dolama_red" />
+				<equipment slot="Leg" id="Item.balkan_nw_ottoman_trousers" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.balkan_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_mace_3_t3" />
-				<equipment slot="Head" id="Item.woven_turban" />
-				<equipment slot="Body" id="Item.long_padded_robe" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Head" id="Item.balkan_nw_boerk" />
+				<equipment slot="Body" id="Item.balkan_nw_dolama_green" />
+				<equipment slot="Leg" id="Item.balkan_nw_ottoman_trousers" />
 			</EquipmentRoster>
 			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
@@ -3525,20 +3521,19 @@
 				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_4_t4" />
-				<equipment slot="Head" id="Item.aserai_civil_d_hscarf" />
-				<equipment slot="Body" id="Item.desert_padded_cloth" />
+				<equipment slot="Head" id="Item.balkan_nw_boerk" />
+				<equipment slot="Body" id="Item.balkan_nw_dolama_dark" />
 				<equipment slot="Gloves" id="Item.guarded_padded_vambrace" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_ottoman_trousers" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_4_t4" />
-				<equipment slot="Head" id="Item.woven_turban" />
-				<equipment slot="Cape" id="Item.desert_leather_shoulderpad" />
-				<equipment slot="Body" id="Item.long_padded_robe" />
+				<equipment slot="Head" id="Item.balkan_nw_boerk" />
+				<equipment slot="Body" id="Item.balkan_nw_dolama_red" />
 				<equipment slot="Gloves" id="Item.guarded_padded_vambrace" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_ottoman_trousers" />
 			</EquipmentRoster>
 			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
@@ -3570,10 +3565,10 @@
 				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_5_t4" />
-				<equipment slot="Head" id="Item.aserai_civil_d_hscarf" />
-				<equipment slot="Body" id="Item.desert_robe_over_mail" />
+				<equipment slot="Head" id="Item.balkan_nw_boerk_officer" />
+				<equipment slot="Body" id="Item.balkan_nw_ottoman_officer" />
 				<equipment slot="Gloves" id="Item.eastern_plated_leather_vambraces" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_ottoman_trousers" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
@@ -4043,8 +4038,8 @@
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
 				<equipment slot="Head" id="Item.northern_fur_cap" />
-				<equipment slot="Body" id="Item.padded_coat" />
-				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+				<equipment slot="Body" id="Item.balkan_nw_insurrection" />
+				<equipment slot="Leg" id="Item.balkan_nw_hungarian_pants" />
 			</EquipmentRoster>
 			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
@@ -4188,11 +4183,11 @@
 				<equipment slot="Item1" id="Item.ridged_sabre_sword_t4" />
 				<equipment slot="Item2" id="Item.balkan_pistol" />
 				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
-				<equipment slot="Head" id="Item.fur_hat" />
-				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.eastern_stitched_leather_coat" />
+				<equipment slot="Head" id="Item.balkan_nw_kolpak" />
+				<equipment slot="Cape" id="Item.leopard_pelt" />
+				<equipment slot="Body" id="Item.balkan_nw_dolman" />
 				<equipment slot="Gloves" id="Item.studded_leather_vambraces" />
-				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hussar_boots" />
 				<equipment slot="Horse" id="Item.t2_khuzait_horse" />
 				<equipment slot="HorseHarness" id="Item.steppe_half_barding" />
 			</EquipmentRoster>
@@ -4320,11 +4315,11 @@
 				<equipment slot="Item1" id="Item.ridged_sabre_sword_t4" />
 				<equipment slot="Item2" id="Item.balkan_pistol" />
 				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
-				<equipment slot="Head" id="Item.spiked_helmet" />
-				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.eastern_plated_leather" />
+				<equipment slot="Head" id="Item.balkan_nw_kolpak" />
+				<equipment slot="Cape" id="Item.leopard_pelt" />
+				<equipment slot="Body" id="Item.balkan_nw_attila" />
 				<equipment slot="Gloves" id="Item.studded_leather_vambraces" />
-				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hussar_boots" />
 				<equipment slot="Horse" id="Item.t2_khuzait_horse" />
 				<equipment slot="HorseHarness" id="Item.steppe_half_barding" />
 			</EquipmentRoster>
@@ -4374,11 +4369,11 @@
 				<equipment slot="Item1" id="Item.khuzait_sword_4_t4" />
 				<equipment slot="Item2" id="Item.balkan_pistol" />
 				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
-				<equipment slot="Head" id="Item.khuzait_noble_helmet_with_fur" />
-				<equipment slot="Cape" id="Item.empire_cape_a" />
-				<equipment slot="Body" id="Item.stitched_leather_over_mail" />
+				<equipment slot="Head" id="Item.balkan_nw_kolpak" />
+				<equipment slot="Cape" id="Item.leopard_pelt" />
+				<equipment slot="Body" id="Item.balkan_nw_attila" />
 				<equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
-				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Leg" id="Item.balkan_nw_hussar_boots" />
 				<equipment slot="Horse" id="Item.t3_khuzait_horse" />
 				<equipment slot="HorseHarness" id="Item.steppe_half_barding" />
 			</EquipmentRoster>
@@ -4807,7 +4802,7 @@
 				<equipment slot="Item0" id="Item.balkan_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_2_t3" />
-				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Head" id="Item.balkan_nw_tricorne" />
 				<equipment slot="Body" id="Item.woven_leather_coat" />
 				<equipment slot="Leg" id="Item.leather_boots" />
 			</EquipmentRoster>
@@ -4849,7 +4844,7 @@
 				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
 				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_3_t3" />
-				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Head" id="Item.balkan_nw_tricorne" />
 				<equipment slot="Body" id="Item.basic_imperial_leather_armor" />
 				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
 				<equipment slot="Leg" id="Item.folded_town_boots" />

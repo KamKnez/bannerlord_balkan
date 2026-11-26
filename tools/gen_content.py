@@ -926,12 +926,84 @@ def ammo_xml(w, name):
     return "\n".join(out)
 
 
-def build_items(weapons, strings):
+# ---------------------------------------------------------------- Kleidung (data/kleidung.toml)
+
+CLOTHING_TYPES = {"Kopf": "HeadArmor", "Koerper": "BodyArmor", "Beine": "LegArmor"}
+CLOTHING_MATERIAL = {"Stoff": ("cloth_unarmoured", "Cloth"), "Leder": ("leather", "Leather"),
+                     "Platte": ("plate", "Plate")}
+CLOTHING_ARMOR = (("schutz_kopf", "head_armor"), ("schutz_koerper", "body_armor"), ("schutz_arme", "arm_armor"),
+                  ("schutz_beine", "leg_armor"))
+
+
+def load_clothing():
+    path = DATA / "kleidung.toml"
+    with path.open("rb") as fh:
+        return tomllib.load(fh).get("kleidung", [])
+
+
+def check_clothing(clothing, weapons, vanilla_ids):
+    errors = []
+    seen = {w["id"] for w in weapons}
+    for c in clothing:
+        cid = c.get("id", "?")
+        if cid in seen:
+            errors.append(f"kleidung.toml: {cid}: doppelt")
+        seen.add(cid)
+        if not cid.startswith("balkan_"):
+            errors.append(f"kleidung.toml: {cid}: Id muss mit balkan_ beginnen")
+        if f"Item.{cid}" in vanilla_ids:
+            errors.append(f"kleidung.toml: {cid}: gibt es schon im Spiel")
+        if c.get("art") not in CLOTHING_TYPES:
+            errors.append(f"kleidung.toml: {cid}: unbekannte art '{c.get('art')}'")
+        if c.get("material", "Stoff") not in CLOTHING_MATERIAL:
+            errors.append(f"kleidung.toml: {cid}: unbekanntes material '{c.get('material')}'")
+        for key in ("mesh", "kultur", "gewicht"):
+            if key not in c:
+                errors.append(f"kleidung.toml: {cid}: {key} fehlt")
+        if not any(key in c for key, _ in CLOTHING_ARMOR):
+            errors.append(f"kleidung.toml: {cid}: kein Schutzwert")
+    return errors
+
+
+def clothing_xml(c, name):
+    typ = CLOTHING_TYPES[c["art"]]
+    modifier, material = CLOTHING_MATERIAL[c.get("material", "Stoff")]
+    armor = [f'{attr}="{c[key]}"' for key, attr in CLOTHING_ARMOR if key in c]
+    if typ == "HeadArmor":
+        armor += ['has_gender_variations="false"', 'hair_cover_type="type1"']
+    elif typ == "BodyArmor":
+        armor += ['covers_body="true"', 'has_gender_variations="false"']
+    else:
+        armor += ['covers_legs="true"']
+    armor += [f'modifier_group="{modifier}"', f'material_type="{material}"']
+    lines = [
+        "\t<Item",
+        f"\t\tid={quoteattr(c['id'])}",
+        f"\t\tname={quoteattr(name)}",
+        f"\t\tmesh={quoteattr(c['mesh'])}",
+        f'\t\tculture="Culture.{c["kultur"]}"',
+        f'\t\tweight="{c["gewicht"]}"',
+        '\t\tappearance="1"',
+        f'\t\tType="{typ}">',
+        "\t\t<ItemComponent>",
+        "\t\t\t<Armor " + " ".join(armor) + " />",
+        "\t\t</ItemComponent>",
+        '\t\t<Flags Civilian="true" />' if material != "Plate" else '\t\t<Flags />',
+        "\t</Item>",
+    ]
+    return "\n".join(lines)
+
+
+def build_items(weapons, strings, clothing=()):
     out = ['<?xml version="1.0" encoding="utf-8"?>', HEADER, "<Items>"]
     for w in weapons:
         sid = "balkan_item_" + w["id"][len("balkan_"):]
         name = strings.add(sid, w["name"]["en"], w["name"]["de"])
         out.append(ammo_xml(w, name) if w["art"] == "munition" else gun_xml(w, name))
+    for c in clothing:
+        sid = "balkan_item_" + c["id"][len("balkan_"):]
+        name = strings.add(sid, c["name"]["en"], c["name"]["de"])
+        out.append(clothing_xml(c, name))
     out.append("</Items>")
     return "\n".join(out) + "\n"
 
@@ -1044,17 +1116,21 @@ def generate():
     if errors:
         raise SystemExit("Fehler in data/reiche:\n  - " + "\n  - ".join(errors))
     weapons = load_weapons()
+    clothing = load_clothing()
+    own_items = weapons + clothing
     vanilla_ids = load_vanilla_ids()
-    errors = check_weapons(weapons, vanilla_ids) + check_troop_items(cultures, weapons, vanilla_ids)
+    errors = check_weapons(weapons, vanilla_ids) + check_clothing(clothing, weapons, vanilla_ids)
+    errors += check_troop_items(cultures, own_items, vanilla_ids)
     if errors:
-        raise SystemExit("Fehler in data/waffen.toml oder den Ausrüstungen:\n  - " + "\n  - ".join(errors))
+        raise SystemExit("Fehler in data/waffen.toml, data/kleidung.toml oder den Ausrüstungen:\n  - "
+                         + "\n  - ".join(errors))
     trade = load_trade()
-    errors = check_trade(trade, cultures, weapons, vanilla_ids)
+    errors = check_trade(trade, cultures, own_items, vanilla_ids)
     if errors:
         raise SystemExit("Fehler in data/handel.toml:\n  - " + "\n  - ".join(errors))
     strings = Strings()
     files = {
-        OUT_ITEMS: build_items(weapons, strings),
+        OUT_ITEMS: build_items(weapons, strings, clothing),
         OUT_TROOPS: build_troops(cultures, strings),
         OUT_PARTIES: build_parties(cultures),
         OUT_XSLT: build_xslt(cultures, strings),
