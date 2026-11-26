@@ -1,14 +1,15 @@
 # Feuerwaffen und Munition (v0.1).
 #
-# Bis es eigene Modelle gibt, nutzen die Feuerwaffen Modelle und Mechanik der Armbrüste aus dem
-# Spiel (siehe docs/design.md, Abschnitt 6). Die Werte sind Richtwerte und werden nach
+# Die Gewehre nutzen Modelle aus der Mod Napoleonic Warfare (newmusket, newrifle; siehe CREDITS.md),
+# die Pistole noch das Modell einer Armbrust. Die Mechanik ist überall die der Armbrüste des Spiels
+# (siehe docs/design.md, Abschnitt 6). Die Werte sind Richtwerte und werden nach
 # Spieltests angepasst. Zum Vergleich die schwere Armbrust (crossbow_d) des Spiels:
 # Schaden 93, Geschossgeschwindigkeit 90, Genauigkeit 99, Tempo 92, Handhabung 62.
 #
 # Felder einer Waffe:
 #   id            Gegenstands-Id, beginnt mit "balkan_"
 #   art           "gewehr" (zweihändig, nicht vom Pferd nachladbar), "pistole" oder "munition"
-#   modell        Modell aus dem Spiel (Armbrust- oder Bolzen-Modell)
+#   modell        Modell: Armbrust oder Bolzen aus dem Spiel, oder newmusket/newrifle aus Napoleonic Warfare
 #   kultur        Kultur, in deren Städten die Waffe eher angeboten wird
 #   gewicht       in kg
 #   schaden       Stichschaden (Waffe) bzw. Zusatzschaden (Munition)
@@ -29,7 +30,7 @@
 id = "balkan_arquebus"
 name = { en = "Arquebus", de = "Arkebuse" }
 art = "gewehr"
-modell = "crossbow_b"
+modell = "newrifle"
 kultur = "vlandia"
 gewicht = 3.2
 schaden = 105
@@ -43,7 +44,7 @@ schwierigkeit = 0
 id = "balkan_musket"
 name = { en = "Matchlock Musket", de = "Luntenschloss-Muskete" }
 art = "gewehr"
-modell = "crossbow_c"
+modell = "newmusket"
 kultur = "vlandia"
 gewicht = 4.5
 schaden = 120
@@ -57,7 +58,7 @@ schwierigkeit = 20
 id = "balkan_long_musket"
 name = { en = "Long Balkan Musket", de = "Lange Balkan-Flinte" }
 art = "gewehr"
-modell = "crossbow_d"
+modell = "newmusket"
 kultur = "aserai"
 gewicht = 4.2
 schaden = 115
@@ -71,7 +72,7 @@ schwierigkeit = 40
 id = "balkan_heavy_musket"
 name = { en = "Heavy Musket", de = "Schwere Muskete" }
 art = "gewehr"
-modell = "crossbow_c"
+modell = "newmusket"
 kultur = "vlandia"
 gewicht = 5.5
 schaden = 135

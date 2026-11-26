@@ -620,11 +620,15 @@ def build_wars(realms):
 # ---------------------------------------------------------------- Feuerwaffen
 
 # Modelle aus dem Spiel: Kollisionskörper und Sitz der Munition, wie bei den Armbrüsten
+# (Kollisionskörper, Sitz der Munition, hat eine Sehne)
 GUN_MODELS = {
-    "crossbow_b": ("bo_cross_bow_heavy", "0.0, 0.02131, 0.24975"),
-    "crossbow_c": ("bo_cross_bow_heavy", "0.0, 0.02131, 0.24675"),
-    "crossbow_d": ("bo_composite_crossbows", "0.0, 0.02131, 0.22975"),
-    "crossbow_e": ("bo_composite_crossbows", "0.0, 0.02131, 0.22975"),
+    "crossbow_b": ("bo_cross_bow_heavy", "0.0, 0.02131, 0.24975", True),
+    "crossbow_c": ("bo_cross_bow_heavy", "0.0, 0.02131, 0.24675", True),
+    "crossbow_d": ("bo_composite_crossbows", "0.0, 0.02131, 0.22975", True),
+    "crossbow_e": ("bo_composite_crossbows", "0.0, 0.02131, 0.22975", True),
+    # Modelle aus Napoleonic Warfare (Module/BalkanMod/Assets/napoleonic_warfare, siehe CREDITS.md)
+    "newmusket": ("bo_spear_b", "0, 0, 0", False),
+    "newrifle": ("bo_spear_b", "0, 0, 0", False),
 }
 # Munitionsmodelle: Köcher-Körper, Länge
 AMMO_MODELS = {
@@ -670,9 +674,10 @@ def check_weapons(weapons, vanilla_ids):
 
 
 def gun_xml(w, name):
-    body, ammo_offset = GUN_MODELS[w["modell"]]
+    body, ammo_offset, has_string = GUN_MODELS[w["modell"]]
     pistol = w["art"] == "pistole"
-    flags = ['RangedWeapon="true"', 'HasString="true"', 'NotUsableWithOneHand="true"', 'TwoHandIdleOnMount="true"']
+    flags = ['RangedWeapon="true"', f'HasString="{str(has_string).lower()}"', 'NotUsableWithOneHand="true"',
+             'TwoHandIdleOnMount="true"']
     if not pistol:
         flags.insert(2, 'CantReloadOnHorseback="true"')
     out = [
