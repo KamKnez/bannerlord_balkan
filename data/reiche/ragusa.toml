@@ -5,6 +5,9 @@ reich_id = "empire_s"
 kultur_id = "ragusa"
 kultur_wechseln = true
 farben = ["FFF2EFE6", "FF1F3E8C"]
+# Königreiche, mit denen das Reich zu Spielbeginn im Krieg ist (beide Seiten eintragen). Alle anderen Kriege
+# dieses Reichs aus Calradia entfallen.
+krieg_mit = []
 # Im Spiel führt eine Frau den Clan; der Rektor von Ragusa war immer ein Mann aus dem Adel.
 # Deshalb übernimmt lord_1_47 (vorher Ulbos) das Reich und den Clan.
 herrscher = "lord_1_47"

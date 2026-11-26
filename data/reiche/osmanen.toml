@@ -5,6 +5,9 @@ reich_id = "aserai"
 kultur_id = "aserai"
 kultur_wechseln = false
 farben = ["FF9E1B1B", "FF1E6B3A"]
+# Königreiche, mit denen das Reich zu Spielbeginn im Krieg ist (beide Seiten eintragen). Alle anderen Kriege
+# dieses Reichs aus Calradia entfallen.
+krieg_mit = ["vlandia", "empire_w"]
 herrscher = "lord_3_1"
 
 # Siedlungen, die die Kultur des Reichs bekommen (Städte und Burgen der Clans und ihre Dörfer)

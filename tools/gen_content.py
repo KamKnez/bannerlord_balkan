@@ -399,6 +399,12 @@ def check_realms(realms, cultures):
                     errors.append(f"{where}: wappen.{key} muss [Nummer, \"0xffRRGGBB\"] sein")
             if not isinstance(w.get("zeichen"), int) or not isinstance(w.get("groesse"), int):
                 errors.append(f"{where}: wappen.zeichen und wappen.groesse müssen Zahlen sein")
+        for enemy in r.get("krieg_mit", []):
+            if f"Kingdom.{enemy}" not in vanilla:
+                errors.append(f"{where}: krieg_mit: Königreich {enemy} gibt es im Spiel nicht")
+            other = next((x for x in realms if x["reich_id"] == enemy), None)
+            if other is not None and r["reich_id"] not in other.get("krieg_mit", []):
+                errors.append(f"{where}: Krieg mit {enemy} muss auch in {other['_datei']} stehen")
         if r["siedlungen"] and not r["kultur_wechseln"]:
             errors.append(f"{where}: siedlungen nur mit kultur_wechseln = true")
     return errors
@@ -496,7 +502,25 @@ def build_realms(realms, strings):
             if sid in r["siedlungen"]:
                 sattrs["culture"] = culture
             t["Settlements"] += patch_template("Settlement", sid, sattrs)
+    t["Kingdoms"] += build_wars(realms)
     return {OUT_REALMS[k]: xslt_doc(v) for k, v in t.items()}
+
+
+def build_wars(realms):
+    """Kriege zu Spielbeginn: Beziehungen unserer Reiche neu setzen, alte Kriege anderer Reiche mit ihnen entfernen."""
+    ours = [r for r in realms if "krieg_mit" in r]
+    if not ours:
+        return []
+    out = ["\t<!-- Kriege zu Spielbeginn (krieg_mit in data/reiche/) -->"]
+    cond = " or ".join(f"@kingdom='Kingdom.{r['reich_id']}'" for r in ours)
+    out.append(f'\t<xsl:template match="Kingdom/relationships/relationship[{cond}]" />')
+    for r in ours:
+        out.append(f"\t<xsl:template match=\"Kingdom[@id='{r['reich_id']}']/relationships\">")
+        out.append("\t\t<relationships>")
+        for enemy in r["krieg_mit"]:
+            out.append(f'\t\t\t<relationship kingdom="Kingdom.{enemy}" value="-1" isAtWar="true" />')
+        out += ["\t\t</relationships>", "\t</xsl:template>"]
+    return out
 
 
 def generate():

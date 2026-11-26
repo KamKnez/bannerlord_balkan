@@ -5,6 +5,9 @@ reich_id = "empire_w"
 kultur_id = "venice"
 kultur_wechseln = true
 farben = ["FF8C1C13", "FFE8C547"]
+# Königreiche, mit denen das Reich zu Spielbeginn im Krieg ist (beide Seiten eintragen). Alle anderen Kriege
+# dieses Reichs aus Calradia entfallen.
+krieg_mit = ["aserai"]
 herrscher = "lord_1_7"
 
 # Siedlungen, die die Kultur des Reichs bekommen (Städte und Burgen der Clans und ihre Dörfer)
