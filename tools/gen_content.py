@@ -4,12 +4,14 @@
 Quellen:
   data/kulturen/*.toml   Kulturen, Truppenbäume, Miliz und Lord-Parteien
   data/namen/*.txt       Namenslisten (siehe data/namen/README.md)
+  data/reiche/*.toml     Königreiche, Clans, Lords und Kultur der Siedlungen
 
 Ergebnis (nicht von Hand ändern, sondern hier neu erzeugen):
   Module/BalkanMod/ModuleData/balkan_troops.xml                 NPCCharacters (Truppen)
   Module/BalkanMod/ModuleData/balkan_party_templates.xml        partyTemplates (Lord-Parteien, Miliz)
   Module/BalkanMod/ModuleData/XSLT/BalkanMod_SandBoxCore_SPCultures.xslt
                                                                 Patch der Kulturen (wie im NavalDLC)
+  Module/BalkanMod/ModuleData/XSLT/BalkanMod_Sandbox_*.xslt   Patches für Reiche, Clans, Lords, Helden, Siedlungen
   Module/BalkanMod/ModuleData/Languages/DE/std_balkan_content_de.xml
                                                                 Deutsche Texte
 
@@ -33,7 +35,16 @@ OUT_PARTIES = MODULE_DATA / "balkan_party_templates.xml"
 OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
 
-HEADER = "<!-- Erzeugt von tools/gen_content.py aus data/kulturen/. Nicht von Hand ändern. -->"
+OUT_REALMS = {
+    "Kingdoms": MODULE_DATA / "XSLT" / "BalkanMod_Sandbox_Kingdoms.xslt",
+    "Factions": MODULE_DATA / "XSLT" / "BalkanMod_Sandbox_Factions.xslt",
+    "Lords": MODULE_DATA / "XSLT" / "BalkanMod_Sandbox_Lords.xslt",
+    "Heroes": MODULE_DATA / "XSLT" / "BalkanMod_Sandbox_Heroes.xslt",
+    "Settlements": MODULE_DATA / "XSLT" / "BalkanMod_Sandbox_Settlements.xslt",
+}
+VANILLA_IDS = ROOT / "tools" / "vanilla" / "ids_v1.5.7.txt"
+
+HEADER = "<!-- Erzeugt von tools/gen_content.py aus data/. Nicht von Hand ändern. -->"
 
 # Stufe -> Level wie bei den Calradia-Truppen
 LEVELS = {1: 6, 2: 11, 3: 16, 4: 21, 5: 26, 6: 31}
@@ -336,17 +347,141 @@ def check_definitions(cultures):
     return errors
 
 
+# ---------------------------------------------------------------- Reiche, Clans, Lords
+
+
+def load_realms():
+    realms = []
+    for path in sorted((DATA / "reiche").glob("*.toml")):
+        with path.open("rb") as fh:
+            r = tomllib.load(fh)
+        r["_datei"] = path.relative_to(ROOT).as_posix()
+        realms.append(r)
+    return realms
+
+
+def check_realms(realms, cultures):
+    vanilla = set(VANILLA_IDS.read_text(encoding="utf-8").split())
+    culture_ids = {c["kultur_id"] for c in cultures}
+    errors = []
+    seen = {}
+    for r in realms:
+        where = r["_datei"]
+        if f"Kingdom.{r['reich_id']}" not in vanilla:
+            errors.append(f"{where}: Königreich {r['reich_id']} gibt es im Spiel nicht")
+        if r["kultur_id"] not in culture_ids:
+            errors.append(f"{where}: Kultur {r['kultur_id']} ist in data/kulturen nicht definiert")
+        lords = [l["id"] for c in r["clan"] for l in c["lord"]]
+        if r["herrscher"] not in lords:
+            errors.append(f"{where}: herrscher {r['herrscher']} gehört zu keinem Clan der Datei")
+        checks = [("Faction", c["id"]) for c in r["clan"]] + [("Hero", x) for x in lords]
+        checks += [("Settlement", x) for x in r["siedlungen"]]
+        for kind, obj in checks:
+            if f"{kind}.{obj}" not in vanilla:
+                errors.append(f"{where}: {kind}.{obj} gibt es im Spiel nicht")
+            if (kind, obj) in seen:
+                errors.append(f"{where}: {kind}.{obj} steht auch in {seen[(kind, obj)]}")
+            seen[(kind, obj)] = where
+        if r["siedlungen"] and not r["kultur_wechseln"]:
+            errors.append(f"{where}: siedlungen nur mit kultur_wechseln = true")
+    return errors
+
+
+def text_value(strings, sid, value):
+    """Eigenname (String) oder übersetzter Text ({en, de})."""
+    if isinstance(value, str):
+        return "{=!}" + value
+    return strings.add(sid, value["en"].strip(), value["de"].strip())
+
+
+def xslt_doc(templates):
+    out = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        HEADER,
+        '<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">',
+        '\t<xsl:output omit-xml-declaration="no" indent="yes" />',
+        '\t<xsl:template match="@*|node()">',
+        '\t\t<xsl:copy><xsl:apply-templates select="@*|node()" /></xsl:copy>',
+        "\t</xsl:template>",
+    ]
+    out += templates
+    out.append("</xsl:stylesheet>")
+    return "\n".join(out) + "\n"
+
+
+def patch_template(element, obj_id, attrs, drop=()):
+    """Kopiert ein Element mit allen Kindern und setzt bzw. entfernt einzelne Attribute."""
+    keep = "@*"
+    if drop:
+        keep = "@*[" + " and ".join(f"name() != '{d}'" for d in drop) + "]"
+    out = [f"\t<xsl:template match=\"{element}[@id='{obj_id}']\">", "\t\t<xsl:copy>"]
+    out.append(f"\t\t\t<xsl:copy-of select=\"{keep}\" />")
+    for k, v in attrs.items():
+        out.append(f"\t\t\t<xsl:attribute name=\"{k}\">{escape(v)}</xsl:attribute>")
+    out += ['\t\t\t<xsl:apply-templates select="node()" />', "\t\t</xsl:copy>", "\t</xsl:template>"]
+    return out
+
+
+def build_realms(realms, strings):
+    t = {key: [] for key in OUT_REALMS}
+    for r in realms:
+        key = r["reich_id"]
+        culture = f"Culture.{r['kultur_id']}"
+        note = f"\t<!-- {r['name']['de']} ({r['_datei']}) -->"
+        for part in t.values():
+            part.append(note)
+        kattrs = {
+            "name": text_value(strings, f"balkan_kingdom_{key}", r["name"]),
+            "short_name": text_value(strings, f"balkan_kingdom_{key}_short", r["kurzname"]),
+            "title": text_value(strings, f"balkan_kingdom_{key}_title", r["titel"]),
+            "ruler_title": text_value(strings, f"balkan_kingdom_{key}_ruler", r["herrschertitel"]),
+            "text": text_value(strings, f"balkan_kingdom_{key}_text", r["text"]),
+            "color": r["farben"][0],
+            "color2": r["farben"][1],
+            "owner": f"Hero.{r['herrscher']}",
+        }
+        if r["kultur_wechseln"]:
+            kattrs["culture"] = culture
+        t["Kingdoms"] += patch_template("Kingdom", key, kattrs)
+        for c in r["clan"]:
+            cattrs = {"name": text_value(strings, f"balkan_{c['id']}", c["name"])}
+            if r["kultur_wechseln"]:
+                cattrs["culture"] = culture
+            if any(l["id"] == r["herrscher"] for l in c["lord"]):
+                cattrs["owner"] = f"Hero.{r['herrscher']}"
+            t["Factions"] += patch_template("Faction", c["id"], cattrs)
+            for lord in c["lord"]:
+                lattrs = {"name": "{=!}" + lord["name"]}
+                if r["kultur_wechseln"]:
+                    lattrs["culture"] = culture
+                t["Lords"] += patch_template("NPCCharacter", lord["id"], lattrs)
+                if lord["id"] == r["herrscher"]:
+                    htext = text_value(strings, f"balkan_hero_{lord['id']}_text", r["herrscher_text"])
+                    t["Heroes"] += patch_template("Hero", lord["id"], {"text": htext})
+                else:
+                    # alte Lebensläufe der Calradia-Herrscher passen nicht mehr
+                    t["Heroes"] += patch_template("Hero", lord["id"], {}, drop=("text",))
+        for sid in r["siedlungen"]:
+            t["Settlements"] += patch_template("Settlement", sid, {"culture": culture})
+    return {OUT_REALMS[k]: xslt_doc(v) for k, v in t.items()}
+
+
 def generate():
     cultures = load_cultures()
     errors = check_definitions(cultures)
     if errors:
         raise SystemExit("Fehler in data/kulturen:\n  - " + "\n  - ".join(errors))
+    realms = load_realms()
+    errors = check_realms(realms, cultures)
+    if errors:
+        raise SystemExit("Fehler in data/reiche:\n  - " + "\n  - ".join(errors))
     strings = Strings()
     files = {
         OUT_TROOPS: build_troops(cultures, strings),
         OUT_PARTIES: build_parties(cultures),
         OUT_XSLT: build_xslt(cultures, strings),
     }
+    files.update(build_realms(realms, strings))
     files[OUT_DE] = build_de(strings)
     return files
 

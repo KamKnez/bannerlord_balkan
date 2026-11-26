@@ -17,7 +17,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MODULE_DATA = ROOT / "Module" / "BalkanMod" / "ModuleData"
 VANILLA = ROOT / "tools" / "vanilla" / "ids_v1.5.7.txt"
-TYPES = ("Item", "NPCCharacter", "Culture", "PartyTemplate", "BodyProperty", "SkillSet", "EquipmentRoster")
+TYPES = (
+    "Item", "NPCCharacter", "Culture", "PartyTemplate", "BodyProperty", "SkillSet", "EquipmentRoster",
+    "Hero", "Faction", "Kingdom", "Settlement",
+)
 REF = re.compile(r"\b(" + "|".join(TYPES) + r")\.([A-Za-z0-9_]+)")
 TEXT_ID = re.compile(r"\{=(balkan_[A-Za-z0-9_]+)\}")
 XSL = "{http://www.w3.org/1999/XSL/Transform}"

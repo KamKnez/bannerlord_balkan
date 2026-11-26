@@ -1,0 +1,333 @@
+# Republik Ragusa. Ersetzt das Südliche Imperium.
+# Aufbau der Datei: siehe data/reiche/README.md
+
+reich_id = "empire_s"
+kultur_id = "ragusa"
+kultur_wechseln = true
+farben = ["FFF2EFE6", "FF1F3E8C"]
+# Im Spiel führt eine Frau den Clan; der Rektor von Ragusa war immer ein Mann aus dem Adel.
+# Deshalb übernimmt lord_1_47 (vorher Ulbos) das Reich und den Clan.
+herrscher = "lord_1_47"
+
+# Siedlungen, die die Kultur des Reichs bekommen (Städte und Burgen der Clans und ihre Dörfer)
+siedlungen = [
+  "castle_ES1",
+  "castle_ES2",
+  "castle_ES3",
+  "castle_ES4",
+  "castle_ES5",
+  "castle_ES6",
+  "castle_ES7",
+  "castle_ES8",
+  "town_ES1",
+  "town_ES2",
+  "town_ES3",
+  "town_ES4",
+  "town_ES5",
+  "town_ES6",
+  "town_ES7",
+  "castle_village_ES1_1",
+  "castle_village_ES2_1",
+  "castle_village_ES2_2",
+  "castle_village_ES3_1",
+  "castle_village_ES3_2",
+  "castle_village_ES4_1",
+  "castle_village_ES4_2",
+  "castle_village_ES5_1",
+  "castle_village_ES6_1",
+  "castle_village_ES7_1",
+  "castle_village_ES8_1",
+  "castle_village_ES1_2",
+  "village_ES1_2",
+  "village_ES1_3",
+  "village_ES1_4",
+  "castle_village_ES5_2",
+  "village_ES2_2",
+  "village_ES2_3",
+  "village_ES2_4",
+  "village_ES3_1",
+  "village_ES3_2",
+  "village_ES3_3",
+  "village_ES4_1",
+  "castle_village_ES8_2",
+  "village_ES4_3",
+  "village_ES5_1",
+  "village_ES5_2",
+  "village_ES5_3",
+  "village_ES6_1",
+  "village_ES6_2",
+  "castle_village_ES6_2",
+  "village_ES7_1",
+  "village_ES7_2",
+  "castle_village_ES7_2",
+]
+
+name = { en = "Republic of Ragusa", de = "Republik Ragusa" }
+kurzname = { en = "Ragusans", de = "Ragusaner" }
+titel = { en = "Republic of Ragusa", de = "Republik Ragusa" }
+herrschertitel = { en = "Rector", de = "Rektor" }
+
+[text]
+en = """
+Ragusa pays tribute to the Sultan and stays under the protection of the Emperor. Its noble houses take turns as Rector, and its merchants are welcome in every port from Venice to Istanbul.
+"""
+de = """
+Ragusa zahlt dem Sultan Tribut und steht unter dem Schutz des Kaisers. Seine Adelshäuser wechseln sich als Rektor ab, und seine Kaufleute sind in jedem Hafen von Venedig bis Istanbul willkommen.
+"""
+
+[herrscher_text]
+en = "Frano Gozze is Rector of the Republic. His term is short, but the great families of the city stand behind him."
+de = "Frano Gozze ist Rektor der Republik. Seine Amtszeit ist kurz, doch die großen Familien der Stadt stehen hinter ihm."
+
+
+[[clan]]
+id = "clan_empire_south_1"  # vorher Pethros, Oberhaupt Hero.lord_1_14
+name = "Gozze"
+[[clan.lord]]
+id = "lord_1_14"
+name = "Mara"
+weiblich = true  # 42 Jahre, vorher Rhagaea
+[[clan.lord]]
+id = "lord_1_27"
+name = "Marin"
+weiblich = false  # 37 Jahre, vorher Patyr
+[[clan.lord]]
+id = "lord_1_27_1"
+name = "Nika"
+weiblich = true  # 37 Jahre, vorher Verina
+[[clan.lord]]
+id = "lord_1_27_2"
+name = "Nikola"
+weiblich = false  # 18 Jahre, vorher Eutropios
+[[clan.lord]]
+id = "lord_1_27_3"
+name = "Kata"
+weiblich = true  # 18 Jahre, vorher Vasilia
+[[clan.lord]]
+id = "lord_1_37"
+name = "Anica"
+weiblich = true  # 21 Jahre, vorher Ira
+[[clan.lord]]
+id = "lord_1_47"
+name = "Frano"
+weiblich = false  # 45 Jahre, vorher Ulbos
+[[clan.lord]]
+id = "lord_1_47_1"
+name = "Paula"
+weiblich = true  # 38 Jahre, vorher Mina
+[[clan.lord]]
+id = "lord_1_47_2"
+name = "Frana"
+weiblich = true  # 14 Jahre, vorher Casyrea
+[[clan.lord]]
+id = "lord_1_47_3"
+name = "Lucija"
+weiblich = true  # 17 Jahre, vorher Colambea
+
+[[clan]]
+id = "clan_empire_south_2"  # vorher Leonipardes, Oberhaupt Hero.lord_1_15
+name = "Sorgo"
+[[clan.lord]]
+id = "lord_1_15"
+name = "Ivan"
+weiblich = false  # 62 Jahre, vorher Pharon
+[[clan.lord]]
+id = "lord_1_155"
+name = "Miho"
+weiblich = false  # 18 Jahre, vorher Zeno
+[[clan.lord]]
+id = "lord_1_16"
+name = "Marija"
+weiblich = true  # 50 Jahre, vorher Martira
+[[clan.lord]]
+id = "lord_1_28"
+name = "Vlaho"
+weiblich = false  # 25 Jahre, vorher Temion
+[[clan.lord]]
+id = "lord_1_38"
+name = "Dešica"
+weiblich = true  # 17 Jahre, vorher Helea
+[[clan.lord]]
+id = "lord_1_48"
+name = "Luko"
+weiblich = false  # 39 Jahre, vorher Joron
+[[clan.lord]]
+id = "lord_1_48_1"
+name = "Jela"
+weiblich = true  # 31 Jahre, vorher Alympia
+[[clan.lord]]
+id = "lord_1_48_2"
+name = "Mara"
+weiblich = true  # 9 Jahre, vorher Anea
+[[clan.lord]]
+id = "lord_1_48_3"
+name = "Nika"
+weiblich = true  # 11 Jahre, vorher Nonesos
+
+[[clan]]
+id = "clan_empire_south_3"  # vorher Mestricaros, Oberhaupt Hero.lord_1_17
+name = "Bona"
+[[clan.lord]]
+id = "lord_1_177"
+name = "Pavao"
+weiblich = false  # 19 Jahre, vorher Honoratus
+[[clan.lord]]
+id = "lord_1_29"
+name = "Ivo"
+weiblich = false  # 23 Jahre, vorher Sanion
+[[clan.lord]]
+id = "lord_1_17"
+name = "Jakov"
+weiblich = false  # 50 Jahre, vorher Oros
+[[clan.lord]]
+id = "lord_1_18"
+name = "Kata"
+weiblich = true  # 48 Jahre, vorher Jathea
+[[clan.lord]]
+id = "lord_1_39"
+name = "Anica"
+weiblich = true  # 20 Jahre, vorher Debana
+
+[[clan]]
+id = "clan_empire_south_4"  # vorher Hongeros, Oberhaupt Hero.lord_1_30
+name = "Ghetaldi"
+[[clan.lord]]
+id = "lord_1_30"
+name = "Šimun"
+weiblich = false  # 24 Jahre, vorher Turiados
+[[clan.lord]]
+id = "lord_1_30_1"
+name = "Paula"
+weiblich = true  # 23 Jahre, vorher Justina
+[[clan.lord]]
+id = "lord_1_49"
+name = "Orsat"
+weiblich = false  # 51 Jahre, vorher Obron
+[[clan.lord]]
+id = "lord_1_49_1"
+name = "Frana"
+weiblich = true  # 37 Jahre, vorher Tristania
+[[clan.lord]]
+id = "lord_1_49_2"
+name = "Lucija"
+weiblich = true  # 17 Jahre, vorher Gordiana
+[[clan.lord]]
+id = "lord_1_30_2"
+name = "Marija"
+weiblich = true  # 3 Jahre, vorher Callinia
+[[clan.lord]]
+id = "lord_1_30_3"
+name = "Marin"
+weiblich = false  # 2 Jahre, vorher Synesios
+[[clan.lord]]
+id = "lord_1_56_2"
+name = "Dešica"
+weiblich = true  # 17 Jahre, vorher Rustica
+
+[[clan]]
+id = "clan_empire_south_5"  # vorher Julios, Oberhaupt Hero.lord_1_63
+name = "Gradi"
+[[clan.lord]]
+id = "lord_1_63_2"
+name = "Jela"
+weiblich = true  # 12 Jahre, vorher Comatasa
+[[clan.lord]]
+id = "lord_1_63_3"
+name = "Mara"
+weiblich = true  # 9 Jahre, vorher Elidilea
+[[clan.lord]]
+id = "lord_1_63"
+name = "Nikola"
+weiblich = false  # 33 Jahre, vorher Baranor
+[[clan.lord]]
+id = "lord_1_63_1"
+name = "Nika"
+weiblich = true  # 32 Jahre, vorher Valaria
+[[clan.lord]]
+id = "lord_1_74"
+name = "Frano"
+weiblich = false  # 30 Jahre, vorher Zachanis
+[[clan.lord]]
+id = "lord_1_74_1"
+name = "Kata"
+weiblich = true  # 30 Jahre, vorher Zena
+
+[[clan]]
+id = "clan_empire_south_6"  # vorher Vizartos, Oberhaupt Hero.lord_1_54
+name = "Pozza"
+[[clan.lord]]
+id = "lord_1_54"
+name = "Ivan"
+weiblich = false  # 28 Jahre, vorher Sichanis
+[[clan.lord]]
+id = "lord_1_54_1"
+name = "Anica"
+weiblich = true  # 26 Jahre, vorher Constalia
+[[clan.lord]]
+id = "lord_1_68"
+name = "Miho"
+weiblich = false  # 33 Jahre, vorher Tharos
+[[clan.lord]]
+id = "lord_1_68_1"
+name = "Paula"
+weiblich = true  # 23 Jahre, vorher Silvina
+
+[[clan]]
+id = "clan_empire_south_7"  # vorher Avlonos, Oberhaupt Hero.lord_1_55
+name = "Caboga"
+[[clan.lord]]
+id = "lord_1_69_2"
+name = "Frana"
+weiblich = true  # 7 Jahre, vorher Dorathila
+[[clan.lord]]
+id = "lord_1_69"
+name = "Vlaho"
+weiblich = false  # 33 Jahre, vorher Niphon
+[[clan.lord]]
+id = "lord_1_69_1"
+name = "Lucija"
+weiblich = true  # 28 Jahre, vorher Areliana
+[[clan.lord]]
+id = "lord_1_55"
+name = "Luko"
+weiblich = false  # 28 Jahre, vorher Serandon
+[[clan.lord]]
+id = "lord_1_55_1"
+name = "Marija"
+weiblich = true  # 26 Jahre, vorher Megethia
+
+[[clan]]
+id = "clan_empire_south_8"  # vorher Prienicos, Oberhaupt Hero.lord_1_72
+name = "Menze"
+[[clan.lord]]
+id = "lord_1_72"
+name = "Pavao"
+weiblich = false  # 33 Jahre, vorher Abalytos
+[[clan.lord]]
+id = "lord_1_72_1"
+name = "Dešica"
+weiblich = true  # 31 Jahre, vorher Viviana
+[[clan.lord]]
+id = "lord_SE8_c"
+name = "Jela"
+weiblich = true  # 19 Jahre, vorher Itaria
+
+[[clan]]
+id = "clan_empire_south_9"  # vorher Vetranis, Oberhaupt Hero.lord_SE9_l
+name = "Zamagna"
+[[clan.lord]]
+id = "lord_SE9_l"
+name = "Ivo"
+weiblich = false  # 58 Jahre, vorher Satros
+[[clan.lord]]
+id = "lord_SE9_s"
+name = "Mara"
+weiblich = true  # 46 Jahre, vorher Jonna
+[[clan.lord]]
+id = "lord_SE9_c1"
+name = "Jakov"
+weiblich = false  # 26 Jahre, vorher Pagarios
+[[clan.lord]]
+id = "lord_SE9_c2"
+name = "Nika"
+weiblich = true  # 24 Jahre, vorher Diasca

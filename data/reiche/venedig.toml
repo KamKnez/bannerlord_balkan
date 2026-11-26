@@ -1,0 +1,275 @@
+# Republik Venedig. Ersetzt das Westliche Imperium.
+# Aufbau der Datei: siehe data/reiche/README.md
+
+reich_id = "empire_w"
+kultur_id = "venice"
+kultur_wechseln = true
+farben = ["FF8C1C13", "FFE8C547"]
+herrscher = "lord_1_7"
+
+# Siedlungen, die die Kultur des Reichs bekommen (Städte und Burgen der Clans und ihre Dörfer)
+siedlungen = [
+  "castle_EW1",
+  "castle_EW2",
+  "castle_EW3",
+  "castle_EW4",
+  "castle_EW5",
+  "castle_EW6",
+  "castle_EW7",
+  "castle_EW8",
+  "town_EW1",
+  "town_EW2",
+  "town_EW3",
+  "town_EW4",
+  "town_EW5",
+  "town_EW6",
+  "castle_village_EW1_1",
+  "castle_village_EW2_1",
+  "castle_village_EW2_2",
+  "castle_village_EW3_1",
+  "castle_village_EW4_1",
+  "castle_village_EW5_1",
+  "castle_village_EW5_2",
+  "castle_village_EW6_1",
+  "castle_village_EW7_1",
+  "castle_village_EW7_2",
+  "castle_village_EW8_1",
+  "village_EW1_1",
+  "village_EW1_2",
+  "castle_village_EW6_2",
+  "castle_village_EW3_2",
+  "village_EW2_2",
+  "village_EW2_3",
+  "village_EW2_4",
+  "castle_village_EW4_2",
+  "village_EW3_2",
+  "village_EW3_3",
+  "village_EW4_1",
+  "castle_village_EW1_2",
+  "village_EW4_3",
+  "village_EW4_4",
+  "village_EW5_1",
+  "village_EW5_2",
+  "village_EW6_1",
+  "castle_village_EW8_2",
+  "village_EW6_3",
+  "village_EW6_4",
+]
+
+name = { en = "Republic of Venice", de = "Republik Venedig" }
+kurzname = { en = "Venetians", de = "Venezianer" }
+titel = { en = "Most Serene Republic of Venice", de = "Durchlauchtigste Republik Venedig" }
+herrschertitel = { en = "Provveditore Generale", de = "Provveditore generale" }
+
+[text]
+en = """
+Venice has pushed its Dalmatian border deep inland, taking Knin, Sinj and Vrlika. The coast belongs to the Lion of Saint Mark, the hinterland to Morlach captains who serve the Republic for land and pay.
+"""
+de = """
+Venedig hat seine dalmatinische Grenze weit ins Hinterland geschoben und Knin, Sinj und Vrlika genommen. Die Küste gehört dem Markuslöwen, das Hinterland morlakischen Hauptleuten, die der Republik für Land und Sold dienen.
+"""
+
+[herrscher_text]
+en = "Alvise Mocenigo is Provveditore Generale of Dalmatia and Albania. He governs the province on behalf of the Doge."
+de = "Alvise Mocenigo ist Provveditore generale für Dalmatien und Albanien. Er verwaltet die Provinz im Namen des Dogen."
+
+
+[[clan]]
+id = "clan_empire_west_1"  # vorher Comnos, Oberhaupt Hero.lord_1_7
+name = "Mocenigo"
+[[clan.lord]]
+id = "lord_1_7"
+name = "Alvise"
+weiblich = false  # 43 Jahre, vorher Garios
+[[clan.lord]]
+id = "lord_1_75"
+name = "Francesco"
+weiblich = false  # 20 Jahre, vorher Thephilos
+[[clan.lord]]
+id = "lord_1_8"
+name = "Elena"
+weiblich = true  # 47 Jahre, vorher Vendelia
+[[clan.lord]]
+id = "lord_1_34"
+name = "Lucia"
+weiblich = true  # 24 Jahre, vorher Nadea
+[[clan.lord]]
+id = "lord_1_24"
+name = "Girolamo"
+weiblich = false  # 21 Jahre, vorher Tadeos
+[[clan.lord]]
+id = "lord_1_44"
+name = "Marco"
+weiblich = false  # 38 Jahre, vorher Nemos
+
+[[clan]]
+id = "clan_empire_west_2"  # vorher Varros, Oberhaupt Hero.lord_1_9
+name = "Cornaro"
+[[clan.lord]]
+id = "lord_1_9"
+name = "Pietro"
+weiblich = false  # 57 Jahre, vorher Apys
+[[clan.lord]]
+id = "lord_1_10"
+name = "Caterina"
+weiblich = true  # 45 Jahre, vorher Melkea
+[[clan.lord]]
+id = "lord_1_35"
+name = "Giovanni"
+weiblich = false  # 38 Jahre, vorher Amenon
+[[clan.lord]]
+id = "lord_1_25"
+name = "Lorenzo"
+weiblich = false  # 22 Jahre, vorher Eronyx
+[[clan.lord]]
+id = "lord_1_23"
+name = "Andrea"
+weiblich = false  # 26 Jahre, vorher Jastion
+
+[[clan]]
+id = "clan_empire_west_3"  # vorher Dionicos, Oberhaupt Hero.lord_1_11
+name = "Morosini"
+[[clan.lord]]
+id = "lord_1_11"
+name = "Nicolò"
+weiblich = false  # 51 Jahre, vorher Crotor
+[[clan.lord]]
+id = "lord_1_111"
+name = "Zuane"
+weiblich = false  # 19 Jahre, vorher Casinon
+[[clan.lord]]
+id = "lord_1_12"
+name = "Isabella"
+weiblich = true  # 40 Jahre, vorher Lysica
+[[clan.lord]]
+id = "lord_1_36"
+name = "Chiara"
+weiblich = true  # 20 Jahre, vorher Phaea
+[[clan.lord]]
+id = "lord_1_26"
+name = "Antonio"
+weiblich = false  # 20 Jahre, vorher Meritor
+
+[[clan]]
+id = "clan_empire_west_4"  # vorher Elaches, Oberhaupt Hero.lord_1_40
+name = "Fanfogna"
+[[clan.lord]]
+id = "lord_1_40"
+name = "Domenico"
+weiblich = false  # 35 Jahre, vorher Tynops
+[[clan.lord]]
+id = "lord_1_40_1"
+name = "Giacomo"
+weiblich = false  # 33 Jahre, vorher Catella
+[[clan.lord]]
+id = "lord_1_46"
+name = "Leonardo"
+weiblich = false  # 38 Jahre, vorher Milos
+[[clan.lord]]
+id = "lord_1_46_1"
+name = "Sebastiano"
+weiblich = false  # 19 Jahre, vorher Seorgys
+
+[[clan]]
+id = "clan_empire_west_5"  # vorher Lonalion, Oberhaupt Hero.lord_1_45
+name = "Janković"
+[[clan.lord]]
+id = "lord_1_45"
+name = "Bernardo"
+weiblich = false  # 38 Jahre, vorher Desporion
+[[clan.lord]]
+id = "lord_1_45_1"
+name = "Daniele"
+weiblich = false  # 38 Jahre, vorher Agnala
+[[clan.lord]]
+id = "lord_1_45_2"
+name = "Vettor"
+weiblich = false  # 19 Jahre, vorher Phostor
+[[clan.lord]]
+id = "lord_1_45_3"
+name = "Alvise"
+weiblich = false  # 18 Jahre, vorher Nereida
+[[clan.lord]]
+id = "lord_1_57"
+name = "Francesco"
+weiblich = false  # 25 Jahre, vorher Altenos
+[[clan.lord]]
+id = "lord_1_57_1"
+name = "Laura"
+weiblich = true  # 24 Jahre, vorher Sophalia
+[[clan.lord]]
+id = "lord_1_57_2"
+name = "Cecilia"
+weiblich = true  # 2 Jahre, vorher Jephalia
+
+[[clan]]
+id = "clan_empire_west_6"  # vorher Sorados, Oberhaupt Hero.lord_1_52
+name = "Contarini"
+[[clan.lord]]
+id = "lord_1_52"
+name = "Girolamo"
+weiblich = false  # 36 Jahre, vorher Saratis
+[[clan.lord]]
+id = "lord_1_52_1"
+name = "Paolina"
+weiblich = true  # 35 Jahre, vorher Minarvina
+[[clan.lord]]
+id = "lord_1_52_2"
+name = "Marietta"
+weiblich = true  # 16 Jahre, vorher Megarita
+[[clan.lord]]
+id = "lord_1_62"
+name = "Marco"
+weiblich = false  # 35 Jahre, vorher Sejaron
+[[clan.lord]]
+id = "lord_1_62_1"
+name = "Pietro"
+weiblich = false  # 35 Jahre, vorher Arytha
+
+[[clan]]
+id = "clan_empire_west_7"  # vorher Corenios, Oberhaupt Hero.lord_1_53
+name = "Foscolo"
+[[clan.lord]]
+id = "lord_1_53"
+name = "Giovanni"
+weiblich = false  # 25 Jahre, vorher Achios
+[[clan.lord]]
+id = "lord_1_73"
+name = "Lorenzo"
+weiblich = false  # 32 Jahre, vorher Ovagos
+[[clan.lord]]
+id = "lord_1_73_1"
+name = "Elisabetta"
+weiblich = true  # 31 Jahre, vorher Popilia
+
+[[clan]]
+id = "clan_empire_west_8"  # vorher Maneolis, Oberhaupt Hero.lord_1_71
+name = "Grimani"
+[[clan.lord]]
+id = "lord_1_71"
+name = "Andrea"
+weiblich = false  # 32 Jahre, vorher Vipon
+[[clan.lord]]
+id = "lord_WE8_c"
+name = "Orsola"
+weiblich = true  # 29 Jahre, vorher Icratia
+[[clan.lord]]
+id = "lord_WE8_u"
+name = "Nicolò"
+weiblich = false  # 35 Jahre, vorher Varmyros
+
+[[clan]]
+id = "clan_empire_west_9"  # vorher Palladios, Oberhaupt Hero.lord_WE9_l
+name = "Loredan"
+[[clan.lord]]
+id = "lord_WE9_l"
+name = "Zuane"
+weiblich = false  # 24 Jahre, vorher Vincantios
+[[clan.lord]]
+id = "lord_WE9_u"
+name = "Benedetta"
+weiblich = true  # 26 Jahre, vorher Euresa
+[[clan.lord]]
+id = "lord_WE9_u2"
+name = "Antonio"
+weiblich = false  # 37 Jahre, vorher Torvasis

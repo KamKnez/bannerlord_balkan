@@ -11,7 +11,9 @@ mit Habsburgern, Osmanen, Venedig und Ragusa. Danach wird die Karte in Runden er
 
 Phase 2 läuft. Im Spiel sind die ersten vier Kulturen mit eigenen Truppenbäumen:
 Kroaten (statt Vlandia), Bosniaken (statt Aserai) sowie Venezianer und Ragusaner als neue Kulturen.
-Königreiche, Clans, Lords und Siedlungen folgen in den nächsten Schritten (siehe [docs/design.md](docs/design.md)).
+Dazu die vier Königreiche Habsburger (statt Vlandia), Osmanen (statt Aserai), Venedig (statt Westliches Imperium)
+und Ragusa (statt Südliches Imperium) mit umbenannten Clans und Lords. Siedlungen tragen noch die Calradia-Namen,
+das folgt im nächsten Schritt (siehe [docs/design.md](docs/design.md)).
 
 ## Installieren und testen
 
@@ -38,7 +40,7 @@ wird der Modulordner nach dem Bauen direkt ins Spiel kopiert.
 |---|---|
 | `Module/BalkanMod/` | Der Modulordner, wie er im Spiel liegt: `SubModule.xml`, `ModuleData/` (XML-Daten, Sprachen) |
 | `src/BalkanMod/` | C#-Code der Mod |
-| `data/` | Rohdaten, aus denen die XML-Dateien entstehen: Namenslisten, Kulturen und Truppen ([data/kulturen/](data/kulturen/README.md)) |
+| `data/` | Rohdaten, aus denen die XML-Dateien entstehen: Namenslisten, Kulturen und Truppen ([data/kulturen/](data/kulturen/README.md)), Königreiche, Clans und Lords ([data/reiche/](data/reiche/README.md)) |
 | `tools/` | Generator `gen_content.py` und Prüfskripte |
 | `docs/` | Recherche und Design-Dokumente (ab Phase 1) |
 

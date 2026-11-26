@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Erzeugt von tools/gen_content.py aus data/kulturen/. Nicht von Hand ändern. -->
+<!-- Erzeugt von tools/gen_content.py aus data/. Nicht von Hand ändern. -->
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
   <tags>
     <tag language="Deutsch" />
@@ -76,5 +76,30 @@
     <string id="balkan_culture_ragusaner_text" text="Die Republik Ragusa wahrt ihre Freiheit eher mit Gold als mit Stahl. Ihre Handelsflotte fährt von der Levante bis Spanien, und jedes Jahr bringen ihre Gesandten dem Sultan den Tribut. Hinter den großen Mauern der Stadt dient eine kleine Wache aus Hellebardieren und Arkebusieren dem Rektor, der jeden Monat wechselt, damit keiner allein herrscht." />
     <string id="balkan_culture_venezianer" text="Venezianer" />
     <string id="balkan_culture_venezianer_text" text="Die Durchlauchtigste Republik Venedig beherrscht die Adria von ihrer Lagune aus. An der dalmatinischen Küste verwalten ihre Provveditori ummauerte Häfen voller Kaufleute, Seeleute und Soldaten. Italienische Pikeniere und Musketiere halten die Mauern, dalmatinische Schiavoni und albanische Cappelletti führen den Kleinkrieg im Hinterland." />
+    <string id="balkan_kingdom_vlandia" text="Habsburgermonarchie" />
+    <string id="balkan_kingdom_vlandia_short" text="Habsburger" />
+    <string id="balkan_kingdom_vlandia_title" text="Königreich Kroatien-Slawonien unter der Habsburger Krone" />
+    <string id="balkan_kingdom_vlandia_ruler" text="Ban" />
+    <string id="balkan_kingdom_vlandia_text" text="Nach dem Frieden von Karlowitz halten die Habsburger Kroatien und Slawonien wieder bis an Una und Save. Der Kaiser ist fern in Wien, an der Grenze führt der Ban von Kroatien den Adel und die Grenzregimenter." />
+    <string id="balkan_hero_lord_4_1_text" text="Adam Batthyány ist Ban von Kroatien. Er hat im großen Türkenkrieg gekämpft und muss nun sichern, was gewonnen wurde." />
+    <string id="balkan_kingdom_aserai" text="Osmanisches Reich" />
+    <string id="balkan_kingdom_aserai_short" text="Osmanen" />
+    <string id="balkan_kingdom_aserai_title" text="Eyalet Bosnien" />
+    <string id="balkan_kingdom_aserai_ruler" text="Beylerbey" />
+    <string id="balkan_kingdom_aserai_text" text="Bosnien ist jetzt die Grenzprovinz des Osmanischen Reichs. Seit dem Brand von Sarajevo sitzt der Beylerbey in Travnik, und die Kapetanije an Una, Save und Drina bewachen die Grenze gegen Habsburger und Venezianer." />
+    <string id="balkan_clan_aserai_1" text="Haus des Beylerbeys" />
+    <string id="balkan_hero_lord_3_1_text" text="Mehmed verwaltet das Eyalet Bosnien im Namen des Sultans. Ob er das Amt behält, entscheidet Istanbul." />
+    <string id="balkan_kingdom_empire_s" text="Republik Ragusa" />
+    <string id="balkan_kingdom_empire_s_short" text="Ragusaner" />
+    <string id="balkan_kingdom_empire_s_title" text="Republik Ragusa" />
+    <string id="balkan_kingdom_empire_s_ruler" text="Rektor" />
+    <string id="balkan_kingdom_empire_s_text" text="Ragusa zahlt dem Sultan Tribut und steht unter dem Schutz des Kaisers. Seine Adelshäuser wechseln sich als Rektor ab, und seine Kaufleute sind in jedem Hafen von Venedig bis Istanbul willkommen." />
+    <string id="balkan_hero_lord_1_47_text" text="Frano Gozze ist Rektor der Republik. Seine Amtszeit ist kurz, doch die großen Familien der Stadt stehen hinter ihm." />
+    <string id="balkan_kingdom_empire_w" text="Republik Venedig" />
+    <string id="balkan_kingdom_empire_w_short" text="Venezianer" />
+    <string id="balkan_kingdom_empire_w_title" text="Durchlauchtigste Republik Venedig" />
+    <string id="balkan_kingdom_empire_w_ruler" text="Provveditore generale" />
+    <string id="balkan_kingdom_empire_w_text" text="Venedig hat seine dalmatinische Grenze weit ins Hinterland geschoben und Knin, Sinj und Vrlika genommen. Die Küste gehört dem Markuslöwen, das Hinterland morlakischen Hauptleuten, die der Republik für Land und Sold dienen." />
+    <string id="balkan_hero_lord_1_7_text" text="Alvise Mocenigo ist Provveditore generale für Dalmatien und Albanien. Er verwaltet die Provinz im Namen des Dogen." />
   </strings>
 </base>

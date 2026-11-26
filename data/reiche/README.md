@@ -1,0 +1,31 @@
+# Königreiche, Clans und Lords
+
+Eine Datei pro Königreich. `tools/gen_content.py` erzeugt daraus XSLT-Patches für die Calradia-Reiche
+(`Module/BalkanMod/ModuleData/XSLT/BalkanMod_Sandbox_*.xslt`). Ids, Wappen, Familienbande, Gesichter und
+Fähigkeiten der Lords bleiben wie im Spiel, wir ändern nur Namen, Texte, Farben, Herrscher und Kultur.
+
+| Datei | Königreich | Im Spiel |
+|---|---|---|
+| `habsburger.toml` | Habsburgermonarchie | Vlandia (`vlandia`) |
+| `osmanen.toml` | Osmanisches Reich (Eyalet Bosnien) | Aserai (`aserai`) |
+| `venedig.toml` | Republik Venedig | Westliches Imperium (`empire_w`) |
+| `ragusa.toml` | Republik Ragusa | Südliches Imperium (`empire_s`) |
+
+## Felder
+
+| Feld | Bedeutung |
+|---|---|
+| `reich_id` | Id des Königreichs im Spiel |
+| `kultur_id` | Kultur aus `data/kulturen/` |
+| `kultur_wechseln` | `true`: Reich, Clans, Lords und die Siedlungen unter `siedlungen` bekommen diese Kultur (nötig für Venedig und Ragusa, deren Kulturen neu sind) |
+| `farben` | Kartenfarben des Reichs (`AARRGGBB`) |
+| `herrscher` | Lord, der Reich und Clan führt (muss in einem Clan der Datei stehen) |
+| `name`, `kurzname`, `titel`, `herrschertitel` | Texte, Englisch und Deutsch |
+| `[text]`, `[herrscher_text]` | Beschreibung des Reichs und Lebenslauf des Herrschers |
+| `siedlungen` | Städte, Burgen und Dörfer, deren Kultur wechselt |
+| `[[clan]]` | `id` im Spiel und `name` (Familienname als Text, oder `{ en, de }` für einen übersetzten Namen) |
+| `[[clan.lord]]` | `id` im Spiel, neuer Vorname `name`, `weiblich` nur zur Übersicht (das Geschlecht bleibt wie im Spiel) |
+
+Die Vornamen sind beim Anlegen reihum aus `data/namen/` verteilt worden und können frei geändert werden.
+Alle anderen Lebensläufe der Lords werden entfernt, weil sie von Calradia erzählen.
+Die CI prüft, dass jede Id im Spiel existiert und kein Clan, Lord oder Ort in zwei Dateien steht.
