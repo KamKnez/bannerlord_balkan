@@ -178,6 +178,11 @@ Fertig ist v0.1, wenn:
 - **Truppenbäume (umgesetzt):** wie in Abschnitt 4, ergänzt um eine fünfte Stufe für die Hauptlinie
   (Harambaša, Kapetanije-Veteran, Sergente) und den Adel (Kürassier-Veteran, Zaim-Veteran, Corazza-Veterano),
   dazu eine eigene Miliz pro Kultur. Die Daten liegen in `data/kulturen/`.
+- **Königreiche, Clans, Lords (umgesetzt):** per XSLT auf die Calradia-Reiche, Daten in `data/reiche/`. Clans wie in
+  Abschnitt 2, überzählige Clans mit weiteren Familien aus den Namenslisten. In Ragusa führt der Calradia-Clan eine
+  Frau; weil der Rektor immer ein Mann aus dem Adel war, übernimmt ein anderer Lord des Clans (Frano Gozze).
+  Venedig und Ragusa wechseln mit ihren Siedlungen zu den neuen Kulturen. Wappen und Kriege zu Spielbeginn sind
+  noch die von Calradia.
 - **Noch offen bei den Truppen:** Deutsche, Ungarn, Türken (Janitscharen), Serben (Grenzer, Martolosen) und Morlaken
   kommen als zusätzliche Truppen in die Party-Vorlagen der Lords, sobald die Königreiche stehen.
-- **Offen:** Wer war um 1700 Beylerbey von Bosnien und wer Provveditore generale in Dalmatien? Das wird in der Recherche weiter geprüft.
+- **Offen:** Der Beylerbey heißt vorerst „Mehmed“ (Platzhalter). Wer war um 1700 Beylerbey von Bosnien und wer Provveditore generale in Dalmatien? Das wird in der Recherche weiter geprüft.

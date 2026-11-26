@@ -1,0 +1,277 @@
+# Osmanisches Reich (Eyalet Bosnien). Ersetzt das Sultanat der Aserai.
+# Aufbau der Datei: siehe data/reiche/README.md
+
+reich_id = "aserai"
+kultur_id = "aserai"
+kultur_wechseln = false
+farben = ["FF9E1B1B", "FF1E6B3A"]
+herrscher = "lord_3_1"
+
+# Siedlungen, die die Kultur des Reichs bekommen (Städte und Burgen der Clans und ihre Dörfer)
+siedlungen = []
+
+name = { en = "Ottoman Empire", de = "Osmanisches Reich" }
+kurzname = { en = "Ottomans", de = "Osmanen" }
+titel = { en = "Eyalet of Bosnia", de = "Eyalet Bosnien" }
+herrschertitel = { en = "Beylerbey", de = "Beylerbey" }
+
+[text]
+en = """
+Bosnia is now the frontier province of the Ottoman Empire. Since the sack of Sarajevo the beylerbey sits in Travnik, and the captaincies along the Una, Sava and Drina guard the border against Habsburgs and Venetians.
+"""
+de = """
+Bosnien ist jetzt die Grenzprovinz des Osmanischen Reichs. Seit dem Brand von Sarajevo sitzt der Beylerbey in Travnik, und die Kapetanije an Una, Save und Drina bewachen die Grenze gegen Habsburger und Venezianer.
+"""
+
+[herrscher_text]
+en = "Mehmed governs the Eyalet of Bosnia in the name of the Sultan. Whether he keeps the post depends on Istanbul."
+de = "Mehmed verwaltet das Eyalet Bosnien im Namen des Sultans. Ob er das Amt behält, entscheidet Istanbul."
+
+
+[[clan]]
+id = "clan_aserai_1"  # vorher Banu Hulyan, Oberhaupt Hero.lord_3_1
+name = { en = "House of the Beylerbey", de = "Haus des Beylerbeys" }
+[[clan.lord]]
+id = "lord_3_1"
+name = "Mehmed"
+weiblich = false  # 44 Jahre, vorher Unqid
+[[clan.lord]]
+id = "lord_3_2"
+name = "Fatima"
+weiblich = true  # 45 Jahre, vorher Jinda
+[[clan.lord]]
+id = "lord_3_7"
+name = "Ahmed"
+weiblich = false  # 24 Jahre, vorher Dhiyul
+[[clan.lord]]
+id = "lord_3_10"
+name = "Ajša"
+weiblich = true  # 20 Jahre, vorher Anidha
+[[clan.lord]]
+id = "lord_3_13"
+name = "Mustafa"
+weiblich = false  # 38 Jahre, vorher Nuqar
+[[clan.lord]]
+id = "lord_3_13_1"
+name = "Hatidža"
+weiblich = true  # 37 Jahre, vorher Sira
+[[clan.lord]]
+id = "lord_3_13_2"
+name = "Emina"
+weiblich = true  # 17 Jahre, vorher Razana
+
+[[clan]]
+id = "clan_aserai_2"  # vorher Banu Sarran, Oberhaupt Hero.lord_3_3
+name = "Atlagić"
+[[clan.lord]]
+id = "dead_lord_3_1"
+name = "Hasan"
+weiblich = false  # 32 Jahre, vorher Nimr
+[[clan.lord]]
+id = "lord_3_8"
+name = "Husein"
+weiblich = false  # 24 Jahre, vorher Addas
+[[clan.lord]]
+id = "lord_3_11"
+name = "Zejneba"
+weiblich = true  # 22 Jahre, vorher Arwa
+[[clan.lord]]
+id = "lord_3_3"
+name = "Ibrahim"
+weiblich = false  # 49 Jahre, vorher Adram
+[[clan.lord]]
+id = "lord_3_3_1"
+name = "Alija"
+weiblich = false  # 19 Jahre, vorher Tariq
+[[clan.lord]]
+id = "lord_3_4"
+name = "Merjema"
+weiblich = true  # 45 Jahre, vorher Maraa
+
+[[clan]]
+id = "clan_aserai_3"  # vorher Banu Qild, Oberhaupt Hero.lord_3_5
+name = "Crnčić"
+[[clan.lord]]
+id = "lord_3_5"
+name = "Osman"
+weiblich = false  # 45 Jahre, vorher Tais
+[[clan.lord]]
+id = "lord_3_51"
+name = "Murat"
+weiblich = false  # 19 Jahre, vorher Haqan
+[[clan.lord]]
+id = "lord_3_12"
+name = "Hanifa"
+weiblich = true  # 22 Jahre, vorher Manan
+[[clan.lord]]
+id = "lord_3_20"
+name = "Sulejman"
+weiblich = false  # 36 Jahre, vorher Karith
+[[clan.lord]]
+id = "lord_3_20_1"
+name = "Safija"
+weiblich = true  # 35 Jahre, vorher Judira
+[[clan.lord]]
+id = "lord_3_20_2"
+name = "Hasnija"
+weiblich = true  # 16 Jahre, vorher Azina
+[[clan.lord]]
+id = "lord_3_6"
+name = "Rabija"
+weiblich = true  # 41 Jahre, vorher Ruma
+[[clan.lord]]
+id = "lord_3_9"
+name = "Omer"
+weiblich = false  # 21 Jahre, vorher Usair
+
+[[clan]]
+id = "clan_aserai_4"  # vorher Banu Qaraz, Oberhaupt Hero.lord_3_16
+name = "Čengić"
+[[clan.lord]]
+id = "lord_3_14"
+name = "Derviš"
+weiblich = false  # 47 Jahre, vorher Thamza
+[[clan.lord]]
+id = "lord_3_14_1"
+name = "Umihana"
+weiblich = true  # 25 Jahre, vorher Sasaitha
+[[clan.lord]]
+id = "lord_3_15"
+name = "Ismail"
+weiblich = false  # 31 Jahre, vorher Ghuzid
+[[clan.lord]]
+id = "lord_3_15_1"
+name = "Šerifa"
+weiblich = true  # 26 Jahre, vorher Shimra
+[[clan.lord]]
+id = "lord_3_15_2"
+name = "Fatima"
+weiblich = true  # 5 Jahre, vorher Bushila
+[[clan.lord]]
+id = "lord_3_16"
+name = "Ali"
+weiblich = false  # 28 Jahre, vorher Suruq
+[[clan.lord]]
+id = "lord_3_16_1"
+name = "Ajša"
+weiblich = true  # 24 Jahre, vorher Farina
+
+[[clan]]
+id = "clan_aserai_5"  # vorher Banu Arbas, Oberhaupt Hero.lord_3_17
+name = "Ljubović"
+[[clan.lord]]
+id = "lord_3_17"
+name = "Halil"
+weiblich = false  # 28 Jahre, vorher Iyalas
+[[clan.lord]]
+id = "lord_3_17_1"
+name = "Hatidža"
+weiblich = true  # 26 Jahre, vorher Shaima
+[[clan.lord]]
+id = "lord_3_17_2"
+name = "Emina"
+weiblich = true  # 6 Jahre, vorher Sanit
+[[clan.lord]]
+id = "lord_3_21"
+name = "Ejub"
+weiblich = false  # 28 Jahre, vorher Ukhai
+[[clan.lord]]
+id = "lord_3_21_1"
+name = "Zejneba"
+weiblich = true  # 25 Jahre, vorher Ashisa
+
+[[clan]]
+id = "clan_aserai_6"  # vorher Banu Atij, Oberhaupt Hero.lord_3_18
+name = "Sokolović"
+[[clan.lord]]
+id = "lord_3_18"
+name = "Hamza"
+weiblich = false  # 48 Jahre, vorher Talas
+[[clan.lord]]
+id = "lord_3_18_1"
+name = "Merjema"
+weiblich = true  # 22 Jahre, vorher Farzana
+[[clan.lord]]
+id = "lord_3_18_2"
+name = "Hanifa"
+weiblich = true  # 20 Jahre, vorher Hafisa
+[[clan.lord]]
+id = "lord_3_18_3"
+name = "Safija"
+weiblich = true  # 18 Jahre, vorher Zuad
+[[clan.lord]]
+id = "lord_3_18_4"
+name = "Salih"
+weiblich = false  # 7 Jahre, vorher Jalfar
+
+[[clan]]
+id = "clan_aserai_7"  # vorher Banu Sarmal, Oberhaupt Hero.lord_3_19
+name = "Kapetanović"
+[[clan.lord]]
+id = "lord_3_19"
+name = "Mahmut"
+weiblich = false  # 48 Jahre, vorher Awdhan
+[[clan.lord]]
+id = "lord_3_19_1"
+name = "Hasnija"
+weiblich = true  # 46 Jahre, vorher Salma
+[[clan.lord]]
+id = "lord_3_19_2"
+name = "Rabija"
+weiblich = true  # 22 Jahre, vorher Zulaika
+[[clan.lord]]
+id = "lord_3_19_3"
+name = "Umihana"
+weiblich = true  # 20 Jahre, vorher Sulhana
+[[clan.lord]]
+id = "lord_3_23"
+name = "Bajro"
+weiblich = false  # 24 Jahre, vorher Qahin
+[[clan.lord]]
+id = "lord_3_23_1"
+name = "Šerifa"
+weiblich = true  # 22 Jahre, vorher Sukayna
+
+[[clan]]
+id = "clan_aserai_8"  # vorher Banu Habbab, Oberhaupt Hero.lord_3_22
+name = "Kulenović"
+[[clan.lord]]
+id = "lord_3_22"
+name = "Mehmed"
+weiblich = false  # 39 Jahre, vorher Hashan
+[[clan.lord]]
+id = "lord_3_22_1"
+name = "Fatima"
+weiblich = true  # 38 Jahre, vorher Yamina
+[[clan.lord]]
+id = "lord_3_22_2"
+name = "Ajša"
+weiblich = true  # 19 Jahre, vorher Suna
+[[clan.lord]]
+id = "lord_3_22_3"
+name = "Hatidža"
+weiblich = true  # 17 Jahre, vorher Zanuwa
+[[clan.lord]]
+id = "lord_3_22_4"
+name = "Emina"
+weiblich = true  # 13 Jahre, vorher Hajara
+
+[[clan]]
+id = "clan_aserai_9"  # vorher Banu Ruwaid, Oberhaupt Hero.lord_A9_l
+name = "Predojević"
+[[clan.lord]]
+id = "lord_A9_l"
+name = "Ahmed"
+weiblich = false  # 43 Jahre, vorher Aqar
+[[clan.lord]]
+id = "lord_A9_s"
+name = "Zejneba"
+weiblich = true  # 42 Jahre, vorher Thiqa
+[[clan.lord]]
+id = "lord_A9_c"
+name = "Merjema"
+weiblich = true  # 19 Jahre, vorher Dhila
+[[clan.lord]]
+id = "lord_A9_u"
+name = "Mustafa"
+weiblich = false  # 29 Jahre, vorher Qaban

@@ -1,0 +1,285 @@
+# Habsburgermonarchie. Ersetzt das Königreich Vlandia.
+# Aufbau der Datei: siehe data/reiche/README.md
+
+reich_id = "vlandia"
+kultur_id = "vlandia"
+kultur_wechseln = false
+farben = ["FF1A1A1A", "FFE8C547"]
+herrscher = "lord_4_1"
+
+# Siedlungen, die die Kultur des Reichs bekommen (Städte und Burgen der Clans und ihre Dörfer)
+siedlungen = []
+
+name = { en = "Habsburg Monarchy", de = "Habsburgermonarchie" }
+kurzname = { en = "Habsburgs", de = "Habsburger" }
+titel = { en = "Kingdom of Croatia-Slavonia under the Habsburg Crown", de = "Königreich Kroatien-Slawonien unter der Habsburger Krone" }
+herrschertitel = { en = "Ban", de = "Ban" }
+
+[text]
+en = """
+After the Peace of Karlowitz the Habsburgs hold Croatia and Slavonia again up to the Una and the Sava. The emperor is far away in Vienna; on the frontier the Ban of Croatia leads the nobles and the border regiments.
+"""
+de = """
+Nach dem Frieden von Karlowitz halten die Habsburger Kroatien und Slawonien wieder bis an Una und Save. Der Kaiser ist fern in Wien, an der Grenze führt der Ban von Kroatien den Adel und die Grenzregimenter.
+"""
+
+[herrscher_text]
+en = "Adam Batthyány is Ban of Croatia. He fought in the great war against the Ottomans and now has to secure what was won."
+de = "Adam Batthyány ist Ban von Kroatien. Er hat im großen Türkenkrieg gekämpft und muss nun sichern, was gewonnen wurde."
+
+
+[[clan]]
+id = "clan_vlandia_1"  # vorher dey Meroc, Oberhaupt Hero.lord_4_1
+name = "Batthyány"
+[[clan.lord]]
+id = "lord_4_1"
+name = "Adam"
+weiblich = false  # 48 Jahre, vorher Derthert
+[[clan.lord]]
+id = "lord_4_2"
+name = "Katarina"
+weiblich = true  # 47 Jahre, vorher Philenora
+[[clan.lord]]
+id = "lord_4_7"
+name = "Juraj"
+weiblich = false  # 26 Jahre, vorher Alary
+[[clan.lord]]
+id = "lord_4_10"
+name = "Margareta"
+weiblich = true  # 22 Jahre, vorher Elys
+[[clan.lord]]
+id = "lord_4_13"
+name = "Nikola"
+weiblich = false  # 35 Jahre, vorher Romund
+[[clan.lord]]
+id = "lord_4_14"
+name = "Petar"
+weiblich = false  # 28 Jahre, vorher Morcon
+[[clan.lord]]
+id = "lord_4_141"
+name = "Pavao"
+weiblich = false  # 18 Jahre, vorher Amorcon
+[[clan.lord]]
+id = "lord_4_15"
+name = "Franjo"
+weiblich = false  # 27 Jahre, vorher Erdurand
+
+[[clan]]
+id = "clan_vlandia_2"  # vorher dey Tihr, Oberhaupt Hero.lord_4_3
+name = "Erdődy"
+[[clan.lord]]
+id = "lord_4_3"
+name = "Matija"
+weiblich = false  # 45 Jahre, vorher Aldric
+[[clan.lord]]
+id = "lord_4_3_1"
+name = "Ana"
+weiblich = true  # 22 Jahre, vorher Megenhelda
+[[clan.lord]]
+id = "lord_4_4"
+name = "Jelena"
+weiblich = true  # 45 Jahre, vorher Elthild
+[[clan.lord]]
+id = "lord_4_8"
+name = "Grgur"
+weiblich = false  # 26 Jahre, vorher Furnhard
+[[clan.lord]]
+id = "lord_4_11"
+name = "Marija"
+weiblich = true  # 24 Jahre, vorher Liena
+
+[[clan]]
+id = "clan_vlandia_3"  # vorher dey Arromanc, Oberhaupt Hero.lord_4_6
+name = "Drašković"
+[[clan.lord]]
+id = "lord_4_6"
+name = "Barbara"
+weiblich = true  # 45 Jahre, vorher Calatild
+[[clan.lord]]
+id = "lord_4_6_1"
+name = "Doroteja"
+weiblich = true  # 22 Jahre, vorher Odofled
+[[clan.lord]]
+id = "lord_4_5"
+name = "Stjepan"
+weiblich = false  # 44 Jahre, vorher Unthery
+[[clan.lord]]
+id = "lord_4_9"
+name = "Tomo"
+weiblich = false  # 23 Jahre, vorher Thomund
+[[clan.lord]]
+id = "lord_4_12"
+name = "Uršula"
+weiblich = true  # 24 Jahre, vorher Silvind
+[[clan.lord]]
+id = "lord_4_121"
+name = "Vuk"
+weiblich = false  # 19 Jahre, vorher Lasand
+
+[[clan]]
+id = "clan_vlandia_4"  # vorher dey Cortain, Oberhaupt Hero.lord_4_16
+name = "Keglević"
+[[clan.lord]]
+id = "lord_4_16"
+name = "Krsto"
+weiblich = false  # 42 Jahre, vorher Ingalther
+[[clan.lord]]
+id = "lord_4_16_1"
+name = "Magdalena"
+weiblich = true  # 18 Jahre, vorher Mitela
+[[clan.lord]]
+id = "lord_4_17"
+name = "Klara"
+weiblich = true  # 45 Jahre, vorher Elbet
+[[clan.lord]]
+id = "lord_4_18"
+name = "Luka"
+weiblich = false  # 21 Jahre, vorher Amalgun
+[[clan.lord]]
+id = "lord_4_181"
+name = "Marko"
+weiblich = false  # 19 Jahre, vorher Arthamund
+[[clan.lord]]
+id = "lord_4_19"
+name = "Elizabeta"
+weiblich = true  # 22 Jahre, vorher Asela
+
+[[clan]]
+id = "clan_vlandia_5"  # vorher dey Gunric, Oberhaupt Hero.lord_4_21
+name = "Oršić"
+[[clan.lord]]
+id = "lord_4_25"
+name = "Ante"
+weiblich = false  # 27 Jahre, vorher Lucand
+[[clan.lord]]
+id = "lord_4_25_1"
+name = "Agata"
+weiblich = true  # 22 Jahre, vorher Bertliana
+[[clan.lord]]
+id = "lord_4_21"
+name = "Mihovil"
+weiblich = false  # 30 Jahre, vorher Ospir
+
+[[clan]]
+id = "clan_vlandia_6"  # vorher dey Valant, Oberhaupt Hero.lord_4_22
+name = "Patačić"
+[[clan.lord]]
+id = "lord_4_20"
+name = "Andrija"
+weiblich = false  # 33 Jahre, vorher Varmund
+[[clan.lord]]
+id = "lord_4_20_1"
+name = "Lucija"
+weiblich = true  # 22 Jahre, vorher Ingeltrud
+[[clan.lord]]
+id = "lord_4_22"
+name = "Ladislav"
+weiblich = false  # 29 Jahre, vorher Servic
+[[clan.lord]]
+id = "lord_4_22_1"
+name = "Jela"
+weiblich = true  # 27 Jahre, vorher Alwith
+
+[[clan]]
+id = "clan_vlandia_7"  # vorher dey Fortes, Oberhaupt Hero.lord_4_23
+name = "Herberstein"
+[[clan.lord]]
+id = "lord_4_23"
+name = "Gašpar"
+weiblich = false  # 44 Jahre, vorher Belgir
+[[clan.lord]]
+id = "lord_4_23_1"
+name = "Mara"
+weiblich = true  # 24 Jahre, vorher Richelda
+[[clan.lord]]
+id = "lord_4_23_2"
+name = "Katarina"
+weiblich = true  # 22 Jahre, vorher Anstruda
+[[clan.lord]]
+id = "lord_4_23_3"
+name = "Baltazar"
+weiblich = false  # 19 Jahre, vorher Eleduran
+
+[[clan]]
+id = "clan_vlandia_8"  # vorher dey Molarn, Oberhaupt Hero.lord_4_24
+name = "Rattkay"
+[[clan.lord]]
+id = "lord_4_24"
+name = "Ivaniš"
+weiblich = false  # 47 Jahre, vorher Hecard
+[[clan.lord]]
+id = "lord_4_24_1"
+name = "Margareta"
+weiblich = true  # 45 Jahre, vorher Adaltrud
+[[clan.lord]]
+id = "lord_4_24_2"
+name = "Ana"
+weiblich = true  # 22 Jahre, vorher Gudonhelda
+[[clan.lord]]
+id = "lord_4_24_3"
+name = "Jelena"
+weiblich = true  # 20 Jahre, vorher Ingunde
+[[clan.lord]]
+id = "lord_4_24_4"
+name = "Marija"
+weiblich = true  # 17 Jahre, vorher Irmgard
+[[clan.lord]]
+id = "lord_4_26"
+name = "Benedikt"
+weiblich = false  # 27 Jahre, vorher Peric
+[[clan.lord]]
+id = "lord_4_26_1"
+name = "Barbara"
+weiblich = true  # 21 Jahre, vorher Reingarda
+
+[[clan]]
+id = "clan_vlandia_9"  # vorher dey Jelind, Oberhaupt Hero.lord_4_27
+name = "Gušić"
+[[clan.lord]]
+id = "lord_4_27"
+name = "Jakov"
+weiblich = false  # 27 Jahre, vorher Vartin
+[[clan.lord]]
+id = "lord_4_27_1"
+name = "Doroteja"
+weiblich = true  # 23 Jahre, vorher Lietgardis
+[[clan.lord]]
+id = "lord_V9_u"
+name = "Ilija"
+weiblich = false  # 47 Jahre, vorher Urundulf
+
+[[clan]]
+id = "clan_vlandia_10"  # vorher dey Folcun, Oberhaupt Hero.lord_4_28
+name = "Vojković"
+[[clan.lord]]
+id = "lord_4_28"
+name = "Ivan"
+weiblich = false  # 40 Jahre, vorher Ecarand
+[[clan.lord]]
+id = "lord_4_28_1"
+name = "Uršula"
+weiblich = true  # 20 Jahre, vorher Adalindis
+[[clan.lord]]
+id = "lord_4_28_2"
+name = "Magdalena"
+weiblich = true  # 18 Jahre, vorher Mauriana
+
+[[clan]]
+id = "clan_vlandia_11"  # vorher dey Rothad, Oberhaupt Hero.lord_V11_l
+name = "Jelačić"
+[[clan.lord]]
+id = "lord_V11_l"
+name = "Juraj"
+weiblich = false  # 48 Jahre, vorher Berican
+[[clan.lord]]
+id = "lord_V11_u"
+name = "Nikola"
+weiblich = false  # 46 Jahre, vorher Voleric
+[[clan.lord]]
+id = "lord_V11_c1"
+name = "Klara"
+weiblich = true  # 22 Jahre, vorher Elendara
+[[clan.lord]]
+id = "lord_V11_c2"
+name = "Petar"
+weiblich = false  # 19 Jahre, vorher Dagunic
