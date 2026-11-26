@@ -47,12 +47,13 @@ platz = {"town": begehbar & (anteil_gross >= 0.35), "castle": begehbar & (anteil
          "village": begehbar & (anteil_klein >= 0.4), "hideout": begehbar & (anteil_klein >= 0.5)}
 
 
-# Verstecke und automatisch verteilte Dörfer nur aufs Festland, nicht auf Inseln
+# Alle Orte nur aufs Festland, nicht auf Inseln
 marken, _ = ndi.label(~meer)
 gr = np.bincount(marken.ravel())
 gr[0] = 0
 festland = gr[marken] > 0.015 * marken.size        # Europa und Kleinasien, keine Inseln
-platz["hideout"] &= festland
+for art in platz:                                   # ohne Schiffe ist keine Insel erreichbar
+    platz[art] &= festland
 
 
 def art_von(ident):
