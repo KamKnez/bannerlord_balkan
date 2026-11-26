@@ -237,8 +237,13 @@ robuste Mechaniken als viele, die nur der Spieler nutzt. Bevor eine Mechanik geb
 - **Musketen-Formationen:** Salvenfeuer auf Befehl. Das Bajonett gibt es erst ab etwa 1700, und davor schützen Pikeniere die Musketiere.
 - **Kanonen bei Belagerungen:** Festungen im Vauban-Stil, Belagerungskanonen statt Katapulten. Das ist gut machbar, weil die
   Belagerungsgeräte des Spiels ersetzt werden.
-- **Feldartillerie in offenen Schlachten:** deutlich schwerer, weil die KI Geschütze bedienen und schützen muss. Wir prüfen,
-  ob „Napoleonic Warfare“ (Nexus 6101) Kanonen-Modelle und Code in freigegebenen Dateien (Ordner `Assets/shared`) mitbringt.
+- **Feldartillerie in offenen Schlachten (optional):** per Einstellung abschaltbar. Eine Armee führt höchstens etwa
+  5 Feldkanonen als Gut im Inventar mit. In der Schlacht bedienen einige eigene Truppen jede Kanone, und fällt die
+  Mannschaft, schweigt das Geschütz. Der Spieler stellt die Kanonen vor Schlachtbeginn in der Aufstellungsphase auf.
+  Die KI bekommt eine einfache feste Regel: Kanonen hinter oder knapp vor der eigenen Linie aufstellen, nicht bewegen
+  und auf die nächste größere feindliche Formation feuern. Die Machbarkeitsprüfung richtet sich danach. Wir prüfen, ob
+  „Napoleonic Warfare“ (Nexus 6101) Kanonen-Modelle, eine Bedienung durch Truppen und Code in freigegebenen Dateien
+  (Ordner `Assets/shared`) mitbringt und ob sich das Aufstellen in die Aufstellungsphase einhängen lässt.
   Erst danach wird entschieden. *(prüfen)*
 
 ### Wirtschaft und Land
