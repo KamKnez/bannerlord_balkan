@@ -19,3 +19,8 @@ Die Klänge (`ModuleSounds/balkan_*.wav`, umbenannte Kopien von `fire_musket*.wa
 `gap_musket_reload.wav` aus Napoleonic Warfare) stammen laut Mod-Seite von „Various Free Web Sound Pages“. Eine
 ausdrückliche Freigabe für Klänge gibt es dort nicht. Die Mod ist privat; die Klänge stehen deshalb in
 [NICHT_FREIGEGEBEN.md](NICHT_FREIGEGEBEN.md) und müssen vor einer Veröffentlichung ersetzt werden.
+
+## Hauptmenü-Karte
+
+`GUI/SpriteParts/ui_balkan/balkan_main_menu_map.png`: Johann Baptist Homann, „Imperium Turcicum in Europa, Asia et
+Africa“ (Nürnberg, um 1720), gemeinfrei, über Wikimedia Commons (`File:Homann_Imperium_Turcium.jpg`).
