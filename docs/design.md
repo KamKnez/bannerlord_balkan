@@ -146,11 +146,14 @@ Die Pistole lässt sich als einzige Feuerwaffe auf dem Pferd nachladen.
 
 ## 7. Besondere Systeme (Phase 3, C#)
 
-- **Militärgrenze:** Grenz-Dörfer liefern billige, gute Grenzer. Dafür zahlen sie weniger Steuern. Frisch eroberte Gebiete sind dünn besiedelt, Neusiedlung erhöht langsam den Wohlstand.
+- **Militärgrenze:** Grenzer bekommen Land und Steuerfreiheit gegen Kriegsdienst. Grenz-Dörfer liefern billige, gute Grenzer und zahlen dafür weniger Steuern. Frisch eroberte Gebiete sind dünn besiedelt, Neusiedlung erhöht langsam den Wohlstand.
 - **Kapetanije:** Osmanische Grenzburgen haben stärkere Besatzungen und erholen sich schneller.
 - **Wechselnder Beylerbey:** Der osmanische Statthalter wird gelegentlich vom Sultan ausgetauscht. Das ist ein Ereignis, das Beziehungen verschiebt.
 - **Ragusas Rektor:** wechselt regelmäßig. Ragusa kauft sich mit Tribut Frieden.
-- **Freischärler:** Hajduken und Uskoken überfallen Karawanen und lassen sich anwerben.
+- **Timar-System:** Osmanische Sipahi erhalten Lehen (Dörfer) statt Sold. Das ist billig für das Reich, aber ein Lehensreiter will sein Timar behalten und zieht ungern weit weg.
+- **Freischärler:** Hajduken und Uskoken sind eine eigene Banditenart. Sie überfallen Karawanen, lassen sich anwerben und können die Seite wechseln, je nachdem, wer besser zahlt oder wer ihnen schadet.
+- **Lösegeld und Gefangenenhandel:** Gefangene Lords und Soldaten bringen echtes Geld. Freikauf über die Grenze wird eine Einnahmequelle (passt zum Auftrag „Gefangenenfreikauf“).
+- **Pest und Seuchen:** Seuchen treffen ganze Regionen. Bevölkerung, Wohlstand und Rekruten sinken für eine Zeit, Heere in der Gegend verlieren Leute.
 - **Handel:** Venedig und Ragusa bekommen Handelsvorteile in Küstenstädten.
 
 ## 8. Low Fantasy (abschaltbar)
@@ -208,6 +211,21 @@ eine bewusste Spielentscheidung.
 - **Abschaltbar** über die Spieloptionen, für alle, die bei der Lage von 1700 bleiben wollen.
 - Baut auf dem Rebellionssystem des Spiels auf (siehe Modifikator „Civil Unrest“) und braucht die betroffenen Gebiete
   auf der Karte.
+
+## 8d. Religion (spätere Erweiterung)
+
+Bannerlord kennt keine Religion. Wir rüsten sie über eigenen C#-Code nach, ähnlich wie große Mods (z. B. Banner Kings).
+
+- **Glaubensrichtungen:** katholisch, orthodox, sunnitisch, dazu Protestanten und Juden als kleine Gruppen.
+  Der Glaube jeder Figur und jedes Orts ergibt sich zunächst aus der Kultur.
+- **Folgen:**
+  - Fürsten mögen Glaubensbrüder lieber (Beziehungsbonus).
+  - Eine Ehe mit Andersgläubigen kostet Ansehen bei frommen Lords.
+  - Orte mit fremdem Glauben gegenüber dem Herrscher sind unruhiger.
+  - Konvertieren ist möglich, hat aber seinen Preis (Beziehungen, Ansehen).
+- **Zeitgemäß:** Im Osmanischen Reich sind Christen und Juden über das Millet-System geduldet, zahlen aber mehr Steuern.
+  Die Habsburger fördern die Gegenreformation (Druck auf Protestanten und Orthodoxe, Vorteile für Katholiken).
+- Religion wirkt mit den Aufständen der Völker zusammen (8c): Unterdrückter Glaube macht Aufstände wahrscheinlicher.
 
 ## 9. Umfang der ersten Version (v0.1)
 
