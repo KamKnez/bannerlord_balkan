@@ -450,6 +450,7 @@ name = { en = "Veteran Corazza", de = "Corazza-Veterano" }
 stufe = 5
 gruppe = "Cavalry"
 profil = "reiter"
+aufwerten = ["condottiero"]
 gesicht = "fighter_empire_tall"
 pferd = { Horse = "t3_empire_horse", HorseHarness = "imperial_scale_barding" }
 [[truppe.ausruestung]]
@@ -464,6 +465,32 @@ Leg = "mail_cavalier_boots"
 [[truppe.ausruestung]]
 Item0 = "empire_lance_2_t4"
 Item1 = "broad_arming_sword_t4"
+Item2 = "stronger_reinforced_kite_shield"
+Head = "peaked_helmet_over_mail_coif"
+Body = "coat_of_plates_over_mail"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "condottiero"
+name = { en = "Condottiero", de = "Condottiero" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "noble_horse_imperial", HorseHarness = "imperial_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "western_plated_helmet"
+Body = "sturgian_fortified_armor"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_noble_sword_3_t5"
 Item2 = "stronger_reinforced_kite_shield"
 Head = "peaked_helmet_over_mail_coif"
 Body = "coat_of_plates_over_mail"
