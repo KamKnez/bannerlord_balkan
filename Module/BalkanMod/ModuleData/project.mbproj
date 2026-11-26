@@ -7,4 +7,7 @@
 	<file id="soln_item_usage_sets" name="ModuleData/item_usage_sets.xml" type="item_usage_set"/>
 	<file id="soln_movement_sets" name="ModuleData/movement_sets.xml" type="movement_set"/>
 	<file id="soln_full_movement_sets" name="ModuleData/full_movement_sets.xml" type="full_movement_set"/>
+	<!-- Klänge: Das Spiel liest module_sounds.xml auch von selbst, der Editor nur über diesen Eintrag. Ohne ihn fehlen
+	     dort die Klangnamen der Animationen ("Sound not found: austria_musket_reload_phase2"). -->
+	<file id="soln_module_sound" name="ModuleData/module_sounds.xml" type="module_sound"/>
 </base>
