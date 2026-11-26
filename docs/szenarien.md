@@ -7,7 +7,44 @@ Wir wollen dort eigene, historische Szenarien anbieten. Die Liste hier sammelt E
 
 Wie die Szenarien technisch angelegt werden (XML oder C#), prüfen wir an den Spieldateien. *(prüfen)*
 
-## Kampagnen-Szenarien
+## Kampagnenstruktur (entschieden)
+
+Die Kampagne besteht aus zwei Teilen. Feldzüge zu einzelnen Schauplätzen kommen erst später als Option dazu.
+
+### 1. Zwischen den Kriegen (Grundgerüst, offene Sandbox)
+
+Start nach dem Frieden von Karlowitz 1699, mit festen Grenzen und angespanntem Frieden. Große historische Ereignisse
+treten zu ihren Daten ein, sofern die betroffenen Gebiete auf der Karte sind. Der Spieler kann sich jeder Seite anschließen.
+
+| Jahr | Ereignis | Wirkung im Spiel | Braucht |
+|---|---|---|---|
+| 1703 | Rákóczi-Aufstand (bis 1711) | Kuruzen-Rebellen erheben sich gegen die Habsburger in Ungarn | Ungarn auf der Karte |
+| 1711 | Pruth-Feldzug | Krieg zwischen Zarentum und Osmanen, die Osmanen ziehen Truppen vom Balkan ab | Zarentum und Moldau |
+| 1714 | Krieg zwischen Venedig und den Osmanen (bis 1718) | Osmanen greifen Morea und Dalmatien an, 1716 Belagerung von Korfu | Kern, für Morea und Korfu später Griechenland |
+| 1716 | Österreichisch-Türkischer Krieg (bis 1718) | Habsburger treten an Venedigs Seite in den Krieg ein, Schlacht bei Peterwardein 1716, Belagerung Belgrads 1717 | Kern, für Belgrad und Peterwardein die zweite Runde |
+
+Im Kern (v0.1) greifen davon zuerst die Kriege ab 1714 und 1716, die übrigen Ereignisse folgen mit der größeren Karte.
+Die Ereignisse sollen abschaltbar sein, für Spieler, die eine rein freie Sandbox wollen. *(Daten im Design prüfen)*
+
+### 2. Geführter Aufstieg (Einstieg)
+
+Eine Startgeschichte je Volk mit eigenem Ziel. Hat man das Ziel erreicht, ist das Spiel frei.
+
+| Start | Ziel | Wann |
+|---|---|---|
+| Grenzer (Kroate oder Serbe an der Militärgrenze) | Hauptmann der Militärgrenze werden | v0.1 oder kurz danach |
+| Bosniake | Kapitän (Kapetan) einer Grenzfestung werden | v0.1 oder kurz danach |
+| Hajduke | Eine eigene Bande aufbauen und anführen | v0.1 oder kurz danach |
+| Venezianer oder Dalmatiner | Kommandant einer Küstenfestung werden *(Idee)* | nach v0.1 |
+| Ragusaner | Ein Handelshaus gründen und in den Rat aufsteigen *(Idee)* | nach v0.1 |
+| Montenegriner | Fürstbischof Danilo I. im Kampf um Unabhängigkeit helfen | zweite Runde (Montenegro) |
+
+### 3. Schauplatz-Feldzüge (später, optional)
+
+Kurze, abgeschlossene Kapitel als eigene Szenarien neben der Sandbox, zum Beispiel die Belagerung Belgrads 1717
+oder die Verteidigung von Korfu 1716.
+
+## Weitere Kampagnen-Szenarien (Entwürfe)
 
 | Szenario | Startjahr | Lage zu Beginn | Braucht | Wann |
 |---|---|---|---|---|
