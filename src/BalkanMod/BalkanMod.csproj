@@ -29,6 +29,17 @@
   </ItemGroup>
 
   <!--
+    Das Modding Kit (Editor) lädt die DLL aus bin\Win64_Shipping_wEditor statt aus bin\Win64_Shipping_Client.
+    Darum kommt die gebaute DLL in beide Ordner.
+  -->
+  <Target Name="CopyToEditorBin" AfterTargets="Build">
+    <ItemGroup>
+      <ClientBinFiles Include="$(ModuleDir)bin\Win64_Shipping_Client\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ClientBinFiles)" DestinationFolder="$(ModuleDir)bin\Win64_Shipping_wEditor\" SkipUnchangedFiles="true" />
+  </Target>
+
+  <!--
     Optional: Wenn GameFolder gesetzt ist (z. B. dotnet build -p:GameFolder="C:\Program Files (x86)\Steam\steamapps\common\Mount & Blade II Bannerlord"),
     wird der ganze Modulordner nach dem Build in den Modules-Ordner des Spiels kopiert.
   -->
