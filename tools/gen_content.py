@@ -39,6 +39,7 @@ OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
 OUT_ROSTERS = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_EquipmentRosters.xslt"
 OUT_STRINGS = MODULE_DATA / "balkan_strings.xml"
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
+OUT_TRADE = MODULE_DATA / "balkan_handel.xml"
 
 OUT_REALMS = {
     "Kingdoms": MODULE_DATA / "XSLT" / "BalkanMod_Sandbox_Kingdoms.xslt",
@@ -862,6 +863,82 @@ def check_troop_items(cultures, weapons, vanilla_ids):
     return errors
 
 
+# ---------------------------------------------------------------- Handel (data/handel.toml)
+
+ITEM_TYPES = ("Crossbow", "Bolts", "Bow", "Arrows", "OneHandedWeapon", "TwoHandedWeapon", "Polearm", "Thrown",
+              "Shield", "HeadArmor", "BodyArmor", "LegArmor", "HandArmor", "Cape", "Horse", "HorseHarness", "Pistol",
+              "Musket", "Bullets")
+
+
+def load_trade():
+    path = DATA / "handel.toml"
+    with path.open("rb") as fh:
+        return tomllib.load(fh)
+
+
+def trade_assortment(trade, cultures):
+    """Sortiment je Kultur: alle Gegenstände der Truppen ab min_stufe (ohne Pferde) und die Extras."""
+    min_tier = trade["sortiment"]["min_stufe"]
+    result = {}
+    for c in cultures:
+        items = result.setdefault(c["kultur_id"], set())
+        for t in c["truppe"]:
+            if t["stufe"] < min_tier:
+                continue
+            for roster in t.get("ausruestung", []):
+                items.update(v for k, v in roster.items() if k not in ("Horse", "HorseHarness"))
+    for culture, extra in trade["sortiment"].get("extra", {}).items():
+        result.setdefault(culture, set()).update(extra)
+    return {k: sorted(v) for k, v in result.items()}
+
+
+def check_trade(trade, cultures, weapons, vanilla_ids):
+    own = {w["id"] for w in weapons}
+    known = {c["kultur_id"] for c in cultures}
+    errors = []
+    for culture in trade["kulturen"] + trade["entfernen"]["bogen_nur_in"] + list(trade["sortiment"].get("extra", {})):
+        if culture not in known:
+            errors.append(f"handel.toml: unbekannte Kultur '{culture}'")
+    ids = [e["id"] for e in trade.get("immer", [])] + trade["entfernen"]["ids"]
+    ids += [i for extra in trade["sortiment"].get("extra", {}).values() for i in extra]
+    for item in ids:
+        if item not in own and f"Item.{item}" not in vanilla_ids:
+            errors.append(f"handel.toml: unbekannter Gegenstand '{item}'")
+    for typ in trade["entfernen"]["typen"]:
+        if typ not in ITEM_TYPES:
+            errors.append(f"handel.toml: unbekannte Gegenstandsart '{typ}'")
+    for e in trade.get("immer", []):
+        if not isinstance(e.get("anzahl"), int) or e["anzahl"] < 1:
+            errors.append(f"handel.toml: anzahl für {e.get('id')} fehlt")
+    return errors
+
+
+def build_trade(trade, cultures):
+    s = trade["sortiment"]
+    rem = trade["entfernen"]
+    assortment = trade_assortment(trade, cultures)
+    out = ['<?xml version="1.0" encoding="utf-8"?>', HEADER,
+           f'<BalkanTrade per_week="{s["pro_woche"]}">']
+    for prosperity, tier in s["max_stufe_bei_wohlstand"]:
+        out.append(f'\t<TierLimit prosperity="{prosperity}" max_tier="{tier}" />')
+    for e in trade.get("immer", []):
+        out.append(f'\t<Always id={quoteattr(e["id"])} amount="{e["anzahl"]}" />')
+    for typ in rem["typen"]:
+        out.append(f'\t<RemoveType value="{typ}" />')
+    for pattern in rem["muster"]:
+        out.append(f'\t<RemovePattern value={quoteattr(pattern)} />')
+    for item in rem["ids"]:
+        out.append(f'\t<RemoveId value={quoteattr(item)} />')
+    for culture in trade["kulturen"]:
+        bows = "true" if culture in rem["bogen_nur_in"] else "false"
+        out.append(f'\t<Shop culture="{culture}" bows="{bows}">')
+        for item in assortment.get(culture, []):
+            out.append(f'\t\t<Item id={quoteattr(item)} />')
+        out.append("\t</Shop>")
+    out.append("</BalkanTrade>")
+    return "\n".join(out) + "\n"
+
+
 def generate():
     cultures = load_cultures()
     errors = check_definitions(cultures)
@@ -876,6 +953,10 @@ def generate():
     errors = check_weapons(weapons, vanilla_ids) + check_troop_items(cultures, weapons, vanilla_ids)
     if errors:
         raise SystemExit("Fehler in data/waffen.toml oder den Ausrüstungen:\n  - " + "\n  - ".join(errors))
+    trade = load_trade()
+    errors = check_trade(trade, cultures, weapons, vanilla_ids)
+    if errors:
+        raise SystemExit("Fehler in data/handel.toml:\n  - " + "\n  - ".join(errors))
     strings = Strings()
     files = {
         OUT_ITEMS: build_items(weapons, strings),
@@ -883,6 +964,7 @@ def generate():
         OUT_PARTIES: build_parties(cultures),
         OUT_XSLT: build_xslt(cultures, strings),
         OUT_ROSTERS: build_rosters(cultures),
+        OUT_TRADE: build_trade(trade, cultures),
         OUT_STRINGS: build_game_texts(cultures, strings),
     }
     files.update(build_realms(realms, strings))

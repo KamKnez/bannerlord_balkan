@@ -20,7 +20,9 @@ vorerst Armbrust-Modelle; die Musketen-Modelle aus Napoleonic Warfare (siehe [CR
 Die Fertigkeit „Armbrust“ heißt „Feuerwaffen“. Zum Ausprobieren liegen zu Beginn (im Story-Modus nach dem Tutorial)
 eine Arkebuse, eine Pistole und Munition im Inventar. Die Notabeln jedes Orts haben die Kultur ihres Orts und bieten
 deren Rekruten an. Die Gewehre haben die Modelle, Lade- und Schussanimationen sowie Rauch und Mündungsfeuer aus Napoleonic Warfare (gepackt in `AssetPackages`); die Pistole hat noch ein Armbrust-Modell. Der Kalender zeigt die Jahre ab 1700 (das Spiel beginnt intern 1084, nur die Anzeige ist verschoben).
-Bei der Charaktererstellung heißen Vlandia und Aserai jetzt Kroaten und Bosniaken, mit eigenem Text. Als Nächstes folgt eine Balance-Runde nach Spieltest (siehe [docs/design.md](docs/design.md)).
+Bei der Charaktererstellung heißen Vlandia und Aserai jetzt Kroaten und Bosniaken, mit eigenem Text. In den Läden der Balkan-Städte gibt es immer Arkebusen, Musketen, Pistolen und Munition, dazu die
+Ausrüstung der eigenen Truppen (je wohlhabender die Stadt, desto bessere Stücke); Armbrüste, Ritterhelme und Bögen
+(außer bei Osmanen und Bosniaken) verschwinden aus dem Angebot ([data/handel.toml](data/handel.toml)). Als Nächstes folgt eine Balance-Runde nach Spieltest (siehe [docs/design.md](docs/design.md)).
 
 ## Installieren und testen
 
@@ -52,7 +54,7 @@ wird der Modulordner nach dem Bauen direkt ins Spiel kopiert.
 |---|---|
 | `Module/BalkanMod/` | Der Modulordner, wie er im Spiel liegt: `SubModule.xml`, `ModuleData/` (XML-Daten, Sprachen) |
 | `src/BalkanMod/` | C#-Code der Mod |
-| `data/` | Rohdaten, aus denen die XML-Dateien entstehen: Namenslisten, Kulturen und Truppen ([data/kulturen/](data/kulturen/README.md)), Königreiche, Clans und Lords ([data/reiche/](data/reiche/README.md)), Feuerwaffen ([data/waffen.toml](data/waffen.toml)) |
+| `data/` | Rohdaten, aus denen die XML-Dateien entstehen: Namenslisten, Kulturen und Truppen ([data/kulturen/](data/kulturen/README.md)), Königreiche, Clans und Lords ([data/reiche/](data/reiche/README.md)), Feuerwaffen ([data/waffen.toml](data/waffen.toml)), Läden ([data/handel.toml](data/handel.toml)) |
 | `tools/` | Generator `gen_content.py` und Prüfskripte |
 | `docs/` | Recherche und Design-Dokumente (ab Phase 1) |
 
