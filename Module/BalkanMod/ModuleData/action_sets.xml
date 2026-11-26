@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Aus Napoleonic Warfare (Nexus 6101), siehe NICHT_FREIGEGEBEN.md. Die Namen müssen zu den gepackten Animationen in AssetPackages/pack0.tpac passen. -->
+<!-- Aus Napoleonic Warfare (Nexus 6101), siehe NICHT_FREIGEGEBEN.md. Die Namen müssen zu den gepackten Animationen in AssetPackages/pack0.tpac passen. Ruhehaltung der Musketen: tief gehalten wie die Armbrust (Kamilos Wahl) statt geschultert (NW: idle_musket). -->
 <action_sets>
 	<action_set id="as_human_warrior" skeleton="human_skeleton" movement_system="bipedal">
 		<action type="act_austria_reload_musket" animation="reload_musket_new"/>
@@ -16,9 +16,9 @@
 		<action type="act_austria_release_musket_2" animation="release_musket_2" alternative_group="musket_shoot"/>
 		<action type="act_austria_release_musket_3" animation="release_musket_3" alternative_group="musket_shoot"/>
 		<action type="act_austria_release_rifle" animation="release_rifle" alternative_group="rifle_shoot"/>
-		<action type="act_austria_idle_musket" animation="idle_musket"/>
-		<action type="act_walk_idle_musket" animation="idle_musket"/>
-		<action type="act_run_idle_musket" animation="idle_musket"/>
+		<action type="act_austria_idle_musket" animation="troop_stand_crossbow_1"/>
+		<action type="act_walk_idle_musket" animation="stand_crossbow"/>
+		<action type="act_run_idle_musket" animation="stand_crossbow"/>
 		<action type="act_crouch_walk_idle_musket" animation="crouch_stand_crossbow"/>
 		<action type="act_crouch_run_idle_musket" animation="crouch_stand_crossbow"/>
 		<action type="act_austria_ready_pistol" animation="ready_pistol"/>
