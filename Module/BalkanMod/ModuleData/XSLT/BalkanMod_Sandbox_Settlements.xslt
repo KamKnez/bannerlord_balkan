@@ -26,7 +26,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Varaždin</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_V3_text}Varaždin with its old moated castle was long the seat of the Croatian Ban and of the generals of the Varaždin frontier. Its burghers trade in wine, cloth and grain.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_V3_text}Varaždin with its old moated castle is the seat of the Varaždin Generalate, which commands the Slavonian frontier against the Turks. Its burghers trade in wine, cloth and grain.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -435,6 +435,24 @@
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_V1_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_V7_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.sheep_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_V6_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.vineyard</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_V6_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_V6_3']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.cattle_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_V7_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.vineyard</xsl:attribute>
+	</xsl:template>
 	<!-- Osmanisches Reich (data/reiche/osmanen.toml) -->
 	<xsl:template match="Settlement[@id='town_A1']">
 		<xsl:copy>
@@ -497,7 +515,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Travnik</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_A8_text}Travnik in the Lašva valley has been the seat of the vizier of Bosnia since Sarajevo burned. Consuls, couriers and petitioners crowd its streets.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_A8_text}Travnik in the Lašva valley is to become the new seat of the vizier of Bosnia now that Sarajevo has burned. Until his konak is ready, the begs of the town keep it for him. Couriers, merchants and petitioners crowd its streets.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -648,8 +666,8 @@
 	<xsl:template match="Settlement[@id='castle_village_A5_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Gabela</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A5_2_text}Gabela is a village near Počitelj. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Ljubuški</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A5_2_text}Ljubuški is a village near Počitelj. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -897,6 +915,66 @@
 			<xsl:attribute name="text">{=balkan_settlement_village_A8_2_text}Busovača is a village near Travnik. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A1_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.sheep_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A2_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A3_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A4_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A4_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A5_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A6_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A7_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A7_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A8_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A9_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_A9_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_A1_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.cattle_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_A1_4']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_A2_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_A2_3']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_A4_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.wheat_farm</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_A5_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_A5_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_A7_2']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
 	</xsl:template>
 	<!-- Republik Ragusa (data/reiche/ragusa.toml) -->
 	<xsl:template match="Settlement[@id='castle_ES1']">
@@ -1745,5 +1823,8 @@
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EW4_1']/Components/Village/@village_type">
+		<xsl:attribute name="village_type">VillageType.swine_farm</xsl:attribute>
 	</xsl:template>
 </xsl:stylesheet>

@@ -1346,7 +1346,7 @@
 	<xsl:template match="NPCCharacter[@id='lord_1_45']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Bernardo</xsl:attribute>
+			<xsl:attribute name="name">{=!}Zaviša</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1362,7 +1362,7 @@
 	<xsl:template match="NPCCharacter[@id='lord_1_45_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Vettor</xsl:attribute>
+			<xsl:attribute name="name">{=!}Stojan</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1378,7 +1378,7 @@
 	<xsl:template match="NPCCharacter[@id='lord_1_57']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Francesco</xsl:attribute>
+			<xsl:attribute name="name">{=!}Ilija</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1386,7 +1386,7 @@
 	<xsl:template match="NPCCharacter[@id='lord_1_57_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Laura</xsl:attribute>
+			<xsl:attribute name="name">{=!}Anđelija</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1394,7 +1394,7 @@
 	<xsl:template match="NPCCharacter[@id='lord_1_57_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Cecilia</xsl:attribute>
+			<xsl:attribute name="name">{=!}Milica</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>

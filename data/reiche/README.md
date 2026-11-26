@@ -27,6 +27,7 @@ Fähigkeiten der Lords bleiben wie im Spiel, wir ändern nur Namen, Texte, Farbe
 | `[wappen]` | Wappen des Reichs: `zeichen` (Nummer des Zeichens), `groesse`, `hintergrund` und `farbe` als `[Nummer, "0xffRRGGBB"]` aus der Farbpalette des Spiels. Die Clans übernehmen die Farben im Spiel |
 | `[orte]` | neue Namen der Städte, Burgen und Dörfer: `town_V1 = "Zagreb"` (Eigenname) oder `{ en, de }`. Der Kommentar dahinter nennt den Calradia-Namen |
 | `[dorfkultur]` | Orte mit eigener Kultur: `village_V8_1 = "germans"`, auch Städte und Burgen (`town_V8 = "germans"`). Die Notabeln bekommen die Kultur ihres Orts (C#: `NotableCultureBehavior`) und bieten Rekruten dieser Kultur an |
+| `[dorftyp]` | Erzeugnis einzelner Dörfer (VillageType des Spiels): `village_A2_3 = "europe_horse_ranch"`. Ersetzt Datteln, Wüstenpferde und Oliven im Binnenland |
 | `[ortstexte]` | Beschreibung einer Stadt oder Burg für die Enzyklopädie (Stand um 1700): `town_V1 = { en, de }` |
 | `[[dorftext]]` | Vorlagen `en`/`de` für Dörfer ohne eigenen Text, reihum verteilt. `{DORF}` wird durch den Dorfnamen ersetzt, `{SITZ}` durch die Stadt oder Burg, zu der das Dorf gehört |
 | `[[clan]]` | `id` im Spiel und `name` (Familienname als Text, oder `{ en, de }` für einen übersetzten Namen) |

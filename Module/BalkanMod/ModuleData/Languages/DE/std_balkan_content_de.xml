@@ -170,7 +170,7 @@
     <string id="balkan_hero_lord_4_1_text" text="Adam Batthyány ist Ban von Kroatien. Er hat im großen Türkenkrieg gekämpft und muss nun sichern, was gewonnen wurde." />
     <string id="balkan_settlement_town_V1_text" text="Zagreb sind zwei Städte auf zwei Hügeln über der Save: der bischöfliche Kaptol und die königliche Freistadt Gradec. Hier tagt der kroatische Sabor, und der Ban hält Hof." />
     <string id="balkan_settlement_town_V2_text" text="Osijek an der Drau wurde 1687 den Osmanen abgenommen. Die große Holzbrücke Süleymans über die Sümpfe verbrannte im Krieg, und die kaiserlichen Baumeister planen eine neue Festung." />
-    <string id="balkan_settlement_town_V3_text" text="Varaždin mit seiner alten Wasserburg war lange Sitz des kroatischen Bans und der Generäle der Varaždiner Grenze. Seine Bürger handeln mit Wein, Tuch und Getreide." />
+    <string id="balkan_settlement_town_V3_text" text="Varaždin mit seiner alten Wasserburg ist Sitz des Varaždiner Generalats, das die slawonische Grenze gegen die Türken befehligt. Seine Bürger handeln mit Wein, Tuch und Getreide." />
     <string id="balkan_settlement_town_V5_text" text="Ljubljana, deutsch Laibach, ist die Hauptstadt des Herzogtums Krain. Unter dem Burgberg an der Ljubljanica wachsen barocke Kirchen." />
     <string id="balkan_settlement_town_V6_text" text="Karlovac ist eine sechszackige Sternfestung, 1579 dort erbaut, wo vier Flüsse zusammenfließen. Hier sitzt das Karlstädter Generalat, das Herz der Militärgrenze." />
     <string id="balkan_settlement_town_V7_text" text="Požega liegt im Goldenen Tal Slawoniens. Nach anderthalb Jahrhunderten osmanischer Herrschaft kam es 1688 an die Krone zurück, und Franziskaner und Siedler beleben das Land neu." />
@@ -224,7 +224,7 @@
     <string id="balkan_kingdom_aserai_short" text="Osmanen" />
     <string id="balkan_kingdom_aserai_title" text="Eyalet Bosnien" />
     <string id="balkan_kingdom_aserai_ruler" text="Beylerbey" />
-    <string id="balkan_kingdom_aserai_text" text="Bosnien ist jetzt die Grenzprovinz des Osmanischen Reichs. Seit dem Brand von Sarajevo sitzt der Beylerbey in Travnik, und die Kapetanije an Una, Save und Drina bewachen die Grenze gegen Habsburger und Venezianer." />
+    <string id="balkan_kingdom_aserai_text" text="Bosnien ist jetzt die Grenzprovinz des Osmanischen Reichs. Der Beylerbey hält noch im verbrannten Sarajevo Hof, auch wenn Travnik schon als neuer Sitz hergerichtet wird, und die Kapetanije an Una, Save und Drina bewachen die Grenze gegen Habsburger und Venezianer." />
     <string id="balkan_clan_aserai_1" text="Haus des Beylerbeys" />
     <string id="balkan_hero_lord_3_1_text" text="Mehmed verwaltet das Eyalet Bosnien im Namen des Sultans. Ob er das Amt behält, entscheidet Istanbul." />
     <string id="balkan_settlement_town_A1_text" text="Sarajevo, von Isa-beg im Tal der Miljacka gegründet, ist das Juwel Bosniens, mit Moschee, Basar und Bädern Gazi Husrev-begs. 1697 brannte Prinz Eugen die Stadt nieder, und ihre Bewohner bauen sie noch immer wieder auf." />
@@ -234,7 +234,7 @@
     <string id="balkan_settlement_town_A5_text" text="Novi Pazar, der von Isa-beg gegründete „neue Markt“, ist eine Handelsstadt im Sandžak an der Hauptstraße nach Istanbul." />
     <string id="balkan_settlement_town_A6_text" text="Banja Luka wuchs rund um die Ferhadija-Moschee Ferhad Paschas. Es bewacht das Tal des Vrbas und die Nordgrenze der Provinz." />
     <string id="balkan_settlement_town_A7_text" text="Mostar ist das Herz der Herzegowina. Seine 1566 erbaute Steinbrücke überspannt die grüne Neretva in einem einzigen kühnen Bogen." />
-    <string id="balkan_settlement_town_A8_text" text="Travnik im Tal der Lašva ist seit dem Brand von Sarajevo Sitz des Wesirs von Bosnien. Konsuln, Kuriere und Bittsteller füllen seine Gassen." />
+    <string id="balkan_settlement_town_A8_text" text="Travnik im Tal der Lašva soll nach dem Brand von Sarajevo neuer Sitz des Wesirs von Bosnien werden. Bis sein Konak fertig ist, verwalten die Begs der Stadt sie für ihn. Kuriere, Kaufleute und Bittsteller füllen seine Gassen." />
     <string id="balkan_settlement_castle_A1_text" text="Bihać ist das nordwestliche Bollwerk des Reichs, 1592 erobert. 1697 schlug es eine habsburgische Belagerung ab, und seine Kapetane beobachten Kroatien Tag und Nacht." />
     <string id="balkan_settlement_castle_A2_text" text="Über Stolac erhebt sich die Festung Vidoški und bewacht die Straßen der östlichen Herzegowina." />
     <string id="balkan_settlement_castle_A3_text" text="In Ključ an der Sana ergab sich 1463 der letzte bosnische König. Heute ist es eine Kapetanija an der Straße zur Grenze." />
@@ -253,7 +253,7 @@
     <string id="balkan_settlement_castle_village_A4_1_text" text="Varcar Vakuf ist ein Dorf bei Jajce. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
     <string id="balkan_settlement_castle_village_A4_2_text" text="Šipovo liegt im Land von Jajce. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
     <string id="balkan_settlement_castle_village_A5_1_text" text="Čapljina gehört zum Bezirk von Počitelj. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
-    <string id="balkan_settlement_castle_village_A5_2_text" text="Gabela ist ein Dorf bei Počitelj. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_settlement_castle_village_A5_2_text" text="Ljubuški ist ein Dorf bei Počitelj. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
     <string id="balkan_settlement_castle_village_A6_1_text" text="Brčko liegt im Land von Srebrenik. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
     <string id="balkan_settlement_castle_village_A6_2_text" text="Gradačac gehört zum Bezirk von Srebrenik. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
     <string id="balkan_settlement_castle_village_A7_1_text" text="Maglaj ist ein Dorf bei Doboj. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />

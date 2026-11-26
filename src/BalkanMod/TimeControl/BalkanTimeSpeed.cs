@@ -84,6 +84,14 @@ namespace BalkanMod.TimeControl
             }
         }
 
+        /// <summary>Beim Laden oder Beenden eines Spiels: keine Stufe aktiv, Faktor des Spiels gilt wieder.</summary>
+        public static void Reset()
+        {
+            ActiveLevel = 0;
+            IsChangingOwnSpeed = false;
+            _previousMultiplier = 4f;
+        }
+
         /// <summary>Jeden Frame: Stufe beenden, wenn nicht mehr vorgespult wird, sonst den Faktor halten.</summary>
         public static void Tick()
         {
