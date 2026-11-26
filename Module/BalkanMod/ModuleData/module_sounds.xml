@@ -14,5 +14,16 @@
     <module_sound name="balkan_bullet_passby" sound_category="mission_combat" path="balkan_bullet_passby2.wav"/>
     <module_sound name="balkan_bullet_passby" sound_category="mission_combat" path="balkan_bullet_passby3.wav"/>
     <module_sound name="balkan_bullet_passby" sound_category="mission_combat" path="balkan_bullet_passby4.wav"/>
+    <!-- Namen, die die Animationen aus Napoleonic Warfare als Klangpunkte erwarten. Ohne sie meldet das Spiel beim
+         Start "Sound points and/or sound id not valid". Still, weil FirearmSoundBehavior die Klänge selbst abspielt. -->
+    <module_sound name="austria_musket_fire" sound_category="mission_foley" path="balkan_silence.wav"/>
+    <module_sound name="austria_musket_fire2" sound_category="mission_foley" path="balkan_silence.wav"/>
+    <module_sound name="austria_musket_fire3" sound_category="mission_foley" path="balkan_silence.wav"/>
+    <module_sound name="austria_rifle_fire" sound_category="mission_foley" path="balkan_silence.wav"/>
+    <module_sound name="austria_pistol_fire" sound_category="mission_foley" path="balkan_silence.wav"/>
+    <module_sound name="austria_musket_reload" sound_category="mission_foley" path="balkan_silence.wav"/>
+    <module_sound name="austria_musket_reload_phase2" sound_category="mission_foley" path="balkan_silence.wav"/>
+    <module_sound name="austria_musket_reload_phase3" sound_category="mission_foley" path="balkan_silence.wav"/>
+    <module_sound name="musket_bullet_passby" sound_category="mission_foley" path="balkan_silence.wav"/>
   </module_sounds>
 </base>
