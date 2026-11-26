@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Erzeugt von tools/gen_content.py aus data/kulturen/. Nicht von Hand ändern. -->
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Deutsch" />
+  </tags>
+  <strings>
+    <string id="balkan_bs_peasant" text="Bosnischer Bauer" />
+    <string id="balkan_bs_azap" text="Azap" />
+    <string id="balkan_bs_tufekci" text="Tüfekçi" />
+    <string id="balkan_bs_kapetanije_marksman" text="Kapetanije-Schütze" />
+    <string id="balkan_bs_kapetanije_veteran" text="Kapetanije-Veteran" />
+    <string id="balkan_bs_deli" text="Deli" />
+    <string id="balkan_bs_veteran_deli" text="Deli-Veteran" />
+    <string id="balkan_bs_timarli_sipahi" text="Timarli-Sipahi" />
+    <string id="balkan_bs_sipahi" text="Sipahi" />
+    <string id="balkan_bs_zaim" text="Zaim" />
+    <string id="balkan_bs_veteran_zaim" text="Zaim-Veteran" />
+    <string id="balkan_bs_militia_spearman" text="Kapetanije-Miliz mit Speer" />
+    <string id="balkan_bs_militia_shooter" text="Kapetanije-Miliz mit Flinte" />
+    <string id="balkan_bs_militia_veteran_spearman" text="Kapetanije-Miliz-Veteran mit Speer" />
+    <string id="balkan_bs_militia_veteran_shooter" text="Kapetanije-Miliz-Veteran mit Flinte" />
+    <string id="balkan_hr_peasant" text="Kroatischer Bauer" />
+    <string id="balkan_hr_haramija" text="Haramija" />
+    <string id="balkan_hr_border_musketeer" text="Grenz-Musketier" />
+    <string id="balkan_hr_border_veteran" text="Grenz-Veteran" />
+    <string id="balkan_hr_harambasa" text="Harambaša" />
+    <string id="balkan_hr_croatian_rider" text="Kroatischer Reiter" />
+    <string id="balkan_hr_hussar" text="Kroatischer Husar" />
+    <string id="balkan_hr_junker" text="Junker" />
+    <string id="balkan_hr_noble_rider" text="Adeliger Reiter" />
+    <string id="balkan_hr_cuirassier" text="Kürassier" />
+    <string id="balkan_hr_veteran_cuirassier" text="Kürassier-Veteran" />
+    <string id="balkan_hr_militia_spearman" text="Grenzmiliz-Speerträger" />
+    <string id="balkan_hr_militia_shooter" text="Grenzmiliz-Schütze" />
+    <string id="balkan_hr_militia_veteran_spearman" text="Grenzmiliz-Veteran mit Speer" />
+    <string id="balkan_hr_militia_veteran_shooter" text="Grenzmiliz-Veteran mit Arkebuse" />
+    <string id="balkan_ra_recruit" text="Ragusanischer Rekrut" />
+    <string id="balkan_ra_city_guard" text="Stadtwache" />
+    <string id="balkan_ra_halberdier" text="Hellebardier" />
+    <string id="balkan_ra_veteran_halberdier" text="Hellebardier-Veteran" />
+    <string id="balkan_ra_arquebusier" text="Ragusanischer Arkebusier" />
+    <string id="balkan_ra_veteran_arquebusier" text="Arkebusier-Veteran" />
+    <string id="balkan_ra_patrician" text="Ragusanischer Patrizier" />
+    <string id="balkan_ra_patrician_rider" text="Patrizier-Reiter" />
+    <string id="balkan_ra_rectors_guard" text="Rektorengarde" />
+    <string id="balkan_ra_militia_halberdier" text="Ragusanischer Milizhellebardier" />
+    <string id="balkan_ra_militia_shooter" text="Ragusanischer Milizarkebusier" />
+    <string id="balkan_ra_militia_veteran_halberdier" text="Ragusanischer Milizhellebardier-Veteran" />
+    <string id="balkan_ra_militia_veteran_shooter" text="Ragusanischer Milizarkebusier-Veteran" />
+    <string id="balkan_ve_recruit" text="Venezianischer Rekrut" />
+    <string id="balkan_ve_fante" text="Fante" />
+    <string id="balkan_ve_picchiere" text="Picchiere" />
+    <string id="balkan_ve_veterano" text="Veterano" />
+    <string id="balkan_ve_sergente" text="Sergente" />
+    <string id="balkan_ve_moschettiere" text="Moschettiere" />
+    <string id="balkan_ve_veteran_moschettiere" text="Moschettiere-Veterano" />
+    <string id="balkan_ve_schiavone" text="Schiavone" />
+    <string id="balkan_ve_veteran_schiavone" text="Schiavone-Veteran" />
+    <string id="balkan_ve_oltremarino" text="Oltremarino" />
+    <string id="balkan_ve_cappelletto" text="Cappelletto" />
+    <string id="balkan_ve_veteran_cappelletto" text="Cappelletto-Veteran" />
+    <string id="balkan_ve_gentiluomo" text="Gentiluomo" />
+    <string id="balkan_ve_cavaliere" text="Cavaliere" />
+    <string id="balkan_ve_corazza" text="Corazza" />
+    <string id="balkan_ve_veteran_corazza" text="Corazza-Veterano" />
+    <string id="balkan_ve_militia_pikeman" text="Venezianischer Milizpikenier" />
+    <string id="balkan_ve_militia_shooter" text="Venezianischer Milizarkebusier" />
+    <string id="balkan_ve_militia_veteran_pikeman" text="Venezianischer Milizpikenier-Veteran" />
+    <string id="balkan_ve_militia_veteran_shooter" text="Venezianischer Milizarkebusier-Veteran" />
+    <string id="balkan_culture_bosniaken" text="Bosniaken" />
+    <string id="balkan_culture_bosniaken_text" text="Das Eyalet Bosnien ist das osmanische Bollwerk an der Grenze zu den Habsburgern und zu Venedig. Seine Kapetanije bewachen Flussübergänge und Gebirgspässe, besetzt mit Azapen und Musketieren, die jede Furt kennen. Die Sipahi halten ihre Timare gegen Dienst zu Pferd, und die verwegenen Deli reiten jedem Streifzug voraus." />
+    <string id="balkan_culture_kroaten" text="Kroaten" />
+    <string id="balkan_culture_kroaten_text" text="Kroatien, Slawonien und Dalmatien nennen sich ein eigenes Königreich unter der habsburgischen Krone. Seit zwei Jahrhunderten halten die Kroaten die Militärgrenze gegen die Osmanen: Freie Bauern leisten dem Kaiser Kriegsdienst statt Abgaben, und jedes Dorf hält seine Haramije und Reiter bereit. Der Adel reitet noch als gepanzerte Reiterei, die Grenzer kämpfen mit Säbel und Arkebuse." />
+    <string id="balkan_culture_ragusaner" text="Ragusaner" />
+    <string id="balkan_culture_ragusaner_text" text="Die Republik Ragusa wahrt ihre Freiheit eher mit Gold als mit Stahl. Ihre Handelsflotte fährt von der Levante bis Spanien, und jedes Jahr bringen ihre Gesandten dem Sultan den Tribut. Hinter den großen Mauern der Stadt dient eine kleine Wache aus Hellebardieren und Arkebusieren dem Rektor, der jeden Monat wechselt, damit keiner allein herrscht." />
+    <string id="balkan_culture_venezianer" text="Venezianer" />
+    <string id="balkan_culture_venezianer_text" text="Die Durchlauchtigste Republik Venedig beherrscht die Adria von ihrer Lagune aus. An der dalmatinischen Küste verwalten ihre Provveditori ummauerte Häfen voller Kaufleute, Seeleute und Soldaten. Italienische Pikeniere und Musketiere halten die Mauern, dalmatinische Schiavoni und albanische Cappelletti führen den Kleinkrieg im Hinterland." />
+  </strings>
+</base>

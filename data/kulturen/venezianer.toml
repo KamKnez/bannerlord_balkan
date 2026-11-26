@@ -1,0 +1,522 @@
+# Venezianer (Republik Venedig). Neue Kultur, kopiert alle übrigen Werte vom Imperium.
+# Die Truppen umfassen Italiener und Dalmatiner (Schiavoni, Oltremarini).
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "venezianer"
+kultur_id = "venice"
+art = "neu"
+vorlage = "empire"
+praefix = "ve"
+namensliste = "italiener"
+farben = ["0xff8C1C13", "0xffE8C547"]
+gesicht = "fighter_empire"
+zivil = ["empire_troop_civilian_template_t1", "empire_troop_civilian_template_t2", "empire_troop_civilian_template_t3"]
+basis_truppe = "recruit"
+elite_truppe = "gentiluomo"
+
+[name]
+en = "Venetians"
+de = "Venezianer"
+
+[text]
+en = """
+The Most Serene Republic of Venice rules the Adriatic from its lagoon. Along the Dalmatian coast its provveditori \
+govern walled ports filled with merchants, sailors and soldiers. Italian pikemen and musketeers hold the walls, \
+while Dalmatian schiavoni and Albanian cappelletti fight the war of raids in the hinterland.
+"""
+de = """
+Die Durchlauchtigste Republik Venedig beherrscht die Adria von ihrer Lagune aus. An der dalmatinischen Küste \
+verwalten ihre Provveditori ummauerte Häfen voller Kaufleute, Seeleute und Soldaten. Italienische Pikeniere und \
+Musketiere halten die Mauern, dalmatinische Schiavoni und albanische Cappelletti führen den Kleinkrieg im Hinterland.
+"""
+
+[miliz]
+nahkampf = "militia_pikeman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_pikeman"
+fernkampf_elite = "militia_veteran_shooter"
+
+[[lord_partei]]
+truppe = "recruit"
+min = 4
+max = 8
+[[lord_partei]]
+truppe = "fante"
+min = 2
+max = 5
+[[lord_partei]]
+truppe = "picchiere"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "moschettiere"
+min = 2
+max = 4
+[[lord_partei]]
+truppe = "schiavone"
+min = 2
+max = 4
+[[lord_partei]]
+truppe = "cappelletto"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "cavaliere"
+min = 1
+max = 2
+[[lord_partei]]
+truppe = "corazza"
+min = 0
+max = 1
+
+# ---------------------------------------------------------------- normaler Baum
+
+[[truppe]]
+id = "recruit"
+name = { en = "Venetian Recruit", de = "Venezianischer Rekrut" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["fante", "schiavone"]
+[[truppe.ausruestung]]
+Item0 = "peasant_polearm_1_t1"
+Head = "imperial_cloth_coif"
+Body = "tunic_with_rolled_cloth"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_hammer_1_t1"
+Head = "laced_cloth_coif"
+Body = "hemp_tunic"
+Leg = "leather_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_sickle_1_t1"
+Body = "footmans_tunic"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "fante"
+name = { en = "Fante", de = "Fante" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+aufwerten = ["picchiere", "moschettiere"]
+[[truppe.ausruestung]]
+Item0 = "western_spear_2_t2"
+Item1 = "old_kite_shield"
+Item2 = "empire_sword_1_t2"
+Head = "roundkettle_over_imperial_cloth"
+Body = "imperial_padded_cloth"
+Leg = "leather_shoes"
+[[truppe.ausruestung]]
+Item0 = "imperial_spear_t2"
+Item1 = "battered_kite_shield"
+Item2 = "simple_back_sword_t2"
+Head = "imperial_padded_coif"
+Body = "padded_cloth_with_strips"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "picchiere"
+name = { en = "Picchiere", de = "Picchiere" }
+stufe = 3
+gruppe = "Infantry"
+profil = "pike"
+aufwerten = ["veterano"]
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "empire_sword_2_t3"
+Head = "leatherlame_roundkettle_over_imperial_leather"
+Body = "imperial_mail_vest"
+Gloves = "padded_mitten"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "narrow_sword_t3"
+Head = "roundkettle_over_imperial_leather"
+Body = "woven_leather_coat"
+Gloves = "padded_mitten"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veterano"
+name = { en = "Veterano", de = "Veterano" }
+stufe = 4
+gruppe = "Infantry"
+profil = "pike"
+aufwerten = ["sergente"]
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "empire_sword_3_t3"
+Head = "roundkettle_over_imperial_mail"
+Body = "imperial_mail_over_leather"
+Gloves = "reinforced_padded_mitten"
+Leg = "folded_town_boots"
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "short_sword_t3"
+Head = "ironlame_roundkettle_over_imperial_leather"
+Body = "banded_leather_over_mail"
+Gloves = "reinforced_padded_mitten"
+Leg = "folded_town_boots"
+
+[[truppe]]
+id = "sergente"
+name = { en = "Sergente", de = "Sergente" }
+stufe = 5
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "empire_sword_5_t4"
+Head = "ironlame_roundkettle_over_imperial_mail"
+Body = "imperial_scale_armor"
+Gloves = "plated_strip_gauntlets"
+Leg = "lamellar_plate_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_polearm_1_t4"
+Item1 = "broad_arming_sword_t4"
+Head = "ironlame_roundkettle_over_imperial_mail"
+Body = "legionary_mail"
+Gloves = "plated_strip_gauntlets"
+Leg = "lamellar_plate_boots"
+
+[[truppe]]
+id = "moschettiere"
+name = { en = "Moschettiere", de = "Moschettiere" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["veteran_moschettiere"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_d"
+Item2 = "empire_sword_2_t3"
+Head = "leatherlame_roundkettle"
+Body = "woven_leather_coat"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_d"
+Item2 = "iron_spatha_sword_t2"
+Head = "imperial_leather_coif"
+Body = "imperial_padded_cloth"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_moschettiere"
+name = { en = "Veteran Moschettiere", de = "Moschettiere-Veterano" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_d"
+Item1 = "bolt_e"
+Item2 = "empire_sword_3_t3"
+Head = "roundkettle_over_imperial_leather"
+Body = "imperial_mail_over_leather"
+Gloves = "woven_leather_bracers"
+Leg = "folded_town_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_d"
+Item1 = "bolt_e"
+Item2 = "narrow_sword_t3"
+Head = "leatherlame_roundkettle_over_imperial_mail"
+Body = "eastern_studded_leather"
+Gloves = "woven_leather_bracers"
+Leg = "folded_town_boots"
+
+# Dalmatiner
+
+[[truppe]]
+id = "schiavone"
+name = { en = "Schiavone", de = "Schiavone" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["veteran_schiavone", "cappelletto"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_i"
+Item1 = "bolt_a"
+Item2 = "khuzait_sword_1_t2"
+Head = "fur_hat"
+Body = "padded_cloth_with_strips"
+Cape = "scarf"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_i"
+Item1 = "bolt_a"
+Item2 = "simple_sabre_sword_t2"
+Head = "laced_coif"
+Body = "leather_tunic"
+Cape = "scarf"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_schiavone"
+name = { en = "Veteran Schiavone", de = "Schiavone-Veteran" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["oltremarino"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_b"
+Item2 = "khuzait_sword_2_t3"
+Head = "fur_hat"
+Body = "eastern_studded_leather"
+Cape = "scarf"
+Gloves = "studded_vambraces"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_b"
+Item2 = "khuzait_sword_2_t3"
+Head = "nasal_helmet_with_leather"
+Body = "basic_imperial_leather_armor"
+Gloves = "studded_vambraces"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "oltremarino"
+name = { en = "Oltremarino", de = "Oltremarino" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_c"
+Item1 = "bolt_c"
+Item2 = "khuzait_sword_3_t3"
+Head = "fur_hat"
+Body = "imperial_mail_over_leather"
+Cape = "wrapped_scarf"
+Gloves = "studded_leather_vambraces"
+Leg = "strapped_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_c"
+Item1 = "bolt_c"
+Item2 = "ridged_sabre_sword_t4"
+Head = "nasal_helmet_with_mail"
+Body = "woven_leather_coat"
+Gloves = "studded_leather_vambraces"
+Leg = "strapped_leather_boots"
+
+[[truppe]]
+id = "cappelletto"
+name = { en = "Cappelletto", de = "Cappelletto" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+benoetigt = "pferd"
+aufwerten = ["veteran_cappelletto"]
+pferd = { Horse = "empire_horse", HorseHarness = "bandit_saddle_steppe" }
+[[truppe.ausruestung]]
+Item0 = "crossbow_e"
+Item1 = "bolt_a"
+Item2 = "khuzait_sword_2_t3"
+Item3 = "light_horsemans_kite_shield"
+Head = "fur_hat"
+Body = "padded_cloth_with_strips"
+Cape = "scarf"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "western_javelin_2_t3"
+Item1 = "khuzait_sword_2_t3"
+Item2 = "light_horsemans_kite_shield"
+Item3 = "imperial_spear_t2"
+Head = "nasal_helmet_with_leather"
+Body = "leather_tunic"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_cappelletto"
+name = { en = "Veteran Cappelletto", de = "Cappelletto-Veteran" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+benoetigt = "pferd"
+pferd = { Horse = "t2_empire_horse", HorseHarness = "light_harness" }
+[[truppe.ausruestung]]
+Item0 = "crossbow_e"
+Item1 = "bolt_b"
+Item2 = "khuzait_sword_3_t3"
+Item3 = "heavy_horsemans_kite_shield"
+Head = "nasal_helmet_with_mail"
+Body = "imperial_mail_over_leather"
+Cape = "scarf"
+Gloves = "studded_vambraces"
+Leg = "leather_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "imperial_throwing_spear_1_t4"
+Item1 = "khuzait_sword_3_t3"
+Item2 = "heavy_horsemans_kite_shield"
+Item3 = "empire_lance_2_t4"
+Head = "fur_hat"
+Body = "eastern_studded_leather"
+Gloves = "studded_vambraces"
+Leg = "leather_cavalier_boots"
+
+# ---------------------------------------------------------------- Adelsbaum
+
+[[truppe]]
+id = "gentiluomo"
+name = { en = "Gentiluomo", de = "Gentiluomo" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "reiter"
+basis = true
+gesicht = "fighter_empire_tall"
+aufwerten = ["cavaliere"]
+pferd = { Horse = "empire_horse", HorseHarness = "light_harness" }
+[[truppe.ausruestung]]
+Item0 = "empire_sword_2_t3"
+Item1 = "western_spear_2_t2"
+Item2 = "battered_horsemans_kite_shield"
+Head = "imperial_padded_coif"
+Body = "imperial_padded_cloth"
+Leg = "leather_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "narrow_sword_t3"
+Item1 = "western_spear_2_t2"
+Item2 = "battered_horsemans_kite_shield"
+Head = "merchants_hat"
+Body = "woven_leather_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "cavaliere"
+name = { en = "Cavaliere", de = "Cavaliere" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_empire_tall"
+aufwerten = ["corazza"]
+pferd = { Horse = "t2_empire_horse", HorseHarness = "stripped_leather_harness" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_3_t3"
+Item2 = "heavy_horsemans_kite_shield"
+Head = "heavy_nasalhelm_over_imperial_padding"
+Body = "imperial_mail_over_leather"
+Gloves = "lordly_padded_mitten"
+Leg = "leather_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_mace_3_t4"
+Item2 = "crossbow_e"
+Item3 = "bolt_a"
+Head = "roundkettle_over_imperial_mail"
+Body = "empire_horseman_armor"
+Gloves = "lordly_padded_mitten"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "corazza"
+name = { en = "Corazza", de = "Corazza" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_empire_tall"
+aufwerten = ["veteran_corazza"]
+pferd = { Horse = "t3_empire_horse", HorseHarness = "half_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_5_t4"
+Item2 = "crossbow_e"
+Item3 = "bolt_b"
+Head = "ironlame_feathered_spangenhelm_over_mail"
+Body = "imperial_lamellar"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "lamellar_plate_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_mace_3_t4"
+Item2 = "fortified_kite_shield"
+Head = "heavy_nasalhelm_over_imperial_leather"
+Body = "imperial_scale_armor"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "lamellar_plate_boots"
+
+[[truppe]]
+id = "veteran_corazza"
+name = { en = "Veteran Corazza", de = "Corazza-Veterano" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "t3_empire_horse", HorseHarness = "imperial_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_5_t4"
+Item2 = "crossbow_e"
+Item3 = "bolt_c"
+Head = "ironlame_feathered_spangenhelm_over_mail"
+Body = "imperial_lamellar_over_leather"
+Gloves = "plated_strip_gauntlets"
+Leg = "lamellar_plate_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "broad_arming_sword_t4"
+Item2 = "stronger_reinforced_kite_shield"
+Head = "feathered_spangenhelm_over_imperial_coif"
+Body = "imperial_scale_armor"
+Gloves = "plated_strip_gauntlets"
+Leg = "lamellar_plate_boots"
+
+# ---------------------------------------------------------------- Stadtmiliz
+
+[[truppe]]
+id = "militia_pikeman"
+name = { en = "Venetian Militia Pikeman", de = "Venezianischer Milizpikenier" }
+stufe = 2
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "western_spear_3_t3"
+Item1 = "empire_sword_1_t2"
+Head = "imperial_padded_coif"
+Body = "imperial_padded_cloth"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Venetian Militia Arquebusier", de = "Venezianischer Milizarkebusier" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_i"
+Item1 = "bolt_a"
+Item2 = "simple_back_sword_t2"
+Head = "imperial_cloth_coif"
+Body = "footmans_tunic"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "militia_veteran_pikeman"
+name = { en = "Veteran Venetian Militia Pikeman", de = "Venezianischer Milizpikenier-Veteran" }
+stufe = 3
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "empire_sword_2_t3"
+Head = "roundkettle_over_imperial_cloth"
+Body = "woven_leather_coat"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Venetian Militia Arquebusier", de = "Venezianischer Milizarkebusier-Veteran" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_d"
+Item2 = "empire_sword_1_t2"
+Head = "leatherlame_roundkettle"
+Body = "imperial_padded_cloth"
+Leg = "leather_shoes"

@@ -5,3 +5,4 @@ obj/
 .idea/
 # Build-Ausgabe der DLL im Modulordner
 Module/BalkanMod/bin/
+__pycache__/

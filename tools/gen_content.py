@@ -1,0 +1,379 @@
+#!/usr/bin/env python3
+"""Erzeugt die Spieldaten der Mod aus den Quelldateien unter data/.
+
+Quellen:
+  data/kulturen/*.toml   Kulturen, Truppenbäume, Miliz und Lord-Parteien
+  data/namen/*.txt       Namenslisten (siehe data/namen/README.md)
+
+Ergebnis (nicht von Hand ändern, sondern hier neu erzeugen):
+  Module/BalkanMod/ModuleData/balkan_troops.xml                 NPCCharacters (Truppen)
+  Module/BalkanMod/ModuleData/balkan_party_templates.xml        partyTemplates (Lord-Parteien, Miliz)
+  Module/BalkanMod/ModuleData/XSLT/BalkanMod_SandBoxCore_SPCultures.xslt
+                                                                Patch der Kulturen (wie im NavalDLC)
+  Module/BalkanMod/ModuleData/Languages/DE/std_balkan_content_de.xml
+                                                                Deutsche Texte
+
+Aufruf:
+  python3 tools/gen_content.py           Dateien schreiben
+  python3 tools/gen_content.py --check   nur prüfen, ob die Dateien aktuell sind (für die CI)
+"""
+import sys
+import tomllib
+from pathlib import Path
+from xml.sax.saxutils import quoteattr, escape
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from validate_names import parse as parse_names  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data"
+MODULE_DATA = ROOT / "Module" / "BalkanMod" / "ModuleData"
+OUT_TROOPS = MODULE_DATA / "balkan_troops.xml"
+OUT_PARTIES = MODULE_DATA / "balkan_party_templates.xml"
+OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
+OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
+
+HEADER = "<!-- Erzeugt von tools/gen_content.py aus data/kulturen/. Nicht von Hand ändern. -->"
+
+# Stufe -> Level wie bei den Calradia-Truppen
+LEVELS = {1: 6, 2: 11, 3: 16, 4: 21, 5: 26, 6: 31}
+# Grundwert der Hauptfähigkeit je Stufe
+BASE = {1: 20, 2: 40, 3: 70, 4: 100, 5: 130, 6: 160}
+SKILLS = ("Athletics", "Riding", "OneHanded", "TwoHanded", "Polearm", "Bow", "Crossbow", "Throwing")
+# Anteil der Hauptfähigkeit je Profil, in der Reihenfolge von SKILLS
+PROFILES = {
+    "bauer":        (1.0, 0.25, 1.0, 0.5, 1.0, 0.25, 0.25, 0.25),
+    "infanterie":   (1.0, 0.3, 1.0, 0.5, 1.0, 0.15, 0.3, 0.4),
+    "pike":         (1.0, 0.3, 0.8, 0.6, 1.1, 0.1, 0.3, 0.3),
+    "schuetze":     (1.0, 0.3, 0.9, 0.4, 0.4, 0.15, 1.0, 0.3),
+    "bogen_infanterie": (1.0, 0.3, 0.8, 0.3, 0.9, 0.8, 0.2, 0.4),
+    "reiter":       (0.5, 1.0, 1.0, 0.4, 1.1, 0.2, 0.3, 0.3),
+    "leichte_reiter": (0.5, 1.0, 1.0, 0.3, 0.9, 0.2, 0.5, 0.9),
+    "berittene_schuetzen": (0.5, 1.0, 0.9, 0.3, 0.8, 1.0, 0.3, 0.4),
+}
+GROUPS = ("Infantry", "Ranged", "Cavalry", "HorseArcher")
+SLOTS = ("Item0", "Item1", "Item2", "Item3", "Head", "Cape", "Body", "Gloves", "Leg", "Horse", "HorseHarness")
+REQUIRES = {"pferd": "ItemCategory.horse", "kriegspferd": "ItemCategory.war_horse"}
+GAME_TYPES = ("Campaign", "CampaignStoryMode", "CustomGame")
+
+
+def round5(value):
+    return int(5 * round(value / 5))
+
+
+def skills_for(troop):
+    tier = troop["stufe"]
+    factors = PROFILES[troop["profil"]]
+    values = {s: round5(BASE[tier] * f) for s, f in zip(SKILLS, factors)}
+    values.update(troop.get("faehigkeiten", {}))
+    return values
+
+
+def tid(culture, key):
+    """Volle Id einer Truppe: Präfix der Kultur + Kurzname."""
+    return f"balkan_{culture['praefix']}_{key}"
+
+
+def load_cultures():
+    cultures = []
+    for path in sorted((DATA / "kulturen").glob("*.toml")):
+        with path.open("rb") as fh:
+            c = tomllib.load(fh)
+        c["_datei"] = path.relative_to(ROOT).as_posix()
+        names = parse_names(DATA / "namen" / f"{c['namensliste']}.txt")
+        c["_namen"] = names
+        cultures.append(c)
+    return cultures
+
+
+class Strings:
+    """Sammelt Texte mit Id für die deutsche Sprachdatei."""
+
+    def __init__(self):
+        self.entries = {}
+
+    def add(self, sid, en, de):
+        if sid in self.entries and self.entries[sid] != de:
+            raise ValueError(f"Text-Id {sid} doppelt mit unterschiedlichem Inhalt")
+        self.entries[sid] = de
+        return f"{{={sid}}}{en}"
+
+
+def troop_xml(c, t, strings):
+    t_id = tid(c, t["id"])
+    attrs = [
+        ("id", t_id),
+        ("default_group", t["gruppe"]),
+        ("level", str(LEVELS[t["stufe"]])),
+        ("name", strings.add(t_id, t["name"]["en"], t["name"]["de"])),
+        ("occupation", "Soldier"),
+    ]
+    if t.get("basis"):
+        attrs.append(("is_basic_troop", "true"))
+    if t.get("benoetigt"):
+        attrs.append(("upgrade_requires", REQUIRES[t["benoetigt"]]))
+    attrs.append(("culture", f"Culture.{c['kultur_id']}"))
+
+    out = ["\t<NPCCharacter"]
+    out += [f"\t\t{k}={quoteattr(v)}" for k, v in attrs]
+    out[-1] += ">"
+    out.append("\t\t<face>")
+    out.append(f"\t\t\t<face_key_template value=\"BodyProperty.{t.get('gesicht', c['gesicht'])}\" />")
+    out.append("\t\t</face>")
+    out.append("\t\t<skills>")
+    for skill, value in skills_for(t).items():
+        out.append(f"\t\t\t<skill id=\"{skill}\" value=\"{value}\" />")
+    out.append("\t\t</skills>")
+    out.append("\t\t<upgrade_targets>")
+    for target in t.get("aufwerten", []):
+        out.append(f"\t\t\t<upgrade_target id=\"NPCCharacter.{tid(c, target)}\" />")
+    out.append("\t\t</upgrade_targets>")
+    out.append("\t\t<Equipments>")
+    horse = t.get("pferd", {})
+    for roster in t["ausruestung"]:
+        items = dict(horse)
+        items.update(roster)
+        out.append("\t\t\t<EquipmentRoster>")
+        for slot in SLOTS:
+            if slot in items:
+                out.append(f"\t\t\t\t<equipment slot=\"{slot}\" id=\"Item.{items[slot]}\" />")
+        out.append("\t\t\t</EquipmentRoster>")
+    zivil = t.get("zivil") or c["zivil"][min(t["stufe"], 3) - 1]
+    out.append(f"\t\t\t<EquipmentSet id=\"{zivil}\" equipmentType=\"Civilian\" />")
+    out.append("\t\t</Equipments>")
+    out.append("\t</NPCCharacter>")
+    return "\n".join(out)
+
+
+def build_troops(cultures, strings):
+    parts = ['<?xml version="1.0" encoding="utf-8"?>', HEADER, "<NPCCharacters>"]
+    for c in cultures:
+        parts.append(f"\t<!-- {c['name']['de']} ({c['_datei']}) -->")
+        for t in c["truppe"]:
+            parts.append(troop_xml(c, t, strings))
+    parts.append("</NPCCharacters>")
+    return "\n".join(parts) + "\n"
+
+
+def party_template_xml(template_id, stacks):
+    out = [f"\t<MBPartyTemplate id=\"{template_id}\">", "\t\t<stacks>"]
+    for s in stacks:
+        out.append(
+            f"\t\t\t<PartyTemplateStack min_value=\"{s['min']}\" max_value=\"{s['max']}\" "
+            f"troop=\"NPCCharacter.{s['_troop']}\" />"
+        )
+    out += ["\t\t</stacks>", "\t</MBPartyTemplate>"]
+    return "\n".join(out)
+
+
+def lord_template_id(c):
+    return f"balkan_kingdom_hero_party_{c['schluessel']}"
+
+
+def militia_template_id(c):
+    return f"balkan_militia_{c['schluessel']}"
+
+
+def build_parties(cultures):
+    parts = ['<?xml version="1.0" encoding="utf-8"?>', HEADER, "<partyTemplates>"]
+    for c in cultures:
+        stacks = [dict(s, _troop=tid(c, s["truppe"])) for s in c["lord_partei"]]
+        parts.append(party_template_xml(lord_template_id(c), stacks))
+        m = c["miliz"]
+        militia = [
+            {"min": 1, "max": 1, "_troop": tid(c, m["nahkampf"])},
+            {"min": 1, "max": 1, "_troop": tid(c, m["fernkampf"])},
+        ]
+        parts.append(party_template_xml(militia_template_id(c), militia))
+    parts.append("</partyTemplates>")
+    return "\n".join(parts) + "\n"
+
+
+def culture_attributes(c, strings):
+    key = c["schluessel"]
+    m = c["miliz"]
+    attrs = {
+        "name": strings.add(f"balkan_culture_{key}", c["name"]["en"], c["name"]["de"]),
+        "text": strings.add(f"balkan_culture_{key}_text", c["text"]["en"].strip(), c["text"]["de"].strip()),
+        "color": c["farben"][0],
+        "color2": c["farben"][1],
+        "basic_troop": f"NPCCharacter.{tid(c, c['basis_truppe'])}",
+        "elite_basic_troop": f"NPCCharacter.{tid(c, c['elite_truppe'])}",
+        "melee_militia_troop": f"NPCCharacter.{tid(c, m['nahkampf'])}",
+        "ranged_militia_troop": f"NPCCharacter.{tid(c, m['fernkampf'])}",
+        "melee_elite_militia_troop": f"NPCCharacter.{tid(c, m['nahkampf_elite'])}",
+        "ranged_elite_militia_troop": f"NPCCharacter.{tid(c, m['fernkampf_elite'])}",
+        "default_party_template": f"PartyTemplate.{lord_template_id(c)}",
+        "militia_party_template": f"PartyTemplate.{militia_template_id(c)}",
+    }
+    if c["art"] == "neu":
+        attrs = {"id": c["kultur_id"], "is_main_culture": "false", **attrs}
+    return attrs
+
+
+def name_list_xml(tag, names, indent):
+    lines = [f"{indent}<{tag}>"]
+    for n in names:
+        # {=!} = Eigenname, wird nicht übersetzt. In XSLT-Attributen muss "{" als "{{" stehen.
+        lines.append(f"{indent}\t<name name={quoteattr('{{=!}}' + n)} />")
+    lines.append(f"{indent}</{tag}>")
+    return lines
+
+
+def culture_templates(c, strings):
+    mode = f"balkan_{c['schluessel']}"
+    names = c["_namen"]
+    out = []
+    if c["art"] == "anpassen":
+        out.append(f"\t<!-- {c['name']['de']}: Calradia-Kultur '{c['kultur_id']}' anpassen ({c['_datei']}) -->")
+        out.append(f"\t<xsl:template match=\"/SPCultures/Culture[@id='{c['kultur_id']}']\">")
+    else:
+        out.append(f"\t<!-- {c['name']['de']}: neue Kultur '{c['kultur_id']}' als Kopie von '{c['vorlage']}' ({c['_datei']}) -->")
+        out.append(f"\t<xsl:template match=\"Culture\" mode=\"{mode}\">")
+    out.append("\t\t<xsl:copy>")
+    out.append("\t\t\t<xsl:copy-of select=\"@*\" />")
+    for k, v in culture_attributes(c, strings).items():
+        out.append(f"\t\t\t<xsl:attribute name=\"{k}\">{escape(v)}</xsl:attribute>")
+    out.append(f"\t\t\t<xsl:apply-templates select=\"node()\" mode=\"{mode}\" />")
+    out.append("\t\t</xsl:copy>")
+    out.append("\t</xsl:template>")
+    # Alles übrige unverändert kopieren, nur die Namenslisten ersetzen
+    out.append(f"\t<xsl:template match=\"@*|node()\" mode=\"{mode}\">")
+    out.append(f"\t\t<xsl:copy><xsl:apply-templates select=\"@*|node()\" mode=\"{mode}\" /></xsl:copy>")
+    out.append("\t</xsl:template>")
+    for tag, section in (("male_names", "maennlich"), ("female_names", "weiblich"), ("clan_names", "familien")):
+        out.append(f"\t<xsl:template match=\"{tag}\" mode=\"{mode}\">")
+        out += name_list_xml(tag, names[section], "\t\t")
+        out.append("\t</xsl:template>")
+    return out
+
+
+def build_xslt(cultures, strings):
+    out = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        HEADER,
+        '<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">',
+        '\t<xsl:output omit-xml-declaration="no" indent="yes" />',
+        "\t<!-- Grundregel: alles unverändert übernehmen -->",
+        '\t<xsl:template match="@*|node()">',
+        '\t\t<xsl:copy><xsl:apply-templates select="@*|node()" /></xsl:copy>',
+        "\t</xsl:template>",
+    ]
+    new = [c for c in cultures if c["art"] == "neu"]
+    if new:
+        out.append("\t<!-- Neue Kulturen am Ende der Liste anhängen -->")
+        out.append('\t<xsl:template match="/SPCultures">')
+        out.append("\t\t<xsl:copy>")
+        out.append('\t\t\t<xsl:apply-templates select="@*|node()" />')
+        for c in new:
+            out.append(
+                f"\t\t\t<xsl:apply-templates select=\"Culture[@id='{c['vorlage']}']\" mode=\"balkan_{c['schluessel']}\" />"
+            )
+        out.append("\t\t</xsl:copy>")
+        out.append("\t</xsl:template>")
+    for c in cultures:
+        out += culture_templates(c, strings)
+    out.append("</xsl:stylesheet>")
+    return "\n".join(out) + "\n"
+
+
+def build_de(strings):
+    out = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        HEADER,
+        '<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" '
+        'xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">',
+        "  <tags>",
+        '    <tag language="Deutsch" />',
+        "  </tags>",
+        "  <strings>",
+    ]
+    for sid, de in strings.entries.items():
+        out.append(f"    <string id={quoteattr(sid)} text={quoteattr(de)} />")
+    out += ["  </strings>", "</base>"]
+    return "\n".join(out) + "\n"
+
+
+def check_definitions(cultures):
+    """Prüft die Quelldaten, bevor etwas geschrieben wird."""
+    errors = []
+    for c in cultures:
+        where = c["_datei"]
+        if c["art"] not in ("anpassen", "neu"):
+            errors.append(f"{where}: art muss 'anpassen' oder 'neu' sein")
+        if c["art"] == "neu" and not c.get("vorlage"):
+            errors.append(f"{where}: neue Kultur braucht eine vorlage")
+        keys = [t["id"] for t in c["truppe"]]
+        dupes = {k for k in keys if keys.count(k) > 1}
+        if dupes:
+            errors.append(f"{where}: Truppen doppelt: {sorted(dupes)}")
+        known = set(keys)
+        refs = [c["basis_truppe"], c["elite_truppe"], *c["miliz"].values()]
+        refs += [s["truppe"] for s in c["lord_partei"]]
+        for t in c["truppe"]:
+            refs += t.get("aufwerten", [])
+            if t["gruppe"] not in GROUPS:
+                errors.append(f"{where}: {t['id']}: unbekannte gruppe '{t['gruppe']}'")
+            if t["profil"] not in PROFILES:
+                errors.append(f"{where}: {t['id']}: unbekanntes profil '{t['profil']}'")
+            if t["stufe"] not in LEVELS:
+                errors.append(f"{where}: {t['id']}: stufe muss 1 bis 6 sein")
+            if len(t.get("aufwerten", [])) > 2:
+                errors.append(f"{where}: {t['id']}: höchstens 2 Aufwertungen möglich")
+            if not t.get("ausruestung"):
+                errors.append(f"{where}: {t['id']}: keine ausruestung")
+            for roster in t.get("ausruestung", []):
+                for slot in roster:
+                    if slot not in SLOTS:
+                        errors.append(f"{where}: {t['id']}: unbekannter Slot '{slot}'")
+            for target in t.get("aufwerten", []):
+                target_t = next((x for x in c["truppe"] if x["id"] == target), None)
+                if target_t and target_t["stufe"] <= t["stufe"]:
+                    errors.append(f"{where}: {t['id']} -> {target}: Ziel muss eine höhere Stufe haben")
+        for r in refs:
+            if r not in known:
+                errors.append(f"{where}: Truppe '{r}' wird verwendet, ist aber nicht definiert")
+    return errors
+
+
+def generate():
+    cultures = load_cultures()
+    errors = check_definitions(cultures)
+    if errors:
+        raise SystemExit("Fehler in data/kulturen:\n  - " + "\n  - ".join(errors))
+    strings = Strings()
+    files = {
+        OUT_TROOPS: build_troops(cultures, strings),
+        OUT_PARTIES: build_parties(cultures),
+        OUT_XSLT: build_xslt(cultures, strings),
+    }
+    files[OUT_DE] = build_de(strings)
+    return files
+
+
+def main():
+    check = "--check" in sys.argv[1:]
+    files = generate()
+    stale = []
+    for path, content in files.items():
+        current = path.read_text(encoding="utf-8") if path.is_file() else None
+        if current == content:
+            continue
+        if check:
+            stale.append(path.relative_to(ROOT).as_posix())
+        else:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(content, encoding="utf-8", newline="\n")
+            print(f"geschrieben: {path.relative_to(ROOT).as_posix()}")
+    if stale:
+        print("Erzeugte Dateien sind nicht aktuell. Bitte 'python3 tools/gen_content.py' ausführen:")
+        for s in stale:
+            print("  - " + s)
+        return 1
+    if check:
+        print(f"Erzeugte Dateien aktuell ({len(files)} Dateien).")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

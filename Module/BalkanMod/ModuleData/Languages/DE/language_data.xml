@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData id="Deutsch">
   <LanguageFile xml_path="DE/std_balkanmod_de.xml"/>
+  <LanguageFile xml_path="DE/std_balkan_content_de.xml"/>
 </LanguageData>
