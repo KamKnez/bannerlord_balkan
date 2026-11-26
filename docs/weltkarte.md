@@ -71,6 +71,13 @@ bricht beim Laden des Geländes mit „could not get new memory“ ab. Gearbeite
   `albedo_factor_mode="2"`), und `vista_layer_detail_distance` steht auf 10000.
 - Die weißen Würfel bei den Orten sind Hilfspunkte des Editors (Tor, Lager, Banner), keine fehlenden Modelle.
 
+**Orte aus dem Kern verlegt (26.11.2026).** Im Maßstab der großen Karte standen 213 der 492 Orte in Kroatien,
+Bosnien und Dalmatien, dreimal so dicht wie in Calradia. Deshalb liegen 33 Sitze der vier Mod-Reiche jetzt dort,
+wo die Reiche um 1700 wirklich lagen (Quelle `verlegt` in `data/weltkarte/orte.csv`): Habsburger bis Wien, Buda,
+Pressburg und Klausenburg, Osmanen bis Sofia, Saloniki und Edirne, Venedig mit Venedig, Korfu und der Morea,
+Ragusa vorläufig entlang der Küste bis Epirus. Im Kern bleiben 136 Orte. Die Dörfer verlegter Sitze haben noch
+keine Namen. Die Namen im Spiel (`[orte]` in `data/reiche/`) sind noch nicht nachgezogen.
+
 Die Schritte unten gelten sinngemäß für `balkan_karte` mit den Bildern aus `leicht/`.
 
 ## Import in Minuten

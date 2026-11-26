@@ -148,10 +148,12 @@ for ident in ids:
         doerfer.setdefault(sitz_von(ident), []).append(ident)
 for sitz, liste in sorted(doerfer.items()):
     sx, sy = gesetzt[sitz]
+    sp, ze = R.spiel_zu_pixel(sx, sy)
+    sitz_am_festland = bool(festland[int(ze), int(sp)])      # Dörfer von Inselstädten bleiben auf der Insel
     for k, ident in enumerate(sorted(liste)):
         winkel = 2 * math.pi * k / len(liste)        # gleichmäßig, im Norden beginnend
         setze(ident, sx + DORF_UM_SITZ * math.sin(winkel), sy + DORF_UM_SITZ * math.cos(winkel),
-              "", "", "", f"automatisch bei {zeilen[sitz]['name']}", zusatz=festland)
+              "", "", "", f"automatisch bei {zeilen[sitz]['name']}", zusatz=festland if sitz_am_festland else None)
 
 # Verstecke: je Art passendes Gelände, möglichst weit weg von allem anderen
 rng = np.random.default_rng(1700)

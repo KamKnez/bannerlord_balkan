@@ -4,31 +4,23 @@ town_V2;Osijek;45.555;18.695;Sitz, von Hand
 town_V3;Varaždin;46.305;16.337;Sitz, von Hand
 town_V5;Ljubljana;46.051;14.506;Sitz, von Hand
 town_V6;Karlovac;45.487;15.548;Sitz, von Hand
-town_V7;Požega;45.34;17.685;Sitz, von Hand
+town_V7;Wien;48.208;16.373;verlegt
 town_V8;Graz;47.071;15.439;Sitz, von Hand
 town_V9;Pécs;46.073;18.232;Sitz, von Hand
 castle_V1;Brod;45.16;18.016;Sitz, von Hand
 castle_V2;Senj;44.989;14.906;Sitz, von Hand
-castle_V3;Ogulin;45.266;15.229;Sitz, von Hand
+castle_V3;Požega;45.34;17.685;verlegt
 castle_V4;Sisak;45.466;16.378;Sitz, von Hand
 castle_V5;Koprivnica;46.163;16.827;Sitz, von Hand
-castle_V6;Virovitica;45.832;17.384;Sitz, von Hand
-castle_V7;Udbina;44.531;15.766;Sitz, von Hand
-castle_V8;Kostajnica;45.228;16.54;Sitz, von Hand
+castle_V6;Buda;47.498;19.04;verlegt
+castle_V7;Pressburg;48.144;17.108;verlegt
+castle_V8;Klausenburg;46.77;23.6;verlegt
 castle_village_V1_1;Garčin;45.183;18.183;GeoNames
 castle_village_V2_1;Krivi Put;45.03;14.99;geschätzt
 castle_village_V2_2;Jablanac;44.708;14.897;geschätzt
-castle_village_V3_1;Josipdol;45.194;15.289;GeoNames
-castle_village_V3_2;Modruš;45.13;15.24;geschätzt
 castle_village_V4_1;Petrinja;45.438;16.29;GeoNames
 castle_village_V5_1;Đurđevac;46.041;17.07;GeoNames
 castle_village_V5_2;Drnje;46.207;16.917;GeoNames
-castle_village_V6_1;Slatina;45.703;17.703;GeoNames
-castle_village_V6_2;Pitomača;45.951;17.229;GeoNames
-castle_village_V7_1;Korenica;44.744;15.71;GeoNames
-castle_village_V7_2;Bunić;44.67;15.63;geschätzt
-castle_village_V8_1;Dubica;45.19;16.8;geschätzt
-castle_village_V8_2;Majur;45.255;16.532;GeoNames
 village_V1_1;Sesvete;45.831;16.116;GeoNames
 village_V1_2;Samobor;45.803;15.718;GeoNames
 village_V2_1;Valpovo;45.661;18.419;GeoNames
@@ -44,8 +36,6 @@ village_V6_1;Duga Resa;45.446;15.499;GeoNames
 village_V6_2;Ozalj;45.613;15.478;GeoNames
 village_V6_3;Draganić;45.56;15.61;geschätzt
 village_V6_4;Netretić;45.509;15.413;GeoNames
-village_V7_1;Pleternica;45.289;17.806;GeoNames
-village_V7_2;Kutjevo;45.426;17.883;GeoNames
 village_V8_1;Leibnitz;46.782;15.538;GeoNames
 village_V8_2;Voitsberg;47.044;15.153;GeoNames
 village_V8_3;Gleisdorf;47.106;15.71;GeoNames
@@ -53,52 +43,30 @@ village_V9_1;Mohács;45.99;18.686;GeoNames
 village_V9_2;Siklós;45.855;18.298;GeoNames
 town_A1;Sarajevo;43.857;18.413;Sitz, von Hand
 town_A2;Beograd;44.817;20.457;Sitz, von Hand
-town_A3;Foča;43.506;18.775;Sitz, von Hand
-town_A4;Tuzla;44.538;18.676;Sitz, von Hand
-town_A5;Novi Pazar;43.137;20.512;Sitz, von Hand
+town_A3;Sofia;42.7;23.32;verlegt
+town_A4;Saloniki;40.64;22.94;verlegt
+town_A5;Edirne;41.68;26.56;verlegt
 town_A6;Banja Luka;44.772;17.191;Sitz, von Hand
 town_A7;Mostar;43.343;17.808;Sitz, von Hand
 town_A8;Travnik;44.226;17.666;Sitz, von Hand
 castle_A1;Bihać;44.817;15.87;Sitz, von Hand
-castle_A2;Stolac;43.084;17.958;Sitz, von Hand
-castle_A3;Ključ;44.533;16.778;Sitz, von Hand
+castle_A2;Novi Pazar;43.137;20.512;verlegt
+castle_A3;Niš;43.32;21.895;verlegt
 castle_A4;Jajce;44.342;17.27;Sitz, von Hand
-castle_A5;Počitelj;43.135;17.732;Sitz, von Hand
-castle_A6;Srebrenik;44.708;18.489;Sitz, von Hand
-castle_A7;Doboj;44.732;18.087;Sitz, von Hand
-castle_A8;Zvornik;44.386;19.103;Sitz, von Hand
-castle_A9;Livno;43.827;17.008;Sitz, von Hand
+castle_A5;Skopje;41.997;21.43;verlegt
+castle_A6;Plowdiw;42.14;24.75;verlegt
+castle_A7;Tuzla;44.538;18.676;verlegt
+castle_A8;Vidin;43.99;22.87;verlegt
+castle_A9;Temeschwar;45.756;21.229;verlegt
 castle_village_A1_1;Cazin;44.967;15.943;GeoNames
 castle_village_A1_2;Ostrožac;44.909;15.94;GeoNames
-castle_village_A2_1;Ljubinje;42.951;18.087;GeoNames
-castle_village_A2_2;Berkovići;43.095;18.17;GeoNames
-castle_village_A3_1;Sanski Most;44.767;16.667;GeoNames
-castle_village_A3_2;Petrovac;44.555;16.369;geschätzt
 castle_village_A4_1;Varcar Vakuf;44.417;17.083;geschätzt
 castle_village_A4_2;Šipovo;44.282;17.086;GeoNames
-castle_village_A5_1;Čapljina;43.121;17.684;GeoNames
-castle_village_A5_2;Gabela;43.06;17.69;geschätzt
-castle_village_A6_1;Brčko;44.872;18.816;GeoNames
-castle_village_A6_2;Gradačac;44.879;18.428;GeoNames
-castle_village_A7_1;Maglaj;44.548;18.1;GeoNames
-castle_village_A7_2;Tešanj;44.612;17.986;GeoNames
-castle_village_A8_1;Bijeljina;44.759;19.214;GeoNames
-castle_village_A8_2;Kozluk;44.5;19.11;geschätzt
-castle_village_A9_1;Duvno;43.718;17.226;geschätzt
-castle_village_A9_2;Glamoč;44.046;16.849;GeoNames
 village_A1_1;Ilidža;43.831;18.307;GeoNames
 village_A1_2;Vogošća;43.902;18.344;GeoNames
 village_A1_4;Hadžići;43.822;18.207;GeoNames
 village_A2_2;Grocka;44.672;20.716;GeoNames
 village_A2_3;Smederevo;44.664;20.928;GeoNames
-village_A3_1;Ustikolina;43.583;18.791;GeoNames
-village_A3_3;Goražde;43.668;18.976;GeoNames
-village_A4_1;Lukavac;44.542;18.526;GeoNames
-village_A4_2;Živinice;44.449;18.65;GeoNames
-village_A4_4;Kalesija;44.438;18.907;GeoNames
-village_A5_1;Sjenica;43.273;19.999;GeoNames
-village_A5_2;Tutin;42.99;20.331;GeoNames
-village_A5_3;Raška;43.287;20.615;GeoNames
 village_A6_1;Laktaši;44.909;17.301;GeoNames
 village_A6_2;Kotor Varoš;44.618;17.372;GeoNames
 village_A6_3;Čelinac;44.74;17.319;GeoNames
@@ -109,91 +77,55 @@ village_A7_4;Žitomislić;43.2;17.79;geschätzt
 village_A8_1;Vitez;44.154;17.79;GeoNames
 village_A8_2;Busovača;44.098;17.878;GeoNames
 town_ES1;Cavtat;42.581;18.218;Sitz, von Hand
-town_ES2;Babino Polje;42.737;17.553;Sitz, von Hand
+town_ES2;Skadar;42.07;19.51;verlegt
 town_ES3;Lastovo;42.768;16.898;Sitz, von Hand
 town_ES4;Dubrovnik;42.641;18.108;Sitz, von Hand
-town_ES5;Lopud;42.688;17.945;Sitz, von Hand
-town_ES6;Orebić;42.975;17.18;Sitz, von Hand
+town_ES5;Durrës;41.32;19.45;verlegt
+town_ES6;Janina;39.66;20.85;verlegt
 town_ES7;Slano;42.787;17.887;Sitz, von Hand
 castle_ES1;Sokol;42.555;18.403;Sitz, von Hand
-castle_ES2;Lovrijenac;42.64;18.103;Sitz, von Hand
+castle_ES2;Cetinje;42.39;18.92;verlegt
 castle_ES3;Ston;42.838;17.697;Sitz, von Hand
-castle_ES4;Molunat;42.453;18.43;Sitz, von Hand
-castle_ES5;Šipan;42.727;17.87;Sitz, von Hand
-castle_ES6;Trpanj;43.008;17.27;Sitz, von Hand
-castle_ES7;Mali Ston;42.847;17.708;Sitz, von Hand
-castle_ES8;Janjina;42.925;17.431;Sitz, von Hand
+castle_ES4;Bar;42.09;19.1;verlegt
+castle_ES5;Ulcinj;41.93;19.21;verlegt
+castle_ES6;Vlorë;40.47;19.49;verlegt
+castle_ES7;Berat;40.705;19.95;verlegt
+castle_ES8;Arta;39.16;20.985;verlegt
 castle_village_ES1_1;Dunave;42.545;18.425;geschätzt
 castle_village_ES1_2;Mihanići;42.59;18.3;geschätzt
-castle_village_ES2_1;Pile;42.642;18.104;geschätzt
-castle_village_ES2_2;Ploče;42.642;18.115;geschätzt
 castle_village_ES3_1;Žuljana;42.893;17.455;geschätzt
 castle_village_ES3_2;Prapratno;42.817;17.675;geschätzt
-castle_village_ES4_1;Vitaljina;42.43;18.48;geschätzt
-castle_village_ES4_2;Mrcine;42.54;18.43;geschätzt
-castle_village_ES5_1;Šipanska Luka;42.728;17.862;geschätzt
-castle_village_ES5_2;Jakljan;42.741;17.82;geschätzt
-castle_village_ES6_1;Donja Vrućica;42.99;17.25;geschätzt
-castle_village_ES6_2;Duba;43.02;17.19;geschätzt
-castle_village_ES7_1;Hodilje;42.86;17.69;geschätzt
-castle_village_ES7_2;Broce;42.823;17.71;geschätzt
-castle_village_ES8_1;Pijavičino;42.94;17.37;geschätzt
-castle_village_ES8_2;Drače;42.93;17.45;geschätzt
 village_ES1_2;Čilipi;42.555;18.283;geschätzt
 village_ES1_3;Mlini;42.623;18.207;GeoNames
 village_ES1_4;Gruda;42.52;18.37;geschätzt
-village_ES2_2;Polače;42.79;17.38;geschätzt
-village_ES2_3;Goveđari;42.78;17.36;geschätzt
-village_ES2_4;Saplunara;42.7;17.74;geschätzt
 village_ES3_1;Ubli;42.745;16.82;geschätzt
 village_ES3_2;Skrivena Luka;42.735;16.89;geschätzt
 village_ES3_3;Pasadur;42.765;16.82;geschätzt
 village_ES4_1;Gruž;42.66;18.09;geschätzt
 village_ES4_3;Lapad;42.655;18.075;geschätzt
-village_ES5_1;Koločep;42.675;18.01;geschätzt
-village_ES5_2;Suđurađ;42.71;17.91;geschätzt
-village_ES5_3;Trsteno;42.713;17.98;geschätzt
-village_ES6_1;Kuna;42.96;17.35;geschätzt
-village_ES6_2;Potomje;42.95;17.34;geschätzt
 village_ES7_1;Doli;42.8;17.8;geschätzt
 village_ES7_2;Majkovi;42.77;17.92;geschätzt
-town_EW1;Rab;44.757;14.76;Sitz, von Hand
+town_EW1;Venezia;45.437;12.335;verlegt
 town_EW2;Zadar;44.119;15.232;Sitz, von Hand
-town_EW3;Hvar;43.172;16.442;Sitz, von Hand
+town_EW3;Korfu;39.62;19.92;verlegt
 town_EW4;Šibenik;43.735;15.89;Sitz, von Hand
 town_EW5;Kotor;42.425;18.771;Sitz, von Hand
 town_EW6;Split;43.508;16.44;Sitz, von Hand
 castle_EW1;Trogir;43.517;16.251;Sitz, von Hand
-castle_EW2;Sinj;43.703;16.639;Sitz, von Hand
-castle_EW3;Makarska;43.297;17.018;Sitz, von Hand
+castle_EW2;Udine;46.065;13.235;verlegt
+castle_EW3;Hvar;43.172;16.442;verlegt
 castle_EW4;Knin;44.041;16.199;Sitz, von Hand
-castle_EW5;Novigrad;44.183;15.548;Sitz, von Hand
-castle_EW6;Klis;43.56;16.524;Sitz, von Hand
-castle_EW7;Omiš;43.444;16.692;Sitz, von Hand
-castle_EW8;Vrlika;43.912;16.4;Sitz, von Hand
+castle_EW5;Pula;44.867;13.85;verlegt
+castle_EW6;Patras;38.25;21.73;verlegt
+castle_EW7;Nauplia;37.57;22.8;verlegt
+castle_EW8;Modon;36.82;21.7;verlegt
 castle_village_EW1_1;Seget;43.52;16.22;geschätzt
 castle_village_EW1_2;Okrug;43.49;16.27;geschätzt
-castle_village_EW2_1;Trilj;43.618;16.724;GeoNames
-castle_village_EW2_2;Otok;43.686;16.733;GeoNames
-castle_village_EW3_1;Tučepi;43.272;17.054;GeoNames
-castle_village_EW3_2;Baška Voda;43.357;16.95;GeoNames
 castle_village_EW4_1;Drniš;43.862;16.156;GeoNames
 castle_village_EW4_2;Kistanje;43.983;15.965;GeoNames
-castle_village_EW5_1;Posedarje;44.214;15.477;GeoNames
-castle_village_EW5_2;Obrovac;44.201;15.682;GeoNames
-castle_village_EW6_1;Dugopolje;43.581;16.603;GeoNames
-castle_village_EW6_2;Kučine;43.532;16.531;GeoNames
-castle_village_EW7_1;Jesenice;43.462;16.602;GeoNames
-castle_village_EW7_2;Kostanje;43.44;16.8;geschätzt
-castle_village_EW8_1;Kijevo;43.977;16.357;GeoNames
-castle_village_EW8_2;Cetina;43.97;16.43;geschätzt
-village_EW1_1;Lopar;44.833;14.73;GeoNames
-village_EW1_2;Pag;44.445;15.057;GeoNames
 village_EW2_2;Nin;44.241;15.178;GeoNames
 village_EW2_3;Biograd;43.937;15.443;geschätzt
 village_EW2_4;Preko;44.081;15.188;GeoNames
-village_EW3_2;Stari Grad;43.184;16.598;GeoNames
-village_EW3_3;Jelsa;43.161;16.693;GeoNames
 village_EW4_1;Skradin;43.82;15.924;GeoNames
 village_EW4_3;Vodice;43.761;15.783;GeoNames
 village_EW4_4;Primošten;43.586;15.923;GeoNames
@@ -202,29 +134,29 @@ village_EW5_2;Risan;42.515;18.696;GeoNames
 village_EW6_1;Kaštel Sućurac;43.55;16.426;GeoNames
 village_EW6_3;Solin;43.543;16.493;GeoNames
 village_EW6_4;Stobreč;43.502;16.522;GeoNames
-town_S1;Wien;48.208;16.373;vorläufig
-town_S2;Buda;47.498;19.040;vorläufig
-town_S3;Pressburg;48.144;17.108;vorläufig
-town_S4;Krakau;50.06;19.94;vorläufig
+town_S1;Krakau;50.06;19.94;vorläufig
+town_S2;Lublin;51.25;22.57;vorläufig
+town_S3;Przemyśl;49.78;22.77;vorläufig
+town_S4;Sandomierz;50.68;21.75;vorläufig
 town_S5;Lemberg;49.84;24.03;vorläufig
 town_S6;Kaschau;48.72;21.26;vorläufig
-town_S7;Klausenburg;46.77;23.60;vorläufig
+town_S7;Debrecen;47.53;21.63;vorläufig
 castle_S1;Győr;47.687;17.635;vorläufig
 castle_S2;Komárom;47.74;18.12;vorläufig
 castle_S3;Esztergom;47.79;18.74;vorläufig
 castle_S4;Eger;47.90;20.37;vorläufig
 castle_S5;Großwardein;47.07;21.93;vorläufig
-castle_S6;Temeschwar;45.756;21.229;vorläufig
+castle_S6;Tarnów;50.01;20.99;vorläufig
 castle_S7;Hermannstadt;45.80;24.15;vorläufig
 castle_S8;Kamieniec;48.68;26.58;vorläufig
-town_B1;Venezia;45.437;12.335;vorläufig
+town_B1;Rom;41.9;12.5;vorläufig
 town_B2;Trieste;45.65;13.77;vorläufig
 town_B3;Ancona;43.617;13.517;vorläufig
 town_B4;Napoli;40.85;14.27;vorläufig
 town_B5;Bari;41.117;16.87;vorläufig
-castle_B1;Udine;46.065;13.235;vorläufig
+castle_B1;Pescara;42.46;14.21;vorläufig
 castle_B2;Rijeka;45.327;14.44;vorläufig
-castle_B3;Pula;44.867;13.85;vorläufig
+castle_B3;Tarent;40.47;17.24;vorläufig
 castle_B4;Ravenna;44.42;12.20;vorläufig
 castle_B5;Rimini;44.06;12.57;vorläufig
 castle_B6;Brindisi;40.63;17.94;vorläufig
@@ -246,17 +178,17 @@ castle_K7;Brăila;45.27;27.96;vorläufig
 castle_K8;Kilija;45.44;29.27;vorläufig
 castle_K9;Tscherkassy;49.44;32.06;vorläufig
 town_EN1;Istanbul;41.01;28.98;vorläufig
-town_EN2;Edirne;41.68;26.56;vorläufig
-town_EN3;Saloniki;40.64;22.94;vorläufig
-town_EN4;Athen;37.98;23.73;vorläufig
-town_EN5;Smyrna;38.42;27.14;vorläufig
-town_EN6;Ankara;39.93;32.85;vorläufig
-castle_EN1;Sofia;42.70;23.32;vorläufig
-castle_EN2;Plowdiw;42.14;24.75;vorläufig
-castle_EN3;Vidin;43.99;22.87;vorläufig
-castle_EN4;Niš;43.32;21.895;vorläufig
-castle_EN5;Skopje;41.997;21.43;vorläufig
+town_EN2;Athen;37.98;23.73;vorläufig
+town_EN3;Smyrna;38.42;27.14;vorläufig
+town_EN4;Ankara;39.93;32.85;vorläufig
+town_EN5;Candia;35.34;25.13;vorläufig
+town_EN6;Varna;43.2;27.91;vorläufig
+castle_EN1;Burgas;42.5;27.47;vorläufig
+castle_EN2;Tarnowo;43.08;25.65;vorläufig
+castle_EN3;Rustschuk;43.85;25.95;vorläufig
+castle_EN4;Larissa;39.64;22.42;vorläufig
+castle_EN5;Adana;37.0;35.32;vorläufig
 castle_EN6;Bursa;40.18;29.06;vorläufig
 castle_EN7;Konya;37.87;32.49;vorläufig
-castle_EN8;Varna;43.20;27.91;vorläufig
-castle_EN9;Nauplia;37.57;22.80;vorläufig
+castle_EN8;Antalya;36.89;30.7;vorläufig
+castle_EN9;Sinope;42.03;35.15;vorläufig
