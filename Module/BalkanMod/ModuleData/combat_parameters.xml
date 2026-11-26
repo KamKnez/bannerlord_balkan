@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Kampfwerte für die Musketen-Animationen aus Napoleonic Warfare (Anschlag und Schuss, "musket_ready_release").
+  Ohne diesen Eintrag meldet das Spiel "Combat parameter not found: musket_ready_release". Werte wie in NW, dort gleich
+  denen der Armbrust. Eigene Definitionsnamen, damit nichts mit denen des Spiels zusammenstößt.
+-->
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="combat_parameters">
+	<definitions>
+		<def name="balkan_musket_vertical_rot_limit" val="1.0"/>
+		<def name="balkan_musket_rider_min_rot_limit_left" val="15"/>
+		<def name="balkan_musket_rider_min_rot_limit_right" val="11"/>
+		<def name="balkan_musket_rider_look_down_limit" val="-23"/>
+		<def name="balkan_musket_rider_rot_limit_left" val="115"/>
+		<def name="balkan_musket_rider_rot_limit_right" val="60"/>
+		<def name="balkan_musket_ladder_rot_limit_left" val="86"/>
+		<def name="balkan_musket_ladder_rot_limit_right" val="57"/>
+	</definitions>
+	<combat_parameters>
+		<combat_parameter
+			id="musket_ready_release"
+			weapon_offset="0.02,0.03,0"
+			vertical_rot_limit_multiplier_up="balkan_musket_vertical_rot_limit"
+			vertical_rot_limit_multiplier_down="balkan_musket_vertical_rot_limit"
+			left_rider_min_rot_limit="balkan_musket_rider_min_rot_limit_left"
+			right_rider_min_rot_limit="balkan_musket_rider_min_rot_limit_right"
+			rider_look_down_limit="balkan_musket_rider_look_down_limit"
+			left_rider_rot_limit="balkan_musket_rider_rot_limit_left"
+			right_rider_rot_limit="balkan_musket_rider_rot_limit_right"
+			left_ladder_rot_limit="balkan_musket_ladder_rot_limit_left"
+			right_ladder_rot_limit="balkan_musket_ladder_rot_limit_right"/>
+	</combat_parameters>
+</base>
