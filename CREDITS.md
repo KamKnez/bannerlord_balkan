@@ -1,6 +1,6 @@
 # Credits
 
-Fremde Bausteine, die die Mod benutzt, mit Lizenz. Neue Einträge kommen nur mit Erlaubnis bzw. passender Lizenz dazu.
+Fremde Bausteine, die die Mod benutzt, mit Lizenz. Neue Einträge kommen nur mit Erlaubnis bzw. passender Lizenz dazu. Dateien ohne Freigabe stehen in [NICHT_FREIGEGEBEN.md](NICHT_FREIGEGEBEN.md).
 
 | Baustein | Wofür | Lizenz |
 |---|---|---|
@@ -17,5 +17,5 @@ Ordner `Assets/copyright` (Werke Dritter) sind nicht enthalten.
 
 Die Klänge (`ModuleSounds/balkan_*.wav`, umbenannte Kopien von `fire_musket*.wav`, `fire_pistol.wav` und
 `gap_musket_reload.wav` aus Napoleonic Warfare) stammen laut Mod-Seite von „Various Free Web Sound Pages“. Eine
-ausdrückliche Freigabe für Klänge gibt es dort nicht. Die Mod ist privat; **vor einer Veröffentlichung müssen die
-Klänge geprüft oder ersetzt werden.**
+ausdrückliche Freigabe für Klänge gibt es dort nicht. Die Mod ist privat; die Klänge stehen deshalb in
+[NICHT_FREIGEGEBEN.md](NICHT_FREIGEGEBEN.md) und müssen vor einer Veröffentlichung ersetzt werden.
