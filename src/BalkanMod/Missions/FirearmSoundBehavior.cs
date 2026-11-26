@@ -9,8 +9,8 @@ namespace BalkanMod.Missions
     /// <summary>
     /// Musketenknall beim Schuss und Ladegeräusch kurz danach, für alle Feuerwaffen der Mod (Ids balkan_*,
     /// Waffenklasse Armbrust). Die Klänge stehen in ModuleData/module_sounds.xml, die Dateien in ModuleSounds/.
-    /// Den Armbrustklang des Spiels spielt die Waffe weiterhin leise mit; Rauch und Animationen brauchen gepackte
-    /// Assets aus dem Modding Kit.
+    /// Dazu Rauch und Mündungsfeuer an der Mündung (Partikel "musket_effect" bzw. "pistol_effect" aus Napoleonic
+    /// Warfare, gepackt in AssetPackages/pack0.tpac). Fehlt der Partikel, wird er still übersprungen.
     /// </summary>
     public class FirearmSoundBehavior : MissionLogic
     {
@@ -23,6 +23,8 @@ namespace BalkanMod.Missions
         private int[] _musketFireIds;
         private int _pistolFireId = -1;
         private int _reloadId = -1;
+        private int _musketSmokeId = -1;
+        private int _pistolSmokeId = -1;
 
         public override void AfterStart()
         {
@@ -35,6 +37,8 @@ namespace BalkanMod.Missions
 
             _pistolFireId = SoundEvent.GetEventIdFromString("balkan_pistol_fire");
             _reloadId = SoundEvent.GetEventIdFromString("balkan_musket_reload");
+            _musketSmokeId = ParticleSystemManager.GetRuntimeIdByName("musket_effect");
+            _pistolSmokeId = ParticleSystemManager.GetRuntimeIdByName("pistol_effect");
         }
 
         public override void OnAgentShootMissile(Agent shooterAgent, EquipmentIndex weaponIndex, Vec3 position, Vec3 velocity,
@@ -56,6 +60,7 @@ namespace BalkanMod.Missions
             var isPistol = item.StringId.Contains("pistol");
             var fireId = isPistol ? _pistolFireId : _musketFireIds[MBRandom.RandomInt(_musketFireIds.Length)];
             Play(fireId, position, shooterAgent);
+            Smoke(isPistol ? _pistolSmokeId : _musketSmokeId, position, orientation);
 
             if (!isPistol)
             {
@@ -86,6 +91,16 @@ namespace BalkanMod.Missions
                     Play(_reloadId, agent.Position, agent);
                 }
             }
+        }
+
+        private void Smoke(int particleId, Vec3 position, Mat3 orientation)
+        {
+            if (particleId < 0 || Mission.Scene == null)
+            {
+                return;
+            }
+
+            Mission.Scene.CreateBurstParticle(particleId, new MatrixFrame(orientation, position));
         }
 
         private void Play(int soundId, Vec3 position, Agent agent)
