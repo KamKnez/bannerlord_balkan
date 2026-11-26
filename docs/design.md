@@ -186,6 +186,8 @@ Fertig ist v0.1, wenn:
 - **Siedlungen (umgesetzt):** Alle 203 Städte, Burgen und Dörfer der vier Reiche tragen echte Namen, per XSLT statt
   C# (Daten unter `[orte]` in `data/reiche/`). Die Zuordnung folgt der Lage auf der Karte, Hauptstädte sind fest.
   Die Beschreibungstexte der Orte sind noch die von Calradia.
+- **Kriege zu Spielbeginn (umgesetzt):** Habsburger und Venedig sind im Grenzkrieg mit den Osmanen, Ragusa ist
+  neutral. Die alten Calradia-Kriege der vier Reiche entfallen (dadurch beginnen auch Sturgia und Battania ohne Krieg).
 - **Wappen (umgesetzt, vorläufig):** Habsburger schwarzer Adler auf Gold, Osmanen weißes Zeichen auf Rot, Venedig
   goldener Löwe auf Rot, Ragusa blaues Zeichen auf Weiß. Die Zeichen stammen aus dem Banner-Editor des Spiels
   (Adler des Imperiums, Löwe von Vlandia); passendere Zeichen werden nach dem Spieltest ausgesucht.

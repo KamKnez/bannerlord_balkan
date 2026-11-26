@@ -79,4 +79,26 @@
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
+	<!-- Kriege zu Spielbeginn (krieg_mit in data/reiche/) -->
+	<xsl:template match="Kingdom/relationships/relationship[@kingdom='Kingdom.vlandia' or @kingdom='Kingdom.aserai' or @kingdom='Kingdom.empire_s' or @kingdom='Kingdom.empire_w']" />
+	<xsl:template match="Kingdom[@id='vlandia']/relationships">
+		<relationships>
+			<relationship kingdom="Kingdom.aserai" value="-1" isAtWar="true" />
+		</relationships>
+	</xsl:template>
+	<xsl:template match="Kingdom[@id='aserai']/relationships">
+		<relationships>
+			<relationship kingdom="Kingdom.vlandia" value="-1" isAtWar="true" />
+			<relationship kingdom="Kingdom.empire_w" value="-1" isAtWar="true" />
+		</relationships>
+	</xsl:template>
+	<xsl:template match="Kingdom[@id='empire_s']/relationships">
+		<relationships>
+		</relationships>
+	</xsl:template>
+	<xsl:template match="Kingdom[@id='empire_w']/relationships">
+		<relationships>
+			<relationship kingdom="Kingdom.aserai" value="-1" isAtWar="true" />
+		</relationships>
+	</xsl:template>
 </xsl:stylesheet>
