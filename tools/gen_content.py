@@ -33,6 +33,7 @@ MODULE_DATA = ROOT / "Module" / "BalkanMod" / "ModuleData"
 OUT_TROOPS = MODULE_DATA / "balkan_troops.xml"
 OUT_PARTIES = MODULE_DATA / "balkan_party_templates.xml"
 OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
+OUT_ROSTERS = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_EquipmentRosters.xslt"
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
 
 OUT_REALMS = {
@@ -288,6 +289,44 @@ def build_xslt(cultures, strings):
     return "\n".join(out) + "\n"
 
 
+def build_rosters(cultures):
+    """Ausrüstungsvorlagen für neue Kulturen.
+
+    Das Spiel sucht Ausrüstung für Lords, Kinder, Herrscher, Gefährten usw. über die Kultur der Vorlage
+    (EquipmentRoster culture="Culture.x"). Ohne eigene Vorlagen findet es für eine neue Kultur nichts und
+    stürzt beim Start der Kampagne ab. Darum bekommt jede neue Kultur eine Kopie aller Vorlagen ihrer
+    Vorlage-Kultur (neue Id: <id>_balkan_<kultur>).
+    """
+    out = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        HEADER,
+        '<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">',
+        '\t<xsl:output omit-xml-declaration="no" indent="yes" />',
+        '\t<xsl:template match="@*|node()">',
+        '\t\t<xsl:copy><xsl:apply-templates select="@*|node()" /></xsl:copy>',
+        "\t</xsl:template>",
+    ]
+    by_template = {}
+    for c in cultures:
+        if c["art"] == "neu":
+            by_template.setdefault(c["vorlage"], []).append(c["kultur_id"])
+    for template, new_ids in sorted(by_template.items()):
+        out.append(f"\t<xsl:template match=\"EquipmentRoster[@culture='Culture.{template}']\">")
+        out.append('\t\t<xsl:copy><xsl:apply-templates select="@*|node()" /></xsl:copy>')
+        for cid in new_ids:
+            out += [
+                "\t\t<xsl:copy>",
+                '\t\t\t<xsl:apply-templates select="@*" />',
+                f"\t\t\t<xsl:attribute name=\"id\"><xsl:value-of select=\"concat(@id, '_balkan_{cid}')\" /></xsl:attribute>",
+                f'\t\t\t<xsl:attribute name="culture">Culture.{cid}</xsl:attribute>',
+                '\t\t\t<xsl:apply-templates select="node()" />',
+                "\t\t</xsl:copy>",
+            ]
+        out.append("\t</xsl:template>")
+    out.append("</xsl:stylesheet>")
+    return "\n".join(out) + "\n"
+
+
 def build_de(strings):
     out = [
         '<?xml version="1.0" encoding="utf-8"?>',
@@ -537,6 +576,7 @@ def generate():
         OUT_TROOPS: build_troops(cultures, strings),
         OUT_PARTIES: build_parties(cultures),
         OUT_XSLT: build_xslt(cultures, strings),
+        OUT_ROSTERS: build_rosters(cultures),
     }
     files.update(build_realms(realms, strings))
     files[OUT_DE] = build_de(strings)

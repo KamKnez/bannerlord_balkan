@@ -183,6 +183,10 @@ Fertig ist v0.1, wenn:
   Frau; weil der Rektor immer ein Mann aus dem Adel war, übernimmt ein anderer Lord des Clans (Frano Gozze).
   Venedig und Ragusa wechseln mit ihren Siedlungen zu den neuen Kulturen. Wappen und Kriege zu Spielbeginn sind
   noch die von Calradia.
+- **Ausrüstungsvorlagen der neuen Kulturen (behoben nach erstem Spieltest):** Der Kampagnenstart stürzte beim Anlegen
+  der Kinder venezianischer Lords ab, weil das Spiel Ausrüstungsvorlagen über die Kultur sucht und für `venice` und
+  `ragusa` keine fand. Jetzt bekommt jede neue Kultur Kopien aller Vorlagen ihrer Vorlage-Kultur (XSLT auf
+  `EquipmentRosters`).
 - **Siedlungen (umgesetzt):** Alle 203 Städte, Burgen und Dörfer der vier Reiche tragen echte Namen, per XSLT statt
   C# (Daten unter `[orte]` in `data/reiche/`). Die Zuordnung folgt der Lage auf der Karte, Hauptstädte sind fest.
   Die Beschreibungstexte der Orte sind noch die von Calradia.
