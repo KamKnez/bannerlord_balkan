@@ -39,6 +39,13 @@ OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
 OUT_ROSTERS = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_EquipmentRosters.xslt"
 OUT_STRINGS = MODULE_DATA / "balkan_strings.xml"
 OUT_CC_TABLE = ROOT / "src" / "BalkanMod" / "CharacterCreation" / "BalkanCultureTable.g.cs"
+# Dorferzeugnisse des Spiels (VillageType, Sandbox/ModuleData/settlements.xml)
+VILLAGE_TYPES = {
+    "battanian_horse_ranch", "cattle_farm", "clay_mine", "date_farm", "desert_horse_ranch", "europe_horse_ranch",
+    "fisherman", "flax_plant", "iron_mine", "lumberjack", "olive_trees", "salt_mine", "sheep_farm", "silk_plant",
+    "silver_mine", "steppe_horse_ranch", "sturgian_horse_ranch", "swine_farm", "trapper", "vineyard",
+    "vlandian_horse_ranch", "wheat_farm",
+}
 # Kulturbilder des Spiels für die Charaktererstellung (Brush-Stile in Native/GUI/Brushes/CharacterCreation.xml)
 CULTURE_IMAGES = ("empire", "vlandia", "sturgia", "aserai", "khuzait", "battania")
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
@@ -515,6 +522,11 @@ def check_realms(realms, cultures):
             errors.append(f"{where}: Königreich {r['reich_id']} gibt es im Spiel nicht")
         if r["kultur_id"] not in culture_ids:
             errors.append(f"{where}: Kultur {r['kultur_id']} ist in data/kulturen nicht definiert")
+        for sid, vtype in r.get("dorftyp", {}).items():
+            if f"Settlement.{sid}" not in vanilla or not sid.startswith(("village_", "castle_village_")):
+                errors.append(f"{where}: dorftyp: {sid} ist kein Dorf des Spiels")
+            if vtype not in VILLAGE_TYPES:
+                errors.append(f"{where}: dorftyp {sid}: {vtype} muss eines von {sorted(VILLAGE_TYPES)} sein")
         lords = [l["id"] for c in r["clan"] for l in c["lord"]]
         if r["herrscher"] not in lords:
             errors.append(f"{where}: herrscher {r['herrscher']} gehört zu keinem Clan der Datei")
@@ -697,6 +709,13 @@ def build_realms(realms, strings):
             elif sid in r["siedlungen"]:
                 sattrs["culture"] = culture
             t["Settlements"] += patch_template("Settlement", sid, sattrs)
+        for sid, vtype in r.get("dorftyp", {}).items():
+            # Erzeugnis des Dorfs (Village village_type), z. B. Weizen statt Datteln
+            t["Settlements"] += [
+                f"\t<xsl:template match=\"Settlement[@id='{sid}']/Components/Village/@village_type\">",
+                f'\t\t<xsl:attribute name="village_type">VillageType.{vtype}</xsl:attribute>',
+                "\t</xsl:template>",
+            ]
     t["Kingdoms"] += build_wars(realms)
     return {OUT_REALMS[k]: xslt_doc(v) for k, v in t.items()}
 

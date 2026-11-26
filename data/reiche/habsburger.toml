@@ -377,7 +377,7 @@ castle_village_V8_2 = "serbs"   # Majur
 [ortstexte]
 town_V1 = { en = "Zagreb is two towns on two hills above the Sava: the bishop's Kaptol and the free royal town of Gradec. Here the Croatian Sabor meets and the Ban holds court.", de = "Zagreb sind zwei Städte auf zwei Hügeln über der Save: der bischöfliche Kaptol und die königliche Freistadt Gradec. Hier tagt der kroatische Sabor, und der Ban hält Hof." }
 town_V2 = { en = "Osijek on the Drava was taken from the Ottomans in 1687. The great wooden bridge of Suleiman across the marshes burned in the war, and the imperial engineers plan a new fortress.", de = "Osijek an der Drau wurde 1687 den Osmanen abgenommen. Die große Holzbrücke Süleymans über die Sümpfe verbrannte im Krieg, und die kaiserlichen Baumeister planen eine neue Festung." }
-town_V3 = { en = "Varaždin with its old moated castle was long the seat of the Croatian Ban and of the generals of the Varaždin frontier. Its burghers trade in wine, cloth and grain.", de = "Varaždin mit seiner alten Wasserburg war lange Sitz des kroatischen Bans und der Generäle der Varaždiner Grenze. Seine Bürger handeln mit Wein, Tuch und Getreide." }
+town_V3 = { en = "Varaždin with its old moated castle is the seat of the Varaždin Generalate, which commands the Slavonian frontier against the Turks. Its burghers trade in wine, cloth and grain.", de = "Varaždin mit seiner alten Wasserburg ist Sitz des Varaždiner Generalats, das die slawonische Grenze gegen die Türken befehligt. Seine Bürger handeln mit Wein, Tuch und Getreide." }
 town_V5 = { en = "Ljubljana, called Laibach by the Germans, is the capital of the Duchy of Carniola. Baroque churches rise under the castle hill on the Ljubljanica.", de = "Ljubljana, deutsch Laibach, ist die Hauptstadt des Herzogtums Krain. Unter dem Burgberg an der Ljubljanica wachsen barocke Kirchen." }
 town_V6 = { en = "Karlovac is a six-pointed star fortress, built in 1579 where four rivers meet. It is the seat of the Karlovac Generalate and the heart of the Military Frontier.", de = "Karlovac ist eine sechszackige Sternfestung, 1579 dort erbaut, wo vier Flüsse zusammenfließen. Hier sitzt das Karlstädter Generalat, das Herz der Militärgrenze." }
 town_V7 = { en = "Požega lies in the Golden Valley of Slavonia. After a century and a half of Ottoman rule it returned to the Crown in 1688, and Franciscans and settlers are bringing the land back to life.", de = "Požega liegt im Goldenen Tal Slawoniens. Nach anderthalb Jahrhunderten osmanischer Herrschaft kam es 1688 an die Krone zurück, und Franziskaner und Siedler beleben das Land neu." }
@@ -401,3 +401,12 @@ de = "{DORF} liegt im Umland von {SITZ}. Nach dem langen Krieg werden die Felder
 [[dorftext]]
 en = "{DORF} belongs to the lands of {SITZ}. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church."
 de = "{DORF} gehört zu den Ländereien von {SITZ}. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche."
+
+[dorftyp]
+# Erzeugnis der Dörfer statt Datteln, Oliven im Binnenland und Wüstenpferden (VillageType des Spiels)
+castle_village_V1_1 = "wheat_farm"          # Garčin
+castle_village_V7_1 = "sheep_farm"          # Korenica
+village_V6_1 = "vineyard"                   # Duga Resa
+village_V6_2 = "wheat_farm"                 # Ozalj
+village_V6_3 = "cattle_farm"                # Draganić
+village_V7_2 = "vineyard"                   # Kutjevo

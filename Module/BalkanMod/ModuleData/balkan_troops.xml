@@ -46,7 +46,7 @@
 				<equipment slot="Body" id="Item.peasant_costume" />
 				<equipment slot="Leg" id="Item.leather_shoes" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t1" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -92,7 +92,7 @@
 				<equipment slot="Body" id="Item.short_padded_robe" />
 				<equipment slot="Leg" id="Item.eastern_leather_boots" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -136,7 +136,7 @@
 				<equipment slot="Body" id="Item.short_padded_robe" />
 				<equipment slot="Leg" id="Item.eastern_leather_boots" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -182,7 +182,7 @@
 				<equipment slot="Gloves" id="Item.guarded_padded_vambrace" />
 				<equipment slot="Leg" id="Item.steppe_leather_boots" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -226,7 +226,7 @@
 				<equipment slot="Gloves" id="Item.eastern_plated_leather_vambraces" />
 				<equipment slot="Leg" id="Item.khuzait_curved_boots" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -277,7 +277,7 @@
 				<equipment slot="Horse" id="Item.aserai_horse" />
 				<equipment slot="HorseHarness" id="Item.aseran_village_harness" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -329,7 +329,7 @@
 				<equipment slot="Horse" id="Item.t2_aserai_horse" />
 				<equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -379,7 +379,7 @@
 				<equipment slot="Horse" id="Item.aserai_horse" />
 				<equipment slot="HorseHarness" id="Item.aseran_village_harness" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -431,7 +431,7 @@
 				<equipment slot="Horse" id="Item.t2_aserai_horse" />
 				<equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -481,7 +481,7 @@
 				<equipment slot="Horse" id="Item.t3_aserai_horse" />
 				<equipment slot="HorseHarness" id="Item.chain_horse_harness" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -530,7 +530,7 @@
 				<equipment slot="Horse" id="Item.t3_aserai_horse" />
 				<equipment slot="HorseHarness" id="Item.half_mail_and_plate_barding" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -612,7 +612,7 @@
 				<equipment slot="Body" id="Item.short_padded_robe" />
 				<equipment slot="Leg" id="Item.wrapped_shoes" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -646,7 +646,7 @@
 				<equipment slot="Body" id="Item.desert_padded_cloth" />
 				<equipment slot="Leg" id="Item.eastern_leather_boots" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t2" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -680,7 +680,7 @@
 				<equipment slot="Body" id="Item.long_padded_robe" />
 				<equipment slot="Leg" id="Item.eastern_leather_boots" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
@@ -714,7 +714,7 @@
 				<equipment slot="Body" id="Item.layered_robe" />
 				<equipment slot="Leg" id="Item.eastern_leather_boots" />
 			</EquipmentRoster>
-			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<!-- Deutsche (data/kulturen/deutsche.toml) -->
