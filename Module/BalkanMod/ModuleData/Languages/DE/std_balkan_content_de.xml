@@ -142,6 +142,22 @@
     <string id="balkan_culture_ungarn_text" text="Nach anderthalb Jahrhunderten Krieg füllen sich die ungarischen Ebenen langsam wieder mit Menschen. Die Hajdúk, einst Viehtreiber, kämpfen zu Fuß mit Muskete und Säbel, und die leichten Husaren des ungarischen Adels sind in allen Heeren Europas berühmt geworden." />
     <string id="balkan_culture_venezianer" text="Venezianer" />
     <string id="balkan_culture_venezianer_text" text="Die Durchlauchtigste Republik Venedig beherrscht die Adria von ihrer Lagune aus. An der dalmatinischen Küste verwalten ihre Provveditori ummauerte Häfen voller Kaufleute, Seeleute und Soldaten. Italienische Pikeniere und Musketiere halten die Mauern, dalmatinische Schiavoni und albanische Cappelletti führen den Kleinkrieg im Hinterland." />
+    <string id="balkan_culture_bosniaken_rich" text="Bosniaken" />
+    <string id="balkan_culture_bosniaken_desc" text="Das Eyalet Bosnien ist das osmanische Bollwerk an der Grenze zu den Habsburgern und zu Venedig. Seine Kapetanije bewachen Flussübergänge und Gebirgspässe, besetzt mit Azapen und Musketieren, die jede Furt kennen. Die Sipahi halten ihre Timare gegen Dienst zu Pferd, und die verwegenen Deli reiten jedem Streifzug voraus." />
+    <string id="balkan_culture_deutsche_rich" text="Deutsche" />
+    <string id="balkan_culture_deutsche_desc" text="Deutsche Siedler kamen als Bauern, Handwerker und Soldaten in die Grenzländer der Steiermark, Krains und der zurückeroberten Ebenen. Die kaiserlichen Regimenter werben unter ihnen Pikeniere und Musketiere, und aus ihrem Adel stammen die schweren Kürassiere des Kaisers." />
+    <string id="balkan_culture_kroaten_rich" text="Kroaten" />
+    <string id="balkan_culture_kroaten_desc" text="Kroatien, Slawonien und Dalmatien nennen sich ein eigenes Königreich unter der habsburgischen Krone. Seit zwei Jahrhunderten halten die Kroaten die Militärgrenze gegen die Osmanen: Freie Bauern leisten dem Kaiser Kriegsdienst statt Abgaben, und jedes Dorf hält seine Haramije und Reiter bereit. Der Adel reitet noch als gepanzerte Reiterei, die Grenzer kämpfen mit Säbel und Arkebuse." />
+    <string id="balkan_culture_ragusaner_rich" text="Ragusaner" />
+    <string id="balkan_culture_ragusaner_desc" text="Die Republik Ragusa wahrt ihre Freiheit eher mit Gold als mit Stahl. Ihre Handelsflotte fährt von der Levante bis Spanien, und jedes Jahr bringen ihre Gesandten dem Sultan den Tribut. Hinter den großen Mauern der Stadt dient eine kleine Wache aus Hellebardieren und Arkebusieren dem Rektor, der jeden Monat wechselt, damit keiner allein herrscht." />
+    <string id="balkan_culture_serben_rich" text="Serben" />
+    <string id="balkan_culture_serben_desc" text="1690 zogen Zehntausende Serben mit ihrem Patriarchen über Save und Donau und ließen sich an der habsburgischen Grenze nieder, wo sie für Land und Glaubensfreiheit als Grenzsoldaten dienen. Andere blieben unter dem Sultan oder traten in venezianische Dienste. Ihre Hajduken und Husaren sind auf allen Seiten der Grenze gefürchtet." />
+    <string id="balkan_culture_tuerken_rich" text="Türken" />
+    <string id="balkan_culture_tuerken_desc" text="Türkische Siedler, Beamte und Soldaten leben seit der Eroberung in den Städten des Balkans. Die Janitscharen, das stehende Fußvolk des Sultans, sind die berühmtesten Musketiere des Reichs, während die Sipahi ihr Land für den Dienst zu Pferd erhalten." />
+    <string id="balkan_culture_ungarn_rich" text="Ungarn" />
+    <string id="balkan_culture_ungarn_desc" text="Nach anderthalb Jahrhunderten Krieg füllen sich die ungarischen Ebenen langsam wieder mit Menschen. Die Hajdúk, einst Viehtreiber, kämpfen zu Fuß mit Muskete und Säbel, und die leichten Husaren des ungarischen Adels sind in allen Heeren Europas berühmt geworden." />
+    <string id="balkan_culture_venezianer_rich" text="Venezianer" />
+    <string id="balkan_culture_venezianer_desc" text="Die Durchlauchtigste Republik Venedig beherrscht die Adria von ihrer Lagune aus. An der dalmatinischen Küste verwalten ihre Provveditori ummauerte Häfen voller Kaufleute, Seeleute und Soldaten. Italienische Pikeniere und Musketiere halten die Mauern, dalmatinische Schiavoni und albanische Cappelletti führen den Kleinkrieg im Hinterland." />
     <string id="balkan_kingdom_vlandia" text="Habsburgermonarchie" />
     <string id="balkan_kingdom_vlandia_short" text="Habsburger" />
     <string id="balkan_kingdom_vlandia_title" text="Königreich Kroatien-Slawonien unter der Habsburger Krone" />

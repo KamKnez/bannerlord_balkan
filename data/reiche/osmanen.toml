@@ -353,6 +353,7 @@ village_A8_2 = "Busovača"                   # Abghan
 
 # Dörfer mit eigener Kultur: Ihre Bewohner bieten Rekruten dieser Kultur an (data/kulturen/).
 [dorfkultur]
+town_A2 = "serbs"              # Beograd: osmanische Festung, Bevölkerung von Stadt und Umland serbisch
 village_A2_2 = "serbs"          # Grocka
 village_A2_3 = "serbs"          # Smederevo
 village_A5_3 = "serbs"          # Raška

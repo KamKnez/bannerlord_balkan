@@ -339,6 +339,12 @@ village_EW6_4 = "Stobreč"                   # Leblenion
 
 # Dörfer mit eigener Kultur: Ihre Bewohner bieten Rekruten dieser Kultur an (data/kulturen/).
 [dorfkultur]
+castle_EW2 = "vlandia"          # Sinj: kroatisches Hinterland, 1686 von den Osmanen erobert
+castle_EW3 = "vlandia"          # Makarska: kroatisches Küstenland
+castle_EW4 = "vlandia"          # Knin
+castle_EW6 = "vlandia"          # Klis
+castle_EW7 = "vlandia"          # Omiš
+castle_EW8 = "vlandia"          # Vrlika
 castle_village_EW4_1 = "serbs"  # Drniš (Morlaken)
 castle_village_EW4_2 = "serbs"  # Kistanje (Morlaken)
 
