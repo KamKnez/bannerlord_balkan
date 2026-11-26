@@ -337,6 +337,12 @@ village_EW6_1 = "Kaštel Sućurac"            # Carphenion
 village_EW6_3 = "Solin"                     # Thersenion
 village_EW6_4 = "Stobreč"                   # Leblenion
 
+# Dörfer mit eigener Kultur: Ihre Bewohner bieten Rekruten dieser Kultur an (data/kulturen/).
+[dorfkultur]
+castle_village_EW4_1 = "serbs"  # Drniš (Morlaken)
+castle_village_EW4_2 = "serbs"  # Kistanje (Morlaken)
+
+
 # Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
 # {DORF} wird durch den Dorfnamen ersetzt, {SITZ} durch die Stadt oder Burg, zu der es gehört.
 [ortstexte]

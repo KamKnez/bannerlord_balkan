@@ -1,0 +1,210 @@
+# Serben. Neue Kultur, kopiert alle übrigen Werte von Sturgia.
+# Serbische Grenzer und Husaren dienten auf beiden Seiten der Grenze: bei den Habsburgern (nach der Großen
+# Wanderung von 1690), bei Venedig (Morlaken) und unter den Osmanen.
+# Rekrutierbar in Dörfern mit dieser Kultur (siehe [dorfkultur] in data/reiche/).
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "serben"
+kultur_id = "serbs"
+art = "neu"
+vorlage = "sturgia"
+praefix = "sr"
+namensliste = "serben"
+farben = ["0xff8E1B1B", "0xff2F4F8F"]
+gesicht = "fighter_sturgia"
+zivil = ["sturgia_troop_civilian_template_t1", "sturgia_troop_civilian_template_t2", "sturgia_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "plemic"
+
+[name]
+en = "Serbs"
+de = "Serben"
+
+[text]
+en = """
+In 1690 tens of thousands of Serbs crossed the Sava and the Danube with their patriarch and settled on the \
+Habsburg frontier, where they serve as border soldiers in return for land and freedom of faith. Others stayed \
+under the Sultan or took service with Venice. Their hajduks and hussars are feared on every side of the border.
+"""
+de = """
+1690 zogen Zehntausende Serben mit ihrem Patriarchen über Save und Donau und ließen sich an der habsburgischen \
+Grenze nieder, wo sie für Land und Glaubensfreiheit als Grenzsoldaten dienen. Andere blieben unter dem Sultan \
+oder traten in venezianische Dienste. Ihre Hajduken und Husaren sind auf allen Seiten der Grenze gefürchtet.
+"""
+
+[miliz]
+nahkampf = "shooter"
+fernkampf = "shooter"
+nahkampf_elite = "musketeer"
+fernkampf_elite = "hajduk"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+
+[[lord_partei]]
+truppe = "shooter"
+min = 3
+max = 6
+
+[[lord_partei]]
+truppe = "musketeer"
+min = 2
+max = 4
+
+[[lord_partei]]
+truppe = "rider"
+min = 1
+max = 3
+
+[[lord_partei]]
+truppe = "hussar"
+min = 0
+max = 2
+
+# ---------------------------------------------------------------- Truppen
+
+[[truppe]]
+id = "peasant"
+name = { en = "Serbian Peasant", de = "Serbischer Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["shooter"]
+[[truppe.ausruestung]]
+Item0 = "peasant_hatchet_1_t1"
+Head = "nordic_fur_cap"
+Body = "hemp_tunic"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_pitchfork_1_t1"
+Head = "fur_hat"
+Body = "long_woolen_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "shooter"
+name = { en = "Serbian Frontiersman", de = "Serbischer Grenzer" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["musketeer", "rider"]
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "simple_sabre_sword_t2"
+Head = "nordic_fur_cap"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "musketeer"
+name = { en = "Serbian Musketeer", de = "Serbischer Musketier" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["hajduk"]
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "woven_leather_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "hajduk"
+name = { en = "Hajduk", de = "Hajduk" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_long_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "ridged_sabre_sword_t4"
+Head = "northern_fur_cap"
+Body = "woven_leather_coat"
+Gloves = "woven_leather_bracers"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "rider"
+name = { en = "Serbian Rider", de = "Serbischer Reiter" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+benoetigt = "pferd"
+aufwerten = ["hussar"]
+pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_1_t3"
+Item1 = "khuzait_sword_2_t3"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "nordic_fur_cap"
+Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "hussar"
+name = { en = "Serbian Hussar", de = "Raizischer Husar" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+benoetigt = "pferd"
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "khuzait_sword_3_t3"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "northern_fur_cap"
+Body = "stitched_leather_over_mail"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "plemic"
+name = { en = "Serbian Nobleman", de = "Serbischer Edelmann" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "reiter"
+basis = true
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["vojvoda"]
+pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_sword_2_t3"
+Item1 = "western_spear_1_t2"
+Item2 = "light_horsemans_kite_shield"
+Head = "northern_fur_cap"
+Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "vojvoda"
+name = { en = "Vojvoda", de = "Vojvoda" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_sturgia_elite"
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "ridged_sabre_sword_t4"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "spiked_helmet"
+Body = "northern_brass_lamellar_over_mail"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"

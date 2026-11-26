@@ -68,14 +68,6 @@ max = 2
 truppe = "cuirassier"
 min = 0
 max = 1
-[[lord_partei]]
-truppe = "german_pikeman"
-min = 1
-max = 3
-[[lord_partei]]
-truppe = "german_musketeer"
-min = 1
-max = 3
 
 # ---------------------------------------------------------------- normaler Baum
 
@@ -86,7 +78,7 @@ stufe = 1
 gruppe = "Infantry"
 profil = "bauer"
 basis = true
-aufwerten = ["haramija", "german_recruit"]
+aufwerten = ["haramija"]
 [[truppe.ausruestung]]
 Item0 = "peasant_pitchfork_1_t1"
 Head = "fur_hat"
@@ -133,7 +125,7 @@ name = { en = "Border Musketeer", de = "Grenz-Musketier" }
 stufe = 3
 gruppe = "Ranged"
 profil = "schuetze"
-aufwerten = ["border_veteran", "hajdu"]
+aufwerten = ["border_veteran"]
 [[truppe.ausruestung]]
 Item0 = "balkan_musket"
 Item1 = "balkan_musket_balls"
@@ -206,7 +198,7 @@ stufe = 3
 gruppe = "Cavalry"
 profil = "leichte_reiter"
 benoetigt = "pferd"
-aufwerten = ["hussar", "rascian_hussar"]
+aufwerten = ["hussar"]
 pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
 [[truppe.ausruestung]]
 Item0 = "khuzait_lance_1_t3"
@@ -249,143 +241,6 @@ Item1 = "khuzait_sword_3_t3"
 Item2 = "light_horsemans_kite_shield"
 Head = "fur_hat"
 Body = "red_coat_over_mail"
-Gloves = "studded_leather_vambraces"
-Leg = "leather_cavalier_boots"
-
-# ---------------------------------------------------------------- Deutsche, Ungarn und Serben (Zweige)
-# Deutsche Söldner und Regimenter, ungarische Hajduken und serbische (raizische) Husaren dienten
-# um 1700 neben den Kroaten an der Grenze. Sie zweigen vom Bauern, vom Grenz-Musketier und vom
-# kroatischen Reiter ab.
-
-[[truppe]]
-id = "german_recruit"
-name = { en = "German Recruit", de = "Deutscher Rekrut" }
-stufe = 2
-gruppe = "Infantry"
-profil = "infanterie"
-aufwerten = ["german_pikeman", "german_musketeer"]
-[[truppe.ausruestung]]
-Item0 = "western_spear_1_t2"
-Item1 = "falchion_sword_t2"
-Head = "arming_cap"
-Body = "sleeveless_padded_coat"
-Leg = "leather_boots"
-[[truppe.ausruestung]]
-Item0 = "western_spear_1_t2"
-Item1 = "vlandia_mace_1_t2"
-Head = "leather_cap"
-Body = "padded_short_coat"
-Leg = "leather_boots"
-
-[[truppe]]
-id = "german_pikeman"
-name = { en = "German Pikeman", de = "Deutscher Pikenier" }
-stufe = 3
-gruppe = "Infantry"
-profil = "pike"
-aufwerten = ["doppelsoeldner"]
-[[truppe.ausruestung]]
-Item0 = "simple_pike_t2"
-Item1 = "vlandia_sword_2_t3"
-Head = "kettle_helmet_over_padded_cap"
-Body = "padded_coat"
-Gloves = "woven_leather_bracers"
-Leg = "leather_boots"
-[[truppe.ausruestung]]
-Item0 = "simple_pike_t2"
-Item1 = "vlandia_axe_1_t3"
-Head = "kettle_hat_over_padded_coif"
-Body = "padded_coat"
-Leg = "leather_boots"
-
-[[truppe]]
-id = "doppelsoeldner"
-name = { en = "Doppelsöldner", de = "Doppelsöldner" }
-stufe = 4
-gruppe = "Infantry"
-profil = "pike"
-[[truppe.ausruestung]]
-Item0 = "vlandia_polearm_1_t5"
-Item1 = "vlandia_sword_3_t4"
-Head = "kettle_helmet_over_mail"
-Body = "coat_of_plates_over_mail"
-Gloves = "plated_strip_gauntlets"
-Leg = "mail_chausses"
-[[truppe.ausruestung]]
-Item0 = "fine_pike_t4"
-Item1 = "vlandia_sword_4_t4"
-Head = "guards_kettle_over_mail_coif"
-Body = "coat_of_plates_over_mail"
-Gloves = "plated_strip_gauntlets"
-Leg = "strapped_mail_chausses"
-
-[[truppe]]
-id = "german_musketeer"
-name = { en = "German Musketeer", de = "Deutscher Musketier" }
-stufe = 3
-gruppe = "Ranged"
-profil = "schuetze"
-aufwerten = ["german_veteran_musketeer"]
-[[truppe.ausruestung]]
-Item0 = "balkan_musket"
-Item1 = "balkan_musket_balls"
-Item2 = "vlandia_sword_2_t3"
-Head = "kettle_hat_over_padded_cloth"
-Body = "padded_coat"
-Leg = "leather_boots"
-[[truppe.ausruestung]]
-Item0 = "balkan_musket"
-Item1 = "balkan_musket_balls"
-Item2 = "vlandia_axe_1_t3"
-Head = "arming_cap"
-Body = "padded_coat"
-Leg = "leather_boots"
-
-[[truppe]]
-id = "german_veteran_musketeer"
-name = { en = "German Veteran Musketeer", de = "Deutscher Veteran-Musketier" }
-stufe = 4
-gruppe = "Ranged"
-profil = "schuetze"
-[[truppe.ausruestung]]
-Item0 = "balkan_heavy_musket"
-Item1 = "balkan_musket_balls"
-Item2 = "vlandia_sword_3_t4"
-Head = "kettle_helmet_over_padded_coif"
-Body = "studded_leather_coat"
-Gloves = "woven_leather_bracers"
-Leg = "strapped_leather_boots"
-
-[[truppe]]
-id = "hajdu"
-name = { en = "Hungarian Hajdú", de = "Ungarischer Hajdú" }
-stufe = 4
-gruppe = "Ranged"
-profil = "schuetze"
-[[truppe.ausruestung]]
-Item0 = "balkan_long_musket"
-Item1 = "balkan_musket_balls"
-Item2 = "ridged_sabre_sword_t4"
-Head = "fur_hat"
-Body = "woven_leather_coat"
-Gloves = "woven_leather_bracers"
-Leg = "eastern_leather_boots"
-
-[[truppe]]
-id = "rascian_hussar"
-name = { en = "Serbian Hussar", de = "Raizischer Husar" }
-stufe = 4
-gruppe = "Cavalry"
-profil = "leichte_reiter"
-benoetigt = "pferd"
-pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
-[[truppe.ausruestung]]
-Item0 = "khuzait_lance_2_t4"
-Item1 = "khuzait_sword_3_t3"
-Item2 = "balkan_pistol"
-Item3 = "balkan_pistol_balls"
-Head = "northern_fur_cap"
-Body = "stitched_leather_over_mail"
 Gloves = "studded_leather_vambraces"
 Leg = "leather_cavalier_boots"
 

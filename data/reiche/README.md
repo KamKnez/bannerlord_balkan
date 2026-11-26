@@ -26,6 +26,7 @@ Fähigkeiten der Lords bleiben wie im Spiel, wir ändern nur Namen, Texte, Farbe
 | `krieg_mit` | Königreiche, mit denen das Reich zu Spielbeginn im Krieg ist; muss auf beiden Seiten stehen. Andere Calradia-Kriege dieses Reichs entfallen, auch die, die andere Reiche gegen es führen |
 | `[wappen]` | Wappen des Reichs: `zeichen` (Nummer des Zeichens), `groesse`, `hintergrund` und `farbe` als `[Nummer, "0xffRRGGBB"]` aus der Farbpalette des Spiels. Die Clans übernehmen die Farben im Spiel |
 | `[orte]` | neue Namen der Städte, Burgen und Dörfer: `town_V1 = "Zagreb"` (Eigenname) oder `{ en, de }`. Der Kommentar dahinter nennt den Calradia-Namen |
+| `[dorfkultur]` | Dörfer mit eigener Kultur: `village_V8_1 = "germans"`. Die Bewohner bieten Rekruten dieser Kultur an |
 | `[ortstexte]` | Beschreibung einer Stadt oder Burg für die Enzyklopädie (Stand um 1700): `town_V1 = { en, de }` |
 | `[[dorftext]]` | Vorlagen `en`/`de` für Dörfer ohne eigenen Text, reihum verteilt. `{DORF}` wird durch den Dorfnamen ersetzt, `{SITZ}` durch die Stadt oder Burg, zu der das Dorf gehört |
 | `[[clan]]` | `id` im Spiel und `name` (Familienname als Text, oder `{ en, de }` für einen übersetzten Namen) |

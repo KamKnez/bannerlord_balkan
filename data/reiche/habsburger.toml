@@ -354,6 +354,20 @@ village_V8_3 = "Gleisdorf"                  # Remental
 village_V9_1 = "Mohács"                     # Alantas
 village_V9_2 = "Siklós"                     # Halisvust
 
+# Dörfer mit eigener Kultur: Ihre Bewohner bieten Rekruten dieser Kultur an (data/kulturen/).
+[dorfkultur]
+village_V8_1 = "germans"        # Leibnitz
+village_V8_2 = "germans"        # Voitsberg
+village_V8_3 = "germans"        # Gleisdorf
+village_V9_1 = "hungarians"     # Mohács
+village_V9_2 = "hungarians"     # Siklós
+village_V2_1 = "hungarians"     # Valpovo
+castle_village_V7_1 = "serbs"   # Korenica (Lika, Grenzer)
+castle_village_V7_2 = "serbs"   # Bunić
+castle_village_V8_1 = "serbs"   # Dubica (Banija, Grenzer)
+castle_village_V8_2 = "serbs"   # Majur
+
+
 # Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
 # {DORF} wird durch den Dorfnamen ersetzt, {SITZ} durch die Stadt oder Burg, zu der es gehört.
 [ortstexte]
