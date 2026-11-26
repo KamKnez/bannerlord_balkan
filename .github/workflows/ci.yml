@@ -9,9 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -27,7 +27,7 @@ jobs:
       - name: Verweise prüfen
         run: python3 tools/validate_refs.py
 
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: "8.0.x"
 
@@ -35,7 +35,7 @@ jobs:
         run: dotnet build src/BalkanMod/BalkanMod.csproj -c Release
 
       - name: Modulordner als Artefakt hochladen
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: BalkanMod
           path: Module/BalkanMod/
