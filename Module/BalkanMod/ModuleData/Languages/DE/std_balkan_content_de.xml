@@ -425,6 +425,10 @@
     <string id="balkan_rise_hajduk_text" text="Die Männer des Subaşı haben Euer Haus wegen einer Schuld niedergebrannt, die Euer Vater nie hatte. Mit einer Handvoll Freunde seid Ihr in die Wälder über der Drina gegangen. Die Dörfler bringen Euch Brot und Nachrichten, und der Pascha hat einen Preis auf Euren Kopf ausgesetzt." />
     <string id="balkan_rise_hajduk_goal" text="Baut Eure eigene Bande auf: Führt mindestens {COUNT} Männer an." />
     <string id="balkan_rise_hajduk_success" text="Eure Bande ist von der Drina bis zum Meer bekannt, und die Lieder erzählen schon von Euch. Von nun an geht Ihr Euren eigenen Weg." />
+    <string id="balkan_rise_bauer" text="Bauer an der Save" />
+    <string id="balkan_rise_bauer_text" text="Ihr seid in Županja geboren, einem Dorf der Militärgrenze an der Save. Jenseits des Flusses liegt das osmanische Bosnien, und jeden Abend seht Ihr den Rauch seiner Wachfeuer. Eurer Familie gehören eine Hütte, ein Acker und die Pflicht, zur Waffe zu greifen, sobald die Trommel schlägt. Die Ernte ist verdorben, der Steuereintreiber kam trotzdem, und Ihr habt beschlossen, dass das Leben mehr sein muss als Pflügen und Warten auf den nächsten Überfall. Zwei Burschen aus dem Dorf kommen mit Euch." />
+    <string id="balkan_rise_bauer_goal" text="Werdet Offizier der Grenzer: Dient den Habsburgern, als Söldner oder Vasall, und bringt Euren Clan auf Stufe {COUNT}." />
+    <string id="balkan_rise_bauer_success" text="Die Männer des Broder Regiments grüßen Euch nun als Offizier. Von einer Hütte in Županja bis zur Offiziersschärpe habt Ihr einen weiten Weg hinter Euch. Von nun an geht Ihr Euren eigenen Weg." />
     <string id="balkan_bg_bosniaken_aserai_kinsfolk" text="die Sippe eines Begs" />
     <string id="balkan_bg_bosniaken_aserai_kinsfolk_text" text="Eure Familie war ein Nebenzweig eines alten bosnischen Begs-Hauses. Der Timar Eures Vaters reichte für ein gutes Pferd, nicht aber für die Rüstung der schweren Reiterei, und so ritt er mit den leichten Reitern, die über die Grenze streifen." />
     <string id="balkan_bg_bosniaken_aserai_slave" text="das Haus eines Kapetans" />

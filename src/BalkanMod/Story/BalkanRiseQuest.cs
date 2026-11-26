@@ -91,6 +91,8 @@ namespace BalkanMod.Story
                     return inKingdom;
                 case "burg":
                     return inKingdom && clan.Settlements.Any(s => s.IsCastle);
+                case "stufe":
+                    return clan.Kingdom != null && clan.Kingdom.StringId == start.Kingdom && clan.Tier >= start.GoalCount;
                 case "trupp":
                     return MobileParty.MainParty != null && MobileParty.MainParty.MemberRoster.TotalManCount >= start.GoalCount;
                 default:

@@ -6,8 +6,11 @@
 # ort         Siedlung, in der man beginnt (Id im Spiel)
 # reich       Reich der Geschichte (reich_id); sein Herrscher gibt den Auftrag im Tagebuch, außer bei auftraggeber = "ort"
 # beziehung   Änderung der Beziehung zum Herrscher des Reichs
+# gold        Gold zu Beginn; negativ nimmt Gold weg (nicht unter null), für arme Anfänge
 # truppen     je Kultur-Id: Truppen-Ids und Anzahl, die man zu Beginn bekommt
-# ziel        "vasall" (Vasall des Reichs werden), "burg" (eine Burg besitzen, im Reich), "trupp" (anzahl Männer anführen)
+# ausruestung je Kultur-Id: Truppen-Id, deren Kampfausrüstung die Figur zu Beginn bekommt (optional)
+# ziel        "vasall" (Vasall des Reichs werden), "burg" (eine Burg besitzen, im Reich), "trupp" (anzahl Männer anführen),
+#             "stufe" (im Dienst des Reichs, als Söldner oder Vasall, die Clanstufe anzahl erreichen)
 # belohnung   Gold und Ruhm, wenn das Ziel erreicht ist
 
 [[start]]
@@ -61,3 +64,26 @@ erfolg_text = { en = "Your band is known from the Drina to the sea, and the song
 [start.truppen]
 serbs = { balkan_sr_shooter = 3, balkan_sr_peasant = 3 }
 vlandia = { balkan_hr_haramija = 3, balkan_hr_peasant = 3 }
+
+[[start]]
+id = "bauer"
+kulturen = ["vlandia", "serbs"]
+# Županja an der Save (Brod-Abschnitt der Militärgrenze). Das Dorf kommt mit der neuen Karte; bis dahin Garčin,
+# das Dorf der Burg Brod auf der jetzigen Karte. Mit der neuen Karte die Id von Županja eintragen.
+ort = "castle_village_V1_1"   # Garčin, später Županja
+reich = "vlandia"
+auftraggeber = "ort"
+gold = -800
+ziel = "stufe"
+anzahl = 3
+belohnung = { gold = 1500, ruhm = 50 }
+name = { en = "Peasant on the Sava", de = "Bauer an der Save" }
+text = { en = "You were born in Županja, a village of the Military Frontier on the Sava. Across the river lies Ottoman Bosnia, and every evening you can see the smoke of its watch fires. Your family owns a hut, a field and the duty to take up arms whenever the drum sounds. The harvest has failed, the tax collector came anyway, and you have decided that life must hold more than ploughing and waiting for the next raid. Two lads from the village are coming with you.", de = "Ihr seid in Županja geboren, einem Dorf der Militärgrenze an der Save. Jenseits des Flusses liegt das osmanische Bosnien, und jeden Abend seht Ihr den Rauch seiner Wachfeuer. Eurer Familie gehören eine Hütte, ein Acker und die Pflicht, zur Waffe zu greifen, sobald die Trommel schlägt. Die Ernte ist verdorben, der Steuereintreiber kam trotzdem, und Ihr habt beschlossen, dass das Leben mehr sein muss als Pflügen und Warten auf den nächsten Überfall. Zwei Burschen aus dem Dorf kommen mit Euch." }
+ziel_text = { en = "Become an officer of the Grenzer: serve the Habsburgs, as a mercenary or a vassal, and raise your clan to tier {COUNT}.", de = "Werdet Offizier der Grenzer: Dient den Habsburgern, als Söldner oder Vasall, und bringt Euren Clan auf Stufe {COUNT}." }
+erfolg_text = { en = "The men of the Brod regiment now salute you as an officer. From a hut in Županja to an officer's sash, you have come a long way. From now on your path is your own.", de = "Die Männer des Broder Regiments grüßen Euch nun als Offizier. Von einer Hütte in Županja bis zur Offiziersschärpe habt Ihr einen weiten Weg hinter Euch. Von nun an geht Ihr Euren eigenen Weg." }
+[start.truppen]
+vlandia = { balkan_hr_peasant = 2 }
+serbs = { balkan_sr_peasant = 2 }
+[start.ausruestung]
+vlandia = "balkan_hr_peasant"
+serbs = "balkan_sr_peasant"

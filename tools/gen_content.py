@@ -432,7 +432,7 @@ def build_cc_table(cultures):
 # ---------------------------------------------------------------- Ereignisse und geführter Aufstieg
 
 EVENT_ACTIONS = ("krieg", "frieden", "buendnis")
-RISE_GOALS = ("vasall", "burg", "trupp")
+RISE_GOALS = ("vasall", "burg", "trupp", "stufe")
 
 
 def load_toml(name):
@@ -485,6 +485,8 @@ def check_rise(rise, realms, cultures, vanilla_ids):
             errors.append(f"{where}: unbekanntes ziel '{st.get('ziel')}' (erlaubt: {', '.join(RISE_GOALS)})")
         if st.get("ziel") == "trupp" and st.get("anzahl", 0) < 2:
             errors.append(f"{where}: ziel trupp braucht anzahl")
+        if st.get("ziel") == "stufe" and not 1 <= st.get("anzahl", 0) <= 6:
+            errors.append(f"{where}: ziel stufe braucht anzahl zwischen 1 und 6")
         if st.get("auftraggeber", "herrscher") not in ("herrscher", "ort"):
             errors.append(f"{where}: auftraggeber muss herrscher oder ort sein")
         for field in ("name", "text", "ziel_text", "erfolg_text"):
@@ -495,6 +497,11 @@ def check_rise(rise, realms, cultures, vanilla_ids):
             for troop in troops:
                 if troop not in troop_ids:
                     errors.append(f"{where}: unbekannte Truppe '{troop}'")
+        for cid, troop in st.get("ausruestung", {}).items():
+            if cid not in st.get("kulturen", []):
+                errors.append(f"{where}: ausruestung für '{cid}', das nicht unter kulturen steht")
+            if troop not in troop_ids:
+                errors.append(f"{where}: ausruestung nennt unbekannte Truppe '{troop}'")
     return errors
 
 
@@ -524,7 +531,9 @@ def build_rise(rise, strings):
                     f'{str(st.get("auftraggeber", "herrscher") == "ort").lower()}, {st.get("beziehung", 0)}, {st.get("gold", 0)},')
         rows.append(f'                "{st["ziel"]}", {st.get("anzahl", 0)}, {reward.get("gold", 0)}, {reward.get("ruhm", 0)},')
         rows.append("                " + ", ".join(cs_string(t) for t in texts) + ",")
-        rows.append(f'                new (string Culture, string Troop, int Count)[] {{ {troops} }}),')
+        outfit = ", ".join(f'("{cid}", "{troop}")' for cid, troop in st.get("ausruestung", {}).items())
+        rows.append(f'                new (string Culture, string Troop, int Count)[] {{ {troops} }},')
+        rows.append(f'                new (string Culture, string Troop)[] {{ {outfit} }}),')
     return cs_table("data/aufstieg.toml", "BalkanRiseTable", "BalkanRiseStart[] Starts", "new[]", rows)
 
 

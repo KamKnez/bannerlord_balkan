@@ -34,7 +34,7 @@ namespace BalkanMod.Story
     {
         public BalkanRiseStart(string id, string[] cultures, string settlement, string kingdom, bool giverIsNotable, int relation,
             int gold, string goal, int goalCount, int rewardGold, int rewardRenown, string name, string text, string goalText,
-            string successText, (string Culture, string Troop, int Count)[] troops)
+            string successText, (string Culture, string Troop, int Count)[] troops, (string Culture, string Troop)[] outfit)
         {
             Id = id;
             Cultures = cultures;
@@ -52,6 +52,7 @@ namespace BalkanMod.Story
             GoalText = goalText;
             SuccessText = successText;
             Troops = troops;
+            Outfit = outfit;
         }
 
         public string Id { get; }
@@ -70,5 +71,8 @@ namespace BalkanMod.Story
         public string GoalText { get; }
         public string SuccessText { get; }
         public (string Culture, string Troop, int Count)[] Troops { get; }
+
+        /// <summary>Je Kultur die Truppe, deren Kampfausrüstung die Figur zu Beginn bekommt (leer: Ausrüstung bleibt).</summary>
+        public (string Culture, string Troop)[] Outfit { get; }
     }
 }

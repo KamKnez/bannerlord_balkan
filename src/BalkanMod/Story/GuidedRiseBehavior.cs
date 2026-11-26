@@ -94,9 +94,27 @@ namespace BalkanMod.Story
                 }
             }
 
+            foreach (var (outfitCulture, troopId) in start.Outfit)
+            {
+                var troop = outfitCulture == culture ? MBObjectManager.Instance.GetObject<CharacterObject>(troopId) : null;
+                if (troop?.FirstBattleEquipment != null)
+                {
+                    Hero.MainHero.BattleEquipment.FillFrom(troop.FirstBattleEquipment);
+                }
+            }
+
             if (start.Gold > 0)
             {
                 GiveGoldAction.ApplyBetweenCharacters(null, Hero.MainHero, start.Gold, true);
+            }
+            else if (start.Gold < 0)
+            {
+                // Arme Anfänge: Gold abziehen, aber nicht unter null.
+                var take = System.Math.Min(-start.Gold, Hero.MainHero.Gold);
+                if (take > 0)
+                {
+                    GiveGoldAction.ApplyBetweenCharacters(Hero.MainHero, null, take, true);
+                }
             }
 
             var kingdom = Kingdom.All.FirstOrDefault(k => k.StringId == start.Kingdom);
