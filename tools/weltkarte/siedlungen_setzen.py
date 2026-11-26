@@ -23,10 +23,10 @@ import rahmen as R
 arbeit, ziel = sys.argv[1], sys.argv[2]
 wurzel = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 RAND = 22.0                                  # Abstand zum Kartenrand in Einheiten
-ABSTAND = {("town", "town"): 10.0, ("town", "castle"): 7.5, ("castle", "castle"): 7.5,
-           ("town", "village"): 5.0, ("castle", "village"): 5.0, ("village", "village"): 4.5}
-ABSTAND_VERSTECK = 6.0
-DORF_UM_SITZ = 8.0                           # Abstand automatisch verteilter Dörfer zu ihrem Sitz
+ABSTAND = {("town", "town"): 12.0, ("town", "castle"): 10.0, ("castle", "castle"): 10.0,
+           ("town", "village"): 6.0, ("castle", "village"): 6.0, ("village", "village"): 6.0}
+ABSTAND_VERSTECK = 8.0
+DORF_UM_SITZ = 9.0                           # Abstand automatisch verteilter Dörfer zu ihrem Sitz
 
 spiel = np.load(f"{arbeit}/spielhoehe.npy")
 steigung = np.load(f"{arbeit}/steigung.npy")
@@ -125,6 +125,21 @@ benannt.sort(key=lambda i: (orte[i]["quelle"] == "vorläufig", rang[art_von(i)],
 for ident in benannt:
     o = orte[ident]
     x, y = R.geo_zu_spiel(float(o["breite"]), float(o["laenge"]))
+    sitz = sitz_von(ident)
+    if sitz in gesetzt:
+        # Dörfer bleiben bei ihrem Sitz: Richtung wie in echt, Abstand mindestens DORF_UM_SITZ
+        os_ = orte[sitz]
+        ex, ey = R.geo_zu_spiel(float(os_["breite"]), float(os_["laenge"]))
+        dx, dy = x - ex, y - ey
+        d = math.hypot(dx, dy) or 1.0
+        weite = min(max(d, DORF_UM_SITZ), 1.6 * DORF_UM_SITZ)
+        x, y = gesetzt[sitz][0] + dx / d * weite, gesetzt[sitz][1] + dy / d * weite
+        px, py = naechster_platz(x, y, "village")
+        gesetzt[ident] = (px, py)
+        zeilen[ident] = dict(id=ident, name=o["name"], art="village", x=px, y=py, breite=o["breite"],
+                             laenge=o["laenge"], versatz_km=math.hypot(px - ex - dx, py - ey - dy) * R.KM_JE_EINHEIT,
+                             quelle=o["quelle"])
+        continue
     setze(ident, x, y, o["name"], o["breite"], o["laenge"], o["quelle"])
 
 doerfer = {}
@@ -191,6 +206,10 @@ inseln = sorted(z["name"] for z in zeilen.values() if z["name"] and not festland
     int(R.spiel_zu_pixel(z["x"], z["y"])[1]), int(R.spiel_zu_pixel(z["x"], z["y"])[0])])
 print("Auf Inseln:", ", ".join(inseln))
 weit = sorted((z for z in zeilen.values() if z["versatz_km"] > 40 and z["name"]), key=lambda z: -z["versatz_km"])
+ab = sorted(math.hypot(z["x"] - gesetzt[sitz_von(i)][0], z["y"] - gesetzt[sitz_von(i)][1])
+            for i, z in zeilen.items() if z["art"] == "village")
+print(f"Dorf zum Sitz: Mittel {sum(ab) / len(ab):.1f}, größter Abstand {ab[-1]:.1f} Einheiten")
+print("Sitze über 40 km versetzt:", sum(1 for z in weit if z["art"] != "village"))
 print(f"{len(zeilen)} Orte gesetzt; mehr als 40 km von der echten Lage: {len(weit)}")
 for z in weit[:40]:
     print(f"  {z['id']:22} {z['name']:18} {z['versatz_km']:.0f} km")
