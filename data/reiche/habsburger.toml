@@ -317,7 +317,7 @@ castle_V5 = "Koprivnica"                    # Tirby Castle
 castle_V6 = "Virovitica"                    # Caleus Castle
 castle_V7 = "Udbina"                        # Talivel Castle
 castle_V8 = "Kostajnica"                    # Verecsand Castle
-castle_village_V1_1 = "Garčin"              # Usanc
+castle_village_V1_1 = "Županja"             # Usanc
 castle_village_V2_1 = "Krivi Put"           # Hongard
 castle_village_V2_2 = "Jablanac"            # Ferton
 castle_village_V3_1 = "Josipdol"            # Drapand
@@ -404,7 +404,7 @@ de = "{DORF} gehört zu den Ländereien von {SITZ}. Die Bauern bauen Weizen und 
 
 [dorftyp]
 # Erzeugnis der Dörfer statt Datteln, Oliven im Binnenland und Wüstenpferden (VillageType des Spiels)
-castle_village_V1_1 = "wheat_farm"          # Garčin
+castle_village_V1_1 = "wheat_farm"          # Županja
 castle_village_V7_1 = "sheep_farm"          # Korenica
 village_V6_1 = "vineyard"                   # Duga Resa
 village_V6_2 = "wheat_farm"                 # Ozalj

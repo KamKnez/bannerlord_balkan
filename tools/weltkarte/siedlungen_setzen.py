@@ -122,12 +122,12 @@ def setze(ident, x, y, name, breite, laenge, quelle, zusatz=None):
 # Reihenfolge: erst echte Orte (Städte, Burgen, Dörfer), dann vorläufige, dann automatisch verteilte Dörfer
 rang = {"town": 0, "castle": 1, "village": 2}
 benannt = [i for i in ids if i in orte]
-benannt.sort(key=lambda i: (orte[i]["quelle"] == "vorläufig", rang[art_von(i)], i))
+benannt.sort(key=lambda i: (orte[i]["quelle"] == "vorläufig", rang[art_von(i)], orte[i]["quelle"] != "Sitz, von Hand", i))
 for ident in benannt:
     o = orte[ident]
     x, y = R.geo_zu_spiel(float(o["breite"]), float(o["laenge"]))
     sitz = sitz_von(ident)
-    if sitz in gesetzt:
+    if sitz in gesetzt and o["quelle"] != "Sitz, von Hand":      # von Hand gesetzte Dörfer bleiben am echten Ort
         # Dörfer bleiben bei ihrem Sitz: Richtung wie in echt, Abstand mindestens DORF_UM_SITZ
         os_ = orte[sitz]
         ex, ey = R.geo_zu_spiel(float(os_["breite"]), float(os_["laenge"]))
