@@ -10,4 +10,5 @@
 	<!-- Klänge: Das Spiel liest module_sounds.xml auch von selbst, der Editor nur über diesen Eintrag. Ohne ihn fehlen
 	     dort die Klangnamen der Animationen ("Sound not found: austria_musket_reload_phase2"). -->
 	<file id="soln_module_sound" name="ModuleData/module_sounds.xml" type="module_sound"/>
+	<file id="soln_combat_system" name="ModuleData/combat_parameters.xml" type="animation_combat_parameters"/>
 </base>
