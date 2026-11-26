@@ -227,6 +227,39 @@ Bannerlord kennt keine Religion. Wir rüsten sie über eigenen C#-Code nach, äh
   Die Habsburger fördern die Gegenreformation (Druck auf Protestanten und Orthodoxe, Vorteile für Katholiken).
 - Religion wirkt mit den Aufständen der Völker zusammen (8c): Unterdrückter Glaube macht Aufstände wahrscheinlicher.
 
+## 8e. Weitere Erweiterungen (ausgewählt, später)
+
+**Grundsatz:** Jede Mechanik muss auch die KI und die NPC-Lords sinnvoll beherrschen. Lieber weniger und dafür
+robuste Mechaniken als viele, die nur der Spieler nutzt. Bevor eine Mechanik gebaut wird, steht fest, wie die KI sie nutzt.
+
+### Kampf und Militär
+
+- **Musketen-Formationen:** Salvenfeuer auf Befehl. Das Bajonett gibt es erst ab etwa 1700, und davor schützen Pikeniere die Musketiere.
+- **Kanonen bei Belagerungen:** Festungen im Vauban-Stil, Belagerungskanonen statt Katapulten. Das ist gut machbar, weil die
+  Belagerungsgeräte des Spiels ersetzt werden.
+- **Feldartillerie in offenen Schlachten:** deutlich schwerer, weil die KI Geschütze bedienen und schützen muss. Wir prüfen,
+  ob „Napoleonic Warfare“ (Nexus 6101) Kanonen-Modelle und Code in freigegebenen Dateien (Ordner `Assets/shared`) mitbringt.
+  Erst danach wird entschieden. *(prüfen)*
+
+### Wirtschaft und Land
+
+- **Handelsrouten:** Salz aus Dalmatien, Vieh aus Ungarn, Seide und Luxuswaren über Ragusa. Die Waren werden an den passenden Orten erzeugt.
+- **Steuerpacht:** Man kauft das Recht, eine Region zu besteuern, mit Gewinn oder Verlust je nach Wohlstand.
+- **Grenzzoll:** Zoll an Save und Donau auf Waren, die die Grenze kreuzen.
+
+### Leben und Rollenspiel
+
+- **Ruf als Held oder Räuber:** Hajduk-Taten machen einen bei Bauern beliebt und bei Lords verhasst.
+- **Stärkere Hajduken:** Lords sind im Spiel oft übermächtig. Hajduken- und Uskoken-Banden werden deshalb spürbar stärker
+  (größere Banden, bessere Truppen, Rückzugsorte in den Bergen), damit sie eine echte Gefahr bleiben.
+- **Gefangenschaft bei den Osmanen:** Freikauf oder Galeerendienst als Weg, wieder freizukommen.
+- **Pilgerfahrten und Klöster:** zum Beispiel die Patriarchatskirche von Peć oder Marija Bistrica. Sie bringen Ansehen und passen zur Religion (8d).
+
+### Politik
+
+- **Tribut:** Kleine Staaten zahlen Tribut an Großmächte, zum Beispiel Ragusa an die Pforte. Bleibt der Tribut aus, droht Krieg.
+- **Nicht geplant:** diplomatische Gesandtschaften (zu aufwendig für die KI).
+
 ## 9. Umfang der ersten Version (v0.1)
 
 Fertig ist v0.1, wenn:
