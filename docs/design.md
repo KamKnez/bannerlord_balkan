@@ -104,6 +104,14 @@ Bannerlord hat pro Kultur einen normalen Baum (Rekruten aus Dörfern) und einen 
 
 - Stadtwache → Hellebardier; Söldner gegen Gold
 
+### Weitere Völker (umgesetzt als Zweige)
+
+Deutsche, Ungarn, Serben und Türken sind in v0.1 keine eigenen Kulturen. Sie zweigen in den Bäumen ab:
+
+- **Habsburger:** Bauer → Deutscher Rekrut → Deutscher Pikenier → Doppelsöldner bzw. Deutscher Musketier → Veteran-Musketier;
+  Grenz-Musketier → Ungarischer Hajdú; Kroatischer Reiter → Raizischer (serbischer) Husar
+- **Osmanen:** Bauer → Martolose → Martolosen-Veteran; Tüfekçi → Janitschar → Janitscharen-Odabaşı
+
 ## 5. Ausrüstung
 
 - Zuerst nur **vorhandene Spielmodelle**, umgefärbt und neu kombiniert. Rüstungen, Helme und Säbel passen gut aus Vlandia (Westen), Aserai und Khuzait (Osmanen, Husaren), Imperium (Venedig, Ragusa) und Battania (Freischärler).

@@ -19,6 +19,10 @@
     <string id="balkan_bs_kapetanije_veteran" text="Kapetanije-Veteran" />
     <string id="balkan_bs_deli" text="Deli" />
     <string id="balkan_bs_veteran_deli" text="Deli-Veteran" />
+    <string id="balkan_bs_martolos" text="Martolose" />
+    <string id="balkan_bs_veteran_martolos" text="Martolosen-Veteran" />
+    <string id="balkan_bs_janissary" text="Janitschar" />
+    <string id="balkan_bs_odabasi" text="Janitscharen-Odabaşı" />
     <string id="balkan_bs_timarli_sipahi" text="Timarli-Sipahi" />
     <string id="balkan_bs_sipahi" text="Sipahi" />
     <string id="balkan_bs_zaim" text="Zaim" />
@@ -34,6 +38,13 @@
     <string id="balkan_hr_harambasa" text="Harambaša" />
     <string id="balkan_hr_croatian_rider" text="Kroatischer Reiter" />
     <string id="balkan_hr_hussar" text="Kroatischer Husar" />
+    <string id="balkan_hr_german_recruit" text="Deutscher Rekrut" />
+    <string id="balkan_hr_german_pikeman" text="Deutscher Pikenier" />
+    <string id="balkan_hr_doppelsoeldner" text="Doppelsöldner" />
+    <string id="balkan_hr_german_musketeer" text="Deutscher Musketier" />
+    <string id="balkan_hr_german_veteran_musketeer" text="Deutscher Veteran-Musketier" />
+    <string id="balkan_hr_hajdu" text="Ungarischer Hajdú" />
+    <string id="balkan_hr_rascian_hussar" text="Raizischer Husar" />
     <string id="balkan_hr_junker" text="Junker" />
     <string id="balkan_hr_noble_rider" text="Adeliger Reiter" />
     <string id="balkan_hr_cuirassier" text="Kürassier" />

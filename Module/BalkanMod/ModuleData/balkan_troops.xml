@@ -25,6 +25,7 @@
 		</skills>
 		<upgrade_targets>
 			<upgrade_target id="NPCCharacter.balkan_bs_azap" />
+			<upgrade_target id="NPCCharacter.balkan_bs_martolos" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -117,6 +118,7 @@
 		</skills>
 		<upgrade_targets>
 			<upgrade_target id="NPCCharacter.balkan_bs_kapetanije_marksman" />
+			<upgrade_target id="NPCCharacter.balkan_bs_janissary" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -327,6 +329,161 @@
 				<equipment slot="Leg" id="Item.khuzait_curved_boots" />
 				<equipment slot="Horse" id="Item.t2_aserai_horse" />
 				<equipment slot="HorseHarness" id="Item.desert_cloth_harness" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bs_martolos"
+		default_group="Ranged"
+		level="11"
+		name="{=balkan_bs_martolos}Martolos"
+		occupation="Soldier"
+		culture="Culture.aserai">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="35" />
+			<skill id="TwoHanded" value="15" />
+			<skill id="Polearm" value="15" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="10" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bs_veteran_martolos" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.simple_sabre_sword_t2" />
+				<equipment slot="Head" id="Item.nordic_fur_cap" />
+				<equipment slot="Body" id="Item.padded_short_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.peasant_hatchet_1_t1" />
+				<equipment slot="Head" id="Item.fur_hat" />
+				<equipment slot="Body" id="Item.sleeveless_padded_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bs_veteran_martolos"
+		default_group="Ranged"
+		level="16"
+		name="{=balkan_bs_veteran_martolos}Veteran Martolos"
+		occupation="Soldier"
+		culture="Culture.aserai">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="65" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="30" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="20" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
+				<equipment slot="Head" id="Item.northern_fur_cap" />
+				<equipment slot="Body" id="Item.woven_leather_coat" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bs_janissary"
+		default_group="Ranged"
+		level="21"
+		name="{=balkan_bs_janissary}Janissary"
+		occupation="Soldier"
+		culture="Culture.aserai">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="30" />
+			<skill id="OneHanded" value="90" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bs_odabasi" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.aserai_sword_4_t4" />
+				<equipment slot="Head" id="Item.woven_turban" />
+				<equipment slot="Body" id="Item.layered_robe" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.aserai_mace_4_t4" />
+				<equipment slot="Head" id="Item.turban" />
+				<equipment slot="Body" id="Item.layered_robe" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bs_odabasi"
+		default_group="Ranged"
+		level="26"
+		name="{=balkan_bs_odabasi}Janissary Odabaşı"
+		occupation="Soldier"
+		culture="Culture.aserai">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="115" />
+			<skill id="TwoHanded" value="50" />
+			<skill id="Polearm" value="50" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="130" />
+			<skill id="Throwing" value="40" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.aserai_sword_5_t4" />
+				<equipment slot="Head" id="Item.turban" />
+				<equipment slot="Body" id="Item.desert_robe_over_mail" />
+				<equipment slot="Gloves" id="Item.eastern_plated_leather_vambraces" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
 			</EquipmentRoster>
 			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
@@ -691,6 +848,7 @@
 		</skills>
 		<upgrade_targets>
 			<upgrade_target id="NPCCharacter.balkan_hr_haramija" />
+			<upgrade_target id="NPCCharacter.balkan_hr_german_recruit" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -782,6 +940,7 @@
 		</skills>
 		<upgrade_targets>
 			<upgrade_target id="NPCCharacter.balkan_hr_border_veteran" />
+			<upgrade_target id="NPCCharacter.balkan_hr_hajdu" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -918,6 +1077,7 @@
 		</skills>
 		<upgrade_targets>
 			<upgrade_target id="NPCCharacter.balkan_hr_hussar" />
+			<upgrade_target id="NPCCharacter.balkan_hr_rascian_hussar" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -988,6 +1148,284 @@
 				<equipment slot="Item2" id="Item.light_horsemans_kite_shield" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Body" id="Item.red_coat_over_mail" />
+				<equipment slot="Gloves" id="Item.studded_leather_vambraces" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Horse" id="Item.t2_khuzait_horse" />
+				<equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+			</EquipmentRoster>
+			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_hr_german_recruit"
+		default_group="Infantry"
+		level="11"
+		name="{=balkan_hr_german_recruit}German Recruit"
+		occupation="Soldier"
+		culture="Culture.vlandia">
+		<face>
+			<face_key_template value="BodyProperty.fighter_vlandia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="10" />
+			<skill id="Throwing" value="15" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_hr_german_pikeman" />
+			<upgrade_target id="NPCCharacter.balkan_hr_german_musketeer" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_1_t2" />
+				<equipment slot="Item1" id="Item.falchion_sword_t2" />
+				<equipment slot="Head" id="Item.arming_cap" />
+				<equipment slot="Body" id="Item.sleeveless_padded_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_1_t2" />
+				<equipment slot="Item1" id="Item.vlandia_mace_1_t2" />
+				<equipment slot="Head" id="Item.leather_cap" />
+				<equipment slot="Body" id="Item.padded_short_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="vlandia_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_hr_german_pikeman"
+		default_group="Infantry"
+		level="16"
+		name="{=balkan_hr_german_pikeman}German Pikeman"
+		occupation="Soldier"
+		culture="Culture.vlandia">
+		<face>
+			<face_key_template value="BodyProperty.fighter_vlandia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="55" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="75" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="20" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_hr_doppelsoeldner" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.simple_pike_t2" />
+				<equipment slot="Item1" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Head" id="Item.kettle_helmet_over_padded_cap" />
+				<equipment slot="Body" id="Item.padded_coat" />
+				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.simple_pike_t2" />
+				<equipment slot="Item1" id="Item.vlandia_axe_1_t3" />
+				<equipment slot="Head" id="Item.kettle_hat_over_padded_coif" />
+				<equipment slot="Body" id="Item.padded_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_hr_doppelsoeldner"
+		default_group="Infantry"
+		level="21"
+		name="{=balkan_hr_doppelsoeldner}Doppelsöldner"
+		occupation="Soldier"
+		culture="Culture.vlandia">
+		<face>
+			<face_key_template value="BodyProperty.fighter_vlandia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="30" />
+			<skill id="OneHanded" value="80" />
+			<skill id="TwoHanded" value="60" />
+			<skill id="Polearm" value="110" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="30" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.vlandia_polearm_1_t5" />
+				<equipment slot="Item1" id="Item.vlandia_sword_3_t4" />
+				<equipment slot="Head" id="Item.kettle_helmet_over_mail" />
+				<equipment slot="Body" id="Item.coat_of_plates_over_mail" />
+				<equipment slot="Gloves" id="Item.plated_strip_gauntlets" />
+				<equipment slot="Leg" id="Item.mail_chausses" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.fine_pike_t4" />
+				<equipment slot="Item1" id="Item.vlandia_sword_4_t4" />
+				<equipment slot="Head" id="Item.guards_kettle_over_mail_coif" />
+				<equipment slot="Body" id="Item.coat_of_plates_over_mail" />
+				<equipment slot="Gloves" id="Item.plated_strip_gauntlets" />
+				<equipment slot="Leg" id="Item.strapped_mail_chausses" />
+			</EquipmentRoster>
+			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_hr_german_musketeer"
+		default_group="Ranged"
+		level="16"
+		name="{=balkan_hr_german_musketeer}German Musketeer"
+		occupation="Soldier"
+		culture="Culture.vlandia">
+		<face>
+			<face_key_template value="BodyProperty.fighter_vlandia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="65" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="30" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="20" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_hr_german_veteran_musketeer" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.vlandia_sword_2_t3" />
+				<equipment slot="Head" id="Item.kettle_hat_over_padded_cloth" />
+				<equipment slot="Body" id="Item.padded_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.vlandia_axe_1_t3" />
+				<equipment slot="Head" id="Item.arming_cap" />
+				<equipment slot="Body" id="Item.padded_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_hr_german_veteran_musketeer"
+		default_group="Ranged"
+		level="21"
+		name="{=balkan_hr_german_veteran_musketeer}German Veteran Musketeer"
+		occupation="Soldier"
+		culture="Culture.vlandia">
+		<face>
+			<face_key_template value="BodyProperty.fighter_vlandia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="30" />
+			<skill id="OneHanded" value="90" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.vlandia_sword_3_t4" />
+				<equipment slot="Head" id="Item.kettle_helmet_over_padded_coif" />
+				<equipment slot="Body" id="Item.studded_leather_coat" />
+				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
+				<equipment slot="Leg" id="Item.strapped_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_hr_hajdu"
+		default_group="Ranged"
+		level="21"
+		name="{=balkan_hr_hajdu}Hungarian Hajdú"
+		occupation="Soldier"
+		culture="Culture.vlandia">
+		<face>
+			<face_key_template value="BodyProperty.fighter_vlandia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="30" />
+			<skill id="OneHanded" value="90" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.ridged_sabre_sword_t4" />
+				<equipment slot="Head" id="Item.fur_hat" />
+				<equipment slot="Body" id="Item.woven_leather_coat" />
+				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_hr_rascian_hussar"
+		default_group="Cavalry"
+		level="21"
+		name="{=balkan_hr_rascian_hussar}Serbian Hussar"
+		occupation="Soldier"
+		upgrade_requires="ItemCategory.horse"
+		culture="Culture.vlandia">
+		<face>
+			<face_key_template value="BodyProperty.fighter_vlandia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="50" />
+			<skill id="Riding" value="100" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="90" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="50" />
+			<skill id="Throwing" value="90" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.khuzait_lance_2_t4" />
+				<equipment slot="Item1" id="Item.khuzait_sword_3_t3" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.northern_fur_cap" />
+				<equipment slot="Body" id="Item.stitched_leather_over_mail" />
 				<equipment slot="Gloves" id="Item.studded_leather_vambraces" />
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 				<equipment slot="Horse" id="Item.t2_khuzait_horse" />

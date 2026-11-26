@@ -11,6 +11,8 @@
 			<PartyTemplateStack min_value="0" max_value="1" troop="NPCCharacter.balkan_bs_veteran_deli" />
 			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_bs_sipahi" />
 			<PartyTemplateStack min_value="0" max_value="1" troop="NPCCharacter.balkan_bs_zaim" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_bs_martolos" />
+			<PartyTemplateStack min_value="0" max_value="2" troop="NPCCharacter.balkan_bs_janissary" />
 		</stacks>
 	</MBPartyTemplate>
 	<MBPartyTemplate id="balkan_militia_bosniaken">
@@ -29,6 +31,8 @@
 			<PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.balkan_hr_hussar" />
 			<PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.balkan_hr_noble_rider" />
 			<PartyTemplateStack min_value="0" max_value="1" troop="NPCCharacter.balkan_hr_cuirassier" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_hr_german_pikeman" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_hr_german_musketeer" />
 		</stacks>
 	</MBPartyTemplate>
 	<MBPartyTemplate id="balkan_militia_kroaten">

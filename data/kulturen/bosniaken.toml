@@ -68,6 +68,14 @@ max = 3
 truppe = "zaim"
 min = 0
 max = 1
+[[lord_partei]]
+truppe = "martolos"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "janissary"
+min = 0
+max = 2
 
 # ---------------------------------------------------------------- normaler Baum
 
@@ -78,7 +86,7 @@ stufe = 1
 gruppe = "Infantry"
 profil = "bauer"
 basis = true
-aufwerten = ["azap"]
+aufwerten = ["azap", "martolos"]
 [[truppe.ausruestung]]
 Item0 = "peasant_hatchet_1_t1"
 Head = "fur_hat"
@@ -126,7 +134,7 @@ name = { en = "Tüfekçi", de = "Tüfekçi" }
 stufe = 3
 gruppe = "Ranged"
 profil = "schuetze"
-aufwerten = ["kapetanije_marksman"]
+aufwerten = ["kapetanije_marksman", "janissary"]
 [[truppe.ausruestung]]
 Item0 = "balkan_musket"
 Item1 = "balkan_musket_balls"
@@ -244,6 +252,83 @@ Body = "aserai_horseman_armor"
 Cape = "leopard_pelt"
 Gloves = "rough_tied_bracers"
 Leg = "khuzait_curved_boots"
+
+# ---------------------------------------------------------------- Martolosen und Janitscharen (Zweige)
+# Martolosen waren christliche, oft serbische Grenzsoldaten im Dienst der Osmanen. Janitscharen
+# kamen als Elite-Infanterie aus der Hauptstadt; Bosnien stellte viele von ihnen.
+
+[[truppe]]
+id = "martolos"
+name = { en = "Martolos", de = "Martolose" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["veteran_martolos"]
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "simple_sabre_sword_t2"
+Head = "nordic_fur_cap"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_martolos"
+name = { en = "Veteran Martolos", de = "Martolosen-Veteran" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "woven_leather_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "janissary"
+name = { en = "Janissary", de = "Janitschar" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["odabasi"]
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_sword_4_t4"
+Head = "woven_turban"
+Body = "layered_robe"
+Leg = "eastern_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_mace_4_t4"
+Head = "turban"
+Body = "layered_robe"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "odabasi"
+name = { en = "Janissary Odabaşı", de = "Janitscharen-Odabaşı" }
+stufe = 5
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_heavy_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_sword_5_t4"
+Head = "turban"
+Body = "desert_robe_over_mail"
+Gloves = "eastern_plated_leather_vambraces"
+Leg = "eastern_leather_boots"
 
 # ---------------------------------------------------------------- Adelsbaum (Sipahi)
 
