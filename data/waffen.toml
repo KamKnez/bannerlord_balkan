@@ -1,9 +1,9 @@
 # Feuerwaffen und Munition (v0.1).
 #
-# Vorerst nutzen alle Feuerwaffen wieder Armbrust-Modelle des Spiels: Die Modelle aus Napoleonic Warfare
-# (newmusket, newrifle; siehe CREDITS.md) liegen unter Module/BalkanMod/Assets, werden vom Spiel (v1.5.7) aber nicht
-# geladen, die Waffe war im Spiel unsichtbar. Das Spiel lädt nur fertig gepackte Modelle (AssetPackages), die erzeugt
-# das Modding Kit. Danach hier wieder modell = "newmusket" bzw. "newrifle" eintragen.
+# Die Gewehre nutzen die Modelle und Animationen aus Napoleonic Warfare (newmusket, newrifle; siehe CREDITS.md und
+# NICHT_FREIGEGEBEN.md). Sie sind mit dem Modding Kit gepackt (Module/BalkanMod/AssetPackages/pack0.tpac); die Lade-
+# und Schussbewegungen stehen in ModuleData/action_*.xml, movement_sets.xml und item_usage_sets.xml. Die Pistole
+# nutzt noch ein Armbrust-Modell, bis das NW-Pistolenmodell mitgepackt ist.
 # Die Mechanik ist überall die der Armbrüste des Spiels (siehe docs/design.md, Abschnitt 6). Die Werte sind Richtwerte und werden nach
 # Spieltests angepasst. Zum Vergleich die schwere Armbrust (crossbow_d) des Spiels:
 # Schaden 93, Geschossgeschwindigkeit 90, Genauigkeit 99, Tempo 92, Handhabung 62.
@@ -35,7 +35,7 @@
 id = "balkan_arquebus"
 name = { en = "Arquebus", de = "Arkebuse" }
 art = "gewehr"
-modell = "crossbow_b"
+modell = "newmusket"
 kultur = "vlandia"
 gewicht = 3.2
 preis = 800
@@ -50,7 +50,7 @@ schwierigkeit = 0
 id = "balkan_musket"
 name = { en = "Matchlock Musket", de = "Luntenschloss-Muskete" }
 art = "gewehr"
-modell = "crossbow_c"
+modell = "newmusket"
 kultur = "vlandia"
 gewicht = 4.5
 preis = 1200
@@ -65,7 +65,7 @@ schwierigkeit = 20
 id = "balkan_long_musket"
 name = { en = "Long Balkan Musket", de = "Lange Balkan-Flinte" }
 art = "gewehr"
-modell = "crossbow_d"
+modell = "newrifle"
 kultur = "aserai"
 gewicht = 4.2
 preis = 1800
@@ -80,7 +80,7 @@ schwierigkeit = 40
 id = "balkan_heavy_musket"
 name = { en = "Heavy Musket", de = "Schwere Muskete" }
 art = "gewehr"
-modell = "crossbow_c"
+modell = "newmusket"
 kultur = "vlandia"
 gewicht = 5.5
 preis = 2000

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aus Napoleonic Warfare (Nexus 6101), siehe NICHT_FREIGEGEBEN.md. Die Namen müssen zu den gepackten Animationen in AssetPackages/pack0.tpac passen. -->
+<action_types>
+	<action name="act_austria_ready_musket"
+	        type="actt_ready_ranged"
+	        action_stage="as_attack_ready"/>
+	<action name="act_austria_ready_musket_continue"
+	        type="actt_ready_ranged"
+	        action_stage="as_attack_ready"/>
+	<action name="act_austria_release_musket"
+	        type="actt_release_ranged"
+	        action_stage="as_attack_release"/>
+	<action name="act_austria_release_musket_2"
+	        type="actt_release_ranged"
+	        action_stage="as_attack_release"/>
+	<action name="act_austria_release_musket_3"
+	        type="actt_release_ranged"
+	        action_stage="as_attack_release"/>
+	<action name="act_austria_release_rifle"
+	        type="actt_release_ranged"
+	        action_stage="as_attack_release"/>
+	<action name="act_austria_ready_pistol"
+	        type="actt_ready_ranged"
+	        action_stage="as_attack_ready"/>
+	<action name="act_austria_ready_pistol_continue"
+	        type="actt_ready_ranged"
+	        action_stage="as_attack_ready"/>
+	<action name="act_austria_release_pistol"
+	        type="actt_release_ranged"
+	        action_stage="as_attack_release"/>
+	<action name="act_austria_idle_musket"/>
+	<action name="act_walk_idle_musket"/>
+	<action name="act_run_idle_musket"/>
+	<action name="act_crouch_walk_idle_musket"/>
+	<action name="act_crouch_run_idle_musket"/>
+	<action name="act_austria_idle_pistol"/>
+	<action name="act_walk_idle_pistol"/>
+	<action name="act_run_idle_pistol"/>
+	<action name="act_crouch_walk_idle_pistol"/>
+	<action name="act_crouch_run_idle_pistol"/>
+	<action name="act_austria_reload_musket"
+	        type="actt_reload"
+	        action_stage="as_reload_mid_phase"/>
+	<action name="act_austria_reload_musket_continue_0"
+	        type="actt_reload"
+	        action_stage="as_reload_mid_phase"/>
+	<action name="act_austria_reload_musket_continue_1"
+	        type="actt_reload"
+	        action_stage="as_reload_mid_phase"/>
+	<action name="act_austria_reload_musket_continue_2"
+	        type="actt_reload"
+	        action_stage="as_reload_last_phase"/>
+			
+	<action name="act_austria_reload_rifle"
+	        type="actt_reload"
+	        action_stage="as_reload_mid_phase"/>
+	<action name="act_austria_reload_rifle_continue_0"
+	        type="actt_reload"
+	        action_stage="as_reload_mid_phase"/>
+	<action name="act_austria_reload_rifle_continue_1"
+	        type="actt_reload"
+	        action_stage="as_reload_mid_phase"/>
+	<action name="act_austria_reload_rifle_continue_2"
+	        type="actt_reload"
+	        action_stage="as_reload_last_phase"/>
+	<action name="act_austria_reload_pistol"
+	        type="actt_reload"
+	        action_stage="as_reload_mid_phase"/>
+	<action name="act_austria_reload_pistol_continue"
+	        type="actt_reload"
+	        action_stage="as_reload_last_phase"/>
+			
+    <action name="act_quick_release_overswing_musket" type="actt_release_melee" usage_direction="ud_attack_up" action_stage="as_attack_release" />
+    <action name="act_release_overswing_musket" type="actt_release_melee" usage_direction="ud_attack_up" action_stage="as_attack_release" />
+    <action name="act_quick_release_thrust_musket" type="actt_release_melee" usage_direction="ud_attack_down" action_stage="as_attack_release" />
+    <action name="act_release_thrust_musket" type="actt_release_melee" usage_direction="ud_attack_down" action_stage="as_attack_release" />
+    <action name="act_equip_musketai" type="actt_equip_unequip" />
+    <action name="act_unequip_musketai" type="actt_equip_unequip" />
+</action_types>

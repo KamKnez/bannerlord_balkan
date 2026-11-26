@@ -644,6 +644,12 @@ GUN_MODELS = {
     "newmusket": ("bo_spear_b", "0, 0, 0", False),
     "newrifle": ("bo_spear_b", "0, 0, 0", False),
 }
+# Modelle aus Napoleonic Warfare: eigene Lade- und Schussanimationen (ModuleData/item_usage_sets.xml usw.,
+# gepackt in AssetPackages/pack0.tpac). Werte wie in NW: Bewegungssatz, Sitz in der Hand, Länge, Ladephasen.
+NW_GUNS = {
+    "newmusket": {"usage": "musket"},
+    "newrifle": {"usage": "rifle"},
+}
 # Munitionsmodelle: Köcher-Körper, Länge
 AMMO_MODELS = {
     "bolt_bl_a": ("bo_axe_short", 47),
@@ -692,10 +698,24 @@ def check_weapons(weapons, vanilla_ids):
 def gun_xml(w, name):
     body, ammo_offset, has_string = GUN_MODELS[w["modell"]]
     pistol = w["art"] == "pistole"
+    nw = NW_GUNS.get(w["modell"])
     flags = ['RangedWeapon="true"', f'HasString="{str(has_string).lower()}"', 'NotUsableWithOneHand="true"',
              'TwoHandIdleOnMount="true"']
     if not pistol:
         flags.insert(2, 'CantReloadOnHorseback="true"')
+    if nw:
+        flags.append('UseHandAsThrowBase="true"')
+    if nw:
+        usage = nw["usage"]
+        holster = ['\t\titem_holsters="crossbow_back">']
+        placement = ['\t\t\t\tposition="0, -0.05, 0"', '\t\t\t\trotation="1, 1, 10"']
+        length, phases, center = "120", "4", "0,0,0.1"
+    else:
+        usage = "crossbow_light" if pistol else "crossbow"
+        holster = ['\t\titem_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"',
+                   '\t\tholster_position_shift="0.02,0,-0.4">']
+        placement = []
+        length, phases, center = "95", "2", "0,0,0.4"
     out = [
         "\t<Item",
         f"\t\tid={quoteattr(w['id'])}",
@@ -709,24 +729,24 @@ def gun_xml(w, name):
         f'\t\tdifficulty="{w["schwierigkeit"]}"',
         '\t\tType="Crossbow"',
         f'\t\tAmmoOffset="{ammo_offset}"',
-        '\t\titem_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"',
-        '\t\tholster_position_shift="0.02,0,-0.4">',
+        *holster,
         "\t\t<ItemComponent>",
         "\t\t\t<Weapon",
         '\t\t\t\tweapon_class="Crossbow"',
         '\t\t\t\tammo_class="Bolt"',
+        *placement,
         '\t\t\t\tammo_limit="1"',
         f'\t\t\t\tthrust_speed="{w["tempo"]}"',
         f'\t\t\t\tspeed_rating="{w["handhabung"]}"',
         f'\t\t\t\tmissile_speed="{w["geschoss"]}"',
-        '\t\t\t\tweapon_length="95"',
+        f'\t\t\t\tweapon_length="{length}"',
         f'\t\t\t\taccuracy="{w["genauigkeit"]}"',
         f'\t\t\t\tthrust_damage="{w["schaden"]}"',
         '\t\t\t\tthrust_damage_type="Pierce"',
-        f'\t\t\t\titem_usage="{"crossbow_light" if pistol else "crossbow"}"',
-        '\t\t\t\treload_phase_count="2"',
+        f'\t\t\t\titem_usage="{usage}"',
+        f'\t\t\t\treload_phase_count="{phases}"',
         '\t\t\t\tphysics_material="wood_weapon"',
-        '\t\t\t\tcenter_of_mass="0,0,0.4"',
+        f'\t\t\t\tcenter_of_mass="{center}"',
         '\t\t\t\tmodifier_group="crossbow">',
         "\t\t\t\t<WeaponFlags " + " ".join(flags) + " />",
         "\t\t\t</Weapon>",
