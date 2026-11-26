@@ -29,6 +29,14 @@
   <Xmls>
     <!-- Erzeugt von tools/gen_content.py aus data/kulturen/ -->
     <XmlNode>
+      <XmlName id="Items" path="balkan_items"/>
+      <IncludedGameTypes>
+        <GameType value="Campaign"/>
+        <GameType value="CampaignStoryMode"/>
+        <GameType value="CustomGame"/>
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
       <XmlName id="NPCCharacters" path="balkan_troops"/>
       <IncludedGameTypes>
         <GameType value="Campaign"/>

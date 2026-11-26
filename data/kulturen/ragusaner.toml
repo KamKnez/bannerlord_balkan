@@ -136,8 +136,8 @@ gruppe = "Ranged"
 profil = "schuetze"
 aufwerten = ["veteran_arquebusier"]
 [[truppe.ausruestung]]
-Item0 = "crossbow_b"
-Item1 = "bolt_d"
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
 Item2 = "empire_sword_2_t3"
 Head = "leatherlame_roundkettle"
 Body = "woven_leather_coat"
@@ -150,8 +150,8 @@ stufe = 4
 gruppe = "Ranged"
 profil = "schuetze"
 [[truppe.ausruestung]]
-Item0 = "crossbow_c"
-Item1 = "bolt_e"
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
 Item2 = "empire_sword_3_t3"
 Head = "roundkettle_over_imperial_leather"
 Body = "imperial_mail_over_leather"
@@ -237,8 +237,8 @@ stufe = 2
 gruppe = "Ranged"
 profil = "schuetze"
 [[truppe.ausruestung]]
-Item0 = "crossbow_i"
-Item1 = "bolt_a"
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
 Item2 = "simple_back_sword_t2"
 Head = "imperial_cloth_coif"
 Body = "footmans_tunic"
@@ -264,8 +264,8 @@ stufe = 3
 gruppe = "Ranged"
 profil = "schuetze"
 [[truppe.ausruestung]]
-Item0 = "crossbow_b"
-Item1 = "bolt_d"
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
 Item2 = "empire_sword_1_t2"
 Head = "leatherlame_roundkettle"
 Body = "imperial_padded_cloth"

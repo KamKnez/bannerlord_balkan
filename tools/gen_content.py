@@ -5,10 +5,12 @@ Quellen:
   data/kulturen/*.toml   Kulturen, Truppenbäume, Miliz und Lord-Parteien
   data/namen/*.txt       Namenslisten (siehe data/namen/README.md)
   data/reiche/*.toml     Königreiche, Clans, Lords, Namen und Kultur der Siedlungen
+  data/waffen.toml       Feuerwaffen und Munition
 
 Ergebnis (nicht von Hand ändern, sondern hier neu erzeugen):
   Module/BalkanMod/ModuleData/balkan_troops.xml                 NPCCharacters (Truppen)
   Module/BalkanMod/ModuleData/balkan_party_templates.xml        partyTemplates (Lord-Parteien, Miliz)
+  Module/BalkanMod/ModuleData/balkan_items.xml                  Items (Feuerwaffen, Munition)
   Module/BalkanMod/ModuleData/XSLT/BalkanMod_SandBoxCore_SPCultures.xslt
                                                                 Patch der Kulturen (wie im NavalDLC)
   Module/BalkanMod/ModuleData/XSLT/BalkanMod_Sandbox_*.xslt   Patches für Reiche, Clans, Lords, Helden, Siedlungen
@@ -32,6 +34,7 @@ DATA = ROOT / "data"
 MODULE_DATA = ROOT / "Module" / "BalkanMod" / "ModuleData"
 OUT_TROOPS = MODULE_DATA / "balkan_troops.xml"
 OUT_PARTIES = MODULE_DATA / "balkan_party_templates.xml"
+OUT_ITEMS = MODULE_DATA / "balkan_items.xml"
 OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
 OUT_ROSTERS = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_EquipmentRosters.xslt"
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
@@ -562,6 +565,182 @@ def build_wars(realms):
     return out
 
 
+# ---------------------------------------------------------------- Feuerwaffen
+
+# Modelle aus dem Spiel: Kollisionskörper und Sitz der Munition, wie bei den Armbrüsten
+GUN_MODELS = {
+    "crossbow_b": ("bo_cross_bow_heavy", "0.0, 0.02131, 0.24975"),
+    "crossbow_c": ("bo_cross_bow_heavy", "0.0, 0.02131, 0.24675"),
+    "crossbow_d": ("bo_composite_crossbows", "0.0, 0.02131, 0.22975"),
+    "crossbow_e": ("bo_composite_crossbows", "0.0, 0.02131, 0.22975"),
+}
+# Munitionsmodelle: Köcher-Körper, Länge
+AMMO_MODELS = {
+    "bolt_bl_a": ("bo_axe_short", 47),
+    "bolt_bl_c": ("bo_bolt_bl_c_quiver", 37),
+}
+WEAPON_ART = ("gewehr", "pistole", "munition")
+GUN_FIELDS = ("gewicht", "schaden", "geschoss", "genauigkeit", "tempo", "handhabung", "schwierigkeit")
+AMMO_FIELDS = ("gewicht", "schaden", "anzahl")
+
+
+def load_weapons():
+    path = DATA / "waffen.toml"
+    with path.open("rb") as fh:
+        return tomllib.load(fh).get("waffe", [])
+
+
+def check_weapons(weapons, vanilla_ids):
+    errors = []
+    seen = set()
+    for w in weapons:
+        wid = w.get("id", "?")
+        if wid in seen:
+            errors.append(f"{wid}: doppelt")
+        seen.add(wid)
+        if not wid.startswith("balkan_"):
+            errors.append(f"{wid}: Id muss mit balkan_ beginnen")
+        if f"Item.{wid}" in vanilla_ids:
+            errors.append(f"{wid}: Id gibt es schon im Spiel")
+        art = w.get("art")
+        if art not in WEAPON_ART:
+            errors.append(f"{wid}: art muss eine von {WEAPON_ART} sein")
+            continue
+        models = AMMO_MODELS if art == "munition" else GUN_MODELS
+        if w.get("modell") not in models:
+            errors.append(f"{wid}: modell muss eines von {sorted(models)} sein")
+        for field in AMMO_FIELDS if art == "munition" else GUN_FIELDS:
+            if field not in w:
+                errors.append(f"{wid}: Feld {field} fehlt")
+        if art != "munition" and not 0 <= w.get("genauigkeit", 0) <= 100:
+            errors.append(f"{wid}: genauigkeit muss 0 bis 100 sein")
+    return errors
+
+
+def gun_xml(w, name):
+    body, ammo_offset = GUN_MODELS[w["modell"]]
+    pistol = w["art"] == "pistole"
+    flags = ['RangedWeapon="true"', 'HasString="true"', 'NotUsableWithOneHand="true"', 'TwoHandIdleOnMount="true"']
+    if not pistol:
+        flags.insert(2, 'CantReloadOnHorseback="true"')
+    out = [
+        "\t<Item",
+        f"\t\tid={quoteattr(w['id'])}",
+        f"\t\tname={quoteattr(name)}",
+        f'\t\tbody_name="{body}"',
+        f'\t\tmesh="{w["modell"]}"',
+        f'\t\tculture="Culture.{w["kultur"]}"',
+        f'\t\tweight="{w["gewicht"]}"',
+        '\t\tappearance="0.6"',
+        f'\t\tdifficulty="{w["schwierigkeit"]}"',
+        '\t\tType="Crossbow"',
+        f'\t\tAmmoOffset="{ammo_offset}"',
+        '\t\titem_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"',
+        '\t\tholster_position_shift="0.02,0,-0.4">',
+        "\t\t<ItemComponent>",
+        "\t\t\t<Weapon",
+        '\t\t\t\tweapon_class="Crossbow"',
+        '\t\t\t\tammo_class="Bolt"',
+        '\t\t\t\tammo_limit="1"',
+        f'\t\t\t\tthrust_speed="{w["tempo"]}"',
+        f'\t\t\t\tspeed_rating="{w["handhabung"]}"',
+        f'\t\t\t\tmissile_speed="{w["geschoss"]}"',
+        '\t\t\t\tweapon_length="95"',
+        f'\t\t\t\taccuracy="{w["genauigkeit"]}"',
+        f'\t\t\t\tthrust_damage="{w["schaden"]}"',
+        '\t\t\t\tthrust_damage_type="Pierce"',
+        f'\t\t\t\titem_usage="{"crossbow_light" if pistol else "crossbow"}"',
+        '\t\t\t\treload_phase_count="2"',
+        '\t\t\t\tphysics_material="wood_weapon"',
+        '\t\t\t\tcenter_of_mass="0,0,0.4"',
+        '\t\t\t\tmodifier_group="crossbow">',
+        "\t\t\t\t<WeaponFlags " + " ".join(flags) + " />",
+        "\t\t\t</Weapon>",
+        "\t\t</ItemComponent>",
+        "\t\t<Flags />",
+        "\t</Item>",
+    ]
+    return "\n".join(out)
+
+
+def ammo_xml(w, name):
+    holster_body, length = AMMO_MODELS[w["modell"]]
+    m = w["modell"]
+    out = [
+        "\t<Item",
+        f"\t\tid={quoteattr(w['id'])}",
+        f"\t\tname={quoteattr(name)}",
+        '\t\tbody_name="bo_capsule_arrow"',
+        f'\t\tholster_body_name="{holster_body}"',
+        f'\t\tmesh="{m}"',
+        f'\t\tholster_mesh="{m}_quiver"',
+        f'\t\tholster_mesh_with_weapon="{m}_quiver"',
+        '\t\tflying_mesh="bolt_bl_flying"',
+        f'\t\tculture="Culture.{w["kultur"]}"',
+        f'\t\tweight="{w["gewicht"]}"',
+        '\t\tappearance="1"',
+        '\t\tType="Bolts"',
+        '\t\titem_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">',
+        "\t\t<ItemComponent>",
+        "\t\t\t<Weapon",
+        '\t\t\t\tweapon_class="Bolt"',
+        f'\t\t\t\tstack_amount="{w["anzahl"]}"',
+        '\t\t\t\tthrust_speed="0"',
+        f'\t\t\t\tthrust_damage="{w["schaden"]}"',
+        '\t\t\t\tthrust_damage_type="Pierce"',
+        '\t\t\t\tspeed_rating="0"',
+        '\t\t\t\tmissile_speed="10"',
+        f'\t\t\t\tweapon_length="{length}"',
+        '\t\t\t\titem_usage=""',
+        '\t\t\t\tpassby_sound_code="event:/mission/combat/missile/passby"',
+        '\t\t\t\trotation="180, 0, 0"',
+        '\t\t\t\tphysics_material="missile"',
+        f'\t\t\t\tsticking_position="0,-0.{length},0"',
+        '\t\t\t\tsticking_rotation="90,0,0"',
+        '\t\t\t\tcenter_of_mass="0,0,-0.1"',
+        '\t\t\t\tmodifier_group="bolt">',
+        '\t\t\t\t<WeaponFlags AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" '
+        'AmmoBreaksOnBounceBack="true" />',
+        "\t\t\t</Weapon>",
+        "\t\t</ItemComponent>",
+        '\t\t<Flags ForceAttachOffHandPrimaryItemBone="true" />',
+        "\t</Item>",
+    ]
+    return "\n".join(out)
+
+
+def build_items(weapons, strings):
+    out = ['<?xml version="1.0" encoding="utf-8"?>', HEADER, "<Items>"]
+    for w in weapons:
+        sid = "balkan_item_" + w["id"][len("balkan_"):]
+        name = strings.add(sid, w["name"]["en"], w["name"]["de"])
+        out.append(ammo_xml(w, name) if w["art"] == "munition" else gun_xml(w, name))
+    out.append("</Items>")
+    return "\n".join(out) + "\n"
+
+
+def load_vanilla_ids():
+    ids = set()
+    for line in VANILLA_IDS.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#"):
+            ids.add(line)
+    return ids
+
+
+def check_troop_items(cultures, weapons, vanilla_ids):
+    """Jede Waffe in einer Ausrüstung muss im Spiel oder in data/waffen.toml stehen."""
+    own = {w["id"] for w in weapons}
+    errors = []
+    for c in cultures:
+        for t in c["truppe"]:
+            for roster in t.get("ausruestung", []) + [t.get("pferd", {})]:
+                for slot, item in roster.items():
+                    if item not in own and f"Item.{item}" not in vanilla_ids:
+                        errors.append(f"{c['_datei']}: {t['id']}: unbekannter Gegenstand '{item}' ({slot})")
+    return errors
+
+
 def generate():
     cultures = load_cultures()
     errors = check_definitions(cultures)
@@ -571,8 +750,14 @@ def generate():
     errors = check_realms(realms, cultures)
     if errors:
         raise SystemExit("Fehler in data/reiche:\n  - " + "\n  - ".join(errors))
+    weapons = load_weapons()
+    vanilla_ids = load_vanilla_ids()
+    errors = check_weapons(weapons, vanilla_ids) + check_troop_items(cultures, weapons, vanilla_ids)
+    if errors:
+        raise SystemExit("Fehler in data/waffen.toml oder den Ausrüstungen:\n  - " + "\n  - ".join(errors))
     strings = Strings()
     files = {
+        OUT_ITEMS: build_items(weapons, strings),
         OUT_TROOPS: build_troops(cultures, strings),
         OUT_PARTIES: build_parties(cultures),
         OUT_XSLT: build_xslt(cultures, strings),

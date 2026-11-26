@@ -48,6 +48,8 @@ def own_definitions():
                 defined.add(f"NPCCharacter.{el_id}")
             elif el.tag == "MBPartyTemplate":
                 defined.add(f"PartyTemplate.{el_id}")
+            elif el.tag == "Item":
+                defined.add(f"Item.{el_id}")
             elif el.tag == "Culture":
                 defined.add(f"Culture.{el_id}")
     # neue Kulturen aus dem XSLT-Patch: <xsl:attribute name="id">venice</xsl:attribute>

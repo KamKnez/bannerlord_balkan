@@ -120,16 +120,16 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_2_t2" />
 				<equipment slot="Head" id="Item.woven_turban" />
 				<equipment slot="Body" id="Item.long_padded_robe" />
 				<equipment slot="Leg" id="Item.eastern_leather_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_2_t2" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Cape" id="Item.wrapped_scarf" />
@@ -164,8 +164,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_c" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_3_t3" />
 				<equipment slot="Head" id="Item.pointed_skullcap_over_cloth_headwrap" />
 				<equipment slot="Body" id="Item.studded_leather_coat" />
@@ -173,8 +173,8 @@
 				<equipment slot="Leg" id="Item.steppe_leather_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_c" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_3_t3" />
 				<equipment slot="Head" id="Item.woven_turban" />
 				<equipment slot="Body" id="Item.leather_strips_over_padded_robe" />
@@ -208,8 +208,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_d" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_4_t4" />
 				<equipment slot="Head" id="Item.pointed_skullcap_over_mail" />
 				<equipment slot="Body" id="Item.aserai_scale_armor_on_cloth" />
@@ -217,8 +217,8 @@
 				<equipment slot="Leg" id="Item.khuzait_curved_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_d" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.desert_long_sword_t4" />
 				<equipment slot="Head" id="Item.pointed_skullcap_with_mail" />
 				<equipment slot="Body" id="Item.ringed_desert_armor" />
@@ -589,8 +589,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_i" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_1_t2" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Body" id="Item.desert_padded_cloth" />
@@ -657,8 +657,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_2_t2" />
 				<equipment slot="Head" id="Item.woven_turban" />
 				<equipment slot="Body" id="Item.layered_robe" />
@@ -741,8 +741,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_i" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_1_t2" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Cape" id="Item.scarf" />
@@ -750,8 +750,8 @@
 				<equipment slot="Leg" id="Item.leather_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_i" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.aserai_sword_1_t2" />
 				<equipment slot="Head" id="Item.leather_cap" />
 				<equipment slot="Body" id="Item.sleeveless_padded_coat" />
@@ -785,8 +785,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Body" id="Item.padded_coat" />
@@ -794,8 +794,8 @@
 				<equipment slot="Leg" id="Item.eastern_leather_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
 				<equipment slot="Head" id="Item.kettle_helmet_with_leather" />
 				<equipment slot="Cape" id="Item.scarf" />
@@ -830,8 +830,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_c" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_3_t3" />
 				<equipment slot="Head" id="Item.kettle_hat_over_padded_coif" />
 				<equipment slot="Body" id="Item.plated_leather_coat" />
@@ -839,8 +839,8 @@
 				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_c" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_3_t3" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Cape" id="Item.padded_leather_shoulders" />
@@ -875,8 +875,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_d" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.ridged_sabre_sword_t4" />
 				<equipment slot="Head" id="Item.peaked_helmet_over_padded_cloth" />
 				<equipment slot="Body" id="Item.leather_scale_armor" />
@@ -884,8 +884,8 @@
 				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_d" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_4_t4" />
 				<equipment slot="Head" id="Item.kettle_hat_over_mail_coif" />
 				<equipment slot="Body" id="Item.red_coat_over_mail" />
@@ -934,8 +934,8 @@
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.khuzait_lance_1_t3" />
 				<equipment slot="Item1" id="Item.khuzait_sword_2_t3" />
-				<equipment slot="Item2" id="Item.crossbow_e" />
-				<equipment slot="Item3" id="Item.bolt_a" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Body" id="Item.leather_coat" />
 				<equipment slot="Leg" id="Item.leather_boots" />
@@ -972,8 +972,8 @@
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.khuzait_lance_2_t4" />
 				<equipment slot="Item1" id="Item.ridged_sabre_sword_t4" />
-				<equipment slot="Item2" id="Item.crossbow_e" />
-				<equipment slot="Item3" id="Item.bolt_b" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.spiked_helmet" />
 				<equipment slot="Cape" id="Item.leopard_pelt" />
 				<equipment slot="Body" id="Item.stitched_leather_over_mail" />
@@ -1083,8 +1083,8 @@
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.vlandia_lance_1_t3" />
 				<equipment slot="Item1" id="Item.khuzait_sword_3_t3" />
-				<equipment slot="Item2" id="Item.crossbow_e" />
-				<equipment slot="Item3" id="Item.bolt_a" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.kettle_helmet_over_mail" />
 				<equipment slot="Body" id="Item.banded_leather_over_mail" />
 				<equipment slot="Gloves" id="Item.padded_mitten" />
@@ -1123,8 +1123,8 @@
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.vlandia_lance_2_t4" />
 				<equipment slot="Item1" id="Item.vlandia_sword_4_t4" />
-				<equipment slot="Item2" id="Item.crossbow_e" />
-				<equipment slot="Item3" id="Item.bolt_b" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.visored_helmet_over_mail_coif" />
 				<equipment slot="Body" id="Item.coat_of_plates_over_mail" />
 				<equipment slot="Gloves" id="Item.mail_mitten" />
@@ -1172,8 +1172,8 @@
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.vlandia_lance_2_t4" />
 				<equipment slot="Item1" id="Item.vlandia_sword_4_t4" />
-				<equipment slot="Item2" id="Item.crossbow_e" />
-				<equipment slot="Item3" id="Item.bolt_c" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.full_helm_over_mail_coif" />
 				<equipment slot="Body" id="Item.white_coat_over_mail" />
 				<equipment slot="Gloves" id="Item.lordly_mail_mitten" />
@@ -1253,8 +1253,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_i" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.falchion_sword_t2" />
 				<equipment slot="Head" id="Item.leather_cap" />
 				<equipment slot="Body" id="Item.long_woolen_tunic" />
@@ -1321,8 +1321,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_1_t2" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Body" id="Item.leather_coat" />
@@ -1509,8 +1509,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_d" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_2_t3" />
 				<equipment slot="Head" id="Item.leatherlame_roundkettle" />
 				<equipment slot="Body" id="Item.woven_leather_coat" />
@@ -1543,8 +1543,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_c" />
-				<equipment slot="Item1" id="Item.bolt_e" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_3_t3" />
 				<equipment slot="Head" id="Item.roundkettle_over_imperial_leather" />
 				<equipment slot="Body" id="Item.imperial_mail_over_leather" />
@@ -1726,8 +1726,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_i" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.simple_back_sword_t2" />
 				<equipment slot="Head" id="Item.imperial_cloth_coif" />
 				<equipment slot="Body" id="Item.footmans_tunic" />
@@ -1793,8 +1793,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_d" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_1_t2" />
 				<equipment slot="Head" id="Item.leatherlame_roundkettle" />
 				<equipment slot="Body" id="Item.imperial_padded_cloth" />
@@ -2047,16 +2047,16 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_d" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_2_t3" />
 				<equipment slot="Head" id="Item.leatherlame_roundkettle" />
 				<equipment slot="Body" id="Item.woven_leather_coat" />
 				<equipment slot="Leg" id="Item.leather_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_d" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.iron_spatha_sword_t2" />
 				<equipment slot="Head" id="Item.imperial_leather_coif" />
 				<equipment slot="Body" id="Item.imperial_padded_cloth" />
@@ -2089,8 +2089,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_d" />
-				<equipment slot="Item1" id="Item.bolt_e" />
+				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_3_t3" />
 				<equipment slot="Head" id="Item.roundkettle_over_imperial_leather" />
 				<equipment slot="Body" id="Item.imperial_mail_over_leather" />
@@ -2098,8 +2098,8 @@
 				<equipment slot="Leg" id="Item.folded_town_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_d" />
-				<equipment slot="Item1" id="Item.bolt_e" />
+				<equipment slot="Item0" id="Item.balkan_heavy_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.narrow_sword_t3" />
 				<equipment slot="Head" id="Item.leatherlame_roundkettle_over_imperial_mail" />
 				<equipment slot="Body" id="Item.eastern_studded_leather" />
@@ -2135,8 +2135,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_i" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_1_t2" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Cape" id="Item.scarf" />
@@ -2144,8 +2144,8 @@
 				<equipment slot="Leg" id="Item.leather_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_i" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.simple_sabre_sword_t2" />
 				<equipment slot="Head" id="Item.laced_coif" />
 				<equipment slot="Cape" id="Item.scarf" />
@@ -2180,8 +2180,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Cape" id="Item.scarf" />
@@ -2190,8 +2190,8 @@
 				<equipment slot="Leg" id="Item.leather_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
 				<equipment slot="Head" id="Item.nasal_helmet_with_leather" />
 				<equipment slot="Body" id="Item.basic_imperial_leather_armor" />
@@ -2225,8 +2225,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_c" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_3_t3" />
 				<equipment slot="Head" id="Item.fur_hat" />
 				<equipment slot="Cape" id="Item.wrapped_scarf" />
@@ -2235,8 +2235,8 @@
 				<equipment slot="Leg" id="Item.strapped_leather_boots" />
 			</EquipmentRoster>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_c" />
-				<equipment slot="Item1" id="Item.bolt_c" />
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.ridged_sabre_sword_t4" />
 				<equipment slot="Head" id="Item.nasal_helmet_with_mail" />
 				<equipment slot="Body" id="Item.woven_leather_coat" />
@@ -2272,8 +2272,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_e" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_pistol" />
+				<equipment slot="Item1" id="Item.balkan_pistol_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
 				<equipment slot="Item3" id="Item.light_horsemans_kite_shield" />
 				<equipment slot="Head" id="Item.fur_hat" />
@@ -2322,8 +2322,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_e" />
-				<equipment slot="Item1" id="Item.bolt_b" />
+				<equipment slot="Item0" id="Item.balkan_pistol" />
+				<equipment slot="Item1" id="Item.balkan_pistol_balls" />
 				<equipment slot="Item2" id="Item.khuzait_sword_3_t3" />
 				<equipment slot="Item3" id="Item.heavy_horsemans_kite_shield" />
 				<equipment slot="Head" id="Item.nasal_helmet_with_mail" />
@@ -2436,8 +2436,8 @@
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.empire_lance_2_t4" />
 				<equipment slot="Item1" id="Item.empire_mace_3_t4" />
-				<equipment slot="Item2" id="Item.crossbow_e" />
-				<equipment slot="Item3" id="Item.bolt_a" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.roundkettle_over_imperial_mail" />
 				<equipment slot="Body" id="Item.empire_horseman_armor" />
 				<equipment slot="Gloves" id="Item.lordly_padded_mitten" />
@@ -2476,8 +2476,8 @@
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.empire_lance_2_t4" />
 				<equipment slot="Item1" id="Item.empire_sword_5_t4" />
-				<equipment slot="Item2" id="Item.crossbow_e" />
-				<equipment slot="Item3" id="Item.bolt_b" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.ironlame_feathered_spangenhelm_over_mail" />
 				<equipment slot="Body" id="Item.imperial_lamellar" />
 				<equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
@@ -2525,8 +2525,8 @@
 			<EquipmentRoster>
 				<equipment slot="Item0" id="Item.empire_lance_2_t4" />
 				<equipment slot="Item1" id="Item.empire_sword_5_t4" />
-				<equipment slot="Item2" id="Item.crossbow_e" />
-				<equipment slot="Item3" id="Item.bolt_c" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
 				<equipment slot="Head" id="Item.ironlame_feathered_spangenhelm_over_mail" />
 				<equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
 				<equipment slot="Gloves" id="Item.plated_strip_gauntlets" />
@@ -2605,8 +2605,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_i" />
-				<equipment slot="Item1" id="Item.bolt_a" />
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.simple_back_sword_t2" />
 				<equipment slot="Head" id="Item.imperial_cloth_coif" />
 				<equipment slot="Body" id="Item.footmans_tunic" />
@@ -2672,8 +2672,8 @@
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
-				<equipment slot="Item0" id="Item.crossbow_b" />
-				<equipment slot="Item1" id="Item.bolt_d" />
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
 				<equipment slot="Item2" id="Item.empire_sword_1_t2" />
 				<equipment slot="Head" id="Item.leatherlame_roundkettle" />
 				<equipment slot="Body" id="Item.imperial_padded_cloth" />

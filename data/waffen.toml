@@ -1,0 +1,111 @@
+# Feuerwaffen und Munition (v0.1).
+#
+# Bis es eigene Modelle gibt, nutzen die Feuerwaffen Modelle und Mechanik der Armbrüste aus dem
+# Spiel (siehe docs/design.md, Abschnitt 6). Die Werte sind Richtwerte und werden nach
+# Spieltests angepasst. Zum Vergleich die schwere Armbrust (crossbow_d) des Spiels:
+# Schaden 93, Geschossgeschwindigkeit 90, Genauigkeit 99, Tempo 92, Handhabung 62.
+#
+# Felder einer Waffe:
+#   id            Gegenstands-Id, beginnt mit "balkan_"
+#   art           "gewehr" (zweihändig, nicht vom Pferd nachladbar), "pistole" oder "munition"
+#   modell        Modell aus dem Spiel (Armbrust- oder Bolzen-Modell)
+#   kultur        Kultur, in deren Städten die Waffe eher angeboten wird
+#   gewicht       in kg
+#   schaden       Stichschaden (Waffe) bzw. Zusatzschaden (Munition)
+#   geschoss      Geschossgeschwindigkeit (nur Waffen)
+#   genauigkeit   0 bis 100 (nur Waffen)
+#   tempo         Schwunggeschwindigkeit, beeinflusst das Nachladen (nur Waffen)
+#   handhabung    Handhabung (nur Waffen)
+#   schwierigkeit benötigter Armbrust-Wert (nur Waffen)
+#   anzahl        Schuss pro Beutel (nur Munition)
+# Ausgabe: Module/BalkanMod/ModuleData/balkan_items.xml (über tools/gen_content.py)
+
+[[waffe]]
+id = "balkan_arquebus"
+name = { en = "Arquebus", de = "Arkebuse" }
+art = "gewehr"
+modell = "crossbow_b"
+kultur = "vlandia"
+gewicht = 3.2
+schaden = 105
+geschoss = 95
+genauigkeit = 78
+tempo = 66
+handhabung = 50
+schwierigkeit = 0
+
+[[waffe]]
+id = "balkan_musket"
+name = { en = "Matchlock Musket", de = "Luntenschloss-Muskete" }
+art = "gewehr"
+modell = "crossbow_c"
+kultur = "vlandia"
+gewicht = 4.5
+schaden = 120
+geschoss = 105
+genauigkeit = 80
+tempo = 60
+handhabung = 45
+schwierigkeit = 20
+
+[[waffe]]
+id = "balkan_long_musket"
+name = { en = "Long Balkan Musket", de = "Lange Balkan-Flinte" }
+art = "gewehr"
+modell = "crossbow_d"
+kultur = "aserai"
+gewicht = 4.2
+schaden = 115
+geschoss = 115
+genauigkeit = 90
+tempo = 60
+handhabung = 45
+schwierigkeit = 40
+
+[[waffe]]
+id = "balkan_heavy_musket"
+name = { en = "Heavy Musket", de = "Schwere Muskete" }
+art = "gewehr"
+modell = "crossbow_c"
+kultur = "vlandia"
+gewicht = 5.5
+schaden = 135
+geschoss = 110
+genauigkeit = 82
+tempo = 55
+handhabung = 40
+schwierigkeit = 60
+
+[[waffe]]
+id = "balkan_pistol"
+name = { en = "Horse Pistol", de = "Reiterpistole" }
+art = "pistole"
+modell = "crossbow_e"
+kultur = "vlandia"
+gewicht = 1.6
+schaden = 95
+geschoss = 75
+genauigkeit = 65
+tempo = 70
+handhabung = 60
+schwierigkeit = 0
+
+[[waffe]]
+id = "balkan_musket_balls"
+name = { en = "Musket Balls and Powder", de = "Musketenkugeln und Pulver" }
+art = "munition"
+modell = "bolt_bl_c"
+kultur = "vlandia"
+gewicht = 0.05
+schaden = 5
+anzahl = 12
+
+[[waffe]]
+id = "balkan_pistol_balls"
+name = { en = "Pistol Cartridges", de = "Pistolenpatronen" }
+art = "munition"
+modell = "bolt_bl_a"
+kultur = "vlandia"
+gewicht = 0.04
+schaden = 3
+anzahl = 4
