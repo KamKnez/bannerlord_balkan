@@ -52,6 +52,15 @@
         <GameType value="CustomGame"/>
       </IncludedGameTypes>
     </XmlNode>
+    <!-- XSLT-Patch: Ausrüstungsvorlagen für die neuen Kulturen (ohne sie stürzt der Kampagnenstart ab) -->
+    <XmlNode>
+      <XmlName id="EquipmentRosters" path="XSLT/BalkanMod_SandBoxCore_EquipmentRosters"/>
+      <IncludedGameTypes>
+        <GameType value="Campaign"/>
+        <GameType value="CampaignStoryMode"/>
+        <GameType value="CustomGame"/>
+      </IncludedGameTypes>
+    </XmlNode>
     <!-- XSLT-Patches aus data/reiche/: Reiche, Clans, Lords, Helden und Kultur der Siedlungen -->
     <XmlNode>
       <XmlName id="Kingdoms" path="XSLT/BalkanMod_Sandbox_Kingdoms"/>

@@ -24,6 +24,8 @@ Unter *Actions* → letzter Lauf → *Artifacts* gibt es das Paket `BalkanMod` z
 0. Vorher diese Mods installieren (z. B. über Nexus Mods oder den Steam Workshop), mindestens in diesen Versionen:
    Harmony 2.4.2, ButterLib 2.12.0, UIExtenderEx 3.0.3 und Mod Configuration Menu (MCM) 5.13.1.
    Im Launcher müssen sie über „Balkan 1700“ stehen.
+   Heruntergeladene Zip-Dateien vor dem Entpacken entsperren (Rechtsklick → *Eigenschaften* → *Zulassen*),
+   sonst blockiert Windows die DLLs und das Spiel startet die Mods nicht.
 1. Den Inhalt nach `…\Mount & Blade II Bannerlord\Modules\BalkanMod\` kopieren
    (darin liegen dann `SubModule.xml`, `ModuleData\` und `bin\`).
 2. Im Bannerlord-Launcher unter *Singleplayer* → *Mods* „Balkan 1700“ anhaken.
