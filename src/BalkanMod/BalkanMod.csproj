@@ -6,7 +6,7 @@
     <Nullable>disable</Nullable>
     <AssemblyName>BalkanMod</AssemblyName>
     <RootNamespace>BalkanMod</RootNamespace>
-    <Version>0.0.1</Version>
+    <Version>0.1.0</Version>
     <!-- Spielversion, gegen die gebaut wird -->
     <GameVersion>1.5.7.125802</GameVersion>
     <ModuleId>BalkanMod</ModuleId>
@@ -21,6 +21,8 @@
     <!-- Nur Metadaten der Spiel-DLLs (BUTR, MIT-Lizenz), damit auch ohne installiertes Spiel gebaut werden kann -->
     <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion)" PrivateAssets="all" IncludeAssets="compile" />
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <!-- MCM-Einstellungen: MCMv5.dll liefert das Modul "Mod Configuration Menu v5" (Bannerlord.MBOptionScreen) mit -->
+    <PackageReference Include="Bannerlord.MCM" Version="5.13.1" PrivateAssets="all" IncludeAssets="compile" />
   </ItemGroup>
 
   <!--
