@@ -1,5 +1,6 @@
 using BalkanMod.CampaignBehaviors;
 using BalkanMod.CampaignModels;
+using BalkanMod.CharacterCreation;
 using BalkanMod.Missions;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
@@ -19,13 +20,15 @@ namespace BalkanMod
     {
         private bool _loadedMessageShown;
         private UIExtender _uiExtender;
+        private Harmony _harmony;
 
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
 
             // Zusätzliche Zeitraffer-Knöpfe auf der Karte (TimeControl/)
-            new Harmony("BalkanMod").PatchAll(typeof(SubModule).Assembly);
+            _harmony = new Harmony("BalkanMod");
+            _harmony.PatchAll(typeof(SubModule).Assembly);
             _uiExtender = UIExtender.Create("BalkanMod");
             _uiExtender.Register(typeof(SubModule).Assembly);
             _uiExtender.Enable();
@@ -41,6 +44,8 @@ namespace BalkanMod
             }
 
             _loadedMessageShown = true;
+            // Charaktererstellung mit den Kulturen der Mod; erst hier, weil StoryMode.dll jetzt geladen ist
+            CultureTemplateScope.Apply(_harmony);
             var text = new TextObject("{=balkanmod_loaded}Balkan mod loaded.");
             InformationManager.DisplayMessage(new InformationMessage(text.ToString()));
         }
@@ -67,6 +72,8 @@ namespace BalkanMod
                 campaignStarter.AddBehavior(new NotableCultureBehavior());
                 // Läden der Balkan-Städte: Feuerwaffen und Kulturausrüstung rein, unpassende Calradia-Ware raus
                 campaignStarter.AddBehavior(new BalkanMarketBehavior());
+                // Bei der Charaktererstellung nur die acht Kulturen der Mod
+                campaignStarter.AddBehavior(new BalkanCharacterCreationBehavior());
             }
         }
     }

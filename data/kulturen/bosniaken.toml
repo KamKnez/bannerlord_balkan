@@ -2,6 +2,7 @@
 # Aufbau der Datei: siehe data/kulturen/README.md
 
 schluessel = "bosniaken"
+bild = "battania"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
 kultur_id = "aserai"
 art = "anpassen"
 praefix = "bs"

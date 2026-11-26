@@ -25,6 +25,7 @@ Die CI prüft mit `python3 tools/gen_content.py --check`, ob die erzeugten Datei
 | `kultur_id` | Id der Kultur im Spiel |
 | `art` | `anpassen` (vorhandene Calradia-Kultur ändern) oder `neu` (neue Kultur als Kopie von `vorlage`) |
 | `vorlage` | nur bei `neu`: Kultur, von der alle übrigen Werte kopiert werden (Stadtbewohner, Turniere, Notable usw.) |
+| `bild` | Kulturbild des Spiels bei der Charaktererstellung: `empire`, `vlandia`, `sturgia`, `aserai`, `khuzait` oder `battania` |
 | `praefix` | Kürzel in den Truppen-Ids: `balkan_<praefix>_<id>` |
 | `namensliste` | Datei unter `data/namen/` (Vornamen und Familiennamen für Clans) |
 | `farben` | zwei Farben als `0xAARRGGBB` |
