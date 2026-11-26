@@ -55,6 +55,14 @@
 		<Item id="balkan_long_musket" />
 		<Item id="balkan_musket" />
 		<Item id="balkan_musket_balls" />
+		<Item id="balkan_nw_cuirass" />
+		<Item id="balkan_nw_dolman" />
+		<Item id="balkan_nw_grenzer_coat" />
+		<Item id="balkan_nw_grenzer_officer" />
+		<Item id="balkan_nw_hungarian_pants" />
+		<Item id="balkan_nw_hussar_boots" />
+		<Item id="balkan_nw_jackboots" />
+		<Item id="balkan_nw_kolpak" />
 		<Item id="balkan_pistol" />
 		<Item id="balkan_pistol_balls" />
 		<Item id="banded_leather_over_mail" />
@@ -62,13 +70,11 @@
 		<Item id="bracketed_heater_shield" />
 		<Item id="coat_of_plates_over_mail" />
 		<Item id="eastern_leather_boots" />
-		<Item id="eastern_stitched_leather_coat" />
 		<Item id="eastern_studded_leather" />
 		<Item id="empire_cape_a" />
 		<Item id="falchion_sword_t2" />
 		<Item id="flat_heater_shield" />
 		<Item id="fur_hat" />
-		<Item id="gambeson_b" />
 		<Item id="heavy_heater_shield" />
 		<Item id="horsemans_heater_shield" />
 		<Item id="kettle_helmet_with_leather" />
@@ -90,7 +96,6 @@
 		<Item id="lordly_mail_mitten" />
 		<Item id="mail_cavalier_boots" />
 		<Item id="mail_shirt" />
-		<Item id="northern_coat_of_plates" />
 		<Item id="northern_fur_cap" />
 		<Item id="northern_warlord_helmet" />
 		<Item id="padded_coat" />
@@ -139,6 +144,8 @@
 		<Item id="balkan_long_musket" />
 		<Item id="balkan_musket" />
 		<Item id="balkan_musket_balls" />
+		<Item id="balkan_nw_ottoman_trousers" />
+		<Item id="balkan_nw_ottoman_tunic" />
 		<Item id="bound_adarga" />
 		<Item id="bound_desert_round_shield" />
 		<Item id="brass_aserai_helmet_b_closed" />
@@ -200,6 +207,9 @@
 		<Item id="balkan_heavy_musket" />
 		<Item id="balkan_musket" />
 		<Item id="balkan_musket_balls" />
+		<Item id="balkan_nw_cuirass" />
+		<Item id="balkan_nw_jackboots" />
+		<Item id="balkan_nw_tricorne" />
 		<Item id="balkan_pistol" />
 		<Item id="balkan_pistol_balls" />
 		<Item id="basic_imperial_leather_armor" />
@@ -219,7 +229,6 @@
 		<Item id="leather_cavalier_boots" />
 		<Item id="lordly_mail_mitten" />
 		<Item id="mail_cavalier_boots" />
-		<Item id="merchants_hat" />
 		<Item id="northern_coat_of_plates" />
 		<Item id="northern_warlord_helmet" />
 		<Item id="padded_coat" />
@@ -246,11 +255,16 @@
 		<Item id="balkan_long_musket" />
 		<Item id="balkan_musket" />
 		<Item id="balkan_musket_balls" />
+		<Item id="balkan_nw_attila" />
+		<Item id="balkan_nw_dolman" />
+		<Item id="balkan_nw_hungarian_pants" />
+		<Item id="balkan_nw_hussar_boots" />
+		<Item id="balkan_nw_insurrection" />
+		<Item id="balkan_nw_kolpak" />
 		<Item id="balkan_pistol" />
 		<Item id="balkan_pistol_balls" />
 		<Item id="eastern_leather_boots" />
 		<Item id="eastern_plated_leather" />
-		<Item id="eastern_stitched_leather_coat" />
 		<Item id="eastern_studded_leather" />
 		<Item id="empire_cape_a" />
 		<Item id="fur_hat" />
@@ -285,10 +299,14 @@
 		<Item id="balkan_long_musket" />
 		<Item id="balkan_musket" />
 		<Item id="balkan_musket_balls" />
+		<Item id="balkan_nw_dolman" />
+		<Item id="balkan_nw_hungarian_pants" />
+		<Item id="balkan_nw_hussar_boots" />
+		<Item id="balkan_nw_kaftan_coat" />
+		<Item id="balkan_nw_kolpak" />
 		<Item id="balkan_pistol" />
 		<Item id="balkan_pistol_balls" />
 		<Item id="eastern_leather_boots" />
-		<Item id="eastern_stitched_leather_coat" />
 		<Item id="eastern_studded_leather" />
 		<Item id="empire_cape_a" />
 		<Item id="fur_hat" />
@@ -321,7 +339,6 @@
 	</Shop>
 	<Shop culture="turks" bows="true">
 		<Item id="aserai_chain_plate_armor_a" />
-		<Item id="aserai_civil_d_hscarf" />
 		<Item id="aserai_mace_3_t3" />
 		<Item id="aserai_robe_c_chain" />
 		<Item id="aserai_sword_1_t2" />
@@ -334,13 +351,19 @@
 		<Item id="balkan_heavy_musket" />
 		<Item id="balkan_musket" />
 		<Item id="balkan_musket_balls" />
+		<Item id="balkan_nw_boerk" />
+		<Item id="balkan_nw_boerk_officer" />
+		<Item id="balkan_nw_dolama_dark" />
+		<Item id="balkan_nw_dolama_green" />
+		<Item id="balkan_nw_dolama_red" />
+		<Item id="balkan_nw_ottoman_officer" />
+		<Item id="balkan_nw_ottoman_shortcoat" />
+		<Item id="balkan_nw_ottoman_trousers" />
 		<Item id="brass_aserai_helmet_open" />
 		<Item id="composite_bow" />
 		<Item id="composite_steppe_bow" />
 		<Item id="default_arrows" />
-		<Item id="desert_leather_shoulderpad" />
 		<Item id="desert_oval_shield" />
-		<Item id="desert_padded_cloth" />
 		<Item id="desert_robe_over_mail" />
 		<Item id="eastern_leather_boots" />
 		<Item id="eastern_plated_leather_vambraces" />
@@ -349,7 +372,6 @@
 		<Item id="guarded_padded_vambrace" />
 		<Item id="hunting_bow" />
 		<Item id="layered_robe" />
-		<Item id="long_padded_robe" />
 		<Item id="piercing_arrows" />
 		<Item id="reinforced_suede_boots" />
 		<Item id="short_padded_robe" />
@@ -366,6 +388,7 @@
 		<Item id="balkan_long_musket" />
 		<Item id="balkan_musket" />
 		<Item id="balkan_musket_balls" />
+		<Item id="balkan_nw_tricorne" />
 		<Item id="balkan_pistol" />
 		<Item id="balkan_pistol_balls" />
 		<Item id="basic_imperial_leather_armor" />
@@ -451,6 +474,7 @@
 		<Item id="balkan_arquebus" />
 		<Item id="balkan_musket" />
 		<Item id="balkan_musket_balls" />
+		<Item id="balkan_nw_tricorne" />
 		<Item id="balkan_pistol" />
 		<Item id="basic_imperial_leather_armor" />
 		<Item id="battered_horsemans_kite_shield" />

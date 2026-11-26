@@ -257,4 +257,277 @@
 		</ItemComponent>
 		<Flags ForceAttachOffHandPrimaryItemBone="true" />
 	</Item>
+	<Item
+		id="balkan_nw_tricorne"
+		name="{=balkan_item_nw_tricorne}Tricorne"
+		mesh="gap_british_tricorne"
+		culture="Culture.neutral_culture"
+		weight="0.4"
+		appearance="1"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="10" has_gender_variations="false" hair_cover_type="type1" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_boerk"
+		name="{=balkan_item_nw_boerk}Janissary Börk"
+		mesh="gap_janissary_hat"
+		culture="Culture.turks"
+		weight="0.4"
+		appearance="1"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="10" has_gender_variations="false" hair_cover_type="type1" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_boerk_officer"
+		name="{=balkan_item_nw_boerk_officer}Janissary Officer Börk"
+		mesh="gap_janissary_hat_officer"
+		culture="Culture.turks"
+		weight="0.5"
+		appearance="1"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="12" has_gender_variations="false" hair_cover_type="type1" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_kolpak"
+		name="{=balkan_item_nw_kolpak}Hussar Kalpak"
+		mesh="gap_british_hussar_colpack"
+		culture="Culture.hungarians"
+		weight="0.6"
+		appearance="1"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="14" has_gender_variations="false" hair_cover_type="type1" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_dolama_red"
+		name="{=balkan_item_nw_dolama_red}Janissary Dolama (red)"
+		mesh="gap_ottoman_greatcoat_orange"
+		culture="Culture.turks"
+		weight="2.5"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="4" leg_armor="8" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_dolama_green"
+		name="{=balkan_item_nw_dolama_green}Janissary Dolama (green)"
+		mesh="gap_ottoman_greatcoat_green"
+		culture="Culture.turks"
+		weight="2.5"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="4" leg_armor="8" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_dolama_dark"
+		name="{=balkan_item_nw_dolama_dark}Janissary Dolama (dark)"
+		mesh="gap_ottoman_greatcoat_dark"
+		culture="Culture.turks"
+		weight="2.8"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" arm_armor="5" leg_armor="9" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_ottoman_officer"
+		name="{=balkan_item_nw_ottoman_officer}Ottoman Officer Coat"
+		mesh="gap_ottoman_officer"
+		culture="Culture.turks"
+		weight="2.4"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="7" leg_armor="4" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_ottoman_shortcoat"
+		name="{=balkan_item_nw_ottoman_shortcoat}Ottoman Short Coat"
+		mesh="gap_ottoman_shortcoat_red"
+		culture="Culture.turks"
+		weight="1.8"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" arm_armor="4" leg_armor="3" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_ottoman_tunic"
+		name="{=balkan_item_nw_ottoman_tunic}Ottoman Infantry Tunic"
+		mesh="gap_ottoman_shorttunic"
+		culture="Culture.aserai"
+		weight="1.4"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" arm_armor="3" leg_armor="3" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_ottoman_trousers"
+		name="{=balkan_item_nw_ottoman_trousers}Ottoman Trousers"
+		mesh="gap_ottoman_trousers_blue"
+		culture="Culture.turks"
+		weight="0.8"
+		appearance="1"
+		Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="6" covers_legs="true" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_grenzer_coat"
+		name="{=balkan_item_nw_grenzer_coat}Grenzer Coat"
+		mesh="gap_austrian_grenzer"
+		culture="Culture.vlandia"
+		weight="2.4"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="6" leg_armor="6" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_grenzer_officer"
+		name="{=balkan_item_nw_grenzer_officer}Grenzer Officer Coat"
+		mesh="gap_austrian_officer_grenzer_3"
+		culture="Culture.vlandia"
+		weight="2.8"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="8" leg_armor="7" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_dolman"
+		name="{=balkan_item_nw_dolman}Hussar Dolman"
+		mesh="gap_hussar_hungarian"
+		culture="Culture.hungarians"
+		weight="2.5"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" arm_armor="7" leg_armor="4" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_attila"
+		name="{=balkan_item_nw_attila}Hungarian Noble Attila"
+		mesh="gap_hungarian_officer_insurrection"
+		culture="Culture.hungarians"
+		weight="2.8"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="8" leg_armor="6" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_insurrection"
+		name="{=balkan_item_nw_insurrection}Hungarian Coat"
+		mesh="gap_hungarian_insurrection"
+		culture="Culture.hungarians"
+		weight="2.4"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="6" leg_armor="6" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_cuirass"
+		name="{=balkan_item_nw_cuirass}Coat with Cuirass"
+		mesh="gap_austrian_cuirassier"
+		culture="Culture.germans"
+		weight="14.0"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="44" arm_armor="8" leg_armor="8" covers_body="true" has_gender_variations="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item
+		id="balkan_nw_kaftan_coat"
+		name="{=balkan_item_nw_kaftan_coat}Long Cloth Coat"
+		mesh="gap_russian_partizan"
+		culture="Culture.serbs"
+		weight="3.0"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" arm_armor="5" leg_armor="8" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_hungarian_pants"
+		name="{=balkan_item_nw_hungarian_pants}Hungarian Trousers"
+		mesh="gap_austrian_hungarian_pants"
+		culture="Culture.hungarians"
+		weight="0.9"
+		appearance="1"
+		Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="6" covers_legs="true" modifier_group="cloth_unarmoured" material_type="Cloth" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_hussar_boots"
+		name="{=balkan_item_nw_hussar_boots}Hussar Boots"
+		mesh="gap_hungarian_hussar_boots"
+		culture="Culture.hungarians"
+		weight="1.2"
+		appearance="1"
+		Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="8" covers_legs="true" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+	<Item
+		id="balkan_nw_jackboots"
+		name="{=balkan_item_nw_jackboots}Cuirassier Jackboots"
+		mesh="gap_austrian_officer_boots"
+		culture="Culture.germans"
+		weight="1.6"
+		appearance="1"
+		Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="10" covers_legs="true" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
 </Items>
