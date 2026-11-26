@@ -20,10 +20,10 @@ herrschertitel = { en = "Beylerbey", de = "Beylerbey" }
 
 [text]
 en = """
-Bosnia is now the frontier province of the Ottoman Empire. Since the sack of Sarajevo the beylerbey sits in Travnik, and the captaincies along the Una, Sava and Drina guard the border against Habsburgs and Venetians.
+Bosnia is now the frontier province of the Ottoman Empire. The beylerbey still holds court in burned Sarajevo, though Travnik is already being readied as his new seat, and the captaincies along the Una, Sava and Drina guard the border against Habsburgs and Venetians.
 """
 de = """
-Bosnien ist jetzt die Grenzprovinz des Osmanischen Reichs. Seit dem Brand von Sarajevo sitzt der Beylerbey in Travnik, und die Kapetanije an Una, Save und Drina bewachen die Grenze gegen Habsburger und Venezianer.
+Bosnien ist jetzt die Grenzprovinz des Osmanischen Reichs. Der Beylerbey hält noch im verbrannten Sarajevo Hof, auch wenn Travnik schon als neuer Sitz hergerichtet wird, und die Kapetanije an Una, Save und Drina bewachen die Grenze gegen Habsburger und Venezianer.
 """
 
 [herrscher_text]
@@ -371,7 +371,7 @@ town_A4 = { en = "Tuzla takes its name from the salt springs that have made it r
 town_A5 = { en = "Novi Pazar, the 'new market' founded by Isa-beg, is a trading town of the Sanjak on the high road towards Istanbul.", de = "Novi Pazar, der von Isa-beg gegründete „neue Markt“, ist eine Handelsstadt im Sandžak an der Hauptstraße nach Istanbul." }
 town_A6 = { en = "Banja Luka grew around the Ferhadija mosque of Ferhad Pasha. It guards the Vrbas valley and the northern border of the province.", de = "Banja Luka wuchs rund um die Ferhadija-Moschee Ferhad Paschas. Es bewacht das Tal des Vrbas und die Nordgrenze der Provinz." }
 town_A7 = { en = "Mostar is the heart of Herzegovina. Its stone bridge, built in 1566, spans the green Neretva in a single bold arch.", de = "Mostar ist das Herz der Herzegowina. Seine 1566 erbaute Steinbrücke überspannt die grüne Neretva in einem einzigen kühnen Bogen." }
-town_A8 = { en = "Travnik in the Lašva valley has been the seat of the vizier of Bosnia since Sarajevo burned. Couriers, merchants and petitioners crowd its streets.", de = "Travnik im Tal der Lašva ist seit dem Brand von Sarajevo Sitz des Wesirs von Bosnien. Kuriere, Kaufleute und Bittsteller füllen seine Gassen." }
+town_A8 = { en = "Travnik in the Lašva valley is to become the new seat of the vizier of Bosnia now that Sarajevo has burned. Until his konak is ready, the begs of the town keep it for him. Couriers, merchants and petitioners crowd its streets.", de = "Travnik im Tal der Lašva soll nach dem Brand von Sarajevo neuer Sitz des Wesirs von Bosnien werden. Bis sein Konak fertig ist, verwalten die Begs der Stadt sie für ihn. Kuriere, Kaufleute und Bittsteller füllen seine Gassen." }
 castle_A1 = { en = "Bihać is the northwestern bulwark of the empire, taken in 1592. In 1697 it threw back a Habsburg siege, and its captains watch Croatia day and night.", de = "Bihać ist das nordwestliche Bollwerk des Reichs, 1592 erobert. 1697 schlug es eine habsburgische Belagerung ab, und seine Kapetane beobachten Kroatien Tag und Nacht." }
 castle_A2 = { en = "Above Stolac rises the fortress of Vidoški, guarding the roads of eastern Herzegovina.", de = "Über Stolac erhebt sich die Festung Vidoški und bewacht die Straßen der östlichen Herzegowina." }
 castle_A3 = { en = "Ključ on the Sana is where the last Bosnian king surrendered in 1463. Today it is a captaincy on the road to the frontier.", de = "In Ključ an der Sana ergab sich 1463 der letzte bosnische König. Heute ist es eine Kapetanija an der Straße zur Grenze." }

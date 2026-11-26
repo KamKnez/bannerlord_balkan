@@ -2,6 +2,7 @@ using BalkanMod.CampaignBehaviors;
 using BalkanMod.CampaignModels;
 using BalkanMod.CharacterCreation;
 using BalkanMod.Missions;
+using BalkanMod.TimeControl;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
 using TaleWorlds.CampaignSystem;
@@ -64,6 +65,9 @@ namespace BalkanMod
         {
             base.OnGameStart(game, gameStarterObject);
 
+            // Zeitraffer-Stufe vom vorigen Spielstand nicht mitnehmen
+            BalkanTimeSpeed.Reset();
+
             if (game.GameType is Campaign && gameStarterObject is CampaignGameStarter campaignStarter)
             {
                 // Reisegeschwindigkeit auf der Karte (Faktoren im MCM-Menü)
@@ -77,6 +81,13 @@ namespace BalkanMod
                 // Bei der Charaktererstellung nur die acht Kulturen der Mod
                 campaignStarter.AddBehavior(new BalkanCharacterCreationBehavior());
             }
+        }
+
+        public override void OnGameEnd(Game game)
+        {
+            BalkanTimeSpeed.Deactivate();
+            BalkanTimeSpeed.Reset();
+            base.OnGameEnd(game);
         }
     }
 }

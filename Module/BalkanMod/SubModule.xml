@@ -16,7 +16,7 @@
     <DependedModule Id="SandBoxCore" DependentVersion="v1.5.7" Optional="false"/>
     <DependedModule Id="Sandbox" DependentVersion="v1.5.7" Optional="false"/>
     <!-- War Sails: optional, aber wenn vorhanden, laden wir danach, damit unsere Kultur-Patches zuletzt greifen -->
-    <DependedModule Id="NavalDLC" DependentVersion="v1.3.7" Optional="true"/>
+    <DependedModule Id="NavalDLC" DependentVersion="v1.5.7" Optional="true"/>
   </DependedModules>
   <SubModules>
     <SubModule>

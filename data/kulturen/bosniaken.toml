@@ -10,7 +10,8 @@ namensliste = "bosniaken"
 farben = ["0xff1E6B3A", "0xffE3B04B"]
 # Bosniaken sind Südslawen: Gesichter der Imperialen statt der Aserai
 gesicht = "fighter_empire"
-zivil = ["empire_troop_civilian_template_t1", "empire_troop_civilian_template_t2", "empire_troop_civilian_template_t3"]
+# Alltagskleidung osmanisch (Turban, Kaftan) wie bei den Türken
+zivil = ["aserai_troop_civilian_template_t1", "aserai_troop_civilian_template_t2", "aserai_troop_civilian_template_t3"]
 basis_truppe = "peasant"
 elite_truppe = "timarli_sipahi"
 

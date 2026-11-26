@@ -224,7 +224,7 @@
     <string id="balkan_kingdom_aserai_short" text="Osmanen" />
     <string id="balkan_kingdom_aserai_title" text="Eyalet Bosnien" />
     <string id="balkan_kingdom_aserai_ruler" text="Beylerbey" />
-    <string id="balkan_kingdom_aserai_text" text="Bosnien ist jetzt die Grenzprovinz des Osmanischen Reichs. Seit dem Brand von Sarajevo sitzt der Beylerbey in Travnik, und die Kapetanije an Una, Save und Drina bewachen die Grenze gegen Habsburger und Venezianer." />
+    <string id="balkan_kingdom_aserai_text" text="Bosnien ist jetzt die Grenzprovinz des Osmanischen Reichs. Der Beylerbey hält noch im verbrannten Sarajevo Hof, auch wenn Travnik schon als neuer Sitz hergerichtet wird, und die Kapetanije an Una, Save und Drina bewachen die Grenze gegen Habsburger und Venezianer." />
     <string id="balkan_clan_aserai_1" text="Haus des Beylerbeys" />
     <string id="balkan_hero_lord_3_1_text" text="Mehmed verwaltet das Eyalet Bosnien im Namen des Sultans. Ob er das Amt behält, entscheidet Istanbul." />
     <string id="balkan_settlement_town_A1_text" text="Sarajevo, von Isa-beg im Tal der Miljacka gegründet, ist das Juwel Bosniens, mit Moschee, Basar und Bädern Gazi Husrev-begs. 1697 brannte Prinz Eugen die Stadt nieder, und ihre Bewohner bauen sie noch immer wieder auf." />
@@ -234,7 +234,7 @@
     <string id="balkan_settlement_town_A5_text" text="Novi Pazar, der von Isa-beg gegründete „neue Markt“, ist eine Handelsstadt im Sandžak an der Hauptstraße nach Istanbul." />
     <string id="balkan_settlement_town_A6_text" text="Banja Luka wuchs rund um die Ferhadija-Moschee Ferhad Paschas. Es bewacht das Tal des Vrbas und die Nordgrenze der Provinz." />
     <string id="balkan_settlement_town_A7_text" text="Mostar ist das Herz der Herzegowina. Seine 1566 erbaute Steinbrücke überspannt die grüne Neretva in einem einzigen kühnen Bogen." />
-    <string id="balkan_settlement_town_A8_text" text="Travnik im Tal der Lašva ist seit dem Brand von Sarajevo Sitz des Wesirs von Bosnien. Kuriere, Kaufleute und Bittsteller füllen seine Gassen." />
+    <string id="balkan_settlement_town_A8_text" text="Travnik im Tal der Lašva soll nach dem Brand von Sarajevo neuer Sitz des Wesirs von Bosnien werden. Bis sein Konak fertig ist, verwalten die Begs der Stadt sie für ihn. Kuriere, Kaufleute und Bittsteller füllen seine Gassen." />
     <string id="balkan_settlement_castle_A1_text" text="Bihać ist das nordwestliche Bollwerk des Reichs, 1592 erobert. 1697 schlug es eine habsburgische Belagerung ab, und seine Kapetane beobachten Kroatien Tag und Nacht." />
     <string id="balkan_settlement_castle_A2_text" text="Über Stolac erhebt sich die Festung Vidoški und bewacht die Straßen der östlichen Herzegowina." />
     <string id="balkan_settlement_castle_A3_text" text="In Ključ an der Sana ergab sich 1463 der letzte bosnische König. Heute ist es eine Kapetanija an der Straße zur Grenze." />

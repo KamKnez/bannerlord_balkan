@@ -515,7 +515,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Travnik</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_A8_text}Travnik in the Lašva valley has been the seat of the vizier of Bosnia since Sarajevo burned. Couriers, merchants and petitioners crowd its streets.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_A8_text}Travnik in the Lašva valley is to become the new seat of the vizier of Bosnia now that Sarajevo has burned. Until his konak is ready, the begs of the town keep it for him. Couriers, merchants and petitioners crowd its streets.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
