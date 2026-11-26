@@ -21,6 +21,12 @@ jobs:
       - name: Namenslisten prüfen
         run: python3 tools/validate_names.py
 
+      - name: Erzeugte Spieldaten aktuell
+        run: python3 tools/gen_content.py --check
+
+      - name: Verweise prüfen
+        run: python3 tools/validate_refs.py
+
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"

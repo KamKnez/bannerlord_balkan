@@ -23,4 +23,5 @@ Quellen für historische Angaben. Erste Prüfung über Wikipedia, für das Desig
 ## Technik
 
 - [Bannerlord Documentation](https://docs.bannerlordmodding.com/): SubModule.xml, SPCultures, NPCCharacters, Items, Siedlungen.
+- Spieldateien von Bannerlord v1.5.7 (lokale Installation, nur gelesen): Aufbau der Formate, siehe [docs/recherche/04-spielformate.md](docs/recherche/04-spielformate.md).
 - [How settlements work](https://docs.bannerlordmodding.com/_tutorials/new_settlements): settlements.xml und Kartenszene.

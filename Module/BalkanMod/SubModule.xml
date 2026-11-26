@@ -10,6 +10,8 @@
     <DependedModule Id="Native" DependentVersion="v1.5.7" Optional="false"/>
     <DependedModule Id="SandBoxCore" DependentVersion="v1.5.7" Optional="false"/>
     <DependedModule Id="Sandbox" DependentVersion="v1.5.7" Optional="false"/>
+    <!-- War Sails: optional, aber wenn vorhanden, laden wir danach, damit unsere Kultur-Patches zuletzt greifen -->
+    <DependedModule Id="NavalDLC" DependentVersion="v1.3.7" Optional="true"/>
   </DependedModules>
   <SubModules>
     <SubModule>
@@ -19,5 +21,31 @@
       <Tags/>
     </SubModule>
   </SubModules>
-  <Xmls/>
+  <Xmls>
+    <!-- Erzeugt von tools/gen_content.py aus data/kulturen/ -->
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="balkan_troops"/>
+      <IncludedGameTypes>
+        <GameType value="Campaign"/>
+        <GameType value="CampaignStoryMode"/>
+        <GameType value="CustomGame"/>
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="partyTemplates" path="balkan_party_templates"/>
+      <IncludedGameTypes>
+        <GameType value="Campaign"/>
+        <GameType value="CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
+    <!-- XSLT-Patch: ändert Vlandia und Aserai, fügt Venedig und Ragusa hinzu (Muster wie im NavalDLC) -->
+    <XmlNode>
+      <XmlName id="SPCultures" path="XSLT/BalkanMod_SandBoxCore_SPCultures"/>
+      <IncludedGameTypes>
+        <GameType value="Campaign"/>
+        <GameType value="CampaignStoryMode"/>
+        <GameType value="CustomGame"/>
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
 </Module>

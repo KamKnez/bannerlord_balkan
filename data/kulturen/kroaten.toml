@@ -1,0 +1,412 @@
+# Kroaten (Habsburgermonarchie). Ersetzt die Calradia-Kultur Vlandia.
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "kroaten"
+kultur_id = "vlandia"
+art = "anpassen"
+praefix = "hr"
+namensliste = "kroaten"
+farben = ["0xffB0182A", "0xffF2EFE6"]
+gesicht = "fighter_vlandia"
+zivil = ["vlandia_troop_civilian_template_t1", "vlandia_troop_civilian_template_t2", "vlandia_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "junker"
+
+[name]
+en = "Croatians"
+de = "Kroaten"
+
+[text]
+en = """
+Croatia, Slavonia and Dalmatia call themselves a kingdom of their own, joined to the Habsburg crown. \
+For two centuries the Croats have held the Military Frontier against the Ottomans: free peasants owe the emperor \
+service instead of rent, and every village keeps its haramije and horsemen ready. Their nobles still ride as \
+armoured cavalry, while the border men fight with sabre and arquebus.
+"""
+de = """
+Kroatien, Slawonien und Dalmatien nennen sich ein eigenes Königreich unter der habsburgischen Krone. \
+Seit zwei Jahrhunderten halten die Kroaten die Militärgrenze gegen die Osmanen: Freie Bauern leisten dem Kaiser \
+Kriegsdienst statt Abgaben, und jedes Dorf hält seine Haramije und Reiter bereit. Der Adel reitet noch als \
+gepanzerte Reiterei, die Grenzer kämpfen mit Säbel und Arkebuse.
+"""
+
+[miliz]
+nahkampf = "militia_spearman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_shooter"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+[[lord_partei]]
+truppe = "haramija"
+min = 3
+max = 6
+[[lord_partei]]
+truppe = "border_musketeer"
+min = 2
+max = 4
+[[lord_partei]]
+truppe = "border_veteran"
+min = 0
+max = 2
+[[lord_partei]]
+truppe = "croatian_rider"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "hussar"
+min = 1
+max = 2
+[[lord_partei]]
+truppe = "noble_rider"
+min = 1
+max = 2
+[[lord_partei]]
+truppe = "cuirassier"
+min = 0
+max = 1
+
+# ---------------------------------------------------------------- normaler Baum
+
+[[truppe]]
+id = "peasant"
+name = { en = "Croatian Peasant", de = "Kroatischer Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["haramija"]
+[[truppe.ausruestung]]
+Item0 = "peasant_pitchfork_1_t1"
+Head = "fur_hat"
+Body = "long_woolen_tunic"
+Leg = "leather_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_hatchet_1_t1"
+Head = "leather_cap"
+Body = "sackcloth_tunic"
+Cape = "scarf"
+Leg = "empire_horseman_boots"
+[[truppe.ausruestung]]
+Item0 = "peasant_hammer_1_t1"
+Head = "padded_cap"
+Body = "long_hemp_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "haramija"
+name = { en = "Haramija", de = "Haramija" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["border_musketeer", "croatian_rider"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_i"
+Item1 = "bolt_a"
+Item2 = "khuzait_sword_1_t2"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Cape = "scarf"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_i"
+Item1 = "bolt_a"
+Item2 = "aserai_sword_1_t2"
+Head = "leather_cap"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "border_musketeer"
+name = { en = "Border Musketeer", de = "Grenz-Musketier" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["border_veteran"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_b"
+Item2 = "khuzait_sword_2_t3"
+Head = "fur_hat"
+Body = "padded_coat"
+Gloves = "woven_leather_bracers"
+Leg = "eastern_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_b"
+Item2 = "khuzait_sword_2_t3"
+Head = "kettle_helmet_with_leather"
+Body = "leather_coat"
+Cape = "scarf"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "border_veteran"
+name = { en = "Border Veteran", de = "Grenz-Veteran" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["harambasa"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_c"
+Item1 = "bolt_c"
+Item2 = "khuzait_sword_3_t3"
+Head = "kettle_hat_over_padded_coif"
+Body = "plated_leather_coat"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_c"
+Item1 = "bolt_c"
+Item2 = "khuzait_sword_3_t3"
+Head = "fur_hat"
+Body = "leather_coat_over_cloth"
+Cape = "padded_leather_shoulders"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "harambasa"
+name = { en = "Harambaša", de = "Harambaša" }
+stufe = 5
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_d"
+Item1 = "bolt_c"
+Item2 = "ridged_sabre_sword_t4"
+Head = "peaked_helmet_over_padded_cloth"
+Body = "leather_scale_armor"
+Gloves = "reinforced_leather_vambraces"
+Leg = "mail_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_d"
+Item1 = "bolt_c"
+Item2 = "khuzait_sword_4_t4"
+Head = "kettle_hat_over_mail_coif"
+Body = "red_coat_over_mail"
+Gloves = "reinforced_leather_vambraces"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "croatian_rider"
+name = { en = "Croatian Rider", de = "Kroatischer Reiter" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+benoetigt = "pferd"
+aufwerten = ["hussar"]
+pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_1_t3"
+Item1 = "khuzait_sword_2_t3"
+Item2 = "light_horsemans_kite_shield"
+Head = "fur_hat"
+Body = "padded_coat"
+Cape = "scarf"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_1_t3"
+Item1 = "khuzait_sword_2_t3"
+Item2 = "crossbow_e"
+Item3 = "bolt_a"
+Head = "fur_hat"
+Body = "leather_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "hussar"
+name = { en = "Croatian Hussar", de = "Kroatischer Husar" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+benoetigt = "pferd"
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "ridged_sabre_sword_t4"
+Item2 = "crossbow_e"
+Item3 = "bolt_b"
+Head = "spiked_helmet"
+Body = "stitched_leather_over_mail"
+Cape = "leopard_pelt"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "khuzait_sword_3_t3"
+Item2 = "light_horsemans_kite_shield"
+Head = "fur_hat"
+Body = "red_coat_over_mail"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"
+
+# ---------------------------------------------------------------- Adelsbaum
+
+[[truppe]]
+id = "junker"
+name = { en = "Croatian Squire", de = "Junker" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "reiter"
+basis = true
+gesicht = "fighter_vlandia_noble"
+aufwerten = ["noble_rider"]
+pferd = { Horse = "vlandia_horse", HorseHarness = "light_harness" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_sword_2_t3"
+Item1 = "western_spear_1_t2"
+Item2 = "horsemans_heater_shield"
+Head = "kettle_helmet_with_leather"
+Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "khuzait_sword_2_t3"
+Item1 = "western_spear_1_t2"
+Item2 = "horsemans_heater_shield"
+Head = "fur_hat"
+Body = "aketon"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "noble_rider"
+name = { en = "Noble Rider", de = "Adeliger Reiter" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_vlandia_noble"
+aufwerten = ["cuirassier"]
+pferd = { Horse = "t2_vlandia_horse", HorseHarness = "stripped_leather_harness" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_1_t3"
+Item1 = "vlandia_sword_3_t4"
+Item2 = "horsemans_heater_shield"
+Head = "cervelliere_over_arming_coif"
+Body = "mail_shirt"
+Gloves = "padded_mitten"
+Leg = "leather_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_1_t3"
+Item1 = "khuzait_sword_3_t3"
+Item2 = "crossbow_e"
+Item3 = "bolt_a"
+Head = "kettle_helmet_over_mail"
+Body = "banded_leather_over_mail"
+Gloves = "padded_mitten"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "cuirassier"
+name = { en = "Cuirassier", de = "Kürassier" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_vlandia_noble"
+aufwerten = ["veteran_cuirassier"]
+pferd = { Horse = "t3_vlandia_horse", HorseHarness = "halfchain_barding" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_2_t4"
+Item1 = "vlandia_sword_4_t4"
+Item2 = "crossbow_e"
+Item3 = "bolt_b"
+Head = "visored_helmet_over_mail_coif"
+Body = "coat_of_plates_over_mail"
+Gloves = "mail_mitten"
+Leg = "mail_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_2_t4"
+Item1 = "vlandia_sword_4_t4"
+Item2 = "heavy_heater_shield"
+Head = "peaked_helmet_over_mail_coif"
+Body = "coat_of_plates_over_mail"
+Gloves = "mail_mitten"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "veteran_cuirassier"
+name = { en = "Veteran Cuirassier", de = "Kürassier-Veteran" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_vlandia_noble"
+pferd = { Horse = "t3_vlandia_horse", HorseHarness = "chain_barding" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_2_t4"
+Item1 = "vlandia_sword_4_t4"
+Item2 = "crossbow_e"
+Item3 = "bolt_c"
+Head = "full_helm_over_mail_coif"
+Body = "white_coat_over_mail"
+Gloves = "lordly_mail_mitten"
+Leg = "plated_strip_boots"
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_2_t4"
+Item1 = "vlandia_mace_2_t4"
+Item2 = "heavy_heater_shield"
+Head = "visored_helmet_over_mail_coif"
+Body = "sturgian_fortified_armor"
+Gloves = "lordly_mail_mitten"
+Leg = "plated_strip_boots"
+
+# ---------------------------------------------------------------- Grenzmiliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Border Militia Spearman", de = "Grenzmiliz-Speerträger" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_2_t2"
+Item1 = "flat_heater_shield"
+Item2 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Border Militia Shooter", de = "Grenzmiliz-Schütze" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_i"
+Item1 = "bolt_a"
+Item2 = "falchion_sword_t2"
+Head = "leather_cap"
+Body = "long_woolen_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Border Militia Spearman", de = "Grenzmiliz-Veteran mit Speer" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_3_t3"
+Item1 = "bracketed_heater_shield"
+Item2 = "khuzait_sword_1_t2"
+Head = "kettle_helmet_with_leather"
+Body = "padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Border Militia Shooter", de = "Grenzmiliz-Veteran mit Arkebuse" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_b"
+Item2 = "khuzait_sword_1_t2"
+Head = "fur_hat"
+Body = "leather_coat"
+Leg = "leather_boots"

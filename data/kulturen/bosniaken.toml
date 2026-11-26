@@ -1,0 +1,414 @@
+# Bosniaken (Osmanisches Reich). Ersetzt die Calradia-Kultur Aserai.
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "bosniaken"
+kultur_id = "aserai"
+art = "anpassen"
+praefix = "bs"
+namensliste = "bosniaken"
+farben = ["0xff1E6B3A", "0xffE3B04B"]
+# Bosniaken sind Südslawen: Gesichter der Imperialen statt der Aserai
+gesicht = "fighter_empire"
+zivil = ["empire_troop_civilian_template_t1", "empire_troop_civilian_template_t2", "empire_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "timarli_sipahi"
+
+[name]
+en = "Bosniaks"
+de = "Bosniaken"
+
+[text]
+en = """
+The Eyalet of Bosnia is the Ottoman bulwark on the Habsburg and Venetian frontier. \
+Its captaincies, the kapetanije, guard the river crossings and mountain passes, manned by azaps and musketeers \
+who know every ford. The sipahis hold their timars in return for service on horseback, and the reckless deli \
+horsemen ride ahead of every raid.
+"""
+de = """
+Das Eyalet Bosnien ist das osmanische Bollwerk an der Grenze zu den Habsburgern und zu Venedig. \
+Seine Kapetanije bewachen Flussübergänge und Gebirgspässe, besetzt mit Azapen und Musketieren, die jede Furt kennen. \
+Die Sipahi halten ihre Timare gegen Dienst zu Pferd, und die verwegenen Deli reiten jedem Streifzug voraus.
+"""
+
+[miliz]
+nahkampf = "militia_spearman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_shooter"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+[[lord_partei]]
+truppe = "azap"
+min = 3
+max = 6
+[[lord_partei]]
+truppe = "tufekci"
+min = 2
+max = 4
+[[lord_partei]]
+truppe = "kapetanije_marksman"
+min = 0
+max = 2
+[[lord_partei]]
+truppe = "deli"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "veteran_deli"
+min = 0
+max = 1
+[[lord_partei]]
+truppe = "sipahi"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "zaim"
+min = 0
+max = 1
+
+# ---------------------------------------------------------------- normaler Baum
+
+[[truppe]]
+id = "peasant"
+name = { en = "Bosnian Peasant", de = "Bosnischer Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["azap"]
+[[truppe.ausruestung]]
+Item0 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "hemp_tunic"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_pitchfork_2_t1"
+Head = "turban"
+Body = "tied_cloth_tunic"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_sickle_1_t1"
+Head = "fur_hat"
+Body = "peasant_costume"
+Cape = "scarf"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "azap"
+name = { en = "Azap", de = "Azap" }
+stufe = 2
+gruppe = "Infantry"
+profil = "bogen_infanterie"
+aufwerten = ["tufekci", "deli"]
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "hunting_bow"
+Item2 = "default_arrows"
+Item3 = "aserai_sword_1_t2"
+Head = "turban"
+Body = "desert_padded_cloth"
+Leg = "eastern_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "hunting_bow"
+Item2 = "default_arrows"
+Item3 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "short_padded_robe"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "tufekci"
+name = { en = "Tüfekçi", de = "Tüfekçi" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["kapetanije_marksman"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_b"
+Item2 = "aserai_sword_2_t2"
+Head = "woven_turban"
+Body = "long_padded_robe"
+Leg = "eastern_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_b"
+Item2 = "aserai_sword_2_t2"
+Head = "fur_hat"
+Body = "layered_robe"
+Cape = "wrapped_scarf"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "kapetanije_marksman"
+name = { en = "Kapetanije Marksman", de = "Kapetanije-Schütze" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["kapetanije_veteran"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_c"
+Item1 = "bolt_c"
+Item2 = "aserai_sword_3_t3"
+Head = "pointed_skullcap_over_cloth_headwrap"
+Body = "studded_leather_coat"
+Gloves = "studded_leather_vambraces"
+Leg = "steppe_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_c"
+Item1 = "bolt_c"
+Item2 = "aserai_sword_3_t3"
+Head = "woven_turban"
+Body = "leather_strips_over_padded_robe"
+Gloves = "studded_leather_vambraces"
+Leg = "steppe_leather_boots"
+
+[[truppe]]
+id = "kapetanije_veteran"
+name = { en = "Kapetanije Veteran", de = "Kapetanije-Veteran" }
+stufe = 5
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_d"
+Item1 = "bolt_c"
+Item2 = "aserai_sword_4_t4"
+Head = "pointed_skullcap_over_mail"
+Body = "aserai_scale_armor_on_cloth"
+Gloves = "eastern_plated_leather_vambraces"
+Leg = "khuzait_curved_boots"
+[[truppe.ausruestung]]
+Item0 = "crossbow_d"
+Item1 = "bolt_c"
+Item2 = "desert_long_sword_t4"
+Head = "pointed_skullcap_with_mail"
+Body = "ringed_desert_armor"
+Gloves = "eastern_plated_leather_vambraces"
+Leg = "khuzait_curved_boots"
+
+[[truppe]]
+id = "deli"
+name = { en = "Deli", de = "Deli" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+benoetigt = "pferd"
+aufwerten = ["veteran_deli"]
+pferd = { Horse = "aserai_horse", HorseHarness = "aseran_village_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_1_t3"
+Item1 = "aserai_sword_2_t2"
+Item2 = "adarga"
+Head = "fur_hat"
+Body = "desert_padded_cloth"
+Cape = "leopard_pelt"
+Leg = "khuzait_curved_boots"
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_1_t3"
+Item1 = "aserai_mace_2_t2"
+Item2 = "adarga"
+Item3 = "eastern_javelin_1_t2"
+Head = "fur_hood"
+Body = "short_padded_robe"
+Cape = "leopard_pelt"
+Leg = "khuzait_curved_boots"
+
+[[truppe]]
+id = "veteran_deli"
+name = { en = "Veteran Deli", de = "Deli-Veteran" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+benoetigt = "pferd"
+pferd = { Horse = "t2_aserai_horse", HorseHarness = "desert_cloth_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "aserai_sword_4_t4"
+Item2 = "bound_adarga"
+Item3 = "eastern_javelin_2_t3"
+Head = "fur_hat"
+Body = "ringed_desert_armor"
+Cape = "leopard_pelt"
+Gloves = "rough_tied_bracers"
+Leg = "khuzait_curved_boots"
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "aserai_mace_3_t3"
+Item2 = "bound_adarga"
+Head = "peaked_fur_hood"
+Body = "aserai_horseman_armor"
+Cape = "leopard_pelt"
+Gloves = "rough_tied_bracers"
+Leg = "khuzait_curved_boots"
+
+# ---------------------------------------------------------------- Adelsbaum (Sipahi)
+
+[[truppe]]
+id = "timarli_sipahi"
+name = { en = "Timarli Sipahi", de = "Timarli-Sipahi" }
+stufe = 2
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+basis = true
+gesicht = "fighter_empire_tall"
+aufwerten = ["sipahi"]
+pferd = { Horse = "aserai_horse", HorseHarness = "aseran_village_harness" }
+[[truppe.ausruestung]]
+Item0 = "aserai_sword_2_t2"
+Item1 = "composite_bow"
+Item2 = "default_arrows"
+Item3 = "eastern_spear_1_t2"
+Head = "desert_cap"
+Body = "desert_padded_cloth"
+Leg = "eastern_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "aserai_mace_2_t2"
+Item1 = "composite_bow"
+Item2 = "default_arrows"
+Item3 = "eastern_spear_1_t2"
+Head = "turban"
+Body = "long_padded_robe"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "sipahi"
+name = { en = "Sipahi", de = "Sipahi" }
+stufe = 3
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+benoetigt = "kriegspferd"
+gesicht = "fighter_empire_tall"
+aufwerten = ["zaim"]
+pferd = { Horse = "t2_aserai_horse", HorseHarness = "desert_cloth_harness" }
+[[truppe.ausruestung]]
+Item0 = "aserai_sword_3_t3"
+Item1 = "composite_steppe_bow"
+Item2 = "default_arrows"
+Item3 = "eastern_spear_3_t3"
+Head = "pointed_skullcap_with_mail"
+Body = "aserai_scale_armor_on_cloth"
+Gloves = "buttoned_leather_bracers"
+Leg = "steppe_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "aserai_sword_3_t3"
+Item1 = "composite_steppe_bow"
+Item2 = "piercing_arrows"
+Item3 = "desert_oval_shield"
+Head = "pointed_skullcap_over_laced_coif"
+Body = "aserai_horseman_armor"
+Gloves = "buttoned_leather_bracers"
+Leg = "steppe_leather_boots"
+
+[[truppe]]
+id = "zaim"
+name = { en = "Zaim", de = "Zaim" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_empire_tall"
+aufwerten = ["veteran_zaim"]
+pferd = { Horse = "t3_aserai_horse", HorseHarness = "chain_horse_harness" }
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_4_t4"
+Item1 = "aserai_sword_4_t4"
+Item2 = "bound_desert_round_shield"
+Head = "pointed_skullcap_over_mail"
+Body = "aserai_chain_plate_armor_a"
+Gloves = "mail_mitten_e"
+Leg = "mail_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_4_t4"
+Item1 = "aserai_mace_5_t4"
+Item2 = "bound_desert_round_shield"
+Head = "brass_aserai_helmet_b_open"
+Body = "aserai_chain_plate_armor_b"
+Gloves = "mail_mitten_e"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "veteran_zaim"
+name = { en = "Veteran Zaim", de = "Zaim-Veteran" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "t3_aserai_horse", HorseHarness = "half_mail_and_plate_barding" }
+[[truppe.ausruestung]]
+Item0 = "aserai_lance_1_t5"
+Item1 = "aserai_sword_4_t4"
+Item2 = "studded_adarga"
+Head = "brass_aserai_helmet_b_closed"
+Body = "aserai_full_scale_armor_on_chain"
+Gloves = "mail_mitten_f"
+Leg = "plated_strip_boots"
+[[truppe.ausruestung]]
+Item0 = "aserai_lance_1_t5"
+Item1 = "aserai_mace_5_t4"
+Item2 = "studded_adarga"
+Head = "closed_desert_helmet_with_mail"
+Body = "aserai_chain_plate_armor_d"
+Gloves = "mail_mitten_f"
+Leg = "plated_strip_boots"
+
+# ---------------------------------------------------------------- Miliz der Kapetanije
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Kapetanije Militia Spearman", de = "Kapetanije-Miliz mit Speer" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "eastern_wicker_shield"
+Item2 = "peasant_hatchet_1_t1"
+Head = "turban"
+Body = "short_padded_robe"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Kapetanije Militia Shooter", de = "Kapetanije-Miliz mit Flinte" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_i"
+Item1 = "bolt_a"
+Item2 = "aserai_sword_1_t2"
+Head = "fur_hat"
+Body = "desert_padded_cloth"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Kapetanije Militia Spearman", de = "Kapetanije-Miliz-Veteran mit Speer" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_2_t3"
+Item1 = "stronger_eastern_wicker_shield"
+Item2 = "aserai_sword_2_t2"
+Head = "pointed_skullcap_over_cloth_headwrap"
+Body = "long_padded_robe"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Kapetanije Militia Shooter", de = "Kapetanije-Miliz-Veteran mit Flinte" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_b"
+Item2 = "aserai_sword_2_t2"
+Head = "woven_turban"
+Body = "layered_robe"
+Leg = "eastern_leather_boots"

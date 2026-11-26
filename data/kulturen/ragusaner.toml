@@ -1,0 +1,272 @@
+# Ragusaner (Republik Ragusa). Neue Kultur, kopiert alle übrigen Werte vom Imperium.
+# Ragusa hat kaum ein eigenes Heer: Stadtwache, Hellebardiere, Arkebusiere und eine Garde des Rektors.
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "ragusaner"
+kultur_id = "ragusa"
+art = "neu"
+vorlage = "empire"
+praefix = "ra"
+namensliste = "ragusaner"
+farben = ["0xffF2EFE6", "0xff1F3E8C"]
+gesicht = "fighter_empire"
+zivil = ["empire_troop_civilian_template_t1", "empire_troop_civilian_template_t2", "empire_troop_civilian_template_t3"]
+basis_truppe = "recruit"
+elite_truppe = "patrician"
+
+[name]
+en = "Ragusans"
+de = "Ragusaner"
+
+[text]
+en = """
+The Republic of Ragusa keeps its freedom with gold rather than steel. Its merchant fleet trades from the Levant \
+to Spain, and every year its envoys carry tribute to the Sultan. Behind the great walls of the city a small guard \
+of halberdiers and arquebusiers serves the Rector, who changes every month so that no man may rule alone.
+"""
+de = """
+Die Republik Ragusa wahrt ihre Freiheit eher mit Gold als mit Stahl. Ihre Handelsflotte fährt von der Levante \
+bis Spanien, und jedes Jahr bringen ihre Gesandten dem Sultan den Tribut. Hinter den großen Mauern der Stadt dient \
+eine kleine Wache aus Hellebardieren und Arkebusieren dem Rektor, der jeden Monat wechselt, damit keiner allein herrscht.
+"""
+
+[miliz]
+nahkampf = "militia_halberdier"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_halberdier"
+fernkampf_elite = "militia_veteran_shooter"
+
+[[lord_partei]]
+truppe = "recruit"
+min = 4
+max = 8
+[[lord_partei]]
+truppe = "city_guard"
+min = 3
+max = 6
+[[lord_partei]]
+truppe = "halberdier"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "arquebusier"
+min = 2
+max = 4
+[[lord_partei]]
+truppe = "patrician_rider"
+min = 1
+max = 2
+
+# ---------------------------------------------------------------- normaler Baum
+
+[[truppe]]
+id = "recruit"
+name = { en = "Ragusan Recruit", de = "Ragusanischer Rekrut" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["city_guard"]
+[[truppe.ausruestung]]
+Item0 = "peasant_hammer_1_t1"
+Head = "imperial_cloth_coif"
+Body = "tunic_with_rolled_cloth"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_polearm_1_t1"
+Body = "hemp_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "city_guard"
+name = { en = "City Guard", de = "Stadtwache" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+aufwerten = ["halberdier", "arquebusier"]
+[[truppe.ausruestung]]
+Item0 = "western_spear_2_t2"
+Item1 = "old_kite_shield"
+Item2 = "empire_sword_1_t2"
+Head = "imperial_padded_coif"
+Body = "imperial_padded_cloth"
+Leg = "leather_shoes"
+[[truppe.ausruestung]]
+Item0 = "imperial_spear_t2"
+Item1 = "old_kite_shield"
+Item2 = "empire_mace_1_t2"
+Head = "roundkettle_over_imperial_cloth"
+Body = "footmans_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "halberdier"
+name = { en = "Halberdier", de = "Hellebardier" }
+stufe = 3
+gruppe = "Infantry"
+profil = "pike"
+aufwerten = ["veteran_halberdier"]
+[[truppe.ausruestung]]
+Item0 = "empire_polearm_1_t4"
+Item1 = "empire_sword_2_t3"
+Head = "roundkettle_over_imperial_leather"
+Body = "imperial_mail_vest"
+Gloves = "padded_mitten"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_halberdier"
+name = { en = "Veteran Halberdier", de = "Hellebardier-Veteran" }
+stufe = 4
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "vlandia_polearm_1_t5"
+Item1 = "empire_sword_3_t3"
+Head = "roundkettle_over_imperial_mail"
+Body = "imperial_mail_over_leather"
+Gloves = "reinforced_padded_mitten"
+Leg = "folded_town_boots"
+
+[[truppe]]
+id = "arquebusier"
+name = { en = "Ragusan Arquebusier", de = "Ragusanischer Arkebusier" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["veteran_arquebusier"]
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_d"
+Item2 = "empire_sword_2_t3"
+Head = "leatherlame_roundkettle"
+Body = "woven_leather_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_arquebusier"
+name = { en = "Veteran Arquebusier", de = "Arkebusier-Veteran" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_c"
+Item1 = "bolt_e"
+Item2 = "empire_sword_3_t3"
+Head = "roundkettle_over_imperial_leather"
+Body = "imperial_mail_over_leather"
+Gloves = "woven_leather_bracers"
+Leg = "folded_town_boots"
+
+# ---------------------------------------------------------------- Adelsbaum
+
+[[truppe]]
+id = "patrician"
+name = { en = "Ragusan Patrician", de = "Ragusanischer Patrizier" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "reiter"
+basis = true
+gesicht = "fighter_empire_tall"
+aufwerten = ["patrician_rider"]
+pferd = { Horse = "empire_horse", HorseHarness = "light_harness" }
+[[truppe.ausruestung]]
+Item0 = "narrow_sword_t3"
+Item1 = "western_spear_2_t2"
+Item2 = "battered_horsemans_kite_shield"
+Head = "merchants_hat"
+Body = "woven_leather_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "patrician_rider"
+name = { en = "Patrician Rider", de = "Patrizier-Reiter" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_empire_tall"
+aufwerten = ["rectors_guard"]
+pferd = { Horse = "t2_empire_horse", HorseHarness = "stripped_leather_harness" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_3_t3"
+Item2 = "heavy_horsemans_kite_shield"
+Head = "heavy_nasalhelm_over_imperial_padding"
+Body = "imperial_mail_over_leather"
+Gloves = "lordly_padded_mitten"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "rectors_guard"
+name = { en = "Rector's Guard", de = "Rektorengarde" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "t3_empire_horse", HorseHarness = "half_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_5_t4"
+Item2 = "fortified_kite_shield"
+Head = "ironlame_feathered_spangenhelm_over_mail"
+Body = "imperial_scale_armor"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "lamellar_plate_boots"
+
+# ---------------------------------------------------------------- Stadtmiliz
+
+[[truppe]]
+id = "militia_halberdier"
+name = { en = "Ragusan Militia Halberdier", de = "Ragusanischer Milizhellebardier" }
+stufe = 2
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "western_spear_3_t3"
+Item1 = "empire_sword_1_t2"
+Head = "imperial_padded_coif"
+Body = "imperial_padded_cloth"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Ragusan Militia Arquebusier", de = "Ragusanischer Milizarkebusier" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_i"
+Item1 = "bolt_a"
+Item2 = "simple_back_sword_t2"
+Head = "imperial_cloth_coif"
+Body = "footmans_tunic"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "militia_veteran_halberdier"
+name = { en = "Veteran Ragusan Militia Halberdier", de = "Ragusanischer Milizhellebardier-Veteran" }
+stufe = 3
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "empire_polearm_1_t4"
+Item1 = "empire_sword_2_t3"
+Head = "roundkettle_over_imperial_cloth"
+Body = "woven_leather_coat"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Ragusan Militia Arquebusier", de = "Ragusanischer Milizarkebusier-Veteran" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "crossbow_b"
+Item1 = "bolt_d"
+Item2 = "empire_sword_1_t2"
+Head = "leatherlame_roundkettle"
+Body = "imperial_padded_cloth"
+Leg = "leather_shoes"

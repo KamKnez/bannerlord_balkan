@@ -9,8 +9,9 @@ mit Habsburgern, Osmanen, Venedig und Ragusa. Danach wird die Karte in Runden er
 
 ## Stand
 
-Phase 0: Grundgerüst. Die Mod lädt und zeigt im Hauptmenü die Meldung „Balkan-Mod geladen.“ (Englisch: „Balkan mod loaded.“).
-Inhalte kommen ab Phase 2.
+Phase 2 läuft. Im Spiel sind die ersten vier Kulturen mit eigenen Truppenbäumen:
+Kroaten (statt Vlandia), Bosniaken (statt Aserai) sowie Venezianer und Ragusaner als neue Kulturen.
+Königreiche, Clans, Lords und Siedlungen folgen in den nächsten Schritten (siehe [docs/design.md](docs/design.md)).
 
 ## Installieren und testen
 
@@ -37,8 +38,8 @@ wird der Modulordner nach dem Bauen direkt ins Spiel kopiert.
 |---|---|
 | `Module/BalkanMod/` | Der Modulordner, wie er im Spiel liegt: `SubModule.xml`, `ModuleData/` (XML-Daten, Sprachen) |
 | `src/BalkanMod/` | C#-Code der Mod |
-| `data/` | Rohdaten wie Namenslisten, aus denen die XML-Dateien entstehen |
-| `tools/` | Prüfskripte (z. B. `validate_xml.py`) |
+| `data/` | Rohdaten, aus denen die XML-Dateien entstehen: Namenslisten, Kulturen und Truppen ([data/kulturen/](data/kulturen/README.md)) |
+| `tools/` | Generator `gen_content.py` und Prüfskripte |
 | `docs/` | Recherche und Design-Dokumente (ab Phase 1) |
 
 ## Automatische Prüfung
@@ -47,6 +48,8 @@ Bei jedem Push und Pull Request laufen:
 
 - `python3 tools/validate_xml.py`: alle XML-Dateien wohlgeformt, `SubModule.xml` vollständig, Sprachdateien vorhanden.
 - `python3 tools/validate_names.py`: Namenslisten unter `data/namen/` vollständig und ohne Dopplungen.
+- `python3 tools/gen_content.py --check`: die erzeugten Spieldaten passen zu `data/kulturen/`.
+- `python3 tools/validate_refs.py`: alle Verweise auf Gegenstände, Gesichter und Truppen gibt es im Spiel (v1.5.7), und jeder Text hat eine deutsche Übersetzung.
 - `dotnet build`: der C#-Code baut gegen die Referenz-DLLs des Spiels.
 
 ## Sprachen

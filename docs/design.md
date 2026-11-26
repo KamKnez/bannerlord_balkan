@@ -170,4 +170,14 @@ Fertig ist v0.1, wenn:
 
 - **Name der Mod (entschieden):** „Balkan 1700“.
 - **Übrige Calradia-Reiche (entschieden):** Sturgia, Khuzait, Battania und das Nördliche Imperium bleiben in v0.1 unverändert.
+- **Kulturen im Spiel (umgesetzt):** Kroaten ändern die Calradia-Kultur Vlandia, Bosniaken die Aserai, jeweils per
+  XSLT-Patch (nur Name, Text, Farben, Namen, Truppen, Party-Vorlagen; alles andere bleibt). Venezianer (`venice`) und
+  Ragusaner (`ragusa`) sind neue Kulturen, kopiert vom Imperium, damit das Nördliche Imperium unverändert bleibt.
+  Die neuen Kulturen sind vorerst keine Hauptkulturen (`is_main_culture="false"`), damit die Charaktererstellung
+  nicht bricht. Ob Städte mit diesen Kulturen sauber laufen, prüft der erste Spieltest nach dem PR für Königreiche und Clans.
+- **Truppenbäume (umgesetzt):** wie in Abschnitt 4, ergänzt um eine fünfte Stufe für die Hauptlinie
+  (Harambaša, Kapetanije-Veteran, Sergente) und den Adel (Kürassier-Veteran, Zaim-Veteran, Corazza-Veterano),
+  dazu eine eigene Miliz pro Kultur. Die Daten liegen in `data/kulturen/`.
+- **Noch offen bei den Truppen:** Deutsche, Ungarn, Türken (Janitscharen), Serben (Grenzer, Martolosen) und Morlaken
+  kommen als zusätzliche Truppen in die Party-Vorlagen der Lords, sobald die Königreiche stehen.
 - **Offen:** Wer war um 1700 Beylerbey von Bosnien und wer Provveditore generale in Dalmatien? Das wird in der Recherche weiter geprüft.
