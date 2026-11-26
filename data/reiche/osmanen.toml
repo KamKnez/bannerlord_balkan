@@ -319,7 +319,7 @@ castle_village_A3_2 = "Petrovac"            # Deir Hawa
 castle_village_A4_1 = "Varcar Vakuf"        # Medeni
 castle_village_A4_2 = "Šipovo"              # Qidnar
 castle_village_A5_1 = "Čapljina"            # Jamayeh
-castle_village_A5_2 = "Gabela"              # Hunab
+castle_village_A5_2 = "Ljubuški"            # Hunab  (Gabela war 1694 bis 1715 venezianisch)
 castle_village_A6_1 = "Brčko"               # Shibal Zumr
 castle_village_A6_2 = "Gradačac"            # Lamesa
 castle_village_A7_1 = "Maglaj"              # Uqba
@@ -371,7 +371,7 @@ town_A4 = { en = "Tuzla takes its name from the salt springs that have made it r
 town_A5 = { en = "Novi Pazar, the 'new market' founded by Isa-beg, is a trading town of the Sanjak on the high road towards Istanbul.", de = "Novi Pazar, der von Isa-beg gegründete „neue Markt“, ist eine Handelsstadt im Sandžak an der Hauptstraße nach Istanbul." }
 town_A6 = { en = "Banja Luka grew around the Ferhadija mosque of Ferhad Pasha. It guards the Vrbas valley and the northern border of the province.", de = "Banja Luka wuchs rund um die Ferhadija-Moschee Ferhad Paschas. Es bewacht das Tal des Vrbas und die Nordgrenze der Provinz." }
 town_A7 = { en = "Mostar is the heart of Herzegovina. Its stone bridge, built in 1566, spans the green Neretva in a single bold arch.", de = "Mostar ist das Herz der Herzegowina. Seine 1566 erbaute Steinbrücke überspannt die grüne Neretva in einem einzigen kühnen Bogen." }
-town_A8 = { en = "Travnik in the Lašva valley has been the seat of the vizier of Bosnia since Sarajevo burned. Consuls, couriers and petitioners crowd its streets.", de = "Travnik im Tal der Lašva ist seit dem Brand von Sarajevo Sitz des Wesirs von Bosnien. Konsuln, Kuriere und Bittsteller füllen seine Gassen." }
+town_A8 = { en = "Travnik in the Lašva valley has been the seat of the vizier of Bosnia since Sarajevo burned. Couriers, merchants and petitioners crowd its streets.", de = "Travnik im Tal der Lašva ist seit dem Brand von Sarajevo Sitz des Wesirs von Bosnien. Kuriere, Kaufleute und Bittsteller füllen seine Gassen." }
 castle_A1 = { en = "Bihać is the northwestern bulwark of the empire, taken in 1592. In 1697 it threw back a Habsburg siege, and its captains watch Croatia day and night.", de = "Bihać ist das nordwestliche Bollwerk des Reichs, 1592 erobert. 1697 schlug es eine habsburgische Belagerung ab, und seine Kapetane beobachten Kroatien Tag und Nacht." }
 castle_A2 = { en = "Above Stolac rises the fortress of Vidoški, guarding the roads of eastern Herzegovina.", de = "Über Stolac erhebt sich die Festung Vidoški und bewacht die Straßen der östlichen Herzegowina." }
 castle_A3 = { en = "Ključ on the Sana is where the last Bosnian king surrendered in 1463. Today it is a captaincy on the road to the frontier.", de = "In Ključ an der Sana ergab sich 1463 der letzte bosnische König. Heute ist es eine Kapetanija an der Straße zur Grenze." }
@@ -391,3 +391,26 @@ de = "{DORF} liegt im Land von {SITZ}. Muslimische und christliche Familien lebe
 [[dorftext]]
 en = "{DORF} belongs to the district of {SITZ}. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market."
 de = "{DORF} gehört zum Bezirk von {SITZ}. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt."
+
+[dorftyp]
+# Erzeugnis der Dörfer statt Datteln, Oliven im Binnenland und Wüstenpferden (VillageType des Spiels)
+castle_village_A1_2 = "sheep_farm"          # Ostrožac
+castle_village_A2_2 = "wheat_farm"          # Berkovići
+castle_village_A3_1 = "europe_horse_ranch"  # Sanski Most
+castle_village_A4_1 = "wheat_farm"          # Varcar Vakuf
+castle_village_A4_2 = "wheat_farm"          # Šipovo
+castle_village_A5_2 = "europe_horse_ranch"  # Ljubuški
+castle_village_A6_2 = "europe_horse_ranch"  # Gradačac
+castle_village_A7_1 = "wheat_farm"          # Maglaj
+castle_village_A7_2 = "wheat_farm"          # Tešanj
+castle_village_A8_2 = "wheat_farm"          # Kozluk
+castle_village_A9_1 = "europe_horse_ranch"  # Duvno
+castle_village_A9_2 = "europe_horse_ranch"  # Glamoč
+village_A1_2 = "cattle_farm"                # Vogošća
+village_A1_4 = "wheat_farm"                 # Hadžići
+village_A2_2 = "wheat_farm"                 # Grocka
+village_A2_3 = "europe_horse_ranch"         # Smederevo
+village_A4_2 = "wheat_farm"                 # Živinice
+village_A5_1 = "europe_horse_ranch"         # Sjenica
+village_A5_2 = "europe_horse_ranch"         # Tutin
+village_A7_2 = "europe_horse_ranch"         # Blagaj
