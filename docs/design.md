@@ -166,6 +166,10 @@ Nur Atmosphäre, Ereignisse und kleine Effekte, keine offene Magie.
 | Kräuterfrauen | Heilen Verwundete schneller, gegen Bezahlung |
 | Talismane | Kleine Boni für die Partei (Moral, Heilung), nicht stapelbar |
 
+## 8a. Szenarien
+
+Eigene Kampagnen-Szenarien, Spielerstarts und Modifikatoren für die Sandbox sind in [szenarien.md](szenarien.md) gesammelt. In v0.1 kommt nur das Standard-Szenario „Nach Karlowitz“.
+
 ## 9. Umfang der ersten Version (v0.1)
 
 Fertig ist v0.1, wenn:
