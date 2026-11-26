@@ -1,0 +1,240 @@
+# Deutsche (Habsburgermonarchie). Neue Kultur, kopiert alle übrigen Werte von Vlandia.
+# Deutsche Kolonisten und Söldner: Pikeniere, Doppelsöldner, Musketiere und Kürassiere.
+# Rekrutierbar in Dörfern mit dieser Kultur (siehe [dorfkultur] in data/reiche/).
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "deutsche"
+kultur_id = "germans"
+art = "neu"
+vorlage = "vlandia"
+praefix = "de"
+namensliste = "deutsche"
+farben = ["0xff1A1A1A", "0xffE8C547"]
+gesicht = "fighter_vlandia"
+zivil = ["vlandia_troop_civilian_template_t1", "vlandia_troop_civilian_template_t2", "vlandia_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "squire"
+
+[name]
+en = "Germans"
+de = "Deutsche"
+
+[text]
+en = """
+German settlers came to the frontier lands of Styria, Carniola and the reconquered plains as farmers, craftsmen \
+and soldiers. The imperial regiments recruit their pikemen and musketeers among them, and the heavy cuirassiers \
+of the Emperor are drawn from their nobility.
+"""
+de = """
+Deutsche Siedler kamen als Bauern, Handwerker und Soldaten in die Grenzländer der Steiermark, Krains und der \
+zurückeroberten Ebenen. Die kaiserlichen Regimenter werben unter ihnen Pikeniere und Musketiere, und aus ihrem \
+Adel stammen die schweren Kürassiere des Kaisers.
+"""
+
+[miliz]
+nahkampf = "recruit"
+fernkampf = "musketeer"
+nahkampf_elite = "pikeman"
+fernkampf_elite = "veteran_musketeer"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+
+[[lord_partei]]
+truppe = "recruit"
+min = 3
+max = 6
+
+[[lord_partei]]
+truppe = "pikeman"
+min = 2
+max = 4
+
+[[lord_partei]]
+truppe = "musketeer"
+min = 2
+max = 4
+
+[[lord_partei]]
+truppe = "cuirassier"
+min = 0
+max = 2
+
+# ---------------------------------------------------------------- Truppen
+
+[[truppe]]
+id = "peasant"
+name = { en = "German Peasant", de = "Deutscher Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["recruit"]
+[[truppe.ausruestung]]
+Item0 = "peasant_pitchfork_1_t1"
+Head = "padded_cap"
+Body = "long_woolen_tunic"
+Leg = "leather_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_hatchet_1_t1"
+Head = "leather_cap"
+Body = "sackcloth_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "recruit"
+name = { en = "German Recruit", de = "Deutscher Rekrut" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+aufwerten = ["pikeman", "musketeer"]
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "falchion_sword_t2"
+Head = "arming_cap"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "vlandia_mace_1_t2"
+Head = "leather_cap"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "pikeman"
+name = { en = "German Pikeman", de = "Deutscher Pikenier" }
+stufe = 3
+gruppe = "Infantry"
+profil = "pike"
+aufwerten = ["doppelsoeldner"]
+[[truppe.ausruestung]]
+Item0 = "simple_pike_t2"
+Item1 = "vlandia_sword_2_t3"
+Head = "kettle_helmet_over_padded_cap"
+Body = "padded_coat"
+Gloves = "woven_leather_bracers"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "simple_pike_t2"
+Item1 = "vlandia_axe_1_t3"
+Head = "kettle_hat_over_padded_coif"
+Body = "padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "doppelsoeldner"
+name = { en = "Doppelsöldner", de = "Doppelsöldner" }
+stufe = 4
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "vlandia_polearm_1_t5"
+Item1 = "vlandia_sword_3_t4"
+Head = "kettle_helmet_over_mail"
+Body = "coat_of_plates_over_mail"
+Gloves = "plated_strip_gauntlets"
+Leg = "mail_chausses"
+[[truppe.ausruestung]]
+Item0 = "fine_pike_t4"
+Item1 = "vlandia_sword_4_t4"
+Head = "guards_kettle_over_mail_coif"
+Body = "coat_of_plates_over_mail"
+Gloves = "plated_strip_gauntlets"
+Leg = "strapped_mail_chausses"
+
+[[truppe]]
+id = "musketeer"
+name = { en = "German Musketeer", de = "Deutscher Musketier" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["veteran_musketeer"]
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "vlandia_sword_2_t3"
+Head = "kettle_hat_over_padded_cloth"
+Body = "padded_coat"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "vlandia_axe_1_t3"
+Head = "arming_cap"
+Body = "padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_musketeer"
+name = { en = "German Veteran Musketeer", de = "Deutscher Veteran-Musketier" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_heavy_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "vlandia_sword_3_t4"
+Head = "kettle_helmet_over_padded_coif"
+Body = "studded_leather_coat"
+Gloves = "woven_leather_bracers"
+Leg = "strapped_leather_boots"
+
+[[truppe]]
+id = "squire"
+name = { en = "German Squire", de = "Deutscher Junker" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "reiter"
+basis = true
+gesicht = "fighter_vlandia_noble"
+aufwerten = ["cuirassier"]
+pferd = { Horse = "vlandia_horse", HorseHarness = "light_harness" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_sword_2_t3"
+Item1 = "western_spear_1_t2"
+Item2 = "horsemans_heater_shield"
+Head = "kettle_helmet_with_leather"
+Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "cuirassier"
+name = { en = "German Cuirassier", de = "Deutscher Kürassier" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_vlandia_noble"
+aufwerten = ["veteran_cuirassier"]
+pferd = { Horse = "t3_vlandia_horse", HorseHarness = "halfchain_barding" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_2_t4"
+Item1 = "vlandia_sword_4_t4"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "visored_helmet_over_mail_coif"
+Body = "coat_of_plates_over_mail"
+Gloves = "mail_mitten"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "veteran_cuirassier"
+name = { en = "Imperial Cuirassier", de = "Kaiserlicher Kürassier" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_vlandia_noble"
+pferd = { Horse = "t3_vlandia_horse", HorseHarness = "halfchain_barding" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_2_t4"
+Item1 = "vlandia_sword_4_t4"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "visored_helmet_over_mail_coif"
+Body = "coat_of_plates_over_mail"
+Gloves = "plated_strip_gauntlets"
+Leg = "mail_cavalier_boots"

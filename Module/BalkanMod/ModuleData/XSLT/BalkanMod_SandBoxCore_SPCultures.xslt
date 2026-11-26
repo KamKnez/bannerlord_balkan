@@ -10,7 +10,11 @@
 	<xsl:template match="/SPCultures">
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()" />
+			<xsl:apply-templates select="Culture[@id='vlandia']" mode="balkan_deutsche" />
 			<xsl:apply-templates select="Culture[@id='empire']" mode="balkan_ragusaner" />
+			<xsl:apply-templates select="Culture[@id='sturgia']" mode="balkan_serben" />
+			<xsl:apply-templates select="Culture[@id='aserai']" mode="balkan_tuerken" />
+			<xsl:apply-templates select="Culture[@id='vlandia']" mode="balkan_ungarn" />
 			<xsl:apply-templates select="Culture[@id='empire']" mode="balkan_venezianer" />
 		</xsl:copy>
 	</xsl:template>
@@ -88,6 +92,82 @@
 			<name name="{{=!}}Predojević" />
 			<name name="{{=!}}Filipović" />
 			<name name="{{=!}}Gradaščević" />
+		</clan_names>
+	</xsl:template>
+	<!-- Deutsche: neue Kultur 'germans' als Kopie von 'vlandia' (data/kulturen/deutsche.toml) -->
+	<xsl:template match="Culture" mode="balkan_deutsche">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="id">germans</xsl:attribute>
+			<xsl:attribute name="is_main_culture">false</xsl:attribute>
+			<xsl:attribute name="name">{=balkan_culture_deutsche}Germans</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_deutsche_text}German settlers came to the frontier lands of Styria, Carniola and the reconquered plains as farmers, craftsmen and soldiers. The imperial regiments recruit their pikemen and musketeers among them, and the heavy cuirassiers of the Emperor are drawn from their nobility.</xsl:attribute>
+			<xsl:attribute name="color">0xff1A1A1A</xsl:attribute>
+			<xsl:attribute name="color2">0xffE8C547</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_de_peasant</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_de_squire</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_de_recruit</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_de_musketeer</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_de_pikeman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_de_veteran_musketeer</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_deutsche</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_deutsche</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_deutsche" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_deutsche">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_deutsche" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_deutsche">
+		<male_names>
+			<name name="{{=!}}Johann" />
+			<name name="{{=!}}Georg" />
+			<name name="{{=!}}Joseph" />
+			<name name="{{=!}}Leopold" />
+			<name name="{{=!}}Ferdinand" />
+			<name name="{{=!}}Karl" />
+			<name name="{{=!}}Franz" />
+			<name name="{{=!}}Wolfgang" />
+			<name name="{{=!}}Sigmund" />
+			<name name="{{=!}}Christoph" />
+			<name name="{{=!}}Andreas" />
+			<name name="{{=!}}Heinrich" />
+			<name name="{{=!}}Jakob" />
+			<name name="{{=!}}Matthias" />
+			<name name="{{=!}}Ulrich" />
+			<name name="{{=!}}Ruprecht" />
+			<name name="{{=!}}Herbard" />
+			<name name="{{=!}}Siegfried" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_deutsche">
+		<female_names>
+			<name name="{{=!}}Anna" />
+			<name name="{{=!}}Maria" />
+			<name name="{{=!}}Katharina" />
+			<name name="{{=!}}Elisabeth" />
+			<name name="{{=!}}Barbara" />
+			<name name="{{=!}}Margaretha" />
+			<name name="{{=!}}Ursula" />
+			<name name="{{=!}}Regina" />
+			<name name="{{=!}}Sophia" />
+			<name name="{{=!}}Eleonora" />
+			<name name="{{=!}}Susanna" />
+			<name name="{{=!}}Juliana" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_deutsche">
+		<clan_names>
+			<name name="{{=!}}Herberstein" />
+			<name name="{{=!}}Auersperg" />
+			<name name="{{=!}}Lamberg" />
+			<name name="{{=!}}Khevenhüller" />
+			<name name="{{=!}}Paradeiser" />
+			<name name="{{=!}}Trauttmansdorff" />
+			<name name="{{=!}}Starhemberg" />
+			<name name="{{=!}}Breuner" />
+			<name name="{{=!}}Attems" />
+			<name name="{{=!}}Rauber" />
 		</clan_names>
 	</xsl:template>
 	<!-- Kroaten: Calradia-Kultur 'vlandia' anpassen (data/kulturen/kroaten.toml) -->
@@ -241,6 +321,226 @@
 			<name name="{{=!}}Menze" />
 			<name name="{{=!}}Zamagna" />
 			<name name="{{=!}}Ragnina" />
+		</clan_names>
+	</xsl:template>
+	<!-- Serben: neue Kultur 'serbs' als Kopie von 'sturgia' (data/kulturen/serben.toml) -->
+	<xsl:template match="Culture" mode="balkan_serben">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="id">serbs</xsl:attribute>
+			<xsl:attribute name="is_main_culture">false</xsl:attribute>
+			<xsl:attribute name="name">{=balkan_culture_serben}Serbs</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_serben_text}In 1690 tens of thousands of Serbs crossed the Sava and the Danube with their patriarch and settled on the Habsburg frontier, where they serve as border soldiers in return for land and freedom of faith. Others stayed under the Sultan or took service with Venice. Their hajduks and hussars are feared on every side of the border.</xsl:attribute>
+			<xsl:attribute name="color">0xff8E1B1B</xsl:attribute>
+			<xsl:attribute name="color2">0xff2F4F8F</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_sr_peasant</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_sr_plemic</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_sr_shooter</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_sr_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_sr_musketeer</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_sr_hajduk</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_serben</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_serben</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_serben" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_serben">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_serben" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_serben">
+		<male_names>
+			<name name="{{=!}}Stojan" />
+			<name name="{{=!}}Ilija" />
+			<name name="{{=!}}Jovan" />
+			<name name="{{=!}}Đorđe" />
+			<name name="{{=!}}Petar" />
+			<name name="{{=!}}Nikola" />
+			<name name="{{=!}}Vuk" />
+			<name name="{{=!}}Radoslav" />
+			<name name="{{=!}}Dragutin" />
+			<name name="{{=!}}Miloš" />
+			<name name="{{=!}}Stefan" />
+			<name name="{{=!}}Arsenije" />
+			<name name="{{=!}}Sava" />
+			<name name="{{=!}}Lazar" />
+			<name name="{{=!}}Marko" />
+			<name name="{{=!}}Vukašin" />
+			<name name="{{=!}}Novak" />
+			<name name="{{=!}}Radovan" />
+			<name name="{{=!}}Bogdan" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_serben">
+		<female_names>
+			<name name="{{=!}}Jelena" />
+			<name name="{{=!}}Milica" />
+			<name name="{{=!}}Ana" />
+			<name name="{{=!}}Mara" />
+			<name name="{{=!}}Jovana" />
+			<name name="{{=!}}Stana" />
+			<name name="{{=!}}Danica" />
+			<name name="{{=!}}Vukosava" />
+			<name name="{{=!}}Anđelija" />
+			<name name="{{=!}}Jela" />
+			<name name="{{=!}}Smiljana" />
+			<name name="{{=!}}Desanka" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_serben">
+		<clan_names>
+			<name name="{{=!}}Janković" />
+			<name name="{{=!}}Smiljanić" />
+			<name name="{{=!}}Mitrović" />
+			<name name="{{=!}}Desnica" />
+			<name name="{{=!}}Rajačić" />
+			<name name="{{=!}}Branković" />
+			<name name="{{=!}}Popović" />
+			<name name="{{=!}}Kosović" />
+			<name name="{{=!}}Vukmirović" />
+		</clan_names>
+	</xsl:template>
+	<!-- Türken: neue Kultur 'turks' als Kopie von 'aserai' (data/kulturen/tuerken.toml) -->
+	<xsl:template match="Culture" mode="balkan_tuerken">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="id">turks</xsl:attribute>
+			<xsl:attribute name="is_main_culture">false</xsl:attribute>
+			<xsl:attribute name="name">{=balkan_culture_tuerken}Turks</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_tuerken_text}Turkish settlers, officials and soldiers have lived in the Balkan towns since the conquest. The Janissaries, the Sultan's standing infantry, are the most famous musketeers of the empire, while the sipahis hold their land in return for service on horseback.</xsl:attribute>
+			<xsl:attribute name="color">0xffB3141C</xsl:attribute>
+			<xsl:attribute name="color2">0xffF4F1E8</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_tr_peasant</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_tr_timarli_sipahi</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_tr_acemi</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_tr_sekban</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_tr_azap</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_tr_janissary</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_tuerken</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_tuerken</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_tuerken" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_tuerken">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_tuerken" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_tuerken">
+		<male_names>
+			<name name="{{=!}}Mehmed" />
+			<name name="{{=!}}Ahmed" />
+			<name name="{{=!}}Mustafa" />
+			<name name="{{=!}}Süleyman" />
+			<name name="{{=!}}Hüseyin" />
+			<name name="{{=!}}Hasan" />
+			<name name="{{=!}}İbrahim" />
+			<name name="{{=!}}Osman" />
+			<name name="{{=!}}Murad" />
+			<name name="{{=!}}Selim" />
+			<name name="{{=!}}Bayezid" />
+			<name name="{{=!}}Ömer" />
+			<name name="{{=!}}Yusuf" />
+			<name name="{{=!}}Abdullah" />
+			<name name="{{=!}}Halil" />
+			<name name="{{=!}}Rüstem" />
+			<name name="{{=!}}Kasım" />
+			<name name="{{=!}}Sinan" />
+			<name name="{{=!}}Ferhad" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_tuerken">
+		<female_names>
+			<name name="{{=!}}Fatma" />
+			<name name="{{=!}}Ayşe" />
+			<name name="{{=!}}Hatice" />
+			<name name="{{=!}}Emine" />
+			<name name="{{=!}}Zeynep" />
+			<name name="{{=!}}Rabia" />
+			<name name="{{=!}}Hafsa" />
+			<name name="{{=!}}Safiye" />
+			<name name="{{=!}}Gülbahar" />
+			<name name="{{=!}}Mihrimah" />
+			<name name="{{=!}}Hümaşah" />
+			<name name="{{=!}}Saliha" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_tuerken">
+		<clan_names>
+			<name name="{{=!}}Köprülü" />
+			<name name="{{=!}}Sokollu" />
+			<name name="{{=!}}Daltaban" />
+			<name name="{{=!}}Kalaylıkoz" />
+			<name name="{{=!}}Elmas" />
+			<name name="{{=!}}Topal" />
+			<name name="{{=!}}Gazi" />
+			<name name="{{=!}}Tekeli" />
+		</clan_names>
+	</xsl:template>
+	<!-- Ungarn: neue Kultur 'hungarians' als Kopie von 'vlandia' (data/kulturen/ungarn.toml) -->
+	<xsl:template match="Culture" mode="balkan_ungarn">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="id">hungarians</xsl:attribute>
+			<xsl:attribute name="is_main_culture">false</xsl:attribute>
+			<xsl:attribute name="name">{=balkan_culture_ungarn}Hungarians</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_ungarn_text}After a century and a half of war the Hungarian plains are slowly filling with people again. The hajdús, once cattle drovers, fight on foot with musket and sabre, and the light hussars of the Hungarian nobility have become famous in every army of Europe.</xsl:attribute>
+			<xsl:attribute name="color">0xff2E6B30</xsl:attribute>
+			<xsl:attribute name="color2">0xffD8263A</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_hu_peasant</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_hu_nemes</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_hu_hajdu_recruit</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_hu_hajdu_recruit</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_hu_hajdu</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_hu_veteran_hajdu</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_ungarn</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_ungarn</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_ungarn" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_ungarn">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_ungarn" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_ungarn">
+		<male_names>
+			<name name="{{=!}}János" />
+			<name name="{{=!}}István" />
+			<name name="{{=!}}Miklós" />
+			<name name="{{=!}}Ferenc" />
+			<name name="{{=!}}György" />
+			<name name="{{=!}}Péter" />
+			<name name="{{=!}}Pál" />
+			<name name="{{=!}}Ádám" />
+			<name name="{{=!}}László" />
+			<name name="{{=!}}Mihály" />
+			<name name="{{=!}}Imre" />
+			<name name="{{=!}}Gábor" />
+			<name name="{{=!}}Zsigmond" />
+			<name name="{{=!}}Kristóf" />
+			<name name="{{=!}}Tamás" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_ungarn">
+		<female_names>
+			<name name="{{=!}}Katalin" />
+			<name name="{{=!}}Erzsébet" />
+			<name name="{{=!}}Ilona" />
+			<name name="{{=!}}Zsófia" />
+			<name name="{{=!}}Anna" />
+			<name name="{{=!}}Mária" />
+			<name name="{{=!}}Borbála" />
+			<name name="{{=!}}Judit" />
+			<name name="{{=!}}Krisztina" />
+			<name name="{{=!}}Orsolya" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_ungarn">
+		<clan_names>
+			<name name="{{=!}}Batthyány" />
+			<name name="{{=!}}Erdődy" />
+			<name name="{{=!}}Pálffy" />
+			<name name="{{=!}}Esterházy" />
+			<name name="{{=!}}Nádasdy" />
+			<name name="{{=!}}Zichy" />
+			<name name="{{=!}}Forgách" />
+			<name name="{{=!}}Széchényi" />
 		</clan_names>
 	</xsl:template>
 	<!-- Venezianer: neue Kultur 'venice' als Kopie von 'empire' (data/kulturen/venezianer.toml) -->

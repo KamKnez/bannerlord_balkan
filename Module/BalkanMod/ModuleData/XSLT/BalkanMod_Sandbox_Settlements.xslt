@@ -219,6 +219,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Korenica</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_V7_1_text}Korenica lies in the countryside of Udbina. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -227,6 +228,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Bunić</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_V7_2_text}Bunić belongs to the lands of Udbina. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -235,6 +237,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Dubica</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_V8_1_text}Dubica is a village near Kostajnica. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -243,6 +246,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Majur</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_V8_2_text}Majur lies in the countryside of Kostajnica. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -267,6 +271,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Valpovo</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_V2_1_text}Valpovo lies in the countryside of Osijek. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -387,6 +392,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Leibnitz</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_V8_1_text}Leibnitz lies in the countryside of Graz. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.germans</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -395,6 +401,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Voitsberg</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_V8_2_text}Voitsberg belongs to the lands of Graz. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.germans</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -403,6 +410,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Gleisdorf</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_V8_3_text}Gleisdorf is a village near Graz. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.germans</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -411,6 +419,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Mohács</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_V9_1_text}Mohács lies in the countryside of Pécs. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -419,6 +428,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Siklós</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_V9_2_text}Siklós belongs to the lands of Pécs. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -732,6 +742,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Grocka</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A2_2_text}Grocka is a village near Beograd. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -740,6 +751,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Smederevo</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A2_3_text}Smederevo lies in the lands of Beograd. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -788,6 +800,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Sjenica</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A5_1_text}Sjenica lies in the lands of Novi Pazar. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -796,6 +809,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Tutin</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A5_2_text}Tutin belongs to the district of Novi Pazar. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -804,6 +818,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Raška</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A5_3_text}Raška is a village near Novi Pazar. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1489,7 +1504,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Drniš</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW4_1_text}Drniš is a village near Knin. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1615,7 +1630,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Kistanje</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW4_2_text}Kistanje belongs to the lands of Knin. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

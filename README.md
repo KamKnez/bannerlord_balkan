@@ -11,6 +11,7 @@ mit Habsburgern, Osmanen, Venedig und Ragusa. Danach wird die Karte in Runden er
 
 Phase 2 läuft. Im Spiel sind die ersten vier Kulturen mit eigenen Truppenbäumen:
 Kroaten (statt Vlandia), Bosniaken (statt Aserai) sowie Venezianer und Ragusaner als neue Kulturen.
+Dazu Deutsche, Ungarn, Serben und Türken als eigene Kulturen ohne Reich, rekrutierbar in ihren Dörfern.
 Dazu die vier Königreiche Habsburger (statt Vlandia), Osmanen (statt Aserai), Venedig (statt Westliches Imperium)
 und Ragusa (statt Südliches Imperium) mit umbenannten Clans und Lords. Ihre 203 Städte, Burgen und Dörfer tragen
 echte Ortsnamen (Zagreb, Sarajevo, Zadar, Dubrovnik …) und Beschreibungen um 1700 statt der Calradia-Geschichten. Die Reiche haben eigene Wappenfarben; zu Spielbeginn führen Habsburger und Venedig Krieg gegen die Osmanen.

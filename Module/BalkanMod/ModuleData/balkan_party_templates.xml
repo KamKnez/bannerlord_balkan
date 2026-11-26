@@ -19,6 +19,21 @@
 			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_bs_militia_shooter" />
 		</stacks>
 	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_kingdom_hero_party_deutsche">
+		<stacks>
+			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_de_peasant" />
+			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_de_recruit" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.balkan_de_pikeman" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.balkan_de_musketeer" />
+			<PartyTemplateStack min_value="0" max_value="2" troop="NPCCharacter.balkan_de_cuirassier" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_militia_deutsche">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_de_recruit" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_de_musketeer" />
+		</stacks>
+	</MBPartyTemplate>
 	<MBPartyTemplate id="balkan_kingdom_hero_party_kroaten">
 		<stacks>
 			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_hr_peasant" />
@@ -50,6 +65,52 @@
 		<stacks>
 			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_ra_militia_halberdier" />
 			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_ra_militia_shooter" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_kingdom_hero_party_serben">
+		<stacks>
+			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_sr_peasant" />
+			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_sr_shooter" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.balkan_sr_musketeer" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_sr_rider" />
+			<PartyTemplateStack min_value="0" max_value="2" troop="NPCCharacter.balkan_sr_hussar" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_militia_serben">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_sr_shooter" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_sr_shooter" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_kingdom_hero_party_tuerken">
+		<stacks>
+			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_tr_peasant" />
+			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_tr_azap" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_tr_acemi" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_tr_janissary" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_tr_sekban" />
+			<PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.balkan_tr_timarli_sipahi" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_militia_tuerken">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_tr_acemi" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_tr_sekban" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_kingdom_hero_party_ungarn">
+		<stacks>
+			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_hu_peasant" />
+			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_hu_hajdu_recruit" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.balkan_hu_hajdu" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_hu_rider" />
+			<PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.balkan_hu_hussar" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_militia_ungarn">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_hu_hajdu_recruit" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_hu_hajdu_recruit" />
 		</stacks>
 	</MBPartyTemplate>
 	<MBPartyTemplate id="balkan_kingdom_hero_party_venezianer">

@@ -51,8 +51,8 @@ gesicht = "fighter_vlandia_noble"       # optional, sonst das der Kultur
 pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }   # gilt für alle Ausrüstungen
 faehigkeiten = { Bow = 60 }             # optional, überschreibt einzelne Werte
 [[truppe.ausruestung]]                  # eine oder mehrere Varianten
-Item0 = "crossbow_i"
-Item1 = "bolt_a"
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
 Item2 = "khuzait_sword_1_t2"
 Head = "fur_hat"
 Body = "padded_short_coat"
@@ -64,5 +64,6 @@ Slots: `Item0` bis `Item3` (Waffen, Schilde, Munition), `Head`, `Cape`, `Body`, 
 Profile (Anteil am Grundwert der Stufe: 20, 40, 70, 100, 130, 160):
 `bauer`, `infanterie`, `pike`, `schuetze` (Armbrust = Muskete), `bogen_infanterie`, `reiter`, `leichte_reiter`, `berittene_schuetzen`.
 
-Musketen und Pistolen sind in v0.1 noch Armbrüste. Beritten nachladen lassen sich nur `crossbow_a`, `crossbow_e`,
-`crossbow_g` und `crossbow_h`; deshalb tragen Husaren, Cappelletti und Kürassiere `crossbow_e` als Pistole.
+Musketen und Pistolen stehen in [data/waffen.toml](../waffen.toml) (`balkan_arquebus`, `balkan_musket`,
+`balkan_long_musket`, `balkan_heavy_musket`, `balkan_pistol` mit `balkan_musket_balls` bzw. `balkan_pistol_balls`).
+Nur die Pistole lässt sich beritten nachladen.

@@ -1,0 +1,223 @@
+# Türken (Osmanisches Reich). Neue Kultur, kopiert alle übrigen Werte von den Aserai.
+# Azapen, Sekbane und Janitscharen zu Fuß, Sipahi zu Pferd.
+# Rekrutierbar in Dörfern mit dieser Kultur (siehe [dorfkultur] in data/reiche/).
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "tuerken"
+kultur_id = "turks"
+art = "neu"
+vorlage = "aserai"
+praefix = "tr"
+namensliste = "tuerken"
+farben = ["0xffB3141C", "0xffF4F1E8"]
+gesicht = "fighter_aserai"
+zivil = ["aserai_troop_civilian_template_t1", "aserai_troop_civilian_template_t2", "aserai_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "timarli_sipahi"
+
+[name]
+en = "Turks"
+de = "Türken"
+
+[text]
+en = """
+Turkish settlers, officials and soldiers have lived in the Balkan towns since the conquest. The Janissaries, \
+the Sultan's standing infantry, are the most famous musketeers of the empire, while the sipahis hold their land \
+in return for service on horseback.
+"""
+de = """
+Türkische Siedler, Beamte und Soldaten leben seit der Eroberung in den Städten des Balkans. Die Janitscharen, \
+das stehende Fußvolk des Sultans, sind die berühmtesten Musketiere des Reichs, während die Sipahi ihr Land für \
+den Dienst zu Pferd erhalten.
+"""
+
+[miliz]
+nahkampf = "acemi"
+fernkampf = "sekban"
+nahkampf_elite = "azap"
+fernkampf_elite = "janissary"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+
+[[lord_partei]]
+truppe = "azap"
+min = 3
+max = 6
+
+[[lord_partei]]
+truppe = "acemi"
+min = 1
+max = 3
+
+[[lord_partei]]
+truppe = "janissary"
+min = 1
+max = 3
+
+[[lord_partei]]
+truppe = "sekban"
+min = 1
+max = 3
+
+[[lord_partei]]
+truppe = "timarli_sipahi"
+min = 1
+max = 2
+
+# ---------------------------------------------------------------- Truppen
+
+[[truppe]]
+id = "peasant"
+name = { en = "Turkish Peasant", de = "Türkischer Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["azap", "acemi"]
+[[truppe.ausruestung]]
+Item0 = "peasant_pitchfork_2_t1"
+Head = "turban"
+Body = "tied_cloth_tunic"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_sickle_1_t1"
+Head = "wrapped_desert_cap"
+Body = "hemp_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "azap"
+name = { en = "Turkish Azap", de = "Türkischer Azap" }
+stufe = 2
+gruppe = "Infantry"
+profil = "bogen_infanterie"
+aufwerten = ["sekban"]
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "hunting_bow"
+Item2 = "default_arrows"
+Item3 = "aserai_sword_1_t2"
+Head = "turban"
+Body = "tied_cloth_tunic"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "sekban"
+name = { en = "Sekban", de = "Sekban" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_sword_2_t2"
+Head = "woven_turban"
+Body = "aserai_tunic_waistcoat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "acemi"
+name = { en = "Acemi Oğlan", de = "Acemi Oğlan" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+aufwerten = ["janissary"]
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "aserai_sword_1_t2"
+Head = "wrapped_desert_cap"
+Body = "layered_robe"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "janissary"
+name = { en = "Janissary", de = "Janitschar" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["veteran_janissary"]
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_sword_3_t3"
+Head = "woven_turban"
+Body = "layered_robe"
+Leg = "eastern_leather_boots"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_mace_3_t3"
+Head = "turban"
+Body = "layered_robe"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "veteran_janissary"
+name = { en = "Veteran Janissary", de = "Janitscharen-Veteran" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["odabasi"]
+[[truppe.ausruestung]]
+Item0 = "balkan_heavy_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_sword_4_t4"
+Head = "woven_turban"
+Body = "long_padded_robe"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "odabasi"
+name = { en = "Janissary Odabaşı", de = "Janitscharen-Odabaşı" }
+stufe = 5
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_heavy_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "aserai_sword_5_t4"
+Head = "turban"
+Body = "desert_robe_over_mail"
+Gloves = "eastern_plated_leather_vambraces"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "timarli_sipahi"
+name = { en = "Turkish Timarli Sipahi", de = "Türkischer Timarli-Sipahi" }
+stufe = 2
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+basis = true
+gesicht = "fighter_aserai_noble"
+aufwerten = ["sipahi"]
+pferd = { Horse = "aserai_horse", HorseHarness = "aseran_village_harness" }
+[[truppe.ausruestung]]
+Item0 = "composite_bow"
+Item1 = "default_arrows"
+Item2 = "aserai_sword_2_t2"
+Item3 = "eastern_spear_1_t2"
+Head = "turban"
+Body = "aserai_tunic_waistcoat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "sipahi"
+name = { en = "Kapıkulu Sipahi", de = "Kapıkulu-Sipahi" }
+stufe = 4
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+benoetigt = "kriegspferd"
+gesicht = "fighter_aserai_noble"
+pferd = { Horse = "t2_aserai_horse", HorseHarness = "desert_cloth_harness" }
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "piercing_arrows"
+Item2 = "aserai_sword_4_t4"
+Item3 = "desert_oval_shield"
+Head = "brass_aserai_helmet_open"
+Body = "desert_robe_over_mail"
+Gloves = "eastern_plated_leather_vambraces"
+Leg = "eastern_leather_boots"

@@ -441,6 +441,11 @@ def check_realms(realms, cultures):
             seat = seat_of(sid)
             if seat is not None and r.get("dorftext") and seat not in orte:
                 errors.append(f"{where}: Dorf {sid}: Sitz {seat} steht nicht in [orte]")
+        for sid, cid in r.get("dorfkultur", {}).items():
+            if sid not in orte or seat_of(sid) is None:
+                errors.append(f"{where}: dorfkultur: {sid} ist kein Dorf aus [orte]")
+            if cid not in culture_ids:
+                errors.append(f"{where}: dorfkultur: Kultur {cid} ist in data/kulturen nicht definiert")
         for v in r.get("dorftext", []):
             if not v.get("en") or not v.get("de"):
                 errors.append(f"{where}: dorftext braucht en und de")
@@ -586,7 +591,9 @@ def build_realms(realms, strings):
                 desc = place_text(r, sid)
                 if desc is not None:
                     sattrs["text"] = strings.add(f"balkan_settlement_{sid}_text", desc["en"].strip(), desc["de"].strip())
-            if sid in r["siedlungen"]:
+            if sid in r.get("dorfkultur", {}):
+                sattrs["culture"] = f"Culture.{r['dorfkultur'][sid]}"
+            elif sid in r["siedlungen"]:
                 sattrs["culture"] = culture
             t["Settlements"] += patch_template("Settlement", sid, sattrs)
     t["Kingdoms"] += build_wars(realms)

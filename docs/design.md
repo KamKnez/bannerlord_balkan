@@ -104,6 +104,20 @@ Bannerlord hat pro Kultur einen normalen Baum (Rekruten aus Dörfern) und einen 
 
 - Stadtwache → Hellebardier; Söldner gegen Gold
 
+### Weitere Völker (umgesetzt als eigene Kulturen)
+
+Deutsche, Ungarn, Serben und Türken sind eigene Kulturen ohne eigenes Reich, jede mit eigenem Baum ab dem eigenen
+Bauern. Man rekrutiert sie in Dörfern, denen per Daten diese Kultur zugeordnet ist (`[dorfkultur]` in `data/reiche/`):
+
+| Kultur | Vorlage | Dörfer (v0.1) | Baum |
+|---|---|---|---|
+| Deutsche | Vlandia | um Graz | Bauer → Rekrut → Pikenier → Doppelsöldner / Musketier → Veteran-Musketier; Adel: Junker → Kürassier → Kaiserlicher Kürassier |
+| Ungarn | Vlandia | um Pécs, Valpovo | Bauer → Junger Hajdú → Hajdú → Veteran / Ungarischer Reiter → Husar; Adel: Edelmann → Adeliger Husar → Husarenhauptmann |
+| Serben | Sturgia | Lika, Banija, um Belgrad und Raška, Morlaken bei Knin | Bauer → Grenzer → Musketier → Hajduk / Reiter → Raizischer Husar; Adel: Edelmann → Vojvoda |
+| Türken | Aserai | um Novi Pazar | Bauer → Azap → Sekban / Acemi Oğlan → Janitschar → Veteran → Odabaşı; Adel: Timarli-Sipahi → Kapıkulu-Sipahi |
+
+Die Lords rekrutieren in diesen Dörfern ebenfalls, ihre Heere werden dadurch gemischt.
+
 ## 5. Ausrüstung
 
 - Zuerst nur **vorhandene Spielmodelle**, umgefärbt und neu kombiniert. Rüstungen, Helme und Säbel passen gut aus Vlandia (Westen), Aserai und Khuzait (Osmanen, Husaren), Imperium (Venedig, Ragusa) und Battania (Freischärler).

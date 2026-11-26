@@ -351,6 +351,15 @@ village_A7_4 = "Žitomislić"                 # Zalm
 village_A8_1 = "Vitez"                      # Ezbet Nahul
 village_A8_2 = "Busovača"                   # Abghan
 
+# Dörfer mit eigener Kultur: Ihre Bewohner bieten Rekruten dieser Kultur an (data/kulturen/).
+[dorfkultur]
+village_A2_2 = "serbs"          # Grocka
+village_A2_3 = "serbs"          # Smederevo
+village_A5_3 = "serbs"          # Raška
+village_A5_1 = "turks"          # Sjenica
+village_A5_2 = "turks"          # Tutin
+
+
 # Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
 # {DORF} wird durch den Dorfnamen ersetzt, {SITZ} durch die Stadt oder Burg, zu der es gehört.
 [ortstexte]
