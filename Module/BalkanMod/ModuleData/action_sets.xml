@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aus Napoleonic Warfare (Nexus 6101), siehe NICHT_FREIGEGEBEN.md. Die Namen müssen zu den gepackten Animationen in AssetPackages/pack0.tpac passen. Ruhehaltung der Musketen: tief gehalten wie die Armbrust (Kamilos Wahl) statt geschultert (NW: idle_musket). -->
+<action_sets>
+	<action_set id="as_human_warrior" skeleton="human_skeleton" movement_system="bipedal">
+		<action type="act_austria_reload_musket" animation="reload_musket_new"/>
+		<action type="act_austria_reload_musket_continue_0" animation="reload_musket_new_continue_0"/>
+		<action type="act_austria_reload_musket_continue_1" animation="reload_musket_new_continue_1"/>
+		<action type="act_austria_reload_musket_continue_2" animation="reload_musket_new_continue_2"/>
+		<action type="act_austria_reload_rifle" animation="reload_rifle_new"/>
+		<action type="act_austria_reload_rifle_continue_0" animation="reload_rifle_new_continue_0"/>
+		<action type="act_austria_reload_rifle_continue_1" animation="reload_rifle_new_continue_1"/>
+		<action type="act_austria_reload_rifle_continue_2" animation="reload_rifle_new_continue_2"/>
+		<action type="act_austria_ready_musket" animation="ready_musket"/>
+		<action type="act_austria_ready_musket_continue" animation="ready_musket_continue"/>
+		<action type="act_austria_release_musket" animation="release_musket" alternative_group="musket_shoot"/>
+		<action type="act_austria_release_musket_2" animation="release_musket_2" alternative_group="musket_shoot"/>
+		<action type="act_austria_release_musket_3" animation="release_musket_3" alternative_group="musket_shoot"/>
+		<action type="act_austria_release_rifle" animation="release_rifle" alternative_group="rifle_shoot"/>
+		<action type="act_austria_idle_musket" animation="troop_stand_crossbow_1"/>
+		<action type="act_walk_idle_musket" animation="stand_crossbow"/>
+		<action type="act_run_idle_musket" animation="stand_crossbow"/>
+		<action type="act_crouch_walk_idle_musket" animation="crouch_stand_crossbow"/>
+		<action type="act_crouch_run_idle_musket" animation="crouch_stand_crossbow"/>
+		<action type="act_austria_ready_pistol" animation="ready_pistol"/>
+		<action type="act_austria_ready_pistol_continue" animation="ready_pistol_continue"/>
+		<action type="act_austria_release_pistol" animation="release_pistol"/>
+		<action type="act_austria_reload_pistol" animation="reload_pistol"/>
+		<action type="act_austria_reload_pistol_continue" animation="reload_pistol_continue"/>
+		<action type="act_austria_idle_pistol" animation="stand_pistol"/>
+		<action type="act_walk_idle_pistol" animation="idle_pistol"/>
+		<action type="act_run_idle_pistol" animation="idle_pistol"/>
+		<action type="act_crouch_walk_idle_pistol" animation="crouch_stand_1h"/>
+		<action type="act_crouch_run_idle_pistol" animation="crouch_stand_1h"/>
+		<action type="act_quick_release_overswing_musket" animation="quick_release_overswing_musket"/>
+		<action type="act_release_overswing_musket" animation="release_overswing_musket"/>
+		<action type="act_quick_release_thrust_musket" animation="quick_release_thrust_musket"/>
+		<action type="act_release_thrust_musket" animation="release_thrust_musket"/>
+		<action type="act_equip_musketai" animation="equip_melee_musket_fast" />
+    <action type="act_unequip_musketai" animation="unequip_melee_musket_fast" />
+	</action_set>
+</action_sets>

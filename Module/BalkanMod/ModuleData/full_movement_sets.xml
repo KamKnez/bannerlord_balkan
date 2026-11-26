@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aus Napoleonic Warfare (Nexus 6101), siehe NICHT_FREIGEGEBEN.md. Die Namen müssen zu den gepackten Animationen in AssetPackages/pack0.tpac passen. -->
+<full_movement_sets>
+	<full_movement_set id="musket">
+		<movement_set id="walk_musket"
+		              left_stance="False"
+		              movement_mode="walking"/>
+		<movement_set id="run_musket"
+		              left_stance="False"
+		              movement_mode="running"/>
+		<movement_set id="crouch_walk_musket"
+		              left_stance="False"
+		              movement_mode="crouch_walking"/>
+		<movement_set id="crouch_run_musket"
+		              left_stance="False"
+		              movement_mode="crouch_running"/>
+	</full_movement_set>
+	<full_movement_set id="pistol">
+    <movement_set id="walk_pistol" left_stance="False" movement_mode="walking" />
+    <movement_set id="run_pistol" left_stance="False" movement_mode="running" />
+    <movement_set id="crouch_walk_pistol" left_stance="False" movement_mode="crouch_walking" />
+    <movement_set id="crouch_run_pistol" left_stance="False" movement_mode="crouch_running" />
+  </full_movement_set>
+</full_movement_sets>
