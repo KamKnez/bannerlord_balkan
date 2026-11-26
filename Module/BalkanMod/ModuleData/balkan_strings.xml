@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Erzeugt von tools/gen_content.py aus data/. Nicht von Hand ändern. -->
+<strings>
+	<string id="str_culture_rich_name.aserai" text="{=balkan_culture_bosniaken_rich}Bosniaks" />
+	<string id="str_culture_description.aserai" text="{=balkan_culture_bosniaken_desc}The Eyalet of Bosnia is the Ottoman bulwark on the Habsburg and Venetian frontier. Its captaincies, the kapetanije, guard the river crossings and mountain passes, manned by azaps and musketeers who know every ford. The sipahis hold their timars in return for service on horseback, and the reckless deli horsemen ride ahead of every raid." />
+	<string id="str_culture_rich_name.germans" text="{=balkan_culture_deutsche_rich}Germans" />
+	<string id="str_culture_description.germans" text="{=balkan_culture_deutsche_desc}German settlers came to the frontier lands of Styria, Carniola and the reconquered plains as farmers, craftsmen and soldiers. The imperial regiments recruit their pikemen and musketeers among them, and the heavy cuirassiers of the Emperor are drawn from their nobility." />
+	<string id="str_culture_rich_name.vlandia" text="{=balkan_culture_kroaten_rich}Croatians" />
+	<string id="str_culture_description.vlandia" text="{=balkan_culture_kroaten_desc}Croatia, Slavonia and Dalmatia call themselves a kingdom of their own, joined to the Habsburg crown. For two centuries the Croats have held the Military Frontier against the Ottomans: free peasants owe the emperor service instead of rent, and every village keeps its haramije and horsemen ready. Their nobles still ride as armoured cavalry, while the border men fight with sabre and arquebus." />
+	<string id="str_culture_rich_name.ragusa" text="{=balkan_culture_ragusaner_rich}Ragusans" />
+	<string id="str_culture_description.ragusa" text="{=balkan_culture_ragusaner_desc}The Republic of Ragusa keeps its freedom with gold rather than steel. Its merchant fleet trades from the Levant to Spain, and every year its envoys carry tribute to the Sultan. Behind the great walls of the city a small guard of halberdiers and arquebusiers serves the Rector, who changes every month so that no man may rule alone." />
+	<string id="str_culture_rich_name.serbs" text="{=balkan_culture_serben_rich}Serbs" />
+	<string id="str_culture_description.serbs" text="{=balkan_culture_serben_desc}In 1690 tens of thousands of Serbs crossed the Sava and the Danube with their patriarch and settled on the Habsburg frontier, where they serve as border soldiers in return for land and freedom of faith. Others stayed under the Sultan or took service with Venice. Their hajduks and hussars are feared on every side of the border." />
+	<string id="str_culture_rich_name.turks" text="{=balkan_culture_tuerken_rich}Turks" />
+	<string id="str_culture_description.turks" text="{=balkan_culture_tuerken_desc}Turkish settlers, officials and soldiers have lived in the Balkan towns since the conquest. The Janissaries, the Sultan's standing infantry, are the most famous musketeers of the empire, while the sipahis hold their land in return for service on horseback." />
+	<string id="str_culture_rich_name.hungarians" text="{=balkan_culture_ungarn_rich}Hungarians" />
+	<string id="str_culture_description.hungarians" text="{=balkan_culture_ungarn_desc}After a century and a half of war the Hungarian plains are slowly filling with people again. The hajdús, once cattle drovers, fight on foot with musket and sabre, and the light hussars of the Hungarian nobility have become famous in every army of Europe." />
+	<string id="str_culture_rich_name.venice" text="{=balkan_culture_venezianer_rich}Venetians" />
+	<string id="str_culture_description.venice" text="{=balkan_culture_venezianer_desc}The Most Serene Republic of Venice rules the Adriatic from its lagoon. Along the Dalmatian coast its provveditori govern walled ports filled with merchants, sailors and soldiers. Italian pikemen and musketeers hold the walls, while Dalmatian schiavoni and Albanian cappelletti fight the war of raids in the hinterland." />
+</strings>

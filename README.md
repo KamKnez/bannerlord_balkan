@@ -19,7 +19,8 @@ Schützen tragen Arkebusen und Musketen, Reiter Pistolen ([data/waffen.toml](dat
 vorerst Armbrust-Modelle; die Musketen-Modelle aus Napoleonic Warfare (siehe [CREDITS.md](CREDITS.md)) liegen bereit, müssen aber erst mit dem Modding Kit gepackt werden. Mechanik und Klang sind noch die der Armbrust.
 Die Fertigkeit „Armbrust“ heißt „Feuerwaffen“. Zum Ausprobieren liegen zu Beginn (im Story-Modus nach dem Tutorial)
 eine Arkebuse, eine Pistole und Munition im Inventar. Die Notabeln jedes Orts haben die Kultur ihres Orts und bieten
-deren Rekruten an. Als Nächstes folgt eine Balance-Runde nach Spieltest (siehe [docs/design.md](docs/design.md)).
+deren Rekruten an. Der Kalender zeigt die Jahre ab 1700 (das Spiel beginnt intern 1084, nur die Anzeige ist verschoben).
+Bei der Charaktererstellung heißen Vlandia und Aserai jetzt Kroaten und Bosniaken, mit eigenem Text. Als Nächstes folgt eine Balance-Runde nach Spieltest (siehe [docs/design.md](docs/design.md)).
 
 ## Installieren und testen
 

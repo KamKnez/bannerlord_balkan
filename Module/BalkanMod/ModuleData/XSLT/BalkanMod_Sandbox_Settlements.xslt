@@ -449,6 +449,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Beograd</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_A2_text}Belgrade's fortress stands where the Sava meets the Danube. It changed hands in 1688 and again in 1690, and it remains the gate of the Ottoman Balkans.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1354,7 +1355,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Sinj</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_EW2_text}Sinj was taken from the Ottomans in 1686. It guards the Cetina valley, and its garrison expects the enemy to return one day.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1363,7 +1364,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Makarska</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_EW3_text}Makarska, a harbour below the steep wall of Biokovo, came under Venice in 1684.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1372,7 +1373,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Knin</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_EW4_text}Knin was taken in 1688. Its fortress on the ridge above the Krka is the key to the Dalmatian hinterland.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1390,7 +1391,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Klis</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_EW6_text}Klis holds the mountain pass above Split. It was held by the Ottomans for more than a century before Venice took it in 1648.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1399,7 +1400,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Omiš</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_EW7_text}Omiš at the mouth of the Cetina was once a nest of pirates. Today its towers watch over the gorge and the coast.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1408,7 +1409,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Vrlika</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_EW8_text}Vrlika, near the source of the Cetina, lies under the fortress of Prozor and was taken from the Ottomans in 1688.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
+			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

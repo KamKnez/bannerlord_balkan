@@ -37,6 +37,7 @@ OUT_PARTIES = MODULE_DATA / "balkan_party_templates.xml"
 OUT_ITEMS = MODULE_DATA / "balkan_items.xml"
 OUT_XSLT = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_SPCultures.xslt"
 OUT_ROSTERS = MODULE_DATA / "XSLT" / "BalkanMod_SandBoxCore_EquipmentRosters.xslt"
+OUT_STRINGS = MODULE_DATA / "balkan_strings.xml"
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
 
 OUT_REALMS = {
@@ -224,6 +225,19 @@ def culture_attributes(c, strings):
     if c["art"] == "neu":
         attrs = {"id": c["kultur_id"], "is_main_culture": "false", **attrs}
     return attrs
+
+
+def build_game_texts(cultures, strings):
+    """Name und Beschreibung jeder Kultur für die Charaktererstellung (GameText mit Variante = Kultur-Id)."""
+    lines = ['<?xml version="1.0" encoding="utf-8"?>', HEADER, "<strings>"]
+    for c in cultures:
+        key, cid = c["schluessel"], c["kultur_id"]
+        rich = strings.add(f"balkan_culture_{key}_rich", c["name"]["en"], c["name"]["de"])
+        desc = strings.add(f"balkan_culture_{key}_desc", c["text"]["en"].strip(), c["text"]["de"].strip())
+        lines.append(f"\t<string id={quoteattr('str_culture_rich_name.' + cid)} text={quoteattr(rich)} />")
+        lines.append(f"\t<string id={quoteattr('str_culture_description.' + cid)} text={quoteattr(desc)} />")
+    lines.append("</strings>")
+    return "\n".join(lines) + "\n"
 
 
 def name_list_xml(tag, names, indent):
@@ -823,6 +837,7 @@ def generate():
         OUT_PARTIES: build_parties(cultures),
         OUT_XSLT: build_xslt(cultures, strings),
         OUT_ROSTERS: build_rosters(cultures),
+        OUT_STRINGS: build_game_texts(cultures, strings),
     }
     files.update(build_realms(realms, strings))
     files[OUT_DE] = build_de(strings)
