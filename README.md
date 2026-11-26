@@ -20,6 +20,9 @@ das folgt im nächsten Schritt (siehe [docs/design.md](docs/design.md)).
 **Ohne selbst zu bauen:** Bei jedem Pull Request und jedem Stand auf `main` baut GitHub die Mod automatisch.
 Unter *Actions* → letzter Lauf → *Artifacts* gibt es das Paket `BalkanMod` zum Herunterladen.
 
+0. Vorher diese Mods installieren (z. B. über Nexus Mods oder den Steam Workshop), mindestens in diesen Versionen:
+   Harmony 2.4.2, ButterLib 2.12.0, UIExtenderEx 3.0.3 und Mod Configuration Menu (MCM) 5.13.1.
+   Im Launcher müssen sie über „Balkan 1700“ stehen.
 1. Den Inhalt nach `…\Mount & Blade II Bannerlord\Modules\BalkanMod\` kopieren
    (darin liegen dann `SubModule.xml`, `ModuleData\` und `bin\`).
 2. Im Bannerlord-Launcher unter *Singleplayer* → *Mods* „Balkan 1700“ anhaken.
@@ -53,6 +56,17 @@ Bei jedem Push und Pull Request laufen:
 - `python3 tools/gen_content.py --check`: die erzeugten Spieldaten passen zu `data/kulturen/`.
 - `python3 tools/validate_refs.py`: alle Verweise auf Gegenstände, Gesichter und Truppen gibt es im Spiel (v1.5.7), und jeder Text hat eine deutsche Übersetzung.
 - `dotnet build`: der C#-Code baut gegen die Referenz-DLLs des Spiels.
+
+## Einstellungen
+
+Im Spiel unter *Optionen* → *Mod-Optionen* → *Balkan 1700* (kommt von MCM):
+
+| Einstellung | Bereich | Standard | Wirkung |
+|---|---|---|---|
+| Reisegeschwindigkeit aller Parteien | 0,5x bis 4x | 1,5x | alle Parteien auf der Karte, auch Lords und Karawanen |
+| Zusätzliche Geschwindigkeit der eigenen Partei | 0,5x bis 4x | 1,0x | nur die eigene Partei, wird mit dem ersten Wert multipliziert (1,5x · 2x = 3x) |
+
+Änderungen gelten sofort, auch in laufenden Kampagnen. Im Tooltip der Geschwindigkeit stehen sie als eigene Zeilen.
 
 ## Sprachen
 

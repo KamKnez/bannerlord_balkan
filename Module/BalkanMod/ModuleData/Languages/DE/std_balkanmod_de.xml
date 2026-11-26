@@ -5,5 +5,13 @@
   </tags>
   <strings>
     <string id="balkanmod_loaded" text="Balkan-Mod geladen."/>
+    <string id="balkan_settings_name" text="Balkan 1700"/>
+    <string id="balkan_settings_group_map" text="Kampagnenkarte"/>
+    <string id="balkan_settings_speed_all" text="Reisegeschwindigkeit aller Parteien"/>
+    <string id="balkan_settings_speed_all_hint" text="Multipliziert die Geschwindigkeit aller Parteien auf der Karte: Lords, Karawanen, Banditen und du. 1,00x ist die Geschwindigkeit des Grundspiels."/>
+    <string id="balkan_settings_speed_player" text="Zusätzliche Reisegeschwindigkeit deiner Partei"/>
+    <string id="balkan_settings_speed_player_hint" text="Gilt zusätzlich zur Geschwindigkeit aller Parteien, nur für deine eigene Partei."/>
+    <string id="balkan_speed_all" text="Balkan 1700: Reisegeschwindigkeit"/>
+    <string id="balkan_speed_player" text="Balkan 1700: deine Reisegeschwindigkeit"/>
   </strings>
 </base>
