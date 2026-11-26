@@ -23,6 +23,9 @@
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
     <!-- MCM-Einstellungen: MCMv5.dll liefert das Modul "Mod Configuration Menu v5" (Bannerlord.MBOptionScreen) mit -->
     <PackageReference Include="Bannerlord.MCM" Version="5.13.1" PrivateAssets="all" IncludeAssets="compile" />
+    <!-- Harmony und UIExtenderEx: die DLLs liefern die Module Bannerlord.Harmony und Bannerlord.UIExtenderEx mit -->
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" PrivateAssets="all" IncludeAssets="compile" />
+    <PackageReference Include="Bannerlord.UIExtenderEx" Version="3.0.3" PrivateAssets="all" IncludeAssets="compile" />
   </ItemGroup>
 
   <!--

@@ -59,12 +59,18 @@ Bei jedem Push und Pull Request laufen:
 
 ## Einstellungen
 
+**Schneller Zeitraffer:** Über der Zeitsteuerung unten auf der Karte (Pause, Play, Vorspulen) liegen zwei
+zusätzliche Knöpfe, standardmäßig **8x** und **16x** (das Vorspulen des Spiels ist 4x). Tastenkürzel: **4** und **5**.
+Pause, Play oder das normale Vorspulen beenden den schnellen Zeitraffer wieder.
+
 Im Spiel unter *Optionen* → *Mod-Optionen* → *Balkan 1700* (kommt von MCM):
 
 | Einstellung | Bereich | Standard | Wirkung |
 |---|---|---|---|
-| Reisegeschwindigkeit aller Parteien | 0,5x bis 4x | 1,5x | alle Parteien auf der Karte, auch Lords und Karawanen |
+| Reisegeschwindigkeit aller Parteien | 0,5x bis 4x | 1,0x | alle Parteien auf der Karte, auch Lords und Karawanen |
 | Zusätzliche Geschwindigkeit der eigenen Partei | 0,5x bis 4x | 1,0x | nur die eigene Partei, wird mit dem ersten Wert multipliziert (1,5x · 2x = 3x) |
+| Erster zusätzlicher Vorspulknopf | 5x bis 32x | 8x | Zeitraffer des ersten Knopfs (Taste 4) |
+| Zweiter zusätzlicher Vorspulknopf | 5x bis 64x | 16x | Zeitraffer des zweiten Knopfs (Taste 5) |
 
 Änderungen gelten sofort, auch in laufenden Kampagnen. Im Tooltip der Geschwindigkeit stehen sie als eigene Zeilen.
 

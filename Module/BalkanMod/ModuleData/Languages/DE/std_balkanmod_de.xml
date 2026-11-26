@@ -13,5 +13,11 @@
     <string id="balkan_settings_speed_player_hint" text="Gilt zusätzlich zur Geschwindigkeit aller Parteien, nur für deine eigene Partei."/>
     <string id="balkan_speed_all" text="Balkan 1700: Reisegeschwindigkeit"/>
     <string id="balkan_speed_player" text="Balkan 1700: deine Reisegeschwindigkeit"/>
+    <string id="balkan_settings_group_time" text="Zeitsteuerung"/>
+    <string id="balkan_settings_fast1" text="Erster zusätzlicher Vorspulknopf"/>
+    <string id="balkan_settings_fast1_hint" text="Zeitraffer des ersten zusätzlichen Knopfs neben der Zeitsteuerung unten auf der Karte (Taste 4). Das Vorspulen des Grundspiels ist 4x."/>
+    <string id="balkan_settings_fast2" text="Zweiter zusätzlicher Vorspulknopf"/>
+    <string id="balkan_settings_fast2_hint" text="Zeitraffer des zweiten zusätzlichen Knopfs (Taste 5)."/>
+    <string id="balkan_time_fast_hint" text="Vorspulen {FACTOR} (Taste {KEY})"/>
   </strings>
 </base>
