@@ -74,6 +74,14 @@ en = "Alvise Mocenigo is Provveditore Generale of Dalmatia and Albania. He gover
 de = "Alvise Mocenigo ist Provveditore generale für Dalmatien und Albanien. Er verwaltet die Provinz im Namen des Dogen."
 
 
+# Wappen: goldener Löwe (Zeichen von Vlandia) auf Rot, für den Markuslöwen.
+# Zeichen und Farben sind Nummern aus Native/ModuleData/banner_icons.xml (Farbe: Nummer und Wert).
+[wappen]
+zeichen = 160
+groesse = 497
+hintergrund = [14, "0xff8D291A"]
+farbe = [15, "0xffF7BF46"]
+
 [[clan]]
 id = "clan_empire_west_1"  # vorher Comnos, Oberhaupt Hero.lord_1_7
 name = "Mocenigo"

@@ -80,6 +80,14 @@ en = "Frano Gozze is Rector of the Republic. His term is short, but the great fa
 de = "Frano Gozze ist Rektor der Republik. Seine Amtszeit ist kurz, doch die großen Familien der Stadt stehen hinter ihm."
 
 
+# Wappen: blaues Zeichen des Südlichen Imperiums auf Weiß.
+# Zeichen und Farben sind Nummern aus Native/ModuleData/banner_icons.xml (Farbe: Nummer und Wert).
+[wappen]
+zeichen = 162
+groesse = 512
+hintergrund = [33, "0xffefece5"]
+farbe = [146, "0xff2C4D86"]
+
 [[clan]]
 id = "clan_empire_south_1"  # vorher Pethros, Oberhaupt Hero.lord_1_14
 name = "Gozze"

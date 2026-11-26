@@ -13,7 +13,7 @@ Phase 2 läuft. Im Spiel sind die ersten vier Kulturen mit eigenen Truppenbäume
 Kroaten (statt Vlandia), Bosniaken (statt Aserai) sowie Venezianer und Ragusaner als neue Kulturen.
 Dazu die vier Königreiche Habsburger (statt Vlandia), Osmanen (statt Aserai), Venedig (statt Westliches Imperium)
 und Ragusa (statt Südliches Imperium) mit umbenannten Clans und Lords. Ihre 203 Städte, Burgen und Dörfer tragen
-echte Ortsnamen (Zagreb, Sarajevo, Zadar, Dubrovnik …). Als Nächstes folgen Wappen und Kriege zu Spielbeginn
+echte Ortsnamen (Zagreb, Sarajevo, Zadar, Dubrovnik …). Die Reiche haben eigene Wappenfarben. Als Nächstes folgen die Kriege zu Spielbeginn
 (siehe [docs/design.md](docs/design.md)).
 
 ## Installieren und testen

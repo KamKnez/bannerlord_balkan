@@ -28,6 +28,14 @@ en = "Mehmed governs the Eyalet of Bosnia in the name of the Sultan. Whether he 
 de = "Mehmed verwaltet das Eyalet Bosnien im Namen des Sultans. Ob er das Amt behält, entscheidet Istanbul."
 
 
+# Wappen: weißes Zeichen der Aserai auf Rot.
+# Zeichen und Farben sind Nummern aus Native/ModuleData/banner_icons.xml (Farbe: Nummer und Wert).
+[wappen]
+zeichen = 463
+groesse = 466
+hintergrund = [83, "0xffD22D33"]
+farbe = [172, "0xffffffff"]
+
 [[clan]]
 id = "clan_aserai_1"  # vorher Banu Hulyan, Oberhaupt Hero.lord_3_1
 name = { en = "House of the Beylerbey", de = "Haus des Beylerbeys" }
