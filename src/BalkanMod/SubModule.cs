@@ -1,5 +1,6 @@
 using BalkanMod.CampaignBehaviors;
 using BalkanMod.CampaignModels;
+using BalkanMod.Missions;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
 using TaleWorlds.CampaignSystem;
@@ -42,6 +43,14 @@ namespace BalkanMod
             _loadedMessageShown = true;
             var text = new TextObject("{=balkanmod_loaded}Balkan mod loaded.");
             InformationManager.DisplayMessage(new InformationMessage(text.ToString()));
+        }
+
+        public override void OnMissionBehaviorInitialize(Mission mission)
+        {
+            base.OnMissionBehaviorInitialize(mission);
+
+            // Musketenknall und Ladegeräusch für die Feuerwaffen der Mod
+            mission.AddMissionBehavior(new FirearmSoundBehavior());
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
