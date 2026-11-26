@@ -48,6 +48,31 @@ Skripten. Darin stehen alle 492 Orte und Verstecke schon an ihrem Platz, die Cal
 Flüsse, Seen, Sperren) ist entfernt, und eine Wasserfläche auf Höhe 2,25 liegt über der ganzen Karte. Pflanzen und
 Navmesh von Calradia sind nicht mitkopiert. Das Spiel benutzt diese Szene noch nicht, die Mod bleibt spielbar.
 
+## Stand nach dem ersten Versuch im Editor (26.11.2026)
+
+Die volle Szene `balkan_map` (16 × 16 Kacheln wie Calradia) ließ sich auf dem Laptop nicht öffnen: Der Editor
+bricht beim Laden des Geländes mit „could not get new memory“ ab. Gearbeitet wird deshalb mit der leichten Szene
+`balkan_karte`:
+
+- Gelände im Editor neu angelegt: 8 × 8 Kacheln, Kachelgröße 106, 256 × 256 je Kachel. Die Karte bleibt 848
+  Einheiten groß, alle Ortspositionen gelten weiter. Die Bilder dafür haben 2048 Pixel und liegen im Unterordner
+  `leicht/` (einfach die großen Bilder halbiert).
+- Orte, Wasserfläche, Kartengrenzen und die acht Geländeebenen sind aus `balkan_map` in die Szenendatei kopiert.
+  Höhenbild (Scale 25.6, Offset 0) und Masken hat der Editor ohne Fehler eingelesen.
+- Aus der Szene entfernt, weil es nur zu Calradia passt: das Randgebirge (`outer_mesh`), der Schnee-Bereich
+  (`MapSnowAndRainDefiner`, macht sonst Boden und Bäume weiß) und lose Zierobjekte (`map_icons_…`) in den
+  Sammelobjekten.
+- Das `SettlementPositionScript` ist vorerst herausgenommen. Es öffnet beim Speichern
+  `Modules/BalkanMod/ModuleData/settlements.xml`; die Datei gibt es nicht, der Editor stürzt dann ab. Es kommt
+  zurück, wenn das Navmesh steht.
+- Licht: `atmosphere.xml` der Calradia-Karte statt des Editor-Standards, Belichtung etwas gesenkt.
+- Farben: Die Bodentexturen der Weltkarte sind grau-weiß, Calradia färbt sie über ein fertig gemaltes Farbbild
+  (`TileSets/WorldMap`, 2 GB). Hier hat stattdessen jede Ebene einen Farbton (`albedo_factor_color`,
+  `albedo_factor_mode="2"`), und `vista_layer_detail_distance` steht auf 10000.
+- Die weißen Würfel bei den Orten sind Hilfspunkte des Editors (Tor, Lager, Banner), keine fehlenden Modelle.
+
+Die Schritte unten gelten sinngemäß für `balkan_karte` mit den Bildern aus `leicht/`.
+
 ## Import in Minuten
 
 1. Modding Kit starten, im Editor die Szene `balkan_map` öffnen (Modul BalkanMod).

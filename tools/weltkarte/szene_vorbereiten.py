@@ -10,7 +10,8 @@ Die Szene des Spiels wird nicht verändert. In der Kopie
 - sind Städte und Burgen so gedreht, dass das Tor auf begehbares Land zeigt,
 - ist alles entfernt, was nur zur Calradia-Landschaft gehört (Felsen, Brücken, Flüsse, Seen, Sperren, Sichtblenden),
 - liegt eine einzige Wasserfläche über der ganzen Karte, und die Kartengrenzen umfassen die ganze Karte.
-Daneben entsteht siedlungen_positionen.xslt mit posX/posY und Torpositionen für settlements.xml.
+Mit "python szene_vorbereiten.py --nur-orte <Szenenordner> <siedlungen.csv>" werden nur die Orte einer schon
+vorbereiteten Szene neu gesetzt. Daneben entsteht siedlungen_positionen.xslt mit posX/posY und Torpositionen für settlements.xml.
 Pflanzen (flora.bin) und Navmesh (navmesh.bin) der Calradia-Karte werden nicht mitkopiert.
 """
 import csv
@@ -250,7 +251,42 @@ def schreibe_xslt(pfad, tore):
         f.write("\n".join(t) + "\n")
 
 
+def nur_orte(ordner, csv_pfad):
+    """Orte in einer schon vorbereiteten Szene neu setzen, alles andere bleibt, wie es ist."""
+    orte = {z["id"]: z for z in csv.DictReader(open(csv_pfad, encoding="utf-8"), delimiter=";")}
+    pfad = os.path.join(ordner, "scene.xscene")
+    with open(pfad, encoding="utf-8", newline="") as f:
+        text = f.read()
+    ende = "\r\n" if "\r\n" in text else "\n"
+    zeilen = text.split(ende)
+    tore = {}
+    versetzt = 0
+    i = 0
+    while i < len(zeilen):
+        z = zeilen[i]
+        if z.startswith("\t\t<game_entity") and (attribut(z, "name") or "").startswith("campaign_icon_capsule") \
+                and not z.rstrip().endswith("/>"):
+            j = i
+            while zeilen[j] != "\t\t</game_entity>":
+                j += 1
+            block = zeilen[i:j + 1]
+            versetzt += versetze(block, orte, tore)
+            zeilen[i:j + 1] = block
+            i = j
+        i += 1
+    with open(pfad, "w", encoding="utf-8", newline="") as f:
+        f.write(ende.join(zeilen))
+    schreibe_xslt(os.path.join(ordner, "siedlungen_positionen.xslt"), tore)
+    fehlen = sorted(set(orte) - set(tore))
+    print(f"{versetzt} Orte neu gesetzt.")
+    if fehlen:
+        print("Nicht in der Szene gefunden:", ", ".join(fehlen))
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
+    if len(sys.argv) == 4 and sys.argv[1] == "--nur-orte":
+        nur_orte(*sys.argv[2:])
+    elif len(sys.argv) != 4:
         sys.exit(__doc__)
-    hauptprogramm(*sys.argv[1:])
+    else:
+        hauptprogramm(*sys.argv[1:])
