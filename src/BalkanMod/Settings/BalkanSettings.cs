@@ -43,5 +43,15 @@ namespace BalkanMod.Settings
             HintText = "{=balkan_settings_fast2_hint}Time speed of the second extra button (key 5).")]
         [SettingPropertyGroup("{=balkan_settings_group_time}Time controls", GroupOrder = 1)]
         public float FastForwardLevel2 { get; set; } = 16f;
+
+        [SettingPropertyBool("{=balkan_settings_events}Historical events", Order = 0, RequireRestart = false,
+            HintText = "{=balkan_settings_events_hint}Wars and peace treaties happen at their historical dates: the Peace of Karlowitz at the start, the Ottoman war on Venice in 1714, the Emperor joining it in 1716 and the Peace of Passarowitz in 1718. Turn off for a free sandbox. An event that is off when its date comes is skipped for good.")]
+        [SettingPropertyGroup("{=balkan_settings_group_story}Story", GroupOrder = 2)]
+        public bool HistoricalEvents { get; set; } = true;
+
+        [SettingPropertyBool("{=balkan_settings_rise}Guided rise", Order = 1, RequireRestart = false,
+            HintText = "{=balkan_settings_rise_hint}After character creation, choose a start story with a goal (Grenzer, kapetan, hajduk) or free play. Only for new sandbox campaigns.")]
+        [SettingPropertyGroup("{=balkan_settings_group_story}Story", GroupOrder = 2)]
+        public bool GuidedRise { get; set; } = true;
     }
 }

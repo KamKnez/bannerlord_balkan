@@ -1,0 +1,51 @@
+# Historische Ereignisse der Sandbox „Zwischen den Kriegen“ (docs/szenarien.md).
+# Jedes Ereignis tritt einmal ein, sobald sein Datum erreicht ist. Abschaltbar im MCM-Menü (Balkan 1700 → Ereignisse).
+#
+# jahr, tag    Datum in den Jahren der Mod; das Jahr des Spiels hat 84 Tage (4 Jahreszeiten zu 21 Tagen,
+#              Frühling 1–21, Sommer 22–42, Herbst 43–63, Winter 64–84)
+# titel, text  Fenster beim Eintreten, Englisch und Deutsch
+# aktionen     art = "krieg" | "frieden" | "buendnis", reiche = zwei Ids aus data/reiche/ (reich_id)
+#              Eine Aktion entfällt, wenn sie schon gilt oder ein Reich nicht mehr besteht.
+
+[[ereignis]]
+id = "karlowitz_1699"
+jahr = 1700
+tag = 1
+titel = { en = "The Peace of Karlowitz", de = "Der Friede von Karlowitz" }
+text = { en = "At Karlowitz the Sultan has made peace with the Emperor and with Venice. Slavonia and Lika are Habsburg again, Venice keeps its conquests in Dalmatia. The borders are fixed along the Una, the Sava and the Dinaric hills, but no one on the frontier believes the peace will last.", de = "In Karlowitz hat der Sultan Frieden mit dem Kaiser und mit Venedig geschlossen. Slawonien und die Lika sind wieder habsburgisch, Venedig behält seine Eroberungen in Dalmatien. Die Grenzen sind entlang von Una, Save und den Dinarischen Bergen gezogen, doch niemand an der Grenze glaubt, dass der Frieden hält." }
+aktionen = [
+    { art = "frieden", reiche = ["aserai", "vlandia"] },
+    { art = "frieden", reiche = ["aserai", "empire_w"] },
+]
+
+[[ereignis]]
+id = "venedig_krieg_1714"
+jahr = 1714
+tag = 80
+titel = { en = "The Sultan declares war on Venice", de = "Der Sultan erklärt Venedig den Krieg" }
+text = { en = "The Porte wants Morea back. Grand Vizier Silahdar Ali Pasha has declared war on the Republic, and the frontier begs of Bosnia are already gathering their men against Dalmatia.", de = "Die Pforte will Morea zurück. Großwesir Silahdar Ali Pascha hat der Republik den Krieg erklärt, und die Grenzbegs Bosniens sammeln schon ihre Männer gegen Dalmatien." }
+aktionen = [
+    { art = "krieg", reiche = ["aserai", "empire_w"] },
+]
+
+[[ereignis]]
+id = "habsburg_krieg_1716"
+jahr = 1716
+tag = 28
+titel = { en = "The Emperor joins the war", de = "Der Kaiser tritt in den Krieg ein" }
+text = { en = "Emperor Charles VI has renewed his alliance with Venice. Prince Eugene of Savoy gathers the imperial army at Peterwardein, and along the whole Military Frontier the Grenzer take up their muskets.", de = "Kaiser Karl VI. hat sein Bündnis mit Venedig erneuert. Prinz Eugen von Savoyen sammelt das kaiserliche Heer bei Peterwardein, und entlang der ganzen Militärgrenze greifen die Grenzer zu ihren Musketen." }
+aktionen = [
+    { art = "buendnis", reiche = ["vlandia", "empire_w"] },
+    { art = "krieg", reiche = ["vlandia", "aserai"] },
+]
+
+[[ereignis]]
+id = "passarowitz_1718"
+jahr = 1718
+tag = 45
+titel = { en = "The Peace of Passarowitz", de = "Der Friede von Passarowitz" }
+text = { en = "At Passarowitz the Emperor, Venice and the Sultan have made peace. The Emperor wins Belgrade and the Banat, Venice loses Morea but keeps its gains in Dalmatia. The frontier falls quiet again, for now.", de = "In Passarowitz haben der Kaiser, Venedig und der Sultan Frieden geschlossen. Der Kaiser gewinnt Belgrad und das Banat, Venedig verliert Morea, behält aber seine Gewinne in Dalmatien. An der Grenze wird es wieder still, vorerst." }
+aktionen = [
+    { art = "frieden", reiche = ["vlandia", "aserai"] },
+    { art = "frieden", reiche = ["empire_w", "aserai"] },
+]

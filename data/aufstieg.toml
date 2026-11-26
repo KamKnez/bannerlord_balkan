@@ -1,0 +1,63 @@
+# Geführter Aufstieg: Startgeschichten mit Ziel (docs/szenarien.md). Nach der Charaktererstellung wählt man eine
+# Geschichte, die zur gewählten Kultur passt, oder das freie Spiel. Ist das Ziel erreicht, ist das Spiel frei.
+# Nur in der Sandbox, nicht im Story-Modus. Abschaltbar im MCM-Menü (Balkan 1700 → Ereignisse).
+#
+# kulturen    Kultur-Ids (data/kulturen/, kultur_id), für die die Geschichte angeboten wird
+# ort         Siedlung, in der man beginnt (Id im Spiel)
+# reich       Reich der Geschichte (reich_id); sein Herrscher gibt den Auftrag im Tagebuch, außer bei auftraggeber = "ort"
+# beziehung   Änderung der Beziehung zum Herrscher des Reichs
+# truppen     je Kultur-Id: Truppen-Ids und Anzahl, die man zu Beginn bekommt
+# ziel        "vasall" (Vasall des Reichs werden), "burg" (eine Burg besitzen, im Reich), "trupp" (anzahl Männer anführen)
+# belohnung   Gold und Ruhm, wenn das Ziel erreicht ist
+
+[[start]]
+id = "grenzer"
+kulturen = ["vlandia", "serbs"]
+ort = "town_V6"            # Karlovac
+reich = "vlandia"
+beziehung = 10
+gold = 300
+ziel = "vasall"
+belohnung = { gold = 2000, ruhm = 50 }
+name = { en = "Grenzer of the Military Frontier", de = "Grenzer an der Militärgrenze" }
+text = { en = "Your family holds land on the Military Frontier, free of serfdom in return for service. You have reported to the Generalate in Karlovac with a few men from your village. The general has promised you a captaincy if you prove yourself in the Emperor's service.", de = "Eure Familie hat Land an der Militärgrenze, frei von Leibeigenschaft gegen Kriegsdienst. Ihr habt Euch mit ein paar Männern aus Eurem Dorf beim Generalat in Karlovac gemeldet. Der General hat Euch eine Hauptmannsstelle versprochen, wenn Ihr Euch im Dienst des Kaisers bewährt." }
+ziel_text = { en = "Become a captain of the Military Frontier: serve the Habsburgs until they take you in as a vassal.", de = "Werdet Hauptmann der Militärgrenze: Dient den Habsburgern, bis sie Euch als Vasall aufnehmen." }
+erfolg_text = { en = "The Generalate has made you a captain of the Military Frontier. From now on your path is your own.", de = "Das Generalat hat Euch zum Hauptmann der Militärgrenze gemacht. Von nun an geht Ihr Euren eigenen Weg." }
+[start.truppen]
+vlandia = { balkan_hr_haramija = 4, balkan_hr_peasant = 3 }
+serbs = { balkan_sr_shooter = 4, balkan_sr_peasant = 3 }
+
+[[start]]
+id = "kapetan"
+kulturen = ["aserai"]
+ort = "town_A6"            # Banja Luka
+reich = "aserai"
+beziehung = 10
+gold = 300
+ziel = "burg"
+belohnung = { gold = 2000, ruhm = 50 }
+name = { en = "From a house of frontier begs", de = "Aus dem Haus eines Grenzbegs" }
+text = { en = "Your family has served the captaincies of the Krajina for generations. With a few azaps from your father's village you have come to Banja Luka. The beylerbey needs men who can hold a fortress against the Germans, and he does not care whose child you are.", de = "Eure Familie dient seit Generationen den Kapetanije der Krajina. Mit ein paar Azaps aus dem Dorf Eures Vaters seid Ihr nach Banja Luka gekommen. Der Beylerbey braucht Männer, die eine Festung gegen die Deutschen halten können, und es kümmert ihn nicht, aus welchem Haus Ihr kommt." }
+ziel_text = { en = "Become kapetan of a border fortress: hold a castle of your own as a member of the Ottoman realm.", de = "Werdet Kapetan einer Grenzfestung: Besitzt als Mitglied des Osmanischen Reichs eine eigene Burg." }
+erfolg_text = { en = "A fortress of the frontier is yours, and men call you kapetan. From now on your path is your own.", de = "Eine Festung der Grenze gehört Euch, und man nennt Euch Kapetan. Von nun an geht Ihr Euren eigenen Weg." }
+[start.truppen]
+aserai = { balkan_bs_azap = 4, balkan_bs_peasant = 3 }
+
+[[start]]
+id = "hajduk"
+kulturen = ["serbs", "vlandia"]
+ort = "village_A3_3"       # Goražde
+reich = "aserai"
+auftraggeber = "ort"
+beziehung = -10
+gold = 150
+ziel = "trupp"
+anzahl = 40
+belohnung = { gold = 1000, ruhm = 50 }
+name = { en = "Hajduk in the hills", de = "Hajduk in den Bergen" }
+text = { en = "The subaşı's men burned your house over a debt your father never owed. You took to the forests above the Drina with a handful of friends. The villagers bring you bread and news, and the pasha has put a price on your head.", de = "Die Männer des Subaşı haben Euer Haus wegen einer Schuld niedergebrannt, die Euer Vater nie hatte. Mit einer Handvoll Freunde seid Ihr in die Wälder über der Drina gegangen. Die Dörfler bringen Euch Brot und Nachrichten, und der Pascha hat einen Preis auf Euren Kopf ausgesetzt." }
+ziel_text = { en = "Build your own band: lead at least {COUNT} men.", de = "Baut Eure eigene Bande auf: Führt mindestens {COUNT} Männer an." }
+erfolg_text = { en = "Your band is known from the Drina to the sea, and the songs already speak of you. From now on your path is your own.", de = "Eure Bande ist von der Drina bis zum Meer bekannt, und die Lieder erzählen schon von Euch. Von nun an geht Ihr Euren eigenen Weg." }
+[start.truppen]
+serbs = { balkan_sr_shooter = 3, balkan_sr_peasant = 3 }
+vlandia = { balkan_hr_haramija = 3, balkan_hr_peasant = 3 }

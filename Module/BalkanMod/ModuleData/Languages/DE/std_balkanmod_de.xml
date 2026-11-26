@@ -18,6 +18,17 @@
     <string id="balkan_settings_fast1_hint" text="Zeitraffer des ersten zusätzlichen Knopfs neben der Zeitsteuerung unten auf der Karte (Taste 4). Das Vorspulen des Grundspiels ist 4x."/>
     <string id="balkan_settings_fast2" text="Zweiter zusätzlicher Vorspulknopf"/>
     <string id="balkan_settings_fast2_hint" text="Zeitraffer des zweiten zusätzlichen Knopfs (Taste 5)."/>
+    <string id="balkan_settings_group_story" text="Geschichte"/>
+    <string id="balkan_settings_events" text="Historische Ereignisse"/>
+    <string id="balkan_settings_events_hint" text="Kriege und Friedensschlüsse treten zu ihren historischen Daten ein: der Friede von Karlowitz zu Beginn, der osmanische Krieg gegen Venedig 1714, der Kriegseintritt des Kaisers 1716 und der Friede von Passarowitz 1718. Ausschalten für eine freie Sandbox. Ein Ereignis, das zu seinem Datum ausgeschaltet ist, entfällt endgültig."/>
+    <string id="balkan_settings_rise" text="Geführter Aufstieg"/>
+    <string id="balkan_settings_rise_hint" text="Nach der Charaktererstellung eine Startgeschichte mit Ziel wählen (Grenzer, Kapetan, Hajduk) oder frei spielen. Nur bei neuen Sandbox-Kampagnen."/>
+    <string id="balkan_ok" text="Weiter"/>
+    <string id="balkan_rise_title" text="Aufstieg"/>
+    <string id="balkan_rise_free" text="Freies Spiel"/>
+    <string id="balkan_rise_free_hint" text="Keine Geschichte und kein Ziel. Ihr beginnt dort, wo das Spiel Euch hinsetzt."/>
+    <string id="balkan_rise_choose" text="Wie beginnt Eure Geschichte?"/>
+    <string id="balkan_rise_choose_text" text="Wählt einen Einstieg. Habt Ihr sein Ziel erreicht, ist das Spiel frei."/>
     <string id="balkan_time_fast_hint" text="Vorspulen {FACTOR} (Taste {KEY})"/>
     <string id="balkan_start_firearms" text="Eine Arkebuse, eine Pistole und Munition liegen in deinem Inventar."/>
     <!-- Texte des Grundspiels: Fertigkeit Armbrust heißt Feuerwaffen (englisch in EN/std_balkan_overrides_en.xml) -->

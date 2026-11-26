@@ -51,6 +51,8 @@ VILLAGE_TYPES = {
 CULTURE_IMAGES = ("empire", "vlandia", "sturgia", "aserai", "khuzait", "battania")
 OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
 OUT_EN_BACKGROUNDS = MODULE_DATA / "Languages" / "EN" / "std_balkan_backgrounds_en.xml"
+OUT_EVENTS_TABLE = ROOT / "src" / "BalkanMod" / "Story" / "BalkanEventTable.g.cs"
+OUT_RISE_TABLE = ROOT / "src" / "BalkanMod" / "Story" / "BalkanRiseTable.g.cs"
 OUT_BG_TABLE = ROOT / "src" / "BalkanMod" / "CharacterCreation" / "BalkanBackgroundTable.g.cs"
 # Eltern-Optionen der Charaktererstellung je Vorlage-Kultur (CharacterCreationCampaignBehavior, v1.5.7)
 BACKGROUND_OPTIONS = {
@@ -419,6 +421,122 @@ def build_cc_table(cultures):
         "        /// <summary>Kultur-Id der wählbaren Kulturen: Vorlage-Kultur des Spiels und Kulturbild.</summary>",
         "        public static readonly Dictionary<string, (string Template, string Image)> Cultures =",
         "            new Dictionary<string, (string Template, string Image)>",
+        "        {",
+        *rows,
+        "        };",
+        "    }",
+        "}",
+    ]) + "\n"
+
+
+# ---------------------------------------------------------------- Ereignisse und geführter Aufstieg
+
+EVENT_ACTIONS = ("krieg", "frieden", "buendnis")
+RISE_GOALS = ("vasall", "burg", "trupp")
+
+
+def load_toml(name):
+    with (DATA / name).open("rb") as fh:
+        return tomllib.load(fh)
+
+
+def check_lang(where, field, value, errors):
+    if not isinstance(value, dict) or set(value) != {"en", "de"}:
+        errors.append(f"{where}: {field} braucht en und de")
+
+
+def check_events(events, realms, cultures, vanilla_ids):
+    errors = []
+    realm_ids = {r["reich_id"] for r in realms}
+    seen = set()
+    for e in events.get("ereignis", []):
+        where = f"data/ereignisse.toml: {e.get('id', '?')}"
+        if e.get("id") in seen:
+            errors.append(f"{where}: Id doppelt")
+        seen.add(e.get("id"))
+        if not (1 <= e.get("tag", 0) <= 84):
+            errors.append(f"{where}: tag muss zwischen 1 und 84 liegen")
+        for field in ("titel", "text"):
+            check_lang(where, field, e.get(field), errors)
+        for a in e.get("aktionen", []):
+            if a.get("art") not in EVENT_ACTIONS:
+                errors.append(f"{where}: unbekannte art '{a.get('art')}' (erlaubt: {', '.join(EVENT_ACTIONS)})")
+            reiche = a.get("reiche", [])
+            if len(reiche) != 2 or reiche[0] == reiche[1] or any(r not in realm_ids for r in reiche):
+                errors.append(f"{where}: reiche muss zwei verschiedene Ids aus data/reiche/ nennen: {reiche}")
+    return errors
+
+
+def check_rise(rise, realms, cultures, vanilla_ids):
+    errors = []
+    realm_ids = {r["reich_id"] for r in realms}
+    culture_ids = {c["kultur_id"] for c in cultures}
+    troop_ids = {tid(c, t["id"]) for c in cultures for t in c["truppe"]}
+    for st in rise.get("start", []):
+        where = f"data/aufstieg.toml: {st.get('id', '?')}"
+        for cid in st.get("kulturen", []):
+            if cid not in culture_ids:
+                errors.append(f"{where}: unbekannte Kultur '{cid}'")
+        if f"Settlement.{st.get('ort')}" not in vanilla_ids:
+            errors.append(f"{where}: unbekannter Ort '{st.get('ort')}'")
+        if st.get("reich") not in realm_ids:
+            errors.append(f"{where}: unbekanntes Reich '{st.get('reich')}'")
+        if st.get("ziel") not in RISE_GOALS:
+            errors.append(f"{where}: unbekanntes ziel '{st.get('ziel')}' (erlaubt: {', '.join(RISE_GOALS)})")
+        if st.get("ziel") == "trupp" and st.get("anzahl", 0) < 2:
+            errors.append(f"{where}: ziel trupp braucht anzahl")
+        if st.get("auftraggeber", "herrscher") not in ("herrscher", "ort"):
+            errors.append(f"{where}: auftraggeber muss herrscher oder ort sein")
+        for field in ("name", "text", "ziel_text", "erfolg_text"):
+            check_lang(where, field, st.get(field), errors)
+        for cid, troops in st.get("truppen", {}).items():
+            if cid not in st.get("kulturen", []):
+                errors.append(f"{where}: truppen für '{cid}', das nicht unter kulturen steht")
+            for troop in troops:
+                if troop not in troop_ids:
+                    errors.append(f"{where}: unbekannte Truppe '{troop}'")
+    return errors
+
+
+def build_events(events, strings):
+    rows = []
+    for e in events.get("ereignis", []):
+        title = strings.add(f"balkan_event_{e['id']}", e["titel"]["en"], e["titel"]["de"])
+        text = strings.add(f"balkan_event_{e['id']}_text", e["text"]["en"].strip(), e["text"]["de"].strip())
+        actions = ", ".join(f'("{a["art"]}", "{a["reiche"][0]}", "{a["reiche"][1]}")' for a in e.get("aktionen", []))
+        rows.append(f'            new BalkanEvent("{e["id"]}", {e["jahr"]}, {e["tag"]}, {cs_string(title)}, {cs_string(text)},')
+        rows.append(f'                new (string Kind, string Kingdom1, string Kingdom2)[] {{ {actions} }}),')
+    return cs_table("data/ereignisse.toml", "BalkanEventTable", "BalkanEvent[] Events", "new[]", rows)
+
+
+def build_rise(rise, strings):
+    rows = []
+    for st in rise.get("start", []):
+        key = st["id"]
+        texts = [strings.add(f"balkan_rise_{key}{suffix}", st[field]["en"].strip(), st[field]["de"].strip())
+                 for field, suffix in (("name", ""), ("text", "_text"), ("ziel_text", "_goal"),
+                                       ("erfolg_text", "_success"))]
+        cultures = ", ".join(f'"{c}"' for c in st["kulturen"])
+        troops = ", ".join(f'("{cid}", "{troop}", {count})' for cid, group in st.get("truppen", {}).items()
+                           for troop, count in group.items())
+        reward = st.get("belohnung", {})
+        rows.append(f'            new BalkanRiseStart("{key}", new[] {{ {cultures} }}, "{st["ort"]}", "{st["reich"]}", '
+                    f'{str(st.get("auftraggeber", "herrscher") == "ort").lower()}, {st.get("beziehung", 0)}, {st.get("gold", 0)},')
+        rows.append(f'                "{st["ziel"]}", {st.get("anzahl", 0)}, {reward.get("gold", 0)}, {reward.get("ruhm", 0)},')
+        rows.append("                " + ", ".join(cs_string(t) for t in texts) + ",")
+        rows.append(f'                new (string Culture, string Troop, int Count)[] {{ {troops} }}),')
+    return cs_table("data/aufstieg.toml", "BalkanRiseTable", "BalkanRiseStart[] Starts", "new[]", rows)
+
+
+def cs_table(source, cls, field, init, rows):
+    return "\n".join([
+        f"// Erzeugt von tools/gen_content.py aus {source}. Nicht von Hand ändern.",
+        "namespace BalkanMod.Story",
+        "{",
+        f"    internal static class {cls}",
+        "    {",
+        f"        public static readonly {field} =",
+        f"        {init}",
         "        {",
         *rows,
         "        };",
@@ -1162,6 +1280,11 @@ def generate():
     errors = check_trade(trade, cultures, weapons, vanilla_ids)
     if errors:
         raise SystemExit("Fehler in data/handel.toml:\n  - " + "\n  - ".join(errors))
+    events = load_toml("ereignisse.toml")
+    rise = load_toml("aufstieg.toml")
+    errors = check_events(events, realms, cultures, vanilla_ids) + check_rise(rise, realms, cultures, vanilla_ids)
+    if errors:
+        raise SystemExit("Fehler in data/ereignisse.toml oder data/aufstieg.toml:\n  - " + "\n  - ".join(errors))
     backgrounds = load_backgrounds()
     errors = check_backgrounds(backgrounds, cultures)
     if errors:
@@ -1178,6 +1301,8 @@ def generate():
         OUT_CC_TABLE: build_cc_table(cultures),
     }
     files.update(build_realms(realms, strings))
+    files[OUT_EVENTS_TABLE] = build_events(events, strings)
+    files[OUT_RISE_TABLE] = build_rise(rise, strings)
     files[OUT_BG_TABLE], files[OUT_EN_BACKGROUNDS] = build_backgrounds(backgrounds, cultures, strings)
     files[OUT_DE] = build_de(strings)
     return files

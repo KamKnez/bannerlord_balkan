@@ -24,11 +24,20 @@ treten zu ihren Daten ein, sofern die betroffenen Gebiete auf der Karte sind. De
 | 1716 | Österreichisch-Türkischer Krieg (bis 1718) | Habsburger treten an Venedigs Seite in den Krieg ein, Schlacht bei Peterwardein 1716, Belagerung Belgrads 1717 | Kern, für Belgrad und Peterwardein die zweite Runde |
 
 Im Kern (v0.1) greifen davon zuerst die Kriege ab 1714 und 1716, die übrigen Ereignisse folgen mit der größeren Karte.
-Die Ereignisse sollen abschaltbar sein, für Spieler, die eine rein freie Sandbox wollen. *(Daten im Design prüfen)*
+Die Ereignisse sind abschaltbar (MCM: Balkan 1700 → Geschichte), für Spieler, die eine rein freie Sandbox wollen.
+
+**Umgesetzt:** `data/ereignisse.toml` mit dem Frieden von Karlowitz zu Beginn (Frieden zwischen Osmanen, Habsburgern und
+Venedig), dem Krieg gegen Venedig 1714, dem Bündnis und Kriegseintritt des Kaisers 1716 und dem Frieden von Passarowitz
+1718. Code: `src/BalkanMod/Story/HistoricalEventsBehavior.cs`.
 
 ### 2. Geführter Aufstieg (Einstieg)
 
 Eine Startgeschichte je Volk mit eigenem Ziel. Hat man das Ziel erreicht, ist das Spiel frei.
+
+**Umgesetzt:** Grenzer, Kapetan und Hajduk in `data/aufstieg.toml`. Nach der Charaktererstellung wählt man eine
+Geschichte, die zur Kultur passt, oder das freie Spiel; das Ziel steht als Auftrag im Tagebuch
+(`src/BalkanMod/Story/`). Abschaltbar wie die Ereignisse. Die Orte sind Ids der jetzigen Karte und müssen mit der
+neuen Karte angepasst werden.
 
 | Start | Ziel | Wann |
 |---|---|---|
