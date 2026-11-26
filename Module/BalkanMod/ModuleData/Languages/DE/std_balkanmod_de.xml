@@ -19,5 +19,6 @@
     <string id="balkan_settings_fast2" text="Zweiter zusätzlicher Vorspulknopf"/>
     <string id="balkan_settings_fast2_hint" text="Zeitraffer des zweiten zusätzlichen Knopfs (Taste 5)."/>
     <string id="balkan_time_fast_hint" text="Vorspulen {FACTOR} (Taste {KEY})"/>
+    <string id="balkan_start_firearms" text="Eine Muskete, eine Pistole und Munition liegen in deinem Inventar."/>
   </strings>
 </base>

@@ -16,7 +16,8 @@ Dazu die vier Königreiche Habsburger (statt Vlandia), Osmanen (statt Aserai), V
 und Ragusa (statt Südliches Imperium) mit umbenannten Clans und Lords. Ihre 203 Städte, Burgen und Dörfer tragen
 echte Ortsnamen (Zagreb, Sarajevo, Zadar, Dubrovnik …) und Beschreibungen um 1700 statt der Calradia-Geschichten. Die Reiche haben eigene Wappenfarben; zu Spielbeginn führen Habsburger und Venedig Krieg gegen die Osmanen.
 Schützen tragen Arkebusen und Musketen, Reiter Pistolen ([data/waffen.toml](data/waffen.toml)). Die Gewehre haben
-Musketen-Modelle aus Napoleonic Warfare (siehe [CREDITS.md](CREDITS.md)); Mechanik und Klang sind noch die der Armbrust. Als Nächstes folgt eine Balance-Runde
+Musketen-Modelle aus Napoleonic Warfare (siehe [CREDITS.md](CREDITS.md)); Mechanik und Klang sind noch die der Armbrust.
+Zum Ausprobieren liegen nach der Charaktererstellung eine Muskete, eine Pistole und Munition im Inventar. Als Nächstes folgt eine Balance-Runde
 nach Spieltest (siehe [docs/design.md](docs/design.md)).
 
 ## Installieren und testen

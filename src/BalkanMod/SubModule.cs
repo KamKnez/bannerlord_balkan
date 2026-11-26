@@ -1,3 +1,4 @@
+using BalkanMod.CampaignBehaviors;
 using BalkanMod.CampaignModels;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
@@ -51,6 +52,8 @@ namespace BalkanMod
             {
                 // Reisegeschwindigkeit auf der Karte (Faktoren im MCM-Menü)
                 campaignStarter.AddModel(new BalkanPartySpeedModel());
+                // Muskete, Pistole und Munition für die Spielfigur zu Beginn
+                campaignStarter.AddBehavior(new StartingFirearmsBehavior());
             }
         }
     }
