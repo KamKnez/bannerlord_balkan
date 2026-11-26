@@ -1,0 +1,71 @@
+# Handel in den Städten der Balkan-Kulturen (v0.1)
+#
+# tools/gen_content.py erzeugt daraus Module/BalkanMod/ModuleData/balkan_handel.xml. Die Mod liest die Datei beim
+# Spielstart (src/BalkanMod/CampaignBehaviors/BalkanMarketBehavior.cs) und pflegt damit die Läden aller Städte,
+# deren Kultur unten in `kulturen` steht. Städte anderer Kulturen (Sturgia, Battania, Khuzait, Nordimperium)
+# bleiben, wie das Spiel sie füllt.
+#
+# Was passiert:
+#   - Einmal am Tag verschwinden unpassende Gegenstände aus den Läden (Regeln unter [entfernen]).
+#   - Einmal pro Woche füllt jeder Laden Feuerwaffen und Munition auf (Liste [[immer]]) und nimmt bis zu
+#     `pro_woche` fehlende Teile aus dem Sortiment seiner Kultur dazu.
+#   - Das Sortiment einer Kultur sind alle Gegenstände, die ihre Truppen ab `min_stufe` tragen, dazu `extra`.
+#     Gegenstände aus dem Sortiment der eigenen Kultur werden nie entfernt.
+#   - Wie gut ein Laden bestückt ist, hängt vom Wohlstand ab: Teile über `max_stufe_bei_wohlstand` kommen nicht dazu.
+
+kulturen = ["vlandia", "aserai", "germans", "hungarians", "serbs", "turks", "venice", "ragusa"]
+
+[sortiment]
+min_stufe = 2
+pro_woche = 6
+# Wohlstand ab ... -> höchste Gegenstandsstufe (1 bis 6), die der Laden nachfüllt
+max_stufe_bei_wohlstand = [[0, 3], [3000, 4], [5000, 5], [7000, 6]]
+
+[sortiment.extra]
+vlandia = ["balkan_pistol"]
+germans = ["balkan_pistol"]
+hungarians = ["balkan_pistol"]
+serbs = ["balkan_pistol"]
+venice = ["balkan_pistol"]
+ragusa = ["balkan_pistol"]
+aserai = []
+turks = []
+
+# Feuerwaffen und Munition: in jeder Balkan-Stadt mindestens so viele vorrätig (wöchentlich aufgefüllt)
+[[immer]]
+id = "balkan_arquebus"
+anzahl = 2
+[[immer]]
+id = "balkan_musket"
+anzahl = 2
+[[immer]]
+id = "balkan_long_musket"
+anzahl = 1
+[[immer]]
+id = "balkan_heavy_musket"
+anzahl = 1
+[[immer]]
+id = "balkan_pistol"
+anzahl = 2
+[[immer]]
+id = "balkan_musket_balls"
+anzahl = 6
+[[immer]]
+id = "balkan_pistol_balls"
+anzahl = 4
+
+[entfernen]
+# Gegenstandsarten, die in Balkan-Städten nicht verkauft werden (eigene balkan_-Gegenstände ausgenommen):
+# Armbrüste und Bolzen sind durch Musketen ersetzt.
+typen = ["Crossbow", "Bolts"]
+# Bögen und Pfeile nur in diesen Kulturen (osmanische Reiter schießen um 1700 noch mit dem Bogen)
+bogen_nur_in = ["aserai", "turks"]
+# Teile der Ids, die auf mittelalterliche oder fantastische Ausrüstung hinweisen
+muster = [
+    "full_helm", "visored_helmet", "faceguard", "goggled", "crown", "wolfhead", "bearhead", "battania_warlord",
+    "warlord", "lendman", "legion", "cataphract", "spangenhelm", "nasalhelm", "imperial_lamellar", "lamellar_with_scale",
+    "khuzait_heavy_armor", "battania_noble_armor", "kilt", "tartan", "highland", "woodland", "fian", "savage",
+    "pauldron", "noble_bracers", "brass_lamellar_shoulder", "aserai_scale_b_shoulder", "assassin",
+]
+# einzelne Ids zusätzlich
+ids = ["vlandian_faceguard_helmet_a", "vlandian_faceguard_helmet_b", "western_crowned_helmet", "western_crowned_plated_helmet"]

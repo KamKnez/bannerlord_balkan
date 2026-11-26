@@ -65,6 +65,8 @@ namespace BalkanMod
                 campaignStarter.AddBehavior(new StartingFirearmsBehavior());
                 // Notabeln bekommen die Kultur ihrer Siedlung (Rekruten und Namen passend zur Kultur)
                 campaignStarter.AddBehavior(new NotableCultureBehavior());
+                // Läden der Balkan-Städte: Feuerwaffen und Kulturausrüstung rein, unpassende Calradia-Ware raus
+                campaignStarter.AddBehavior(new BalkanMarketBehavior());
             }
         }
     }
