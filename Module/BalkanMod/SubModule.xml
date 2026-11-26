@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Module>
   <Id value="BalkanMod"/>
-  <Name value="Balkan 1700 (working title)"/>
+  <Name value="Balkan 1700"/>
   <Version value="v0.0.1"/>
   <DefaultModule value="false"/>
   <ModuleCategory value="Singleplayer"/>

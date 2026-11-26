@@ -1,4 +1,4 @@
-# Design-Dokument: Balkan 1700 (Arbeitstitel)
+# Design-Dokument: Balkan 1700
 
 Version 0.1 des Konzepts. Grundlage sind die Recherche unter [recherche/](recherche/) und der abgestimmte Fahrplan.
 
@@ -21,7 +21,7 @@ Version 0.1 des Konzepts. Grundlage sind die Recherche unter [recherche/](recher
 
 Kaiser, Sultan und Doge erscheinen erst mit der großen Karte, wenn Wien, Istanbul und Venedig auf ihr liegen.
 
-**Die übrigen Calradia-Reiche** (Sturgia, Khuzait, Battania, Nördliches Imperium) bekommen in v0.1 nur neue Namen als Vorgriff (Zarentum, Krimkhanat, Montenegro, Polen-Litauen). Ihre Truppen bleiben vorerst die von Calradia.
+**Die übrigen Calradia-Reiche** (Sturgia, Khuzait, Battania, Nördliches Imperium) bleiben in v0.1 unverändert. Später werden sie zu Zarentum, Krimkhanat, Montenegro und Polen-Litauen.
 
 ### Clans
 
@@ -166,8 +166,8 @@ Fertig ist v0.1, wenn:
 4. Siedlungen umbenennen und verteilen (C# mit Unit-Tests)
 5. Musketen und Pistolen (Werte), Balance-Runde nach Spieltest
 
-## 11. Offene Fragen
+## 11. Entscheidungen und offene Fragen
 
-- Name der Mod (Arbeitstitel „Balkan 1700“)?
-- Wer war um 1700 Beylerbey von Bosnien und wer Provveditore generale in Dalmatien? Das wird in der Recherche weiter geprüft.
-- Sollen die übrigen Calradia-Reiche in v0.1 schon umbenannt werden, oder bleiben sie Calradia?
+- **Name der Mod (entschieden):** „Balkan 1700“.
+- **Übrige Calradia-Reiche (entschieden):** Sturgia, Khuzait, Battania und das Nördliche Imperium bleiben in v0.1 unverändert.
+- **Offen:** Wer war um 1700 Beylerbey von Bosnien und wer Provveditore generale in Dalmatien? Das wird in der Recherche weiter geprüft.

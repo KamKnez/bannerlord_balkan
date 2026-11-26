@@ -1,4 +1,4 @@
-# Balkan 1700 (Arbeitstitel)
+# Balkan 1700
 
 Total-Conversion-Mod für **Mount & Blade II: Bannerlord** (gebaut gegen Spielversion v1.5.7).
 Schauplatz ist Südosteuropa: Grenzen und Lords wie um 1700 nach dem Frieden von Karlowitz,
