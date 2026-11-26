@@ -109,8 +109,15 @@ aufwerten = ["veteran_halberdier"]
 [[truppe.ausruestung]]
 Item0 = "empire_polearm_1_t4"
 Item1 = "empire_sword_2_t3"
+Head = "leatherlame_roundkettle"
+Body = "woven_leather_coat"
+Gloves = "padded_mitten"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_polearm_1_t4"
+Item1 = "empire_sword_2_t3"
 Head = "roundkettle_over_imperial_leather"
-Body = "imperial_mail_vest"
+Body = "imperial_padded_cloth"
 Gloves = "padded_mitten"
 Leg = "leather_boots"
 
@@ -127,6 +134,13 @@ Head = "roundkettle_over_imperial_mail"
 Body = "imperial_mail_over_leather"
 Gloves = "reinforced_padded_mitten"
 Leg = "folded_town_boots"
+[[truppe.ausruestung]]
+Item0 = "vlandia_polearm_1_t5"
+Item1 = "empire_sword_3_t3"
+Head = "leatherlame_roundkettle"
+Body = "basic_imperial_leather_armor"
+Gloves = "reinforced_padded_mitten"
+Leg = "folded_town_boots"
 
 [[truppe]]
 id = "arquebusier"
@@ -139,8 +153,15 @@ aufwerten = ["veteran_arquebusier"]
 Item0 = "balkan_arquebus"
 Item1 = "balkan_musket_balls"
 Item2 = "empire_sword_2_t3"
-Head = "leatherlame_roundkettle"
+Head = "merchants_hat"
 Body = "woven_leather_coat"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_2_t3"
+Head = "leatherlame_roundkettle"
+Body = "imperial_padded_cloth"
 Leg = "leather_boots"
 
 [[truppe]]
@@ -153,8 +174,16 @@ profil = "schuetze"
 Item0 = "balkan_musket"
 Item1 = "balkan_musket_balls"
 Item2 = "empire_sword_3_t3"
+Head = "merchants_hat"
+Body = "basic_imperial_leather_armor"
+Gloves = "woven_leather_bracers"
+Leg = "folded_town_boots"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_3_t3"
 Head = "roundkettle_over_imperial_leather"
-Body = "imperial_mail_over_leather"
+Body = "eastern_studded_leather"
 Gloves = "woven_leather_bracers"
 Leg = "folded_town_boots"
 
@@ -192,8 +221,17 @@ pferd = { Horse = "t2_empire_horse", HorseHarness = "stripped_leather_harness" }
 Item0 = "empire_lance_2_t4"
 Item1 = "empire_sword_3_t3"
 Item2 = "heavy_horsemans_kite_shield"
-Head = "heavy_nasalhelm_over_imperial_padding"
+Head = "kettle_hat_over_mail_coif"
 Body = "imperial_mail_over_leather"
+Gloves = "lordly_padded_mitten"
+Leg = "leather_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_3_t3"
+Item2 = "heavy_horsemans_kite_shield"
+Head = "merchants_hat"
+Cape = "empire_cape_a"
+Body = "empire_horseman_armor"
 Gloves = "lordly_padded_mitten"
 Leg = "leather_cavalier_boots"
 
@@ -210,10 +248,18 @@ pferd = { Horse = "t3_empire_horse", HorseHarness = "half_scale_barding" }
 Item0 = "empire_lance_2_t4"
 Item1 = "empire_sword_5_t4"
 Item2 = "fortified_kite_shield"
-Head = "ironlame_feathered_spangenhelm_over_mail"
-Body = "imperial_scale_armor"
+Head = "peaked_helmet_over_mail_coif"
+Body = "coat_of_plates_over_mail"
 Gloves = "decorated_imperial_gauntlets"
-Leg = "lamellar_plate_boots"
+Leg = "mail_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_5_t4"
+Item2 = "fortified_kite_shield"
+Head = "western_plated_helmet"
+Body = "northern_coat_of_plates"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
 
 # ---------------------------------------------------------------- Stadtmiliz
 
