@@ -242,6 +242,7 @@ name = { en = "Rector's Guard", de = "Rektorengarde" }
 stufe = 4
 gruppe = "Cavalry"
 profil = "reiter"
+aufwerten = ["veteran_rectors_guard"]
 benoetigt = "kriegspferd"
 gesicht = "fighter_empire_tall"
 pferd = { Horse = "t3_empire_horse", HorseHarness = "half_scale_barding" }
@@ -259,6 +260,52 @@ Item1 = "empire_sword_5_t4"
 Item2 = "fortified_kite_shield"
 Head = "western_plated_helmet"
 Body = "northern_coat_of_plates"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "veteran_rectors_guard"
+name = { en = "Veteran Rector's Guard", de = "Veteran der Rektorengarde" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+aufwerten = ["rectors_captain"]
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "t3_empire_horse", HorseHarness = "imperial_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_sword_6_t5"
+Item2 = "fortified_kite_shield"
+Head = "western_plated_helmet"
+Body = "coat_of_plates_over_mail"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_sword_6_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "peaked_helmet_over_mail_coif"
+Body = "imperial_scale_armor"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "rectors_captain"
+name = { en = "Captain of the Rector's Guard", de = "Hauptmann der Rektorengarde" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "noble_horse_imperial", HorseHarness = "imperial_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "western_plated_helmet"
+Cape = "empire_cape_a"
+Body = "imperial_scale_armor"
 Gloves = "decorated_imperial_gauntlets"
 Leg = "mail_cavalier_boots"
 

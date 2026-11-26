@@ -460,6 +460,33 @@ def check_definitions(cultures):
         for r in refs:
             if r not in known:
                 errors.append(f"{where}: Truppe '{r}' wird verwendet, ist aber nicht definiert")
+        errors += check_noble_tree(c, where)
+    return errors
+
+
+def check_noble_tree(c, where):
+    """Der Adelsbaum geht wie im Spiel ohne Lücke von Stufe 2 bis 6 (jeder Schritt genau eine Stufe)."""
+    troops = {t["id"]: t for t in c["truppe"]}
+    errors = []
+    start = troops.get(c["elite_truppe"])
+    if not start:
+        return errors
+    if start["stufe"] != 2:
+        errors.append(f"{where}: Adelsbaum beginnt mit Stufe {start['stufe']} statt 2")
+    todo, top = [start], 0
+    while todo:
+        t = todo.pop()
+        top = max(top, t["stufe"])
+        for target in t.get("aufwerten", []):
+            nxt = troops.get(target)
+            if not nxt:
+                continue
+            if nxt["stufe"] != t["stufe"] + 1:
+                errors.append(f"{where}: Adelsbaum {t['id']} ({t['stufe']}) -> {target} ({nxt['stufe']}): "
+                              "Stufe muss um genau 1 steigen")
+            todo.append(nxt)
+    if top < 6:
+        errors.append(f"{where}: Adelsbaum erreicht nur Stufe {top}, nicht 6")
     return errors
 
 
