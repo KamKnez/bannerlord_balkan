@@ -8,7 +8,7 @@ namespace BalkanMod.Missions
 {
     /// <summary>
     /// Musketenknall beim Schuss und Ladegeräusch kurz danach, für alle Feuerwaffen der Mod (Ids balkan_*,
-    /// Waffenklasse Armbrust). Die Klänge stehen in ModuleData/module_sounds.xml, die Dateien in ModuleSounds/.
+    /// Waffenklasse Armbrust). Die Klänge stehen in ModuleData/module_sounds.xml (auch in project.mbproj eingetragen), die Dateien in ModuleSounds/.
     /// Dazu Rauch und Mündungsfeuer an der Mündung (Partikel "musket_effect" bzw. "pistol_effect" aus Napoleonic
     /// Warfare, gepackt in AssetPackages/pack0.tpac). Fehlt der Partikel, wird er still übersprungen.
     /// </summary>
