@@ -186,6 +186,23 @@ Fehden schlichten. In manchen Texten stecken aber noch Calradia-Begriffe und Cal
 | Gefangenenfreikauf | Gefangene über die Grenze zurückkaufen, mit Verhandlung oder Lösegeld |
 | Schmuggel nach Venedig | Waren an den Zöllen vorbei in eine venezianische Küstenstadt bringen |
 
+## 8c. Aufstände der Völker (späte Erweiterung, abschaltbar)
+
+Damit das späte Spiel spannend bleibt: Nach einigen Jahren im Spiel können sich Völker innerhalb der großen Reiche
+erheben und Unabhängigkeit anstreben, zum Beispiel Serben, Bulgaren, Griechen, Rumänen oder Ungarn.
+Historisch kommt das eher zu früh, die großen Erhebungen folgen erst im 18. und 19. Jahrhundert, und sie bleiben deshalb
+eine bewusste Spielentscheidung.
+
+- **Bedingungen statt fester Daten:** Ein Aufstand wird wahrscheinlicher, wenn ein Volk unzufrieden ist (hohe Steuern,
+  Plünderungen, fremde Herren), das Reich im Krieg steht oder geschwächt ist (verlorene Städte, wenig Truppen).
+  Frühestens nach einigen Jahren Spielzeit.
+- **Ablauf:** Zuerst Unruhen und Gerüchte, dann eine Rebellen-Fraktion mit eigenen Anführern aus dem Volk, die
+  Siedlungen ihres Volkes übernimmt. Gelingt der Aufstand, entsteht ein neues Königreich.
+- **Für den Spieler:** Man kann den Aufstand niederschlagen, unterstützen oder sich ihm anschließen.
+- **Abschaltbar** über die Spieloptionen, für alle, die bei der Lage von 1700 bleiben wollen.
+- Baut auf dem Rebellionssystem des Spiels auf (siehe Modifikator „Civil Unrest“) und braucht die betroffenen Gebiete
+  auf der Karte.
+
 ## 9. Umfang der ersten Version (v0.1)
 
 Fertig ist v0.1, wenn:
