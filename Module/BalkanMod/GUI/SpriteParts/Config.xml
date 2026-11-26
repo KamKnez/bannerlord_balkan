@@ -1,0 +1,7 @@
+<Config>
+	<!-- Sprites der Mod (Quellbilder in ui_balkan/). Gepackt mit TaleWorlds.TwoDimension.SpriteSheetGenerator.exe und
+	     im Modding Kit importiert (resource.show_resource_browser → GauntletUI → Import), siehe docs/packen.md. -->
+	<SpriteCategory Name="ui_balkan">
+		<AlwaysLoad />
+	</SpriteCategory>
+</Config>
