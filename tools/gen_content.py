@@ -433,6 +433,17 @@ def check_realms(realms, cultures):
             elif label in place_names:
                 errors.append(f"{where}: Ortsname '{label}' gibt es schon ({place_names[label]})")
             place_names[label] = f"{where}: {sid}"
+        orte = r.get("orte", {})
+        for sid in r.get("ortstexte", {}):
+            if sid not in orte:
+                errors.append(f"{where}: ortstexte: {sid} steht nicht in [orte]")
+        for sid in orte:
+            seat = seat_of(sid)
+            if seat is not None and r.get("dorftext") and seat not in orte:
+                errors.append(f"{where}: Dorf {sid}: Sitz {seat} steht nicht in [orte]")
+        for v in r.get("dorftext", []):
+            if not v.get("en") or not v.get("de"):
+                errors.append(f"{where}: dorftext braucht en und de")
         w = r.get("wappen")
         if w is not None:
             for key in ("hintergrund", "farbe"):
@@ -457,6 +468,37 @@ def text_value(strings, sid, value):
     if isinstance(value, str):
         return "{=!}" + value
     return strings.add(sid, value["en"].strip(), value["de"].strip())
+
+
+def seat_of(village_id):
+    """village_V1_2 -> town_V1, castle_village_V2_1 -> castle_V2"""
+    if village_id.startswith("castle_village_"):
+        return "castle_" + village_id[len("castle_village_"):].rsplit("_", 1)[0]
+    if village_id.startswith("village_"):
+        return "town_" + village_id[len("village_"):].rsplit("_", 1)[0]
+    return None
+
+
+def place_label(value):
+    return value if isinstance(value, str) else value["en"]
+
+
+def place_text(r, sid):
+    """Beschreibung eines Orts: eigener Text oder, bei Dörfern, ein Text aus dorftext."""
+    own = r.get("ortstexte", {}).get(sid)
+    if own is not None:
+        return own
+    seat = seat_of(sid)
+    variants = r.get("dorftext", [])
+    if seat is None or not variants:
+        return None
+    orte = r["orte"]
+    villages = [x for x in orte if seat_of(x) is not None]
+    v = variants[villages.index(sid) % len(variants)]
+    out = {}
+    for lang in ("en", "de"):
+        out[lang] = v[lang].replace("{DORF}", place_label(orte[sid])).replace("{SITZ}", place_label(orte[seat]))
+    return out
 
 
 def xslt_doc(templates):
@@ -541,6 +583,9 @@ def build_realms(realms, strings):
             sattrs = {}
             if sid in orte:
                 sattrs["name"] = text_value(strings, f"balkan_settlement_{sid}", orte[sid])
+                desc = place_text(r, sid)
+                if desc is not None:
+                    sattrs["text"] = strings.add(f"balkan_settlement_{sid}_text", desc["en"].strip(), desc["de"].strip())
             if sid in r["siedlungen"]:
                 sattrs["culture"] = culture
             t["Settlements"] += patch_template("Settlement", sid, sattrs)

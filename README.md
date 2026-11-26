@@ -13,7 +13,7 @@ Phase 2 läuft. Im Spiel sind die ersten vier Kulturen mit eigenen Truppenbäume
 Kroaten (statt Vlandia), Bosniaken (statt Aserai) sowie Venezianer und Ragusaner als neue Kulturen.
 Dazu die vier Königreiche Habsburger (statt Vlandia), Osmanen (statt Aserai), Venedig (statt Westliches Imperium)
 und Ragusa (statt Südliches Imperium) mit umbenannten Clans und Lords. Ihre 203 Städte, Burgen und Dörfer tragen
-echte Ortsnamen (Zagreb, Sarajevo, Zadar, Dubrovnik …). Die Reiche haben eigene Wappenfarben; zu Spielbeginn führen Habsburger und Venedig Krieg gegen die Osmanen.
+echte Ortsnamen (Zagreb, Sarajevo, Zadar, Dubrovnik …) und Beschreibungen um 1700 statt der Calradia-Geschichten. Die Reiche haben eigene Wappenfarben; zu Spielbeginn führen Habsburger und Venedig Krieg gegen die Osmanen.
 Schützen tragen Arkebusen und Musketen, Reiter Pistolen ([data/waffen.toml](data/waffen.toml)). Bis es eigene
 Modelle gibt, sehen die Feuerwaffen wie Armbrüste aus und klingen auch so. Als Nächstes folgt eine Balance-Runde
 nach Spieltest (siehe [docs/design.md](docs/design.md)).

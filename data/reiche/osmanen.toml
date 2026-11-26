@@ -350,3 +350,34 @@ village_A7_3 = "Buna"                       # Mabwaz
 village_A7_4 = "Žitomislić"                 # Zalm
 village_A8_1 = "Vitez"                      # Ezbet Nahul
 village_A8_2 = "Busovača"                   # Abghan
+
+# Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
+# {DORF} wird durch den Dorfnamen ersetzt, {SITZ} durch die Stadt oder Burg, zu der es gehört.
+[ortstexte]
+town_A1 = { en = "Sarajevo, founded by Isa-beg in the valley of the Miljacka, is the jewel of Bosnia, with the mosque, bazaar and baths of Gazi Husrev-beg. In 1697 Prince Eugene burned it, and its people are still rebuilding.", de = "Sarajevo, von Isa-beg im Tal der Miljacka gegründet, ist das Juwel Bosniens, mit Moschee, Basar und Bädern Gazi Husrev-begs. 1697 brannte Prinz Eugen die Stadt nieder, und ihre Bewohner bauen sie noch immer wieder auf." }
+town_A2 = { en = "Belgrade's fortress stands where the Sava meets the Danube. It changed hands in 1688 and again in 1690, and it remains the gate of the Ottoman Balkans.", de = "Die Festung von Belgrad steht dort, wo die Save in die Donau mündet. Sie wechselte 1688 und erneut 1690 den Besitzer und bleibt das Tor des osmanischen Balkans." }
+town_A3 = { en = "Foča on the Drina lies on the caravan road from Dubrovnik to Istanbul. Its painted Aladža mosque is famed far beyond Bosnia.", de = "Foča an der Drina liegt an der Karawanenstraße von Dubrovnik nach Istanbul. Ihre bemalte Aladža-Moschee ist weit über Bosnien hinaus berühmt." }
+town_A4 = { en = "Tuzla takes its name from the salt springs that have made it rich. Salt from its pans is carried across the whole of Bosnia.", de = "Tuzla hat seinen Namen von den Salzquellen, die es reich gemacht haben. Das Salz aus seinen Siedepfannen wird durch ganz Bosnien getragen." }
+town_A5 = { en = "Novi Pazar, the 'new market' founded by Isa-beg, is a trading town of the Sanjak on the high road towards Istanbul.", de = "Novi Pazar, der von Isa-beg gegründete „neue Markt“, ist eine Handelsstadt im Sandžak an der Hauptstraße nach Istanbul." }
+town_A6 = { en = "Banja Luka grew around the Ferhadija mosque of Ferhad Pasha. It guards the Vrbas valley and the northern border of the province.", de = "Banja Luka wuchs rund um die Ferhadija-Moschee Ferhad Paschas. Es bewacht das Tal des Vrbas und die Nordgrenze der Provinz." }
+town_A7 = { en = "Mostar is the heart of Herzegovina. Its stone bridge, built in 1566, spans the green Neretva in a single bold arch.", de = "Mostar ist das Herz der Herzegowina. Seine 1566 erbaute Steinbrücke überspannt die grüne Neretva in einem einzigen kühnen Bogen." }
+town_A8 = { en = "Travnik in the Lašva valley has been the seat of the vizier of Bosnia since Sarajevo burned. Consuls, couriers and petitioners crowd its streets.", de = "Travnik im Tal der Lašva ist seit dem Brand von Sarajevo Sitz des Wesirs von Bosnien. Konsuln, Kuriere und Bittsteller füllen seine Gassen." }
+castle_A1 = { en = "Bihać is the northwestern bulwark of the empire, taken in 1592. In 1697 it threw back a Habsburg siege, and its captains watch Croatia day and night.", de = "Bihać ist das nordwestliche Bollwerk des Reichs, 1592 erobert. 1697 schlug es eine habsburgische Belagerung ab, und seine Kapetane beobachten Kroatien Tag und Nacht." }
+castle_A2 = { en = "Above Stolac rises the fortress of Vidoški, guarding the roads of eastern Herzegovina.", de = "Über Stolac erhebt sich die Festung Vidoški und bewacht die Straßen der östlichen Herzegowina." }
+castle_A3 = { en = "Ključ on the Sana is where the last Bosnian king surrendered in 1463. Today it is a captaincy on the road to the frontier.", de = "In Ključ an der Sana ergab sich 1463 der letzte bosnische König. Heute ist es eine Kapetanija an der Straße zur Grenze." }
+castle_A4 = { en = "Jajce, the old royal town of Bosnia, stands above the waterfall where the Pliva falls into the Vrbas.", de = "Jajce, die alte Königsstadt Bosniens, steht über dem Wasserfall, mit dem die Pliva in den Vrbas stürzt." }
+castle_A5 = { en = "Počitelj is a walled town that climbs the rock above the Neretva, a guard post on the road from Mostar to the sea.", de = "Počitelj ist eine ummauerte Stadt, die den Felsen über der Neretva hinaufsteigt, ein Wachposten an der Straße von Mostar zum Meer." }
+castle_A6 = { en = "Srebrenik sits on a sheer rock near Tuzla, reachable only by a narrow bridge.", de = "Srebrenik sitzt auf einem steilen Felsen bei Tuzla und ist nur über eine schmale Brücke zu erreichen." }
+castle_A7 = { en = "Doboj guards the Bosna valley, the main road from the Sava into the heart of the province.", de = "Doboj bewacht das Tal der Bosna, die Hauptstraße von der Save ins Herz der Provinz." }
+castle_A8 = { en = "Zvornik's walls run down the hillside to the Drina. Whoever holds it controls the crossing between Bosnia and Serbia.", de = "Die Mauern von Zvornik ziehen sich den Hang hinab bis zur Drina. Wer sie hält, beherrscht den Übergang zwischen Bosnien und Serbien." }
+castle_A9 = { en = "Livno looks out over the wide Livno field towards Venetian Dalmatia. Raiders from both sides cross the border here.", de = "Livno blickt über das weite Livanjsko polje hinüber ins venezianische Dalmatien. Hier überqueren Streifscharen beider Seiten die Grenze." }
+
+[[dorftext]]
+en = "{DORF} is a village near {SITZ}. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls."
+de = "{DORF} ist ein Dorf bei {SITZ}. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft."
+[[dorftext]]
+en = "{DORF} lies in the lands of {SITZ}. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard."
+de = "{DORF} liegt im Land von {SITZ}. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf."
+[[dorftext]]
+en = "{DORF} belongs to the district of {SITZ}. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market."
+de = "{DORF} gehört zum Bezirk von {SITZ}. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt."

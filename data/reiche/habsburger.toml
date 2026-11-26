@@ -353,3 +353,33 @@ village_V8_2 = "Voitsberg"                  # Cananc
 village_V8_3 = "Gleisdorf"                  # Remental
 village_V9_1 = "Mohács"                     # Alantas
 village_V9_2 = "Siklós"                     # Halisvust
+
+# Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
+# {DORF} wird durch den Dorfnamen ersetzt, {SITZ} durch die Stadt oder Burg, zu der es gehört.
+[ortstexte]
+town_V1 = { en = "Zagreb is two towns on two hills above the Sava: the bishop's Kaptol and the free royal town of Gradec. Here the Croatian Sabor meets and the Ban holds court.", de = "Zagreb sind zwei Städte auf zwei Hügeln über der Save: der bischöfliche Kaptol und die königliche Freistadt Gradec. Hier tagt der kroatische Sabor, und der Ban hält Hof." }
+town_V2 = { en = "Osijek on the Drava was taken from the Ottomans in 1687. The great wooden bridge of Suleiman across the marshes burned in the war, and the imperial engineers plan a new fortress.", de = "Osijek an der Drau wurde 1687 den Osmanen abgenommen. Die große Holzbrücke Süleymans über die Sümpfe verbrannte im Krieg, und die kaiserlichen Baumeister planen eine neue Festung." }
+town_V3 = { en = "Varaždin with its old moated castle was long the seat of the Croatian Ban and of the generals of the Varaždin frontier. Its burghers trade in wine, cloth and grain.", de = "Varaždin mit seiner alten Wasserburg war lange Sitz des kroatischen Bans und der Generäle der Varaždiner Grenze. Seine Bürger handeln mit Wein, Tuch und Getreide." }
+town_V5 = { en = "Ljubljana, called Laibach by the Germans, is the capital of the Duchy of Carniola. Baroque churches rise under the castle hill on the Ljubljanica.", de = "Ljubljana, deutsch Laibach, ist die Hauptstadt des Herzogtums Krain. Unter dem Burgberg an der Ljubljanica wachsen barocke Kirchen." }
+town_V6 = { en = "Karlovac is a six-pointed star fortress, built in 1579 where four rivers meet. It is the seat of the Karlovac Generalate and the heart of the Military Frontier.", de = "Karlovac ist eine sechszackige Sternfestung, 1579 dort erbaut, wo vier Flüsse zusammenfließen. Hier sitzt das Karlstädter Generalat, das Herz der Militärgrenze." }
+town_V7 = { en = "Požega lies in the Golden Valley of Slavonia. After a century and a half of Ottoman rule it returned to the Crown in 1688, and Franciscans and settlers are bringing the land back to life.", de = "Požega liegt im Goldenen Tal Slawoniens. Nach anderthalb Jahrhunderten osmanischer Herrschaft kam es 1688 an die Krone zurück, und Franziskaner und Siedler beleben das Land neu." }
+town_V8 = { en = "Graz is the capital of Inner Austria. From its great armoury, muskets, pikes and armour go south to the garrisons of the frontier.", de = "Graz ist die Hauptstadt Innerösterreichs. Aus seinem großen Zeughaus gehen Musketen, Piken und Harnische nach Süden zu den Besatzungen der Grenze." }
+town_V9 = { en = "Pécs was retaken in 1686. Its domed mosques are being turned into churches, and the old Hungarian bishopric is slowly rising again.", de = "Pécs wurde 1686 zurückerobert. Seine Kuppelmoscheen werden zu Kirchen umgebaut, und das alte ungarische Bistum erholt sich langsam." }
+castle_V1 = { en = "Brod watches the ford over the Sava. On the far bank lies Ottoman Bosnia, and the frontier guards never leave the river unwatched.", de = "Brod bewacht die Furt über die Save. Am anderen Ufer liegt das osmanische Bosnien, und die Grenzwachen lassen den Fluss nie aus den Augen." }
+castle_V2 = { en = "Senj on the Adriatic was home to the Uskoks, raiders who fought the Ottomans and plundered Venetian ships alike. The Nehaj fortress still towers over the windswept harbour.", de = "Senj an der Adria war die Heimat der Uskoken, die gegen die Osmanen kämpften und ebenso venezianische Schiffe plünderten. Die Festung Nehaj überragt noch immer den windigen Hafen." }
+castle_V3 = { en = "Ogulin's castle, built by the Frankopans, stands at the edge of the gorge where the Dobra river vanishes underground. It is the seat of a frontier captaincy.", de = "Die Burg von Ogulin, von den Frankopanen erbaut, steht am Rand der Schlucht, in der die Dobra unter der Erde verschwindet. Hier sitzt eine Hauptmannschaft der Grenze." }
+castle_V4 = { en = "The triangular fortress of Sisak guards the meeting of the Kupa and the Sava. In 1593 the Ottoman army was crushed beneath its walls.", de = "Die dreieckige Festung Sisak bewacht den Zusammenfluss von Kupa und Save. 1593 wurde unter ihren Mauern das osmanische Heer vernichtend geschlagen." }
+castle_V5 = { en = "Koprivnica is a Renaissance fortress of earthworks and bastions in the Podravina, part of the frontier line along the Drava.", de = "Koprivnica ist eine Renaissance-Festung aus Erdwällen und Bastionen in der Podravina, Teil der Grenzlinie entlang der Drau." }
+castle_V6 = { en = "Virovitica was taken back from the Ottomans in 1684. From its walls one looks out over the flat, half-empty plain of the Drava.", de = "Virovitica wurde 1684 von den Osmanen zurückerobert. Von seinen Mauern blickt man über die flache, halb leere Ebene der Drau." }
+castle_V7 = { en = "Udbina in Krbava was an Ottoman stronghold until 1689. Since then Lika is being resettled by frontier families from all sides.", de = "Udbina in der Krbava war bis 1689 eine osmanische Festung. Seitdem wird die Lika von Grenzerfamilien aus allen Richtungen neu besiedelt." }
+castle_V8 = { en = "Kostajnica stands on the Una, which the Peace of Karlowitz made the border. Across the river the Ottoman watchtowers are in plain sight.", de = "Kostajnica steht an der Una, die der Frieden von Karlowitz zur Grenze gemacht hat. Jenseits des Flusses sieht man die osmanischen Wachtürme." }
+
+[[dorftext]]
+en = "{DORF} is a village near {SITZ}. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket."
+de = "{DORF} ist ein Dorf bei {SITZ}. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete."
+[[dorftext]]
+en = "{DORF} lies in the countryside of {SITZ}. After the long war the fields are being cleared again, and new settlers arrive every spring."
+de = "{DORF} liegt im Umland von {SITZ}. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler."
+[[dorftext]]
+en = "{DORF} belongs to the lands of {SITZ}. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church."
+de = "{DORF} gehört zu den Ländereien von {SITZ}. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche."

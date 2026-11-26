@@ -336,3 +336,31 @@ village_EW5_2 = "Risan"                     # Phasos
 village_EW6_1 = "Kaštel Sućurac"            # Carphenion
 village_EW6_3 = "Solin"                     # Thersenion
 village_EW6_4 = "Stobreč"                   # Leblenion
+
+# Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
+# {DORF} wird durch den Dorfnamen ersetzt, {SITZ} durch die Stadt oder Burg, zu der es gehört.
+[ortstexte]
+town_EW1 = { en = "Rab is an island town of four bell towers. Its nobles serve Venice as officers and captains of galleys.", de = "Rab ist eine Inselstadt mit vier Glockentürmen. Ihre Adligen dienen Venedig als Offiziere und Galeerenkapitäne." }
+town_EW2 = { en = "Zadar is the capital of Venetian Dalmatia and the seat of the Provveditore generale. The winged lion of St Mark watches over its Land Gate.", de = "Zadar ist die Hauptstadt des venezianischen Dalmatien und Sitz des Provveditore generale. Über dem Landtor wacht der geflügelte Löwe von San Marco." }
+town_EW3 = { en = "Hvar is a station of the Venetian fleet. Galleys take on water, wine and oarsmen here, under the fortress on the hill.", de = "Hvar ist ein Stützpunkt der venezianischen Flotte. Unter der Festung auf dem Hügel nehmen die Galeeren Wasser, Wein und Ruderer an Bord." }
+town_EW4 = { en = "Šibenik is known for its cathedral of St James, built entirely of stone. The fortresses of St Nicholas and Barone protect it from sea and land.", de = "Šibenik ist bekannt für seine ganz aus Stein gebaute Kathedrale des heiligen Jakob. Die Festungen Sankt Nikolaus und Barone schützen die Stadt von See und Land." }
+town_EW5 = { en = "Kotor lies at the end of a deep bay. Its walls climb the mountain behind the town, and its seafarers sail under the banner of St Mark.", de = "Kotor liegt am Ende einer tiefen Bucht. Seine Mauern klettern den Berg hinter der Stadt hinauf, und seine Seeleute fahren unter dem Banner von San Marco." }
+town_EW6 = { en = "Split grew inside the palace of the emperor Diocletian. Its great lazaretto receives caravans from Bosnia, and much of the trade with the Ottoman lands passes through here.", de = "Split ist im Palast des Kaisers Diokletian gewachsen. Sein großes Lazarett nimmt Karawanen aus Bosnien auf, und ein großer Teil des Handels mit dem Osmanischen Reich läuft hier durch." }
+castle_EW1 = { en = "Trogir is a small walled town on an islet, guarded by the Kamerlengo fortress.", de = "Trogir ist eine kleine ummauerte Stadt auf einer Insel, bewacht von der Festung Kamerlengo." }
+castle_EW2 = { en = "Sinj was taken from the Ottomans in 1686. It guards the Cetina valley, and its garrison expects the enemy to return one day.", de = "Sinj wurde 1686 von den Osmanen erobert. Es bewacht das Tal der Cetina, und seine Besatzung rechnet damit, dass der Feind eines Tages zurückkommt." }
+castle_EW3 = { en = "Makarska, a harbour below the steep wall of Biokovo, came under Venice in 1684.", de = "Makarska, ein Hafen unter der steilen Wand des Biokovo, kam 1684 an Venedig." }
+castle_EW4 = { en = "Knin was taken in 1688. Its fortress on the ridge above the Krka is the key to the Dalmatian hinterland.", de = "Knin wurde 1688 erobert. Seine Festung auf dem Bergrücken über der Krka ist der Schlüssel zum dalmatinischen Hinterland." }
+castle_EW5 = { en = "Novigrad guards the narrow sea of the same name, the back door to Zadar.", de = "Novigrad bewacht das gleichnamige schmale Meer, die Hintertür nach Zadar." }
+castle_EW6 = { en = "Klis holds the mountain pass above Split. It was held by the Ottomans for more than a century before Venice took it in 1648.", de = "Klis beherrscht den Bergpass über Split. Mehr als hundert Jahre hielten ihn die Osmanen, bis Venedig ihn 1648 eroberte." }
+castle_EW7 = { en = "Omiš at the mouth of the Cetina was once a nest of pirates. Today its towers watch over the gorge and the coast.", de = "Omiš an der Mündung der Cetina war einst ein Piratennest. Heute bewachen seine Türme die Schlucht und die Küste." }
+castle_EW8 = { en = "Vrlika, near the source of the Cetina, lies under the fortress of Prozor and was taken from the Ottomans in 1688.", de = "Vrlika nahe der Quelle der Cetina liegt unter der Festung Prozor und wurde 1688 den Osmanen abgenommen." }
+
+[[dorftext]]
+en = "{DORF} is a village near {SITZ}. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers."
+de = "{DORF} ist ein Dorf bei {SITZ}. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten."
+[[dorftext]]
+en = "{DORF} belongs to the lands of {SITZ}. Olives, wine and figs grow on its stony terraces."
+de = "{DORF} gehört zum Land von {SITZ}. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen."
+[[dorftext]]
+en = "{DORF} lies on the coast near {SITZ}. Its men fish for sardines and row in the galleys when Venice calls."
+de = "{DORF} liegt an der Küste bei {SITZ}. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft."
