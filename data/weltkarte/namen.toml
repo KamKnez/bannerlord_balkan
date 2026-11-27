@@ -3,14 +3,14 @@
 # Orte aus der Umgebung, aus dem Gedächtnis gewählt und nicht einzeln nachgeschlagen.
 
 # Der Ruhesitz des Spiels ("The Retreat", retirement_retreat): ein Ort ohne Objekt auf der Karte, an den sich die
-# Spielfigur am Ende zurückzieht. Hier ist es das Felsenkloster Ostrog über dem Tal der Zeta, gegründet um 1665.
+# Spielfigur am Ende zurückzieht. Hier ist es das Felsenkloster Ostrog über dem Tal der Zeta, gegründet 1656.
 # szene_vorbereiten.py schreibt die Lage in die Positions-XSLT, gen_content.py Name und Text.
 [ruhesitz]
 id = "retirement_retreat"
 breite = 42.675
 laenge = 19.029
 name = { en = "Ostrog Monastery", de = "Kloster Ostrog" }
-text = { en = "The monastery of Ostrog is built into a sheer rock face high above the valley of the Zeta. Bishop Vasilije founded it as a refuge from the wars of the plain, and pilgrims of every faith climb up to it.", de = "Das Kloster Ostrog ist hoch über dem Tal der Zeta in eine senkrechte Felswand gebaut. Bischof Vasilije gründete es als Zuflucht vor den Kriegen der Ebene, und Pilger jeden Glaubens steigen zu ihm hinauf." }
+text = { en = "The monastery of Ostrog stands against an almost vertical wall, high up in the great rock of Ostroška Greda above the plain of the river Zeta. Vasilije, Metropolitan of Herzegovina, founded it in 1656 and died here in 1671. It is a meeting place of all confessions: Orthodox, Catholics and Muslims.", de = "Das Kloster Ostrog steht an einer fast senkrechten Wand, hoch oben im großen Felsen Ostroška Greda über der Ebene der Zeta. Vasilije, Metropolit der Herzegowina, gründete es 1656 und starb hier 1671. Es ist ein Treffpunkt aller Bekenntnisse: Orthodoxe, Katholiken und Muslime." }
 
 [doerfer]
 # Pescara
