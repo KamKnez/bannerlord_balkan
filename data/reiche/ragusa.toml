@@ -138,6 +138,16 @@ weiblich = true  # 17 Jahre, vorher Colambea
 [[clan]]
 id = "clan_empire_south_2"  # vorher Leonipardes, Oberhaupt Hero.lord_1_15
 name = "Sorgo"
+# Wappen der Sorkočević (Sorgo): achtmal schräg geteilt von Rot und Blau.
+[clan.wappen]
+quelle = "https://en.wikipedia.org/wiki/Puci%C4%87_family"
+feld = "rot"
+figuren = [
+  { zeichen = 505, farbe = "blau", x = 212, y = -212, breite = 2200, hoehe = 120, drehung = 45 },
+  { zeichen = 505, farbe = "blau", x = 42, y = -42, breite = 2200, hoehe = 120, drehung = 45 },
+  { zeichen = 505, farbe = "blau", x = -127, y = 127, breite = 2200, hoehe = 120, drehung = 45 },
+  { zeichen = 505, farbe = "blau", x = -297, y = 297, breite = 2200, hoehe = 120, drehung = 45 },
+]
 [[clan.lord]]
 id = "lord_1_15"
 name = "Ivan"
@@ -266,6 +276,20 @@ weiblich = true  # 30 Jahre, vorher Zena
 [[clan]]
 id = "clan_empire_south_6"  # vorher Vizartos, Oberhaupt Hero.lord_1_54
 name = "Pozza"
+# Wappen der Pucić (Pozza): blau mit zwei goldenen Schrägleisten und sechs Lilien. Lage der Lilien vereinfacht.
+[clan.wappen]
+quelle = "https://en.wikipedia.org/wiki/Puci%C4%87_family"
+feld = "blau"
+figuren = [
+  { zeichen = 505, farbe = "gold", x = 55, y = -55, breite = 2000, hoehe = 50, drehung = 45 },
+  { zeichen = 505, farbe = "gold", x = -55, y = 55, breite = 2000, hoehe = 50, drehung = 45 },
+  { zeichen = 424, farbe = "gold", x = 40, y = -260, groesse = 110 },
+  { zeichen = 424, farbe = "gold", x = 180, y = -200, groesse = 110 },
+  { zeichen = 424, farbe = "gold", x = 200, y = -60, groesse = 110 },
+  { zeichen = 424, farbe = "gold", x = -200, y = 60, groesse = 110 },
+  { zeichen = 424, farbe = "gold", x = -180, y = 200, groesse = 110 },
+  { zeichen = 424, farbe = "gold", x = -40, y = 260, groesse = 110 },
+]
 [[clan.lord]]
 id = "lord_1_54"
 name = "Ivan"

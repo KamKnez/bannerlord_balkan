@@ -99,6 +99,27 @@ Entfernt, weil nicht belegt: Handel Wien–Buda–Belgrad, Tokajer, „Banderium
 | Aufstieg Bauer | Županja nach 1687 habsburgisch, später im Brod-Regiment (das Regiment gab es um 1700 noch nicht, daher nicht genannt) | https://en.wikipedia.org/wiki/%C5%BDupanja, https://en.wikipedia.org/wiki/Slavonian_Military_Frontier |
 | Aufstieg Kapetan | Start jetzt in Travnik statt Banja Luka, weil der Pascha dorthin zieht | https://en.wikipedia.org/wiki/Bosnia_Eyalet |
 
+## Wappen der Adelsfamilien
+
+Nur Familien, deren Wappen in einer Quelle beschrieben ist, bekommen ein eigenes Wappen (`[clan.wappen]` in
+`data/reiche/*.toml`). Alle anderen behalten das allgemeine Wappen aus dem Spiel. Die Wappen sind im
+Bannersystem des Spiels vereinfacht; die Zeichen sind in `docs/wappen.md` beschrieben.
+
+| Familie | Wappen laut Quelle | Im Spiel | Quelle |
+|---|---|---|---|
+| Batthyány | Verleihung 1500: blaues Feld, weißer Pelikan im grünen Nest auf einem Felsen, goldener Löwe wächst aus dem Felsen, Schwert im Maul, goldener Rand | blau, weißer Vogel auf grünem Nest, goldener Löwe; ohne Rand und Schwert | https://mnl.gov.hu/node/26524 |
+| Herberstein | nach Valvasor sechs Felder (schwarz mit silbernem Hund, rot mit goldenem Turm und silbernem Balken, rot mit goldenem Hufeisen), Herzschild rot mit silbernem Sparren | vier Felder: Hund und Hufeisen, Herzschild mit Sparren | https://slovenija.heraldry.ca/arms/h/heberstein.htm |
+| Gušić | rot mit drei silbernen Balken, darüber eine gekrönte Gans (Wiener Handschrift 1410, Zmajić) | so übernommen | https://en.wikipedia.org/wiki/Gusi%C4%87_family |
+| Loredan | geteilt von Gold und Blau, sechs Rosen, drei blaue oben, drei goldene unten | so übernommen | https://en.wikipedia.org/wiki/Loredan_family |
+| Foscolo | rot mit silbernem Balken | so übernommen | https://en.wikipedia.org/wiki/Foscolo_(noble_family) |
+| Pozza (Pucić) | blau mit zwei goldenen Schrägleisten und sechs Lilien (Text auf der Seite teils unklar) | Lage der Lilien vereinfacht | https://en.wikipedia.org/wiki/Puci%C4%87_family |
+| Sorgo (Sorkočević) | achtmal schräg geteilt von Rot und Blau (im Wappen Pucić-Sorkočević) | so übernommen | https://en.wikipedia.org/wiki/Puci%C4%87_family |
+
+Ohne beschriebenes Wappen (Seiten zeigen nur ein Bild): Erdődy, Drašković, Keglević (für 1700 gilt das
+Wappen von Buzin 1687; beschrieben ist nur das ältere bis 1490), Oršić, Patačić, Rattkay, Vojković, Jelačić,
+Gozze, Bona, Ghetaldi, Gradi, Caboga, Menze, Zamagna, Mocenigo, Janković. Noch nicht gelesen:
+Cornaro, Morosini, Contarini, Grimani, Fanfogna und die bosnischen Familien. Die Wappen der Reiche bleiben vorerst wie bisher.
+
 ## Noch offen
 
 - Azap: belegt bis ins späte 16. Jahrhundert, für 1700 nicht ausdrücklich (https://en.wikipedia.org/wiki/Azap).

@@ -240,6 +240,13 @@ weiblich = true  # 35 Jahre, vorher Arytha
 [[clan]]
 id = "clan_empire_west_7"  # vorher Corenios, Oberhaupt Hero.lord_1_53
 name = "Foscolo"
+# Wappen: rot mit silbernem Balken.
+[clan.wappen]
+quelle = "https://en.wikipedia.org/wiki/Foscolo_(noble_family)"
+feld = "rot"
+figuren = [
+  { zeichen = 505, farbe = "weiss", breite = 1600, hoehe = 240 },
+]
 [[clan.lord]]
 id = "lord_1_53"
 name = "Giovanni"
@@ -272,6 +279,19 @@ weiblich = false  # 35 Jahre, vorher Varmyros
 [[clan]]
 id = "clan_empire_west_9"  # vorher Palladios, Oberhaupt Hero.lord_WE9_l
 name = "Loredan"
+# Wappen: geteilt von Gold und Blau, sechs Rosen, drei blaue oben und drei goldene unten.
+[clan.wappen]
+quelle = "https://en.wikipedia.org/wiki/Loredan_family"
+feld = "gold"
+figuren = [
+  { zeichen = 505, farbe = "blau", y = 450, breite = 1600, hoehe = 1020 },
+  { zeichen = 220, farbe = "blau", x = -180, y = -180, groesse = 160 },
+  { zeichen = 220, farbe = "blau", x = 0, y = -180, groesse = 160 },
+  { zeichen = 220, farbe = "blau", x = 180, y = -180, groesse = 160 },
+  { zeichen = 220, farbe = "gold", x = -180, y = 180, groesse = 160 },
+  { zeichen = 220, farbe = "gold", x = 0, y = 180, groesse = 160 },
+  { zeichen = 220, farbe = "gold", x = 180, y = 180, groesse = 160 },
+]
 [[clan.lord]]
 id = "lord_WE9_l"
 name = "Zuane"

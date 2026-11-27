@@ -30,6 +30,7 @@ from xml.sax.saxutils import quoteattr, escape
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from validate_names import parse as parse_names  # noqa: E402
+import wappen  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -54,6 +55,7 @@ OUT_DE = MODULE_DATA / "Languages" / "DE" / "std_balkan_content_de.xml"
 OUT_EN_BACKGROUNDS = MODULE_DATA / "Languages" / "EN" / "std_balkan_backgrounds_en.xml"
 OUT_EVENTS_TABLE = ROOT / "src" / "BalkanMod" / "Story" / "BalkanEventTable.g.cs"
 OUT_RISE_TABLE = ROOT / "src" / "BalkanMod" / "Story" / "BalkanRiseTable.g.cs"
+OUT_ARMS_TABLE = ROOT / "src" / "BalkanMod" / "Map" / "BalkanClanArms.g.cs"
 OUT_BG_TABLE = ROOT / "src" / "BalkanMod" / "CharacterCreation" / "BalkanBackgroundTable.g.cs"
 # Eltern-Optionen der Charaktererstellung je Vorlage-Kultur (CharacterCreationCampaignBehavior, v1.5.7)
 BACKGROUND_OPTIONS = {
@@ -555,6 +557,26 @@ def cs_table(source, cls, field, init, rows):
     ]) + "\n"
 
 
+def build_arms_table(realms):
+    """Clans mit eigenem Wappen: Sie behalten ihre Farben, statt die des Reichs zu bekommen (Map/ClanArmsPatch.cs)."""
+    ids = sorted(c["id"] for r in realms for c in r["clan"] if "wappen" in c)
+    return "\n".join([
+        "// Erzeugt von tools/gen_content.py aus data/reiche/*.toml. Nicht von Hand ändern.",
+        "using System.Collections.Generic;",
+        "",
+        "namespace BalkanMod.Map",
+        "{",
+        "    internal static class BalkanClanArms",
+        "    {",
+        "        public static readonly HashSet<string> Ids = new HashSet<string>",
+        "        {",
+        *[f"            {cs_string(i)}," for i in ids],
+        "        };",
+        "    }",
+        "}",
+    ]) + "\n"
+
+
 def culture_template(c):
     return c["vorlage"] if c["art"] == "neu" else c["kultur_id"]
 
@@ -801,7 +823,9 @@ def check_realms(realms, cultures):
             if not v.get("en") or not v.get("de"):
                 errors.append(f"{where}: dorftext braucht en und de")
         w = r.get("wappen")
-        if w is not None:
+        if w is not None and "figuren" in w:
+            errors += wappen.check(w, f"{where}: wappen")
+        elif w is not None:
             for key in ("hintergrund", "farbe"):
                 v = w.get(key)
                 if not (isinstance(v, list) and len(v) == 2 and isinstance(v[0], int) and str(v[1]).lower().startswith("0xff")):
@@ -814,6 +838,9 @@ def check_realms(realms, cultures):
             other = next((x for x in realms if x["reich_id"] == enemy), None)
             if other is not None and r["reich_id"] not in other.get("krieg_mit", []):
                 errors.append(f"{where}: Krieg mit {enemy} muss auch in {other['_datei']} stehen")
+        for c in r["clan"]:
+            if "wappen" in c:
+                errors += wappen.check(c["wappen"], f"{where}: Clan {c['id']}")
         if r["siedlungen"] and not r["kultur_wechseln"]:
             errors.append(f"{where}: siedlungen nur mit kultur_wechseln = true")
     return errors
@@ -905,7 +932,10 @@ def build_realms(realms, strings):
         }
         if r["kultur_wechseln"]:
             kattrs["culture"] = culture
-        if "wappen" in r:
+        if "wappen" in r and "figuren" in r["wappen"]:
+            kattrs["banner_key"] = wappen.banner_key(r["wappen"])
+            kattrs["primary_banner_color"], kattrs["secondary_banner_color"] = wappen.primary_secondary(r["wappen"])
+        elif "wappen" in r:
             w = r["wappen"]
             bg, fg = w["hintergrund"], w["farbe"]
             kattrs["banner_key"] = (
@@ -918,6 +948,8 @@ def build_realms(realms, strings):
         t["Kingdoms"] += patch_template("Kingdom", key, kattrs)
         for c in r["clan"]:
             cattrs = {"name": text_value(strings, f"balkan_{c['id']}", c["name"])}
+            if "wappen" in c:
+                cattrs["banner_key"] = wappen.banner_key(c["wappen"])
             if r["kultur_wechseln"]:
                 cattrs["culture"] = culture
             if any(l["id"] == r["herrscher"] for l in c["lord"]):
@@ -1342,6 +1374,7 @@ def generate():
     files.update(build_realms(realms, strings))
     files[OUT_EVENTS_TABLE] = build_events(events, strings)
     files[OUT_RISE_TABLE] = build_rise(rise, strings)
+    files[OUT_ARMS_TABLE] = build_arms_table(realms)
     files[OUT_BG_TABLE], files[OUT_EN_BACKGROUNDS] = build_backgrounds(backgrounds, cultures, strings)
     files[OUT_DE] = build_de(strings)
     return files

@@ -42,6 +42,16 @@ farbe = [149, "0xff211f1f"]
 [[clan]]
 id = "clan_vlandia_1"  # vorher dey Meroc, Oberhaupt Hero.lord_4_1
 name = "Batthyány"
+# Wappen nach der Verleihung von 1500 (Ungarisches Nationalarchiv): blaues Feld, weißer Pelikan im grünen Nest,
+# darunter ein goldener Löwe, der aus dem Felsen wächst. Vereinfacht ohne goldenen Rand und ohne Schwert.
+[clan.wappen]
+quelle = "https://mnl.gov.hu/node/26524"
+feld = "blau"
+figuren = [
+  { zeichen = 506, farbe = "gruen", y = -20, breite = 340, hoehe = 110 },
+  { zeichen = 118, farbe = "weiss", y = -200, groesse = 380 },
+  { zeichen = 140, farbe = "gold", y = 200, groesse = 360 },
+]
 [[clan.lord]]
 id = "lord_4_1"
 name = "Adam"
@@ -194,6 +204,22 @@ weiblich = true  # 27 Jahre, vorher Alwith
 [[clan]]
 id = "clan_vlandia_7"  # vorher dey Fortes, Oberhaupt Hero.lord_4_23
 name = "Herberstein"
+# Wappen nach Valvasor (1689): unter anderem schwarz mit silbernem Hund und rot mit goldenem Hufeisen,
+# Herzschild rot mit silbernem Sparren. Vereinfacht auf vier Felder und den Herzschild.
+[clan.wappen]
+quelle = "https://slovenija.heraldry.ca/arms/h/heberstein.htm"
+feld = "rot"
+figuren = [
+  { zeichen = 505, farbe = "schwarz", x = -450, y = -450, breite = 1020, hoehe = 1020 },
+  { zeichen = 505, farbe = "schwarz", x = 450, y = 450, breite = 1020, hoehe = 1020 },
+  { zeichen = 146, farbe = "weiss", x = -160, y = -190, groesse = 260 },
+  { zeichen = 146, farbe = "weiss", x = 160, y = 190, groesse = 260 },
+  { zeichen = 335, farbe = "gold", x = 160, y = -190, groesse = 200 },
+  { zeichen = 335, farbe = "gold", x = -160, y = 190, groesse = 200 },
+  { zeichen = 505, farbe = "weiss", breite = 260, hoehe = 300 },
+  { zeichen = 505, farbe = "rot", breite = 230, hoehe = 270 },
+  { zeichen = 511, farbe = "weiss", groesse = 170 },
+]
 [[clan.lord]]
 id = "lord_4_23"
 name = "Gašpar"
@@ -246,6 +272,17 @@ weiblich = true  # 21 Jahre, vorher Reingarda
 [[clan]]
 id = "clan_vlandia_9"  # vorher dey Jelind, Oberhaupt Hero.lord_4_27
 name = "Gušić"
+# Wappen nach der Wiener Handschrift (1410) und Zmajić: rot mit silbernen Balken, darüber eine gekrönte Gans.
+[clan.wappen]
+quelle = "https://en.wikipedia.org/wiki/Gusi%C4%87_family"
+feld = "rot"
+figuren = [
+  { zeichen = 505, farbe = "weiss", y = 40, breite = 1600, hoehe = 80 },
+  { zeichen = 505, farbe = "weiss", y = 170, breite = 1600, hoehe = 80 },
+  { zeichen = 505, farbe = "weiss", y = 300, breite = 1600, hoehe = 80 },
+  { zeichen = 157, farbe = "weiss", y = -150, groesse = 300 },
+  { zeichen = 340, farbe = "gold", x = -40, y = -330, groesse = 130 },
+]
 [[clan.lord]]
 id = "lord_4_27"
 name = "Jakov"
