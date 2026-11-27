@@ -120,6 +120,8 @@ Wappen von Buzin 1687; beschrieben ist nur das ältere bis 1490), Oršić, Pata�
 Gozze, Bona, Ghetaldi, Gradi, Caboga, Menze, Zamagna, Mocenigo, Janković. Noch nicht gelesen:
 Cornaro, Morosini, Contarini, Grimani, Fanfogna und die bosnischen Familien. Die Wappen der Reiche bleiben vorerst wie bisher.
 
+Suche nach Blasonierungen für Cornaro, Morosini, Contarini, Grimani, Beširević, Hadžalić und Krupić (Stand 27.11.2026): Auf de/en/it-Wikipedia steht keine Blasonierung. Morosini hat nur einen Teilbeleg: ein silbernes Kreuz als Zeichen des Banats (it.wikipedia, Famiglia Morosini), das im Zusammenhang mit dem Amt steht und deshalb nicht übernommen wird. Commons, Armoriale und Wappenbücher konnten im selben Lauf nicht abgerufen werden. Diese Familien bleiben beim allgemeinen Spielwappen, bis eine Quelle vorliegt.
+
 ## Noch offen
 
 - Azap: belegt bis ins späte 16. Jahrhundert, für 1700 nicht ausdrücklich (https://en.wikipedia.org/wiki/Azap).

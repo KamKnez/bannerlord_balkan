@@ -79,8 +79,8 @@ Ragusa vorläufig entlang der Küste bis Epirus. Um Dubrovnik bleiben nur Dubrov
 ohne Schiffe gespielt wird. Die Namen im Spiel sind nachgezogen (27.11.2026): `[orte]` in `data/reiche/` nennt die Sitze wie `orte.csv`, die Dörfer
 verlegter Sitze heißen nach echten Orten der Umgebung. Orte außerhalb der vier Mod-Reiche bekommen ihren Namen
 aus `orte.csv` (Sitze) und `data/weltkarte/namen.toml` (Dörfer). Die Dorfnamen sind mit `tools/weltkarte/dorfnamen_pruefen.py` gegen Wikipedia
-geprüft (Ort vorhanden, höchstens 45 km vom Sitz). Das Ergebnis je Dorf steht in
-`data/weltkarte/dorfnamen_belege.csv`: 167 bestätigt, 7 ersetzt, 34 noch ungeprüft. Ob ein Ort schon um 1700
+geprüft (Ort vorhanden, höchstens 45 km vom Sitz; 46 bis 50 km gelten als Grenzfall). Das Ergebnis je Dorf steht in
+`data/weltkarte/dorfnamen_belege.csv`: 178 bestätigt (davon 8 Grenzfälle), 7 ersetzt, 23 noch ungeprüft. Ob ein Ort schon um 1700
 bestand, ist dabei nicht geprüft.
 
 Die Schritte unten gelten sinngemäß für `balkan_karte` mit den Bildern aus `leicht/`.
