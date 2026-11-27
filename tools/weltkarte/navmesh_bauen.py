@@ -1,6 +1,9 @@
 """Schritt 5: Navmesh der Weltkarte als Datei erzeugen (navmesh.bin im Szenenordner).
 
-Aufruf: python3 navmesh_bauen.py <Arbeitsordner> <siedlungen.csv> <Vorlage navmesh.bin> <Zielordner>
+Aufruf: python3 navmesh_bauen.py <Arbeitsordner> <siedlungen.csv> <Vorlage navmesh.bin> <Zielordner> [siedlungen_positionen.xslt]
+
+Mit der XSLT-Datei aus szene_vorbereiten.py werden auch die Tore der Städte und Burgen berücksichtigt: Das Spiel
+betritt einen Ort am Tor, also muss das Tor auf begehbarem Boden liegen.
 
 Die Karte wird in ein Raster aus quadratischen Flächen zerlegt. Jede Fläche bekommt die Geländeart, die das Spiel
 kennt: 1 Ebene, 4 Wald, 6 Furt. Gebirge, Seen, Meer und Flüsse bekommen keine Fläche und sind damit gesperrt:
@@ -17,6 +20,7 @@ Dateiformat (aus Calradias navmesh.bin gelesen, Spielstand 1.5.7):
 """
 import csv
 import heapq
+import re
 import struct
 import sys
 
@@ -73,10 +77,19 @@ orte = []
 with open(csv_pfad, encoding="utf-8-sig", newline="") as f:
     for z in csv.DictReader(f, delimiter=";"):
         orte.append((z["id"], float(z["x"]), float(z["y"])))
+if len(sys.argv) > 5:
+    xslt = open(sys.argv[5], encoding="utf-8").read()
+    tor_x = dict(re.findall(r"Settlement\[@id='([^']+)'\]/@gate_posX\"><xsl:attribute name=\"gate_posX\">([-0-9.]+)<", xslt))
+    tor_y = dict(re.findall(r"Settlement\[@id='([^']+)'\]/@gate_posY\"><xsl:attribute name=\"gate_posY\">([-0-9.]+)<", xslt))
+    tore = [(f"{ident} Tor", float(tor_x[ident]), float(tor_y[ident])) for ident in tor_x]
+    print(len(tore), "Tore gelesen")
+    orte += tore
 for ident, x, y in orte:
     r, s = zelle_von(x, y)
     if art[r, s] not in (EBENE, WALD):
         art[r, s] = FURT if art[r, s] in (FLUSS, SEE) else EBENE
+    if ident.endswith(" Tor"):
+        continue
     for dy in (-1.5, 0.0, 1.5):
         for dx in (-1.5, 0.0, 1.5):
             r, s = zelle_von(x + dx, y + dy)
