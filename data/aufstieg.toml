@@ -49,7 +49,7 @@ aserai = { balkan_bs_azap = 4, balkan_bs_peasant = 3 }
 [[start]]
 id = "hajduk"
 kulturen = ["serbs", "vlandia"]
-ort = "village_A3_3"       # Goražde
+ort = "castle_village_A2_2"   # Raška
 reich = "aserai"
 auftraggeber = "ort"
 beziehung = -10
@@ -58,9 +58,9 @@ ziel = "trupp"
 anzahl = 40
 belohnung = { gold = 1000, ruhm = 50 }
 name = { en = "Hajduk in the hills", de = "Hajduk in den Bergen" }
-text = { en = "The subaşı's men burned your house over a debt your father never owed. You took to the forests above the Drina with a handful of friends. The villagers bring you bread and news, and the pasha has put a price on your head.", de = "Die Männer des Subaşı haben Euer Haus wegen einer Schuld niedergebrannt, die Euer Vater nie hatte. Mit einer Handvoll Freunde seid Ihr in die Wälder über der Drina gegangen. Die Dörfler bringen Euch Brot und Nachrichten, und der Pascha hat einen Preis auf Euren Kopf ausgesetzt." }
+text = { en = "The subaşı's men burned your house over a debt your father never owed. You took to the forests above the Ibar with a handful of friends. The villagers bring you bread and news, and the pasha has put a price on your head.", de = "Die Männer des Subaşı haben Euer Haus wegen einer Schuld niedergebrannt, die Euer Vater nie hatte. Mit einer Handvoll Freunde seid Ihr in die Wälder über dem Ibar gegangen. Die Dörfler bringen Euch Brot und Nachrichten, und der Pascha hat einen Preis auf Euren Kopf ausgesetzt." }
 ziel_text = { en = "Build your own band: lead at least {COUNT} men.", de = "Baut Eure eigene Bande auf: Führt mindestens {COUNT} Männer an." }
-erfolg_text = { en = "Your band is known from the Drina to the sea, and the songs already speak of you. From now on your path is your own.", de = "Eure Bande ist von der Drina bis zum Meer bekannt, und die Lieder erzählen schon von Euch. Von nun an geht Ihr Euren eigenen Weg." }
+erfolg_text = { en = "Your band is known from the Ibar to the sea, and the songs already speak of you. From now on your path is your own.", de = "Eure Bande ist vom Ibar bis zum Meer bekannt, und die Lieder erzählen schon von Euch. Von nun an geht Ihr Euren eigenen Weg." }
 [start.truppen]
 serbs = { balkan_sr_shooter = 3, balkan_sr_peasant = 3 }
 vlandia = { balkan_hr_haramija = 3, balkan_hr_peasant = 3 }

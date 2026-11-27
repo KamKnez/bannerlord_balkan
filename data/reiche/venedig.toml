@@ -291,43 +291,43 @@ weiblich = false  # 37 Jahre, vorher Torvasis
 # Zugeordnet nach der Lage auf der Karte, die Hauptstadt des Reichs ist fest gesetzt.
 
 [orte]
-town_EW1 = "Rab"                            # Lageta
+town_EW1 = "Venezia"                        # Lageta
 town_EW2 = "Zadar"                          # Zeonica
-town_EW3 = "Hvar"                           # Jalmarys
+town_EW3 = "Preveza"                        # Jalmarys
 town_EW4 = "Šibenik"                        # Ortysia
 town_EW5 = "Kotor"                          # Amitatys
 town_EW6 = "Split"                          # Rhotae
 castle_EW1 = "Trogir"                       # Garontor Castle
-castle_EW2 = "Sinj"                         # Thorios Castle
+castle_EW2 = "Udine"                        # Thorios Castle
 castle_EW3 = "Makarska"                     # Onica Castle
 castle_EW4 = "Knin"                         # Thractorae Castle
-castle_EW5 = "Novigrad"                     # Veron Castle
-castle_EW6 = "Klis"                         # Hertogea Castle
-castle_EW7 = "Omiš"                         # Oristocorys Castle
-castle_EW8 = "Vrlika"                       # Gersegos Castle
+castle_EW5 = "Pula"                         # Veron Castle
+castle_EW6 = "Patras"                       # Hertogea Castle
+castle_EW7 = "Nauplia"                      # Oristocorys Castle
+castle_EW8 = "Modon"                        # Gersegos Castle
 castle_village_EW1_1 = "Seget"              # Garontor
 castle_village_EW1_2 = "Okrug"              # Lysia
-castle_village_EW2_1 = "Trilj"              # Thorios
-castle_village_EW2_2 = "Otok"               # Bergum
+castle_village_EW2_1 = "Cividale"           # Thorios
+castle_village_EW2_2 = "Palmanova"          # Bergum
 castle_village_EW3_1 = "Tučepi"             # Onica
 castle_village_EW3_2 = "Baška Voda"         # Tarcutis
 castle_village_EW4_1 = "Drniš"              # Thractorae
 castle_village_EW4_2 = "Kistanje"           # Gamardan
-castle_village_EW5_1 = "Posedarje"          # Veron
-castle_village_EW5_2 = "Obrovac"            # Goleryn
-castle_village_EW6_1 = "Dugopolje"          # Hertogea
-castle_village_EW6_2 = "Kučine"             # Nideon
-castle_village_EW7_1 = "Jesenice"           # Oristocorys
-castle_village_EW7_2 = "Kostanje"           # Elvania
-castle_village_EW8_1 = "Kijevo"             # Gersegos
-castle_village_EW8_2 = "Cetina"             # Vathea
-village_EW1_1 = "Lopar"                     # Primessos
-village_EW1_2 = "Pag"                       # Montos
+castle_village_EW5_1 = "Vodnjan"            # Veron
+castle_village_EW5_2 = "Medulin"            # Goleryn
+castle_village_EW6_1 = "Aigio"              # Hertogea
+castle_village_EW6_2 = "Kalavryta"          # Nideon
+castle_village_EW7_1 = "Argos"              # Oristocorys
+castle_village_EW7_2 = "Tolo"               # Elvania
+castle_village_EW8_1 = "Koroni"             # Gersegos
+castle_village_EW8_2 = "Navarino"           # Vathea
+village_EW1_1 = "Mestre"                    # Primessos
+village_EW1_2 = "Chioggia"                  # Montos
 village_EW2_2 = "Nin"                       # Neocorys
 village_EW2_3 = "Biograd"                   # Alsasos
 village_EW2_4 = "Preko"                     # Zeocorys
-village_EW3_2 = "Stari Grad"                # Aegosca
-village_EW3_3 = "Jelsa"                     # Dradios
+village_EW3_2 = "Parga"                     # Aegosca
+village_EW3_3 = "Vonitsa"                   # Dradios
 village_EW4_1 = "Skradin"                   # Arpotis
 village_EW4_3 = "Vodice"                    # Vinela
 village_EW4_4 = "Primošten"                 # Garengolia
@@ -339,12 +339,8 @@ village_EW6_4 = "Stobreč"                   # Leblenion
 
 # Dörfer mit eigener Kultur: Ihre Bewohner bieten Rekruten dieser Kultur an (data/kulturen/).
 [dorfkultur]
-castle_EW2 = "vlandia"          # Sinj: kroatisches Hinterland, 1686 von den Osmanen erobert
 castle_EW3 = "vlandia"          # Makarska: kroatisches Küstenland
 castle_EW4 = "vlandia"          # Knin
-castle_EW6 = "vlandia"          # Klis
-castle_EW7 = "vlandia"          # Omiš
-castle_EW8 = "vlandia"          # Vrlika
 castle_village_EW4_1 = "serbs"  # Drniš (Morlaken)
 castle_village_EW4_2 = "serbs"  # Kistanje (Morlaken)
 
@@ -352,20 +348,13 @@ castle_village_EW4_2 = "serbs"  # Kistanje (Morlaken)
 # Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
 # {DORF} wird durch den Dorfnamen ersetzt, {SITZ} durch die Stadt oder Burg, zu der es gehört.
 [ortstexte]
-town_EW1 = { en = "Rab is an island town of four bell towers. Its nobles serve Venice as officers and captains of galleys.", de = "Rab ist eine Inselstadt mit vier Glockentürmen. Ihre Adligen dienen Venedig als Offiziere und Galeerenkapitäne." }
 town_EW2 = { en = "Zadar is the capital of Venetian Dalmatia and the seat of the Provveditore generale. The winged lion of St Mark watches over its Land Gate.", de = "Zadar ist die Hauptstadt des venezianischen Dalmatien und Sitz des Provveditore generale. Über dem Landtor wacht der geflügelte Löwe von San Marco." }
-town_EW3 = { en = "Hvar is a station of the Venetian fleet. Galleys take on water, wine and oarsmen here, under the fortress on the hill.", de = "Hvar ist ein Stützpunkt der venezianischen Flotte. Unter der Festung auf dem Hügel nehmen die Galeeren Wasser, Wein und Ruderer an Bord." }
 town_EW4 = { en = "Šibenik is known for its cathedral of St James, built entirely of stone. The fortresses of St Nicholas and Barone protect it from sea and land.", de = "Šibenik ist bekannt für seine ganz aus Stein gebaute Kathedrale des heiligen Jakob. Die Festungen Sankt Nikolaus und Barone schützen die Stadt von See und Land." }
 town_EW5 = { en = "Kotor lies at the end of a deep bay. Its walls climb the mountain behind the town, and its seafarers sail under the banner of St Mark.", de = "Kotor liegt am Ende einer tiefen Bucht. Seine Mauern klettern den Berg hinter der Stadt hinauf, und seine Seeleute fahren unter dem Banner von San Marco." }
 town_EW6 = { en = "Split grew inside the palace of the emperor Diocletian. Its great lazaretto receives caravans from Bosnia, and much of the trade with the Ottoman lands passes through here.", de = "Split ist im Palast des Kaisers Diokletian gewachsen. Sein großes Lazarett nimmt Karawanen aus Bosnien auf, und ein großer Teil des Handels mit dem Osmanischen Reich läuft hier durch." }
 castle_EW1 = { en = "Trogir is a small walled town on an islet, guarded by the Kamerlengo fortress.", de = "Trogir ist eine kleine ummauerte Stadt auf einer Insel, bewacht von der Festung Kamerlengo." }
-castle_EW2 = { en = "Sinj was taken from the Ottomans in 1686. It guards the Cetina valley, and its garrison expects the enemy to return one day.", de = "Sinj wurde 1686 von den Osmanen erobert. Es bewacht das Tal der Cetina, und seine Besatzung rechnet damit, dass der Feind eines Tages zurückkommt." }
 castle_EW3 = { en = "Makarska, a harbour below the steep wall of Biokovo, came under Venice in 1684.", de = "Makarska, ein Hafen unter der steilen Wand des Biokovo, kam 1684 an Venedig." }
 castle_EW4 = { en = "Knin was taken in 1688. Its fortress on the ridge above the Krka is the key to the Dalmatian hinterland.", de = "Knin wurde 1688 erobert. Seine Festung auf dem Bergrücken über der Krka ist der Schlüssel zum dalmatinischen Hinterland." }
-castle_EW5 = { en = "Novigrad guards the narrow sea of the same name, the back door to Zadar.", de = "Novigrad bewacht das gleichnamige schmale Meer, die Hintertür nach Zadar." }
-castle_EW6 = { en = "Klis holds the mountain pass above Split. It was held by the Ottomans for more than a century before Venice took it in 1648.", de = "Klis beherrscht den Bergpass über Split. Mehr als hundert Jahre hielten ihn die Osmanen, bis Venedig ihn 1648 eroberte." }
-castle_EW7 = { en = "Omiš at the mouth of the Cetina was once a nest of pirates. Today its towers watch over the gorge and the coast.", de = "Omiš an der Mündung der Cetina war einst ein Piratennest. Heute bewachen seine Türme die Schlucht und die Küste." }
-castle_EW8 = { en = "Vrlika, near the source of the Cetina, lies under the fortress of Prozor and was taken from the Ottomans in 1688.", de = "Vrlika nahe der Quelle der Cetina liegt unter der Festung Prozor und wurde 1688 den Osmanen abgenommen." }
 
 [[dorftext]]
 en = "{DORF} is a village near {SITZ}. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers."

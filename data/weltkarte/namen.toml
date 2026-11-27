@@ -1,0 +1,195 @@
+# Namen der Dörfer bei den Sitzen der Reiche, die (noch) keine eigene Datei in data/reiche/ haben.
+# Die Sitze selbst heißen wie in orte.csv. Die Dörfer stehen automatisch rund um ihren Sitz, die Namen sind echte
+# Orte aus der Umgebung, aus dem Gedächtnis gewählt und nicht einzeln nachgeschlagen.
+
+[doerfer]
+# Pescara
+castle_village_B1_1 = "Chieti"
+castle_village_B1_2 = "Ortona"
+# Rijeka
+castle_village_B2_1 = "Trsat"
+castle_village_B2_2 = "Kastav"
+# Tarent
+castle_village_B3_1 = "Massafra"
+castle_village_B3_2 = "Grottaglie"
+# Ravenna
+castle_village_B4_1 = "Classe"
+castle_village_B4_2 = "Cervia"
+# Rimini
+castle_village_B5_1 = "Cattolica"
+castle_village_B5_2 = "Santarcangelo"
+# Brindisi
+castle_village_B6_1 = "Mesagne"
+castle_village_B6_2 = "Ostuni"
+# Lecce
+castle_village_B7_1 = "Otranto"
+castle_village_B7_2 = "Gallipoli"
+# Foggia
+castle_village_B8_1 = "Lucera"
+castle_village_B8_2 = "Manfredonia"
+# Burgas
+castle_village_EN1_1 = "Pomorie"
+castle_village_EN1_2 = "Sosopol"
+# Tarnowo
+castle_village_EN2_1 = "Arbanassi"
+castle_village_EN2_2 = "Gabrowo"
+# Rustschuk
+castle_village_EN3_1 = "Giurgiu"
+castle_village_EN3_2 = "Tutrakan"
+# Larissa
+castle_village_EN4_1 = "Tyrnavos"
+castle_village_EN4_2 = "Trikala"
+# Adana
+castle_village_EN5_1 = "Tarsus"
+castle_village_EN5_2 = "Misis"
+# Bursa
+castle_village_EN6_1 = "Mudanya"
+castle_village_EN6_2 = "İnegöl"
+# Konya
+castle_village_EN7_1 = "Meram"
+castle_village_EN7_2 = "Sille"
+# Antalya
+castle_village_EN8_1 = "Alanya"
+castle_village_EN8_2 = "Manavgat"
+# Sinope
+castle_village_EN9_1 = "Gerze"
+castle_village_EN9_2 = "Boyabat"
+# Târgoviște
+castle_village_K1_1 = "Ploiești"
+castle_village_K1_2 = "Pitești"
+# Suceava
+castle_village_K2_1 = "Rădăuți"
+castle_village_K2_2 = "Siret"
+# Chotyn
+castle_village_K3_1 = "Czernowitz"
+castle_village_K3_2 = "Schwanez"
+# Bender
+castle_village_K4_1 = "Kischinau"
+castle_village_K4_2 = "Căușeni"
+# Akkerman
+castle_village_K5_1 = "Owidiopol"
+castle_village_K5_2 = "Tatarbunar"
+# Perekop
+castle_village_K6_1 = "Armjansk"
+castle_village_K6_2 = "Tschaplynka"
+# Brăila
+castle_village_K7_1 = "Galatz"
+castle_village_K7_2 = "Focșani"
+# Kilija
+castle_village_K8_1 = "Ismail"
+castle_village_K8_2 = "Wylkowe"
+# Tscherkassy
+castle_village_K9_1 = "Tschyhyryn"
+castle_village_K9_2 = "Kaniw"
+# Győr
+castle_village_S1_1 = "Pannonhalma"
+castle_village_S1_2 = "Moson"
+# Komárom
+castle_village_S2_1 = "Tata"
+castle_village_S2_2 = "Neuhäusel"
+# Esztergom
+castle_village_S3_1 = "Visegrád"
+castle_village_S3_2 = "Párkány"
+# Eger
+castle_village_S4_1 = "Gyöngyös"
+castle_village_S4_2 = "Miskolc"
+# Großwardein
+castle_village_S5_1 = "Salonta"
+castle_village_S5_2 = "Beiuș"
+# Tarnów
+castle_village_S6_1 = "Bochnia"
+castle_village_S6_2 = "Dębica"
+# Hermannstadt
+castle_village_S7_1 = "Mediasch"
+castle_village_S7_2 = "Heltau"
+# Kamieniec
+castle_village_S8_1 = "Żwaniec"
+castle_village_S8_2 = "Dunajiwzi"
+# Rom
+village_B1_1 = "Tivoli"
+village_B1_2 = "Ostia"
+village_B1_3 = "Frascati"
+village_B1_4 = "Civitavecchia"
+# Trieste
+village_B2_1 = "Muggia"
+village_B2_2 = "Koper"
+village_B2_3 = "Duino"
+# Ancona
+village_B3_1 = "Senigallia"
+village_B3_2 = "Loreto"
+village_B3_3 = "Jesi"
+# Napoli
+village_B4_1 = "Pozzuoli"
+village_B4_2 = "Capua"
+village_B4_3 = "Salerno"
+village_B4_4 = "Aversa"
+# Bari
+village_B5_1 = "Bitonto"
+village_B5_2 = "Monopoli"
+village_B5_3 = "Trani"
+# Istanbul
+village_EN1_1 = "Galata"
+village_EN1_2 = "Üsküdar"
+village_EN1_3 = "Silivri"
+# Athen
+village_EN2_1 = "Piräus"
+village_EN2_2 = "Eleusis"
+# Smyrna
+village_EN3_1 = "Manisa"
+village_EN3_3 = "Urla"
+# Ankara
+village_EN4_2 = "Beypazarı"
+village_EN4_4 = "Çubuk"
+# Kütahya
+village_EN5_1 = "Eskişehir"
+village_EN5_2 = "Afyon"
+village_EN5_4 = "Simav"
+# Varna
+village_EN6_1 = "Baltschik"
+village_EN6_2 = "Prowadija"
+# Bukarest
+village_K1_1 = "Snagov"
+village_K1_2 = "Oltenița"
+village_K1_4 = "Mogoșoaia"
+# Jassy
+village_K2_1 = "Hârlău"
+village_K2_2 = "Huși"
+# Bachtschissarai
+village_K3_1 = "Inkerman"
+village_K3_2 = "Mangup"
+village_K3_3 = "Akmescit"
+# Kaffa
+village_K4_2 = "Sudak"
+village_K4_3 = "Kertsch"
+village_K4_4 = "Karasubazar"
+# Kiew
+village_K5_2 = "Wyschhorod"
+village_K5_3 = "Wassylkiw"
+village_K5_4 = "Browary"
+# Otschakiw
+village_K6_1 = "Kinburn"
+village_K6_2 = "Hadschibej"
+village_K6_3 = "Beresan"
+# Krakau
+village_S1_1 = "Wieliczka"
+village_S1_3 = "Olkusz"
+# Lublin
+village_S2_1 = "Zamość"
+village_S2_2 = "Puławy"
+# Przemyśl
+village_S3_1 = "Jarosław"
+village_S3_2 = "Sanok"
+# Sandomierz
+village_S4_1 = "Opatów"
+village_S4_3 = "Tarnobrzeg"
+village_S4_4 = "Staszów"
+# Lemberg
+village_S5_1 = "Żółkiew"
+village_S5_2 = "Gródek"
+# Kaschau
+village_S6_1 = "Eperies"
+village_S6_2 = "Tokaj"
+village_S6_3 = "Sárospatak"
+# Debrecen
+village_S7_1 = "Hajdúböszörmény"
+village_S7_2 = "Nyíregyháza"
