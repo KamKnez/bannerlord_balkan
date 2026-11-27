@@ -223,6 +223,26 @@ haupt = marken[ort_zellen[0]]
 art_voll = art.copy()
 art[marken != haupt] = KEINE
 
+# Furten als Liste (Mitte, Richtung der Querung, Länge), damit furten_markieren.py dort Stege setzen kann
+with open(f"{ziel}/furten.csv", "w", newline="", encoding="utf-8") as f:
+    aus = csv.writer(f, delimiter=";")
+    aus.writerow(["x", "y", "winkel", "laenge"])
+    furt_marken, zahl = ndi.label(art == FURT, structure=np.ones((3, 3)))
+    for nr in range(1, zahl + 1):
+        zr, zs = np.nonzero(furt_marken == nr)
+        if len(zr) == 1:
+            r, s = int(zr[0]), int(zs[0])
+            land = lambda a, b: 0 <= a < N and 0 <= b < N and art[a, b] in (EBENE, WALD)
+            dx, dy = (1.0, 0.0) if land(r, s - 1) or land(r, s + 1) else (0.0, 1.0)
+        else:
+            m = np.cov(np.stack([zs, zr]).astype(float))
+            wert, vek = np.linalg.eigh(m)
+            dx, dy = vek[:, 1]
+        lage = (zs - zs.mean()) * dx + (zr - zr.mean()) * dy
+        aus.writerow([f"{(zs.mean() + 0.5) * ZELLE:.3f}", f"{(zr.mean() + 0.5) * ZELLE:.3f}",
+                      f"{np.arctan2(dy, dx):.3f}", f"{(lage.max() - lage.min() + 1) * ZELLE:.2f}"])
+    print("Furten in furten.csv:", zahl)
+
 # Ecken, Kanten, Flächen
 ecke_nr = {}
 ecken = []
