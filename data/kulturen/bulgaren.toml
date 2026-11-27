@@ -1,0 +1,317 @@
+# Bulgaren (Osmanisches Reich). Neue Kultur, kopiert alle übrigen Werte von Sturgia.
+# Christliche Untertanen des Sultans: Woinuken (christliche Hilfstruppen mit Steuerfreiheit), Derbendschi (Wächter
+# der Gebirgspässe) und Hajduken in den Bergen. Einfacher erster Truppenbaum.
+# Rekrutierbar in Dörfern mit dieser Kultur (siehe [dorfkultur] in data/reiche/).
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "bulgaren"
+bild = "sturgia"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
+kultur_id = "bulgarians"
+art = "neu"
+vorlage = "sturgia"
+praefix = "bg"
+namensliste = "bulgaren"
+farben = ["0xff2E6B3A", "0xffE9E4D4"]
+gesicht = "fighter_sturgia"
+zivil = ["sturgia_troop_civilian_template_t1", "sturgia_troop_civilian_template_t2", "sturgia_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "konnik"
+
+[name]
+en = "Bulgarians"
+de = "Bulgaren"
+
+[text]
+en = """
+For three centuries the Bulgarians have lived under the Sultan, as farmers, herdsmen and craftsmen in the \
+valleys of the Balkan mountains and on the Thracian plain. Some serve the empire as voynuks or as guards of the \
+mountain passes and are freed from taxes in return. Others have taken to the forests as hajduks. The Catholic \
+uprising of Chiprovtsi in 1688 was crushed, but it is not forgotten.
+"""
+de = """
+Seit drei Jahrhunderten leben die Bulgaren unter dem Sultan, als Bauern, Hirten und Handwerker in den Tälern des \
+Balkangebirges und in der thrakischen Ebene. Manche dienen dem Reich als Woinuken oder als Wächter der \
+Gebirgspässe und sind dafür von Steuern befreit. Andere sind als Hajduken in die Wälder gegangen. Der katholische \
+Aufstand von Tschiprowzi 1688 wurde niedergeschlagen, aber er ist nicht vergessen.
+"""
+
+[miliz]
+nahkampf = "militia_spearman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_shooter"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+
+[[lord_partei]]
+truppe = "voynuk"
+min = 3
+max = 6
+
+[[lord_partei]]
+truppe = "derbendji"
+min = 2
+max = 4
+
+[[lord_partei]]
+truppe = "konnik"
+min = 1
+max = 2
+
+# ---------------------------------------------------------------- normaler Baum
+
+[[truppe]]
+id = "peasant"
+name = { en = "Bulgarian Peasant", de = "Bulgarischer Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["voynuk", "derbendji"]
+[[truppe.ausruestung]]
+Item0 = "peasant_hatchet_1_t1"
+Head = "nordic_fur_cap"
+Body = "hemp_tunic"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_pitchfork_1_t1"
+Head = "fur_hat"
+Body = "long_woolen_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "voynuk"
+name = { en = "Voynuk", de = "Woinuk" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+aufwerten = ["veteran_voynuk"]
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "simple_sabre_sword_t2"
+Head = "nordic_fur_cap"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_voynuk"
+name = { en = "Veteran Voynuk", de = "Erfahrener Woinuk" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_2_t2"
+Item1 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "padded_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "derbendji"
+name = { en = "Derbendji", de = "Derbendschi (Passwächter)" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["hajduk"]
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "hajduk"
+name = { en = "Bulgarian Hajduk", de = "Bulgarischer Hajduk" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["harambasha"]
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Cape = "scarf"
+Body = "woven_leather_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "harambasha"
+name = { en = "Harambasha", de = "Harambascha" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_long_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "ridged_sabre_sword_t4"
+Head = "fur_hat"
+Cape = "empire_cape_a"
+Body = "eastern_studded_leather"
+Gloves = "woven_leather_bracers"
+Leg = "eastern_leather_boots"
+
+# ---------------------------------------------------------------- Adelsbaum (berittene Woinuken)
+
+[[truppe]]
+id = "konnik"
+name = { en = "Mounted Voynuk", de = "Berittener Woinuk" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+basis = true
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["lagator"]
+pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "simple_sabre_sword_t2"
+Item2 = "light_horsemans_kite_shield"
+Head = "nordic_fur_cap"
+Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "lagator"
+name = { en = "Lagator", de = "Lagator (Woinukenführer)" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["cheribasha"]
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_1_t3"
+Item1 = "khuzait_sword_2_t3"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "fur_hat"
+Body = "leather_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "cheribasha"
+name = { en = "Cheribasha", de = "Tscheribascha" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["knez"]
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "ridged_sabre_sword_t4"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "spiked_helmet"
+Cape = "empire_cape_a"
+Body = "stitched_leather_over_mail"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "knez"
+name = { en = "Knez", de = "Knez (Dorfoberhaupt)" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["voyvoda"]
+pferd = { Horse = "t3_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "khuzait_noble_sword_1_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "khuzait_noble_helmet_with_fur"
+Cape = "leopard_pelt"
+Body = "northern_brass_lamellar_over_mail"
+Gloves = "reinforced_leather_vambraces"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "voyvoda"
+name = { en = "Voynuk Voyvoda", de = "Woinuken-Wojwode" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_sturgia_elite"
+pferd = { Horse = "noble_horse_eastern", HorseHarness = "chain_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_3_t5"
+Item1 = "khuzait_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "khuzait_noble_helmet_with_feathers"
+Cape = "leopard_pelt"
+Body = "brass_lamellar_over_mail"
+Gloves = "lordly_mail_mitten"
+Leg = "mail_cavalier_boots"
+
+# ---------------------------------------------------------------- Miliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Bulgarian Militia Spearman", de = "Bulgarischer Milizspeerträger" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Bulgarian Militia Shooter", de = "Bulgarischer Milizschütze" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "peasant_hatchet_1_t1"
+Head = "nordic_fur_cap"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Bulgarian Militia Spearman", de = "Bulgarischer Milizspeerträger (Veteran)" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_2_t2"
+Item1 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "padded_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Bulgarian Militia Shooter", de = "Bulgarischer Milizschütze (Veteran)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "woven_leather_coat"
+Leg = "eastern_leather_boots"

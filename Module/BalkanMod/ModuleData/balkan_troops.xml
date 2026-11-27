@@ -717,6 +717,559 @@
 			<EquipmentSet id="aserai_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
+	<!-- Bulgaren (data/kulturen/bulgaren.toml) -->
+	<NPCCharacter
+		id="balkan_bg_peasant"
+		default_group="Infantry"
+		level="6"
+		name="{=balkan_bg_peasant}Bulgarian Peasant"
+		occupation="Soldier"
+		is_basic_troop="true"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="20" />
+			<skill id="Riding" value="5" />
+			<skill id="OneHanded" value="20" />
+			<skill id="TwoHanded" value="10" />
+			<skill id="Polearm" value="20" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="5" />
+			<skill id="Throwing" value="5" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bg_voynuk" />
+			<upgrade_target id="NPCCharacter.balkan_bg_derbendji" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.peasant_hatchet_1_t1" />
+				<equipment slot="Head" id="Item.nordic_fur_cap" />
+				<equipment slot="Body" id="Item.hemp_tunic" />
+				<equipment slot="Leg" id="Item.wrapped_shoes" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.peasant_pitchfork_1_t1" />
+				<equipment slot="Head" id="Item.fur_hat" />
+				<equipment slot="Body" id="Item.long_woolen_tunic" />
+				<equipment slot="Leg" id="Item.leather_shoes" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t1" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_voynuk"
+		default_group="Infantry"
+		level="11"
+		name="{=balkan_bg_voynuk}Voynuk"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="10" />
+			<skill id="Throwing" value="15" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bg_veteran_voynuk" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_1_t2" />
+				<equipment slot="Item1" id="Item.peasant_hatchet_1_t1" />
+				<equipment slot="Head" id="Item.fur_hat" />
+				<equipment slot="Body" id="Item.padded_short_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_1_t2" />
+				<equipment slot="Item1" id="Item.simple_sabre_sword_t2" />
+				<equipment slot="Head" id="Item.nordic_fur_cap" />
+				<equipment slot="Body" id="Item.sleeveless_padded_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_veteran_voynuk"
+		default_group="Infantry"
+		level="16"
+		name="{=balkan_bg_veteran_voynuk}Veteran Voynuk"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="35" />
+			<skill id="Polearm" value="70" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_2_t2" />
+				<equipment slot="Item1" id="Item.khuzait_sword_2_t3" />
+				<equipment slot="Head" id="Item.northern_fur_cap" />
+				<equipment slot="Body" id="Item.padded_coat" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_derbendji"
+		default_group="Ranged"
+		level="11"
+		name="{=balkan_bg_derbendji}Derbendji"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="35" />
+			<skill id="TwoHanded" value="15" />
+			<skill id="Polearm" value="15" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="10" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bg_hajduk" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.peasant_hatchet_1_t1" />
+				<equipment slot="Head" id="Item.fur_hat" />
+				<equipment slot="Body" id="Item.sleeveless_padded_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_hajduk"
+		default_group="Ranged"
+		level="16"
+		name="{=balkan_bg_hajduk}Bulgarian Hajduk"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="65" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="30" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="20" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bg_harambasha" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
+				<equipment slot="Head" id="Item.northern_fur_cap" />
+				<equipment slot="Cape" id="Item.scarf" />
+				<equipment slot="Body" id="Item.woven_leather_coat" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_harambasha"
+		default_group="Ranged"
+		level="21"
+		name="{=balkan_bg_harambasha}Harambasha"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="30" />
+			<skill id="OneHanded" value="90" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.ridged_sabre_sword_t4" />
+				<equipment slot="Head" id="Item.fur_hat" />
+				<equipment slot="Cape" id="Item.empire_cape_a" />
+				<equipment slot="Body" id="Item.eastern_studded_leather" />
+				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_konnik"
+		default_group="Cavalry"
+		level="11"
+		name="{=balkan_bg_konnik}Mounted Voynuk"
+		occupation="Soldier"
+		is_basic_troop="true"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia_elite" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="20" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="10" />
+			<skill id="Polearm" value="35" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="35" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bg_lagator" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_1_t2" />
+				<equipment slot="Item1" id="Item.simple_sabre_sword_t2" />
+				<equipment slot="Item2" id="Item.light_horsemans_kite_shield" />
+				<equipment slot="Head" id="Item.nordic_fur_cap" />
+				<equipment slot="Body" id="Item.padded_coat" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Horse" id="Item.khuzait_horse" />
+				<equipment slot="HorseHarness" id="Item.steppe_harness" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_lagator"
+		default_group="Cavalry"
+		level="16"
+		name="{=balkan_bg_lagator}Lagator"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia_elite" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="35" />
+			<skill id="Riding" value="70" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="65" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="35" />
+			<skill id="Throwing" value="65" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bg_cheribasha" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.khuzait_lance_1_t3" />
+				<equipment slot="Item1" id="Item.khuzait_sword_2_t3" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.fur_hat" />
+				<equipment slot="Body" id="Item.leather_coat" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Horse" id="Item.t2_khuzait_horse" />
+				<equipment slot="HorseHarness" id="Item.steppe_harness" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_cheribasha"
+		default_group="Cavalry"
+		level="21"
+		name="{=balkan_bg_cheribasha}Cheribasha"
+		occupation="Soldier"
+		upgrade_requires="ItemCategory.war_horse"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia_elite" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="50" />
+			<skill id="Riding" value="100" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="110" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="30" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bg_knez" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.khuzait_lance_2_t4" />
+				<equipment slot="Item1" id="Item.ridged_sabre_sword_t4" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.spiked_helmet" />
+				<equipment slot="Cape" id="Item.empire_cape_a" />
+				<equipment slot="Body" id="Item.stitched_leather_over_mail" />
+				<equipment slot="Gloves" id="Item.studded_leather_vambraces" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Horse" id="Item.t2_khuzait_horse" />
+				<equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_knez"
+		default_group="Cavalry"
+		level="26"
+		name="{=balkan_bg_knez}Knez"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia_elite" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="65" />
+			<skill id="Riding" value="130" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="50" />
+			<skill id="Polearm" value="145" />
+			<skill id="Bow" value="25" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="40" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_bg_voyvoda" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.khuzait_lance_2_t4" />
+				<equipment slot="Item1" id="Item.khuzait_noble_sword_1_t5" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.khuzait_noble_helmet_with_fur" />
+				<equipment slot="Cape" id="Item.leopard_pelt" />
+				<equipment slot="Body" id="Item.northern_brass_lamellar_over_mail" />
+				<equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
+				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Horse" id="Item.t3_khuzait_horse" />
+				<equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_voyvoda"
+		default_group="Cavalry"
+		level="31"
+		name="{=balkan_bg_voyvoda}Voynuk Voyvoda"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia_elite" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="80" />
+			<skill id="Riding" value="160" />
+			<skill id="OneHanded" value="160" />
+			<skill id="TwoHanded" value="65" />
+			<skill id="Polearm" value="175" />
+			<skill id="Bow" value="30" />
+			<skill id="Crossbow" value="50" />
+			<skill id="Throwing" value="50" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.khuzait_lance_3_t5" />
+				<equipment slot="Item1" id="Item.khuzait_noble_sword_2_t5" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.khuzait_noble_helmet_with_feathers" />
+				<equipment slot="Cape" id="Item.leopard_pelt" />
+				<equipment slot="Body" id="Item.brass_lamellar_over_mail" />
+				<equipment slot="Gloves" id="Item.lordly_mail_mitten" />
+				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Horse" id="Item.noble_horse_eastern" />
+				<equipment slot="HorseHarness" id="Item.chain_barding" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_militia_spearman"
+		default_group="Infantry"
+		level="11"
+		name="{=balkan_bg_militia_spearman}Bulgarian Militia Spearman"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="10" />
+			<skill id="Throwing" value="15" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_1_t2" />
+				<equipment slot="Item1" id="Item.peasant_hatchet_1_t1" />
+				<equipment slot="Head" id="Item.fur_hat" />
+				<equipment slot="Body" id="Item.padded_short_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_militia_shooter"
+		default_group="Ranged"
+		level="11"
+		name="{=balkan_bg_militia_shooter}Bulgarian Militia Shooter"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="35" />
+			<skill id="TwoHanded" value="15" />
+			<skill id="Polearm" value="15" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="10" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.peasant_hatchet_1_t1" />
+				<equipment slot="Head" id="Item.nordic_fur_cap" />
+				<equipment slot="Body" id="Item.sleeveless_padded_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_militia_veteran_spearman"
+		default_group="Infantry"
+		level="16"
+		name="{=balkan_bg_militia_veteran_spearman}Veteran Bulgarian Militia Spearman"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="35" />
+			<skill id="Polearm" value="70" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_2_t2" />
+				<equipment slot="Item1" id="Item.khuzait_sword_2_t3" />
+				<equipment slot="Head" id="Item.northern_fur_cap" />
+				<equipment slot="Body" id="Item.padded_coat" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_bg_militia_veteran_shooter"
+		default_group="Ranged"
+		level="16"
+		name="{=balkan_bg_militia_veteran_shooter}Veteran Bulgarian Militia Shooter"
+		occupation="Soldier"
+		culture="Culture.bulgarians">
+		<face>
+			<face_key_template value="BodyProperty.fighter_sturgia" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="65" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="30" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="20" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.khuzait_sword_2_t3" />
+				<equipment slot="Head" id="Item.northern_fur_cap" />
+				<equipment slot="Body" id="Item.woven_leather_coat" />
+				<equipment slot="Leg" id="Item.eastern_leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
 	<!-- Deutsche (data/kulturen/deutsche.toml) -->
 	<NPCCharacter
 		id="balkan_de_peasant"
@@ -1335,6 +1888,554 @@
 				<equipment slot="Leg" id="Item.leather_boots" />
 			</EquipmentRoster>
 			<EquipmentSet id="vlandia_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<!-- Griechen (data/kulturen/griechen.toml) -->
+	<NPCCharacter
+		id="balkan_gr_peasant"
+		default_group="Infantry"
+		level="6"
+		name="{=balkan_gr_peasant}Greek Peasant"
+		occupation="Soldier"
+		is_basic_troop="true"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="20" />
+			<skill id="Riding" value="5" />
+			<skill id="OneHanded" value="20" />
+			<skill id="TwoHanded" value="10" />
+			<skill id="Polearm" value="20" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="5" />
+			<skill id="Throwing" value="5" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_gr_armatolos" />
+			<upgrade_target id="NPCCharacter.balkan_gr_naftis" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.peasant_hammer_1_t1" />
+				<equipment slot="Head" id="Item.imperial_cloth_coif" />
+				<equipment slot="Body" id="Item.tunic_with_rolled_cloth" />
+				<equipment slot="Leg" id="Item.wrapped_shoes" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.peasant_polearm_1_t1" />
+				<equipment slot="Body" id="Item.hemp_tunic" />
+				<equipment slot="Leg" id="Item.leather_shoes" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_armatolos"
+		default_group="Ranged"
+		level="11"
+		name="{=balkan_gr_armatolos}Armatolos"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="35" />
+			<skill id="TwoHanded" value="15" />
+			<skill id="Polearm" value="15" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="10" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_gr_palikari" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.simple_back_sword_t2" />
+				<equipment slot="Head" id="Item.imperial_cloth_coif" />
+				<equipment slot="Body" id="Item.imperial_padded_cloth" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_palikari"
+		default_group="Ranged"
+		level="16"
+		name="{=balkan_gr_palikari}Palikari"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="65" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="30" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="20" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_gr_protopalikaro" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.empire_sword_2_t3" />
+				<equipment slot="Head" id="Item.imperial_padded_coif" />
+				<equipment slot="Cape" id="Item.scarf" />
+				<equipment slot="Body" id="Item.woven_leather_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_protopalikaro"
+		default_group="Ranged"
+		level="21"
+		name="{=balkan_gr_protopalikaro}Protopalikaro"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100" />
+			<skill id="Riding" value="30" />
+			<skill id="OneHanded" value="90" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="100" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_long_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.empire_sword_3_t3" />
+				<equipment slot="Head" id="Item.imperial_padded_coif" />
+				<equipment slot="Cape" id="Item.empire_cape_a" />
+				<equipment slot="Body" id="Item.eastern_studded_leather" />
+				<equipment slot="Gloves" id="Item.woven_leather_bracers" />
+				<equipment slot="Leg" id="Item.folded_town_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_naftis"
+		default_group="Infantry"
+		level="11"
+		name="{=balkan_gr_naftis}Greek Sailor"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="10" />
+			<skill id="Throwing" value="15" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_gr_veteran_naftis" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_2_t2" />
+				<equipment slot="Item1" id="Item.old_kite_shield" />
+				<equipment slot="Item2" id="Item.empire_sword_1_t2" />
+				<equipment slot="Head" id="Item.imperial_cloth_coif" />
+				<equipment slot="Body" id="Item.footmans_tunic" />
+				<equipment slot="Leg" id="Item.leather_shoes" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_veteran_naftis"
+		default_group="Infantry"
+		level="16"
+		name="{=balkan_gr_veteran_naftis}Veteran Greek Sailor"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="35" />
+			<skill id="Polearm" value="70" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.imperial_spear_t2" />
+				<equipment slot="Item1" id="Item.old_kite_shield" />
+				<equipment slot="Item2" id="Item.empire_sword_2_t3" />
+				<equipment slot="Head" id="Item.imperial_padded_coif" />
+				<equipment slot="Body" id="Item.imperial_padded_cloth" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_archontopoulos"
+		default_group="Cavalry"
+		level="11"
+		name="{=balkan_gr_archontopoulos}Archontopoulos"
+		occupation="Soldier"
+		is_basic_troop="true"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire_tall" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="20" />
+			<skill id="Riding" value="40" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="15" />
+			<skill id="Polearm" value="45" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="10" />
+			<skill id="Throwing" value="10" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_gr_kavallaris" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.narrow_sword_t3" />
+				<equipment slot="Item1" id="Item.western_spear_2_t2" />
+				<equipment slot="Item2" id="Item.battered_horsemans_kite_shield" />
+				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Body" id="Item.woven_leather_coat" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Horse" id="Item.empire_horse" />
+				<equipment slot="HorseHarness" id="Item.light_harness" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_kavallaris"
+		default_group="Cavalry"
+		level="16"
+		name="{=balkan_gr_kavallaris}Archon's Horseman"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire_tall" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="35" />
+			<skill id="Riding" value="70" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="75" />
+			<skill id="Bow" value="15" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="20" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_gr_kapetanios" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.empire_lance_2_t4" />
+				<equipment slot="Item1" id="Item.empire_sword_3_t3" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.merchants_hat" />
+				<equipment slot="Cape" id="Item.empire_cape_a" />
+				<equipment slot="Body" id="Item.imperial_mail_over_leather" />
+				<equipment slot="Leg" id="Item.leather_cavalier_boots" />
+				<equipment slot="Horse" id="Item.t2_empire_horse" />
+				<equipment slot="HorseHarness" id="Item.stripped_leather_harness" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_kapetanios"
+		default_group="Cavalry"
+		level="21"
+		name="{=balkan_gr_kapetanios}Kapetanios"
+		occupation="Soldier"
+		upgrade_requires="ItemCategory.war_horse"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire_tall" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="50" />
+			<skill id="Riding" value="100" />
+			<skill id="OneHanded" value="100" />
+			<skill id="TwoHanded" value="40" />
+			<skill id="Polearm" value="110" />
+			<skill id="Bow" value="20" />
+			<skill id="Crossbow" value="30" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_gr_kotzabasis" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.empire_lance_2_t4" />
+				<equipment slot="Item1" id="Item.empire_sword_5_t4" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.peaked_helmet_over_mail_coif" />
+				<equipment slot="Cape" id="Item.empire_cape_a" />
+				<equipment slot="Body" id="Item.empire_horseman_armor" />
+				<equipment slot="Gloves" id="Item.lordly_padded_mitten" />
+				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Horse" id="Item.t3_empire_horse" />
+				<equipment slot="HorseHarness" id="Item.half_scale_barding" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_kotzabasis"
+		default_group="Cavalry"
+		level="26"
+		name="{=balkan_gr_kotzabasis}Kotzabasis"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire_tall" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="65" />
+			<skill id="Riding" value="130" />
+			<skill id="OneHanded" value="130" />
+			<skill id="TwoHanded" value="50" />
+			<skill id="Polearm" value="145" />
+			<skill id="Bow" value="25" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="40" />
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.balkan_gr_archon" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.empire_lance_3_t5" />
+				<equipment slot="Item1" id="Item.empire_sword_6_t5" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.peaked_helmet_over_mail_coif" />
+				<equipment slot="Cape" id="Item.empire_cape_a" />
+				<equipment slot="Body" id="Item.imperial_scale_armor" />
+				<equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
+				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Horse" id="Item.t3_empire_horse" />
+				<equipment slot="HorseHarness" id="Item.imperial_scale_barding" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_archon"
+		default_group="Cavalry"
+		level="31"
+		name="{=balkan_gr_archon}Archon"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire_tall" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="80" />
+			<skill id="Riding" value="160" />
+			<skill id="OneHanded" value="160" />
+			<skill id="TwoHanded" value="65" />
+			<skill id="Polearm" value="175" />
+			<skill id="Bow" value="30" />
+			<skill id="Crossbow" value="50" />
+			<skill id="Throwing" value="50" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.empire_lance_3_t5" />
+				<equipment slot="Item1" id="Item.empire_noble_sword_2_t5" />
+				<equipment slot="Item2" id="Item.balkan_pistol" />
+				<equipment slot="Item3" id="Item.balkan_pistol_balls" />
+				<equipment slot="Head" id="Item.western_plated_helmet" />
+				<equipment slot="Cape" id="Item.empire_cape_a" />
+				<equipment slot="Body" id="Item.coat_of_plates_over_mail" />
+				<equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
+				<equipment slot="Leg" id="Item.mail_cavalier_boots" />
+				<equipment slot="Horse" id="Item.noble_horse_imperial" />
+				<equipment slot="HorseHarness" id="Item.imperial_scale_barding" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_militia_spearman"
+		default_group="Infantry"
+		level="11"
+		name="{=balkan_gr_militia_spearman}Greek Militia Spearman"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="40" />
+			<skill id="TwoHanded" value="20" />
+			<skill id="Polearm" value="40" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="10" />
+			<skill id="Throwing" value="15" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.western_spear_3_t3" />
+				<equipment slot="Item1" id="Item.empire_sword_1_t2" />
+				<equipment slot="Head" id="Item.imperial_padded_coif" />
+				<equipment slot="Body" id="Item.imperial_padded_cloth" />
+				<equipment slot="Leg" id="Item.wrapped_shoes" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_militia_shooter"
+		default_group="Ranged"
+		level="11"
+		name="{=balkan_gr_militia_shooter}Greek Militia Shooter"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40" />
+			<skill id="Riding" value="10" />
+			<skill id="OneHanded" value="35" />
+			<skill id="TwoHanded" value="15" />
+			<skill id="Polearm" value="15" />
+			<skill id="Bow" value="5" />
+			<skill id="Crossbow" value="40" />
+			<skill id="Throwing" value="10" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_arquebus" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.simple_back_sword_t2" />
+				<equipment slot="Head" id="Item.imperial_cloth_coif" />
+				<equipment slot="Body" id="Item.imperial_padded_cloth" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_militia_veteran_spearman"
+		default_group="Infantry"
+		level="16"
+		name="{=balkan_gr_militia_veteran_spearman}Veteran Greek Militia Spearman"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="70" />
+			<skill id="TwoHanded" value="35" />
+			<skill id="Polearm" value="70" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="20" />
+			<skill id="Throwing" value="30" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.imperial_spear_t2" />
+				<equipment slot="Item1" id="Item.empire_sword_2_t3" />
+				<equipment slot="Head" id="Item.imperial_padded_coif" />
+				<equipment slot="Body" id="Item.imperial_padded_cloth" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="balkan_gr_militia_veteran_shooter"
+		default_group="Ranged"
+		level="16"
+		name="{=balkan_gr_militia_veteran_shooter}Veteran Greek Militia Shooter"
+		occupation="Soldier"
+		culture="Culture.greeks">
+		<face>
+			<face_key_template value="BodyProperty.fighter_empire" />
+		</face>
+		<skills>
+			<skill id="Athletics" value="70" />
+			<skill id="Riding" value="20" />
+			<skill id="OneHanded" value="65" />
+			<skill id="TwoHanded" value="30" />
+			<skill id="Polearm" value="30" />
+			<skill id="Bow" value="10" />
+			<skill id="Crossbow" value="70" />
+			<skill id="Throwing" value="20" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.balkan_musket" />
+				<equipment slot="Item1" id="Item.balkan_musket_balls" />
+				<equipment slot="Item2" id="Item.empire_sword_2_t3" />
+				<equipment slot="Head" id="Item.imperial_padded_coif" />
+				<equipment slot="Body" id="Item.woven_leather_coat" />
+				<equipment slot="Leg" id="Item.leather_boots" />
+			</EquipmentRoster>
+			<EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
 		</Equipments>
 	</NPCCharacter>
 	<!-- Kroaten (data/kulturen/kroaten.toml) -->

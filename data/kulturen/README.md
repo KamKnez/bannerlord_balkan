@@ -16,6 +16,8 @@ Die CI prüft mit `python3 tools/gen_content.py --check`, ob die erzeugten Datei
 | `bosniaken.toml` | Bosniaken (Osmanen) | ändert Aserai (`aserai`) |
 | `venezianer.toml` | Venezianer, mit Dalmatinern (Venedig) | neue Kultur `venice`, Kopie des Imperiums |
 | `ragusaner.toml` | Ragusaner (Ragusa) | neue Kultur `ragusa`, Kopie des Imperiums |
+| `bulgaren.toml` | Bulgaren (Osmanen) | neue Kultur `bulgarians`, Kopie von Sturgia |
+| `griechen.toml` | Griechen (Osmanen) | neue Kultur `greeks`, Kopie des Imperiums |
 
 ## Kopf der Datei
 
