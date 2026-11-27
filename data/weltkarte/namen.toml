@@ -233,3 +233,28 @@ castle_S3 = "hungarians"   # Esztergom
 castle_S4 = "hungarians"   # Eger
 castle_S5 = "hungarians"   # Großwardein
 castle_S7 = "germans"      # Hermannstadt
+
+# Namen der Calradia-Reiche ohne eigene Datei in data/reiche/. Herrscher, Clans und Lords bleiben vorerst die des Spiels.
+[reich.sturgia]
+quelle = "https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth"
+name = { en = "Polish–Lithuanian Commonwealth", de = "Polen-Litauen" }
+kurzname = { en = "Poles", de = "Polen" }
+titel = { en = "Commonwealth of the Two Nations", de = "Republik beider Völker" }
+herrschertitel = { en = "King", de = "König" }
+text = { en = "The Commonwealth of Poland and Lithuania is an elective monarchy: its nobles elect the king for life and guard their Golden Liberty. In 1697 they elected Frederick Augustus of Saxony, who was crowned as Augustus II.", de = "Polen-Litauen ist eine Wahlmonarchie: Der Adel wählt den König auf Lebenszeit und wacht über seine Goldene Freiheit. 1697 wählte er Friedrich August von Sachsen, der als August II. gekrönt wurde." }
+
+[reich.khuzait]
+quelle = "https://en.wikipedia.org/wiki/Crimean_Khanate"
+name = { en = "Crimean Khanate", de = "Krim-Khanat" }
+kurzname = { en = "Crimean Tatars", de = "Krimtataren" }
+titel = { en = "Khanate of Crimea", de = "Khanat der Krim" }
+herrschertitel = { en = "Khan", de = "Khan" }
+text = { en = "The khans of the house of Giray rule from Bahçeseray under the protection of the Ottoman Sultan. The Peace of Karlowitz in 1699 forbade further raids into the lands of their neighbours.", de = "Die Khane aus dem Haus Giray herrschen von Bachtschyssaraj aus unter dem Schutz des osmanischen Sultans. Der Frieden von Karlowitz 1699 verbot weitere Raubzüge in die Länder der Nachbarn." }
+
+[reich.battania]
+quelle = "https://en.wikipedia.org/wiki/Kingdom_of_Naples"
+name = { en = "Kingdom of Naples", de = "Königreich Neapel" }
+kurzname = { en = "Neapolitans", de = "Neapolitaner" }
+titel = { en = "Viceroyalty of Naples under the Spanish Crown", de = "Vizekönigreich Neapel unter der spanischen Krone" }
+herrschertitel = { en = "Viceroy", de = "Vizekönig" }
+text = { en = "Since 1504 the Kingdom of Naples, with Campania, Calabria, Apulia, Basilicata, Abruzzo and Molise, has belonged to the Spanish crown and is governed by a Spanish viceroy. In this game the kingdom also holds Rome and the cities of the Papal States on the Adriatic.", de = "Seit 1504 gehört das Königreich Neapel mit Kampanien, Kalabrien, Apulien, der Basilikata, den Abruzzen und Molise zur spanischen Krone und wird von einem spanischen Vizekönig regiert. Im Spiel gehören auch Rom und die Städte des Kirchenstaats an der Adria dazu." }

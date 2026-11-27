@@ -987,6 +987,7 @@ def build_realms(realms, strings):
                 "\t</xsl:template>",
             ]
     t["Settlements"] += build_other_places(realms, strings)
+    t["Kingdoms"] += build_other_kingdoms(realms, strings)
     t["Kingdoms"] += build_wars(realms)
     return {OUT_REALMS[k]: xslt_doc(v) for k, v in t.items()}
 
@@ -1024,6 +1025,25 @@ def build_other_places(realms, strings):
     return out
 
 
+def build_other_kingdoms(realms, strings):
+    """Namen und Texte der Calradia-Reiche ohne eigene Datei in data/reiche/ ([reich.<id>] in namen.toml)."""
+    extra = tomllib.loads((DATA / "weltkarte" / "namen.toml").read_text(encoding="utf-8"))
+    ours = {r["reich_id"] for r in realms}
+    out = []
+    for key, k in sorted(extra.get("reich", {}).items()):
+        if key in ours:
+            continue
+        out.append(f"\t<!-- {k['name']['de']} (data/weltkarte/namen.toml) -->")
+        out += patch_template("Kingdom", key, {
+            "name": text_value(strings, f"balkan_kingdom_{key}", k["name"]),
+            "short_name": text_value(strings, f"balkan_kingdom_{key}_short", k["kurzname"]),
+            "title": text_value(strings, f"balkan_kingdom_{key}_title", k["titel"]),
+            "ruler_title": text_value(strings, f"balkan_kingdom_{key}_ruler", k["herrschertitel"]),
+            "text": text_value(strings, f"balkan_kingdom_{key}_text", k["text"]),
+        })
+    return out
+
+
 def seat_of_village(sid):
     """Sitz eines Dorfs nach dem Muster der Ids: village_EN1_2 -> town_EN1, castle_village_EN1_1 -> castle_EN1."""
     m = re.fullmatch(r"(castle_)?village_([A-Z]+[0-9]+)_[0-9]+", sid)
@@ -1038,6 +1058,12 @@ def check_other_cultures(cultures):
     ids = {c["kultur_id"] for c in cultures}
     places = {row["id"] for row in csv.DictReader((DATA / "weltkarte" / "orte.csv").open(encoding="utf-8"), delimiter=";")}
     errors = []
+    for key, k in extra.get("reich", {}).items():
+        for field in ("name", "kurzname", "titel", "herrschertitel", "text"):
+            if not (isinstance(k.get(field), dict) and k[field].get("en") and k[field].get("de")):
+                errors.append(f"data/weltkarte/namen.toml: reich.{key}.{field} braucht en und de")
+        if not str(k.get("quelle", "")).startswith("http"):
+            errors.append(f"data/weltkarte/namen.toml: reich.{key}.quelle (Beleg, URL) fehlt")
     for sid, cid in extra.get("kultur", {}).items():
         if sid not in places:
             errors.append(f"data/weltkarte/namen.toml: kultur: {sid} steht nicht in orte.csv")

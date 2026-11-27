@@ -139,6 +139,12 @@ Orte außerhalb unserer Reiche mit anderer Bevölkerung (Istanbul und Anatolien 
 Varna und Nordost-Bulgarien bulgarisch, ungarische Städte im Norden ungarisch, Hermannstadt deutsch) stehen unter
 `[kultur]` in `data/weltkarte/namen.toml`.
 
+Die drei Reiche heißen jetzt Polen-Litauen (Wahlmonarchie, August II. 1697 gewählt; https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth),
+Krim-Khanat (Khane der Giray, Hauptstadt Bahçeseray; https://en.wikipedia.org/wiki/Crimean_Khanate) und
+Königreich Neapel (spanisches Vizekönigreich 1504 bis 1714; https://en.wikipedia.org/wiki/Kingdom_of_Naples), siehe `[reich.*]`
+in `data/weltkarte/namen.toml`. Rom und die Adria-Städte des Kirchenstaats gehören im Spiel vorerst auch zu Neapel.
+Herrscher, Clans und Lords sind noch die des Spiels.
+
 ## Noch offen
 
 - Azap: belegt bis ins späte 16. Jahrhundert, für 1700 nicht ausdrücklich (https://en.wikipedia.org/wiki/Azap).

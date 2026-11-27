@@ -79,6 +79,42 @@
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
+	<!-- Königreich Neapel (data/weltkarte/namen.toml) -->
+	<xsl:template match="Kingdom[@id='battania']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_kingdom_battania}Kingdom of Naples</xsl:attribute>
+			<xsl:attribute name="short_name">{=balkan_kingdom_battania_short}Neapolitans</xsl:attribute>
+			<xsl:attribute name="title">{=balkan_kingdom_battania_title}Viceroyalty of Naples under the Spanish Crown</xsl:attribute>
+			<xsl:attribute name="ruler_title">{=balkan_kingdom_battania_ruler}Viceroy</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_battania_text}Since 1504 the Kingdom of Naples, with Campania, Calabria, Apulia, Basilicata, Abruzzo and Molise, has belonged to the Spanish crown and is governed by a Spanish viceroy. In this game the kingdom also holds Rome and the cities of the Papal States on the Adriatic.</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Krim-Khanat (data/weltkarte/namen.toml) -->
+	<xsl:template match="Kingdom[@id='khuzait']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_kingdom_khuzait}Crimean Khanate</xsl:attribute>
+			<xsl:attribute name="short_name">{=balkan_kingdom_khuzait_short}Crimean Tatars</xsl:attribute>
+			<xsl:attribute name="title">{=balkan_kingdom_khuzait_title}Khanate of Crimea</xsl:attribute>
+			<xsl:attribute name="ruler_title">{=balkan_kingdom_khuzait_ruler}Khan</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_khuzait_text}The khans of the house of Giray rule from Bahçeseray under the protection of the Ottoman Sultan. The Peace of Karlowitz in 1699 forbade further raids into the lands of their neighbours.</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Polen-Litauen (data/weltkarte/namen.toml) -->
+	<xsl:template match="Kingdom[@id='sturgia']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_kingdom_sturgia}Polish–Lithuanian Commonwealth</xsl:attribute>
+			<xsl:attribute name="short_name">{=balkan_kingdom_sturgia_short}Poles</xsl:attribute>
+			<xsl:attribute name="title">{=balkan_kingdom_sturgia_title}Commonwealth of the Two Nations</xsl:attribute>
+			<xsl:attribute name="ruler_title">{=balkan_kingdom_sturgia_ruler}King</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_sturgia_text}The Commonwealth of Poland and Lithuania is an elective monarchy: its nobles elect the king for life and guard their Golden Liberty. In 1697 they elected Frederick Augustus of Saxony, who was crowned as Augustus II.</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
 	<!-- Kriege zu Spielbeginn (krieg_mit in data/reiche/) -->
 	<xsl:template match="Kingdom/relationships/relationship[@kingdom='Kingdom.vlandia' or @kingdom='Kingdom.aserai' or @kingdom='Kingdom.empire_s' or @kingdom='Kingdom.empire_w']" />
 	<xsl:template match="Kingdom[@id='vlandia']/relationships">
