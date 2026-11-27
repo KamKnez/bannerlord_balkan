@@ -113,5 +113,14 @@
         <GameType value="CampaignStoryMode"/>
       </IncludedGameTypes>
     </XmlNode>
+    <!-- Positionen der Orte auf der Balkankarte (aus tools/weltkarte/szene_vorbereiten.py). Braucht die Szene
+         SceneObj/Main_map und ModuleData/DistanceCaches, die nicht im Repo liegen (docs/weltkarte.md). -->
+    <XmlNode>
+      <XmlName id="Settlements" path="XSLT/BalkanMod_Sandbox_SettlementPositions"/>
+      <IncludedGameTypes>
+        <GameType value="Campaign"/>
+        <GameType value="CampaignStoryMode"/>
+      </IncludedGameTypes>
+    </XmlNode>
   </Xmls>
 </Module>

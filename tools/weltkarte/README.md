@@ -11,6 +11,7 @@ Die Anleitung für den Import steht in [docs/weltkarte.md](../../docs/weltkarte.
 | `fluesse.py` | Flussläufe aus dem Höhenmodell und Natural Earth |
 | `karte_bauen.py` | Höhenbild, Masken und Hilfskarte schreiben |
 | `siedlungen_setzen.py` | Orte aus `data/weltkarte/orte.csv` auf begehbares Land setzen, `siedlungen.csv` und Vorschau schreiben |
+| `navmesh_bauen.py` | Navmesh der Karte als `navmesh.bin` erzeugen: begehbare Flächen, Furten, Meerengen |
 | `szene_vorbereiten.py` | Kopie der Kartenszene des Spiels vorbereiten (braucht nur Python 3, läuft auf dem Spiel-PC) |
 
 ## Neu erzeugen

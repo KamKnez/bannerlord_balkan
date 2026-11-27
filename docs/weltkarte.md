@@ -116,11 +116,11 @@ Die Schritte unten gelten sinngemäß für `balkan_karte` mit den Bildern aus `l
 
 ## Was Handarbeit bleibt
 
-- **Navmesh.** Ohne Navmesh bewegt sich auf der Karte nichts, und der Editor kann es für die Weltkarte nicht
-  erzeugen oder importieren. `hilfskarte_gelaende.png` zeigt, was wohin gehört. Nummern der Flächen laut
-  Community-Doku: 1 Ebene, 4 Wald, 7 Gebirge (unpassierbar), 8 See, 10 Wasser, 11 Fluss, 6 Furt.
-- **Flussübergänge und Meerengen.** Jeder Fluss braucht Furten oder Brücken im Navmesh, sonst trennt er die
-  Karte. Bosporus und Dardanellen brauchen einen Übergang, sonst ist Kleinasien abgeschnitten.
+- **Navmesh.** Kommt als Datei aus `tools/weltkarte/navmesh_bauen.py` (Format von Calradias `navmesh.bin`
+  abgelesen) und wird als `navmesh.bin` in den Szenenordner gelegt. Ein Raster aus 320 x 320 Feldern; Fläche gibt
+  es nur, wo man laufen kann (1 Ebene, 4 Wald, 6 Furt), Gebirge, Flüsse, Seen und Meer bleiben Lücken. Flüsse
+  haben etwa alle 50 km eine Furt, Bosporus und Dardanellen je einen Übergang, und alle Orte samt Toren liegen in
+  einem zusammenhängenden Gebiet. Feinarbeit von Hand im Editor ist weiter möglich.
 - **Inseln.** Ohne Schiffe sind Inseln nur erreichbar, wenn das Navmesh einen Übergang übers Wasser bekommt.
   Derzeit stehen dort Hvar und ein paar Dörfer. Kreta, Zypern, Sizilien und die Ägäis sind Gelände ohne Orte.
 - Danach im Editor am Objekt `settlements_scripts`: *CheckPositions*, dann
@@ -137,7 +137,16 @@ Die Schritte unten gelten sinngemäß für `balkan_karte` mit den Bildern aus `l
   Krim, Istanbul, Edirne, Saloniki, Athen, Smyrna, Ankara …, Quelle `vorläufig` in `data/weltkarte/orte.csv`),
   ihre Dörfer im Kreis darum. Namen und Besitzer sind noch die von Calradia.
 - **Dorfkoordinaten** mit Quelle `geschätzt` sind aus dem Gedächtnis auf wenige Kilometer genau.
-- **Karte scharf schalten:** Erst wenn Gelände und Navmesh stehen, wird die Szene zu `Main_map` der Mod, und
-  `siedlungen_positionen.xslt` (liegt in der Szene) kommt in die `SubModule.xml`. Bis dahin spielt die Mod auf
-  Calradia.
+- **Karte scharf geschaltet (27.11.2026, erster Spieltest steht aus).** Das Spiel nimmt die Szene `Main_map` aus
+  dem letzten aktiven Modul, das eine hat. Auf dem Spiel-PC liegt die Balkankarte deshalb als
+  `BalkanMod/SceneObj/Main_map` (nicht im Repo, rund 40 MB), mit dem `SettlementPositionScript` am Objekt
+  `settlements_scripts`. Dazu gehören: `ModuleData/settlements.xml` im Modul (Kopie der Datei des Spiels, nur für
+  das Skript im Editor, das beim Speichern die Positionen hineinschreibt), die Wegstrecken-Datei
+  `ModuleData/DistanceCaches/settlements_distance_cache_Default.bin` (im Editor mit
+  *ComputeAndSaveSettlementDistanceCache* berechnet, rund 20 Minuten; nach jeder Änderung an Navmesh oder Orten neu)
+  und `XSLT/BalkanMod_Sandbox_SettlementPositions.xslt` mit den Positionen fürs Spiel. Ohne die Szene stehen die
+  Orte mit dieser XSLT falsch auf Calradia; dann den Eintrag in der `SubModule.xml` auskommentieren.
+- Der Ruhestands-Ort `retirement_retreat` hat (wie in Calradia) kein Objekt in der Szene und steht noch auf seiner
+  alten Koordinate. Der freie Spielstart setzt die Spielfigur auf eine Calradia-Koordinate; die geführten Einstiege
+  der Mod setzen sie an ein Ortstor.
 - Wälder, Stauseen und Flussläufe sind die von heute, nicht die von 1700.
