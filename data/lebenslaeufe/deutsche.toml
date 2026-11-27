@@ -1,11 +1,11 @@
 # Lebensläufe der Deutschen (Vorlage Vlandia). Aufbau: siehe README.md
 [vlandia_retainer_option]
 titel = { en = "A count's retainers", de = "das Gefolge eines Grafen" }
-text = { en = "Your father was steward to an imperial count who had been given lands in Slavonia after the Turks were driven out. He looked after the estates, settled disputes in the villages and trained the levy. In war he rode with the count's cuirassiers.", de = "Euer Vater war Verwalter eines Reichsgrafen, der nach der Vertreibung der Türken Güter in Slawonien erhalten hatte. Er kümmerte sich um die Güter, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit den Kürassieren des Grafen." }
+text = { en = "Your father was steward to an imperial count who had been given lands in the reconquered parts of Hungary. He looked after the estates, settled disputes in the villages and trained the levy. In war he rode with the count's cuirassiers.", de = "Euer Vater war Verwalter eines kaiserlichen Grafen, der Land in den zurückeroberten Teilen Ungarns erhalten hatte. Er kümmerte sich um die Güter, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit den Kürassieren des Grafen." }
 
 [vlandia_merchant_option]
 titel = { en = "Burghers", de = "Bürger" }
-text = { en = "Your family were merchants who traded along the Danube between Vienna, Buda and Belgrade. They shipped cloth and iron goods downriver, brought back hides and cattle, and sat in the merchants' guild of their town.", de = "Eure Familie waren Kaufleute, die an der Donau zwischen Wien, Ofen und Belgrad handelten. Sie brachten Tuch und Eisenwaren flussabwärts, kamen mit Häuten und Vieh zurück und saßen in der Kaufmannsgilde ihrer Stadt." }
+text = { en = "Your family were merchants who traded along the Danube. They shipped cloth and iron goods downriver, brought back hides and cattle, and sat in the merchants' guild of their town.", de = "Eure Familie waren Kaufleute, die entlang der Donau handelten. Sie verschifften Tuch und Eisenwaren flussabwärts, brachten Häute und Vieh zurück und saßen in der Kaufmannsgilde ihrer Stadt." }
 
 [vlandia_farmer_option]
 titel = { en = "Settlers", de = "Siedler" }

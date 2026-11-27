@@ -65,7 +65,7 @@ Bannerlord hat pro Kultur einen normalen Baum (Rekruten aus Dörfern) und einen 
 
 ### Deutsche (Habsburger)
 
-- **Normal:** Rekrut → Pikenier → Doppelsöldner (Hellebarde, Rüstung)
+- **Normal:** Rekrut → Pikenier → Erfahrener Pikenier (Hellebarde, Rüstung)
   - Zweig: Rekrut → Musketier → Veteran-Musketier
 - **Adel:** keiner (die Deutschen stellen Offiziere über die Clans)
 
@@ -75,7 +75,7 @@ Bannerlord hat pro Kultur einen normalen Baum (Rekruten aus Dörfern) und einen 
 
 ### Bosniaken (Osmanen)
 
-- **Normal:** Bauer → Azap (Speer, Bogen) → Tüfekçi (Muskete) → Kapetanije-Schütze
+- **Normal:** Bauer → Azap (Speer, Bogen) → Bosnischer Musketier → Kapetanije-Schütze
   - Zweig: Azap → Deli (leichter Reiter, Lanze, Säbel)
 - **Adel:** Timarli-Sipahi → Sipahi → Zaim (schwerer Reiter mit Kettenhemd)
 
@@ -111,10 +111,10 @@ Bauern. Man rekrutiert sie in Dörfern, denen per Daten diese Kultur zugeordnet 
 
 | Kultur | Vorlage | Dörfer (v0.1) | Baum |
 |---|---|---|---|
-| Deutsche | Vlandia | um Graz | Bauer → Rekrut → Pikenier → Doppelsöldner / Musketier → Veteran-Musketier; Adel: Junker → Kürassier → Kaiserlicher Kürassier |
+| Deutsche | Vlandia | um Graz | Bauer → Rekrut → Pikenier → Erfahrener Pikenier / Musketier → Veteran-Musketier; Adel: Junker → Kürassier → Kaiserlicher Kürassier |
 | Ungarn | Vlandia | um Pécs, Valpovo | Bauer → Junger Hajdú → Hajdú → Veteran / Ungarischer Reiter → Husar; Adel: Edelmann → Adeliger Husar → Husarenhauptmann |
-| Serben | Sturgia | Lika, Banija, um Belgrad und Raška, Morlaken bei Knin | Bauer → Grenzer → Musketier → Hajduk / Reiter → Raizischer Husar; Adel: Edelmann → Vojvoda |
-| Türken | Aserai | um Novi Pazar | Bauer → Azap → Sekban / Acemi Oğlan → Janitschar → Veteran → Odabaşı; Adel: Timarli-Sipahi → Kapıkulu-Sipahi |
+| Serben | Sturgia | Lika, Banija, um Belgrad und Raška, Morlaken bei Knin | Bauer → Grenzer → Musketier → Hajduk / Reiter → Raizischer Husar; Adel: Edelmann → Adelshusar → Hauptmann der Miliz → Podvojvoda → Vojvoda |
+| Türken | Aserai | um Novi Pazar | Bauer → Azap → Sekban / Acemi Oğlan → Janitschar → Veteran → Janitscharenoffizier; Adel: Timarli-Sipahi → Kapıkulu-Sipahi |
 | Bulgaren | Sturgia | Dörfer um Sofia, Plowdiw und Vidin | Bauer → Woinuk → Erfahrener Woinuk / Derbendschi → Hajduk → Harambascha; Adel: Berittener Woinuk → Lagator → Çeribaşı → Woinuk-Bey → Woinuken-Sandschakbey |
 | Griechen | Imperium | Dörfer um Saloniki | Bauer → Armatole → Palikare → Protopalikare / Seemann → Erfahrener Seemann; Adel: Sohn eines Notabeln → Reiter eines Notabeln → Kapetanios → Dimogeron → Kotzabasis |
 
@@ -141,7 +141,7 @@ Die Werte sind Richtwerte im Vergleich zur schweren Armbrust des Spiels. Wir sti
 
 Ziel: Eine Salve ist gefährlich, danach entscheiden Nahkampf und Reiterei.
 
-**Umsetzung v0.1:** Arkebuse (Haramije, Schiavoni, Miliz), Luntenschloss-Muskete (Musketiere, Tüfekçi),
+**Umsetzung v0.1:** Arkebuse (Haramije, Schiavoni, Miliz), Luntenschloss-Muskete (Musketiere),
 Lange Balkan-Flinte (Scharfschützen der Stufe 3 bis 4), Schwere Muskete (Veteranen) und Reiterpistole (Reiter,
 Husaren, Kürassiere, Cappelletti). Dazu Musketenkugeln (12 Schuss) und Pistolenpatronen (4 Schuss).
 Die Pistole lässt sich als einzige Feuerwaffe auf dem Pferd nachladen.

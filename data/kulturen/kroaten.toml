@@ -365,7 +365,7 @@ Leg = "mail_cavalier_boots"
 
 [[truppe]]
 id = "ban_guard"
-name = { en = "Ban's Guard", de = "Garde des Banus" }
+name = { en = "Cuirassier Captain", de = "Kürassier-Hauptmann" }
 stufe = 6
 gruppe = "Cavalry"
 profil = "reiter"

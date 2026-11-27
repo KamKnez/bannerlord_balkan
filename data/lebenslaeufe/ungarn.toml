@@ -1,15 +1,15 @@
 # Lebensläufe der Ungarn (Vorlage Vlandia). Aufbau: siehe README.md
 [vlandia_retainer_option]
 titel = { en = "A magnate's retainers", de = "das Gefolge eines Magnaten" }
-text = { en = "Your father was the steward of a Hungarian magnate's estates. He looked after the lands, settled disputes in the villages and trained the levy. In war he rode in his lord's banderium, the armoured horse every great house raises.", de = "Euer Vater war Verwalter der Güter eines ungarischen Magnaten. Er kümmerte sich um die Ländereien, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er im Banderium seines Herrn, der gepanzerten Reiterei, die jedes große Haus stellt." }
+text = { en = "Your father was the steward of a Hungarian magnate's estates. He looked after the lands, settled disputes in the villages and trained the levy. In war he rode with his lord's armed horsemen.", de = "Euer Vater war Verwalter der Güter eines ungarischen Magnaten. Er kümmerte sich um das Land, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit den bewaffneten Reitern seines Herrn." }
 
 [vlandia_merchant_option]
 titel = { en = "Burghers", de = "Bürger" }
-text = { en = "Your family were merchants in a royal free town of the Great Plain. They drove grey cattle to the markets of Vienna and Nuremberg, sold wine from Tokaj and sat in the town's merchants' guild.", de = "Eure Familie waren Kaufleute in einer königlichen Freistadt der Großen Tiefebene. Sie trieben graue Rinder auf die Märkte von Wien und Nürnberg, verkauften Wein aus Tokaj und saßen in der Kaufmannsgilde der Stadt." }
+text = { en = "Your family were merchants in a town of the Great Plain. They drove grey cattle on the hoof to the markets of Vienna and Nuremberg and sat in the town's merchants' guild.", de = "Eure Familie waren Kaufleute in einer Stadt der Großen Tiefebene. Sie trieben Graurinder zu Fuß auf die Märkte von Wien und Nürnberg und saßen in der Kaufmannsgilde der Stadt." }
 
 [vlandia_farmer_option]
 titel = { en = "Hajdú peasants", de = "Heiducken-Bauern" }
-text = { en = "Your family were hajdú, peasants freed from serfdom long ago for their service against the Turks. They had just enough land to live on and a little to sell, and a musket hung above the hearth for when the call to arms came.", de = "Eure Familie waren Heiducken, Bauern, die vor langer Zeit für ihren Dienst gegen die Türken aus der Leibeigenschaft entlassen worden waren. Sie hatten genug Land zum Leben und ein wenig zum Verkaufen, und über dem Herd hing eine Muskete für den Tag, an dem zu den Waffen gerufen wurde." }
+text = { en = "Your family were hajdú, whose forefathers Prince Bocskai freed from their lords' jurisdiction and gave land for their service. They had just enough land to live on and a little to sell, and a musket hung above the hearth for when the call to arms came.", de = "Eure Familie waren Hajdúk, deren Vorfahren Fürst Bocskai für ihren Dienst aus der Gewalt ihrer Herren befreite und mit Land beschenkte. Sie hatten gerade genug Land zum Leben und ein wenig zum Verkaufen, und über dem Herd hing eine Muskete für den Ruf zu den Waffen." }
 
 [vlandia_blacksmith_option]
 titel = { en = "Town smiths", de = "Schmiede in der Stadt" }
@@ -21,4 +21,4 @@ text = { en = "Your family lived in a village in the marshes along the Tisza but
 
 [vlandia_mercenary_option]
 titel = { en = "Kuruc fighters", de = "Kuruzen" }
-text = { en = "Your father rode with the kuruc bands of Imre Thököly, men who had fought against Emperor and Sultan alike since their youth and never took well to peace. Their marksmen were feared on every side. Your mother followed the camp and took you along in the wake of bloody campaigns.", de = "Euer Vater ritt mit den Kuruzen Imre Thökölys, Männern, die seit ihrer Jugend gegen Kaiser wie Sultan kämpften und mit dem Frieden nie zurechtkamen. Ihre Schützen waren auf allen Seiten gefürchtet. Eure Mutter zog mit dem Lager und nahm Euch mit auf blutige Feldzüge." }
+text = { en = "Your father rode with the kuruc of Imre Thököly, the insurgents who fought the Habsburgs and, under Thököly, sided with the Sultan. He never took well to peace. Your mother followed the camp and took you along in the wake of bloody campaigns.", de = "Euer Vater ritt mit den Kuruzen Imre Thökölys, den Aufständischen, die gegen die Habsburger kämpften und sich unter Thököly auf die Seite des Sultans stellten. Mit dem Frieden kam er nie zurecht. Eure Mutter zog mit dem Lager und nahm Euch mit auf blutige Feldzüge." }

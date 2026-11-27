@@ -57,9 +57,50 @@ Mehmed als Statthalter von Bosnien.
 | Bulgaren | siehe Kopf von `data/kulturen/bulgaren.toml` | Voynuks, Dervendjis, Hajduk, Ottoman_Bulgaria, Chiprovtsi_uprising |
 | Griechen | siehe Kopf von `data/kulturen/griechen.toml` | Armatoles, Klephts, Kodjabashis, Ottoman_Greece, Phanariots |
 
+## Truppennamen
+
+| Kultur | Truppe | Quelle |
+|---|---|---|
+| Serben | Serbische Husaren (1689), Hauptmann, Podvojvoda und Vojvoda der Serbischen Miliz (1686–1704), Hajduken als Fußvolk | https://en.wikipedia.org/wiki/Serbian_Militia, https://en.wikipedia.org/wiki/Jovan_Monasterlija |
+| Serben, Kroaten, Bulgaren | Harambaša als Anführer einer Hajdukenschar | https://en.wikipedia.org/wiki/Haramba%C5%A1a |
+| Türken | Janitscharen (1699: 67.729), Acemi Oğlan, Sekban, Yerliyya (Janitscharen am Ort) | https://en.wikipedia.org/wiki/Janissary, https://en.wikipedia.org/wiki/Sekban |
+| Türken, Bosniaken | Timarli-Sipahi, Kapıkulu-Sipahi, Silahdar, Cebelu (bewaffnete Gefolgsleute eines Timarioten), Zaim | https://en.wikipedia.org/wiki/Sipahi, https://en.wikipedia.org/wiki/Timariots |
+| Bosniaken | Deli | https://en.wikipedia.org/wiki/Deli_(Ottoman) |
+| Deutsche, Kroaten | Kürassiere und Karabiniers | https://en.wikipedia.org/wiki/Armour_in_the_18th_century |
+| Venezianer | Oltremarini, Schiavoni, Cappelletti | https://en.wikipedia.org/wiki/Oltremarini, https://en.wikipedia.org/wiki/Cappelletti_(cavalry) |
+
+Umbenannt, weil für 1700 nicht belegt: Doppelsöldner (Landsknechtszeit), Condottiero (15. Jh.), Janitscharen-Odabaşı,
+Tüfekçi, Garde des Banus, Momak, Barjaktar. Der serbische Adelsbaum folgt jetzt den Rängen der Serbischen Miliz
+(Serdar steht laut Wikipedia unter dem Vojvoda und passte nicht an die Spitze).
+
+## Lebensläufe
+
+| Kultur | Aussage | Quelle |
+|---|---|---|
+| Deutsche | deutsche Siedler in Ungarn ab 1689 | https://en.wikipedia.org/wiki/Swabian_Turkey, https://en.wikipedia.org/wiki/Danube_Swabians |
+| Kroaten | Karlovac 1579 als sechszackige Sternfestung an Kupa und Korana; Zagreb (Gradec) freie königliche Stadt seit 1242 | https://en.wikipedia.org/wiki/Karlovac, https://en.wikipedia.org/wiki/List_of_free_royal_cities_of_Croatia |
+| Kroaten | „Kroaten“ als leichte Reiterei mit Karabiner und Pistolen im Dreißigjährigen Krieg (nicht Schützen) | https://en.wikipedia.org/wiki/Croats_(military_unit) |
+| Ungarn | Graurinder zu Fuß nach Wien und Nürnberg; Bocskai befreite die Hajdúk 1604–1606 von ihren Herren; Kuruzen gegen die Habsburger, Thököly mit den Osmanen verbündet | https://en.wikipedia.org/wiki/Hungarian_Grey, https://en.wikipedia.org/wiki/Hajduk, https://en.wikipedia.org/wiki/Kuruc, https://en.wikipedia.org/wiki/Emeric_Th%C3%B6k%C3%B6ly |
+| Venezianer | Landmiliz heißt in Dalmatien Cranide; Cappelletti aus dalmatinischen Kroaten | https://en.wikipedia.org/wiki/Cernida, https://en.wikipedia.org/wiki/Cappelletti_(cavalry) |
+| Ragusaner | Bruderschaft des hl. Antonius als Elite-Bruderschaft | https://www.bib.irb.hr/760445 |
+
+Entfernt, weil nicht belegt: Handel Wien–Buda–Belgrad, Tokajer, „Banderium“ als Gefolge jedes Magnaten, Kuruzen
+„gegen Kaiser und Sultan“, Karawanen von Split nach Bosnien, kroatische Söldner als Schützen.
+
+## Ereignisse und Aufstieg
+
+| Inhalt | Aussage | Quelle |
+|---|---|---|
+| Friede von Karlowitz | größter Teil Ungarns an die Habsburger, Morea bei Venedig, Grenzen bei Kroatien und Bihać bis Mitte 1700 abgesteckt | https://en.wikipedia.org/wiki/Treaty_of_Karlowitz, https://en.wikipedia.org/wiki/Ottoman%E2%80%93Venetian_War_(1714%E2%80%931718) |
+| Krieg gegen Venedig | Kriegserklärung 9.12.1714, Großwesir Silahdar Damat Ali Pascha, Pascha von Bosnien gegen Dalmatien (Sinj 1715) | https://en.wikipedia.org/wiki/Ottoman%E2%80%93Venetian_War_(1714%E2%80%931718), https://en.wikipedia.org/wiki/Silahdar_Damat_Ali_Pasha |
+| Der Kaiser tritt ein | Bündnis Karls VI. mit Venedig am 13.4.1716 | https://en.wikipedia.org/wiki/Austro-Turkish_War_(1716%E2%80%931718) |
+| Friede von Passarowitz | Belgrad und Banat an den Kaiser, Venedig verliert Morea und gewinnt Imotski und Vrgorac | https://en.wikipedia.org/wiki/Treaty_of_Passarowitz |
+| Aufstieg Grenzer | Karlovac einer der ersten Sitze des Generalkommandos der Militärgrenze | https://en.wikipedia.org/wiki/Karlovac |
+| Aufstieg Bauer | Županja nach 1687 habsburgisch, später im Brod-Regiment (das Regiment gab es um 1700 noch nicht, daher nicht genannt) | https://en.wikipedia.org/wiki/%C5%BDupanja, https://en.wikipedia.org/wiki/Slavonian_Military_Frontier |
+| Aufstieg Kapetan | Start jetzt in Travnik statt Banja Luka, weil der Pascha dorthin zieht | https://en.wikipedia.org/wiki/Bosnia_Eyalet |
+
 ## Noch offen
 
-- Truppennamen ohne Beleg für die Zeit um 1700: Doppelsöldner (Deutsche, Landsknechtszeit des 16. Jh.), Condottiero
-  und Corazza (Venezianer; Kürassiere erst für die 1720er belegt), Ban's Guard (Kroaten), osmanische Ränge
-  (Azap, Sekban, Cebelu, Silahdar, Acemi Oğlan, Odabaşı, Yerli).
-- Kulturtexte Deutsche, Türken, Bosniaken und die übrigen Lebensläufe, Ereignisse und Aufstieg.
+- Azap: belegt bis ins späte 16. Jahrhundert, für 1700 nicht ausdrücklich (https://en.wikipedia.org/wiki/Azap).
+- Venezianische Corazze: Kürassiere in Venedig erst für die 1720er belegt.
+- Allgemeine Lebensläufe (Bosniaken, Türken, Serben) enthalten nur allgemeine Angaben (Zadruga, Esnaf, Devşirme, Yörük) ohne Einzelbeleg.

@@ -1,7 +1,7 @@
 # Lebensläufe der Ragusaner (Vorlage Imperium). Aufbau: siehe README.md
 [empire_lanlord_option]
 titel = { en = "A patrician's retainers", de = "das Gefolge eines Patriziers" }
-text = { en = "Your father was a trusted man of a patrician family of Dubrovnik and managed their estates in Konavle. When the Republic called its few horsemen to guard the border, he rode with them as a lancer.", de = "Euer Vater war ein Vertrauter einer Patrizierfamilie aus Dubrovnik und verwaltete ihre Güter in Konavle. Wenn die Republik ihre wenigen Reiter zum Schutz der Grenze rief, ritt er als Lanzenreiter mit." }
+text = { en = "Your father was a trusted man of a patrician family of Dubrovnik and managed their estates in Konavle. When the Republic called its few horsemen to guard the border, he rode with them.", de = "Euer Vater war ein Vertrauter einer Patrizierfamilie aus Dubrovnik und verwaltete ihre Güter in Konavle. Wenn die Republik ihre wenigen Reiter zur Grenzwache rief, ritt er mit ihnen." }
 
 [empire_merchant_option]
 titel = { en = "Merchants", de = "Kaufleute" }
