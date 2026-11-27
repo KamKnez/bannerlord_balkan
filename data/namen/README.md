@@ -13,6 +13,8 @@ und `clan_names` der Kulturen in Bannerlord. Eine Zeile pro Name, Schreibweise d
 | `tuerken.txt` | Türken (Osmanen) |
 | `italiener.txt` | Italiener und Venezianer |
 | `ragusaner.txt` | Ragusaner (Dubrovnik) |
+| `bulgaren.txt` | Bulgaren (Osmanen) |
+| `griechen.txt` | Griechen (Osmanen) |
 
 Aufbau jeder Datei: Abschnitte `[maennlich]`, `[weiblich]` und `[familien]` (Familiennamen für Clans und Lords).
 Die Liste prüft `tools/validate_names.py` (keine Dopplungen, keine leeren Abschnitte).

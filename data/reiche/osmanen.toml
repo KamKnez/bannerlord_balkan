@@ -358,6 +358,27 @@ village_A2_2 = "serbs"          # Grocka
 village_A2_3 = "serbs"          # Smederevo
 village_A5_1 = "turks"          # Havsa
 village_A5_2 = "turks"          # Lüleburgaz
+village_A5_3 = "turks"          # Uzunköprü
+town_A5 = "turks"               # Edirne: alte Sultansstadt, türkisch geprägt
+# Bulgarien
+town_A3 = "bulgarians"          # Sofia
+castle_A6 = "bulgarians"        # Plowdiw
+castle_A8 = "bulgarians"        # Vidin
+village_A3_1 = "bulgarians"     # Bojana
+village_A3_3 = "bulgarians"     # Samokow
+castle_village_A6_1 = "bulgarians"  # Assenowgrad
+castle_village_A6_2 = "bulgarians"  # Pasardschik
+castle_village_A8_1 = "bulgarians"  # Belogradtschik
+castle_village_A8_2 = "bulgarians"  # Lom
+# Griechenland
+town_A4 = "greeks"              # Saloniki
+village_A4_1 = "greeks"         # Langadas
+village_A4_2 = "greeks"         # Chalkidona
+village_A4_4 = "greeks"         # Kalamaria
+# Serbien
+castle_A3 = "serbs"             # Niš
+castle_village_A3_1 = "serbs"   # Aleksinac
+castle_village_A3_2 = "serbs"   # Pirot
 
 
 # Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;

@@ -22,6 +22,15 @@
 		<xsl:copy>
 			<xsl:apply-templates select="@*" />
 			<xsl:attribute name="id"><xsl:choose>
+				<xsl:when test="contains(@id, 'char_creation') and contains(@id, '_empire')"><xsl:value-of select="concat(substring-before(@id, '_empire'), '_greeks', substring-after(@id, '_empire'))" /></xsl:when>
+				<xsl:otherwise><xsl:value-of select="concat(@id, '_balkan_greeks')" /></xsl:otherwise>
+			</xsl:choose></xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+		<xsl:copy>
+			<xsl:apply-templates select="@*" />
+			<xsl:attribute name="id"><xsl:choose>
 				<xsl:when test="contains(@id, 'char_creation') and contains(@id, '_empire')"><xsl:value-of select="concat(substring-before(@id, '_empire'), '_ragusa', substring-after(@id, '_empire'))" /></xsl:when>
 				<xsl:otherwise><xsl:value-of select="concat(@id, '_balkan_ragusa')" /></xsl:otherwise>
 			</xsl:choose></xsl:attribute>
@@ -40,6 +49,15 @@
 	</xsl:template>
 	<xsl:template match="EquipmentRoster[@culture='Culture.sturgia']">
 		<xsl:copy><xsl:apply-templates select="@*|node()" /></xsl:copy>
+		<xsl:copy>
+			<xsl:apply-templates select="@*" />
+			<xsl:attribute name="id"><xsl:choose>
+				<xsl:when test="contains(@id, 'char_creation') and contains(@id, '_sturgia')"><xsl:value-of select="concat(substring-before(@id, '_sturgia'), '_bulgarians', substring-after(@id, '_sturgia'))" /></xsl:when>
+				<xsl:otherwise><xsl:value-of select="concat(@id, '_balkan_bulgarians')" /></xsl:otherwise>
+			</xsl:choose></xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
 		<xsl:copy>
 			<xsl:apply-templates select="@*" />
 			<xsl:attribute name="id"><xsl:choose>

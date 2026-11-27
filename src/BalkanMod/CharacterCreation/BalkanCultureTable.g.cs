@@ -10,7 +10,9 @@ namespace BalkanMod.CharacterCreation
             new Dictionary<string, (string Template, string Image)>
         {
             { "aserai", ("aserai", "battania") },
+            { "bulgarians", ("sturgia", "sturgia") },
             { "germans", ("vlandia", "vlandia") },
+            { "greeks", ("empire", "empire") },
             { "vlandia", ("vlandia", "vlandia") },
             { "ragusa", ("empire", "empire") },
             { "serbs", ("sturgia", "sturgia") },

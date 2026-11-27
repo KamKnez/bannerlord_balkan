@@ -10,7 +10,9 @@
 	<xsl:template match="/SPCultures">
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()" />
+			<xsl:apply-templates select="Culture[@id='sturgia']" mode="balkan_bulgaren" />
 			<xsl:apply-templates select="Culture[@id='vlandia']" mode="balkan_deutsche" />
+			<xsl:apply-templates select="Culture[@id='empire']" mode="balkan_griechen" />
 			<xsl:apply-templates select="Culture[@id='empire']" mode="balkan_ragusaner" />
 			<xsl:apply-templates select="Culture[@id='sturgia']" mode="balkan_serben" />
 			<xsl:apply-templates select="Culture[@id='aserai']" mode="balkan_tuerken" />
@@ -94,6 +96,84 @@
 			<name name="{{=!}}Gradaščević" />
 		</clan_names>
 	</xsl:template>
+	<!-- Bulgaren: neue Kultur 'bulgarians' als Kopie von 'sturgia' (data/kulturen/bulgaren.toml) -->
+	<xsl:template match="Culture" mode="balkan_bulgaren">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="id">bulgarians</xsl:attribute>
+			<xsl:attribute name="is_main_culture">false</xsl:attribute>
+			<xsl:attribute name="name">{=balkan_culture_bulgaren}Bulgarians</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_bulgaren_text}For three centuries the Bulgarians have lived under the Sultan, as farmers, herdsmen and craftsmen in the valleys of the Balkan mountains and on the Thracian plain. Some serve the empire as voynuks or as guards of the mountain passes and are freed from taxes in return. Others have taken to the forests as hajduks. The Catholic uprising of Chiprovtsi in 1688 was crushed, but it is not forgotten.</xsl:attribute>
+			<xsl:attribute name="color">0xff2E6B3A</xsl:attribute>
+			<xsl:attribute name="color2">0xffE9E4D4</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_bg_peasant</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_bg_konnik</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_bg_militia_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_bg_militia_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_bg_militia_veteran_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_bg_militia_veteran_shooter</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_bulgaren</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_bulgaren</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_bulgaren" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_bulgaren">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_bulgaren" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_bulgaren">
+		<male_names>
+			<name name="{{=!}}Stojan" />
+			<name name="{{=!}}Ivan" />
+			<name name="{{=!}}Petko" />
+			<name name="{{=!}}Dimitar" />
+			<name name="{{=!}}Georgi" />
+			<name name="{{=!}}Nikola" />
+			<name name="{{=!}}Todor" />
+			<name name="{{=!}}Stanko" />
+			<name name="{{=!}}Marin" />
+			<name name="{{=!}}Petar" />
+			<name name="{{=!}}Vasil" />
+			<name name="{{=!}}Krastju" />
+			<name name="{{=!}}Radoslav" />
+			<name name="{{=!}}Dragan" />
+			<name name="{{=!}}Stoiko" />
+			<name name="{{=!}}Hristo" />
+			<name name="{{=!}}Iliya" />
+			<name name="{{=!}}Nedelko" />
+			<name name="{{=!}}Atanas" />
+			<name name="{{=!}}Kostadin" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_bulgaren">
+		<female_names>
+			<name name="{{=!}}Marija" />
+			<name name="{{=!}}Elena" />
+			<name name="{{=!}}Stojanka" />
+			<name name="{{=!}}Rada" />
+			<name name="{{=!}}Todora" />
+			<name name="{{=!}}Kalina" />
+			<name name="{{=!}}Neda" />
+			<name name="{{=!}}Petkana" />
+			<name name="{{=!}}Velika" />
+			<name name="{{=!}}Zlata" />
+			<name name="{{=!}}Vasilka" />
+			<name name="{{=!}}Stana" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_bulgaren">
+		<clan_names>
+			<name name="{{=!}}Čiprovski" />
+			<name name="{{=!}}Pejačević" />
+			<name name="{{=!}}Knežević" />
+			<name name="{{=!}}Parčević" />
+			<name name="{{=!}}Marinović" />
+			<name name="{{=!}}Stanislavov" />
+			<name name="{{=!}}Bogdanov" />
+			<name name="{{=!}}Nikolov" />
+			<name name="{{=!}}Kraljev" />
+			<name name="{{=!}}Vojnikov" />
+		</clan_names>
+	</xsl:template>
 	<!-- Deutsche: neue Kultur 'germans' als Kopie von 'vlandia' (data/kulturen/deutsche.toml) -->
 	<xsl:template match="Culture" mode="balkan_deutsche">
 		<xsl:copy>
@@ -168,6 +248,84 @@
 			<name name="{{=!}}Breuner" />
 			<name name="{{=!}}Attems" />
 			<name name="{{=!}}Rauber" />
+		</clan_names>
+	</xsl:template>
+	<!-- Griechen: neue Kultur 'greeks' als Kopie von 'empire' (data/kulturen/griechen.toml) -->
+	<xsl:template match="Culture" mode="balkan_griechen">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="id">greeks</xsl:attribute>
+			<xsl:attribute name="is_main_culture">false</xsl:attribute>
+			<xsl:attribute name="name">{=balkan_culture_griechen}Greeks</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_griechen_text}The Greeks of Macedonia, Thessaly and the islands live under the Sultan as his Orthodox subjects. Their merchants and ship owners trade from Thessaloniki to Venice and Odessa, and Phanariot families in Constantinople serve the Porte as interpreters and princes. In the mountains the armatoles keep the roads for the empire, and the klephts rob them.</xsl:attribute>
+			<xsl:attribute name="color">0xff1F4E9A</xsl:attribute>
+			<xsl:attribute name="color2">0xffF2F2F2</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_gr_peasant</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_gr_archontopoulos</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_gr_militia_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_gr_militia_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_gr_militia_veteran_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_gr_militia_veteran_shooter</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_griechen</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_griechen</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_griechen" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_griechen">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_griechen" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_griechen">
+		<male_names>
+			<name name="{{=!}}Georgios" />
+			<name name="{{=!}}Ioannis" />
+			<name name="{{=!}}Nikolaos" />
+			<name name="{{=!}}Dimitrios" />
+			<name name="{{=!}}Konstantinos" />
+			<name name="{{=!}}Athanasios" />
+			<name name="{{=!}}Panagiotis" />
+			<name name="{{=!}}Christodoulos" />
+			<name name="{{=!}}Theodoros" />
+			<name name="{{=!}}Michail" />
+			<name name="{{=!}}Antonios" />
+			<name name="{{=!}}Stavros" />
+			<name name="{{=!}}Manolis" />
+			<name name="{{=!}}Andreas" />
+			<name name="{{=!}}Spyridon" />
+			<name name="{{=!}}Vasileios" />
+			<name name="{{=!}}Anastasios" />
+			<name name="{{=!}}Lambros" />
+			<name name="{{=!}}Kostas" />
+			<name name="{{=!}}Nikitas" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_griechen">
+		<female_names>
+			<name name="{{=!}}Maria" />
+			<name name="{{=!}}Eleni" />
+			<name name="{{=!}}Aikaterini" />
+			<name name="{{=!}}Sofia" />
+			<name name="{{=!}}Anastasia" />
+			<name name="{{=!}}Theodora" />
+			<name name="{{=!}}Irini" />
+			<name name="{{=!}}Despina" />
+			<name name="{{=!}}Zoi" />
+			<name name="{{=!}}Chrysoula" />
+			<name name="{{=!}}Angeliki" />
+			<name name="{{=!}}Kyriaki" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_griechen">
+		<clan_names>
+			<name name="{{=!}}Mavrokordatos" />
+			<name name="{{=!}}Kantakouzinos" />
+			<name name="{{=!}}Ypsilantis" />
+			<name name="{{=!}}Karatzas" />
+			<name name="{{=!}}Soutzos" />
+			<name name="{{=!}}Rallis" />
+			<name name="{{=!}}Notaras" />
+			<name name="{{=!}}Laskaris" />
+			<name name="{{=!}}Chrysoskoleos" />
+			<name name="{{=!}}Bouas" />
 		</clan_names>
 	</xsl:template>
 	<!-- Kroaten: Calradia-Kultur 'vlandia' anpassen (data/kulturen/kroaten.toml) -->

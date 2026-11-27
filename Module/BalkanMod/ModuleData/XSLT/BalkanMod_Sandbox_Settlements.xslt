@@ -472,6 +472,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Sofia</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_A3_text}Sofia is the seat of the beylerbey of Rumelia and lies on the great military road from Belgrade to Constantinople. Caravans, couriers and marching armies all pass beneath its minarets.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -480,6 +481,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Saloniki</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_A4_text}Saloniki is the great port of Macedonia. Its Sephardic Jews weave the blue cloth for the janissaries, and merchants from every shore of the sea trade on its quays.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -488,6 +490,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Edirne</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_A5_text}Edirne was the capital of the Ottomans before Constantinople, and the sultans still prefer to hold court and hunt here. Sinan's Selimiye mosque stands above the town, and the armies for the wars in the north gather on its plain.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -536,6 +539,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Niš</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_A3_text}Niš guards the military road where the routes to Sofia and to Salonica part. The imperial army took the town in 1689, and the Ottomans won it back a year later.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -560,6 +564,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Plowdiw</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_A6_text}Plowdiw, which the Ottomans call Filibe, lies on its hills above the Maritsa on the road to Constantinople. Rice from the river plain and the trade of the road have made its merchants wealthy.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -576,6 +581,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Vidin</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_A8_text}Vidin is a fortress on the Danube, built around the old castle of Baba Vida. The imperial army took it in 1689 and lost it again the next year, and since then the Ottomans have been strengthening its walls.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -624,6 +630,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Aleksinac</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_1_text}Aleksinac lies in the lands of Niš. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -632,6 +639,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Pirot</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_2_text}Pirot belongs to the district of Niš. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -672,6 +680,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Assenowgrad</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_A6_1_text}Assenowgrad lies in the lands of Plowdiw. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -680,6 +689,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Pasardschik</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_A6_2_text}Pasardschik belongs to the district of Plowdiw. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -704,6 +714,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Belogradtschik</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_A8_1_text}Belogradtschik belongs to the district of Vidin. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -712,6 +723,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Lom</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_A8_2_text}Lom is a village near Vidin. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -778,6 +790,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Bojana</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A3_1_text}Bojana belongs to the district of Sofia. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -786,6 +799,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Samokow</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A3_3_text}Samokow is a village near Sofia. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -794,6 +808,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Langadas</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A4_1_text}Langadas lies in the lands of Saloniki. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -802,6 +817,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Chalkidona</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A4_2_text}Chalkidona belongs to the district of Saloniki. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -810,6 +826,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Kalamaria</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A4_4_text}Kalamaria is a village near Saloniki. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -836,6 +853,7 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Uzunköprü</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A5_3_text}Uzunköprü is a village near Edirne. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
