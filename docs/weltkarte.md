@@ -125,6 +125,9 @@ Die Schritte unten gelten sinngemäß für `balkan_karte` mit den Bildern aus `l
   es nur, wo man laufen kann (1 Ebene, 4 Wald, 6 Furt), Gebirge, Flüsse, Seen und Meer bleiben Lücken. Flüsse
   haben etwa alle 50 km eine Furt, Bosporus und Dardanellen je einen Übergang, und alle Orte samt Toren liegen in
   einem zusammenhängenden Gebiet. Feinarbeit von Hand im Editor ist weiter möglich.
+- **Orte nicht im Wasser.** `orte_vom_wasser.py` rückt vorher jeden Ort, dessen ebene Fläche in Fluss, See oder
+  Meer reichte, an den nächsten trockenen Platz (höchstens 5 Einheiten, 170 Orte, im Mittel 2 Einheiten). Wo an
+  schmalen Küsten kein Platz ist, füllt `orte_einebnen.py` das Wasser im inneren Teil der Fläche auf.
 - **Orte auf ebenem Grund.** `orte_einebnen.py` ebnet das Gelände unter jedem Ort ein und schreibt die
   Höhenbilder neu (im Editor wie in Schritt 2 importieren). `orte_aufsetzen.py` stellt danach die Orte und die
   Betriebe der Dörfer in der Szenendatei gerade auf das Gelände; die Modelle waren an Calradias Hänge angepasst.
