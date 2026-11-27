@@ -228,6 +228,19 @@ def tor_im_ort(zeilen):
     return punkt
 
 
+def ruhesitz():
+    """Lage des Ruhesitzes (retirement_retreat) aus data/weltkarte/namen.toml. Er hat kein Objekt in der Szene."""
+    import tomllib
+    import rahmen
+    pfad = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data", "weltkarte", "namen.toml")
+    with open(pfad, "rb") as f:
+        r = tomllib.load(f).get("ruhesitz")
+    if not r:
+        return {}
+    x, y = rahmen.geo_zu_spiel(r["breite"], r["laenge"])
+    return {r["id"]: (x, y, None, None)}
+
+
 def schreibe_xslt(pfad, tore):
     t = ['<?xml version="1.0" encoding="utf-8"?>',
          "<!-- Erzeugt von tools/weltkarte/szene_vorbereiten.py. Positionen der Orte auf der Balkankarte. -->",
@@ -236,6 +249,8 @@ def schreibe_xslt(pfad, tore):
          '\t<xsl:template match="@*|node()">',
          '\t\t<xsl:copy><xsl:apply-templates select="@*|node()" /></xsl:copy>',
          "\t</xsl:template>"]
+    tore = dict(tore)
+    tore.update(ruhesitz())
     for ident, (x, y, tx, ty) in sorted(tore.items()):
         t.append(f"\t<xsl:template match=\"Settlement[@id='{ident}']/@posX\">"
                  f'<xsl:attribute name="posX">{x:.3f}</xsl:attribute></xsl:template>')

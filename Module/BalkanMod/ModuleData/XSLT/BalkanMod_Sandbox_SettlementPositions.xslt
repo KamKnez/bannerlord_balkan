@@ -735,6 +735,8 @@
 	<xsl:template match="Settlement[@id='hideout_steppe_8']/@posY"><xsl:attribute name="posY">646.041</xsl:attribute></xsl:template>
 	<xsl:template match="Settlement[@id='hideout_steppe_9']/@posX"><xsl:attribute name="posX">677.924</xsl:attribute></xsl:template>
 	<xsl:template match="Settlement[@id='hideout_steppe_9']/@posY"><xsl:attribute name="posY">811.252</xsl:attribute></xsl:template>
+	<xsl:template match="Settlement[@id='retirement_retreat']/@posX"><xsl:attribute name="posX">245.898</xsl:attribute></xsl:template>
+	<xsl:template match="Settlement[@id='retirement_retreat']/@posY"><xsl:attribute name="posY">433.001</xsl:attribute></xsl:template>
 	<xsl:template match="Settlement[@id='town_A1']/@posX"><xsl:attribute name="posX">228.873</xsl:attribute></xsl:template>
 	<xsl:template match="Settlement[@id='town_A1']/@posY"><xsl:attribute name="posY">488.697</xsl:attribute></xsl:template>
 	<xsl:template match="Settlement[@id='town_A1']/@gate_posX"><xsl:attribute name="gate_posX">231.986</xsl:attribute></xsl:template>
