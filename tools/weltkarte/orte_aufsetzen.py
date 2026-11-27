@@ -49,22 +49,26 @@ for i, zeile in enumerate(zeilen):
         ort = None
         if gruppe and ORT.match(zeile):
             for j in range(i + 1, i + 8):
-                t = re.match(r'(\t\t\t\t\t<transform position=")([-\d.]+), ([-\d.]+), ([-\d.]+)(" rotation_euler=")'
-                             r'([-\d.]+), ([-\d.]+), ([-\d.]+)(")(?: scale="([-\d.]+), ([-\d.]+), ([-\d.]+)")?(.*)',
-                             zeilen[j])
+                # Der Editor lässt rotation_euler weg, wenn alle Winkel null sind
+                t = re.match(r'(\t\t\t\t\t<transform position=")([-\d.]+), ([-\d.]+), ([-\d.]+)"'
+                             r'(?: rotation_euler="([-\d.]+), ([-\d.]+), ([-\d.]+)")?'
+                             r'(?: scale="([-\d.]+), ([-\d.]+), ([-\d.]+)")?(.*)', zeilen[j])
                 if t:
                     g = t.groups()
                     x, y = float(g[1]) + gruppe[0], float(g[2]) + gruppe[1]
                     z = max(R.WASSERHOEHE + 0.05, hoehe(x, y))
-                    mass = tuple(float(v) for v in g[9:12]) if g[9] else (1.0, 1.0, 1.0)
-                    ort = (x, y, z, float(g[7]), mass)
-                    zeilen[j] = f"{g[0]}{g[1]}, {g[2]}, {z - gruppe[2]:.3f}{g[4]}0.000, 0.000, {g[7]}\"" + zeilen[j][t.end(9):]
+                    mass = tuple(float(v) for v in g[7:10]) if g[7] else (1.0, 1.0, 1.0)
+                    gier = g[6] or "0.000"
+                    ort = (x, y, z, float(gier), mass)
+                    groesse = f' scale="{g[7]}, {g[8]}, {g[9]}"' if g[7] else ""
+                    zeilen[j] = (f'{g[0]}{g[1]}, {g[2]}, {z - gruppe[2]:.3f}" rotation_euler="0.000, 0.000, {gier}"'
+                                 f"{groesse}{g[10]}")
                     orte += 1
                     break
     elif ort and re.match(r'\t\t\t\t\t\t<game_entity name="map_icons_production', zeile):
         for j in range(i + 1, i + 8):
             t = re.match(r'(\t\t\t\t\t\t\t<transform position=")([-\d.]+), ([-\d.]+), ([-\d.]+)(")'
-                         r'( rotation_euler="[^"]*"| non_orthogonal_rotation_mat="[^"]*")(.*)', zeilen[j])
+                         r'( rotation_euler="[^"]*"| non_orthogonal_rotation_mat="[^"]*")?(.*)', zeilen[j])
             if t:
                 lx, ly = float(t.group(2)), float(t.group(3))
                 f = 1.0
@@ -75,9 +79,11 @@ for i, zeile in enumerate(zeilen):
                         break
                     f -= 0.15
                 gezogen += f < 1
-                m = re.search(r'rotation_euler="[-\d.]+, [-\d.]+, ([-\d.]+)"', t.group(6))
+                m = re.search(r'rotation_euler="[-\d.]+, [-\d.]+, ([-\d.]+)"', t.group(6) or "")
                 if m:
                     gier = float(m.group(1))
+                elif not t.group(6):
+                    gier = 0.0
                 else:
                     a = [float(v) for v in re.search(r'mat="([^"]*)"', t.group(6)).group(1).split(",")]
                     gier = math.atan2(a[1], a[0])
