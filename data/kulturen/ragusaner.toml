@@ -21,14 +21,14 @@ de = "Ragusaner"
 
 [text]
 en = """
-The Republic of Ragusa keeps its freedom with gold rather than steel. Its merchant fleet trades from the Levant \
-to Spain, and every year its envoys carry tribute to the Sultan. Behind the great walls of the city a small guard \
-of halberdiers and arquebusiers serves the Rector, who changes every month so that no man may rule alone.
+The Republic of Ragusa keeps its freedom with gold rather than steel. It has paid tribute to the Sultan since \
+1458, and its ships sail under its own flag. Behind the great walls of the city a small guard of halberdiers \
+and arquebusiers serves the Rector, who holds office for only one month so that no man may rule alone.
 """
 de = """
-Die Republik Ragusa wahrt ihre Freiheit eher mit Gold als mit Stahl. Ihre Handelsflotte fährt von der Levante \
-bis Spanien, und jedes Jahr bringen ihre Gesandten dem Sultan den Tribut. Hinter den großen Mauern der Stadt dient \
-eine kleine Wache aus Hellebardieren und Arkebusieren dem Rektor, der jeden Monat wechselt, damit keiner allein herrscht.
+Die Republik Ragusa wahrt ihre Freiheit eher mit Gold als mit Stahl. Seit 1458 zahlt sie dem Sultan Tribut, \
+und ihre Schiffe fahren unter eigener Flagge. Hinter den großen Mauern der Stadt dient eine kleine Wache aus \
+Hellebardieren und Arkebusieren dem Rektor, der nur einen Monat im Amt bleibt, damit keiner allein herrscht.
 """
 
 [miliz]

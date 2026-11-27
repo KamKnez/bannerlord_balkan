@@ -381,7 +381,7 @@
 	<xsl:template match="NPCCharacter[@id='lord_3_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Mehmed</xsl:attribute>
+			<xsl:attribute name="name">{=!}Halil</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -801,7 +801,7 @@
 	<xsl:template match="NPCCharacter[@id='lord_1_47']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Frano</xsl:attribute>
+			<xsl:attribute name="name">{=!}Vladislav</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>

@@ -9,7 +9,7 @@
 	<xsl:template match="Hero[@id='lord_4_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="text">{=balkan_hero_lord_4_1_text}Adam Batthyány is Ban of Croatia. He fought in the great war against the Ottomans and now has to secure what was won.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_hero_lord_4_1_text}Adam Batthyány is Ban of Croatia. He has been Ban since 1693, fought in the Great Turkish War and now has to secure what was won.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -329,7 +329,7 @@
 	<xsl:template match="Hero[@id='lord_3_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="text">{=balkan_hero_lord_3_1_text}Mehmed governs the Eyalet of Bosnia in the name of the Sultan. Whether he keeps the post depends on Istanbul.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_hero_lord_3_1_text}Halil Pasha, called Köse, governs the Eyalet of Bosnia in the name of the Sultan. Whether he keeps the post depends on Istanbul.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -685,7 +685,7 @@
 	<xsl:template match="Hero[@id='lord_1_47']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="text">{=balkan_hero_lord_1_47_text}Frano Gozze is Rector of the Republic. His term is short, but the great families of the city stand behind him.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_hero_lord_1_47_text}Vladislav Gozze is Rector of the Republic. His term is short, but the great families of the city stand behind him.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -975,7 +975,7 @@
 	<xsl:template match="Hero[@id='lord_1_7']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="text">{=balkan_hero_lord_1_7_text}Alvise Mocenigo is Provveditore Generale of Dalmatia and Albania. He governs the province on behalf of the Doge.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_hero_lord_1_7_text}Alvise Mocenigo is Provveditore Generale of Dalmatia and Albania. He has governed the province since 1696 on behalf of the Republic.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

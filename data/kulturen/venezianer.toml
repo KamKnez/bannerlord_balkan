@@ -21,14 +21,16 @@ de = "Venezianer"
 
 [text]
 en = """
-The Most Serene Republic of Venice rules the Adriatic from its lagoon. Along the Dalmatian coast its provveditori \
-govern walled ports filled with merchants, sailors and soldiers. Italian pikemen and musketeers hold the walls, \
-while Dalmatian schiavoni and Albanian cappelletti fight the war of raids in the hinterland.
+The Most Serene Republic of Venice rules the Adriatic from its lagoon. Along the Dalmatian coast its \
+provveditori govern walled ports filled with merchants, sailors and soldiers. Italian pikemen and musketeers hold \
+the walls, the Oltremarini infantry of Dalmatian schiavoni and Albanians serves overseas, and the light \
+cappelletti horsemen, Dalmatian Croats, ride in the hinterland.
 """
 de = """
 Die Durchlauchtigste Republik Venedig beherrscht die Adria von ihrer Lagune aus. An der dalmatinischen Küste \
 verwalten ihre Provveditori ummauerte Häfen voller Kaufleute, Seeleute und Soldaten. Italienische Pikeniere und \
-Musketiere halten die Mauern, dalmatinische Schiavoni und albanische Cappelletti führen den Kleinkrieg im Hinterland.
+Musketiere halten die Mauern, das Fußvolk der Oltremarini aus dalmatinischen Schiavoni und Albanern dient in \
+Übersee, und die leichten Cappelletti-Reiter, dalmatinische Kroaten, reiten im Hinterland.
 """
 
 [miliz]
