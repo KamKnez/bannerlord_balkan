@@ -3,7 +3,8 @@
 Aufruf: python3 navmesh_bauen.py <Arbeitsordner> <siedlungen.csv> <Vorlage navmesh.bin> <Zielordner>
 
 Die Karte wird in ein Raster aus quadratischen Flächen zerlegt. Jede Fläche bekommt die Geländeart, die das Spiel
-kennt: 1 Ebene, 4 Wald, 6 Furt, 7 Gebirge, 8 See, 10 Meer, 11 Fluss. Begehbar sind nur 1, 4 und 6. Flüsse bekommen
+kennt: 1 Ebene, 4 Wald, 6 Furt. Gebirge, Seen, Meer und Flüsse bekommen keine Fläche und sind damit gesperrt:
+im Editor ist jedes Gitterfeld begehbar und jede Lücke gesperrt. Flüsse bekommen
 in regelmäßigen Abständen Furten, Bosporus und Dardanellen je einen Übergang, und am Ende wird geprüft, dass
 alle Orte in einem zusammenhängenden begehbaren Gebiet liegen (sonst wird der kürzeste Durchgang geöffnet).
 
@@ -73,11 +74,14 @@ with open(csv_pfad, encoding="utf-8-sig", newline="") as f:
     for z in csv.DictReader(f, delimiter=";"):
         orte.append((z["id"], float(z["x"]), float(z["y"])))
 for ident, x, y in orte:
+    r, s = zelle_von(x, y)
+    if art[r, s] not in (EBENE, WALD):
+        art[r, s] = FURT if art[r, s] in (FLUSS, SEE) else EBENE
     for dy in (-1.5, 0.0, 1.5):
         for dx in (-1.5, 0.0, 1.5):
             r, s = zelle_von(x + dx, y + dy)
-            if art[r, s] in (FLUSS, SEE, GEBIRGE) or (art[r, s] == MEER and dx == 0 and dy == 0):
-                art[r, s] = FURT if art[r, s] in (FLUSS, SEE) else EBENE
+            if art[r, s] == GEBIRGE:
+                art[r, s] = EBENE
 ort_zellen = [zelle_von(x, y) for _, x, y in orte]
 
 
@@ -110,21 +114,44 @@ for (b0, l0), (b1, l1) in MEERENGEN:
             art[r, s] = FURT
     print("Meerenge:", a, "->", b, len(linie(a, b)), "Zellen")
 
-# Furten in regelmäßigen Abständen: Flusszellen, die auf zwei gegenüberliegenden Seiten Land haben
+# Furten in regelmäßigen Abständen: gerade Querung von Ufer zu Ufer, höchstens FURT_LAENGE Zellen lang
+FURT_LAENGE = 5
 land = np.isin(art, begehbar_arten)
-lp = np.pad(land, 1)
-quer = (lp[:-2, 1:-1] & lp[2:, 1:-1]) | (lp[1:-1, :-2] & lp[1:-1, 2:])
-kand = np.argwhere((art == FLUSS) & quer)
+nass = np.isin(art, (FLUSS, SEE))
+
+
+def querung(r, s):
+    """Kürzeste gerade Querung durch (r, s) oder None."""
+    beste = None
+    for dr, ds in ((1, 0), (0, 1)):
+        lauf = [(r, s)]
+        gut = True
+        for vz in (1, -1):
+            a, b = r + vz * dr, s + vz * ds
+            while 0 <= a < N and 0 <= b < N and nass[a, b] and len(lauf) <= FURT_LAENGE:
+                lauf.append((a, b))
+                a, b = a + vz * dr, b + vz * ds
+            if not (0 <= a < N and 0 <= b < N and land[a, b]):
+                gut = False
+        if gut and len(lauf) <= FURT_LAENGE and (beste is None or len(lauf) < len(beste)):
+            beste = lauf
+    return beste
+
+
 ort_feld = np.ones((N, N), bool)
 for r, s in ort_zellen:
     ort_feld[r, s] = False
 zu_ort = ndi.distance_transform_edt(ort_feld)
+kand = np.argwhere(art == FLUSS)
 kand = kand[np.argsort(zu_ort[kand[:, 0], kand[:, 1]], kind="stable")]
 furten = []
 for r, s in kand:
     if all((r - a) ** 2 + (s - b) ** 2 >= (FURT_ABSTAND / ZELLE) ** 2 for a, b in furten):
-        furten.append((r, s))
-        art[r, s] = FURT
+        lauf = querung(int(r), int(s))
+        if lauf:
+            furten.append((r, s))
+            for p in lauf:
+                art[p] = FURT
 print("Furten in Abständen:", len(furten))
 
 # Zusammenhang: alle Orte müssen in einem begehbaren Gebiet liegen
@@ -176,14 +203,12 @@ while True:
             geoeffnet += 1
 print("Zusätzlich geöffnete Zellen für den Zusammenhang:", geoeffnet)
 
-# Begehbare Gebiete ohne Ort (Inseln) fallen weg; behalten wird das Land um das Hauptgebiet und ein Ring Meer
+# Es bleiben nur begehbare Flächen des Hauptgebiets: Im Editor ist dann jedes Gitterfeld begehbar und jede Lücke
+# gesperrt. Begehbare Gebiete ohne Ort (Inseln, abgeschlossene Täler) fallen weg.
 marken, _ = ndi.label(np.isin(art, begehbar_arten))
 haupt = marken[ort_zellen[0]]
-art[(marken > 0) & (marken != haupt)] = KEINE
-landmarken, _ = ndi.label((art != MEER) & (art != KEINE), structure=np.ones((3, 3)))
-behalten = np.isin(landmarken, np.unique(landmarken[marken == haupt]))
-ring = ndi.binary_dilation(behalten, structure=np.ones((3, 3))) & (art == MEER)
-art[~(behalten | ring)] = KEINE
+art_voll = art.copy()
+art[marken != haupt] = KEINE
 
 # Ecken, Kanten, Flächen
 ecke_nr = {}
@@ -197,7 +222,9 @@ def ecke(r, s):
     if (r, s) not in ecke_nr:
         x, y = s * ZELLE, r * ZELLE
         sp, ze = R.spiel_zu_pixel(x, y)
-        h = spiel[min(R.PIXEL - 1, max(0, int(ze))), min(R.PIXEL - 1, max(0, int(sp)))]
+        ze, sp, w = int(ze), int(sp), int(R.PIXEL / N * 0.6)
+        # höchster Geländepunkt im Umkreis, damit das Gitter im Editor nicht im Hügel verschwindet
+        h = max(R.WASSERHOEHE, spiel[max(0, ze - w):ze + w + 1, max(0, sp - w):sp + w + 1].max()) + 0.05
         ecke_nr[(r, s)] = len(ecken)
         ecken.append((x, y, float(h)))
     return ecke_nr[(r, s)]
@@ -254,7 +281,8 @@ FARBEN = {KEINE: (20, 40, 90), EBENE: (170, 200, 120), WALD: (60, 130, 70), FURT
           GEBIRGE: (120, 110, 105), SEE: (90, 160, 230), MEER: (40, 80, 160), FLUSS: (90, 160, 230)}
 bild = np.zeros((N, N, 3), np.uint8)
 for nr, farbe in FARBEN.items():
-    bild[art == nr] = farbe
+    bild[art_voll == nr] = farbe
+bild[(art == KEINE) & np.isin(art_voll, begehbar_arten)] = (70, 70, 70)      # weggefallene Gebiete ohne Ort
 bild = np.kron(bild[::-1], np.ones((4, 4, 1), np.uint8))
 for r, s in ort_zellen:
     zr, zs = (N - 1 - r) * 4 + 1, s * 4 + 1
