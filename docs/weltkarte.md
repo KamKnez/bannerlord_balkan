@@ -157,7 +157,8 @@ Die Schritte unten gelten sinngemäß für `balkan_karte` mit den Bildern aus `l
   *ComputeAndSaveSettlementDistanceCache* berechnet, rund 20 Minuten; nach jeder Änderung an Navmesh oder Orten neu)
   und `XSLT/BalkanMod_Sandbox_SettlementPositions.xslt` mit den Positionen fürs Spiel. Ohne die Szene stehen die
   Orte mit dieser XSLT falsch auf Calradia; dann den Eintrag in der `SubModule.xml` auskommentieren.
-- Der Ruhestands-Ort `retirement_retreat` hat (wie in Calradia) kein Objekt in der Szene und steht noch auf seiner
-  alten Koordinate. Der freie Spielstart setzt die Spielfigur auf eine Calradia-Koordinate; die geführten Einstiege
+- Der Ruhestands-Ort `retirement_retreat` hat (wie in Calradia) kein Objekt in der Szene. Er ist das Kloster Ostrog
+  (`[ruhesitz]` in `data/weltkarte/namen.toml`); die Lage steht in der Positions-XSLT, Name und Text kommen aus
+  `gen_content.py`. Der freie Spielstart setzt die Spielfigur auf eine Calradia-Koordinate; die geführten Einstiege
   der Mod setzen sie an ein Ortstor.
 - Wälder, Stauseen und Flussläufe sind die von heute, nicht die von 1700.

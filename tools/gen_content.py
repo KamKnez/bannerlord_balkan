@@ -954,12 +954,12 @@ def build_realms(realms, strings):
                 f'\t\t<xsl:attribute name="village_type">VillageType.{vtype}</xsl:attribute>',
                 "\t</xsl:template>",
             ]
-    t["Settlements"] += build_other_places(realms)
+    t["Settlements"] += build_other_places(realms, strings)
     t["Kingdoms"] += build_wars(realms)
     return {OUT_REALMS[k]: xslt_doc(v) for k, v in t.items()}
 
 
-def build_other_places(realms):
+def build_other_places(realms, strings):
     """Namen für Orte außerhalb unserer Reiche: Sitze aus data/weltkarte/orte.csv, Dörfer aus namen.toml.
 
     Die Beschreibung aus Calradia passt nicht mehr und entfällt.
@@ -971,11 +971,19 @@ def build_other_places(realms):
     for row in csv.DictReader((DATA / "weltkarte" / "orte.csv").open(encoding="utf-8"), delimiter=";"):
         if row["name"]:
             names[row["id"]] = row["name"]
-    names.update(tomllib.loads((DATA / "weltkarte" / "namen.toml").read_text(encoding="utf-8")).get("doerfer", {}))
+    extra = tomllib.loads((DATA / "weltkarte" / "namen.toml").read_text(encoding="utf-8"))
+    names.update(extra.get("doerfer", {}))
+    retreat = extra.get("ruhesitz")
     out = ["\t<!-- Orte außerhalb der Mod-Reiche (data/weltkarte/orte.csv und namen.toml) -->"]
     for sid in sorted(names):
         if sid not in ours:
             out += patch_template("Settlement", sid, {"name": "{=!}" + names[sid]}, drop=("text",))
+    if retreat:
+        out.append("\t<!-- Ruhesitz (ruhesitz in data/weltkarte/namen.toml) -->")
+        out += patch_template("Settlement", retreat["id"], {
+            "name": strings.add("balkan_retreat_name", retreat["name"]["en"], retreat["name"]["de"]),
+            "text": strings.add("balkan_retreat_text", retreat["text"]["en"], retreat["text"]["de"]),
+        })
     return out
 
 

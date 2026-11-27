@@ -51,6 +51,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Wien</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_V7_text}Wien, Vienna, is the residence of Emperor Leopold. In 1683 it withstood the great Ottoman siege, and since then palaces and churches have been rising where the burnt suburbs stood. From here the war councils send regiments and orders down the Danube.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -92,6 +93,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Požega</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_V3_text}Požega lies in a fertile valley of Slavonia. For a century and a half it was the seat of an Ottoman sanjak, until the imperial troops and the local Franciscans drove out the garrison in 1688. The land around it is thinly peopled and waits for new settlers.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -115,6 +117,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Buda</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_V6_text}Buda, the old royal seat of Hungary, was stormed by the imperial army in 1686 after 145 years under the Sultan. Much of the castle hill still lies in ruins, and German settlers are moving into the empty streets.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -122,6 +125,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Pressburg</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_V7_text}Pressburg has been the capital of royal Hungary ever since Buda fell to the Ottomans. The kings of Hungary are crowned in its cathedral, and the Diet meets below the castle on the Danube.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -129,6 +133,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Klausenburg</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_V8_text}Klausenburg is one of the chief towns of Transylvania, home to Hungarians and Saxons and to several faiths side by side. Since 1691 the principality has stood under the Emperor, and an imperial garrison keeps watch in the town.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -466,6 +471,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Sofia</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_A3_text}Sofia is the seat of the beylerbey of Rumelia and lies on the great military road from Belgrade to Constantinople. Caravans, couriers and marching armies all pass beneath its minarets.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -473,6 +479,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Saloniki</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_A4_text}Saloniki is the great port of Macedonia. Its Sephardic Jews weave the blue cloth for the janissaries, and merchants from every shore of the sea trade on its quays.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -480,6 +487,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Edirne</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_A5_text}Edirne was the capital of the Ottomans before Constantinople, and the sultans still prefer to hold court and hunt here. Sinan's Selimiye mosque stands above the town, and the armies for the wars in the north gather on its plain.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -519,6 +527,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Novi Pazar</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_A2_text}Novi Pazar is the market town where the caravan roads from Dubrovnik, Sarajevo and Skopje meet. It was burnt in the last war and is being rebuilt around its inns and its bazaar.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -526,6 +535,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Niš</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_A3_text}Niš guards the military road where the routes to Sofia and to Salonica part. The imperial army took the town in 1689, and the Ottomans won it back a year later.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -541,6 +551,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Skopje</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_A5_text}Skopje on the Vardar was one of the richest towns of Rumelia until General Piccolomini had it set on fire in 1689. Much of it is still ash and rubble, and only the stone bridge and the fortress stand as before.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -548,6 +559,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Plowdiw</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_A6_text}Plowdiw, which the Ottomans call Filibe, lies on its hills above the Maritsa on the road to Constantinople. Rice from the river plain and the trade of the road have made its merchants wealthy.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -555,6 +567,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Tuzla</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_A7_text}Tuzla takes its name from the Turkish word for salt. Brine has been boiled at its salt springs since ancient times, and the salt is carried all over Bosnia.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -562,6 +575,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Vidin</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_A8_text}Vidin is a fortress on the Danube, built around the old castle of Baba Vida. The imperial army took it in 1689 and lost it again the next year, and since then the Ottomans have been strengthening its walls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -569,6 +583,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Temeschwar</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_A9_text}Temeschwar is the seat of an Ottoman eyalet and lies among the marshes of the Bega. The Peace of Karlowitz left the Banat to the Sultan, and the fortress is now his foremost stronghold north of the Danube.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -961,6 +976,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Nikšić</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_ES1_text}Nikšić, the old Onogošt, lies on a wide plain among the bare mountains of Herzegovina. Its fortress guards the caravan road that climbs up from Dubrovnik into the interior.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -969,6 +985,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Cetinje</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_ES2_text}Cetinje is hardly more than a monastery on a stony plain below Mount Lovćen. Here the bishop of the Montenegrin tribes has his seat. The old monastery was blown up in the war of 1692, and a new one is being built.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -986,6 +1003,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Bar</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_ES4_text}Bar stands on a rock below Mount Rumija, a little inland from its harbour. Olive groves that are many centuries old surround the walled town.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -994,6 +1012,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Ulcinj</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_ES5_text}Ulcinj is the corsair nest of the southern Adriatic. Its captains prey on merchant ships as far as Apulia, and its slave market is feared along the whole coast.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1002,6 +1021,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Vlorë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_ES6_text}Vlorë lies on a wide bay opposite the heel of Italy. It lives on its salt pans, on the pitch from the nearby hills and on its harbour, which the Venetians held for a short time in the last war.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1010,6 +1030,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Berat</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_ES7_text}Berat rises in rows of white houses from the river Osum up to its castle. So many windows look down the slope that it is called the town of a thousand windows.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1018,6 +1039,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Arta</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_ES8_text}Arta lies in a bend of the Arachthos, not far from the Ambracian Gulf. The town is known for its old stone bridge, for the churches of the despots of Epirus and for its orange gardens.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1026,6 +1048,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Ohrid</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_ES1_text}Ohrid lies on its deep, clear lake below an old fortress. It is the seat of an ancient archbishopric, and people say the town has a church for every day of the year.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1034,6 +1057,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Skadar</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_ES2_text}Skadar lies where the river Bojana leaves the great lake, below the fortress of Rozafa. Boats carry its goods down to the sea, and its bazaar is the largest in northern Albania.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1042,6 +1066,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Gjirokastër</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_ES3_text}Gjirokastër climbs a steep slope above the valley of the Drino. Its tall stone houses look like small fortresses, and a great castle crowns the ridge above them.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1059,6 +1084,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Durrës</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_ES5_text}Durrës was once the great harbour where the Roman road to the East began. Today it is a small town inside walls that are far too wide for it, and its harbour is slowly silting up.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1067,6 +1093,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Janina</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_ES6_text}Janina lies on a lake in the mountains of Epirus, with its castle on a rock above the water. Its merchants trade as far as Venice and Vienna, and its silversmiths and Greek schools are famous.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1075,6 +1102,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Prizren</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_ES7_text}Prizren lies on the Bistrica at the foot of the Šar mountains. Its gunsmiths, saddlers and silversmiths are known throughout the Balkans, and an old fortress looks down on its bridges and mosques.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1399,6 +1427,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Udine</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_EW2_text}Udine is the chief town of Friuli. The Venetian lieutenant resides in the castle on the hill, and the square below it looks like a piece of Venice on the mainland.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1425,6 +1454,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Pula</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_EW5_text}Pula lies on a fine harbour at the southern tip of Istria. Fever and plague have left only a few hundred people living among the Roman arena, the temples and the empty houses.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1433,6 +1463,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Patras</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_EW6_text}Patras looks across its gulf towards the mountains of the mainland. Morosini's army took it in 1687, and it is now the seat of a Venetian province of the Morea. Currants are its most important export.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1441,6 +1472,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Nauplia</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_EW7_text}Nauplia, which the Venetians call Napoli di Romania, is the capital of the Kingdom of the Morea. It was won in 1686, and the Republic is spending great sums on its walls and its harbour fort.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1449,6 +1481,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Modon</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_EW8_text}Modon was for centuries one of the two eyes of the Republic, where every galley bound for the Levant put in. It was lost in 1500 and won back in 1686, and its sea walls are being repaired.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1457,6 +1490,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Venezia</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_EW1_text}Venezia, the Dominante, rules its empire from the islands of the lagoon. The Doge and the Great Council govern from the palace on St Mark's Square, and the Arsenal builds the galleys that hold the sea.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1474,6 +1508,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Preveza</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_town_EW3_text}Preveza guards the narrow mouth of the Ambracian Gulf. Morosini took it for the Republic in 1684, and the Peace of Karlowitz demands that its walls be razed.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -3115,6 +3150,15 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Nyíregyháza</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Ruhesitz (ruhesitz in data/weltkarte/namen.toml) -->
+	<xsl:template match="Settlement[@id='retirement_retreat']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_retreat_name}Ostrog Monastery</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_retreat_text}The monastery of Ostrog is built into a sheer rock face high above the valley of the Zeta. Bishop Vasilije founded it as a refuge from the wars of the plain, and pilgrims of every faith climb up to it.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

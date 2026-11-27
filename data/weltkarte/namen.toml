@@ -2,6 +2,16 @@
 # Die Sitze selbst heißen wie in orte.csv. Die Dörfer stehen automatisch rund um ihren Sitz, die Namen sind echte
 # Orte aus der Umgebung, aus dem Gedächtnis gewählt und nicht einzeln nachgeschlagen.
 
+# Der Ruhesitz des Spiels ("The Retreat", retirement_retreat): ein Ort ohne Objekt auf der Karte, an den sich die
+# Spielfigur am Ende zurückzieht. Hier ist es das Felsenkloster Ostrog über dem Tal der Zeta, gegründet um 1665.
+# szene_vorbereiten.py schreibt die Lage in die Positions-XSLT, gen_content.py Name und Text.
+[ruhesitz]
+id = "retirement_retreat"
+breite = 42.675
+laenge = 19.029
+name = { en = "Ostrog Monastery", de = "Kloster Ostrog" }
+text = { en = "The monastery of Ostrog is built into a sheer rock face high above the valley of the Zeta. Bishop Vasilije founded it as a refuge from the wars of the plain, and pilgrims of every faith climb up to it.", de = "Das Kloster Ostrog ist hoch über dem Tal der Zeta in eine senkrechte Felswand gebaut. Bischof Vasilije gründete es als Zuflucht vor den Kriegen der Ebene, und Pilger jeden Glaubens steigen zu ihm hinauf." }
+
 [doerfer]
 # Pescara
 castle_village_B1_1 = "Chieti"
