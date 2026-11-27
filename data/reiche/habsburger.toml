@@ -306,31 +306,31 @@ town_V2 = "Osijek"                          # Ocs Hall
 town_V3 = "Varaždin"                        # Pravend
 town_V5 = "Ljubljana"                       # Galend
 town_V6 = "Karlovac"                        # Jaculan
-town_V7 = "Požega"                          # Charas
+town_V7 = "Wien"                            # Charas
 town_V8 = "Graz"                            # Ostican
 town_V9 = "Pécs"                            # Rovalt
 castle_V1 = "Brod"                          # Usanc Castle
 castle_V2 = "Senj"                          # Hongard Castle
-castle_V3 = "Ogulin"                        # Drapand Castle
+castle_V3 = "Požega"                        # Drapand Castle
 castle_V4 = "Sisak"                         # Ormanfard Castle
 castle_V5 = "Koprivnica"                    # Tirby Castle
-castle_V6 = "Virovitica"                    # Caleus Castle
-castle_V7 = "Udbina"                        # Talivel Castle
-castle_V8 = "Kostajnica"                    # Verecsand Castle
+castle_V6 = "Buda"                          # Caleus Castle
+castle_V7 = "Pressburg"                     # Talivel Castle
+castle_V8 = "Klausenburg"                   # Verecsand Castle
 castle_village_V1_1 = "Županja"             # Usanc
 castle_village_V2_1 = "Krivi Put"           # Hongard
 castle_village_V2_2 = "Jablanac"            # Ferton
-castle_village_V3_1 = "Josipdol"            # Drapand
-castle_village_V3_2 = "Modruš"              # Valanby
+castle_village_V3_1 = "Pleternica"          # Drapand
+castle_village_V3_2 = "Kutjevo"             # Valanby
 castle_village_V4_1 = "Petrinja"            # Ormanfard
 castle_village_V5_1 = "Đurđevac"            # Tirby
 castle_village_V5_2 = "Drnje"               # Sirindac
-castle_village_V6_1 = "Slatina"             # Caleus
-castle_village_V6_2 = "Pitomača"            # Deriat
-castle_village_V7_1 = "Korenica"            # Talivel
-castle_village_V7_2 = "Bunić"               # Rodetan
-castle_village_V8_1 = "Dubica"              # Verecsand
-castle_village_V8_2 = "Majur"               # Marin
+castle_village_V6_1 = "Óbuda"               # Caleus
+castle_village_V6_2 = "Vác"                 # Deriat
+castle_village_V7_1 = "Theben"              # Talivel
+castle_village_V7_2 = "Sankt Georgen"       # Rodetan
+castle_village_V8_1 = "Torda"               # Verecsand
+castle_village_V8_2 = "Gilău"               # Marin
 village_V1_1 = "Sesvete"                    # Calioc
 village_V1_2 = "Samobor"                    # Etirfurd
 village_V2_1 = "Valpovo"                    # Mareiven
@@ -346,8 +346,8 @@ village_V6_1 = "Duga Resa"                  # Arromanc
 village_V6_2 = "Ozalj"                      # Mot
 village_V6_3 = "Draganić"                   # Alorstan
 village_V6_4 = "Netretić"                   # Chornad
-village_V7_1 = "Pleternica"                 # Savinth
-village_V7_2 = "Kutjevo"                    # Vesin
+village_V7_1 = "Schwechat"                  # Savinth
+village_V7_2 = "Klosterneuburg"             # Vesin
 village_V8_1 = "Leibnitz"                   # Horsger
 village_V8_2 = "Voitsberg"                  # Cananc
 village_V8_3 = "Gleisdorf"                  # Remental
@@ -366,10 +366,6 @@ village_V8_3 = "germans"        # Gleisdorf
 village_V9_1 = "hungarians"     # Mohács
 village_V9_2 = "hungarians"     # Siklós
 village_V2_1 = "hungarians"     # Valpovo
-castle_village_V7_1 = "serbs"   # Korenica (Lika, Grenzer)
-castle_village_V7_2 = "serbs"   # Bunić
-castle_village_V8_1 = "serbs"   # Dubica (Banija, Grenzer)
-castle_village_V8_2 = "serbs"   # Majur
 
 
 # Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
@@ -380,17 +376,12 @@ town_V2 = { en = "Osijek on the Drava was taken from the Ottomans in 1687. The g
 town_V3 = { en = "Varaždin with its old moated castle is the seat of the Varaždin Generalate, which commands the Slavonian frontier against the Turks. Its burghers trade in wine, cloth and grain.", de = "Varaždin mit seiner alten Wasserburg ist Sitz des Varaždiner Generalats, das die slawonische Grenze gegen die Türken befehligt. Seine Bürger handeln mit Wein, Tuch und Getreide." }
 town_V5 = { en = "Ljubljana, called Laibach by the Germans, is the capital of the Duchy of Carniola. Baroque churches rise under the castle hill on the Ljubljanica.", de = "Ljubljana, deutsch Laibach, ist die Hauptstadt des Herzogtums Krain. Unter dem Burgberg an der Ljubljanica wachsen barocke Kirchen." }
 town_V6 = { en = "Karlovac is a six-pointed star fortress, built in 1579 where four rivers meet. It is the seat of the Karlovac Generalate and the heart of the Military Frontier.", de = "Karlovac ist eine sechszackige Sternfestung, 1579 dort erbaut, wo vier Flüsse zusammenfließen. Hier sitzt das Karlstädter Generalat, das Herz der Militärgrenze." }
-town_V7 = { en = "Požega lies in the Golden Valley of Slavonia. After a century and a half of Ottoman rule it returned to the Crown in 1688, and Franciscans and settlers are bringing the land back to life.", de = "Požega liegt im Goldenen Tal Slawoniens. Nach anderthalb Jahrhunderten osmanischer Herrschaft kam es 1688 an die Krone zurück, und Franziskaner und Siedler beleben das Land neu." }
 town_V8 = { en = "Graz is the capital of Inner Austria. From its great armoury, muskets, pikes and armour go south to the garrisons of the frontier.", de = "Graz ist die Hauptstadt Innerösterreichs. Aus seinem großen Zeughaus gehen Musketen, Piken und Harnische nach Süden zu den Besatzungen der Grenze." }
 town_V9 = { en = "Pécs was retaken in 1686. Its domed mosques are being turned into churches, and the old Hungarian bishopric is slowly rising again.", de = "Pécs wurde 1686 zurückerobert. Seine Kuppelmoscheen werden zu Kirchen umgebaut, und das alte ungarische Bistum erholt sich langsam." }
 castle_V1 = { en = "Brod watches the ford over the Sava. On the far bank lies Ottoman Bosnia, and the frontier guards never leave the river unwatched.", de = "Brod bewacht die Furt über die Save. Am anderen Ufer liegt das osmanische Bosnien, und die Grenzwachen lassen den Fluss nie aus den Augen." }
 castle_V2 = { en = "Senj on the Adriatic was home to the Uskoks, raiders who fought the Ottomans and plundered Venetian ships alike. The Nehaj fortress still towers over the windswept harbour.", de = "Senj an der Adria war die Heimat der Uskoken, die gegen die Osmanen kämpften und ebenso venezianische Schiffe plünderten. Die Festung Nehaj überragt noch immer den windigen Hafen." }
-castle_V3 = { en = "Ogulin's castle, built by the Frankopans, stands at the edge of the gorge where the Dobra river vanishes underground. It is the seat of a frontier captaincy.", de = "Die Burg von Ogulin, von den Frankopanen erbaut, steht am Rand der Schlucht, in der die Dobra unter der Erde verschwindet. Hier sitzt eine Hauptmannschaft der Grenze." }
 castle_V4 = { en = "The triangular fortress of Sisak guards the meeting of the Kupa and the Sava. In 1593 the Ottoman army was crushed beneath its walls.", de = "Die dreieckige Festung Sisak bewacht den Zusammenfluss von Kupa und Save. 1593 wurde unter ihren Mauern das osmanische Heer vernichtend geschlagen." }
 castle_V5 = { en = "Koprivnica is a Renaissance fortress of earthworks and bastions in the Podravina, part of the frontier line along the Drava.", de = "Koprivnica ist eine Renaissance-Festung aus Erdwällen und Bastionen in der Podravina, Teil der Grenzlinie entlang der Drau." }
-castle_V6 = { en = "Virovitica was taken back from the Ottomans in 1684. From its walls one looks out over the flat, half-empty plain of the Drava.", de = "Virovitica wurde 1684 von den Osmanen zurückerobert. Von seinen Mauern blickt man über die flache, halb leere Ebene der Drau." }
-castle_V7 = { en = "Udbina in Krbava was an Ottoman stronghold until 1689. Since then Lika is being resettled by frontier families from all sides.", de = "Udbina in der Krbava war bis 1689 eine osmanische Festung. Seitdem wird die Lika von Grenzerfamilien aus allen Richtungen neu besiedelt." }
-castle_V8 = { en = "Kostajnica stands on the Una, which the Peace of Karlowitz made the border. Across the river the Ottoman watchtowers are in plain sight.", de = "Kostajnica steht an der Una, die der Frieden von Karlowitz zur Grenze gemacht hat. Jenseits des Flusses sieht man die osmanischen Wachtürme." }
 
 [[dorftext]]
 en = "{DORF} is a village near {SITZ}. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket."
@@ -405,8 +396,8 @@ de = "{DORF} gehört zu den Ländereien von {SITZ}. Die Bauern bauen Weizen und 
 [dorftyp]
 # Erzeugnis der Dörfer statt Datteln, Oliven im Binnenland und Wüstenpferden (VillageType des Spiels)
 castle_village_V1_1 = "wheat_farm"          # Županja
-castle_village_V7_1 = "sheep_farm"          # Korenica
+castle_village_V7_1 = "sheep_farm"          # Theben
 village_V6_1 = "vineyard"                   # Duga Resa
 village_V6_2 = "wheat_farm"                 # Ozalj
 village_V6_3 = "cattle_farm"                # Draganić
-village_V7_2 = "vineyard"                   # Kutjevo
+village_V7_2 = "vineyard"                   # Klosterneuburg

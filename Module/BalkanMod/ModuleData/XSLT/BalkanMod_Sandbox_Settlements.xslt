@@ -50,8 +50,7 @@
 	<xsl:template match="Settlement[@id='town_V7']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Požega</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_V7_text}Požega lies in the Golden Valley of Slavonia. After a century and a half of Ottoman rule it returned to the Crown in 1688, and Franciscans and settlers are bringing the land back to life.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Wien</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -92,8 +91,7 @@
 	<xsl:template match="Settlement[@id='castle_V3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Ogulin</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_V3_text}Ogulin's castle, built by the Frankopans, stands at the edge of the gorge where the Dobra river vanishes underground. It is the seat of a frontier captaincy.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Požega</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -116,24 +114,21 @@
 	<xsl:template match="Settlement[@id='castle_V6']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Virovitica</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_V6_text}Virovitica was taken back from the Ottomans in 1684. From its walls one looks out over the flat, half-empty plain of the Drava.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Buda</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_V7']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Udbina</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_V7_text}Udbina in Krbava was an Ottoman stronghold until 1689. Since then Lika is being resettled by frontier families from all sides.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Pressburg</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_V8']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Kostajnica</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_V8_text}Kostajnica stands on the Una, which the Peace of Karlowitz made the border. Across the river the Ottoman watchtowers are in plain sight.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Klausenburg</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -164,16 +159,16 @@
 	<xsl:template match="Settlement[@id='castle_village_V3_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Josipdol</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V3_1_text}Josipdol is a village near Ogulin. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Pleternica</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V3_1_text}Pleternica is a village near Požega. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_V3_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Modruš</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V3_2_text}Modruš lies in the countryside of Ogulin. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Kutjevo</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V3_2_text}Kutjevo lies in the countryside of Požega. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -204,52 +199,48 @@
 	<xsl:template match="Settlement[@id='castle_village_V6_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Slatina</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V6_1_text}Slatina belongs to the lands of Virovitica. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Óbuda</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V6_1_text}Óbuda belongs to the lands of Buda. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_V6_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Pitomača</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V6_2_text}Pitomača is a village near Virovitica. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Vác</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V6_2_text}Vác is a village near Buda. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_V7_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Korenica</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V7_1_text}Korenica lies in the countryside of Udbina. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
+			<xsl:attribute name="name">{=!}Theben</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V7_1_text}Theben lies in the countryside of Pressburg. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_V7_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Bunić</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V7_2_text}Bunić belongs to the lands of Udbina. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
+			<xsl:attribute name="name">{=!}Sankt Georgen</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V7_2_text}Sankt Georgen belongs to the lands of Pressburg. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_V8_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Dubica</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V8_1_text}Dubica is a village near Kostajnica. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
+			<xsl:attribute name="name">{=!}Torda</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V8_1_text}Torda is a village near Klausenburg. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_V8_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Majur</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_V8_2_text}Majur lies in the countryside of Kostajnica. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
+			<xsl:attribute name="name">{=!}Gilău</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_V8_2_text}Gilău lies in the countryside of Klausenburg. After the long war the fields are being cleared again, and new settlers arrive every spring.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -377,16 +368,16 @@
 	<xsl:template match="Settlement[@id='village_V7_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Pleternica</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_V7_1_text}Pleternica belongs to the lands of Požega. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Schwechat</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_V7_1_text}Schwechat belongs to the lands of Wien. The villagers grow wheat and maize, keep pigs in the oak woods and pay their dues to the lord and the Church.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='village_V7_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Kutjevo</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_V7_2_text}Kutjevo is a village near Požega. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Klosterneuburg</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_V7_2_text}Klosterneuburg is a village near Wien. Its families owe service on the frontier: the men keep watch in turn, and every house keeps a musket.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -474,24 +465,21 @@
 	<xsl:template match="Settlement[@id='town_A3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Foča</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_A3_text}Foča on the Drina lies on the caravan road from Dubrovnik to Istanbul. Its painted Aladža mosque is famed far beyond Bosnia.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Sofia</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='town_A4']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Tuzla</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_A4_text}Tuzla takes its name from the salt springs that have made it rich. Salt from its pans is carried across the whole of Bosnia.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Saloniki</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='town_A5']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Novi Pazar</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_A5_text}Novi Pazar, the 'new market' founded by Isa-beg, is a trading town of the Sanjak on the high road towards Istanbul.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Edirne</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -530,16 +518,14 @@
 	<xsl:template match="Settlement[@id='castle_A2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Stolac</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_A2_text}Above Stolac rises the fortress of Vidoški, guarding the roads of eastern Herzegovina.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Novi Pazar</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_A3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Ključ</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_A3_text}Ključ on the Sana is where the last Bosnian king surrendered in 1463. Today it is a captaincy on the road to the frontier.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Niš</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -554,40 +540,35 @@
 	<xsl:template match="Settlement[@id='castle_A5']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Počitelj</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_A5_text}Počitelj is a walled town that climbs the rock above the Neretva, a guard post on the road from Mostar to the sea.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Skopje</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_A6']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Srebrenik</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_A6_text}Srebrenik sits on a sheer rock near Tuzla, reachable only by a narrow bridge.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Plowdiw</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_A7']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Doboj</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_A7_text}Doboj guards the Bosna valley, the main road from the Sava into the heart of the province.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Tuzla</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_A8']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Zvornik</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_A8_text}Zvornik's walls run down the hillside to the Drina. Whoever holds it controls the crossing between Bosnia and Serbia.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Vidin</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_A9']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Livno</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_A9_text}Livno looks out over the wide Livno field towards Venetian Dalmatia. Raiders from both sides cross the border here.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Temeschwar</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -610,32 +591,32 @@
 	<xsl:template match="Settlement[@id='castle_village_A2_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Ljubinje</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A2_1_text}Ljubinje belongs to the district of Stolac. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Sjenica</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A2_1_text}Sjenica belongs to the district of Novi Pazar. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A2_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Berkovići</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A2_2_text}Berkovići is a village near Stolac. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Raška</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A2_2_text}Raška is a village near Novi Pazar. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A3_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Sanski Most</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_1_text}Sanski Most lies in the lands of Ključ. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Aleksinac</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_1_text}Aleksinac lies in the lands of Niš. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A3_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Petrovac</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_2_text}Petrovac belongs to the district of Ključ. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Pirot</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_2_text}Pirot belongs to the district of Niš. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -658,80 +639,80 @@
 	<xsl:template match="Settlement[@id='castle_village_A5_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Čapljina</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A5_1_text}Čapljina belongs to the district of Počitelj. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Tetovo</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A5_1_text}Tetovo belongs to the district of Skopje. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A5_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Ljubuški</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A5_2_text}Ljubuški is a village near Počitelj. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Kumanovo</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A5_2_text}Kumanovo is a village near Skopje. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A6_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Brčko</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A6_1_text}Brčko lies in the lands of Srebrenik. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Assenowgrad</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A6_1_text}Assenowgrad lies in the lands of Plowdiw. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A6_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Gradačac</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A6_2_text}Gradačac belongs to the district of Srebrenik. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Pasardschik</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A6_2_text}Pasardschik belongs to the district of Plowdiw. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A7_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Maglaj</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A7_1_text}Maglaj is a village near Doboj. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Gračanica</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A7_1_text}Gračanica is a village near Tuzla. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A7_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Tešanj</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A7_2_text}Tešanj lies in the lands of Doboj. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Lukavac</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A7_2_text}Lukavac lies in the lands of Tuzla. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A8_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Bijeljina</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A8_1_text}Bijeljina belongs to the district of Zvornik. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Belogradtschik</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A8_1_text}Belogradtschik belongs to the district of Vidin. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A8_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Kozluk</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A8_2_text}Kozluk is a village near Zvornik. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Lom</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A8_2_text}Lom is a village near Vidin. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A9_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Duvno</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A9_1_text}Duvno lies in the lands of Livno. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Lugosch</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A9_1_text}Lugosch lies in the lands of Temeschwar. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_A9_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Glamoč</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A9_2_text}Glamoč belongs to the district of Livno. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Lippa</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A9_2_text}Lippa belongs to the district of Temeschwar. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -780,48 +761,48 @@
 	<xsl:template match="Settlement[@id='village_A3_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Ustikolina</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A3_1_text}Ustikolina belongs to the district of Foča. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Bojana</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A3_1_text}Bojana belongs to the district of Sofia. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='village_A3_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Goražde</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A3_3_text}Goražde is a village near Foča. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Samokow</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A3_3_text}Samokow is a village near Sofia. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='village_A4_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Lukavac</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A4_1_text}Lukavac lies in the lands of Tuzla. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Langadas</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A4_1_text}Langadas lies in the lands of Saloniki. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='village_A4_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Živinice</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A4_2_text}Živinice belongs to the district of Tuzla. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Chalkidona</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A4_2_text}Chalkidona belongs to the district of Saloniki. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='village_A4_4']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Kalesija</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A4_4_text}Kalesija is a village near Tuzla. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Kalamaria</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A4_4_text}Kalamaria is a village near Saloniki. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='village_A5_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Sjenica</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A5_1_text}Sjenica lies in the lands of Novi Pazar. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Havsa</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A5_1_text}Havsa lies in the lands of Edirne. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -829,8 +810,8 @@
 	<xsl:template match="Settlement[@id='village_A5_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Tutin</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A5_2_text}Tutin belongs to the district of Novi Pazar. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Lüleburgaz</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A5_2_text}Lüleburgaz belongs to the district of Edirne. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -838,9 +819,8 @@
 	<xsl:template match="Settlement[@id='village_A5_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Raška</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A5_3_text}Raška is a village near Novi Pazar. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
+			<xsl:attribute name="name">{=!}Uzunköprü</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A5_3_text}Uzunköprü is a village near Edirne. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -980,8 +960,7 @@
 	<xsl:template match="Settlement[@id='castle_ES1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Sokol</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_ES1_text}Sokol, the 'falcon', sits on a crag above Konavle and guards the border with Ottoman Herzegovina.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Nikšić</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -989,8 +968,7 @@
 	<xsl:template match="Settlement[@id='castle_ES2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Lovrijenac</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_ES2_text}Lovrijenac stands on a cliff outside the western walls of Dubrovnik. Over its gate is written: freedom is not sold for all the gold in the world.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Cetinje</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1007,8 +985,7 @@
 	<xsl:template match="Settlement[@id='castle_ES4']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Molunat</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_ES4_text}Molunat is a small harbour at the southern end of Konavle, the last refuge of Ragusan ships before Venetian waters.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Bar</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1016,8 +993,7 @@
 	<xsl:template match="Settlement[@id='castle_ES5']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Šipan</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_ES5_text}Šipan is the largest of the Elaphite islands, with the summer residences of Ragusan nobles and the rector's palace.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Ulcinj</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1025,8 +1001,7 @@
 	<xsl:template match="Settlement[@id='castle_ES6']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Trpanj</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_ES6_text}Trpanj is a harbour on northern Pelješac, facing the mouth of the Neretva and the Venetian coast.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Vlorë</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1034,8 +1009,7 @@
 	<xsl:template match="Settlement[@id='castle_ES7']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Mali Ston</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_ES7_text}Mali Ston lies at the other end of the Ston walls, under the tower of Koruna. Its oyster beds are famous.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Berat</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1043,8 +1017,7 @@
 	<xsl:template match="Settlement[@id='castle_ES8']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Janjina</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_ES8_text}Janjina watches over the middle of the Pelješac peninsula and its vineyards.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Arta</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1052,8 +1025,7 @@
 	<xsl:template match="Settlement[@id='town_ES1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Cavtat</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_ES1_text}Cavtat, the ancient Epidaurum, is the harbour of the fertile Konavle valley.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Ohrid</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1061,8 +1033,7 @@
 	<xsl:template match="Settlement[@id='town_ES2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Babino Polje</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_ES2_text}Babino Polje is the seat of the Ragusan count of the island of Mljet, among forests and salt lakes.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Skadar</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1070,8 +1041,7 @@
 	<xsl:template match="Settlement[@id='town_ES3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Lastovo</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_ES3_text}Lastovo is the Republic's farthest island, a home of fishermen and a lookout far out at sea.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Gjirokastër</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1088,8 +1058,7 @@
 	<xsl:template match="Settlement[@id='town_ES5']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Lopud</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_ES5_text}Lopud in the Elaphite islands is the home of rich shipowners and the seat of the count of the islands.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Durrës</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1097,8 +1066,7 @@
 	<xsl:template match="Settlement[@id='town_ES6']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Orebić</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_ES6_text}Orebić on Pelješac is a town of sea captains, facing the island of Korčula across the channel.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Janina</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1106,8 +1074,7 @@
 	<xsl:template match="Settlement[@id='town_ES7']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Slano</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_ES7_text}Slano in a quiet bay is the seat of the count of the coastal lands, with a small rector's palace.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Prizren</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1115,8 +1082,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES1_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Dunave</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES1_1_text}Dunave is a village near Sokol. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Grahovo</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES1_1_text}Grahovo is a village near Nikšić. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1124,8 +1091,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES2_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Pile</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES2_1_text}Pile is a village near Lovrijenac. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Njeguši</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES2_1_text}Njeguši is a village near Cetinje. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1133,8 +1100,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES2_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Ploče</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES2_2_text}Ploče lies in the lands of Lovrijenac. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Rijeka Crnojevića</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES2_2_text}Rijeka Crnojevića lies in the lands of Cetinje. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1160,8 +1127,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES4_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Vitaljina</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES4_1_text}Vitaljina is a village near Molunat. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Sutomore</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES4_1_text}Sutomore is a village near Bar. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1169,8 +1136,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES4_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Mrcine</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES4_2_text}Mrcine lies in the lands of Molunat. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Virpazar</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES4_2_text}Virpazar lies in the lands of Bar. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1178,8 +1145,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES5_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Šipanska Luka</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES5_1_text}Šipanska Luka is a village near Šipan. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Šas</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES5_1_text}Šas is a village near Ulcinj. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1187,8 +1154,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES6_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Donja Vrućica</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES6_1_text}Donja Vrućica is a village near Trpanj. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Kaninë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES6_1_text}Kaninë is a village near Vlorë. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1196,8 +1163,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES7_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Hodilje</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES7_1_text}Hodilje is a village near Mali Ston. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Kuçovë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES7_1_text}Kuçovë is a village near Berat. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1205,8 +1172,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES8_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Pijavičino</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES8_1_text}Pijavičino is a village near Janjina. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Filippiada</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES8_1_text}Filippiada is a village near Arta. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1214,8 +1181,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES1_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Mihanići</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES1_2_text}Mihanići lies in the lands of Sokol. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Šavnik</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES1_2_text}Šavnik lies in the lands of Nikšić. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1223,8 +1190,8 @@
 	<xsl:template match="Settlement[@id='village_ES1_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Čilipi</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES1_2_text}Čilipi is a village near Cavtat. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Struga</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES1_2_text}Struga is a village near Ohrid. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1232,8 +1199,8 @@
 	<xsl:template match="Settlement[@id='village_ES1_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Mlini</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES1_3_text}Mlini lies in the lands of Cavtat. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Resen</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES1_3_text}Resen lies in the lands of Ohrid. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1241,8 +1208,8 @@
 	<xsl:template match="Settlement[@id='village_ES1_4']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Gruda</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES1_4_text}Gruda is a village near Cavtat. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Peštani</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES1_4_text}Peštani is a village near Ohrid. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1250,8 +1217,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES5_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Jakljan</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES5_2_text}Jakljan lies in the lands of Šipan. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Vladimir</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES5_2_text}Vladimir lies in the lands of Ulcinj. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1259,8 +1226,8 @@
 	<xsl:template match="Settlement[@id='village_ES2_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Polače</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES2_2_text}Polače lies in the lands of Babino Polje. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Drisht</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES2_2_text}Drisht lies in the lands of Skadar. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1268,8 +1235,8 @@
 	<xsl:template match="Settlement[@id='village_ES2_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Goveđari</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES2_3_text}Goveđari is a village near Babino Polje. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Koplik</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES2_3_text}Koplik is a village near Skadar. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1277,8 +1244,8 @@
 	<xsl:template match="Settlement[@id='village_ES2_4']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Saplunara</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES2_4_text}Saplunara lies in the lands of Babino Polje. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Vau i Dejës</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES2_4_text}Vau i Dejës lies in the lands of Skadar. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1286,8 +1253,8 @@
 	<xsl:template match="Settlement[@id='village_ES3_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Ubli</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES3_1_text}Ubli is a village near Lastovo. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Libohovë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES3_1_text}Libohovë is a village near Gjirokastër. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1295,8 +1262,8 @@
 	<xsl:template match="Settlement[@id='village_ES3_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Skrivena Luka</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES3_2_text}Skrivena Luka lies in the lands of Lastovo. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Tepelenë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES3_2_text}Tepelenë lies in the lands of Gjirokastër. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1304,8 +1271,8 @@
 	<xsl:template match="Settlement[@id='village_ES3_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Pasadur</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES3_3_text}Pasadur is a village near Lastovo. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Delvinë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES3_3_text}Delvinë is a village near Gjirokastër. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1322,8 +1289,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES8_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Drače</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES8_2_text}Drače lies in the lands of Janjina. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Peta</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES8_2_text}Peta lies in the lands of Arta. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1340,8 +1307,8 @@
 	<xsl:template match="Settlement[@id='village_ES5_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Koločep</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES5_1_text}Koločep lies in the lands of Lopud. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Kavajë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES5_1_text}Kavajë lies in the lands of Durrës. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1349,8 +1316,8 @@
 	<xsl:template match="Settlement[@id='village_ES5_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Suđurađ</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES5_2_text}Suđurađ is a village near Lopud. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Shijak</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES5_2_text}Shijak is a village near Durrës. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1358,8 +1325,8 @@
 	<xsl:template match="Settlement[@id='village_ES5_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Trsteno</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES5_3_text}Trsteno lies in the lands of Lopud. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Krujë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES5_3_text}Krujë lies in the lands of Durrës. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1367,8 +1334,8 @@
 	<xsl:template match="Settlement[@id='village_ES6_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Kuna</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES6_1_text}Kuna is a village near Orebić. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Metsovo</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES6_1_text}Metsovo is a village near Janina. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1376,8 +1343,8 @@
 	<xsl:template match="Settlement[@id='village_ES6_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Potomje</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES6_2_text}Potomje lies in the lands of Orebić. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Zitsa</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES6_2_text}Zitsa lies in the lands of Janina. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1385,8 +1352,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES6_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Duba</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES6_2_text}Duba lies in the lands of Trpanj. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Himarë</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES6_2_text}Himarë lies in the lands of Vlorë. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1394,8 +1361,8 @@
 	<xsl:template match="Settlement[@id='village_ES7_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Doli</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES7_1_text}Doli is a village near Slano. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Suva Reka</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES7_1_text}Suva Reka is a village near Prizren. Its peasants work the land of Ragusan noble families and send wine and oil to the city.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1403,8 +1370,8 @@
 	<xsl:template match="Settlement[@id='village_ES7_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Majkovi</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_ES7_2_text}Majkovi lies in the lands of Slano. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Orahovac</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_ES7_2_text}Orahovac lies in the lands of Prizren. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1412,8 +1379,8 @@
 	<xsl:template match="Settlement[@id='castle_village_ES7_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Broce</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES7_2_text}Broce lies in the lands of Mali Ston. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Poliçan</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_ES7_2_text}Poliçan lies in the lands of Berat. Many of its young men have gone to sea on Ragusan ships.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1431,9 +1398,8 @@
 	<xsl:template match="Settlement[@id='castle_EW2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Sinj</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_EW2_text}Sinj was taken from the Ottomans in 1686. It guards the Cetina valley, and its garrison expects the enemy to return one day.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
+			<xsl:attribute name="name">{=!}Udine</xsl:attribute>
+			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1458,8 +1424,7 @@
 	<xsl:template match="Settlement[@id='castle_EW5']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Novigrad</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_EW5_text}Novigrad guards the narrow sea of the same name, the back door to Zadar.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Pula</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1467,35 +1432,31 @@
 	<xsl:template match="Settlement[@id='castle_EW6']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Klis</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_EW6_text}Klis holds the mountain pass above Split. It was held by the Ottomans for more than a century before Venice took it in 1648.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
+			<xsl:attribute name="name">{=!}Patras</xsl:attribute>
+			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_EW7']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Omiš</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_EW7_text}Omiš at the mouth of the Cetina was once a nest of pirates. Today its towers watch over the gorge and the coast.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
+			<xsl:attribute name="name">{=!}Nauplia</xsl:attribute>
+			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_EW8']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Vrlika</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_EW8_text}Vrlika, near the source of the Cetina, lies under the fortress of Prozor and was taken from the Ottomans in 1688.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.vlandia</xsl:attribute>
+			<xsl:attribute name="name">{=!}Modon</xsl:attribute>
+			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Settlement[@id='town_EW1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Rab</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_EW1_text}Rab is an island town of four bell towers. Its nobles serve Venice as officers and captains of galleys.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Venezia</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1512,8 +1473,7 @@
 	<xsl:template match="Settlement[@id='town_EW3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Hvar</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_town_EW3_text}Hvar is a station of the Venetian fleet. Galleys take on water, wine and oarsmen here, under the fortress on the hill.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Preveza</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1557,8 +1517,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW2_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Trilj</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW2_1_text}Trilj lies on the coast near Sinj. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Cividale</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW2_1_text}Cividale lies on the coast near Udine. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1566,8 +1526,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW2_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Otok</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW2_2_text}Otok is a village near Sinj. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Palmanova</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW2_2_text}Palmanova is a village near Udine. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1593,8 +1553,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW5_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Posedarje</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW5_1_text}Posedarje lies on the coast near Novigrad. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Vodnjan</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW5_1_text}Vodnjan lies on the coast near Pula. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1602,8 +1562,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW5_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Obrovac</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW5_2_text}Obrovac is a village near Novigrad. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Medulin</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW5_2_text}Medulin is a village near Pula. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1611,8 +1571,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW6_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Dugopolje</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW6_1_text}Dugopolje belongs to the lands of Klis. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Aigio</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW6_1_text}Aigio belongs to the lands of Patras. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1620,8 +1580,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW7_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Jesenice</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW7_1_text}Jesenice is a village near Omiš. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Argos</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW7_1_text}Argos is a village near Nauplia. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1629,8 +1589,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW7_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Kostanje</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW7_2_text}Kostanje belongs to the lands of Omiš. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Tolo</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW7_2_text}Tolo belongs to the lands of Nauplia. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1638,8 +1598,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW8_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Kijevo</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW8_1_text}Kijevo lies on the coast near Vrlika. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Koroni</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW8_1_text}Koroni lies on the coast near Modon. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1647,8 +1607,8 @@
 	<xsl:template match="Settlement[@id='village_EW1_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Lopar</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_EW1_1_text}Lopar belongs to the lands of Rab. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Mestre</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_EW1_1_text}Mestre belongs to the lands of Venezia. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1656,8 +1616,8 @@
 	<xsl:template match="Settlement[@id='village_EW1_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Pag</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_EW1_2_text}Pag lies on the coast near Rab. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Chioggia</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_EW1_2_text}Chioggia lies on the coast near Venezia. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1665,8 +1625,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW6_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Kučine</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW6_2_text}Kučine lies on the coast near Klis. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Kalavryta</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW6_2_text}Kalavryta lies on the coast near Patras. Its men fish for sardines and row in the galleys when Venice calls.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1719,8 +1679,8 @@
 	<xsl:template match="Settlement[@id='village_EW3_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Stari Grad</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_EW3_2_text}Stari Grad is a village near Hvar. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Parga</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_EW3_2_text}Parga is a village near Preveza. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1728,8 +1688,8 @@
 	<xsl:template match="Settlement[@id='village_EW3_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Jelsa</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_EW3_3_text}Jelsa belongs to the lands of Hvar. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Vonitsa</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_EW3_3_text}Vonitsa belongs to the lands of Preveza. Olives, wine and figs grow on its stony terraces.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1800,8 +1760,8 @@
 	<xsl:template match="Settlement[@id='castle_village_EW8_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Cetina</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW8_2_text}Cetina is a village near Vrlika. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Navarino</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_EW8_2_text}Navarino is a village near Modon. Morlach families who came from Ottoman lands in the war have settled here and serve Venice as frontier soldiers.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -1826,5 +1786,1336 @@
 	</xsl:template>
 	<xsl:template match="Settlement[@id='castle_village_EW4_1']/Components/Village/@village_type">
 		<xsl:attribute name="village_type">VillageType.swine_farm</xsl:attribute>
+	</xsl:template>
+	<!-- Orte außerhalb der Mod-Reiche (data/weltkarte/orte.csv und namen.toml) -->
+	<xsl:template match="Settlement[@id='castle_B1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Pescara</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_B2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Rijeka</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_B3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tarent</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_B4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Ravenna</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_B5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Rimini</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_B6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Brindisi</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_B7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Lecce</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_B8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Foggia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Burgas</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tarnowo</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Rustschuk</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Larissa</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Adana</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Bursa</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Konya</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Antalya</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_EN9']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Sinope</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Târgoviște</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Suceava</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Chotyn</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Bender</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Akkerman</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Perekop</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Brăila</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kilija</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_K9']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tscherkassy</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_S1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Győr</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_S2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Komárom</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_S3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Esztergom</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_S4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Eger</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_S5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Großwardein</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_S6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tarnów</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_S7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Hermannstadt</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_S8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kamieniec</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Chieti</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B1_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Ortona</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Trsat</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kastav</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Massafra</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B3_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Grottaglie</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B4_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Classe</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B4_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Cervia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Cattolica</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B5_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Santarcangelo</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Mesagne</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Ostuni</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B7_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Otranto</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B7_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Gallipoli</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B8_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Lucera</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_B8_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Manfredonia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Pomorie</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN1_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Sosopol</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Arbanassi</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Gabrowo</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Giurgiu</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN3_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tutrakan</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN4_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tyrnavos</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN4_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Trikala</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tarsus</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN5_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Misis</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Mudanya</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}İnegöl</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN7_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Meram</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN7_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Sille</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN8_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Alanya</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN8_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Manavgat</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN9_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Gerze</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_EN9_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Boyabat</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Ploiești</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K1_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Pitești</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Rădăuți</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Siret</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Czernowitz</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K3_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Schwanez</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K4_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kischinau</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K4_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Căușeni</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Owidiopol</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K5_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tatarbunar</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Armjansk</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tschaplynka</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K7_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Galatz</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K7_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Focșani</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K8_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Ismail</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K8_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Wylkowe</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K9_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tschyhyryn</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_K9_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kaniw</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Pannonhalma</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S1_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Moson</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tata</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Neuhäusel</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Visegrád</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S3_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Párkány</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S4_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Gyöngyös</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S4_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Miskolc</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Salonta</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S5_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Beiuș</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Bochnia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Dębica</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S7_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Mediasch</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S7_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Heltau</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S8_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Żwaniec</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='castle_village_S8_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Dunajiwzi</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_B1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Rom</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_B2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Trieste</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_B3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Ancona</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_B4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Napoli</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_B5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Bari</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_EN1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Istanbul</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_EN2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Athen</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_EN3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Smyrna</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_EN4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Ankara</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_EN5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kütahya</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_EN6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Varna</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_K1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Bukarest</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_K2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Jassy</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_K3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Bachtschissarai</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_K4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kaffa</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_K5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kiew</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_K6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Otschakiw</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_S1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Krakau</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_S2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Lublin</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_S3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Przemyśl</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_S4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Sandomierz</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_S5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Lemberg</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_S6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kaschau</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='town_S7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Debrecen</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tivoli</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B1_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Ostia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B1_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Frascati</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B1_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Civitavecchia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Muggia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Koper</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B2_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Duino</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Senigallia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B3_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Loreto</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B3_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Jesi</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B4_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Pozzuoli</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B4_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Capua</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B4_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Salerno</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B4_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Aversa</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Bitonto</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B5_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Monopoli</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_B5_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Trani</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Galata</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN1_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Üsküdar</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN1_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Silivri</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Piräus</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Eleusis</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Manisa</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN3_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Urla</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN4_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Beypazarı</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN4_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Çubuk</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Eskişehir</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN5_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Afyon</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN5_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Simav</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Baltschik</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_EN6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Prowadija</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Snagov</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K1_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Oltenița</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K1_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Mogoșoaia</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Hârlău</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Huși</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Inkerman</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K3_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Mangup</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K3_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Akmescit</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K4_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Sudak</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K4_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kertsch</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K4_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Karasubazar</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K5_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Wyschhorod</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K5_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Wassylkiw</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K5_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Browary</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Kinburn</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Hadschibej</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_K6_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Beresan</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Wieliczka</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S1_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Olkusz</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Zamość</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Puławy</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Jarosław</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S3_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Sanok</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S4_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Opatów</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S4_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tarnobrzeg</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S4_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Staszów</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Żółkiew</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S5_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Gródek</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Eperies</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Tokaj</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S6_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Sárospatak</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S7_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Hajdúböszörmény</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Settlement[@id='village_S7_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:attribute name="name">{=!}Nyíregyháza</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
 	</xsl:template>
 </xsl:stylesheet>

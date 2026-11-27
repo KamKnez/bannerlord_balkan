@@ -349,74 +349,61 @@ weiblich = true  # 24 Jahre, vorher Diasca
 # Zugeordnet nach der Lage auf der Karte, die Hauptstadt des Reichs ist fest gesetzt.
 
 [orte]
-town_ES1 = "Cavtat"                         # Danustica
-town_ES2 = "Babino Polje"                   # Vostrum
-town_ES3 = "Lastovo"                        # Poros
+town_ES1 = "Ohrid"                          # Danustica
+town_ES2 = "Skadar"                         # Vostrum
+town_ES3 = "Gjirokastër"                    # Poros
 town_ES4 = "Dubrovnik"                      # Lycaron
-town_ES5 = "Lopud"                          # Onira
-town_ES6 = "Orebić"                         # Phycaon
-town_ES7 = "Slano"                          # Syronea
-castle_ES1 = "Sokol"                        # Odrysa Castle
-castle_ES2 = "Lovrijenac"                   # Corenia Castle
+town_ES5 = "Durrës"                         # Onira
+town_ES6 = "Janina"                         # Phycaon
+town_ES7 = "Prizren"                        # Syronea
+castle_ES1 = "Nikšić"                       # Odrysa Castle
+castle_ES2 = "Cetinje"                      # Corenia Castle
 castle_ES3 = "Ston"                         # Melion Castle
-castle_ES4 = "Molunat"                      # Lavenia Castle
-castle_ES5 = "Šipan"                        # Morenia Castle
-castle_ES6 = "Trpanj"                       # Sestadaim Castle
-castle_ES7 = "Mali Ston"                    # Jogurys Castle
-castle_ES8 = "Janjina"                      # Chanopsis Castle
-castle_village_ES1_1 = "Dunave"             # Odrysa
-castle_village_ES1_2 = "Mihanići"           # Caira
-castle_village_ES2_1 = "Pile"               # Corenia
-castle_village_ES2_2 = "Ploče"              # Metachia
+castle_ES4 = "Bar"                          # Lavenia Castle
+castle_ES5 = "Ulcinj"                       # Morenia Castle
+castle_ES6 = "Vlorë"                        # Sestadaim Castle
+castle_ES7 = "Berat"                        # Jogurys Castle
+castle_ES8 = "Arta"                         # Chanopsis Castle
+castle_village_ES1_1 = "Grahovo"            # Odrysa
+castle_village_ES1_2 = "Šavnik"             # Caira
+castle_village_ES2_1 = "Njeguši"            # Corenia
+castle_village_ES2_2 = "Rijeka Crnojevića"  # Metachia
 castle_village_ES3_1 = "Žuljana"            # Melion
 castle_village_ES3_2 = "Prapratno"          # Sagolina
-castle_village_ES4_1 = "Vitaljina"          # Lavenia
-castle_village_ES4_2 = "Mrcine"             # Ethemisa
-castle_village_ES5_1 = "Šipanska Luka"      # Morenia
-castle_village_ES5_2 = "Jakljan"            # Atphynia
-castle_village_ES6_1 = "Donja Vrućica"      # Sestadaim
-castle_village_ES6_2 = "Duba"               # Amycon
-castle_village_ES7_1 = "Hodilje"            # Jogurys
-castle_village_ES7_2 = "Broce"              # Eunalica
-castle_village_ES8_1 = "Pijavičino"         # Chanopsis
-castle_village_ES8_2 = "Drače"              # Popsia
-village_ES1_2 = "Čilipi"                    # Polisia
-village_ES1_3 = "Mlini"                     # Tegresos
-village_ES1_4 = "Gruda"                     # Erebulos
-village_ES2_2 = "Polače"                    # Gorcorys
-village_ES2_3 = "Goveđari"                  # Avalyps
-village_ES2_4 = "Saplunara"                 # Alision
-village_ES3_1 = "Ubli"                      # Canoros
-village_ES3_2 = "Skrivena Luka"             # Tevea
-village_ES3_3 = "Pasadur"                   # Zestea
+castle_village_ES4_1 = "Sutomore"           # Lavenia
+castle_village_ES4_2 = "Virpazar"           # Ethemisa
+castle_village_ES5_1 = "Šas"                # Morenia
+castle_village_ES5_2 = "Vladimir"           # Atphynia
+castle_village_ES6_1 = "Kaninë"             # Sestadaim
+castle_village_ES6_2 = "Himarë"             # Amycon
+castle_village_ES7_1 = "Kuçovë"             # Jogurys
+castle_village_ES7_2 = "Poliçan"            # Eunalica
+castle_village_ES8_1 = "Filippiada"         # Chanopsis
+castle_village_ES8_2 = "Peta"               # Popsia
+village_ES1_2 = "Struga"                    # Polisia
+village_ES1_3 = "Resen"                     # Tegresos
+village_ES1_4 = "Peštani"                   # Erebulos
+village_ES2_2 = "Drisht"                    # Gorcorys
+village_ES2_3 = "Koplik"                    # Avalyps
+village_ES2_4 = "Vau i Dejës"               # Alision
+village_ES3_1 = "Libohovë"                  # Canoros
+village_ES3_2 = "Tepelenë"                  # Tevea
+village_ES3_3 = "Delvinë"                   # Zestea
 village_ES4_1 = "Gruž"                      # Sagora
 village_ES4_3 = "Lapad"                     # Canterion
-village_ES5_1 = "Koločep"                   # Lanthas
-village_ES5_2 = "Suđurađ"                   # Lartusys
-village_ES5_3 = "Trsteno"                   # Parasemnos
-village_ES6_1 = "Kuna"                      # Saldannis
-village_ES6_2 = "Potomje"                   # Spotia
-village_ES7_1 = "Doli"                      # Psotai
-village_ES7_2 = "Majkovi"                   # Vargornis
+village_ES5_1 = "Kavajë"                    # Lanthas
+village_ES5_2 = "Shijak"                    # Lartusys
+village_ES5_3 = "Krujë"                     # Parasemnos
+village_ES6_1 = "Metsovo"                   # Saldannis
+village_ES6_2 = "Zitsa"                     # Spotia
+village_ES7_1 = "Suva Reka"                 # Psotai
+village_ES7_2 = "Orahovac"                  # Vargornis
 
 # Beschreibungen für die Enzyklopädie (Stand um 1700). Dörfer bekommen einen der dorftexte;
 # {DORF} wird durch den Dorfnamen ersetzt, {SITZ} durch die Stadt oder Burg, zu der es gehört.
 [ortstexte]
-town_ES1 = { en = "Cavtat, the ancient Epidaurum, is the harbour of the fertile Konavle valley.", de = "Cavtat, das antike Epidaurum, ist der Hafen des fruchtbaren Konavle-Tals." }
-town_ES2 = { en = "Babino Polje is the seat of the Ragusan count of the island of Mljet, among forests and salt lakes.", de = "Babino Polje ist der Sitz des ragusanischen Grafen der Insel Mljet, zwischen Wäldern und Salzseen." }
-town_ES3 = { en = "Lastovo is the Republic's farthest island, a home of fishermen and a lookout far out at sea.", de = "Lastovo ist die entfernteste Insel der Republik, Heimat der Fischer und ein Ausguck weit draußen auf dem Meer." }
 town_ES4 = { en = "Dubrovnik, the Republic of Ragusa, lives behind its great walls under the word Libertas. Its Rector changes every month, its ships sail every sea, and its tribute to the Sultan buys peace. The city is still recovering from the great earthquake of 1667.", de = "Dubrovnik, die Republik Ragusa, lebt hinter ihren mächtigen Mauern unter dem Wort Libertas. Ihr Rektor wechselt jeden Monat, ihre Schiffe befahren alle Meere, und ihr Tribut an den Sultan erkauft den Frieden. Von dem großen Erdbeben von 1667 erholt sich die Stadt noch immer." }
-town_ES5 = { en = "Lopud in the Elaphite islands is the home of rich shipowners and the seat of the count of the islands.", de = "Lopud auf den Elaphiten ist die Heimat reicher Reeder und Sitz des Grafen der Inseln." }
-town_ES6 = { en = "Orebić on Pelješac is a town of sea captains, facing the island of Korčula across the channel.", de = "Orebić auf Pelješac ist eine Stadt der Kapitäne und blickt über den Kanal auf die Insel Korčula." }
-town_ES7 = { en = "Slano in a quiet bay is the seat of the count of the coastal lands, with a small rector's palace.", de = "Slano in einer stillen Bucht ist Sitz des Grafen des Küstenlands, mit einem kleinen Rektorenpalast." }
-castle_ES1 = { en = "Sokol, the 'falcon', sits on a crag above Konavle and guards the border with Ottoman Herzegovina.", de = "Sokol, der „Falke“, sitzt auf einem Felsen über Konavle und bewacht die Grenze zur osmanischen Herzegowina." }
-castle_ES2 = { en = "Lovrijenac stands on a cliff outside the western walls of Dubrovnik. Over its gate is written: freedom is not sold for all the gold in the world.", de = "Lovrijenac steht auf einer Klippe vor den Westmauern Dubrovniks. Über seinem Tor steht: Die Freiheit wird nicht für alles Gold der Welt verkauft." }
 castle_ES3 = { en = "Ston guards the neck of the Pelješac peninsula with miles of walls. Its salt pans are among the Republic's richest treasures.", de = "Ston bewacht den Hals der Halbinsel Pelješac mit kilometerlangen Mauern. Seine Salinen gehören zu den reichsten Schätzen der Republik." }
-castle_ES4 = { en = "Molunat is a small harbour at the southern end of Konavle, the last refuge of Ragusan ships before Venetian waters.", de = "Molunat ist ein kleiner Hafen am Südende von Konavle, die letzte Zuflucht ragusanischer Schiffe vor den venezianischen Gewässern." }
-castle_ES5 = { en = "Šipan is the largest of the Elaphite islands, with the summer residences of Ragusan nobles and the rector's palace.", de = "Šipan ist die größte der Elaphiten-Inseln, mit den Sommersitzen ragusanischer Adliger und dem Rektorenpalast." }
-castle_ES6 = { en = "Trpanj is a harbour on northern Pelješac, facing the mouth of the Neretva and the Venetian coast.", de = "Trpanj ist ein Hafen im Norden von Pelješac, gegenüber der Neretvamündung und der venezianischen Küste." }
-castle_ES7 = { en = "Mali Ston lies at the other end of the Ston walls, under the tower of Koruna. Its oyster beds are famous.", de = "Mali Ston liegt am anderen Ende der Mauern von Ston, unter dem Turm Koruna. Seine Austernbänke sind berühmt." }
-castle_ES8 = { en = "Janjina watches over the middle of the Pelješac peninsula and its vineyards.", de = "Janjina wacht über die Mitte der Halbinsel Pelješac und ihre Weinberge." }
 
 [[dorftext]]
 en = "{DORF} is a village near {SITZ}. Its peasants work the land of Ragusan noble families and send wine and oil to the city."

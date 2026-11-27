@@ -188,31 +188,26 @@
     <string id="balkan_settlement_town_V3_text" text="Varaždin mit seiner alten Wasserburg ist Sitz des Varaždiner Generalats, das die slawonische Grenze gegen die Türken befehligt. Seine Bürger handeln mit Wein, Tuch und Getreide." />
     <string id="balkan_settlement_town_V5_text" text="Ljubljana, deutsch Laibach, ist die Hauptstadt des Herzogtums Krain. Unter dem Burgberg an der Ljubljanica wachsen barocke Kirchen." />
     <string id="balkan_settlement_town_V6_text" text="Karlovac ist eine sechszackige Sternfestung, 1579 dort erbaut, wo vier Flüsse zusammenfließen. Hier sitzt das Karlstädter Generalat, das Herz der Militärgrenze." />
-    <string id="balkan_settlement_town_V7_text" text="Požega liegt im Goldenen Tal Slawoniens. Nach anderthalb Jahrhunderten osmanischer Herrschaft kam es 1688 an die Krone zurück, und Franziskaner und Siedler beleben das Land neu." />
     <string id="balkan_settlement_town_V8_text" text="Graz ist die Hauptstadt Innerösterreichs. Aus seinem großen Zeughaus gehen Musketen, Piken und Harnische nach Süden zu den Besatzungen der Grenze." />
     <string id="balkan_settlement_town_V9_text" text="Pécs wurde 1686 zurückerobert. Seine Kuppelmoscheen werden zu Kirchen umgebaut, und das alte ungarische Bistum erholt sich langsam." />
     <string id="balkan_settlement_castle_V1_text" text="Brod bewacht die Furt über die Save. Am anderen Ufer liegt das osmanische Bosnien, und die Grenzwachen lassen den Fluss nie aus den Augen." />
     <string id="balkan_settlement_castle_V2_text" text="Senj an der Adria war die Heimat der Uskoken, die gegen die Osmanen kämpften und ebenso venezianische Schiffe plünderten. Die Festung Nehaj überragt noch immer den windigen Hafen." />
-    <string id="balkan_settlement_castle_V3_text" text="Die Burg von Ogulin, von den Frankopanen erbaut, steht am Rand der Schlucht, in der die Dobra unter der Erde verschwindet. Hier sitzt eine Hauptmannschaft der Grenze." />
     <string id="balkan_settlement_castle_V4_text" text="Die dreieckige Festung Sisak bewacht den Zusammenfluss von Kupa und Save. 1593 wurde unter ihren Mauern das osmanische Heer vernichtend geschlagen." />
     <string id="balkan_settlement_castle_V5_text" text="Koprivnica ist eine Renaissance-Festung aus Erdwällen und Bastionen in der Podravina, Teil der Grenzlinie entlang der Drau." />
-    <string id="balkan_settlement_castle_V6_text" text="Virovitica wurde 1684 von den Osmanen zurückerobert. Von seinen Mauern blickt man über die flache, halb leere Ebene der Drau." />
-    <string id="balkan_settlement_castle_V7_text" text="Udbina in der Krbava war bis 1689 eine osmanische Festung. Seitdem wird die Lika von Grenzerfamilien aus allen Richtungen neu besiedelt." />
-    <string id="balkan_settlement_castle_V8_text" text="Kostajnica steht an der Una, die der Frieden von Karlowitz zur Grenze gemacht hat. Jenseits des Flusses sieht man die osmanischen Wachtürme." />
     <string id="balkan_settlement_castle_village_V1_1_text" text="Županja ist ein Dorf bei Brod. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
     <string id="balkan_settlement_castle_village_V2_1_text" text="Krivi Put liegt im Umland von Senj. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
     <string id="balkan_settlement_castle_village_V2_2_text" text="Jablanac gehört zu den Ländereien von Senj. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
-    <string id="balkan_settlement_castle_village_V3_1_text" text="Josipdol ist ein Dorf bei Ogulin. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
-    <string id="balkan_settlement_castle_village_V3_2_text" text="Modruš liegt im Umland von Ogulin. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
+    <string id="balkan_settlement_castle_village_V3_1_text" text="Pleternica ist ein Dorf bei Požega. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
+    <string id="balkan_settlement_castle_village_V3_2_text" text="Kutjevo liegt im Umland von Požega. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
     <string id="balkan_settlement_castle_village_V4_1_text" text="Petrinja gehört zu den Ländereien von Sisak. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
     <string id="balkan_settlement_castle_village_V5_1_text" text="Đurđevac ist ein Dorf bei Koprivnica. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
     <string id="balkan_settlement_castle_village_V5_2_text" text="Drnje liegt im Umland von Koprivnica. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
-    <string id="balkan_settlement_castle_village_V6_1_text" text="Slatina gehört zu den Ländereien von Virovitica. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
-    <string id="balkan_settlement_castle_village_V6_2_text" text="Pitomača ist ein Dorf bei Virovitica. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
-    <string id="balkan_settlement_castle_village_V7_1_text" text="Korenica liegt im Umland von Udbina. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
-    <string id="balkan_settlement_castle_village_V7_2_text" text="Bunić gehört zu den Ländereien von Udbina. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
-    <string id="balkan_settlement_castle_village_V8_1_text" text="Dubica ist ein Dorf bei Kostajnica. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
-    <string id="balkan_settlement_castle_village_V8_2_text" text="Majur liegt im Umland von Kostajnica. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
+    <string id="balkan_settlement_castle_village_V6_1_text" text="Óbuda gehört zu den Ländereien von Buda. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
+    <string id="balkan_settlement_castle_village_V6_2_text" text="Vác ist ein Dorf bei Buda. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
+    <string id="balkan_settlement_castle_village_V7_1_text" text="Theben liegt im Umland von Pressburg. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
+    <string id="balkan_settlement_castle_village_V7_2_text" text="Sankt Georgen gehört zu den Ländereien von Pressburg. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
+    <string id="balkan_settlement_castle_village_V8_1_text" text="Torda ist ein Dorf bei Klausenburg. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
+    <string id="balkan_settlement_castle_village_V8_2_text" text="Gilău liegt im Umland von Klausenburg. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
     <string id="balkan_settlement_village_V1_1_text" text="Sesvete gehört zu den Ländereien von Zagreb. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
     <string id="balkan_settlement_village_V1_2_text" text="Samobor ist ein Dorf bei Zagreb. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
     <string id="balkan_settlement_village_V2_1_text" text="Valpovo liegt im Umland von Osijek. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
@@ -228,8 +223,8 @@
     <string id="balkan_settlement_village_V6_2_text" text="Ozalj gehört zu den Ländereien von Karlovac. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
     <string id="balkan_settlement_village_V6_3_text" text="Draganić ist ein Dorf bei Karlovac. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
     <string id="balkan_settlement_village_V6_4_text" text="Netretić liegt im Umland von Karlovac. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
-    <string id="balkan_settlement_village_V7_1_text" text="Pleternica gehört zu den Ländereien von Požega. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
-    <string id="balkan_settlement_village_V7_2_text" text="Kutjevo ist ein Dorf bei Požega. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
+    <string id="balkan_settlement_village_V7_1_text" text="Schwechat gehört zu den Ländereien von Wien. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
+    <string id="balkan_settlement_village_V7_2_text" text="Klosterneuburg ist ein Dorf bei Wien. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
     <string id="balkan_settlement_village_V8_1_text" text="Leibnitz liegt im Umland von Graz. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
     <string id="balkan_settlement_village_V8_2_text" text="Voitsberg gehört zu den Ländereien von Graz. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
     <string id="balkan_settlement_village_V8_3_text" text="Gleisdorf ist ein Dorf bei Graz. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
@@ -244,52 +239,42 @@
     <string id="balkan_hero_lord_3_1_text" text="Mehmed verwaltet das Eyalet Bosnien im Namen des Sultans. Ob er das Amt behält, entscheidet Istanbul." />
     <string id="balkan_settlement_town_A1_text" text="Sarajevo, von Isa-beg im Tal der Miljacka gegründet, ist das Juwel Bosniens, mit Moschee, Basar und Bädern Gazi Husrev-begs. 1697 brannte Prinz Eugen die Stadt nieder, und ihre Bewohner bauen sie noch immer wieder auf." />
     <string id="balkan_settlement_town_A2_text" text="Die Festung von Belgrad steht dort, wo die Save in die Donau mündet. Sie wechselte 1688 und erneut 1690 den Besitzer und bleibt das Tor des osmanischen Balkans." />
-    <string id="balkan_settlement_town_A3_text" text="Foča an der Drina liegt an der Karawanenstraße von Dubrovnik nach Istanbul. Ihre bemalte Aladža-Moschee ist weit über Bosnien hinaus berühmt." />
-    <string id="balkan_settlement_town_A4_text" text="Tuzla hat seinen Namen von den Salzquellen, die es reich gemacht haben. Das Salz aus seinen Siedepfannen wird durch ganz Bosnien getragen." />
-    <string id="balkan_settlement_town_A5_text" text="Novi Pazar, der von Isa-beg gegründete „neue Markt“, ist eine Handelsstadt im Sandžak an der Hauptstraße nach Istanbul." />
     <string id="balkan_settlement_town_A6_text" text="Banja Luka wuchs rund um die Ferhadija-Moschee Ferhad Paschas. Es bewacht das Tal des Vrbas und die Nordgrenze der Provinz." />
     <string id="balkan_settlement_town_A7_text" text="Mostar ist das Herz der Herzegowina. Seine 1566 erbaute Steinbrücke überspannt die grüne Neretva in einem einzigen kühnen Bogen." />
     <string id="balkan_settlement_town_A8_text" text="Travnik im Tal der Lašva soll nach dem Brand von Sarajevo neuer Sitz des Wesirs von Bosnien werden. Bis sein Konak fertig ist, verwalten die Begs der Stadt sie für ihn. Kuriere, Kaufleute und Bittsteller füllen seine Gassen." />
     <string id="balkan_settlement_castle_A1_text" text="Bihać ist das nordwestliche Bollwerk des Reichs, 1592 erobert. 1697 schlug es eine habsburgische Belagerung ab, und seine Kapetane beobachten Kroatien Tag und Nacht." />
-    <string id="balkan_settlement_castle_A2_text" text="Über Stolac erhebt sich die Festung Vidoški und bewacht die Straßen der östlichen Herzegowina." />
-    <string id="balkan_settlement_castle_A3_text" text="In Ključ an der Sana ergab sich 1463 der letzte bosnische König. Heute ist es eine Kapetanija an der Straße zur Grenze." />
     <string id="balkan_settlement_castle_A4_text" text="Jajce, die alte Königsstadt Bosniens, steht über dem Wasserfall, mit dem die Pliva in den Vrbas stürzt." />
-    <string id="balkan_settlement_castle_A5_text" text="Počitelj ist eine ummauerte Stadt, die den Felsen über der Neretva hinaufsteigt, ein Wachposten an der Straße von Mostar zum Meer." />
-    <string id="balkan_settlement_castle_A6_text" text="Srebrenik sitzt auf einem steilen Felsen bei Tuzla und ist nur über eine schmale Brücke zu erreichen." />
-    <string id="balkan_settlement_castle_A7_text" text="Doboj bewacht das Tal der Bosna, die Hauptstraße von der Save ins Herz der Provinz." />
-    <string id="balkan_settlement_castle_A8_text" text="Die Mauern von Zvornik ziehen sich den Hang hinab bis zur Drina. Wer sie hält, beherrscht den Übergang zwischen Bosnien und Serbien." />
-    <string id="balkan_settlement_castle_A9_text" text="Livno blickt über das weite Livanjsko polje hinüber ins venezianische Dalmatien. Hier überqueren Streifscharen beider Seiten die Grenze." />
     <string id="balkan_settlement_castle_village_A1_1_text" text="Cazin ist ein Dorf bei Bihać. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
     <string id="balkan_settlement_castle_village_A1_2_text" text="Ostrožac liegt im Land von Bihać. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_castle_village_A2_1_text" text="Ljubinje gehört zum Bezirk von Stolac. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
-    <string id="balkan_settlement_castle_village_A2_2_text" text="Berkovići ist ein Dorf bei Stolac. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
-    <string id="balkan_settlement_castle_village_A3_1_text" text="Sanski Most liegt im Land von Ključ. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_castle_village_A3_2_text" text="Petrovac gehört zum Bezirk von Ključ. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_castle_village_A2_1_text" text="Sjenica gehört zum Bezirk von Novi Pazar. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_castle_village_A2_2_text" text="Raška ist ein Dorf bei Novi Pazar. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_settlement_castle_village_A3_1_text" text="Aleksinac liegt im Land von Niš. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
+    <string id="balkan_settlement_castle_village_A3_2_text" text="Pirot gehört zum Bezirk von Niš. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
     <string id="balkan_settlement_castle_village_A4_1_text" text="Varcar Vakuf ist ein Dorf bei Jajce. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
     <string id="balkan_settlement_castle_village_A4_2_text" text="Šipovo liegt im Land von Jajce. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_castle_village_A5_1_text" text="Čapljina gehört zum Bezirk von Počitelj. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
-    <string id="balkan_settlement_castle_village_A5_2_text" text="Ljubuški ist ein Dorf bei Počitelj. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
-    <string id="balkan_settlement_castle_village_A6_1_text" text="Brčko liegt im Land von Srebrenik. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_castle_village_A6_2_text" text="Gradačac gehört zum Bezirk von Srebrenik. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
-    <string id="balkan_settlement_castle_village_A7_1_text" text="Maglaj ist ein Dorf bei Doboj. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
-    <string id="balkan_settlement_castle_village_A7_2_text" text="Tešanj liegt im Land von Doboj. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_castle_village_A8_1_text" text="Bijeljina gehört zum Bezirk von Zvornik. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
-    <string id="balkan_settlement_castle_village_A8_2_text" text="Kozluk ist ein Dorf bei Zvornik. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
-    <string id="balkan_settlement_castle_village_A9_1_text" text="Duvno liegt im Land von Livno. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_castle_village_A9_2_text" text="Glamoč gehört zum Bezirk von Livno. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_castle_village_A5_1_text" text="Tetovo gehört zum Bezirk von Skopje. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_castle_village_A5_2_text" text="Kumanovo ist ein Dorf bei Skopje. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_settlement_castle_village_A6_1_text" text="Assenowgrad liegt im Land von Plowdiw. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
+    <string id="balkan_settlement_castle_village_A6_2_text" text="Pasardschik gehört zum Bezirk von Plowdiw. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_castle_village_A7_1_text" text="Gračanica ist ein Dorf bei Tuzla. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_settlement_castle_village_A7_2_text" text="Lukavac liegt im Land von Tuzla. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
+    <string id="balkan_settlement_castle_village_A8_1_text" text="Belogradtschik gehört zum Bezirk von Vidin. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_castle_village_A8_2_text" text="Lom ist ein Dorf bei Vidin. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_settlement_castle_village_A9_1_text" text="Lugosch liegt im Land von Temeschwar. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
+    <string id="balkan_settlement_castle_village_A9_2_text" text="Lippa gehört zum Bezirk von Temeschwar. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
     <string id="balkan_settlement_village_A1_1_text" text="Ilidža ist ein Dorf bei Sarajevo. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
     <string id="balkan_settlement_village_A1_2_text" text="Vogošća liegt im Land von Sarajevo. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
     <string id="balkan_settlement_village_A1_4_text" text="Hadžići gehört zum Bezirk von Sarajevo. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
     <string id="balkan_settlement_village_A2_2_text" text="Grocka ist ein Dorf bei Beograd. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
     <string id="balkan_settlement_village_A2_3_text" text="Smederevo liegt im Land von Beograd. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_village_A3_1_text" text="Ustikolina gehört zum Bezirk von Foča. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
-    <string id="balkan_settlement_village_A3_3_text" text="Goražde ist ein Dorf bei Foča. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
-    <string id="balkan_settlement_village_A4_1_text" text="Lukavac liegt im Land von Tuzla. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_village_A4_2_text" text="Živinice gehört zum Bezirk von Tuzla. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
-    <string id="balkan_settlement_village_A4_4_text" text="Kalesija ist ein Dorf bei Tuzla. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
-    <string id="balkan_settlement_village_A5_1_text" text="Sjenica liegt im Land von Novi Pazar. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
-    <string id="balkan_settlement_village_A5_2_text" text="Tutin gehört zum Bezirk von Novi Pazar. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
-    <string id="balkan_settlement_village_A5_3_text" text="Raška ist ein Dorf bei Novi Pazar. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_settlement_village_A3_1_text" text="Bojana gehört zum Bezirk von Sofia. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_village_A3_3_text" text="Samokow ist ein Dorf bei Sofia. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_settlement_village_A4_1_text" text="Langadas liegt im Land von Saloniki. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
+    <string id="balkan_settlement_village_A4_2_text" text="Chalkidona gehört zum Bezirk von Saloniki. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_village_A4_4_text" text="Kalamaria ist ein Dorf bei Saloniki. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_settlement_village_A5_1_text" text="Havsa liegt im Land von Edirne. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
+    <string id="balkan_settlement_village_A5_2_text" text="Lüleburgaz gehört zum Bezirk von Edirne. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
+    <string id="balkan_settlement_village_A5_3_text" text="Uzunköprü ist ein Dorf bei Edirne. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
     <string id="balkan_settlement_village_A6_1_text" text="Laktaši liegt im Land von Banja Luka. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
     <string id="balkan_settlement_village_A6_2_text" text="Kotor Varoš gehört zum Bezirk von Banja Luka. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
     <string id="balkan_settlement_village_A6_3_text" text="Čelinac ist ein Dorf bei Banja Luka. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
@@ -305,55 +290,42 @@
     <string id="balkan_kingdom_empire_s_ruler" text="Rektor" />
     <string id="balkan_kingdom_empire_s_text" text="Ragusa zahlt dem Sultan Tribut und steht unter dem Schutz des Kaisers. Seine Adelshäuser wechseln sich als Rektor ab, und seine Kaufleute sind in jedem Hafen von Venedig bis Istanbul willkommen." />
     <string id="balkan_hero_lord_1_47_text" text="Frano Gozze ist Rektor der Republik. Seine Amtszeit ist kurz, doch die großen Familien der Stadt stehen hinter ihm." />
-    <string id="balkan_settlement_castle_ES1_text" text="Sokol, der „Falke“, sitzt auf einem Felsen über Konavle und bewacht die Grenze zur osmanischen Herzegowina." />
-    <string id="balkan_settlement_castle_ES2_text" text="Lovrijenac steht auf einer Klippe vor den Westmauern Dubrovniks. Über seinem Tor steht: Die Freiheit wird nicht für alles Gold der Welt verkauft." />
     <string id="balkan_settlement_castle_ES3_text" text="Ston bewacht den Hals der Halbinsel Pelješac mit kilometerlangen Mauern. Seine Salinen gehören zu den reichsten Schätzen der Republik." />
-    <string id="balkan_settlement_castle_ES4_text" text="Molunat ist ein kleiner Hafen am Südende von Konavle, die letzte Zuflucht ragusanischer Schiffe vor den venezianischen Gewässern." />
-    <string id="balkan_settlement_castle_ES5_text" text="Šipan ist die größte der Elaphiten-Inseln, mit den Sommersitzen ragusanischer Adliger und dem Rektorenpalast." />
-    <string id="balkan_settlement_castle_ES6_text" text="Trpanj ist ein Hafen im Norden von Pelješac, gegenüber der Neretvamündung und der venezianischen Küste." />
-    <string id="balkan_settlement_castle_ES7_text" text="Mali Ston liegt am anderen Ende der Mauern von Ston, unter dem Turm Koruna. Seine Austernbänke sind berühmt." />
-    <string id="balkan_settlement_castle_ES8_text" text="Janjina wacht über die Mitte der Halbinsel Pelješac und ihre Weinberge." />
-    <string id="balkan_settlement_town_ES1_text" text="Cavtat, das antike Epidaurum, ist der Hafen des fruchtbaren Konavle-Tals." />
-    <string id="balkan_settlement_town_ES2_text" text="Babino Polje ist der Sitz des ragusanischen Grafen der Insel Mljet, zwischen Wäldern und Salzseen." />
-    <string id="balkan_settlement_town_ES3_text" text="Lastovo ist die entfernteste Insel der Republik, Heimat der Fischer und ein Ausguck weit draußen auf dem Meer." />
     <string id="balkan_settlement_town_ES4_text" text="Dubrovnik, die Republik Ragusa, lebt hinter ihren mächtigen Mauern unter dem Wort Libertas. Ihr Rektor wechselt jeden Monat, ihre Schiffe befahren alle Meere, und ihr Tribut an den Sultan erkauft den Frieden. Von dem großen Erdbeben von 1667 erholt sich die Stadt noch immer." />
-    <string id="balkan_settlement_town_ES5_text" text="Lopud auf den Elaphiten ist die Heimat reicher Reeder und Sitz des Grafen der Inseln." />
-    <string id="balkan_settlement_town_ES6_text" text="Orebić auf Pelješac ist eine Stadt der Kapitäne und blickt über den Kanal auf die Insel Korčula." />
-    <string id="balkan_settlement_town_ES7_text" text="Slano in einer stillen Bucht ist Sitz des Grafen des Küstenlands, mit einem kleinen Rektorenpalast." />
-    <string id="balkan_settlement_castle_village_ES1_1_text" text="Dunave ist ein Dorf bei Sokol. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_castle_village_ES2_1_text" text="Pile ist ein Dorf bei Lovrijenac. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_castle_village_ES2_2_text" text="Ploče liegt im Land von Lovrijenac. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_castle_village_ES1_1_text" text="Grahovo ist ein Dorf bei Nikšić. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES2_1_text" text="Njeguši ist ein Dorf bei Cetinje. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES2_2_text" text="Rijeka Crnojevića liegt im Land von Cetinje. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
     <string id="balkan_settlement_castle_village_ES3_1_text" text="Žuljana ist ein Dorf bei Ston. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
     <string id="balkan_settlement_castle_village_ES3_2_text" text="Prapratno liegt im Land von Ston. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_castle_village_ES4_1_text" text="Vitaljina ist ein Dorf bei Molunat. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_castle_village_ES4_2_text" text="Mrcine liegt im Land von Molunat. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_castle_village_ES5_1_text" text="Šipanska Luka ist ein Dorf bei Šipan. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_castle_village_ES6_1_text" text="Donja Vrućica ist ein Dorf bei Trpanj. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_castle_village_ES7_1_text" text="Hodilje ist ein Dorf bei Mali Ston. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_castle_village_ES8_1_text" text="Pijavičino ist ein Dorf bei Janjina. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_castle_village_ES1_2_text" text="Mihanići liegt im Land von Sokol. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES1_2_text" text="Čilipi ist ein Dorf bei Cavtat. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_village_ES1_3_text" text="Mlini liegt im Land von Cavtat. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES1_4_text" text="Gruda ist ein Dorf bei Cavtat. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_castle_village_ES5_2_text" text="Jakljan liegt im Land von Šipan. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES2_2_text" text="Polače liegt im Land von Babino Polje. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES2_3_text" text="Goveđari ist ein Dorf bei Babino Polje. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_village_ES2_4_text" text="Saplunara liegt im Land von Babino Polje. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES3_1_text" text="Ubli ist ein Dorf bei Lastovo. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_village_ES3_2_text" text="Skrivena Luka liegt im Land von Lastovo. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES3_3_text" text="Pasadur ist ein Dorf bei Lastovo. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES4_1_text" text="Sutomore ist ein Dorf bei Bar. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES4_2_text" text="Virpazar liegt im Land von Bar. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_castle_village_ES5_1_text" text="Šas ist ein Dorf bei Ulcinj. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES6_1_text" text="Kaninë ist ein Dorf bei Vlorë. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES7_1_text" text="Kuçovë ist ein Dorf bei Berat. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES8_1_text" text="Filippiada ist ein Dorf bei Arta. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES1_2_text" text="Šavnik liegt im Land von Nikšić. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES1_2_text" text="Struga ist ein Dorf bei Ohrid. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_village_ES1_3_text" text="Resen liegt im Land von Ohrid. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES1_4_text" text="Peštani ist ein Dorf bei Ohrid. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_castle_village_ES5_2_text" text="Vladimir liegt im Land von Ulcinj. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES2_2_text" text="Drisht liegt im Land von Skadar. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES2_3_text" text="Koplik ist ein Dorf bei Skadar. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_village_ES2_4_text" text="Vau i Dejës liegt im Land von Skadar. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES3_1_text" text="Libohovë ist ein Dorf bei Gjirokastër. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_village_ES3_2_text" text="Tepelenë liegt im Land von Gjirokastër. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES3_3_text" text="Delvinë ist ein Dorf bei Gjirokastër. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
     <string id="balkan_settlement_village_ES4_1_text" text="Gruž liegt im Land von Dubrovnik. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_castle_village_ES8_2_text" text="Drače liegt im Land von Janjina. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_castle_village_ES8_2_text" text="Peta liegt im Land von Arta. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
     <string id="balkan_settlement_village_ES4_3_text" text="Lapad ist ein Dorf bei Dubrovnik. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_village_ES5_1_text" text="Koločep liegt im Land von Lopud. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES5_2_text" text="Suđurađ ist ein Dorf bei Lopud. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_village_ES5_3_text" text="Trsteno liegt im Land von Lopud. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES6_1_text" text="Kuna ist ein Dorf bei Orebić. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_village_ES6_2_text" text="Potomje liegt im Land von Orebić. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_castle_village_ES6_2_text" text="Duba liegt im Land von Trpanj. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_village_ES7_1_text" text="Doli ist ein Dorf bei Slano. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
-    <string id="balkan_settlement_village_ES7_2_text" text="Majkovi liegt im Land von Slano. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
-    <string id="balkan_settlement_castle_village_ES7_2_text" text="Broce liegt im Land von Mali Ston. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES5_1_text" text="Kavajë liegt im Land von Durrës. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES5_2_text" text="Shijak ist ein Dorf bei Durrës. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_village_ES5_3_text" text="Krujë liegt im Land von Durrës. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES6_1_text" text="Metsovo ist ein Dorf bei Janina. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_village_ES6_2_text" text="Zitsa liegt im Land von Janina. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_castle_village_ES6_2_text" text="Himarë liegt im Land von Vlorë. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_village_ES7_1_text" text="Suva Reka ist ein Dorf bei Prizren. Seine Bauern bestellen das Land ragusanischer Adelsfamilien und schicken Wein und Öl in die Stadt." />
+    <string id="balkan_settlement_village_ES7_2_text" text="Orahovac liegt im Land von Prizren. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
+    <string id="balkan_settlement_castle_village_ES7_2_text" text="Poliçan liegt im Land von Berat. Viele seiner jungen Männer sind auf ragusanischen Schiffen zur See gefahren." />
     <string id="balkan_kingdom_empire_w" text="Republik Venedig" />
     <string id="balkan_kingdom_empire_w_short" text="Venezianer" />
     <string id="balkan_kingdom_empire_w_title" text="Durchlauchtigste Republik Venedig" />
@@ -361,40 +333,33 @@
     <string id="balkan_kingdom_empire_w_text" text="Venedig hat seine dalmatinische Grenze weit ins Hinterland geschoben und Knin, Sinj und Vrlika genommen. Die Küste gehört dem Markuslöwen, das Hinterland morlakischen Hauptleuten, die der Republik für Land und Sold dienen." />
     <string id="balkan_hero_lord_1_7_text" text="Alvise Mocenigo ist Provveditore generale für Dalmatien und Albanien. Er verwaltet die Provinz im Namen des Dogen." />
     <string id="balkan_settlement_castle_EW1_text" text="Trogir ist eine kleine ummauerte Stadt auf einer Insel, bewacht von der Festung Kamerlengo." />
-    <string id="balkan_settlement_castle_EW2_text" text="Sinj wurde 1686 von den Osmanen erobert. Es bewacht das Tal der Cetina, und seine Besatzung rechnet damit, dass der Feind eines Tages zurückkommt." />
     <string id="balkan_settlement_castle_EW3_text" text="Makarska, ein Hafen unter der steilen Wand des Biokovo, kam 1684 an Venedig." />
     <string id="balkan_settlement_castle_EW4_text" text="Knin wurde 1688 erobert. Seine Festung auf dem Bergrücken über der Krka ist der Schlüssel zum dalmatinischen Hinterland." />
-    <string id="balkan_settlement_castle_EW5_text" text="Novigrad bewacht das gleichnamige schmale Meer, die Hintertür nach Zadar." />
-    <string id="balkan_settlement_castle_EW6_text" text="Klis beherrscht den Bergpass über Split. Mehr als hundert Jahre hielten ihn die Osmanen, bis Venedig ihn 1648 eroberte." />
-    <string id="balkan_settlement_castle_EW7_text" text="Omiš an der Mündung der Cetina war einst ein Piratennest. Heute bewachen seine Türme die Schlucht und die Küste." />
-    <string id="balkan_settlement_castle_EW8_text" text="Vrlika nahe der Quelle der Cetina liegt unter der Festung Prozor und wurde 1688 den Osmanen abgenommen." />
-    <string id="balkan_settlement_town_EW1_text" text="Rab ist eine Inselstadt mit vier Glockentürmen. Ihre Adligen dienen Venedig als Offiziere und Galeerenkapitäne." />
     <string id="balkan_settlement_town_EW2_text" text="Zadar ist die Hauptstadt des venezianischen Dalmatien und Sitz des Provveditore generale. Über dem Landtor wacht der geflügelte Löwe von San Marco." />
-    <string id="balkan_settlement_town_EW3_text" text="Hvar ist ein Stützpunkt der venezianischen Flotte. Unter der Festung auf dem Hügel nehmen die Galeeren Wasser, Wein und Ruderer an Bord." />
     <string id="balkan_settlement_town_EW4_text" text="Šibenik ist bekannt für seine ganz aus Stein gebaute Kathedrale des heiligen Jakob. Die Festungen Sankt Nikolaus und Barone schützen die Stadt von See und Land." />
     <string id="balkan_settlement_town_EW5_text" text="Kotor liegt am Ende einer tiefen Bucht. Seine Mauern klettern den Berg hinter der Stadt hinauf, und seine Seeleute fahren unter dem Banner von San Marco." />
     <string id="balkan_settlement_town_EW6_text" text="Split ist im Palast des Kaisers Diokletian gewachsen. Sein großes Lazarett nimmt Karawanen aus Bosnien auf, und ein großer Teil des Handels mit dem Osmanischen Reich läuft hier durch." />
     <string id="balkan_settlement_castle_village_EW1_1_text" text="Seget ist ein Dorf bei Trogir. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
-    <string id="balkan_settlement_castle_village_EW2_1_text" text="Trilj liegt an der Küste bei Sinj. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
-    <string id="balkan_settlement_castle_village_EW2_2_text" text="Otok ist ein Dorf bei Sinj. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
+    <string id="balkan_settlement_castle_village_EW2_1_text" text="Cividale liegt an der Küste bei Udine. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
+    <string id="balkan_settlement_castle_village_EW2_2_text" text="Palmanova ist ein Dorf bei Udine. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
     <string id="balkan_settlement_castle_village_EW3_1_text" text="Tučepi gehört zum Land von Makarska. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
     <string id="balkan_settlement_castle_village_EW4_1_text" text="Drniš ist ein Dorf bei Knin. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
-    <string id="balkan_settlement_castle_village_EW5_1_text" text="Posedarje liegt an der Küste bei Novigrad. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
-    <string id="balkan_settlement_castle_village_EW5_2_text" text="Obrovac ist ein Dorf bei Novigrad. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
-    <string id="balkan_settlement_castle_village_EW6_1_text" text="Dugopolje gehört zum Land von Klis. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
-    <string id="balkan_settlement_castle_village_EW7_1_text" text="Jesenice ist ein Dorf bei Omiš. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
-    <string id="balkan_settlement_castle_village_EW7_2_text" text="Kostanje gehört zum Land von Omiš. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
-    <string id="balkan_settlement_castle_village_EW8_1_text" text="Kijevo liegt an der Küste bei Vrlika. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
-    <string id="balkan_settlement_village_EW1_1_text" text="Lopar gehört zum Land von Rab. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
-    <string id="balkan_settlement_village_EW1_2_text" text="Pag liegt an der Küste bei Rab. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
-    <string id="balkan_settlement_castle_village_EW6_2_text" text="Kučine liegt an der Küste bei Klis. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
+    <string id="balkan_settlement_castle_village_EW5_1_text" text="Vodnjan liegt an der Küste bei Pula. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
+    <string id="balkan_settlement_castle_village_EW5_2_text" text="Medulin ist ein Dorf bei Pula. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
+    <string id="balkan_settlement_castle_village_EW6_1_text" text="Aigio gehört zum Land von Patras. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
+    <string id="balkan_settlement_castle_village_EW7_1_text" text="Argos ist ein Dorf bei Nauplia. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
+    <string id="balkan_settlement_castle_village_EW7_2_text" text="Tolo gehört zum Land von Nauplia. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
+    <string id="balkan_settlement_castle_village_EW8_1_text" text="Koroni liegt an der Küste bei Modon. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
+    <string id="balkan_settlement_village_EW1_1_text" text="Mestre gehört zum Land von Venezia. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
+    <string id="balkan_settlement_village_EW1_2_text" text="Chioggia liegt an der Küste bei Venezia. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
+    <string id="balkan_settlement_castle_village_EW6_2_text" text="Kalavryta liegt an der Küste bei Patras. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
     <string id="balkan_settlement_castle_village_EW3_2_text" text="Baška Voda liegt an der Küste bei Makarska. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
     <string id="balkan_settlement_village_EW2_2_text" text="Nin ist ein Dorf bei Zadar. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
     <string id="balkan_settlement_village_EW2_3_text" text="Biograd gehört zum Land von Zadar. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
     <string id="balkan_settlement_village_EW2_4_text" text="Preko liegt an der Küste bei Zadar. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
     <string id="balkan_settlement_castle_village_EW4_2_text" text="Kistanje gehört zum Land von Knin. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
-    <string id="balkan_settlement_village_EW3_2_text" text="Stari Grad ist ein Dorf bei Hvar. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
-    <string id="balkan_settlement_village_EW3_3_text" text="Jelsa gehört zum Land von Hvar. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
+    <string id="balkan_settlement_village_EW3_2_text" text="Parga ist ein Dorf bei Preveza. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
+    <string id="balkan_settlement_village_EW3_3_text" text="Vonitsa gehört zum Land von Preveza. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
     <string id="balkan_settlement_village_EW4_1_text" text="Skradin liegt an der Küste bei Šibenik. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
     <string id="balkan_settlement_castle_village_EW1_2_text" text="Okrug gehört zum Land von Trogir. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
     <string id="balkan_settlement_village_EW4_3_text" text="Vodice ist ein Dorf bei Šibenik. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
@@ -402,7 +367,7 @@
     <string id="balkan_settlement_village_EW5_1_text" text="Perast liegt an der Küste bei Kotor. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
     <string id="balkan_settlement_village_EW5_2_text" text="Risan ist ein Dorf bei Kotor. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
     <string id="balkan_settlement_village_EW6_1_text" text="Kaštel Sućurac gehört zum Land von Split. Auf seinen steinigen Terrassen wachsen Oliven, Wein und Feigen." />
-    <string id="balkan_settlement_castle_village_EW8_2_text" text="Cetina ist ein Dorf bei Vrlika. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
+    <string id="balkan_settlement_castle_village_EW8_2_text" text="Navarino ist ein Dorf bei Modon. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
     <string id="balkan_settlement_village_EW6_3_text" text="Solin liegt an der Küste bei Split. Seine Männer fangen Sardinen und rudern auf den Galeeren, wenn Venedig ruft." />
     <string id="balkan_settlement_village_EW6_4_text" text="Stobreč ist ein Dorf bei Split. Morlakische Familien, die im Krieg aus dem Osmanischen Reich kamen, haben sich hier niedergelassen und dienen Venedig als Grenzsoldaten." />
     <string id="balkan_event_karlowitz_1699" text="Der Friede von Karlowitz" />
@@ -422,9 +387,9 @@
     <string id="balkan_rise_kapetan_goal" text="Werdet Kapetan einer Grenzfestung: Besitzt als Mitglied des Osmanischen Reichs eine eigene Burg." />
     <string id="balkan_rise_kapetan_success" text="Eine Festung der Grenze gehört Euch, und man nennt Euch Kapetan. Von nun an geht Ihr Euren eigenen Weg." />
     <string id="balkan_rise_hajduk" text="Hajduk in den Bergen" />
-    <string id="balkan_rise_hajduk_text" text="Die Männer des Subaşı haben Euer Haus wegen einer Schuld niedergebrannt, die Euer Vater nie hatte. Mit einer Handvoll Freunde seid Ihr in die Wälder über der Drina gegangen. Die Dörfler bringen Euch Brot und Nachrichten, und der Pascha hat einen Preis auf Euren Kopf ausgesetzt." />
+    <string id="balkan_rise_hajduk_text" text="Die Männer des Subaşı haben Euer Haus wegen einer Schuld niedergebrannt, die Euer Vater nie hatte. Mit einer Handvoll Freunde seid Ihr in die Wälder über dem Ibar gegangen. Die Dörfler bringen Euch Brot und Nachrichten, und der Pascha hat einen Preis auf Euren Kopf ausgesetzt." />
     <string id="balkan_rise_hajduk_goal" text="Baut Eure eigene Bande auf: Führt mindestens {COUNT} Männer an." />
-    <string id="balkan_rise_hajduk_success" text="Eure Bande ist von der Drina bis zum Meer bekannt, und die Lieder erzählen schon von Euch. Von nun an geht Ihr Euren eigenen Weg." />
+    <string id="balkan_rise_hajduk_success" text="Eure Bande ist vom Ibar bis zum Meer bekannt, und die Lieder erzählen schon von Euch. Von nun an geht Ihr Euren eigenen Weg." />
     <string id="balkan_rise_bauer" text="Bauer an der Save" />
     <string id="balkan_rise_bauer_text" text="Ihr seid in Županja geboren, einem Dorf der Militärgrenze an der Save. Jenseits des Flusses liegt das osmanische Bosnien, und jeden Abend seht Ihr den Rauch seiner Wachfeuer. Eurer Familie gehören eine Hütte, ein Acker und die Pflicht, zur Waffe zu greifen, sobald die Trommel schlägt. Die Ernte ist verdorben, der Steuereintreiber kam trotzdem, und Ihr habt beschlossen, dass das Leben mehr sein muss als Pflügen und Warten auf den nächsten Überfall. Zwei Burschen aus dem Dorf kommen mit Euch." />
     <string id="balkan_rise_bauer_goal" text="Werdet Offizier der Grenzer: Dient den Habsburgern, als Söldner oder Vasall, und bringt Euren Clan auf Stufe {COUNT}." />
