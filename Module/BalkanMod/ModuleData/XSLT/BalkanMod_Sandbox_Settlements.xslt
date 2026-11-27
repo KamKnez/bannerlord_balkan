@@ -449,6 +449,8 @@
 	<xsl:template match="Settlement[@id='village_V7_2']/Components/Village/@village_type">
 		<xsl:attribute name="village_type">VillageType.vineyard</xsl:attribute>
 	</xsl:template>
+	<!-- Krim-Khanat (data/reiche/krim.toml) -->
+	<!-- Königreich Neapel (data/reiche/neapel.toml) -->
 	<!-- Osmanisches Reich (data/reiche/osmanen.toml) -->
 	<xsl:template match="Settlement[@id='town_A1']">
 		<xsl:copy>
@@ -980,6 +982,7 @@
 	<xsl:template match="Settlement[@id='village_A7_2']/Components/Village/@village_type">
 		<xsl:attribute name="village_type">VillageType.europe_horse_ranch</xsl:attribute>
 	</xsl:template>
+	<!-- Polen-Litauen (data/reiche/polen.toml) -->
 	<!-- Republik Ragusa (data/reiche/ragusa.toml) -->
 	<xsl:template match="Settlement[@id='castle_ES1']">
 		<xsl:copy>

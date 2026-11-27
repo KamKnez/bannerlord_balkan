@@ -142,8 +142,11 @@ Varna und Nordost-Bulgarien bulgarisch, ungarische Städte im Norden ungarisch, 
 Die drei Reiche heißen jetzt Polen-Litauen (Wahlmonarchie, August II. 1697 gewählt; https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth),
 Krim-Khanat (Khane der Giray, Hauptstadt Bahçeseray; https://en.wikipedia.org/wiki/Crimean_Khanate) und
 Königreich Neapel (spanisches Vizekönigreich 1504 bis 1714; https://en.wikipedia.org/wiki/Kingdom_of_Naples), siehe `[reich.*]`
-in `data/weltkarte/namen.toml`. Rom und die Adria-Städte des Kirchenstaats gehören im Spiel vorerst auch zu Neapel.
-Herrscher, Clans und Lords sind noch die des Spiels.
+in `data/reiche/polen.toml`, `krim.toml` und `neapel.toml`. Rom und die Adria-Städte des Kirchenstaats gehören im Spiel vorerst auch zu Neapel.
+Herrscher: August II. (Polen, gewählt 1697), Devlet II. Giray (Khan 1699 bis 1702), Luis Francisco de la Cerda (Vizekönig 1696 bis 1702).
+Clans: Magnatenfamilien (Sapieha, Radziwiłł, Potocki, Pac, Czartoryski, Wiśniowiecki, Zamoyski, Koniecpolski), die Clans der
+Qaraçı Beys und vier Nogai-Horden, neapolitanische Häuser (Carafa, Caracciolo, Pignatelli, Sanseverino, d'Ávalos, Acquaviva) und die
+römischen Orsini. Quellen im Kopf der Dateien. Die Vornamen der übrigen Lords sind reihum verteilt, nicht einzeln belegt.
 
 ## Noch offen
 

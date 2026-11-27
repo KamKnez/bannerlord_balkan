@@ -87,6 +87,129 @@
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
+	<!-- Krim-Khanat (data/reiche/krim.toml) -->
+	<xsl:template match="Faction[@id='clan_khuzait_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Giray</xsl:attribute>
+			<xsl:attribute name="owner">Hero.lord_6_1</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_khuzait_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Şirin</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_khuzait_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Barın</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_khuzait_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Arğın</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_khuzait_5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Qıpçaq</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_khuzait_6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_clan_khuzait_6}of the Budjak Horde</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_khuzait_7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_clan_khuzait_7}of the Yedisan Horde</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_khuzait_8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_clan_khuzait_8}of the Jamboyluk Horde</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_khuzait_9']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_clan_khuzait_9}of the Yedickul Horde</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Königreich Neapel (data/reiche/neapel.toml) -->
+	<xsl:template match="Faction[@id='clan_battania_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}de la Cerda</xsl:attribute>
+			<xsl:attribute name="owner">Hero.lord_5_1</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_battania_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Carafa</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_battania_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Caracciolo</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_battania_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Pignatelli</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_battania_5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Sanseverino</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_battania_6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}d'Ávalos</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_battania_7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Acquaviva</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_battania_8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Orsini</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
 	<!-- Osmanisches Reich (data/reiche/osmanen.toml) -->
 	<xsl:template match="Faction[@id='clan_aserai_1']">
 		<xsl:copy>
@@ -149,6 +272,71 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Krupić</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Polen-Litauen (data/reiche/polen.toml) -->
+	<xsl:template match="Faction[@id='clan_sturgia_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_clan_sturgia_1}of Saxony</xsl:attribute>
+			<xsl:attribute name="owner">Hero.lord_2_1</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_sturgia_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Sapieha</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_sturgia_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Radziwiłł</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_sturgia_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Potocki</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_sturgia_5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Pac</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_sturgia_6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Czartoryski</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_sturgia_7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Wiśniowiecki</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_sturgia_8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Zamoyski</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Faction[@id='clan_sturgia_9']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=!}Koniecpolski</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

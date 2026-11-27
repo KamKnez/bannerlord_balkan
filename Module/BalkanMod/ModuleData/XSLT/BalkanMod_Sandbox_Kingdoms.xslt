@@ -23,6 +23,36 @@
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
+	<!-- Krim-Khanat (data/reiche/krim.toml) -->
+	<xsl:template match="Kingdom[@id='khuzait']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_kingdom_khuzait}Crimean Khanate</xsl:attribute>
+			<xsl:attribute name="short_name">{=balkan_kingdom_khuzait_short}Crimean Tatars</xsl:attribute>
+			<xsl:attribute name="title">{=balkan_kingdom_khuzait_title}Khanate of Crimea</xsl:attribute>
+			<xsl:attribute name="ruler_title">{=balkan_kingdom_khuzait_ruler}Khan</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_khuzait_text}The khans of the house of Giray rule from Bahçeseray under the protection of the Ottoman Sultan, together with the beys of the clans Şirin, Barın, Arğın and Qıpçaq. The Nogai hordes of the steppe serve them as vassals. The Peace of Karlowitz in 1699 forbade further raids into the lands of their neighbours.</xsl:attribute>
+			<xsl:attribute name="color">FF2B7A9E</xsl:attribute>
+			<xsl:attribute name="color2">FFE8C547</xsl:attribute>
+			<xsl:attribute name="owner">Hero.lord_6_1</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Königreich Neapel (data/reiche/neapel.toml) -->
+	<xsl:template match="Kingdom[@id='battania']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_kingdom_battania}Kingdom of Naples</xsl:attribute>
+			<xsl:attribute name="short_name">{=balkan_kingdom_battania_short}Neapolitans</xsl:attribute>
+			<xsl:attribute name="title">{=balkan_kingdom_battania_title}Viceroyalty of Naples under the Spanish Crown</xsl:attribute>
+			<xsl:attribute name="ruler_title">{=balkan_kingdom_battania_ruler}Viceroy</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_battania_text}Since 1504 the Kingdom of Naples, with Campania, Calabria, Apulia, Basilicata, Abruzzo and Molise, has belonged to the Spanish crown and is governed by a Spanish viceroy. Its great houses, the Carafa, Caracciolo, Pignatelli and Sanseverino, sit in the capital. In this game the kingdom also holds Rome and the cities of the Papal States on the Adriatic.</xsl:attribute>
+			<xsl:attribute name="color">FFF2C230</xsl:attribute>
+			<xsl:attribute name="color2">FF8B1A1A</xsl:attribute>
+			<xsl:attribute name="owner">Hero.lord_5_1</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
 	<!-- Osmanisches Reich (data/reiche/osmanen.toml) -->
 	<xsl:template match="Kingdom[@id='aserai']">
 		<xsl:copy>
@@ -38,6 +68,21 @@
 			<xsl:attribute name="banner_key">11.83.83.4345.4345.764.764.1.0.0.463.172.172.466.466.764.764.1.0.0</xsl:attribute>
 			<xsl:attribute name="primary_banner_color">0xffD22D33</xsl:attribute>
 			<xsl:attribute name="secondary_banner_color">0xffffffff</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Polen-Litauen (data/reiche/polen.toml) -->
+	<xsl:template match="Kingdom[@id='sturgia']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_kingdom_sturgia}Polish–Lithuanian Commonwealth</xsl:attribute>
+			<xsl:attribute name="short_name">{=balkan_kingdom_sturgia_short}Poles</xsl:attribute>
+			<xsl:attribute name="title">{=balkan_kingdom_sturgia_title}Commonwealth of the Two Nations</xsl:attribute>
+			<xsl:attribute name="ruler_title">{=balkan_kingdom_sturgia_ruler}King</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_sturgia_text}The Commonwealth of Poland and Lithuania is an elective monarchy: its nobles elect the king for life and guard their Golden Liberty. Since the second half of the 17th century the great magnate families hold the real power, and in 1700 the Sapieha fight the other Lithuanian nobles in open civil war.</xsl:attribute>
+			<xsl:attribute name="color">FFDC143C</xsl:attribute>
+			<xsl:attribute name="color2">FFF4F1EA</xsl:attribute>
+			<xsl:attribute name="owner">Hero.lord_2_1</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -76,42 +121,6 @@
 			<xsl:attribute name="banner_key">11.14.14.4345.4345.764.764.1.0.0.160.15.15.497.497.764.764.1.0.0</xsl:attribute>
 			<xsl:attribute name="primary_banner_color">0xff8D291A</xsl:attribute>
 			<xsl:attribute name="secondary_banner_color">0xffF7BF46</xsl:attribute>
-			<xsl:apply-templates select="node()" />
-		</xsl:copy>
-	</xsl:template>
-	<!-- Königreich Neapel (data/weltkarte/namen.toml) -->
-	<xsl:template match="Kingdom[@id='battania']">
-		<xsl:copy>
-			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=balkan_kingdom_battania}Kingdom of Naples</xsl:attribute>
-			<xsl:attribute name="short_name">{=balkan_kingdom_battania_short}Neapolitans</xsl:attribute>
-			<xsl:attribute name="title">{=balkan_kingdom_battania_title}Viceroyalty of Naples under the Spanish Crown</xsl:attribute>
-			<xsl:attribute name="ruler_title">{=balkan_kingdom_battania_ruler}Viceroy</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_kingdom_battania_text}Since 1504 the Kingdom of Naples, with Campania, Calabria, Apulia, Basilicata, Abruzzo and Molise, has belonged to the Spanish crown and is governed by a Spanish viceroy. In this game the kingdom also holds Rome and the cities of the Papal States on the Adriatic.</xsl:attribute>
-			<xsl:apply-templates select="node()" />
-		</xsl:copy>
-	</xsl:template>
-	<!-- Krim-Khanat (data/weltkarte/namen.toml) -->
-	<xsl:template match="Kingdom[@id='khuzait']">
-		<xsl:copy>
-			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=balkan_kingdom_khuzait}Crimean Khanate</xsl:attribute>
-			<xsl:attribute name="short_name">{=balkan_kingdom_khuzait_short}Crimean Tatars</xsl:attribute>
-			<xsl:attribute name="title">{=balkan_kingdom_khuzait_title}Khanate of Crimea</xsl:attribute>
-			<xsl:attribute name="ruler_title">{=balkan_kingdom_khuzait_ruler}Khan</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_kingdom_khuzait_text}The khans of the house of Giray rule from Bahçeseray under the protection of the Ottoman Sultan. The Peace of Karlowitz in 1699 forbade further raids into the lands of their neighbours.</xsl:attribute>
-			<xsl:apply-templates select="node()" />
-		</xsl:copy>
-	</xsl:template>
-	<!-- Polen-Litauen (data/weltkarte/namen.toml) -->
-	<xsl:template match="Kingdom[@id='sturgia']">
-		<xsl:copy>
-			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=balkan_kingdom_sturgia}Polish–Lithuanian Commonwealth</xsl:attribute>
-			<xsl:attribute name="short_name">{=balkan_kingdom_sturgia_short}Poles</xsl:attribute>
-			<xsl:attribute name="title">{=balkan_kingdom_sturgia_title}Commonwealth of the Two Nations</xsl:attribute>
-			<xsl:attribute name="ruler_title">{=balkan_kingdom_sturgia_ruler}King</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_kingdom_sturgia_text}The Commonwealth of Poland and Lithuania is an elective monarchy: its nobles elect the king for life and guard their Golden Liberty. In 1697 they elected Frederick Augustus of Saxony, who was crowned as Augustus II.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

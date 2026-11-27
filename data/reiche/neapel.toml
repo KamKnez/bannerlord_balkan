@@ -1,0 +1,208 @@
+# Königreich Neapel. Ersetzt Battania.
+# Quellen: https://en.wikipedia.org/wiki/Kingdom_of_Naples (spanisches Vizekönigreich 1504 bis 1714),
+# https://en.wikipedia.org/wiki/List_of_viceroys_of_Naples (Luis Francisco de la Cerda y Aragón Vizekönig 1696 bis 1702),
+# Adelsfamilien des Königreichs: https://en.wikipedia.org/wiki/House_of_Carafa, https://en.wikipedia.org/wiki/House_of_Caracciolo,
+# https://en.wikipedia.org/wiki/House_of_Pignatelli (Papst Innozenz XII., 1691 bis 1700), https://en.wikipedia.org/wiki/House_of_Sanseverino,
+# https://en.wikipedia.org/wiki/House_of_%C3%81valos, https://en.wikipedia.org/wiki/House_of_Acquaviva; die Orsini als römische Familie
+# (Herzöge von Bracciano, https://en.wikipedia.org/wiki/Orsini_family), weil Rom im Spiel zu diesem Reich gehört.
+# Die Vornamen der Lords sind reihum aus data/namen/italiener.txt verteilt.
+# Aufbau der Datei: siehe data/reiche/README.md
+
+reich_id = "battania"
+kultur_id = "battania"
+kultur_wechseln = false
+farben = ["FFF2C230", "FF8B1A1A"]
+herrscher = "lord_5_1"
+siedlungen = []
+
+name = { en = "Kingdom of Naples", de = "Königreich Neapel" }
+kurzname = { en = "Neapolitans", de = "Neapolitaner" }
+titel = { en = "Viceroyalty of Naples under the Spanish Crown", de = "Vizekönigreich Neapel unter der spanischen Krone" }
+herrschertitel = { en = "Viceroy", de = "Vizekönig" }
+
+[text]
+en = """
+Since 1504 the Kingdom of Naples, with Campania, Calabria, Apulia, Basilicata, Abruzzo and Molise, has belonged to the Spanish crown and is governed by a Spanish viceroy. Its great houses, the Carafa, Caracciolo, Pignatelli and Sanseverino, sit in the capital. In this game the kingdom also holds Rome and the cities of the Papal States on the Adriatic.
+"""
+de = """
+Seit 1504 gehört das Königreich Neapel mit Kampanien, Kalabrien, Apulien, der Basilikata, den Abruzzen und Molise zur spanischen Krone und wird von einem spanischen Vizekönig regiert. Seine großen Häuser, die Carafa, Caracciolo, Pignatelli und Sanseverino, sitzen in der Hauptstadt. Im Spiel gehören auch Rom und die Städte des Kirchenstaats an der Adria dazu.
+"""
+
+[herrscher_text]
+en = "Luis Francisco de la Cerda y Aragón has been Viceroy of Naples since 1696, first for King Charles II of Spain."
+de = "Luis Francisco de la Cerda y Aragón ist seit 1696 Vizekönig von Neapel, zuerst für König Karl II. von Spanien."
+
+[[clan]]
+id = "clan_battania_1"  # vorher fen Gruffendoc, Oberhaupt Hero.lord_5_1
+name = "de la Cerda"
+[[clan.lord]]
+id = "lord_5_1"
+name = "Luis Francisco"  # vorher Caladog
+[[clan.lord]]
+id = "lord_5_1_1"
+name = "Elena"
+weiblich = true  # vorher Merag
+[[clan.lord]]
+id = "lord_5_7"
+name = "Alvise"  # vorher Mengus
+[[clan.lord]]
+id = "lord_5_10"
+name = "Lucia"
+weiblich = true  # vorher Corein
+[[clan.lord]]
+id = "lord_5_13"
+name = "Francesco"  # vorher Muinser
+[[clan.lord]]
+id = "lord_5_13_1"
+name = "Caterina"
+weiblich = true  # vorher Beasag
+[[clan.lord]]
+id = "lord_5_131"
+name = "Girolamo"  # vorher Rath
+
+[[clan]]
+id = "clan_battania_2"  # vorher fen Derngil, Oberhaupt Hero.lord_5_3
+name = "Carafa"
+[[clan.lord]]
+id = "lord_5_3"
+name = "Marco"  # vorher Ergeon
+[[clan.lord]]
+id = "lord_5_3_1"
+name = "Isabella"
+weiblich = true  # vorher Ranaon
+[[clan.lord]]
+id = "lord_5_3_2"
+name = "Chiara"
+weiblich = true  # vorher Ladogual
+[[clan.lord]]
+id = "lord_5_4"
+name = "Laura"
+weiblich = true  # vorher Nywin
+[[clan.lord]]
+id = "lord_5_8"
+name = "Pietro"  # vorher Sein
+[[clan.lord]]
+id = "lord_5_11"
+name = "Cecilia"
+weiblich = true  # vorher Alynneth
+
+[[clan]]
+id = "clan_battania_3"  # vorher fen Uvain, Oberhaupt Hero.lord_5_5
+name = "Caracciolo"
+[[clan.lord]]
+id = "lord_5_5"
+name = "Giovanni"  # vorher Melidir
+[[clan.lord]]
+id = "lord_5_5_1"
+name = "Paolina"
+weiblich = true  # vorher Eilidh
+[[clan.lord]]
+id = "lord_5_6"
+name = "Marietta"
+weiblich = true  # vorher Alcaea
+[[clan.lord]]
+id = "lord_5_9"
+name = "Lorenzo"  # vorher Culharn
+[[clan.lord]]
+id = "lord_5_91"
+name = "Andrea"  # vorher Tegan
+[[clan.lord]]
+id = "lord_5_12"
+name = "Elisabetta"
+weiblich = true  # vorher Wythuin
+
+[[clan]]
+id = "clan_battania_4"  # vorher fen Penraic, Oberhaupt Hero.lord_5_14
+name = "Pignatelli"
+[[clan.lord]]
+id = "lord_5_14"
+name = "Nicolò"  # vorher Luichan
+[[clan.lord]]
+id = "lord_5_14_1"
+name = "Orsola"
+weiblich = true  # vorher Eabyr
+[[clan.lord]]
+id = "lord_5_19"
+name = "Zuane"  # vorher Fenagan
+[[clan.lord]]
+id = "lord_5_22"
+name = "Antonio"  # vorher Fiarad
+
+[[clan]]
+id = "clan_battania_5"  # vorher fen Giall, Oberhaupt Hero.lord_5_16
+name = "Sanseverino"
+[[clan.lord]]
+id = "lord_5_16"
+name = "Domenico"  # vorher Aeron
+[[clan.lord]]
+id = "lord_5_16_1"
+name = "Benedetta"
+weiblich = true  # vorher Liasin
+[[clan.lord]]
+id = "lord_5_16_2"
+name = "Elena"
+weiblich = true  # vorher Gawen
+[[clan.lord]]
+id = "lord_5_20"
+name = "Giacomo"  # vorher Siaramus
+
+[[clan]]
+id = "clan_battania_6"  # vorher fen Eingal, Oberhaupt Hero.lord_5_17
+name = "d'Ávalos"
+[[clan.lord]]
+id = "lord_5_17"
+name = "Leonardo"  # vorher Aradwyr
+[[clan.lord]]
+id = "lord_5_17_1"
+name = "Lucia"
+weiblich = true  # vorher Brighan
+[[clan.lord]]
+id = "lord_5_21"
+name = "Sebastiano"  # vorher Carfyd
+[[clan.lord]]
+id = "lord_5_21_1"
+name = "Caterina"
+weiblich = true  # vorher Beathag
+[[clan.lord]]
+id = "lord_5_21_2"
+name = "Isabella"
+weiblich = true  # vorher Taorse
+
+[[clan]]
+id = "clan_battania_7"  # vorher fen Morcar, Oberhaupt Hero.lord_5_15
+name = "Acquaviva"
+[[clan.lord]]
+id = "lord_5_15"
+name = "Bernardo"  # vorher Pryndor
+[[clan.lord]]
+id = "lord_5_15_1"
+name = "Chiara"
+weiblich = true  # vorher Floraidh
+[[clan.lord]]
+id = "lord_5_15_2"
+name = "Daniele"  # vorher Beitrin
+[[clan.lord]]
+id = "lord_5_15_3"
+name = "Laura"
+weiblich = true  # vorher Diarbhain
+[[clan.lord]]
+id = "lord_5_18"
+name = "Vettor"  # vorher Branoc
+[[clan.lord]]
+id = "lord_5_18_1"
+name = "Cecilia"
+weiblich = true  # vorher Seonag
+
+[[clan]]
+id = "clan_battania_8"  # vorher fen Caernacht, Oberhaupt Hero.lord_B8_l
+name = "Orsini"
+[[clan.lord]]
+id = "lord_B8_l"
+name = "Paolina"
+weiblich = true  # vorher Maireas
+[[clan.lord]]
+id = "lord_B8_s"
+name = "Alvise"  # vorher Rodarac
+[[clan.lord]]
+id = "lord_B8_c"
+name = "Francesco"  # vorher Guaran

@@ -553,18 +553,16 @@
 	</xsl:template>
 	<xsl:template match="clan_names" mode="balkan_polen">
 		<clan_names>
-			<name name="{{=!}}Sobieski" />
-			<name name="{{=!}}Potocki" />
-			<name name="{{=!}}Lubomirski" />
-			<name name="{{=!}}Radziwiłł" />
-			<name name="{{=!}}Sapieha" />
-			<name name="{{=!}}Jabłonowski" />
-			<name name="{{=!}}Zamoyski" />
-			<name name="{{=!}}Wiśniowiecki" />
-			<name name="{{=!}}Leszczyński" />
 			<name name="{{=!}}Czartoryski" />
-			<name name="{{=!}}Sieniawski" />
+			<name name="{{=!}}Potocki" />
+			<name name="{{=!}}Wiśniowiecki" />
+			<name name="{{=!}}Zamoyski" />
+			<name name="{{=!}}Radziwiłł" />
+			<name name="{{=!}}Pac" />
+			<name name="{{=!}}Sapieha" />
+			<name name="{{=!}}Kalinowski" />
 			<name name="{{=!}}Koniecpolski" />
+			<name name="{{=!}}Tarnowski" />
 		</clan_names>
 	</xsl:template>
 	<!-- Ragusaner: neue Kultur 'ragusa' als Kopie von 'empire' (data/kulturen/ragusaner.toml) -->
