@@ -20,15 +20,15 @@ herrschertitel = { en = "Ban", de = "Ban" }
 
 [text]
 en = """
-After the Peace of Karlowitz the Habsburgs hold Croatia and Slavonia again up to the Una and the Sava. The emperor is far away in Vienna; on the frontier the Ban of Croatia leads the nobles and the border regiments.
+After the Great Turkish War and the Peace of Karlowitz the Habsburgs hold Croatia and Slavonia again. The emperor is far away in Vienna; at home the Ban of Croatia, his viceroy, leads the nobles of the kingdom.
 """
 de = """
-Nach dem Frieden von Karlowitz halten die Habsburger Kroatien und Slawonien wieder bis an Una und Save. Der Kaiser ist fern in Wien, an der Grenze führt der Ban von Kroatien den Adel und die Grenzregimenter.
+Nach dem Großen Türkenkrieg und dem Frieden von Karlowitz halten die Habsburger Kroatien und Slawonien wieder. Der Kaiser ist fern in Wien, im Land führt der Ban von Kroatien als sein Vizekönig den Adel des Königreichs.
 """
 
 [herrscher_text]
-en = "Adam Batthyány is Ban of Croatia. He fought in the great war against the Ottomans and now has to secure what was won."
-de = "Adam Batthyány ist Ban von Kroatien. Er hat im großen Türkenkrieg gekämpft und muss nun sichern, was gewonnen wurde."
+en = "Adam Batthyány is Ban of Croatia. He has been Ban since 1693, fought in the Great Turkish War and now has to secure what was won."
+de = "Adam Batthyány ist Ban von Kroatien. Er ist seit 1693 Ban, hat im Großen Türkenkrieg gekämpft und muss nun sichern, was gewonnen wurde."
 
 
 # Wappen: schwarzer Adler (Zeichen des Westlichen Imperiums) auf Gold.

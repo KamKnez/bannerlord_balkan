@@ -72,15 +72,15 @@ herrschertitel = { en = "Rector", de = "Rektor" }
 
 [text]
 en = """
-Ragusa pays tribute to the Sultan and stays under the protection of the Emperor. Its noble houses take turns as Rector, and its merchants are welcome in every port from Venice to Istanbul.
+Ragusa has paid tribute to the Sultan since 1458, and since 1684 it also stands under the protection of the Habsburg emperor. The Rector, head of the government, comes from the noble houses of the city, and the office changes hands often.
 """
 de = """
-Ragusa zahlt dem Sultan Tribut und steht unter dem Schutz des Kaisers. Seine Adelshäuser wechseln sich als Rektor ab, und seine Kaufleute sind in jedem Hafen von Venedig bis Istanbul willkommen.
+Ragusa zahlt dem Sultan seit 1458 Tribut und steht seit 1684 zugleich unter dem Schutz des Habsburger Kaisers. Der Rektor, das Haupt der Regierung, kommt aus den Adelshäusern der Stadt, und das Amt wechselt oft.
 """
 
 [herrscher_text]
-en = "Frano Gozze is Rector of the Republic. His term is short, but the great families of the city stand behind him."
-de = "Frano Gozze ist Rektor der Republik. Seine Amtszeit ist kurz, doch die großen Familien der Stadt stehen hinter ihm."
+en = "Vladislav Gozze is Rector of the Republic. His term is short, but the great families of the city stand behind him."
+de = "Vladislav Gozze ist Rektor der Republik. Seine Amtszeit ist kurz, doch die großen Familien der Stadt stehen hinter ihm."
 
 
 # Wappen: blaues Zeichen des Südlichen Imperiums auf Weiß.
@@ -120,7 +120,7 @@ name = "Anica"
 weiblich = true  # 21 Jahre, vorher Ira
 [[clan.lord]]
 id = "lord_1_47"
-name = "Frano"
+name = "Vladislav"
 weiblich = false  # 45 Jahre, vorher Ulbos
 [[clan.lord]]
 id = "lord_1_47_1"

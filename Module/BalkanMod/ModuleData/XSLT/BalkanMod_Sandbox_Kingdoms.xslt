@@ -13,7 +13,7 @@
 			<xsl:attribute name="short_name">{=balkan_kingdom_vlandia_short}Habsburgs</xsl:attribute>
 			<xsl:attribute name="title">{=balkan_kingdom_vlandia_title}Kingdom of Croatia-Slavonia under the Habsburg Crown</xsl:attribute>
 			<xsl:attribute name="ruler_title">{=balkan_kingdom_vlandia_ruler}Ban</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_kingdom_vlandia_text}After the Peace of Karlowitz the Habsburgs hold Croatia and Slavonia again up to the Una and the Sava. The emperor is far away in Vienna; on the frontier the Ban of Croatia leads the nobles and the border regiments.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_vlandia_text}After the Great Turkish War and the Peace of Karlowitz the Habsburgs hold Croatia and Slavonia again. The emperor is far away in Vienna; at home the Ban of Croatia, his viceroy, leads the nobles of the kingdom.</xsl:attribute>
 			<xsl:attribute name="color">FF1A1A1A</xsl:attribute>
 			<xsl:attribute name="color2">FFE8C547</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_4_1</xsl:attribute>
@@ -31,7 +31,7 @@
 			<xsl:attribute name="short_name">{=balkan_kingdom_aserai_short}Ottomans</xsl:attribute>
 			<xsl:attribute name="title">{=balkan_kingdom_aserai_title}Eyalet of Bosnia</xsl:attribute>
 			<xsl:attribute name="ruler_title">{=balkan_kingdom_aserai_ruler}Beylerbey</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_kingdom_aserai_text}Bosnia is now the frontier province of the Ottoman Empire. The beylerbey still holds court in burned Sarajevo, though Travnik is already being readied as his new seat, and the captaincies along the Una, Sava and Drina guard the border against Habsburgs and Venetians.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_aserai_text}After the Peace of Karlowitz Bosnia is the frontier province of the Ottoman Empire. Sarajevo was burned in the war, so the pasha's seat is moving to Travnik. Twelve captaincies, most of them along the border, guard it against Habsburgs and Venetians.</xsl:attribute>
 			<xsl:attribute name="color">FF9E1B1B</xsl:attribute>
 			<xsl:attribute name="color2">FF1E6B3A</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_3_1</xsl:attribute>
@@ -49,7 +49,7 @@
 			<xsl:attribute name="short_name">{=balkan_kingdom_empire_s_short}Ragusans</xsl:attribute>
 			<xsl:attribute name="title">{=balkan_kingdom_empire_s_title}Republic of Ragusa</xsl:attribute>
 			<xsl:attribute name="ruler_title">{=balkan_kingdom_empire_s_ruler}Rector</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_kingdom_empire_s_text}Ragusa pays tribute to the Sultan and stays under the protection of the Emperor. Its noble houses take turns as Rector, and its merchants are welcome in every port from Venice to Istanbul.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_empire_s_text}Ragusa has paid tribute to the Sultan since 1458, and since 1684 it also stands under the protection of the Habsburg emperor. The Rector, head of the government, comes from the noble houses of the city, and the office changes hands often.</xsl:attribute>
 			<xsl:attribute name="color">FFF2EFE6</xsl:attribute>
 			<xsl:attribute name="color2">FF1F3E8C</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_1_47</xsl:attribute>
@@ -68,7 +68,7 @@
 			<xsl:attribute name="short_name">{=balkan_kingdom_empire_w_short}Venetians</xsl:attribute>
 			<xsl:attribute name="title">{=balkan_kingdom_empire_w_title}Most Serene Republic of Venice</xsl:attribute>
 			<xsl:attribute name="ruler_title">{=balkan_kingdom_empire_w_ruler}Provveditore Generale</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_kingdom_empire_w_text}Venice has pushed its Dalmatian border deep inland, taking Knin, Sinj and Vrlika. The coast belongs to the Lion of Saint Mark, the hinterland to Morlach captains who serve the Republic for land and pay.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_kingdom_empire_w_text}Venice has pushed its Dalmatian border deep inland, taking Knin, Sinj and Vrlika. The coast belongs to the Lion of Saint Mark, in the hinterland Venice relies on Morlach captains who serve the Republic.</xsl:attribute>
 			<xsl:attribute name="color">FF8C1C13</xsl:attribute>
 			<xsl:attribute name="color2">FFE8C547</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_1_7</xsl:attribute>

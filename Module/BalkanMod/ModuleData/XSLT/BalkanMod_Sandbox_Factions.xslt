@@ -96,14 +96,14 @@
 	<xsl:template match="Faction[@id='clan_aserai_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Atlagić</xsl:attribute>
+			<xsl:attribute name="name">{=!}Beširević</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Faction[@id='clan_aserai_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Crnčić</xsl:attribute>
+			<xsl:attribute name="name">{=!}Hadžalić</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -145,7 +145,7 @@
 	<xsl:template match="Faction[@id='clan_aserai_9']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Predojević</xsl:attribute>
+			<xsl:attribute name="name">{=!}Krupić</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

@@ -66,15 +66,15 @@ herrschertitel = { en = "Provveditore Generale", de = "Provveditore generale" }
 
 [text]
 en = """
-Venice has pushed its Dalmatian border deep inland, taking Knin, Sinj and Vrlika. The coast belongs to the Lion of Saint Mark, the hinterland to Morlach captains who serve the Republic for land and pay.
+Venice has pushed its Dalmatian border deep inland, taking Knin, Sinj and Vrlika. The coast belongs to the Lion of Saint Mark, in the hinterland Venice relies on Morlach captains who serve the Republic.
 """
 de = """
-Venedig hat seine dalmatinische Grenze weit ins Hinterland geschoben und Knin, Sinj und Vrlika genommen. Die Küste gehört dem Markuslöwen, das Hinterland morlakischen Hauptleuten, die der Republik für Land und Sold dienen.
+Venedig hat seine dalmatinische Grenze weit ins Hinterland geschoben und Knin, Sinj und Vrlika genommen. Die Küste gehört dem Markuslöwen, im Hinterland stützt sich Venedig auf morlakische Hauptleute, die der Republik dienen.
 """
 
 [herrscher_text]
-en = "Alvise Mocenigo is Provveditore Generale of Dalmatia and Albania. He governs the province on behalf of the Doge."
-de = "Alvise Mocenigo ist Provveditore generale für Dalmatien und Albanien. Er verwaltet die Provinz im Namen des Dogen."
+en = "Alvise Mocenigo is Provveditore Generale of Dalmatia and Albania. He has governed the province since 1696 on behalf of the Republic."
+de = "Alvise Mocenigo ist Provveditore generale für Dalmatien und Albanien. Er verwaltet die Provinz seit 1696 im Auftrag der Republik."
 
 
 # Wappen: goldener Löwe (Zeichen von Vlandia) auf Rot, für den Markuslöwen.

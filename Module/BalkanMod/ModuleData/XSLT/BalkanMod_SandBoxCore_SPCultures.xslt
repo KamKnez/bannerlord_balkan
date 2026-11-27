@@ -336,7 +336,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=balkan_culture_kroaten}Croatians</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_culture_kroaten_text}Croatia, Slavonia and Dalmatia call themselves a kingdom of their own, joined to the Habsburg crown. For two centuries the Croats have held the Military Frontier against the Ottomans: free peasants owe the emperor service instead of rent, and every village keeps its haramije and horsemen ready. Their nobles still ride as armoured cavalry, while the border men fight with sabre and arquebus.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_kroaten_text}Croatia, Slavonia and Dalmatia call themselves a kingdom of their own, joined to the Habsburg crown. Since the 16th century the Military Frontier has held the border against the Ottomans: its settlers receive land, freedom of religion and lower taxes, and in exchange they must fight for the Empire. Their nobles still ride as armoured cavalry, while the border men fight with sabre and arquebus.</xsl:attribute>
 			<xsl:attribute name="color">0xffB0182A</xsl:attribute>
 			<xsl:attribute name="color2">0xffF2EFE6</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_hr_peasant</xsl:attribute>
@@ -423,7 +423,7 @@
 			<xsl:attribute name="id">ragusa</xsl:attribute>
 			<xsl:attribute name="is_main_culture">false</xsl:attribute>
 			<xsl:attribute name="name">{=balkan_culture_ragusaner}Ragusans</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_culture_ragusaner_text}The Republic of Ragusa keeps its freedom with gold rather than steel. Its merchant fleet trades from the Levant to Spain, and every year its envoys carry tribute to the Sultan. Behind the great walls of the city a small guard of halberdiers and arquebusiers serves the Rector, who changes every month so that no man may rule alone.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_ragusaner_text}The Republic of Ragusa keeps its freedom with gold rather than steel. It has paid tribute to the Sultan since 1458, and its ships sail under its own flag. Behind the great walls of the city a small guard of halberdiers and arquebusiers serves the Rector, who holds office for only one month so that no man may rule alone.</xsl:attribute>
 			<xsl:attribute name="color">0xffF2EFE6</xsl:attribute>
 			<xsl:attribute name="color2">0xff1F3E8C</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_ra_recruit</xsl:attribute>
@@ -491,7 +491,7 @@
 			<xsl:attribute name="id">serbs</xsl:attribute>
 			<xsl:attribute name="is_main_culture">false</xsl:attribute>
 			<xsl:attribute name="name">{=balkan_culture_serben}Serbs</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_culture_serben_text}In 1690 tens of thousands of Serbs crossed the Sava and the Danube with their patriarch and settled on the Habsburg frontier, where they serve as border soldiers in return for land and freedom of faith. Others stayed under the Sultan or took service with Venice. Their hajduks and hussars are feared on every side of the border.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_serben_text}In 1690 Patriarch Arsenije III led more than 30,000 Serbs out of Belgrade into the Habsburg lands, and Emperor Leopold I granted them privileges. Like the other settlers of the Military Frontier, they receive land, freedom of religion and lower taxes, and in exchange they defend the border. Others stayed under the Sultan.</xsl:attribute>
 			<xsl:attribute name="color">0xff8E1B1B</xsl:attribute>
 			<xsl:attribute name="color2">0xff2F4F8F</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_sr_peasant</xsl:attribute>
@@ -642,7 +642,7 @@
 			<xsl:attribute name="id">hungarians</xsl:attribute>
 			<xsl:attribute name="is_main_culture">false</xsl:attribute>
 			<xsl:attribute name="name">{=balkan_culture_ungarn}Hungarians</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_culture_ungarn_text}After a century and a half of war the Hungarian plains are slowly filling with people again. The hajdús, once cattle drovers, fight on foot with musket and sabre, and the light hussars of the Hungarian nobility have become famous in every army of Europe.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_ungarn_text}After a century and a half of war the Hungarian plains are slowly filling with people again. The hajdús, irregular foot soldiers, fight with musket and sabre, and the light hussars have become famous in every army of Europe.</xsl:attribute>
 			<xsl:attribute name="color">0xff2E6B30</xsl:attribute>
 			<xsl:attribute name="color2">0xffD8263A</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_hu_peasant</xsl:attribute>
@@ -711,7 +711,7 @@
 			<xsl:attribute name="id">venice</xsl:attribute>
 			<xsl:attribute name="is_main_culture">false</xsl:attribute>
 			<xsl:attribute name="name">{=balkan_culture_venezianer}Venetians</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_culture_venezianer_text}The Most Serene Republic of Venice rules the Adriatic from its lagoon. Along the Dalmatian coast its provveditori govern walled ports filled with merchants, sailors and soldiers. Italian pikemen and musketeers hold the walls, while Dalmatian schiavoni and Albanian cappelletti fight the war of raids in the hinterland.</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_venezianer_text}The Most Serene Republic of Venice rules the Adriatic from its lagoon. Along the Dalmatian coast its provveditori govern walled ports filled with merchants, sailors and soldiers. Italian pikemen and musketeers hold the walls, the Oltremarini infantry of Dalmatian schiavoni and Albanians serves overseas, and the light cappelletti horsemen, Dalmatian Croats, ride in the hinterland.</xsl:attribute>
 			<xsl:attribute name="color">0xff8C1C13</xsl:attribute>
 			<xsl:attribute name="color2">0xffE8C547</xsl:attribute>
 			<xsl:attribute name="basic_troop">NPCCharacter.balkan_ve_recruit</xsl:attribute>
