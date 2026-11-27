@@ -28,6 +28,9 @@ namespace BalkanMod
         {
             base.OnSubModuleLoad();
 
+            // Absturzursachen lesbar festhalten (logs\balkan_absturz.txt)
+            CrashLog.Install();
+
             // Zusätzliche Zeitraffer-Knöpfe auf der Karte (TimeControl/)
             _harmony = new Harmony("BalkanMod");
             _harmony.PatchAll(typeof(SubModule).Assembly);
