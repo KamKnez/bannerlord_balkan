@@ -331,6 +331,82 @@
 			<name name="{{=!}}Caratheodoris" />
 		</clan_names>
 	</xsl:template>
+	<!-- Italiener: Calradia-Kultur 'battania' anpassen (data/kulturen/italiener.toml) -->
+	<xsl:template match="/SPCultures/Culture[@id='battania']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_culture_italiener}Italians</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_italiener_text}Italy south of Venice is divided between the Pope and the Spanish crown. The Papal States reached their greatest extent in 1649, while Naples and Sicily send their own tercios of pikemen and musketeers into the King of Spain's wars. Since the middle of the century nobles raise these tercios at their own expense, and the Pope keeps cuirassiers recruited in Bologna.</xsl:attribute>
+			<xsl:attribute name="color">0xffF2C230</xsl:attribute>
+			<xsl:attribute name="color2">0xffFFFFFF</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_it_peasant</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_it_abanderado</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_it_militia_pikeman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_it_militia_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_it_militia_veteran_pikeman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_it_militia_veteran_shooter</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_italiener</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_italiener</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_italiener" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_italiener">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_italiener" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_italiener">
+		<male_names>
+			<name name="{{=!}}Alvise" />
+			<name name="{{=!}}Francesco" />
+			<name name="{{=!}}Girolamo" />
+			<name name="{{=!}}Marco" />
+			<name name="{{=!}}Pietro" />
+			<name name="{{=!}}Giovanni" />
+			<name name="{{=!}}Lorenzo" />
+			<name name="{{=!}}Andrea" />
+			<name name="{{=!}}Nicolò" />
+			<name name="{{=!}}Zuane" />
+			<name name="{{=!}}Antonio" />
+			<name name="{{=!}}Domenico" />
+			<name name="{{=!}}Giacomo" />
+			<name name="{{=!}}Leonardo" />
+			<name name="{{=!}}Sebastiano" />
+			<name name="{{=!}}Bernardo" />
+			<name name="{{=!}}Daniele" />
+			<name name="{{=!}}Vettor" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_italiener">
+		<female_names>
+			<name name="{{=!}}Elena" />
+			<name name="{{=!}}Lucia" />
+			<name name="{{=!}}Caterina" />
+			<name name="{{=!}}Isabella" />
+			<name name="{{=!}}Chiara" />
+			<name name="{{=!}}Laura" />
+			<name name="{{=!}}Cecilia" />
+			<name name="{{=!}}Paolina" />
+			<name name="{{=!}}Marietta" />
+			<name name="{{=!}}Elisabetta" />
+			<name name="{{=!}}Orsola" />
+			<name name="{{=!}}Benedetta" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_italiener">
+		<clan_names>
+			<name name="{{=!}}Mocenigo" />
+			<name name="{{=!}}Cornaro" />
+			<name name="{{=!}}Morosini" />
+			<name name="{{=!}}Contarini" />
+			<name name="{{=!}}Foscolo" />
+			<name name="{{=!}}Grimani" />
+			<name name="{{=!}}Loredan" />
+			<name name="{{=!}}Pisani" />
+			<name name="{{=!}}Venier" />
+			<name name="{{=!}}Dolfin" />
+			<name name="{{=!}}Fanfogna" />
+			<name name="{{=!}}Garagnin" />
+		</clan_names>
+	</xsl:template>
 	<!-- Kroaten: Calradia-Kultur 'vlandia' anpassen (data/kulturen/kroaten.toml) -->
 	<xsl:template match="/SPCultures/Culture[@id='vlandia']">
 		<xsl:copy>
@@ -414,6 +490,81 @@
 			<name name="{{=!}}Vitezović" />
 			<name name="{{=!}}Jelačić" />
 			<name name="{{=!}}Kušević" />
+		</clan_names>
+	</xsl:template>
+	<!-- Polen: Calradia-Kultur 'sturgia' anpassen (data/kulturen/polen.toml) -->
+	<xsl:template match="/SPCultures/Culture[@id='sturgia']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_culture_polen}Poles</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_polen_text}The Polish–Lithuanian Commonwealth is a union of nobles who elect their king. In 1683 King Jan III Sobieski led the relief of Vienna, and his winged hussars, the pride of the wealthy nobility, rode in the great charge. Lesser nobles serve as armoured companions in mail with sabre and bow, while the infantry is now raised in the foreign style, with muskets and dragoons.</xsl:attribute>
+			<xsl:attribute name="color">0xffDC143C</xsl:attribute>
+			<xsl:attribute name="color2">0xffF4F1EA</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_pl_peasant</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_pl_pancerny_retainer</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_pl_militia_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_pl_militia_shooter</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_pl_militia_veteran_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_pl_militia_veteran_shooter</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_polen</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_polen</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_polen" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_polen">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_polen" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_polen">
+		<male_names>
+			<name name="{{=!}}Jan" />
+			<name name="{{=!}}Michał" />
+			<name name="{{=!}}Władysław" />
+			<name name="{{=!}}Zygmunt" />
+			<name name="{{=!}}Kazimierz" />
+			<name name="{{=!}}Stanisław" />
+			<name name="{{=!}}Aleksander" />
+			<name name="{{=!}}Stefan" />
+			<name name="{{=!}}Jakub" />
+			<name name="{{=!}}Jerzy" />
+			<name name="{{=!}}Krzysztof" />
+			<name name="{{=!}}Marek" />
+			<name name="{{=!}}Mikołaj" />
+			<name name="{{=!}}Andrzej" />
+			<name name="{{=!}}Piotr" />
+			<name name="{{=!}}Wojciech" />
+			<name name="{{=!}}Dymitr" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_polen">
+		<female_names>
+			<name name="{{=!}}Maria" />
+			<name name="{{=!}}Anna" />
+			<name name="{{=!}}Katarzyna" />
+			<name name="{{=!}}Zofia" />
+			<name name="{{=!}}Barbara" />
+			<name name="{{=!}}Elżbieta" />
+			<name name="{{=!}}Jadwiga" />
+			<name name="{{=!}}Konstancja" />
+			<name name="{{=!}}Ludwika" />
+			<name name="{{=!}}Eleonora" />
+			<name name="{{=!}}Cecylia" />
+			<name name="{{=!}}Teresa" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_polen">
+		<clan_names>
+			<name name="{{=!}}Sobieski" />
+			<name name="{{=!}}Potocki" />
+			<name name="{{=!}}Lubomirski" />
+			<name name="{{=!}}Radziwiłł" />
+			<name name="{{=!}}Sapieha" />
+			<name name="{{=!}}Jabłonowski" />
+			<name name="{{=!}}Zamoyski" />
+			<name name="{{=!}}Wiśniowiecki" />
+			<name name="{{=!}}Leszczyński" />
+			<name name="{{=!}}Czartoryski" />
+			<name name="{{=!}}Sieniawski" />
+			<name name="{{=!}}Koniecpolski" />
 		</clan_names>
 	</xsl:template>
 	<!-- Ragusaner: neue Kultur 'ragusa' als Kopie von 'empire' (data/kulturen/ragusaner.toml) -->
@@ -558,6 +709,73 @@
 			<name name="{{=!}}Popović" />
 			<name name="{{=!}}Kosović" />
 			<name name="{{=!}}Vukmirović" />
+		</clan_names>
+	</xsl:template>
+	<!-- Krimtataren: Calradia-Kultur 'khuzait' anpassen (data/kulturen/tataren.toml) -->
+	<xsl:template match="/SPCultures/Culture[@id='khuzait']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="name">{=balkan_culture_tataren}Crimean Tatars</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_culture_tataren_text}The Crimean Khanate is ruled by khans of the house of Giray, who govern together with the beys of the great clans Şirin, Barın, Arğın and Qıpçaq. The khanate stands under the protection of the Ottoman Sultan, who has appointed its khans since 1524, and its horsemen ride ahead of every Ottoman campaign. The Nogai hordes of the steppe serve the khan as vassals. For two centuries raids brought captives from Poland and Russia, until the Peace of Karlowitz in 1699 forbade them.</xsl:attribute>
+			<xsl:attribute name="color">0xff2B7A9E</xsl:attribute>
+			<xsl:attribute name="color2">0xffE8C547</xsl:attribute>
+			<xsl:attribute name="basic_troop">NPCCharacter.balkan_kt_herdsman</xsl:attribute>
+			<xsl:attribute name="elite_basic_troop">NPCCharacter.balkan_kt_mirza_retainer</xsl:attribute>
+			<xsl:attribute name="melee_militia_troop">NPCCharacter.balkan_kt_militia_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_militia_troop">NPCCharacter.balkan_kt_militia_archer</xsl:attribute>
+			<xsl:attribute name="melee_elite_militia_troop">NPCCharacter.balkan_kt_militia_veteran_spearman</xsl:attribute>
+			<xsl:attribute name="ranged_elite_militia_troop">NPCCharacter.balkan_kt_militia_veteran_archer</xsl:attribute>
+			<xsl:attribute name="default_party_template">PartyTemplate.balkan_kingdom_hero_party_tataren</xsl:attribute>
+			<xsl:attribute name="militia_party_template">PartyTemplate.balkan_militia_tataren</xsl:attribute>
+			<xsl:apply-templates select="node()" mode="balkan_tataren" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@*|node()" mode="balkan_tataren">
+		<xsl:copy><xsl:apply-templates select="@*|node()" mode="balkan_tataren" /></xsl:copy>
+	</xsl:template>
+	<xsl:template match="male_names" mode="balkan_tataren">
+		<male_names>
+			<name name="{{=!}}Devlet" />
+			<name name="{{=!}}Selim" />
+			<name name="{{=!}}Gazi" />
+			<name name="{{=!}}Mehmed" />
+			<name name="{{=!}}İslam" />
+			<name name="{{=!}}Adil" />
+			<name name="{{=!}}Murad" />
+			<name name="{{=!}}Hacı" />
+			<name name="{{=!}}Sahib" />
+			<name name="{{=!}}Canibek" />
+			<name name="{{=!}}Kaplan" />
+			<name name="{{=!}}Saadet" />
+			<name name="{{=!}}Mengli" />
+			<name name="{{=!}}Bahadır" />
+			<name name="{{=!}}Safa" />
+			<name name="{{=!}}Azamat" />
+		</male_names>
+	</xsl:template>
+	<xsl:template match="female_names" mode="balkan_tataren">
+		<female_names>
+			<name name="{{=!}}Fatma" />
+			<name name="{{=!}}Ayşe" />
+			<name name="{{=!}}Emine" />
+			<name name="{{=!}}Hatice" />
+			<name name="{{=!}}Zeynep" />
+			<name name="{{=!}}Şerife" />
+			<name name="{{=!}}Nazlı" />
+			<name name="{{=!}}Hanike" />
+			<name name="{{=!}}Melek" />
+			<name name="{{=!}}Saliha" />
+			<name name="{{=!}}Ümmügülsüm" />
+			<name name="{{=!}}Esma" />
+		</female_names>
+	</xsl:template>
+	<xsl:template match="clan_names" mode="balkan_tataren">
+		<clan_names>
+			<name name="{{=!}}Giray" />
+			<name name="{{=!}}Şirin" />
+			<name name="{{=!}}Barın" />
+			<name name="{{=!}}Arğın" />
+			<name name="{{=!}}Qıpçaq" />
 		</clan_names>
 	</xsl:template>
 	<!-- Türken: neue Kultur 'turks' als Kopie von 'aserai' (data/kulturen/tuerken.toml) -->

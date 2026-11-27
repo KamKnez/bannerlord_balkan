@@ -1892,6 +1892,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Burgas</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1899,6 +1900,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Tarnowo</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1906,6 +1908,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Rustschuk</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1913,6 +1916,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Larissa</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1920,6 +1924,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Adana</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1927,6 +1932,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Bursa</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1934,6 +1940,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Konya</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1941,6 +1948,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Antalya</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -1948,6 +1956,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Sinope</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2018,6 +2027,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Győr</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2025,6 +2035,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Komárom</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2032,6 +2043,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Esztergom</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2039,6 +2051,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Eger</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2046,6 +2059,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Großwardein</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2060,6 +2074,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Hermannstadt</xsl:attribute>
+			<xsl:attribute name="culture">Culture.germans</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2186,6 +2201,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Pomorie</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2193,6 +2209,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Sosopol</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2200,6 +2217,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Arbanassi</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2207,6 +2225,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Gabrowo</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2214,6 +2233,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Giurgiu</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2221,6 +2241,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Tutrakan</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2228,6 +2249,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Tyrnavos</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2235,6 +2257,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Trikala</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2242,6 +2265,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Tarsus</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2249,6 +2273,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Misis</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2256,6 +2281,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Mudanya</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2263,6 +2289,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}İnegöl</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2270,6 +2297,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Meram</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2277,6 +2305,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Sille</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2284,6 +2313,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Alanya</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2291,6 +2321,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Manavgat</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2298,6 +2329,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Gerze</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2305,6 +2337,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Boyabat</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2438,6 +2471,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Pannonhalma</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2445,6 +2479,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Moson</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2452,6 +2487,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Tata</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2459,6 +2495,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Neuhäusel</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2466,6 +2503,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Visegrád</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2473,6 +2511,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Párkány</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2480,6 +2519,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Gyöngyös</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2487,6 +2527,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Miskolc</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2494,6 +2535,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Salonta</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2501,6 +2543,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Beiuș</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2522,6 +2565,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Mediasch</xsl:attribute>
+			<xsl:attribute name="culture">Culture.germans</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2529,6 +2573,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Heltau</xsl:attribute>
+			<xsl:attribute name="culture">Culture.germans</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2585,6 +2630,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Istanbul</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2592,6 +2638,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Athen</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2599,6 +2646,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Smyrna</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2606,6 +2654,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Ankara</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2613,6 +2662,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Kütahya</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2620,6 +2670,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Varna</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2704,6 +2755,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Kaschau</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2711,6 +2763,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Debrecen</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2837,6 +2890,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Galata</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2844,6 +2898,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Üsküdar</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2851,6 +2906,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Kadıköy</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2858,6 +2914,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Piräus</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2865,6 +2922,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Eleusis</xsl:attribute>
+			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2872,6 +2930,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Manisa</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2879,6 +2938,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Urla</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2886,6 +2946,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Beypazarı</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2893,6 +2954,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Çubuk</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2900,6 +2962,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Eskişehir</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2907,6 +2970,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Afyon</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2914,6 +2978,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Simav</xsl:attribute>
+			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2921,6 +2986,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Baltschik</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2928,6 +2994,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Prowadija</xsl:attribute>
+			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -3131,6 +3198,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Eperies</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -3138,6 +3206,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Medzev</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -3145,6 +3214,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Sárospatak</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -3152,6 +3222,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Hajdúböszörmény</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -3159,6 +3230,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:attribute name="name">{=!}Nyíregyháza</xsl:attribute>
+			<xsl:attribute name="culture">Culture.hungarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

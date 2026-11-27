@@ -1,0 +1,325 @@
+# Polen (Polen-Litauen). Ersetzt die Calradia-Kultur Sturgia. Einfacher erster Truppenbaum.
+# Quellen (Wikipedia, geprüft):
+#   https://en.wikipedia.org/wiki/Military_of_the_Polish%E2%80%93Lithuanian_Commonwealth  Wybraniecka-Infanterie
+#     (Bauernaufgebot der Krongüter), Infanterie nach fremder Art, Dragoner, Reform Sobieskis in den 1670ern,
+#     Husarenbanner der königlichen Garde
+#   https://en.wikipedia.org/wiki/Polish_hussars  Flügelhusaren aus dem wohlhabenden Adel, Towarzysz und Poczet,
+#     Lanze, Koncerz, Säbel, Pistolen, Kürass; aktiv bis 1702, Wien 1683
+#   https://en.wikipedia.org/wiki/Armoured_companion  Pancerni aus dem mittleren und niederen Adel, Kettenhemd,
+#     Säbel, Bogen, Pistolen, Karabiner
+#   https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth  Wahlkönigtum des Adels
+#   https://en.wikipedia.org/wiki/Battle_of_Vienna  Entsatz Wiens 1683 unter Jan III. Sobieski
+#   https://en.wikipedia.org/wiki/Haiduc  Hajduken als polnische Infanterie mit Luntenschloss und schwerem Säbel,
+#     später vor allem als Leibwache der Hetmane
+# Die Ränge im Adelsbaum (Gefolgsmann vor Kamerad, Pancerni vor Husaren) sind eine Spielvereinfachung.
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "polen"
+bild = "sturgia"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
+kultur_id = "sturgia"
+art = "anpassen"
+praefix = "pl"
+namensliste = "polen"
+farben = ["0xffDC143C", "0xffF4F1EA"]
+gesicht = "fighter_sturgia"
+zivil = ["sturgia_troop_civilian_template_t1", "sturgia_troop_civilian_template_t2", "sturgia_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "pancerny_retainer"
+
+[name]
+en = "Poles"
+de = "Polen"
+
+[text]
+en = """
+The Polish–Lithuanian Commonwealth is a union of nobles who elect their king. In 1683 King Jan III Sobieski \
+led the relief of Vienna, and his winged hussars, the pride of the wealthy nobility, rode in the great charge. \
+Lesser nobles serve as armoured companions in mail with sabre and bow, while the infantry is now raised in the \
+foreign style, with muskets and dragoons.
+"""
+de = """
+Polen-Litauen ist ein Bund von Adligen, die ihren König wählen. 1683 führte König Jan III. Sobieski das \
+Entsatzheer vor Wien, und seine Flügelhusaren, der Stolz des reichen Adels, ritten im großen Angriff mit. \
+Der niedere Adel dient als gepanzerte Kameraden in Kettenhemd mit Säbel und Bogen, die Infanterie wird nun \
+nach fremder Art mit Musketen und als Dragoner aufgestellt.
+"""
+
+[miliz]
+nahkampf = "militia_spearman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_shooter"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+[[lord_partei]]
+truppe = "hajduk"
+min = 3
+max = 6
+[[lord_partei]]
+truppe = "musketeer"
+min = 2
+max = 4
+[[lord_partei]]
+truppe = "pancerny_retainer"
+min = 2
+max = 4
+[[lord_partei]]
+truppe = "pancerny"
+min = 1
+max = 2
+[[lord_partei]]
+truppe = "hussar_retainer"
+min = 0
+max = 2
+
+# ---------------------------------------------------------------- normaler Baum
+
+[[truppe]]
+id = "peasant"
+name = { en = "Polish Peasant", de = "Polnischer Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["wybraniec", "hajduk"]
+[[truppe.ausruestung]]
+Item0 = "peasant_pitchfork_1_t1"
+Head = "fur_hat"
+Body = "long_woolen_tunic"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_hatchet_1_t1"
+Head = "nordic_fur_cap"
+Body = "hemp_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "wybraniec"
+name = { en = "Wybraniec Infantryman", de = "Wybraniecka-Fußsoldat" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+aufwerten = ["veteran_wybraniec"]
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_wybraniec"
+name = { en = "Veteran Wybraniec", de = "Erfahrener Wybraniecka-Fußsoldat" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_2_t2"
+Item1 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "padded_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "hajduk"
+name = { en = "Polish Hajduk", de = "Polnischer Hajduk" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["musketeer"]
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_1_t2"
+Head = "fur_hat"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "musketeer"
+name = { en = "Foreign-Style Musketeer", de = "Musketier nach fremder Art" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["dragoon"]
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Cape = "empire_cape_a"
+Body = "padded_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "dragoon"
+name = { en = "Polish Dragoon", de = "Polnischer Dragoner" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_long_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "ridged_sabre_sword_t4"
+Head = "fur_hat"
+Cape = "empire_cape_a"
+Body = "eastern_studded_leather"
+Gloves = "woven_leather_bracers"
+Leg = "leather_cavalier_boots"
+
+# ---------------------------------------------------------------- Adelsbaum (Pancerni und Husaren)
+
+[[truppe]]
+id = "pancerny_retainer"
+name = { en = "Pancerny Retainer", de = "Pancerni-Gefolgsmann" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+basis = true
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["pancerny"]
+pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "simple_sabre_sword_t2"
+Item2 = "light_horsemans_kite_shield"
+Head = "nordic_fur_cap"
+Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "pancerny"
+name = { en = "Armoured Companion", de = "Gepanzerter Kamerad (Pancerny)" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["hussar_retainer"]
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_sword_2_t3"
+Item1 = "balkan_pistol"
+Item2 = "balkan_pistol_balls"
+Head = "spiked_helmet"
+Body = "imperial_mail_over_leather"
+Gloves = "woven_leather_bracers"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "hussar_retainer"
+name = { en = "Hussar Retainer", de = "Husaren-Gefolgsmann (Poczet)" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["hussar"]
+pferd = { Horse = "t3_vlandia_horse", HorseHarness = "halfchain_barding" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_2_t4"
+Item1 = "ridged_sabre_sword_t4"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "spiked_helmet"
+Cape = "leopard_pelt"
+Body = "stitched_leather_over_mail"
+Gloves = "studded_leather_vambraces"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "hussar"
+name = { en = "Winged Hussar", de = "Flügelhusar" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_sturgia_elite"
+aufwerten = ["royal_hussar"]
+pferd = { Horse = "t3_vlandia_horse", HorseHarness = "halfchain_barding" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_3_t5"
+Item1 = "khuzait_noble_sword_1_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "peaked_helmet_over_mail_coif"
+Cape = "leopard_pelt"
+Body = "coat_of_plates_over_mail"
+Gloves = "reinforced_leather_vambraces"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "royal_hussar"
+name = { en = "Hussar of the Royal Banner", de = "Husar des königlichen Banners" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_sturgia_elite"
+pferd = { Horse = "noble_horse_western", HorseHarness = "halfchain_barding" }
+[[truppe.ausruestung]]
+Item0 = "vlandia_lance_3_t5"
+Item1 = "khuzait_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "western_plated_helmet"
+Cape = "leopard_pelt"
+Body = "coat_of_plates_over_mail"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+
+# ---------------------------------------------------------------- Miliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Polish Militia Spearman", de = "Polnischer Milizspeerträger" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_1_t2"
+Item1 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Polish Militia Shooter", de = "Polnischer Milizschütze" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "peasant_hatchet_1_t1"
+Head = "nordic_fur_cap"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Polish Militia Spearman", de = "Polnischer Milizspeerträger (Veteran)" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_2_t2"
+Item1 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "padded_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Polish Militia Shooter", de = "Polnischer Milizschütze (Veteran)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "woven_leather_coat"
+Leg = "eastern_leather_boots"

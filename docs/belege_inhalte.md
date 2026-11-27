@@ -122,6 +122,23 @@ Cornaro, Morosini, Contarini, Grimani, Fanfogna und die bosnischen Familien. Die
 
 Suche nach Blasonierungen für Cornaro, Morosini, Contarini, Grimani, Beširević, Hadžalić und Krupić (Stand 27.11.2026): Auf de/en/it-Wikipedia steht keine Blasonierung. Morosini hat nur einen Teilbeleg: ein silbernes Kreuz als Zeichen des Banats (it.wikipedia, Famiglia Morosini), das im Zusammenhang mit dem Amt steht und deshalb nicht übernommen wird. Commons, Armoriale und Wappenbücher konnten im selben Lauf nicht abgerufen werden. Diese Familien bleiben beim allgemeinen Spielwappen, bis eine Quelle vorliegt.
 
+## Truppenbäume Polen, Krimtataren, Italiener
+
+Die übrigen Calradia-Kulturen bekommen einfache erste Truppenbäume (`data/kulturen/polen.toml`, `tataren.toml`,
+`italiener.toml`). Die Quellen stehen jeweils im Kopf der Datei.
+
+| Volk | Belegt | Quelle |
+|---|---|---|
+| Polen | Flügelhusaren (Towarzysz, Poczet; Lanze, Säbel, Pistolen; bis 1702, Wien 1683), Pancerni (Kettenhemd, Säbel, Bogen, Pistolen), Hajduken mit Luntenschloss, Wybraniecka-Infanterie, Infanterie nach fremder Art und Dragoner (Reform der 1670er), Husarenbanner der königlichen Garde | https://en.wikipedia.org/wiki/Polish_hussars, https://en.wikipedia.org/wiki/Armoured_companion, https://en.wikipedia.org/wiki/Haiduc, https://en.wikipedia.org/wiki/Military_of_the_Polish%E2%80%93Lithuanian_Commonwealth |
+| Krimtataren | Khane der Giray, Qaraçı Beys der Clans Şirin, Barın, Arğın, Qıpçaq, darunter Mirzas; Nogai als Vasallen, tscherkessische Söldner; Feldzüge und Raubzüge (Çapul); Vorhut der Osmanen; Karlowitz 1699 verbietet Raubzüge | https://en.wikipedia.org/wiki/Crimean_Khanate, https://en.wikipedia.org/wiki/Crimean_Tatars |
+| Italiener | Tercios von Neapel und Sizilien (Piqueros, Arcabuceros, Musketiere; Ränge Maestre de Campo, Capitán, Alférez, Sargento, Cabo, Abanderado), päpstliche Corazze aus Bologna | https://en.wikipedia.org/wiki/Tercio, https://en.wikipedia.org/wiki/Corsican_Guard |
+
+Nicht belegt und daher allgemein gehalten: die Waffen der Tataren (Bogen, Säbel, Lanze nach Steppenart), die
+Corazze nach 1642, die Tercios von Neapel nach 1650 im Einzelnen. Die Adelsbäume aus Rängen sind Spielvereinfachung.
+Orte außerhalb unserer Reiche mit anderer Bevölkerung (Istanbul und Anatolien türkisch, Athen und Larissa griechisch,
+Varna und Nordost-Bulgarien bulgarisch, ungarische Städte im Norden ungarisch, Hermannstadt deutsch) stehen unter
+`[kultur]` in `data/weltkarte/namen.toml`.
+
 ## Noch offen
 
 - Azap: belegt bis ins späte 16. Jahrhundert, für 1700 nicht ausdrücklich (https://en.wikipedia.org/wiki/Azap).

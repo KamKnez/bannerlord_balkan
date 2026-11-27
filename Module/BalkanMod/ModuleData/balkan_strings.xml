@@ -9,12 +9,18 @@
 	<string id="str_culture_description.germans" text="{=balkan_culture_deutsche_desc}German settlers came to the frontier lands of Styria, Carniola and the reconquered plains as farmers, craftsmen and soldiers. The imperial regiments recruit their pikemen and musketeers among them, and the heavy cuirassiers of the Emperor are drawn from their nobility." />
 	<string id="str_culture_rich_name.greeks" text="{=balkan_culture_griechen_rich}Greeks" />
 	<string id="str_culture_description.greeks" text="{=balkan_culture_griechen_desc}The Greeks of Macedonia, Thessaly and the islands live under the Sultan as his Orthodox subjects. Greek ship owners carry much of the empire's trade by sea, and Phanariot families in Constantinople serve the Porte as dragomans, its interpreters. In the villages the kodjabashis speak for the community and collect the taxes. In the mountains the armatoles guard the passes on behalf of the Ottomans, while the klephts live as brigands; many armatoles were klephts before." />
+	<string id="str_culture_rich_name.battania" text="{=balkan_culture_italiener_rich}Italians" />
+	<string id="str_culture_description.battania" text="{=balkan_culture_italiener_desc}Italy south of Venice is divided between the Pope and the Spanish crown. The Papal States reached their greatest extent in 1649, while Naples and Sicily send their own tercios of pikemen and musketeers into the King of Spain's wars. Since the middle of the century nobles raise these tercios at their own expense, and the Pope keeps cuirassiers recruited in Bologna." />
 	<string id="str_culture_rich_name.vlandia" text="{=balkan_culture_kroaten_rich}Croatians" />
 	<string id="str_culture_description.vlandia" text="{=balkan_culture_kroaten_desc}Croatia, Slavonia and Dalmatia call themselves a kingdom of their own, joined to the Habsburg crown. Since the 16th century the Military Frontier has held the border against the Ottomans: its settlers receive land, freedom of religion and lower taxes, and in exchange they must fight for the Empire. Their nobles still ride as armoured cavalry, while the border men fight with sabre and arquebus." />
+	<string id="str_culture_rich_name.sturgia" text="{=balkan_culture_polen_rich}Poles" />
+	<string id="str_culture_description.sturgia" text="{=balkan_culture_polen_desc}The Polish–Lithuanian Commonwealth is a union of nobles who elect their king. In 1683 King Jan III Sobieski led the relief of Vienna, and his winged hussars, the pride of the wealthy nobility, rode in the great charge. Lesser nobles serve as armoured companions in mail with sabre and bow, while the infantry is now raised in the foreign style, with muskets and dragoons." />
 	<string id="str_culture_rich_name.ragusa" text="{=balkan_culture_ragusaner_rich}Ragusans" />
 	<string id="str_culture_description.ragusa" text="{=balkan_culture_ragusaner_desc}The Republic of Ragusa keeps its freedom with gold rather than steel. It has paid tribute to the Sultan since 1458, and its ships sail under its own flag. Behind the great walls of the city a small guard of halberdiers and arquebusiers serves the Rector, who holds office for only one month so that no man may rule alone." />
 	<string id="str_culture_rich_name.serbs" text="{=balkan_culture_serben_rich}Serbs" />
 	<string id="str_culture_description.serbs" text="{=balkan_culture_serben_desc}In 1690 Patriarch Arsenije III led more than 30,000 Serbs out of Belgrade into the Habsburg lands, and Emperor Leopold I granted them privileges. Like the other settlers of the Military Frontier, they receive land, freedom of religion and lower taxes, and in exchange they defend the border. Others stayed under the Sultan." />
+	<string id="str_culture_rich_name.khuzait" text="{=balkan_culture_tataren_rich}Crimean Tatars" />
+	<string id="str_culture_description.khuzait" text="{=balkan_culture_tataren_desc}The Crimean Khanate is ruled by khans of the house of Giray, who govern together with the beys of the great clans Şirin, Barın, Arğın and Qıpçaq. The khanate stands under the protection of the Ottoman Sultan, who has appointed its khans since 1524, and its horsemen ride ahead of every Ottoman campaign. The Nogai hordes of the steppe serve the khan as vassals. For two centuries raids brought captives from Poland and Russia, until the Peace of Karlowitz in 1699 forbade them." />
 	<string id="str_culture_rich_name.turks" text="{=balkan_culture_tuerken_rich}Turks" />
 	<string id="str_culture_description.turks" text="{=balkan_culture_tuerken_desc}Turkish settlers, officials and soldiers have lived in the Balkan towns since the conquest. The Janissaries, the Sultan's standing infantry, are the most famous musketeers of the empire, while the sipahis hold their land in return for service on horseback." />
 	<string id="str_culture_rich_name.hungarians" text="{=balkan_culture_ungarn_rich}Hungarians" />
@@ -41,11 +47,21 @@
 	<string id="str_player_little_brother_name.greeks" text="{=!}Nikolaos" />
 	<string id="str_player_mother_name.greeks" text="{=!}Maria" />
 	<string id="str_player_little_sister_name.greeks" text="{=!}Anna" />
+	<string id="str_player_father_name.battania" text="{=!}Alvise" />
+	<string id="str_player_brother_name.battania" text="{=!}Francesco" />
+	<string id="str_player_little_brother_name.battania" text="{=!}Girolamo" />
+	<string id="str_player_mother_name.battania" text="{=!}Elena" />
+	<string id="str_player_little_sister_name.battania" text="{=!}Lucia" />
 	<string id="str_player_father_name.vlandia" text="{=!}Ivan" />
 	<string id="str_player_brother_name.vlandia" text="{=!}Juraj" />
 	<string id="str_player_little_brother_name.vlandia" text="{=!}Nikola" />
 	<string id="str_player_mother_name.vlandia" text="{=!}Katarina" />
 	<string id="str_player_little_sister_name.vlandia" text="{=!}Margareta" />
+	<string id="str_player_father_name.sturgia" text="{=!}Jan" />
+	<string id="str_player_brother_name.sturgia" text="{=!}Michał" />
+	<string id="str_player_little_brother_name.sturgia" text="{=!}Władysław" />
+	<string id="str_player_mother_name.sturgia" text="{=!}Maria" />
+	<string id="str_player_little_sister_name.sturgia" text="{=!}Anna" />
 	<string id="str_player_father_name.ragusa" text="{=!}Marin" />
 	<string id="str_player_brother_name.ragusa" text="{=!}Nikola" />
 	<string id="str_player_little_brother_name.ragusa" text="{=!}Frano" />
@@ -56,6 +72,11 @@
 	<string id="str_player_little_brother_name.serbs" text="{=!}Jovan" />
 	<string id="str_player_mother_name.serbs" text="{=!}Jelena" />
 	<string id="str_player_little_sister_name.serbs" text="{=!}Milica" />
+	<string id="str_player_father_name.khuzait" text="{=!}Devlet" />
+	<string id="str_player_brother_name.khuzait" text="{=!}Selim" />
+	<string id="str_player_little_brother_name.khuzait" text="{=!}Gazi" />
+	<string id="str_player_mother_name.khuzait" text="{=!}Fatma" />
+	<string id="str_player_little_sister_name.khuzait" text="{=!}Ayşe" />
 	<string id="str_player_father_name.turks" text="{=!}Mehmed" />
 	<string id="str_player_brother_name.turks" text="{=!}Ahmed" />
 	<string id="str_player_little_brother_name.turks" text="{=!}Mustafa" />

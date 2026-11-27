@@ -18,6 +18,9 @@ Die CI prüft mit `python3 tools/gen_content.py --check`, ob die erzeugten Datei
 | `ragusaner.toml` | Ragusaner (Ragusa) | neue Kultur `ragusa`, Kopie des Imperiums |
 | `bulgaren.toml` | Bulgaren (Osmanen) | neue Kultur `bulgarians`, Kopie von Sturgia |
 | `griechen.toml` | Griechen (Osmanen) | neue Kultur `greeks`, Kopie des Imperiums |
+| `polen.toml` | Polen (Polen-Litauen) | ändert Sturgia (`sturgia`) |
+| `tataren.toml` | Krimtataren (Krimkhanat) | ändert Khuzait (`khuzait`) |
+| `italiener.toml` | Italiener (Kirchenstaat, Neapel) | ändert Battania (`battania`) |
 
 ## Kopf der Datei
 

@@ -204,3 +204,32 @@ village_S6_3 = "Sárospatak"
 # Debrecen
 village_S7_1 = "Hajdúböszörmény"
 village_S7_2 = "Nyíregyháza"
+
+# Kultur der Orte außerhalb unserer Reiche, wo die Bevölkerung um 1700 nicht zur Calradia-Kultur des Reichs passt.
+# Sitz -> Kultur-Id aus data/kulturen; die Dörfer des Sitzes folgen ihm.
+# Anatolien und Konstantinopel türkisch, Athen und Thessalien griechisch, Nordost-Bulgarien bulgarisch.
+# Die ungarischen Städte und Burgen im Norden ungarisch, Hermannstadt (Sachsen in Siebenbürgen) deutsch.
+[kultur]
+town_EN1 = "turks"       # Istanbul
+town_EN2 = "greeks"      # Athen
+town_EN3 = "turks"       # Smyrna
+town_EN4 = "turks"       # Ankara
+town_EN5 = "turks"       # Kütahya
+town_EN6 = "bulgarians"  # Varna
+castle_EN1 = "bulgarians"  # Burgas
+castle_EN2 = "bulgarians"  # Tarnowo
+castle_EN3 = "bulgarians"  # Rustschuk
+castle_EN4 = "greeks"      # Larissa
+castle_EN5 = "turks"       # Adana
+castle_EN6 = "turks"       # Bursa
+castle_EN7 = "turks"       # Konya
+castle_EN8 = "turks"       # Antalya
+castle_EN9 = "turks"       # Sinope
+town_S6 = "hungarians"     # Kaschau
+town_S7 = "hungarians"     # Debrecen
+castle_S1 = "hungarians"   # Győr
+castle_S2 = "hungarians"   # Komárom
+castle_S3 = "hungarians"   # Esztergom
+castle_S4 = "hungarians"   # Eger
+castle_S5 = "hungarians"   # Großwardein
+castle_S7 = "germans"      # Hermannstadt

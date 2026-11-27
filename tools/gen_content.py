@@ -1006,10 +1006,15 @@ def build_other_places(realms, strings):
     extra = tomllib.loads((DATA / "weltkarte" / "namen.toml").read_text(encoding="utf-8"))
     names.update(extra.get("doerfer", {}))
     retreat = extra.get("ruhesitz")
+    kultur = extra.get("kultur", {})
     out = ["\t<!-- Orte außerhalb der Mod-Reiche (data/weltkarte/orte.csv und namen.toml) -->"]
     for sid in sorted(names):
         if sid not in ours:
-            out += patch_template("Settlement", sid, {"name": "{=!}" + names[sid]}, drop=("text",))
+            attrs = {"name": "{=!}" + names[sid]}
+            cid = kultur.get(sid) or kultur.get(seat_of_village(sid))
+            if cid:
+                attrs["culture"] = f"Culture.{cid}"
+            out += patch_template("Settlement", sid, attrs, drop=("text",))
     if retreat:
         out.append("\t<!-- Ruhesitz (ruhesitz in data/weltkarte/namen.toml) -->")
         out += patch_template("Settlement", retreat["id"], {
@@ -1017,6 +1022,28 @@ def build_other_places(realms, strings):
             "text": strings.add("balkan_retreat_text", retreat["text"]["en"], retreat["text"]["de"]),
         })
     return out
+
+
+def seat_of_village(sid):
+    """Sitz eines Dorfs nach dem Muster der Ids: village_EN1_2 -> town_EN1, castle_village_EN1_1 -> castle_EN1."""
+    m = re.fullmatch(r"(castle_)?village_([A-Z]+[0-9]+)_[0-9]+", sid)
+    if not m:
+        return None
+    return ("castle_" if m.group(1) else "town_") + m.group(2)
+
+
+def check_other_cultures(cultures):
+    """[kultur] in data/weltkarte/namen.toml: Sitz -> Kultur-Id, die Dörfer des Sitzes folgen."""
+    extra = tomllib.loads((DATA / "weltkarte" / "namen.toml").read_text(encoding="utf-8"))
+    ids = {c["kultur_id"] for c in cultures}
+    places = {row["id"] for row in csv.DictReader((DATA / "weltkarte" / "orte.csv").open(encoding="utf-8"), delimiter=";")}
+    errors = []
+    for sid, cid in extra.get("kultur", {}).items():
+        if sid not in places:
+            errors.append(f"data/weltkarte/namen.toml: kultur: {sid} steht nicht in orte.csv")
+        if cid not in ids:
+            errors.append(f"data/weltkarte/namen.toml: kultur: {cid} ist in data/kulturen nicht definiert")
+    return errors
 
 
 def build_wars(realms):
@@ -1339,7 +1366,7 @@ def generate():
     if errors:
         raise SystemExit("Fehler in data/kulturen:\n  - " + "\n  - ".join(errors))
     realms = load_realms()
-    errors = check_realms(realms, cultures)
+    errors = check_realms(realms, cultures) + check_other_cultures(cultures)
     if errors:
         raise SystemExit("Fehler in data/reiche:\n  - " + "\n  - ".join(errors))
     weapons = load_weapons()

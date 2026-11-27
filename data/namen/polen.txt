@@ -1,0 +1,47 @@
+# Polen. Vornamen nach den polnischen Königen und Magnaten des 16. und 17. Jh. (https://en.wikipedia.org/wiki/List_of_Polish_monarchs),
+# weibliche nach Königinnen und häufigen katholischen Namen der Zeit. Familiennamen: Magnatenfamilien laut
+# https://en.wikipedia.org/wiki/Magnates_of_Poland_and_Lithuania.
+[maennlich]
+Jan
+Michał
+Władysław
+Zygmunt
+Kazimierz
+Stanisław
+Aleksander
+Stefan
+Jakub
+Jerzy
+Krzysztof
+Marek
+Mikołaj
+Andrzej
+Piotr
+Wojciech
+Dymitr
+[weiblich]
+Maria
+Anna
+Katarzyna
+Zofia
+Barbara
+Elżbieta
+Jadwiga
+Konstancja
+Ludwika
+Eleonora
+Cecylia
+Teresa
+[familien]
+Sobieski
+Potocki
+Lubomirski
+Radziwiłł
+Sapieha
+Jabłonowski
+Zamoyski
+Wiśniowiecki
+Leszczyński
+Czartoryski
+Sieniawski
+Koniecpolski

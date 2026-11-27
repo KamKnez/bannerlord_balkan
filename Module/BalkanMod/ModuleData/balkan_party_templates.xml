@@ -62,6 +62,22 @@
 			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_gr_militia_shooter" />
 		</stacks>
 	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_kingdom_hero_party_italiener">
+		<stacks>
+			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_it_peasant" />
+			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_it_piquero" />
+			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_it_arcabucero" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_it_mosquetero" />
+			<PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.balkan_it_abanderado" />
+			<PartyTemplateStack min_value="0" max_value="2" troop="NPCCharacter.balkan_it_corazza" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_militia_italiener">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_it_militia_pikeman" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_it_militia_shooter" />
+		</stacks>
+	</MBPartyTemplate>
 	<MBPartyTemplate id="balkan_kingdom_hero_party_kroaten">
 		<stacks>
 			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_hr_peasant" />
@@ -78,6 +94,22 @@
 		<stacks>
 			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_hr_militia_spearman" />
 			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_hr_militia_shooter" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_kingdom_hero_party_polen">
+		<stacks>
+			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_pl_peasant" />
+			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_pl_hajduk" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.balkan_pl_musketeer" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.balkan_pl_pancerny_retainer" />
+			<PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.balkan_pl_pancerny" />
+			<PartyTemplateStack min_value="0" max_value="2" troop="NPCCharacter.balkan_pl_hussar_retainer" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_militia_polen">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_pl_militia_spearman" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_pl_militia_shooter" />
 		</stacks>
 	</MBPartyTemplate>
 	<MBPartyTemplate id="balkan_kingdom_hero_party_ragusaner">
@@ -108,6 +140,22 @@
 		<stacks>
 			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_sr_militia_spearman" />
 			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_sr_militia_shooter" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_kingdom_hero_party_tataren">
+		<stacks>
+			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_kt_herdsman" />
+			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_kt_nogai_horseman" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.balkan_kt_raider" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_kt_circassian" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.balkan_kt_mirza_retainer" />
+			<PartyTemplateStack min_value="0" max_value="2" troop="NPCCharacter.balkan_kt_mirza" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="balkan_militia_tataren">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_kt_militia_spearman" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.balkan_kt_militia_archer" />
 		</stacks>
 	</MBPartyTemplate>
 	<MBPartyTemplate id="balkan_kingdom_hero_party_tuerken">
