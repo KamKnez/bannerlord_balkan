@@ -11,8 +11,8 @@ castle_village_A7_1;Gračanica;Tuzla;https://en.wikipedia.org/wiki/Gra%C4%8Danic
 castle_village_A7_2;Lukavac;Tuzla;https://de.wikipedia.org/wiki/Lukavac;13;bestätigt
 castle_village_A8_1;Belogradtschik;Vidin;https://de.wikipedia.org/wiki/Belogradtschik;44;bestätigt
 castle_village_A8_2;Lom;Vidin;https://en.wikipedia.org/wiki/Lom%2C_Bulgaria;35;bestätigt
-castle_village_A9_1;Lugosch;Temeschwar;https://de.wikipedia.org/wiki/Lugoj;54;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
-castle_village_A9_2;Lippa;Temeschwar;https://de.wikipedia.org/wiki/Lipova_%28Arad%29;51;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_A9_1;Lugosch;Temeschwar;https://de.wikipedia.org/wiki/Lugoj;54;ungeprüft: über 45 km, kein belegter Ersatz
+castle_village_A9_2;Lippa;Temeschwar;https://de.wikipedia.org/wiki/Lipova_%28Arad%29;;ungeprüft: Koordinaten nicht gefunden
 castle_village_B1_1;Chieti;Pescara;https://de.wikipedia.org/wiki/Chieti;13;bestätigt
 castle_village_B1_2;Ortona;Pescara;https://de.wikipedia.org/wiki/Ortona;20;bestätigt
 castle_village_B2_1;Trsat;Rijeka;https://de.wikipedia.org/wiki/Trsat;1;bestätigt
@@ -34,26 +34,26 @@ castle_village_EN1_2;Sosopol;Burgas;https://de.wikipedia.org/wiki/Sosopol;20;bes
 castle_village_EN2_1;Arbanassi;Tarnowo;https://de.wikipedia.org/wiki/Arbanassi;3;bestätigt
 castle_village_EN2_2;Gabrowo;Tarnowo;https://de.wikipedia.org/wiki/Gabrowo;35;bestätigt
 castle_village_EN3_1;Giurgiu;Rustschuk;https://de.wikipedia.org/wiki/Giurgiu;6;bestätigt
-castle_village_EN3_2;Tutrakan;Rustschuk;https://de.wikipedia.org/wiki/Tutrakan;58;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_EN3_2;Tutrakan;Rustschuk;https://de.wikipedia.org/wiki/Tutrakan;59;ungeprüft: über 45 km, kein belegter Ersatz (Ruse/Tutrakan-Koordinaten geprüft)
 castle_village_EN4_1;Tyrnavos;Larissa;https://de.wikipedia.org/wiki/Tyrnavos;16;bestätigt
-castle_village_EN4_2;Trikala;Larissa;https://de.wikipedia.org/wiki/Trikala;56;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_EN4_2;Trikala;Larissa;https://de.wikipedia.org/wiki/Trikala;57;ungeprüft: über 45 km, Larissa-Koordinaten nicht belegt
 castle_village_EN5_1;Tarsus;Adana;https://en.wikipedia.org/wiki/Tarsus%2C_Mersin;39;bestätigt
 castle_village_EN5_2;Misis;Adana;https://de.wikipedia.org/wiki/Mopsuestia;27;bestätigt
 castle_village_EN6_1;Mudanya;Bursa;https://de.wikipedia.org/wiki/Mudanya;26;bestätigt
 castle_village_EN6_2;İnegöl;Bursa;https://de.wikipedia.org/wiki/%C4%B0neg%C3%B6l;40;bestätigt
 castle_village_EN7_1;Meram;Konya;https://de.wikipedia.org/wiki/Meram_%28Konya%29;3;bestätigt
 castle_village_EN7_2;Sille;Konya;https://en.wikipedia.org/wiki/Sille%2C_Konya;9;bestätigt
-castle_village_EN8_1;Alanya;Antalya;https://de.wikipedia.org/wiki/Alanya;122;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
-castle_village_EN8_2;Manavgat;Antalya;https://de.wikipedia.org/wiki/Manavgat;67;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_EN8_1;Alanya;Antalya;https://de.wikipedia.org/wiki/Alanya;120;ungeprüft: über 45 km, Antalya-Koordinaten nicht belegt
+castle_village_EN8_2;Manavgat;Antalya;https://de.wikipedia.org/wiki/Manavgat;66;ungeprüft: über 45 km, Antalya-Koordinaten nicht belegt
 castle_village_EN9_1;Gerze;Sinope;https://en.wikipedia.org/wiki/Gerze%2C_Sinop;25;bestätigt
-castle_village_EN9_2;Boyabat;Sinope;https://de.wikipedia.org/wiki/Boyabat;70;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_EN9_2;Boyabat;Sinope;https://de.wikipedia.org/wiki/Boyabat;70;ungeprüft: über 45 km, kein belegter Ersatz
 castle_village_ES1_1;Grahovo;Nikšić;https://de.wikipedia.org/wiki/Grahovo;25;bestätigt
 castle_village_ES1_2;Šavnik;Nikšić;https://en.wikipedia.org/wiki/%C5%A0avnik;24;bestätigt
 castle_village_ES2_1;Njeguši;Cetinje;https://en.wikipedia.org/wiki/Njegu%C5%A1i;9;bestätigt
 castle_village_ES2_2;Rijeka Crnojevića;Cetinje;https://de.wikipedia.org/wiki/Rijeka_Crnojevi%C4%87a;10;bestätigt
 castle_village_ES4_1;Sutomore;Bar;https://de.wikipedia.org/wiki/Sutomore;8;bestätigt
 castle_village_ES4_2;Virpazar;Bar;https://en.wikipedia.org/wiki/Virpazar;18;bestätigt
-castle_village_ES5_1;Šas;Ulcinj;;;ungeprüft: keine Seite mit Koordinaten gefunden
+castle_village_ES5_1;Šas;Ulcinj;https://en.wikipedia.org/wiki/Šas;12;bestätigt
 castle_village_ES5_2;Vladimir;Ulcinj;https://en.wikipedia.org/wiki/Vladimir%2C_Ulcinj;12;bestätigt
 castle_village_ES6_1;Kaninë;Vlorë;https://en.wikipedia.org/wiki/Kanin%C3%AB;4;bestätigt
 castle_village_ES6_2;Himarë;Vlorë;https://en.wikipedia.org/wiki/Himar%C3%AB;44;bestätigt
@@ -72,23 +72,23 @@ castle_village_EW7_2;Tolo;Nauplia;https://de.wikipedia.org/wiki/Tolo;8;bestätig
 castle_village_EW8_1;Koroni;Modon;https://de.wikipedia.org/wiki/Koroni;23;bestätigt
 castle_village_EW8_2;Navarino;Modon;https://en.wikipedia.org/wiki/Pylos;10;bestätigt
 castle_village_K1_1;Ploiești;Târgoviște;https://de.wikipedia.org/wiki/Ploie%C8%99ti;44;bestätigt
-castle_village_K1_2;Pitești;Târgoviște;https://de.wikipedia.org/wiki/Pite%C8%99ti;47;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_K1_2;Pitești;Târgoviște;https://de.wikipedia.org/wiki/Pite%C8%99ti;47;bestätigt (Grenzfall ca. 47 km)
 castle_village_K2_1;Rădăuți;Suceava;https://de.wikipedia.org/wiki/R%C4%83d%C4%83u%C8%9Bi;33;bestätigt
 castle_village_K2_2;Siret;Suceava;https://en.wikipedia.org/wiki/Siret;36;bestätigt
-castle_village_K3_1;Czernowitz;Chotyn;https://en.wikipedia.org/wiki/Chernivtsi;48;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_K3_1;Czernowitz;Chotyn;https://en.wikipedia.org/wiki/Chernivtsi;47;ungeprüft: Grenzfall ca. 47 km, Chotyn-Koordinaten nicht belegt
 castle_village_K3_2;Schwanez;Chotyn;https://de.wikipedia.org/wiki/Schwanez;3;bestätigt
-castle_village_K4_1;Kischinau;Bender;https://de.wikipedia.org/wiki/Chi%C8%99in%C4%83u;52;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_K4_1;Kischinau;Bender;https://de.wikipedia.org/wiki/Chi%C8%99in%C4%83u;54;ungeprüft: über 45 km, Vorschlag Tiraspol nicht belegt
 castle_village_K4_2;Căușeni;Bender;https://de.wikipedia.org/wiki/C%C4%83u%C8%99eni;21;bestätigt
 castle_village_K5_1;Owidiopol;Akkerman;https://en.wikipedia.org/wiki/Ovidiopol;10;bestätigt
-castle_village_K5_2;Tatarbunar;Akkerman;https://de.wikipedia.org/wiki/Tatarbunary;68;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_K5_2;Tatarbunar;Akkerman;https://de.wikipedia.org/wiki/Tatarbunary;69;ungeprüft: über 45 km, Akkerman-Koordinaten nicht belegt
 castle_village_K6_1;Armjansk;Perekop;https://de.wikipedia.org/wiki/Armjansk;5;bestätigt
 castle_village_K6_2;Tschaplynka;Perekop;https://de.wikipedia.org/wiki/Tschaplynka;26;bestätigt
 castle_village_K7_1;Galatz;Brăila;https://de.wikipedia.org/wiki/Gala%C8%9Bi;20;bestätigt
-castle_village_K7_2;Focșani;Brăila;https://de.wikipedia.org/wiki/Foc%C8%99ani;77;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_K7_2;Focșani;Brăila;https://de.wikipedia.org/wiki/Foc%C8%99ani;78;ungeprüft: über 45 km, Vorschlag Galați nicht belegt
 castle_village_K8_1;Ismail;Kilija;https://de.wikipedia.org/wiki/Ismajil;36;bestätigt
 castle_village_K8_2;Wylkowe;Kilija;https://de.wikipedia.org/wiki/Wylkowe;25;bestätigt
-castle_village_K9_1;Tschyhyryn;Tscherkassy;https://de.wikipedia.org/wiki/Tschyhyryn;59;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
-castle_village_K9_2;Kaniw;Tscherkassy;https://de.wikipedia.org/wiki/Kaniw;55;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_K9_1;Tschyhyryn;Tscherkassy;https://de.wikipedia.org/wiki/Tschyhyryn;56;ungeprüft: über 45 km, Vorschlag Smila nicht belegt
+castle_village_K9_2;Kaniw;Tscherkassy;https://de.wikipedia.org/wiki/Kaniw;55;ungeprüft: über 45 km, Vorschlag Zolotonoscha nicht belegt
 castle_village_S1_1;Pannonhalma;Győr;https://de.wikipedia.org/wiki/Pannonhalma;17;bestätigt
 castle_village_S1_2;Moson;Győr;https://de.wikipedia.org/wiki/Moson;34;bestätigt
 castle_village_S2_1;Tata;Komárom;https://de.wikipedia.org/wiki/Tata_%28Ungarn%29;18;bestätigt
@@ -98,7 +98,7 @@ castle_village_S3_2;Párkány;Esztergom;https://de.wikipedia.org/wiki/%C5%A0t%C3
 castle_village_S4_1;Gyöngyös;Eger;https://de.wikipedia.org/wiki/Gy%C3%B6ngy%C3%B6s;36;bestätigt
 castle_village_S4_2;Miskolc;Eger;https://de.wikipedia.org/wiki/Miskolc;38;bestätigt
 castle_village_S5_1;Salonta;Großwardein;https://de.wikipedia.org/wiki/Salonta;37;bestätigt
-castle_village_S5_2;Beiuș;Großwardein;https://de.wikipedia.org/wiki/Beiu%C8%99;55;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_S5_2;Beiuș;Großwardein;https://de.wikipedia.org/wiki/Beiu%C8%99;57;ungeprüft: über 45 km, Vorschlag Salonta nicht belegt
 castle_village_S6_1;Bochnia;Tarnów;https://de.wikipedia.org/wiki/Bochnia;40;bestätigt
 castle_village_S6_2;Dębica;Tarnów;https://de.wikipedia.org/wiki/D%C4%99bica;31;bestätigt
 castle_village_S7_1;Mediasch;Hermannstadt;https://en.wikipedia.org/wiki/Media%C8%99;43;bestätigt
@@ -110,7 +110,7 @@ castle_village_V3_2;Kutjevo;Požega;https://de.wikipedia.org/wiki/Kutjevo;18;bes
 castle_village_V6_1;Óbuda;Buda;https://de.wikipedia.org/wiki/III._Budapester_Bezirk;5;bestätigt
 castle_village_V6_2;Vác;Buda;https://en.wikipedia.org/wiki/V%C3%A1c;32;bestätigt
 castle_village_V7_1;Theben;Pressburg;https://en.wikipedia.org/wiki/Dev%C3%ADn;1;bestätigt
-castle_village_V7_2;Sankt Georgen;Pressburg;https://de.wikipedia.org/wiki/Sankt_Georgen_%28Freiburg_im_Breisgau%29;691;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+castle_village_V7_2;Sankt Georgen;Pressburg;;;ungeprüft: Link zeigt auf falschen Ort (Freiburg im Breisgau), Ersatz offen (Svätý Jur nicht belegt)
 castle_village_V8_1;Torda;Klausenburg;https://de.wikipedia.org/wiki/Turda;27;bestätigt
 castle_village_V8_2;Gilău;Klausenburg;https://de.wikipedia.org/wiki/Gil%C4%83u;16;bestätigt
 village_A3_1;Bojana;Sofia;https://en.wikipedia.org/wiki/Boyana;8;bestätigt
@@ -120,7 +120,7 @@ village_A4_2;Chalkidona;Saloniki;https://de.wikipedia.org/wiki/Chalkidona;24;bes
 village_A4_4;Kalamaria;Saloniki;https://en.wikipedia.org/wiki/Kalamaria;6;bestätigt
 village_A5_1;Havsa;Edirne;https://de.wikipedia.org/wiki/Havsa;26;bestätigt
 village_A5_2;Swilengrad;Edirne;https://de.wikipedia.org/wiki/Swilengrad;31;ersetzt (Lüleburgaz lag 73 km entfernt)
-village_A5_3;Uzunköprü;Edirne;https://de.wikipedia.org/wiki/Uzunk%C3%B6pr%C3%BC;47;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_A5_3;Uzunköprü;Edirne;https://de.wikipedia.org/wiki/Uzunk%C3%B6pr%C3%BC;47;ungeprüft: Grenzfall ca. 47 km, Edirne-Koordinaten nicht belegt
 village_B1_1;Tivoli;Rom;https://en.wikipedia.org/wiki/Tivoli%2C_Lazio;26;bestätigt
 village_B1_2;Ostia;Rom;https://en.wikipedia.org/wiki/Ostia_%28Rome%29;26;bestätigt
 village_B1_3;Frascati;Rom;https://en.wikipedia.org/wiki/Frascati;18;bestätigt
@@ -145,11 +145,11 @@ village_EN2_1;Piräus;Athen;https://de.wikipedia.org/wiki/Pir%C3%A4us;8;bestäti
 village_EN2_2;Eleusis;Athen;https://de.wikipedia.org/wiki/Elefsina;18;bestätigt
 village_EN3_1;Manisa;Smyrna;https://de.wikipedia.org/wiki/Manisa;33;bestätigt
 village_EN3_3;Urla;Smyrna;https://de.wikipedia.org/wiki/Urla;34;bestätigt
-village_EN4_2;Beypazarı;Ankara;https://en.wikipedia.org/wiki/Beypazar%C4%B1;83;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_EN4_2;Beypazarı;Ankara;https://en.wikipedia.org/wiki/Beypazar%C4%B1;84;ungeprüft: über 45 km, kein belegter Ersatz
 village_EN4_4;Çubuk;Ankara;https://en.wikipedia.org/wiki/%C3%87ubuk;38;bestätigt
-village_EN5_1;Eskişehir;Kütahya;https://en.wikipedia.org/wiki/Eski%C5%9Fehir;60;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
-village_EN5_2;Afyon;Kütahya;https://en.wikipedia.org/wiki/Afyonkarahisar;88;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
-village_EN5_4;Simav;Kütahya;https://en.wikipedia.org/wiki/Simav;94;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_EN5_1;Eskişehir;Kütahya;https://en.wikipedia.org/wiki/Eski%C5%9Fehir;60;ungeprüft: über 45 km, Vorschlag Tavşanlı nicht belegt
+village_EN5_2;Afyon;Kütahya;https://en.wikipedia.org/wiki/Afyonkarahisar;61;ungeprüft: über 45 km (alter Wert 88 war falsch), Vorschlag Tavşanlı nicht belegt
+village_EN5_4;Simav;Kütahya;https://en.wikipedia.org/wiki/Simav;94;ungeprüft: über 45 km, Vorschlag Tavşanlı nicht belegt
 village_EN6_1;Baltschik;Varna;https://de.wikipedia.org/wiki/Baltschik;31;bestätigt
 village_EN6_2;Prowadija;Varna;https://de.wikipedia.org/wiki/Prowadija_%28Fluss%29;20;bestätigt
 village_ES1_2;Struga;Ohrid;https://de.wikipedia.org/wiki/Struga;12;bestätigt
@@ -157,7 +157,7 @@ village_ES1_3;Resen;Ohrid;https://de.wikipedia.org/wiki/Resen;18;bestätigt
 village_ES1_4;Peštani;Ohrid;https://en.wikipedia.org/wiki/Pe%C5%A1tani;13;bestätigt
 village_ES2_2;Drisht;Skadar;https://en.wikipedia.org/wiki/Drisht;9;bestätigt
 village_ES2_3;Koplik;Skadar;https://de.wikipedia.org/wiki/Koplik;17;bestätigt
-village_ES2_4;Vau i Dejës;Skadar;;;ungeprüft: keine Seite mit Koordinaten gefunden
+village_ES2_4;Vau i Dejës;Skadar;https://en.wikipedia.org/wiki/Vau_i_Dejës;13;bestätigt
 village_ES3_1;Libohovë;Gjirokastër;https://de.wikipedia.org/wiki/Libohova;12;bestätigt
 village_ES3_2;Tepelenë;Gjirokastër;https://en.wikipedia.org/wiki/Tepelen%C3%AB;26;bestätigt
 village_ES3_3;Delvinë;Gjirokastër;https://de.wikipedia.org/wiki/Delvina;14;bestätigt
@@ -167,34 +167,34 @@ village_ES5_3;Krujë;Durrës;https://en.wikipedia.org/wiki/Kruj%C3%AB;36;bestät
 village_ES6_1;Metsovo;Janina;https://de.wikipedia.org/wiki/Metsovo;31;bestätigt
 village_ES6_2;Zitsa;Janina;https://en.wikipedia.org/wiki/Zitsa;20;bestätigt
 village_ES7_1;Suva Reka;Prizren;https://de.wikipedia.org/wiki/Suhareka;19;bestätigt
-village_ES7_2;Orahovac;Prizren;;;ungeprüft: keine Seite mit Koordinaten gefunden
+village_ES7_2;Rahovec (Orahovac);Prizren;https://en.wikipedia.org/wiki/Rahovec;22;bestätigt (Name: Rahovec, serb. Orahovac, Kosovo)
 village_EW1_1;Mestre;Venezia;https://en.wikipedia.org/wiki/Mestre;10;bestätigt
 village_EW1_2;Chioggia;Venezia;https://en.wikipedia.org/wiki/Chioggia;25;bestätigt
-village_EW3_2;Parga;Preveza;https://en.wikipedia.org/wiki/Parga;47;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_EW3_2;Parga;Preveza;https://en.wikipedia.org/wiki/Parga;47;bestätigt (Grenzfall ca. 47 km)
 village_EW3_3;Vonitsa;Preveza;https://en.wikipedia.org/wiki/Vonitsa;12;bestätigt
 village_K1_1;Snagov;Bukarest;https://de.wikipedia.org/wiki/Snagov;31;bestätigt
-village_K1_2;Oltenița;Bukarest;https://en.wikipedia.org/wiki/Olteni%C8%9Ba;57;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_K1_2;Oltenița;Bukarest;https://en.wikipedia.org/wiki/Olteni%C8%9Ba;57;ungeprüft: über 45 km, Vorschlag Buftea nicht belegt
 village_K1_4;Mogoșoaia;Bukarest;https://en.wikipedia.org/wiki/Mogo%C8%99oaia;14;bestätigt
-village_K2_1;Hârlău;Jassy;https://en.wikipedia.org/wiki/H%C3%A2rl%C4%83u;59;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
-village_K2_2;Huși;Jassy;https://en.wikipedia.org/wiki/Hu%C8%99i;65;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_K2_1;Hârlău;Jassy;https://en.wikipedia.org/wiki/H%C3%A2rl%C4%83u;59;ungeprüft: über 45 km, Vorschlag Podu Iloaiei nicht belegt
+village_K2_2;Huși;Jassy;https://en.wikipedia.org/wiki/Hu%C8%99i;65;ungeprüft: über 45 km, kein Ersatz gefunden
 village_K3_1;Inkerman;Bachtschissarai;https://en.wikipedia.org/wiki/Inkerman;25;bestätigt
 village_K3_2;Mangup;Bachtschissarai;https://en.wikipedia.org/wiki/Mangup;18;bestätigt
 village_K3_3;Akmescit;Bachtschissarai;https://de.wikipedia.org/wiki/Simferopol;29;bestätigt
 village_K4_2;Sudak;Kaffa;https://de.wikipedia.org/wiki/Sudak;38;bestätigt
 village_K4_3;Staryj Krym;Kaffa;https://de.wikipedia.org/wiki/Staryj_Krym;23;ersetzt (Kertsch lag 92 km entfernt)
-village_K4_4;Karasubazar;Kaffa;https://en.wikipedia.org/wiki/Bilohirsk;61;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_K4_4;Karasubazar;Kaffa;https://en.wikipedia.org/wiki/Bilohirsk;61;ungeprüft: über 45 km, Link (Bilohirsk = früher Karasubazar) korrekt, Vorschlag Staryi Krym nicht belegt
 village_K5_2;Wyschhorod;Kiew;https://de.wikipedia.org/wiki/Wyschhorod;15;bestätigt
 village_K5_3;Wassylkiw;Kiew;https://de.wikipedia.org/wiki/Wassylkiw;33;bestätigt
 village_K5_4;Browary;Kiew;https://de.wikipedia.org/wiki/Browary;20;bestätigt
 village_K6_1;Kinburn;Otschakiw;https://de.wikipedia.org/wiki/Kinburn;8;bestätigt
-village_K6_2;Hadschibej;Otschakiw;https://en.wikipedia.org/wiki/Khadjibey;63;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_K6_2;Hadschibej;Otschakiw;https://en.wikipedia.org/wiki/Khadjibey;62;ungeprüft: über 45 km, kein Ersatz gefunden
 village_K6_3;Beresan;Otschakiw;https://de.wikipedia.org/wiki/Beresan_%28Insel%29;10;bestätigt
 village_S1_1;Wieliczka;Krakau;https://de.wikipedia.org/wiki/Wieliczka;12;bestätigt
 village_S1_3;Olkusz;Krakau;https://de.wikipedia.org/wiki/Olkusz;35;bestätigt
 village_S2_1;Lubartów;Lublin;https://de.wikipedia.org/wiki/Lubart%C3%B3w;22;ersetzt (Zamość lag 76 km entfernt)
-village_S2_2;Puławy;Lublin;https://de.wikipedia.org/wiki/Pu%C5%82awy;46;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_S2_2;Puławy;Lublin;https://de.wikipedia.org/wiki/Pu%C5%82awy;46;ungeprüft: Grenzfall ca. 46 km, Lublin-Koordinaten nicht belegt
 village_S3_1;Jarosław;Przemyśl;https://de.wikipedia.org/wiki/Jaros%C5%82aw;27;bestätigt
-village_S3_2;Sanok;Przemyśl;https://en.wikipedia.org/wiki/Sanok;47;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_S3_2;Sanok;Przemyśl;https://en.wikipedia.org/wiki/Sanok;47;bestätigt (Grenzfall ca. 47 km)
 village_S4_1;Opatów;Sandomierz;https://de.wikipedia.org/wiki/Opat%C3%B3w;27;bestätigt
 village_S4_3;Tarnobrzeg;Sandomierz;https://de.wikipedia.org/wiki/Tarnobrzeg;12;bestätigt
 village_S4_4;Staszów;Sandomierz;https://en.wikipedia.org/wiki/Stasz%C3%B3w;43;bestätigt
@@ -202,8 +202,8 @@ village_S5_1;Żółkiew;Lemberg;https://en.wikipedia.org/wiki/Zhovkva;24;bestät
 village_S5_2;Gródek;Lemberg;https://de.wikipedia.org/wiki/Horodok_%28Lwiw%29;28;bestätigt
 village_S6_1;Eperies;Kaschau;https://de.wikipedia.org/wiki/Pre%C5%A1ov;31;bestätigt
 village_S6_2;Medzev;Kaschau;https://de.wikipedia.org/wiki/Medzev;27;ersetzt (Tokaj lag 68 km entfernt)
-village_S6_3;Sárospatak;Kaschau;https://en.wikipedia.org/wiki/S%C3%A1rospatak;50;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_S6_3;Sárospatak;Kaschau;https://en.wikipedia.org/wiki/S%C3%A1rospatak;50;ungeprüft: über 45 km, Vorschlag Trebišov nicht belegt
 village_S7_1;Hajdúböszörmény;Debrecen;https://de.wikipedia.org/wiki/Hajd%C3%BAb%C3%B6sz%C3%B6rm%C3%A9ny;17;bestätigt
-village_S7_2;Nyíregyháza;Debrecen;https://en.wikipedia.org/wiki/Ny%C3%ADregyh%C3%A1za;48;ungeprüft: Treffer liegt weit vom Sitz, Name oder Lage unsicher
+village_S7_2;Nyíregyháza;Debrecen;https://en.wikipedia.org/wiki/Ny%C3%ADregyh%C3%A1za;47;bestätigt (Grenzfall ca. 47 km)
 village_V7_1;Schwechat;Wien;https://de.wikipedia.org/wiki/Schwechat;11;bestätigt
 village_V7_2;Klosterneuburg;Wien;https://de.wikipedia.org/wiki/Klosterneuburg;11;bestätigt
