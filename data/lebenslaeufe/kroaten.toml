@@ -13,12 +13,12 @@ text = { en = "Your family held land on the Military Frontier. They owed no labo
 
 [vlandia_blacksmith_option]
 titel = { en = "Town smiths", de = "Schmiede in der Stadt" }
-text = { en = "Your family owned a smithy in Karlovac, the star-shaped fortress on the Kupa. Your father had a small voice in the town council and served in the citizens' militia.", de = "Eure Familie besaß eine Schmiede in Karlovac, der sternförmigen Festung an der Kupa. Euer Vater hatte eine kleine Stimme im Stadtrat und diente in der Bürgerwehr." }
+text = { en = "Your family owned a smithy in Karlovac, the six-pointed star fortress built in 1579 where the Korana meets the Kupa. Your father had a small voice in the town council and served in the citizens' militia.", de = "Eure Familie besaß eine Schmiede in Karlovac, der 1579 erbauten sechszackigen Sternfestung am Zusammenfluss von Korana und Kupa. Euer Vater hatte eine kleine Stimme im Stadtrat und diente in der Bürgermiliz." }
 
 [vlandia_hunter_option]
 titel = { en = "Hunters", de = "Jäger" }
 text = { en = "Your family lived in a village in the forests of Gorski Kotar but owned no land. Your father took whatever work he could find and spent long days in the woods hunting and trapping, always wary of the count's gamekeepers.", de = "Eure Familie lebte in einem Dorf in den Wäldern des Gorski Kotar, besaß aber kein Land. Euer Vater nahm jede Arbeit an, die er fand, und verbrachte lange Tage jagend und Fallen stellend im Wald, immer auf der Hut vor den Jägern des Grafen." }
 
 [vlandia_mercenary_option]
-titel = { en = "Soldiers for hire", de = "Söldner" }
-text = { en = "Your father served in one of the Croat companies the Emperor hired out across Europe, men who had known war so long that they never took well to peace. Their marksmen were valued from the Rhine to the Danube. Your mother followed the baggage train and took you along in the wake of bloody campaigns.", de = "Euer Vater diente in einer der kroatischen Kompanien, die der Kaiser in ganz Europa einsetzte, Männer, die den Krieg so lange kannten, dass sie mit dem Frieden nie zurechtkamen. Ihre Schützen waren vom Rhein bis zur Donau gefragt. Eure Mutter zog mit dem Tross und nahm Euch mit auf blutige Feldzüge." }
+titel = { en = "Croat horsemen", de = "Kroatische Reiter" }
+text = { en = "Your grandfather rode with the Croats, the light horsemen with carbine and pistols who fought for the Emperor across Germany in the Thirty Years' War. Your father followed him into the Emperor's service, and war never let him go. Your mother followed the baggage train and took you along in the wake of bloody campaigns.", de = "Euer Großvater ritt mit den Kroaten, der leichten Reiterei mit Karabiner und Pistolen, die im Dreißigjährigen Krieg für den Kaiser quer durch Deutschland kämpfte. Euer Vater folgte ihm in den Dienst des Kaisers, und der Krieg ließ ihn nie mehr los. Eure Mutter zog mit dem Tross und nahm Euch mit auf blutige Feldzüge." }

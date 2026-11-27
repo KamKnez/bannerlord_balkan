@@ -189,7 +189,7 @@ Leg = "eastern_leather_boots"
 
 [[truppe]]
 id = "odabasi"
-name = { en = "Janissary Odabaşı", de = "Janitscharen-Odabaşı" }
+name = { en = "Janissary Officer", de = "Janitscharenoffizier" }
 stufe = 5
 gruppe = "Ranged"
 profil = "schuetze"
@@ -318,7 +318,7 @@ Leg = "reinforced_suede_boots"
 
 [[truppe]]
 id = "militia_spearman"
-name = { en = "Yerli Spearman", de = "Yerli-Speerträger" }
+name = { en = "Yerliyya Spearman", de = "Yerliyya-Speerträger" }
 stufe = 2
 gruppe = "Infantry"
 profil = "infanterie"
@@ -331,7 +331,7 @@ Leg = "wrapped_shoes"
 
 [[truppe]]
 id = "militia_shooter"
-name = { en = "Yerli Tüfekçi", de = "Yerli-Tüfekçi" }
+name = { en = "Yerliyya Musketeer", de = "Yerliyya-Musketier" }
 stufe = 2
 gruppe = "Ranged"
 profil = "schuetze"
@@ -345,7 +345,7 @@ Leg = "wrapped_shoes"
 
 [[truppe]]
 id = "militia_veteran_spearman"
-name = { en = "Veteran Yerli Spearman", de = "Yerli-Speerträger (Veteran)" }
+name = { en = "Veteran Yerliyya Spearman", de = "Yerliyya-Speerträger (Veteran)" }
 stufe = 3
 gruppe = "Infantry"
 profil = "infanterie"
@@ -358,7 +358,7 @@ Leg = "eastern_leather_boots"
 
 [[truppe]]
 id = "militia_veteran_shooter"
-name = { en = "Veteran Yerli Tüfekçi", de = "Yerli-Tüfekçi (Veteran)" }
+name = { en = "Veteran Yerliyya Musketeer", de = "Yerliyya-Musketier (Veteran)" }
 stufe = 3
 gruppe = "Ranged"
 profil = "schuetze"

@@ -1,5 +1,5 @@
 # Deutsche (Habsburgermonarchie). Neue Kultur, kopiert alle übrigen Werte von Vlandia.
-# Deutsche Kolonisten und Söldner: Pikeniere, Doppelsöldner, Musketiere und Kürassiere.
+# Deutsche Kolonisten und Söldner: Pikeniere, Musketiere und Kürassiere.
 # Rekrutierbar in Dörfern mit dieser Kultur (siehe [dorfkultur] in data/reiche/).
 # Aufbau der Datei: siehe data/kulturen/README.md
 
@@ -128,7 +128,7 @@ Leg = "leather_boots"
 
 [[truppe]]
 id = "doppelsoeldner"
-name = { en = "Doppelsöldner", de = "Doppelsöldner" }
+name = { en = "German Veteran Pikeman", de = "Erfahrener deutscher Pikenier" }
 stufe = 4
 gruppe = "Infantry"
 profil = "pike"

@@ -1,7 +1,7 @@
 # Lebensläufe der Serben (Vorlage Sturgia). Aufbau: siehe README.md
 [sturgia_companion_option]
 titel = { en = "A vojvoda's companions", de = "das Gefolge eines Vojvoden" }
-text = { en = "Your father belonged to the armed household of a Serbian vojvoda. He sat at his lord's table, looked after his villages and stood at his side in the front rank in battle. When the Patriarch led the people north across the Danube, they went with him.", de = "Euer Vater gehörte zum bewaffneten Haus eines serbischen Vojvoden. Er saß an der Tafel seines Herrn, kümmerte sich um dessen Dörfer und stand im Kampf in der ersten Reihe an seiner Seite. Als der Patriarch das Volk nach Norden über die Donau führte, zogen sie mit ihm." }
+text = { en = "Your father belonged to the armed household of a Serbian vojvoda. He sat at his lord's table, looked after his villages and stood at his side in the front rank in battle. When the Patriarch led the people out of Belgrade in 1690, they went with him.", de = "Euer Vater gehörte zum bewaffneten Haus eines serbischen Vojvoden. Er saß an der Tafel seines Herrn, kümmerte sich um dessen Dörfer und stand in der Schlacht in der ersten Reihe an seiner Seite. Als der Patriarch 1690 das Volk aus Belgrad führte, zogen sie mit ihm." }
 
 [sturgia_trader_option]
 titel = { en = "River traders", de = "Flusshändler" }

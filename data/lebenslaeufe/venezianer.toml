@@ -1,15 +1,15 @@
 # Lebensläufe der Venezianer und Dalmatiner (Vorlage Imperium). Aufbau: siehe README.md
 [empire_lanlord_option]
 titel = { en = "A noble's retainers", de = "das Gefolge eines Adligen" }
-text = { en = "Your father was a trusted man of a noble family of Zadar and managed their estates in the countryside. In war he rode with the Croatian horse that the Republic raises in Dalmatia, armed as a lancer.", de = "Euer Vater war ein Vertrauter einer Adelsfamilie aus Zadar und verwaltete ihre Güter auf dem Land. Im Krieg ritt er mit der kroatischen Reiterei, die die Republik in Dalmatien aufstellt, als Lanzenreiter." }
+text = { en = "Your father was a trusted man of a noble family of Zadar and managed their estates in the countryside. In war he rode with the cappelletti, the light horsemen the Republic raises among the Dalmatian Croats.", de = "Euer Vater war ein Vertrauter einer Adelsfamilie aus Zadar und verwaltete ihre Güter auf dem Land. Im Krieg ritt er mit den Cappelletti, der leichten Reiterei, die die Republik unter den dalmatinischen Kroaten aufstellt." }
 
 [empire_merchant_option]
 titel = { en = "Merchants", de = "Kaufleute" }
-text = { en = "Your family were merchants in Split who shipped Dalmatian wine, oil and salt to Venice and sent caravans into the Bosnian hinterland. They had a seat in the town council.", de = "Eure Familie waren Kaufleute in Split, die dalmatinischen Wein, Öl und Salz nach Venedig verschifften und Karawanen ins bosnische Hinterland schickten. Sie hatten einen Sitz im Stadtrat." }
+text = { en = "Your family were merchants in Split who shipped Dalmatian wine, oil and salt to Venice. They had a seat in the town council.", de = "Eure Familie waren Kaufleute in Split, die dalmatinischen Wein, Öl und Salz nach Venedig verschifften. Sie hatten einen Sitz im Stadtrat." }
 
 [empire_farmer_option]
 titel = { en = "Colonists", de = "Kolonisten" }
-text = { en = "Your family took up land in the territory the Republic had just won behind the coast. They had just enough to feed themselves and sell a little, and the men served in the cernide, the rural militia.", de = "Eure Familie nahm Land in dem Gebiet, das die Republik gerade hinter der Küste gewonnen hatte. Sie hatten genug zum Leben und ein wenig zum Verkaufen, und die Männer dienten in den Cernide, der Landmiliz." }
+text = { en = "Your family took up land behind the coast after the war. They had just enough to feed themselves and sell a little, and the men served in the cranide, as the rural militia is called in Dalmatia.", de = "Eure Familie nahm nach dem Krieg Land hinter der Küste. Sie hatten gerade genug, um sich zu ernähren und ein wenig zu verkaufen, und die Männer dienten in den Cranide, wie die Landmiliz in Dalmatien heißt." }
 
 [empire_artisan_option]
 titel = { en = "Artisans", de = "Handwerker" }
