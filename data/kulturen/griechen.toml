@@ -1,6 +1,10 @@
 # Griechen (Osmanisches Reich). Neue Kultur, kopiert alle übrigen Werte vom Imperium.
-# Christliche Untertanen des Sultans: Armatolen (vom Reich bezahlte Bergmiliz), Seeleute der Inseln und Küsten,
-# dazu die Archonten und Kotzabasides, die Vorsteher der Gemeinden. Einfacher erster Truppenbaum.
+# Christliche Untertanen des Sultans: Armatolen (Bergmiliz im Auftrag der Osmanen, von den Einheimischen bezahlt),
+# Seeleute der Inseln und Küsten, dazu die Kotzabasides (Gemeindevorsteher). Einfacher erster Truppenbaum.
+# Quellen (Wikipedia, en): Armatoles (Ränge kapetanios, protopalikaro, palikaria; viele waren frühere Klephten),
+# Klephts, Kodjabashis (christliche Notabeln = proestoi/prokritoi), Ottoman_Greece (Dimogerontes; Reeder als
+# Seetransporteure des Reiches), Phanariots (1669-1821 Mehrheit der Dragomane), Greek_name (Heiligennamen).
+# Der berittene Adelsbaum ist eine Spielvereinfachung: Stufe 2 und 3 tragen bewusst allgemeine Namen.
 # Rekrutierbar in Dörfern mit dieser Kultur (siehe [dorfkultur] in data/reiche/).
 # Aufbau der Datei: siehe data/kulturen/README.md
 
@@ -15,7 +19,7 @@ farben = ["0xff1F4E9A", "0xffF2F2F2"]
 gesicht = "fighter_empire"
 zivil = ["empire_troop_civilian_template_t1", "empire_troop_civilian_template_t2", "empire_troop_civilian_template_t3"]
 basis_truppe = "peasant"
-elite_truppe = "archontopoulos"
+elite_truppe = "notable_son"
 
 [name]
 en = "Greeks"
@@ -23,16 +27,18 @@ de = "Griechen"
 
 [text]
 en = """
-The Greeks of Macedonia, Thessaly and the islands live under the Sultan as his Orthodox subjects. Their merchants \
-and ship owners trade from Thessaloniki to Venice and Odessa, and Phanariot families in Constantinople serve the \
-Porte as interpreters and princes. In the mountains the armatoles keep the roads for the empire, and the klephts \
-rob them.
+The Greeks of Macedonia, Thessaly and the islands live under the Sultan as his Orthodox subjects. Greek ship \
+owners carry much of the empire's trade by sea, and Phanariot families in Constantinople serve the Porte as \
+dragomans, its interpreters. In the villages the kodjabashis speak for the community and collect the taxes. In the \
+mountains the armatoles guard the passes on behalf of the Ottomans, while the klephts live as brigands; many \
+armatoles were klephts before.
 """
 de = """
-Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Ihre \
-Kaufleute und Reeder handeln von Saloniki bis Venedig, und Phanarioten-Familien in Konstantinopel dienen der \
-Pforte als Dolmetscher und Fürsten. In den Bergen halten die Armatolen die Straßen für das Reich frei, und die \
-Klephten überfallen sie.
+Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Griechische \
+Reeder befördern einen großen Teil des Seehandels des Reiches, und Phanarioten-Familien in Konstantinopel dienen \
+der Pforte als Dragomane, ihre Dolmetscher. In den Dörfern vertreten die Kotzabasides die Gemeinde und treiben \
+die Steuern ein. In den Bergen bewachen die Armatolen im Auftrag der Osmanen die Pässe, während die Klephten als \
+Räuber leben; viele Armatolen waren vorher selbst Klephten.
 """
 
 [miliz]
@@ -57,7 +63,7 @@ min = 2
 max = 4
 
 [[lord_partei]]
-truppe = "archontopoulos"
+truppe = "notable_son"
 min = 1
 max = 2
 
@@ -157,17 +163,17 @@ Head = "imperial_padded_coif"
 Body = "imperial_padded_cloth"
 Leg = "leather_boots"
 
-# ---------------------------------------------------------------- Adelsbaum (Söhne der Archonten)
+# ---------------------------------------------------------------- Adelsbaum (Söhne der Notabeln)
 
 [[truppe]]
-id = "archontopoulos"
-name = { en = "Archontopoulos", de = "Archontopoulos (Sohn eines Vorstehers)" }
+id = "notable_son"
+name = { en = "Notable's Son", de = "Sohn eines Notabeln" }
 stufe = 2
 gruppe = "Cavalry"
 profil = "reiter"
 basis = true
 gesicht = "fighter_empire_tall"
-aufwerten = ["kavallaris"]
+aufwerten = ["notable_horseman"]
 pferd = { Horse = "empire_horse", HorseHarness = "light_harness" }
 [[truppe.ausruestung]]
 Item0 = "narrow_sword_t3"
@@ -178,8 +184,8 @@ Body = "woven_leather_coat"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
-id = "kavallaris"
-name = { en = "Archon's Horseman", de = "Reiter eines Archonten" }
+id = "notable_horseman"
+name = { en = "Notable's Horseman", de = "Reiter eines Notabeln" }
 stufe = 3
 gruppe = "Cavalry"
 profil = "reiter"
@@ -204,7 +210,7 @@ gruppe = "Cavalry"
 profil = "reiter"
 benoetigt = "kriegspferd"
 gesicht = "fighter_empire_tall"
-aufwerten = ["kotzabasis"]
+aufwerten = ["dimogeron"]
 pferd = { Horse = "t3_empire_horse", HorseHarness = "half_scale_barding" }
 [[truppe.ausruestung]]
 Item0 = "empire_lance_2_t4"
@@ -218,13 +224,13 @@ Gloves = "lordly_padded_mitten"
 Leg = "mail_cavalier_boots"
 
 [[truppe]]
-id = "kotzabasis"
-name = { en = "Kotzabasis", de = "Kotzabasis (Gemeindevorsteher)" }
+id = "dimogeron"
+name = { en = "Dimogeron", de = "Dimogeron (Gemeindeältester)" }
 stufe = 5
 gruppe = "Cavalry"
 profil = "reiter"
 gesicht = "fighter_empire_tall"
-aufwerten = ["archon"]
+aufwerten = ["kotzabasis"]
 pferd = { Horse = "t3_empire_horse", HorseHarness = "imperial_scale_barding" }
 [[truppe.ausruestung]]
 Item0 = "empire_lance_3_t5"
@@ -238,8 +244,8 @@ Gloves = "decorated_imperial_gauntlets"
 Leg = "mail_cavalier_boots"
 
 [[truppe]]
-id = "archon"
-name = { en = "Archon", de = "Archon" }
+id = "kotzabasis"
+name = { en = "Kotzabasis", de = "Kotzabasis (Gemeindevorsteher)" }
 stufe = 6
 gruppe = "Cavalry"
 profil = "reiter"

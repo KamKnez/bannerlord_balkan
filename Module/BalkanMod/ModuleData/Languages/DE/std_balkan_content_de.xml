@@ -35,10 +35,10 @@
     <string id="balkan_bg_hajduk" text="Bulgarischer Hajduk" />
     <string id="balkan_bg_harambasha" text="Harambascha" />
     <string id="balkan_bg_konnik" text="Berittener Woinuk" />
-    <string id="balkan_bg_lagator" text="Lagator (Woinukenführer)" />
-    <string id="balkan_bg_cheribasha" text="Tscheribascha" />
-    <string id="balkan_bg_knez" text="Knez (Dorfoberhaupt)" />
-    <string id="balkan_bg_voyvoda" text="Woinuken-Wojwode" />
+    <string id="balkan_bg_lagator" text="Woinuken-Lagator" />
+    <string id="balkan_bg_ceribasi" text="Woinuken-Çeribaşı" />
+    <string id="balkan_bg_voynuk_bey" text="Woinuk-Bey" />
+    <string id="balkan_bg_voynuk_sanjak_bey" text="Woinuken-Sandschakbey" />
     <string id="balkan_bg_militia_spearman" text="Bulgarischer Milizspeerträger" />
     <string id="balkan_bg_militia_shooter" text="Bulgarischer Milizschütze" />
     <string id="balkan_bg_militia_veteran_spearman" text="Bulgarischer Milizspeerträger (Veteran)" />
@@ -64,11 +64,11 @@
     <string id="balkan_gr_protopalikaro" text="Protopalikare" />
     <string id="balkan_gr_naftis" text="Griechischer Seemann" />
     <string id="balkan_gr_veteran_naftis" text="Erfahrener griechischer Seemann" />
-    <string id="balkan_gr_archontopoulos" text="Archontopoulos (Sohn eines Vorstehers)" />
-    <string id="balkan_gr_kavallaris" text="Reiter eines Archonten" />
+    <string id="balkan_gr_notable_son" text="Sohn eines Notabeln" />
+    <string id="balkan_gr_notable_horseman" text="Reiter eines Notabeln" />
     <string id="balkan_gr_kapetanios" text="Kapetanios (Armatolenführer)" />
+    <string id="balkan_gr_dimogeron" text="Dimogeron (Gemeindeältester)" />
     <string id="balkan_gr_kotzabasis" text="Kotzabasis (Gemeindevorsteher)" />
-    <string id="balkan_gr_archon" text="Archon" />
     <string id="balkan_gr_militia_spearman" text="Griechischer Milizspeerträger" />
     <string id="balkan_gr_militia_shooter" text="Griechischer Milizschütze" />
     <string id="balkan_gr_militia_veteran_spearman" text="Griechischer Milizspeerträger (Veteran)" />
@@ -174,11 +174,11 @@
     <string id="balkan_culture_bosniaken" text="Bosniaken" />
     <string id="balkan_culture_bosniaken_text" text="Das Eyalet Bosnien ist das osmanische Bollwerk an der Grenze zu den Habsburgern und zu Venedig. Seine Kapetanije bewachen Flussübergänge und Gebirgspässe, besetzt mit Azapen und Musketieren, die jede Furt kennen. Die Sipahi halten ihre Timare gegen Dienst zu Pferd, und die verwegenen Deli reiten jedem Streifzug voraus." />
     <string id="balkan_culture_bulgaren" text="Bulgaren" />
-    <string id="balkan_culture_bulgaren_text" text="Seit drei Jahrhunderten leben die Bulgaren unter dem Sultan, als Bauern, Hirten und Handwerker in den Tälern des Balkangebirges und in der thrakischen Ebene. Manche dienen dem Reich als Woinuken oder als Wächter der Gebirgspässe und sind dafür von Steuern befreit. Andere sind als Hajduken in die Wälder gegangen. Der katholische Aufstand von Tschiprowzi 1688 wurde niedergeschlagen, aber er ist nicht vergessen." />
+    <string id="balkan_culture_bulgaren_text" text="Seit drei Jahrhunderten, seit 1396, leben die Bulgaren unter dem Sultan. Manche dienen dem Reich als Woinuken oder als Wächter von Straßen und Pässen und sind dafür von Steuern befreit. Andere sind als Hajduken in die Wälder gegangen. Der Aufstand von Tschiprowzi 1688, angeführt von katholischen Bulgaren, wurde niedergeschlagen und die Stadt zerstört." />
     <string id="balkan_culture_deutsche" text="Deutsche" />
     <string id="balkan_culture_deutsche_text" text="Deutsche Siedler kamen als Bauern, Handwerker und Soldaten in die Grenzländer der Steiermark, Krains und der zurückeroberten Ebenen. Die kaiserlichen Regimenter werben unter ihnen Pikeniere und Musketiere, und aus ihrem Adel stammen die schweren Kürassiere des Kaisers." />
     <string id="balkan_culture_griechen" text="Griechen" />
-    <string id="balkan_culture_griechen_text" text="Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Ihre Kaufleute und Reeder handeln von Saloniki bis Venedig, und Phanarioten-Familien in Konstantinopel dienen der Pforte als Dolmetscher und Fürsten. In den Bergen halten die Armatolen die Straßen für das Reich frei, und die Klephten überfallen sie." />
+    <string id="balkan_culture_griechen_text" text="Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Griechische Reeder befördern einen großen Teil des Seehandels des Reiches, und Phanarioten-Familien in Konstantinopel dienen der Pforte als Dragomane, ihre Dolmetscher. In den Dörfern vertreten die Kotzabasides die Gemeinde und treiben die Steuern ein. In den Bergen bewachen die Armatolen im Auftrag der Osmanen die Pässe, während die Klephten als Räuber leben; viele Armatolen waren vorher selbst Klephten." />
     <string id="balkan_culture_kroaten" text="Kroaten" />
     <string id="balkan_culture_kroaten_text" text="Kroatien, Slawonien und Dalmatien nennen sich ein eigenes Königreich unter der habsburgischen Krone. Seit zwei Jahrhunderten halten die Kroaten die Militärgrenze gegen die Osmanen: Freie Bauern leisten dem Kaiser Kriegsdienst statt Abgaben, und jedes Dorf hält seine Haramije und Reiter bereit. Der Adel reitet noch als gepanzerte Reiterei, die Grenzer kämpfen mit Säbel und Arkebuse." />
     <string id="balkan_culture_ragusaner" text="Ragusaner" />
@@ -194,11 +194,11 @@
     <string id="balkan_culture_bosniaken_rich" text="Bosniaken" />
     <string id="balkan_culture_bosniaken_desc" text="Das Eyalet Bosnien ist das osmanische Bollwerk an der Grenze zu den Habsburgern und zu Venedig. Seine Kapetanije bewachen Flussübergänge und Gebirgspässe, besetzt mit Azapen und Musketieren, die jede Furt kennen. Die Sipahi halten ihre Timare gegen Dienst zu Pferd, und die verwegenen Deli reiten jedem Streifzug voraus." />
     <string id="balkan_culture_bulgaren_rich" text="Bulgaren" />
-    <string id="balkan_culture_bulgaren_desc" text="Seit drei Jahrhunderten leben die Bulgaren unter dem Sultan, als Bauern, Hirten und Handwerker in den Tälern des Balkangebirges und in der thrakischen Ebene. Manche dienen dem Reich als Woinuken oder als Wächter der Gebirgspässe und sind dafür von Steuern befreit. Andere sind als Hajduken in die Wälder gegangen. Der katholische Aufstand von Tschiprowzi 1688 wurde niedergeschlagen, aber er ist nicht vergessen." />
+    <string id="balkan_culture_bulgaren_desc" text="Seit drei Jahrhunderten, seit 1396, leben die Bulgaren unter dem Sultan. Manche dienen dem Reich als Woinuken oder als Wächter von Straßen und Pässen und sind dafür von Steuern befreit. Andere sind als Hajduken in die Wälder gegangen. Der Aufstand von Tschiprowzi 1688, angeführt von katholischen Bulgaren, wurde niedergeschlagen und die Stadt zerstört." />
     <string id="balkan_culture_deutsche_rich" text="Deutsche" />
     <string id="balkan_culture_deutsche_desc" text="Deutsche Siedler kamen als Bauern, Handwerker und Soldaten in die Grenzländer der Steiermark, Krains und der zurückeroberten Ebenen. Die kaiserlichen Regimenter werben unter ihnen Pikeniere und Musketiere, und aus ihrem Adel stammen die schweren Kürassiere des Kaisers." />
     <string id="balkan_culture_griechen_rich" text="Griechen" />
-    <string id="balkan_culture_griechen_desc" text="Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Ihre Kaufleute und Reeder handeln von Saloniki bis Venedig, und Phanarioten-Familien in Konstantinopel dienen der Pforte als Dolmetscher und Fürsten. In den Bergen halten die Armatolen die Straßen für das Reich frei, und die Klephten überfallen sie." />
+    <string id="balkan_culture_griechen_desc" text="Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Griechische Reeder befördern einen großen Teil des Seehandels des Reiches, und Phanarioten-Familien in Konstantinopel dienen der Pforte als Dragomane, ihre Dolmetscher. In den Dörfern vertreten die Kotzabasides die Gemeinde und treiben die Steuern ein. In den Bergen bewachen die Armatolen im Auftrag der Osmanen die Pässe, während die Klephten als Räuber leben; viele Armatolen waren vorher selbst Klephten." />
     <string id="balkan_culture_kroaten_rich" text="Kroaten" />
     <string id="balkan_culture_kroaten_desc" text="Kroatien, Slawonien und Dalmatien nennen sich ein eigenes Königreich unter der habsburgischen Krone. Seit zwei Jahrhunderten halten die Kroaten die Militärgrenze gegen die Osmanen: Freie Bauern leisten dem Kaiser Kriegsdienst statt Abgaben, und jedes Dorf hält seine Haramije und Reiter bereit. Der Adel reitet noch als gepanzerte Reiterei, die Grenzer kämpfen mit Säbel und Arkebuse." />
     <string id="balkan_culture_ragusaner_rich" text="Ragusaner" />
@@ -481,16 +481,16 @@
     <string id="balkan_bg_bosniaken_aserai_herder_text" text="Eure Familie trieb ihre Herden jeden Sommer auf die hohen Weiden des Dinarischen Gebirges und vor dem ersten Schnee wieder hinab in die Täler." />
     <string id="balkan_bg_bosniaken_aserai_artisan" text="Raufbolde der Mahala" />
     <string id="balkan_bg_bosniaken_aserai_artisan_text" text="Euer Vater arbeitete für einen der starken Männer, die in den ärmeren Mahalas der Stadt für Ordnung sorgen. Er schlichtete Streit um Schulden, Würfel und Beleidigungen, und den Rest erledigte sein schwerer Stock." />
-    <string id="balkan_bg_bulgaren_sturgia_companion" text="das Haus eines Knez" />
-    <string id="balkan_bg_bulgaren_sturgia_companion_text" text="Euer Vater gehörte zum Haus eines Knez, des christlichen Vorstehers, der die Dörfer seines Bezirks vor den osmanischen Beamten vertrat. Er ritt mit den Woinuken, wenn der Sultan sie in den Krieg rief, und hielt in Friedenszeiten Ordnung in den Dörfern." />
-    <string id="balkan_bg_bulgaren_sturgia_trader" text="Vieh- und Wollhändler" />
-    <string id="balkan_bg_bulgaren_sturgia_trader_text" text="Eure Familie trieb Rinder und Schafe vom Balkangebirge zu den Märkten von Edirne und Konstantinopel und verkaufte Wolle und Häute an die Kaufleute von Plowdiw. Sie kannten jeden Pass und jede Herberge an der Straße." />
-    <string id="balkan_bg_bulgaren_sturgia_farmer" text="Bauern in Thrakien" />
-    <string id="balkan_bg_bulgaren_sturgia_farmer_text" text="Eure Familie baute in der Ebene der Maritza Weizen, Reis und Rosen an. Sie zahlten den Zehnten an den Sipahi und die Kopfsteuer an den Sultan und behielten gerade genug zum Leben." />
-    <string id="balkan_bg_bulgaren_sturgia_artisan" text="Handwerker aus Tschiprowzi" />
-    <string id="balkan_bg_bulgaren_sturgia_artisan_text" text="Eure Familie waren Goldschmiede und Weber in Tschiprowzi, der katholischen Stadt im Nordwesten. Als der Aufstand von 1688 scheiterte und die Stadt niedergebrannt wurde, flohen sie mit dem, was sie tragen konnten, und begannen anderswo neu." />
-    <string id="balkan_bg_bulgaren_sturgia_hunter" text="Bergleute aus dem Balkan" />
-    <string id="balkan_bg_bulgaren_sturgia_hunter_text" text="Eure Familie lebte in einem Dorf hoch im Balkangebirge, weit weg von den Beamten der Ebene. Sie hielten Ziegen, jagten in den Buchenwäldern und führten Reisende über die Pässe." />
+    <string id="balkan_bg_bulgaren_sturgia_companion" text="das Haus eines Çeribaşı" />
+    <string id="balkan_bg_bulgaren_sturgia_companion_text" text="Euer Vater gehörte zum Haus eines Woinuken-Çeribaşı. Die Woinuken waren Christen, die dem Sultan dienten und dafür keine Steuern zahlten. Wenn das Heer auszog, brachten sie Pferde und trugen den Tross, und Euer Vater ritt mit ihnen." />
+    <string id="balkan_bg_bulgaren_sturgia_trader" text="fahrende Händler" />
+    <string id="balkan_bg_bulgaren_sturgia_trader_text" text="Eure Familie waren Händler, die mit ihren Packtieren von Markt zu Markt zogen. Sie kannten die Straßen und Herbergen und wussten, welcher Beamte unterwegs bezahlt werden wollte." />
+    <string id="balkan_bg_bulgaren_sturgia_farmer" text="christliche Bauern" />
+    <string id="balkan_bg_bulgaren_sturgia_farmer_text" text="Eure Familie bestellte ein kleines Stück Land im Tal. Sie zahlten ihre Abgaben an den Sipahi und die Kopfsteuer, die Christen dem Sultan schuldeten, und behielten gerade genug zum Leben." />
+    <string id="balkan_bg_bulgaren_sturgia_artisan" text="Goldschmiede aus Tschiprowzi" />
+    <string id="balkan_bg_bulgaren_sturgia_artisan_text" text="Eure Familie waren Gold- und Silberschmiede in Tschiprowzi, der katholischen Stadt im Nordwesten. Als der Aufstand von 1688 scheiterte und die Stadt niedergebrannt wurde, flohen sie mit dem, was sie tragen konnten, und begannen anderswo neu." />
+    <string id="balkan_bg_bulgaren_sturgia_hunter" text="Bergleute" />
+    <string id="balkan_bg_bulgaren_sturgia_hunter_text" text="Eure Familie lebte in einem Dorf hoch in den Bergen, weit weg von den Beamten der Ebene. Sie hielten Ziegen, jagten in den Wäldern und führten Reisende über die Pässe." />
     <string id="balkan_bg_bulgaren_sturgia_vagabond" text="Freunde der Hajduken" />
     <string id="balkan_bg_bulgaren_sturgia_vagabond_text" text="Eure Familie war arm und besaß nichts außer Schulden. Sie brachten den Hajduken in den Wäldern Brot und Nachrichten und verkauften, was die Hajduken den Steuereintreibern abnahmen. Ihr habt früh gelernt, wem man trauen kann und wen man fürchten muss." />
     <string id="balkan_bg_deutsche_vlandia_retainer" text="das Gefolge eines Grafen" />
@@ -505,18 +505,18 @@
     <string id="balkan_bg_deutsche_vlandia_hunter_text" text="Eure Familie lebte in einem Dorf am Rand der großen Eichenwälder Slawoniens, besaß aber kein Land. Euer Vater nahm jede Arbeit an, die er fand, und verbrachte lange Tage jagend und Fallen stellend, immer auf der Hut vor den Jägern des Herrn." />
     <string id="balkan_bg_deutsche_vlandia_mercenary" text="eine Soldatenfamilie" />
     <string id="balkan_bg_deutsche_vlandia_mercenary_text" text="Euer Vater diente in einem der kaiserlichen Regimenter zu Fuß, Männer, die seit der Belagerung Wiens von einem Krieg in den nächsten zogen und mit dem Frieden nie zurechtkamen. Ihre Musketiere waren überall gefragt, wo gekämpft wurde. Eure Mutter zog mit dem Tross und nahm Euch mit auf blutige Feldzüge." />
-    <string id="balkan_bg_griechen_empire_lanlord" text="eine Familie von Archonten" />
-    <string id="balkan_bg_griechen_empire_lanlord_text" text="Eure Familie waren Archonten, die erste christliche Familie ihrer Stadt in Makedonien. Euer Vater saß im Rat der Vorsteher, trieb die Steuern für die Pforte ein und hielt sich ein paar eigene bewaffnete Reiter." />
-    <string id="balkan_bg_griechen_empire_merchant" text="Kaufleute aus Saloniki" />
-    <string id="balkan_bg_griechen_empire_merchant_text" text="Eure Familie waren Kaufleute in Saloniki. Sie schickten Baumwolle, Tabak und Wolle übers Meer nach Venedig und Livorno und über Land nach Wien, und ihre Schiffe kannten jeden Hafen der Ägäis." />
-    <string id="balkan_bg_griechen_empire_farmer" text="Bauern auf der Chalkidiki" />
-    <string id="balkan_bg_griechen_empire_farmer_text" text="Eure Familie baute auf der Halbinsel Chalkidiki Oliven und Wein an. In guten Jahren verkauften sie Öl und Wein in Saloniki, und sie dienten in der Dorfmiliz, wenn Piraten kamen." />
-    <string id="balkan_bg_griechen_empire_artisan" text="Seidenweber" />
-    <string id="balkan_bg_griechen_empire_artisan_text" text="Eure Familie besaß eine Werkstatt in einer Marktstadt, webte Seide und färbte Tuch mit Krapp rot. Euer Vater hatte eine Stimme in der Zunft seines Handwerks und führte die Bücher der Kirche." />
+    <string id="balkan_bg_griechen_empire_lanlord" text="eine Familie von Notabeln" />
+    <string id="balkan_bg_griechen_empire_lanlord_text" text="Eure Familie waren Kotzabasides, die ersten christlichen Notabeln ihrer Stadt. Euer Vater vertrat die Gemeinde vor den osmanischen Beamten und trieb ihre Steuern für die Pforte ein." />
+    <string id="balkan_bg_griechen_empire_merchant" text="Reeder" />
+    <string id="balkan_bg_griechen_empire_merchant_text" text="Eurer Familie gehörte ein Anteil an einem Handelsschiff. Griechische Schiffe trugen einen großen Teil des Seehandels des Reiches, und Ihr seid mit Geschichten von den Häfen der Ägäis aufgewachsen." />
+    <string id="balkan_bg_griechen_empire_farmer" text="Dorfbauern" />
+    <string id="balkan_bg_griechen_empire_farmer_text" text="Eure Familie bestellte Felder und Weinberge in einem Dorf. Sie zahlten ihre Abgaben an den Sipahi und die Kopfsteuer an den Sultan, und in schlechten Jahren mussten die Vorsteher des Dorfes für sie bitten." />
+    <string id="balkan_bg_griechen_empire_artisan" text="Handwerker in der Stadt" />
+    <string id="balkan_bg_griechen_empire_artisan_text" text="Eure Familie besaß eine Werkstatt in einer Marktstadt. Euer Vater war in seinem Handwerk angesehen und führte die Bücher der Kirche." />
     <string id="balkan_bg_griechen_empire_hunter" text="Armatolen in den Bergen" />
-    <string id="balkan_bg_griechen_empire_hunter_text" text="Euer Vater war Armatole in den Bergen des Olymp. Er hielt die Straßen für die Beamten des Sultans sicher und wurde dafür bezahlt, aber er kannte die Klephten in den Wäldern beim Namen und ritt manchmal mit ihnen." />
+    <string id="balkan_bg_griechen_empire_hunter_text" text="Euer Vater war Armatole in den Bergen. Er bewachte im Auftrag der Osmanen die Pässe, und die Dörfer bezahlten ihn dafür, aber vorher hatte er als Klephte gelebt und kannte die Räuber in den Wäldern noch beim Namen." />
     <string id="balkan_bg_griechen_empire_vagabond" text="Leute vom Hafen" />
-    <string id="balkan_bg_griechen_empire_vagabond_text" text="Eure Familie lebte vom Hafen von Saloniki, belud Schiffe, flickte Netze und machte Botengänge für Schmuggler. Ihr seid unter Seeleuten aus allen Ecken des Meeres aufgewachsen und habt gelernt, Euch aus Schwierigkeiten herauszureden." />
+    <string id="balkan_bg_griechen_empire_vagabond_text" text="Eure Familie lebte vom Hafen einer Küstenstadt, belud Schiffe, flickte Netze und machte Botengänge für Schmuggler. Ihr seid unter Seeleuten aufgewachsen und habt gelernt, Euch aus Schwierigkeiten herauszureden." />
     <string id="balkan_bg_kroaten_vlandia_retainer" text="das Gefolge eines Magnaten" />
     <string id="balkan_bg_kroaten_vlandia_retainer_text" text="Euer Vater war Verwalter eines kroatischen Magnaten, eines der großen Häuser wie der Drašković oder der Erdődy. Er kümmerte sich um die Güter seines Herrn, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit der gepanzerten Reiterei seines Herrn." />
     <string id="balkan_bg_kroaten_vlandia_merchant" text="Kaufleute aus Zagreb" />

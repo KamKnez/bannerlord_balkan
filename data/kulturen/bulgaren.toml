@@ -1,6 +1,13 @@
 # Bulgaren (Osmanisches Reich). Neue Kultur, kopiert alle übrigen Werte von Sturgia.
 # Christliche Untertanen des Sultans: Woinuken (christliche Hilfstruppen mit Steuerfreiheit), Derbendschi (Wächter
-# der Gebirgspässe) und Hajduken in den Bergen. Einfacher erster Truppenbaum.
+# von Pässen, Straßen und Brücken) und Hajduken in den Bergen. Einfacher erster Truppenbaum.
+# Quellen (Wikipedia, geprüft):
+#   https://en.wikipedia.org/wiki/Voynuks  Woinuken, Ränge Lagator, Çeribaşı, Woinuk-Bey, Woinuk-Sandschakbey
+#   https://en.wikipedia.org/wiki/Dervendjis  Passwächter gegen Steuerfreiheit, zu großem Teil Christen
+#   https://en.wikipedia.org/wiki/Hajduk, https://en.wikipedia.org/wiki/Haramba%C5%A1a  bulgarische Hajduken, Harambascha
+#   https://en.wikipedia.org/wiki/Ottoman_Bulgaria  osmanisch seit 1396
+#   https://en.wikipedia.org/wiki/Chiprovtsi_uprising  katholischer Aufstand 1688, gescheitert, Stadt zerstört
+# Die Reiter des Adelsbaums sind eine Spielvereinfachung: Die Ränge sind belegt, nicht dass sie beritten kämpften.
 # Rekrutierbar in Dörfern mit dieser Kultur (siehe [dorfkultur] in data/reiche/).
 # Aufbau der Datei: siehe data/kulturen/README.md
 
@@ -23,16 +30,14 @@ de = "Bulgaren"
 
 [text]
 en = """
-For three centuries the Bulgarians have lived under the Sultan, as farmers, herdsmen and craftsmen in the \
-valleys of the Balkan mountains and on the Thracian plain. Some serve the empire as voynuks or as guards of the \
-mountain passes and are freed from taxes in return. Others have taken to the forests as hajduks. The Catholic \
-uprising of Chiprovtsi in 1688 was crushed, but it is not forgotten.
+For three centuries, since 1396, the Bulgarians have lived under the Sultan. Some serve the empire as voynuks or as guards of roads \
+and mountain passes and are freed from taxes in return. Others have taken to the forests as hajduks. The uprising of \
+Chiprovtsi in 1688, led by Catholic Bulgarians, was crushed and the town destroyed.
 """
 de = """
-Seit drei Jahrhunderten leben die Bulgaren unter dem Sultan, als Bauern, Hirten und Handwerker in den Tälern des \
-Balkangebirges und in der thrakischen Ebene. Manche dienen dem Reich als Woinuken oder als Wächter der \
-Gebirgspässe und sind dafür von Steuern befreit. Andere sind als Hajduken in die Wälder gegangen. Der katholische \
-Aufstand von Tschiprowzi 1688 wurde niedergeschlagen, aber er ist nicht vergessen.
+Seit drei Jahrhunderten, seit 1396, leben die Bulgaren unter dem Sultan. Manche dienen dem Reich als Woinuken oder als Wächter von \
+Straßen und Pässen und sind dafür von Steuern befreit. Andere sind als Hajduken in die Wälder gegangen. Der Aufstand von \
+Tschiprowzi 1688, angeführt von katholischen Bulgaren, wurde niedergeschlagen und die Stadt zerstört.
 """
 
 [miliz]
@@ -162,7 +167,7 @@ Body = "eastern_studded_leather"
 Gloves = "woven_leather_bracers"
 Leg = "eastern_leather_boots"
 
-# ---------------------------------------------------------------- Adelsbaum (berittene Woinuken)
+# ---------------------------------------------------------------- Adelsbaum (Ränge der Woinuken)
 
 [[truppe]]
 id = "konnik"
@@ -184,12 +189,12 @@ Leg = "leather_cavalier_boots"
 
 [[truppe]]
 id = "lagator"
-name = { en = "Lagator", de = "Lagator (Woinukenführer)" }
+name = { en = "Lagator", de = "Woinuken-Lagator" }
 stufe = 3
 gruppe = "Cavalry"
 profil = "leichte_reiter"
 gesicht = "fighter_sturgia_elite"
-aufwerten = ["cheribasha"]
+aufwerten = ["ceribasi"]
 pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_harness" }
 [[truppe.ausruestung]]
 Item0 = "khuzait_lance_1_t3"
@@ -201,14 +206,14 @@ Body = "leather_coat"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
-id = "cheribasha"
-name = { en = "Cheribasha", de = "Tscheribascha" }
+id = "ceribasi"
+name = { en = "Voynuk Çeribaşı", de = "Woinuken-Çeribaşı" }
 stufe = 4
 gruppe = "Cavalry"
 profil = "reiter"
 benoetigt = "kriegspferd"
 gesicht = "fighter_sturgia_elite"
-aufwerten = ["knez"]
+aufwerten = ["voynuk_bey"]
 pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
 [[truppe.ausruestung]]
 Item0 = "khuzait_lance_2_t4"
@@ -222,13 +227,13 @@ Gloves = "studded_leather_vambraces"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
-id = "knez"
-name = { en = "Knez", de = "Knez (Dorfoberhaupt)" }
+id = "voynuk_bey"
+name = { en = "Voynuk Bey", de = "Woinuk-Bey" }
 stufe = 5
 gruppe = "Cavalry"
 profil = "reiter"
 gesicht = "fighter_sturgia_elite"
-aufwerten = ["voyvoda"]
+aufwerten = ["voynuk_sanjak_bey"]
 pferd = { Horse = "t3_khuzait_horse", HorseHarness = "steppe_half_barding" }
 [[truppe.ausruestung]]
 Item0 = "khuzait_lance_2_t4"
@@ -242,8 +247,8 @@ Gloves = "reinforced_leather_vambraces"
 Leg = "mail_cavalier_boots"
 
 [[truppe]]
-id = "voyvoda"
-name = { en = "Voynuk Voyvoda", de = "Woinuken-Wojwode" }
+id = "voynuk_sanjak_bey"
+name = { en = "Voynuk Sanjak-bey", de = "Woinuken-Sandschakbey" }
 stufe = 6
 gruppe = "Cavalry"
 profil = "reiter"

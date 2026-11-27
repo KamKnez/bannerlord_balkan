@@ -1,4 +1,6 @@
-# Griechen, Stand um 1700
+# Griechen. Vornamen: bis ins späte 18. Jh. trugen fast alle christlichen Griechen Namen orthodoxer Heiliger
+# (https://en.wikipedia.org/wiki/Greek_name). Familiennamen: Phanarioten-Familien laut
+# https://en.wikipedia.org/wiki/Phanariots.
 [maennlich]
 Georgios
 Ioannis
@@ -6,41 +8,38 @@ Nikolaos
 Dimitrios
 Konstantinos
 Athanasios
-Panagiotis
-Christodoulos
+Anastasios
+Alexios
+Angelos
+Andreas
+Antonios
 Theodoros
 Michail
-Antonios
-Stavros
-Manolis
-Andreas
 Spyridon
 Vasileios
-Anastasios
-Lambros
-Kostas
-Nikitas
+Panagiotis
+Stavros
 [weiblich]
 Maria
+Anna
 Eleni
 Aikaterini
 Sofia
 Anastasia
 Theodora
 Irini
-Despina
-Zoi
-Chrysoula
-Angeliki
+Paraskevi
 Kyriaki
+Varvara
+Marina
 [familien]
-Mavrokordatos
-Kantakouzinos
-Ypsilantis
+Mavrocordatos
 Karatzas
+Ypsilantis
 Soutzos
 Rallis
-Notaras
-Laskaris
-Chrysoskoleos
-Bouas
+Mourouzis
+Argyropoulos
+Mavrogenis
+Chrisoscoleos
+Caratheodoris
