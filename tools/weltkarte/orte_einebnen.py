@@ -4,7 +4,8 @@ Aufruf: python3 orte_einebnen.py <Arbeitsordner> <siedlungen.csv> <Zielordner>
 
 Liest spielhoehe_roh.npy aus dem Arbeitsordner (beim ersten Lauf eine Kopie von spielhoehe.npy), setzt unter jedem
 Ort eine ebene Fläche auf die mittlere Höhe des Landes dort und führt sie über einen Rand ins Gelände zurück.
-Wasser (Flussbett, See, Meer) bleibt unberührt. Schreibt spielhoehe.npy neu und die Höhenbilder
+Wasser (Flussbett, See, Meer) bleibt unberührt, außer im inneren Teil der Fläche (FUELLEN): Dort wird es
+aufgefüllt, damit kein Ort im Wasser steht. orte_vom_wasser.py rückt die Orte vorher so, dass das kaum vorkommt. Schreibt spielhoehe.npy neu und die Höhenbilder
 hoehenbild_16bit.png in den Zielordner, nach gespiegelt/ und halbiert nach leicht/.
 """
 import csv
@@ -20,6 +21,7 @@ import rahmen as R
 RADIUS = {"town": 3.4, "castle": 2.4, "village": 2.0}     # ebene Fläche, Einheiten
 RAND = 2.0                                                # Übergang ins Gelände
 UEBER_WASSER = 0.15
+FUELLEN = 0.75                                            # Anteil des Radius, in dem auch Wasser aufgefüllt wird
 
 arbeit, csv_pfad, ziel = sys.argv[1:4]
 roh = f"{arbeit}/spielhoehe_roh.npy"
@@ -43,11 +45,11 @@ for o in orte:
     sa, se = max(0, int(s0) - w), min(R.PIXEL, int(s0) + w + 1)
     zz, ss = np.mgrid[za:ze, sa:se]
     d = np.hypot(zz + 0.5 - z0, ss + 0.5 - s0) / px
-    fenster_land = land[za:ze, sa:se]
-    kern = (d <= r) & fenster_land
-    if not kern.any():
-        continue
-    hoehe = max(R.WASSERHOEHE + UEBER_WASSER, float(np.median(alt[za:ze, sa:se][kern])))
+    kern = (d <= r) & land[za:ze, sa:se]
+    fenster_land = land[za:ze, sa:se] | (d <= r * FUELLEN)
+    hoehe = R.WASSERHOEHE + UEBER_WASSER
+    if kern.any():
+        hoehe = max(hoehe, float(np.median(alt[za:ze, sa:se][kern])))
     t = np.clip((d - r) / RAND, 0, 1)
     gewicht = np.where(fenster_land, 1 - t * t * (3 - 2 * t), 0.0)
     neu[za:ze, sa:se] = neu[za:ze, sa:se] * (1 - gewicht) + hoehe * gewicht
