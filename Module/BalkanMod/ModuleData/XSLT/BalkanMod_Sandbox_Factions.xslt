@@ -10,6 +10,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Batthyány</xsl:attribute>
+			<xsl:attribute name="banner_key">11.202.202.4345.4345.764.764.0.0.0.506.126.126.340.110.764.744.0.0.0.118.172.172.380.380.764.564.0.0.0.140.15.15.360.360.764.964.0.0.0</xsl:attribute>
 			<xsl:attribute name="owner">Hero.lord_4_1</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -53,6 +54,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Herberstein</xsl:attribute>
+			<xsl:attribute name="banner_key">11.83.83.4345.4345.764.764.0.0.0.505.116.116.1020.1020.314.314.0.0.0.505.116.116.1020.1020.1214.1214.0.0.0.146.172.172.260.260.604.574.0.0.0.146.172.172.260.260.924.954.0.0.0.335.15.15.200.200.924.574.0.0.0.335.15.15.200.200.604.954.0.0.0.505.172.172.260.300.764.764.0.0.0.505.83.83.230.270.764.764.0.0.0.511.172.172.170.170.764.764.0.0.0</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -67,6 +69,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Gušić</xsl:attribute>
+			<xsl:attribute name="banner_key">11.83.83.4345.4345.764.764.0.0.0.505.172.172.1600.80.764.804.0.0.0.505.172.172.1600.80.764.934.0.0.0.505.172.172.1600.80.764.1064.0.0.0.157.172.172.300.300.764.614.0.0.0.340.15.15.130.130.724.434.0.0.0</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -163,6 +166,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Sorgo</xsl:attribute>
+			<xsl:attribute name="banner_key">11.83.83.4345.4345.764.764.0.0.0.505.202.202.2200.120.976.552.0.0.45.505.202.202.2200.120.806.722.0.0.45.505.202.202.2200.120.637.891.0.0.45.505.202.202.2200.120.467.1061.0.0.45</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -195,6 +199,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Pozza</xsl:attribute>
+			<xsl:attribute name="banner_key">11.202.202.4345.4345.764.764.0.0.0.505.15.15.2000.50.819.709.0.0.45.505.15.15.2000.50.709.819.0.0.45.424.15.15.110.110.804.504.0.0.0.424.15.15.110.110.944.564.0.0.0.424.15.15.110.110.964.704.0.0.0.424.15.15.110.110.564.824.0.0.0.424.15.15.110.110.584.964.0.0.0.424.15.15.110.110.724.1024.0.0.0</xsl:attribute>
 			<xsl:attribute name="culture">Culture.ragusa</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -277,6 +282,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Foscolo</xsl:attribute>
+			<xsl:attribute name="banner_key">11.83.83.4345.4345.764.764.0.0.0.505.172.172.1600.240.764.764.0.0.0</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -293,6 +299,7 @@
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Loredan</xsl:attribute>
+			<xsl:attribute name="banner_key">11.15.15.4345.4345.764.764.0.0.0.505.202.202.1600.1020.764.1214.0.0.0.220.202.202.160.160.584.584.0.0.0.220.202.202.160.160.764.584.0.0.0.220.202.202.160.160.944.584.0.0.0.220.15.15.160.160.584.944.0.0.0.220.15.15.160.160.764.944.0.0.0.220.15.15.160.160.944.944.0.0.0</xsl:attribute>
 			<xsl:attribute name="culture">Culture.venice</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
