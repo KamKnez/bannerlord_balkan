@@ -1,24 +1,27 @@
 # Lebensläufe der Griechen (Vorlage Imperium). Aufbau: siehe README.md
+# Quellen (Wikipedia, en): Kodjabashis (christliche Notabeln, proestoi/prokritoi), Ottoman_Greece (Notabeln als
+# Beamte und Steuereinnehmer; Reeder als Seetransporteure des Reiches), Armatoles (im Auftrag der Osmanen,
+# von den Einheimischen bezahlt, viele frühere Klephten), Klephts.
 [empire_lanlord_option]
-titel = { en = "A family of archons", de = "eine Familie von Archonten" }
-text = { en = "Your family were archons, the leading Christian family of their town in Macedonia. Your father sat on the council of notables, collected the taxes for the Porte and kept a few armed horsemen of his own.", de = "Eure Familie waren Archonten, die erste christliche Familie ihrer Stadt in Makedonien. Euer Vater saß im Rat der Vorsteher, trieb die Steuern für die Pforte ein und hielt sich ein paar eigene bewaffnete Reiter." }
+titel = { en = "A family of notables", de = "eine Familie von Notabeln" }
+text = { en = "Your family were kodjabashis, the leading Christian notables of their town. Your father spoke for the community before the Ottoman officials and collected its taxes for the Porte.", de = "Eure Familie waren Kotzabasides, die ersten christlichen Notabeln ihrer Stadt. Euer Vater vertrat die Gemeinde vor den osmanischen Beamten und trieb ihre Steuern für die Pforte ein." }
 
 [empire_merchant_option]
-titel = { en = "Merchants of Thessaloniki", de = "Kaufleute aus Saloniki" }
-text = { en = "Your family were merchants in Thessaloniki. They sent cotton, tobacco and wool by sea to Venice and Livorno and over land to Vienna, and their ships knew every harbour of the Aegean.", de = "Eure Familie waren Kaufleute in Saloniki. Sie schickten Baumwolle, Tabak und Wolle übers Meer nach Venedig und Livorno und über Land nach Wien, und ihre Schiffe kannten jeden Hafen der Ägäis." }
+titel = { en = "Ship owners", de = "Reeder" }
+text = { en = "Your family owned a share in a merchant ship. Greek ships carried much of the empire's trade by sea, and you grew up hearing of the harbours of the Aegean.", de = "Eurer Familie gehörte ein Anteil an einem Handelsschiff. Griechische Schiffe trugen einen großen Teil des Seehandels des Reiches, und Ihr seid mit Geschichten von den Häfen der Ägäis aufgewachsen." }
 
 [empire_farmer_option]
-titel = { en = "Farmers of Chalkidiki", de = "Bauern auf der Chalkidiki" }
-text = { en = "Your family farmed olives and vines on the Chalkidiki peninsula. In good years they sold oil and wine in Thessaloniki, and they served in the village militia when pirates came.", de = "Eure Familie baute auf der Halbinsel Chalkidiki Oliven und Wein an. In guten Jahren verkauften sie Öl und Wein in Saloniki, und sie dienten in der Dorfmiliz, wenn Piraten kamen." }
+titel = { en = "Village farmers", de = "Dorfbauern" }
+text = { en = "Your family farmed fields and vines in a village. They paid their dues to the sipahi and the head tax to the Sultan, and in hard years the notables of the village had to plead for them.", de = "Eure Familie bestellte Felder und Weinberge in einem Dorf. Sie zahlten ihre Abgaben an den Sipahi und die Kopfsteuer an den Sultan, und in schlechten Jahren mussten die Vorsteher des Dorfes für sie bitten." }
 
 [empire_artisan_option]
-titel = { en = "Silk weavers", de = "Seidenweber" }
-text = { en = "Your family owned a workshop in a market town, weaving silk and dyeing cloth red with madder. Your father had a voice in the guild of his craft and kept the accounts of the church.", de = "Eure Familie besaß eine Werkstatt in einer Marktstadt, webte Seide und färbte Tuch mit Krapp rot. Euer Vater hatte eine Stimme in der Zunft seines Handwerks und führte die Bücher der Kirche." }
+titel = { en = "Town craftsmen", de = "Handwerker in der Stadt" }
+text = { en = "Your family owned a workshop in a market town. Your father was respected in his craft and kept the accounts of the church.", de = "Eure Familie besaß eine Werkstatt in einer Marktstadt. Euer Vater war in seinem Handwerk angesehen und führte die Bücher der Kirche." }
 
 [empire_hunter_option]
 titel = { en = "Armatoles of the mountains", de = "Armatolen in den Bergen" }
-text = { en = "Your father was an armatole in the mountains of Olympus. He kept the roads safe for the Sultan's officials and was paid for it, but he knew the klephts in the forests by name and sometimes rode with them.", de = "Euer Vater war Armatole in den Bergen des Olymp. Er hielt die Straßen für die Beamten des Sultans sicher und wurde dafür bezahlt, aber er kannte die Klephten in den Wäldern beim Namen und ritt manchmal mit ihnen." }
+text = { en = "Your father was an armatole in the mountains. He guarded the passes on behalf of the Ottomans and the villages paid him for it, but before that he had lived as a klepht, and he still knew the brigands in the forests by name.", de = "Euer Vater war Armatole in den Bergen. Er bewachte im Auftrag der Osmanen die Pässe, und die Dörfer bezahlten ihn dafür, aber vorher hatte er als Klephte gelebt und kannte die Räuber in den Wäldern noch beim Namen." }
 
 [empire_vagabond_option]
 titel = { en = "Harbour folk", de = "Leute vom Hafen" }
-text = { en = "Your family lived from the harbour of Thessaloniki, loading ships, mending nets and running errands for smugglers. You grew up among sailors from every corner of the sea and learned to talk your way out of trouble.", de = "Eure Familie lebte vom Hafen von Saloniki, belud Schiffe, flickte Netze und machte Botengänge für Schmuggler. Ihr seid unter Seeleuten aus allen Ecken des Meeres aufgewachsen und habt gelernt, Euch aus Schwierigkeiten herauszureden." }
+text = { en = "Your family lived from the harbour of a port town, loading ships, mending nets and running errands for smugglers. You grew up among sailors and learned to talk your way out of trouble.", de = "Eure Familie lebte vom Hafen einer Küstenstadt, belud Schiffe, flickte Netze und machte Botengänge für Schmuggler. Ihr seid unter Seeleuten aufgewachsen und habt gelernt, Euch aus Schwierigkeiten herauszureden." }

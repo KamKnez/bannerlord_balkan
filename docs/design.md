@@ -115,8 +115,8 @@ Bauern. Man rekrutiert sie in Dörfern, denen per Daten diese Kultur zugeordnet 
 | Ungarn | Vlandia | um Pécs, Valpovo | Bauer → Junger Hajdú → Hajdú → Veteran / Ungarischer Reiter → Husar; Adel: Edelmann → Adeliger Husar → Husarenhauptmann |
 | Serben | Sturgia | Lika, Banija, um Belgrad und Raška, Morlaken bei Knin | Bauer → Grenzer → Musketier → Hajduk / Reiter → Raizischer Husar; Adel: Edelmann → Vojvoda |
 | Türken | Aserai | um Novi Pazar | Bauer → Azap → Sekban / Acemi Oğlan → Janitschar → Veteran → Odabaşı; Adel: Timarli-Sipahi → Kapıkulu-Sipahi |
-| Bulgaren | Sturgia | Sofia, Plowdiw, Vidin und Umland | Bauer → Woinuk → Erfahrener Woinuk / Derbendschi → Hajduk → Harambascha; Adel: Berittener Woinuk → Lagator → Tscheribascha → Knez → Woinuken-Wojwode |
-| Griechen | Imperium | Saloniki und Umland | Bauer → Armatole → Palikare → Protopalikare / Seemann → Erfahrener Seemann; Adel: Archontopoulos → Reiter eines Archonten → Kapetanios → Kotzabasis → Archon |
+| Bulgaren | Sturgia | Dörfer um Sofia, Plowdiw und Vidin | Bauer → Woinuk → Erfahrener Woinuk / Derbendschi → Hajduk → Harambascha; Adel: Berittener Woinuk → Lagator → Çeribaşı → Woinuk-Bey → Woinuken-Sandschakbey |
+| Griechen | Imperium | Dörfer um Saloniki | Bauer → Armatole → Palikare → Protopalikare / Seemann → Erfahrener Seemann; Adel: Sohn eines Notabeln → Reiter eines Notabeln → Kapetanios → Dimogeron → Kotzabasis |
 
 Die Lords rekrutieren in diesen Dörfern ebenfalls, ihre Heere werden dadurch gemischt.
 

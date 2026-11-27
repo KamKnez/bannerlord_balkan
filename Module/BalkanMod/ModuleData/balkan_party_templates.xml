@@ -53,7 +53,7 @@
 			<PartyTemplateStack min_value="4" max_value="8" troop="NPCCharacter.balkan_gr_peasant" />
 			<PartyTemplateStack min_value="3" max_value="6" troop="NPCCharacter.balkan_gr_armatolos" />
 			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.balkan_gr_naftis" />
-			<PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.balkan_gr_archontopoulos" />
+			<PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.balkan_gr_notable_son" />
 		</stacks>
 	</MBPartyTemplate>
 	<MBPartyTemplate id="balkan_militia_griechen">

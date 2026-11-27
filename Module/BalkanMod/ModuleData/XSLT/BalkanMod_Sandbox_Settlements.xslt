@@ -472,7 +472,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Sofia</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_A3_text}Sofia has been the capital of the Rumelia Eyalet since 1530. Three mountain passes lead to the city, and they have been key roads since antiquity.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -481,7 +480,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Saloniki</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_A4_text}In Saloniki the Jews are the majority. In 1613 they made up 68 per cent of the population. A sultan chose the Jews of the city to be the exclusive makers of the uniforms of the janissaries.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.greeks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -490,7 +488,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Edirne</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_town_A5_text}Edirne was the capital of the Ottoman Empire from the 1360s until 1453. The Selimiye Mosque, designed by Mimar Sinan and built in 1575, stands here. Sultan Mehmed IV, called the Hunter, withdrew to Edirne after he was deposed and died here in 1693.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -539,7 +536,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Niš</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_A3_text}The Austrian army took Niš in 1689 after defeating the Ottomans in the battle of Niš on 24 September. The Ottomans retook the town the following year, after the Austrians had abandoned it.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -564,7 +560,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Plowdiw</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_A6_text}Plowdiw, which the Ottomans call Filibe, has grown on seven hills on both banks of the Maritsa. It is one of the important nodes of trade and transport in the Ottoman Balkans.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -581,7 +576,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Vidin</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_A8_text}Vidin with its fortress Baba Vida fell under Austrian occupation in October 1689. The occupation lasted nine months and ended in August 1690. The Ottomans use Baba Vida as a weapon store and a prison.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.bulgarians</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -630,7 +624,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Aleksinac</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_1_text}Aleksinac lies in the lands of Niš. Muslim and Christian families live side by side here, and the bells and the call to prayer can both be heard.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -639,7 +632,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Pirot</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_2_text}Pirot belongs to the district of Niš. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.serbs</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -853,7 +845,6 @@
 			<xsl:copy-of select="@*" />
 			<xsl:attribute name="name">{=!}Uzunköprü</xsl:attribute>
 			<xsl:attribute name="text">{=balkan_settlement_village_A5_3_text}Uzunköprü is a village near Edirne. Its fields belong to a timar, whose sipahi rides to war when the Sultan calls.</xsl:attribute>
-			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>

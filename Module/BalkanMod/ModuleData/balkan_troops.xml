@@ -999,7 +999,7 @@
 			<skill id="Throwing" value="65" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_bg_cheribasha" />
+			<upgrade_target id="NPCCharacter.balkan_bg_ceribasi" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -1017,10 +1017,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_bg_cheribasha"
+		id="balkan_bg_ceribasi"
 		default_group="Cavalry"
 		level="21"
-		name="{=balkan_bg_cheribasha}Cheribasha"
+		name="{=balkan_bg_ceribasi}Voynuk Çeribaşı"
 		occupation="Soldier"
 		upgrade_requires="ItemCategory.war_horse"
 		culture="Culture.bulgarians">
@@ -1038,7 +1038,7 @@
 			<skill id="Throwing" value="30" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_bg_knez" />
+			<upgrade_target id="NPCCharacter.balkan_bg_voynuk_bey" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -1058,10 +1058,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_bg_knez"
+		id="balkan_bg_voynuk_bey"
 		default_group="Cavalry"
 		level="26"
-		name="{=balkan_bg_knez}Knez"
+		name="{=balkan_bg_voynuk_bey}Voynuk Bey"
 		occupation="Soldier"
 		culture="Culture.bulgarians">
 		<face>
@@ -1078,7 +1078,7 @@
 			<skill id="Throwing" value="40" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_bg_voyvoda" />
+			<upgrade_target id="NPCCharacter.balkan_bg_voynuk_sanjak_bey" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -1098,10 +1098,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_bg_voyvoda"
+		id="balkan_bg_voynuk_sanjak_bey"
 		default_group="Cavalry"
 		level="31"
-		name="{=balkan_bg_voyvoda}Voynuk Voyvoda"
+		name="{=balkan_bg_voynuk_sanjak_bey}Voynuk Sanjak-bey"
 		occupation="Soldier"
 		culture="Culture.bulgarians">
 		<face>
@@ -2108,10 +2108,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_gr_archontopoulos"
+		id="balkan_gr_notable_son"
 		default_group="Cavalry"
 		level="11"
-		name="{=balkan_gr_archontopoulos}Archontopoulos"
+		name="{=balkan_gr_notable_son}Notable's Son"
 		occupation="Soldier"
 		is_basic_troop="true"
 		culture="Culture.greeks">
@@ -2129,7 +2129,7 @@
 			<skill id="Throwing" value="10" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_gr_kavallaris" />
+			<upgrade_target id="NPCCharacter.balkan_gr_notable_horseman" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -2146,10 +2146,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_gr_kavallaris"
+		id="balkan_gr_notable_horseman"
 		default_group="Cavalry"
 		level="16"
-		name="{=balkan_gr_kavallaris}Archon's Horseman"
+		name="{=balkan_gr_notable_horseman}Notable's Horseman"
 		occupation="Soldier"
 		culture="Culture.greeks">
 		<face>
@@ -2206,7 +2206,7 @@
 			<skill id="Throwing" value="30" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_gr_kotzabasis" />
+			<upgrade_target id="NPCCharacter.balkan_gr_dimogeron" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -2226,10 +2226,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_gr_kotzabasis"
+		id="balkan_gr_dimogeron"
 		default_group="Cavalry"
 		level="26"
-		name="{=balkan_gr_kotzabasis}Kotzabasis"
+		name="{=balkan_gr_dimogeron}Dimogeron"
 		occupation="Soldier"
 		culture="Culture.greeks">
 		<face>
@@ -2246,7 +2246,7 @@
 			<skill id="Throwing" value="40" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_gr_archon" />
+			<upgrade_target id="NPCCharacter.balkan_gr_kotzabasis" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -2266,10 +2266,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_gr_archon"
+		id="balkan_gr_kotzabasis"
 		default_group="Cavalry"
 		level="31"
-		name="{=balkan_gr_archon}Archon"
+		name="{=balkan_gr_kotzabasis}Kotzabasis"
 		occupation="Soldier"
 		culture="Culture.greeks">
 		<face>
