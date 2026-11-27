@@ -1,6 +1,7 @@
 # Namen der Dörfer bei den Sitzen der Reiche, die (noch) keine eigene Datei in data/reiche/ haben.
 # Die Sitze selbst heißen wie in orte.csv. Die Dörfer stehen automatisch rund um ihren Sitz, die Namen sind echte
-# Orte aus der Umgebung, aus dem Gedächtnis gewählt und nicht einzeln nachgeschlagen.
+# Orte aus der Umgebung, mit tools/weltkarte/dorfnamen_pruefen.py gegen Wikipedia geprüft
+# (Ort vorhanden, Entfernung zum Sitz). Ergebnis je Dorf: data/weltkarte/dorfnamen_belege.csv.
 
 # Der Ruhesitz des Spiels ("The Retreat", retirement_retreat): ein Ort ohne Objekt auf der Karte, an den sich die
 # Spielfigur am Ende zurückzieht. Hier ist es das Felsenkloster Ostrog über dem Tal der Zeta, gegründet 1656.
@@ -119,7 +120,7 @@ castle_village_S8_2 = "Dunajiwzi"
 village_B1_1 = "Tivoli"
 village_B1_2 = "Ostia"
 village_B1_3 = "Frascati"
-village_B1_4 = "Civitavecchia"
+village_B1_4 = "Palestrina"
 # Trieste
 village_B2_1 = "Muggia"
 village_B2_2 = "Koper"
@@ -140,7 +141,7 @@ village_B5_3 = "Trani"
 # Istanbul
 village_EN1_1 = "Galata"
 village_EN1_2 = "Üsküdar"
-village_EN1_3 = "Silivri"
+village_EN1_3 = "Kadıköy"
 # Athen
 village_EN2_1 = "Piräus"
 village_EN2_2 = "Eleusis"
@@ -170,7 +171,7 @@ village_K3_2 = "Mangup"
 village_K3_3 = "Akmescit"
 # Kaffa
 village_K4_2 = "Sudak"
-village_K4_3 = "Kertsch"
+village_K4_3 = "Staryj Krym"
 village_K4_4 = "Karasubazar"
 # Kiew
 village_K5_2 = "Wyschhorod"
@@ -184,7 +185,7 @@ village_K6_3 = "Beresan"
 village_S1_1 = "Wieliczka"
 village_S1_3 = "Olkusz"
 # Lublin
-village_S2_1 = "Zamość"
+village_S2_1 = "Lubartów"
 village_S2_2 = "Puławy"
 # Przemyśl
 village_S3_1 = "Jarosław"
@@ -198,7 +199,7 @@ village_S5_1 = "Żółkiew"
 village_S5_2 = "Gródek"
 # Kaschau
 village_S6_1 = "Eperies"
-village_S6_2 = "Tokaj"
+village_S6_2 = "Medzev"
 village_S6_3 = "Sárospatak"
 # Debrecen
 village_S7_1 = "Hajdúböszörmény"
