@@ -106,7 +106,7 @@ Bannerlord hat pro Kultur einen normalen Baum (Rekruten aus Dörfern) und einen 
 
 ### Weitere Völker (umgesetzt als eigene Kulturen)
 
-Deutsche, Ungarn, Serben und Türken sind eigene Kulturen ohne eigenes Reich, jede mit eigenem Baum ab dem eigenen
+Deutsche, Ungarn, Serben, Türken, Bulgaren und Griechen sind eigene Kulturen ohne eigenes Reich, jede mit eigenem Baum ab dem eigenen
 Bauern. Man rekrutiert sie in Dörfern, denen per Daten diese Kultur zugeordnet ist (`[dorfkultur]` in `data/reiche/`):
 
 | Kultur | Vorlage | Dörfer (v0.1) | Baum |
@@ -115,6 +115,8 @@ Bauern. Man rekrutiert sie in Dörfern, denen per Daten diese Kultur zugeordnet 
 | Ungarn | Vlandia | um Pécs, Valpovo | Bauer → Junger Hajdú → Hajdú → Veteran / Ungarischer Reiter → Husar; Adel: Edelmann → Adeliger Husar → Husarenhauptmann |
 | Serben | Sturgia | Lika, Banija, um Belgrad und Raška, Morlaken bei Knin | Bauer → Grenzer → Musketier → Hajduk / Reiter → Raizischer Husar; Adel: Edelmann → Vojvoda |
 | Türken | Aserai | um Novi Pazar | Bauer → Azap → Sekban / Acemi Oğlan → Janitschar → Veteran → Odabaşı; Adel: Timarli-Sipahi → Kapıkulu-Sipahi |
+| Bulgaren | Sturgia | Sofia, Plowdiw, Vidin und Umland | Bauer → Woinuk → Erfahrener Woinuk / Derbendschi → Hajduk → Harambascha; Adel: Berittener Woinuk → Lagator → Tscheribascha → Knez → Woinuken-Wojwode |
+| Griechen | Imperium | Saloniki und Umland | Bauer → Armatole → Palikare → Protopalikare / Seemann → Erfahrener Seemann; Adel: Archontopoulos → Reiter eines Archonten → Kapetanios → Kotzabasis → Archon |
 
 Die Lords rekrutieren in diesen Dörfern ebenfalls, ihre Heere werden dadurch gemischt.
 

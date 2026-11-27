@@ -1,0 +1,313 @@
+# Griechen (Osmanisches Reich). Neue Kultur, kopiert alle übrigen Werte vom Imperium.
+# Christliche Untertanen des Sultans: Armatolen (vom Reich bezahlte Bergmiliz), Seeleute der Inseln und Küsten,
+# dazu die Archonten und Kotzabasides, die Vorsteher der Gemeinden. Einfacher erster Truppenbaum.
+# Rekrutierbar in Dörfern mit dieser Kultur (siehe [dorfkultur] in data/reiche/).
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "griechen"
+bild = "empire"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
+kultur_id = "greeks"
+art = "neu"
+vorlage = "empire"
+praefix = "gr"
+namensliste = "griechen"
+farben = ["0xff1F4E9A", "0xffF2F2F2"]
+gesicht = "fighter_empire"
+zivil = ["empire_troop_civilian_template_t1", "empire_troop_civilian_template_t2", "empire_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "archontopoulos"
+
+[name]
+en = "Greeks"
+de = "Griechen"
+
+[text]
+en = """
+The Greeks of Macedonia, Thessaly and the islands live under the Sultan as his Orthodox subjects. Their merchants \
+and ship owners trade from Thessaloniki to Venice and Odessa, and Phanariot families in Constantinople serve the \
+Porte as interpreters and princes. In the mountains the armatoles keep the roads for the empire, and the klephts \
+rob them.
+"""
+de = """
+Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Ihre \
+Kaufleute und Reeder handeln von Saloniki bis Venedig, und Phanarioten-Familien in Konstantinopel dienen der \
+Pforte als Dolmetscher und Fürsten. In den Bergen halten die Armatolen die Straßen für das Reich frei, und die \
+Klephten überfallen sie.
+"""
+
+[miliz]
+nahkampf = "militia_spearman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_shooter"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+
+[[lord_partei]]
+truppe = "armatolos"
+min = 3
+max = 6
+
+[[lord_partei]]
+truppe = "naftis"
+min = 2
+max = 4
+
+[[lord_partei]]
+truppe = "archontopoulos"
+min = 1
+max = 2
+
+# ---------------------------------------------------------------- normaler Baum
+
+[[truppe]]
+id = "peasant"
+name = { en = "Greek Peasant", de = "Griechischer Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["armatolos", "naftis"]
+[[truppe.ausruestung]]
+Item0 = "peasant_hammer_1_t1"
+Head = "imperial_cloth_coif"
+Body = "tunic_with_rolled_cloth"
+Leg = "wrapped_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_polearm_1_t1"
+Body = "hemp_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "armatolos"
+name = { en = "Armatolos", de = "Armatole" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["palikari"]
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "simple_back_sword_t2"
+Head = "imperial_cloth_coif"
+Body = "imperial_padded_cloth"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "palikari"
+name = { en = "Palikari", de = "Palikare" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["protopalikaro"]
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_2_t3"
+Head = "imperial_padded_coif"
+Cape = "scarf"
+Body = "woven_leather_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "protopalikaro"
+name = { en = "Protopalikaro", de = "Protopalikare" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_long_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_3_t3"
+Head = "imperial_padded_coif"
+Cape = "empire_cape_a"
+Body = "eastern_studded_leather"
+Gloves = "woven_leather_bracers"
+Leg = "folded_town_boots"
+
+[[truppe]]
+id = "naftis"
+name = { en = "Greek Sailor", de = "Griechischer Seemann" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+aufwerten = ["veteran_naftis"]
+[[truppe.ausruestung]]
+Item0 = "western_spear_2_t2"
+Item1 = "old_kite_shield"
+Item2 = "empire_sword_1_t2"
+Head = "imperial_cloth_coif"
+Body = "footmans_tunic"
+Leg = "leather_shoes"
+
+[[truppe]]
+id = "veteran_naftis"
+name = { en = "Veteran Greek Sailor", de = "Erfahrener griechischer Seemann" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "imperial_spear_t2"
+Item1 = "old_kite_shield"
+Item2 = "empire_sword_2_t3"
+Head = "imperial_padded_coif"
+Body = "imperial_padded_cloth"
+Leg = "leather_boots"
+
+# ---------------------------------------------------------------- Adelsbaum (Söhne der Archonten)
+
+[[truppe]]
+id = "archontopoulos"
+name = { en = "Archontopoulos", de = "Archontopoulos (Sohn eines Vorstehers)" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "reiter"
+basis = true
+gesicht = "fighter_empire_tall"
+aufwerten = ["kavallaris"]
+pferd = { Horse = "empire_horse", HorseHarness = "light_harness" }
+[[truppe.ausruestung]]
+Item0 = "narrow_sword_t3"
+Item1 = "western_spear_2_t2"
+Item2 = "battered_horsemans_kite_shield"
+Head = "merchants_hat"
+Body = "woven_leather_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "kavallaris"
+name = { en = "Archon's Horseman", de = "Reiter eines Archonten" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+aufwerten = ["kapetanios"]
+pferd = { Horse = "t2_empire_horse", HorseHarness = "stripped_leather_harness" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_3_t3"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "merchants_hat"
+Cape = "empire_cape_a"
+Body = "imperial_mail_over_leather"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "kapetanios"
+name = { en = "Kapetanios", de = "Kapetanios (Armatolenführer)" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_empire_tall"
+aufwerten = ["kotzabasis"]
+pferd = { Horse = "t3_empire_horse", HorseHarness = "half_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_5_t4"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "peaked_helmet_over_mail_coif"
+Cape = "empire_cape_a"
+Body = "empire_horseman_armor"
+Gloves = "lordly_padded_mitten"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "kotzabasis"
+name = { en = "Kotzabasis", de = "Kotzabasis (Gemeindevorsteher)" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+aufwerten = ["archon"]
+pferd = { Horse = "t3_empire_horse", HorseHarness = "imperial_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_sword_6_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "peaked_helmet_over_mail_coif"
+Cape = "empire_cape_a"
+Body = "imperial_scale_armor"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "archon"
+name = { en = "Archon", de = "Archon" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "noble_horse_imperial", HorseHarness = "imperial_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "western_plated_helmet"
+Cape = "empire_cape_a"
+Body = "coat_of_plates_over_mail"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+
+# ---------------------------------------------------------------- Miliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Greek Militia Spearman", de = "Griechischer Milizspeerträger" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "western_spear_3_t3"
+Item1 = "empire_sword_1_t2"
+Head = "imperial_padded_coif"
+Body = "imperial_padded_cloth"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Greek Militia Shooter", de = "Griechischer Milizschütze" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "simple_back_sword_t2"
+Head = "imperial_cloth_coif"
+Body = "imperial_padded_cloth"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Greek Militia Spearman", de = "Griechischer Milizspeerträger (Veteran)" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "imperial_spear_t2"
+Item1 = "empire_sword_2_t3"
+Head = "imperial_padded_coif"
+Body = "imperial_padded_cloth"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Greek Militia Shooter", de = "Griechischer Milizschütze (Veteran)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_2_t3"
+Head = "imperial_padded_coif"
+Body = "woven_leather_coat"
+Leg = "leather_boots"

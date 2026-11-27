@@ -1,0 +1,24 @@
+# Lebensläufe der Bulgaren (Vorlage Sturgia). Aufbau: siehe README.md
+[sturgia_companion_option]
+titel = { en = "A knez's household", de = "das Haus eines Knez" }
+text = { en = "Your father belonged to the household of a knez, the Christian headman who spoke for the villages of his district before the Ottoman officials. He rode with the voynuks when the Sultan called them to war and kept order in the villages in peacetime.", de = "Euer Vater gehörte zum Haus eines Knez, des christlichen Vorstehers, der die Dörfer seines Bezirks vor den osmanischen Beamten vertrat. Er ritt mit den Woinuken, wenn der Sultan sie in den Krieg rief, und hielt in Friedenszeiten Ordnung in den Dörfern." }
+
+[sturgia_trader_option]
+titel = { en = "Cattle and wool traders", de = "Vieh- und Wollhändler" }
+text = { en = "Your family drove cattle and sheep from the Balkan mountains to the markets of Edirne and Constantinople and sold wool and hides to the merchants of Plovdiv. They knew every pass and every inn on the road.", de = "Eure Familie trieb Rinder und Schafe vom Balkangebirge zu den Märkten von Edirne und Konstantinopel und verkaufte Wolle und Häute an die Kaufleute von Plowdiw. Sie kannten jeden Pass und jede Herberge an der Straße." }
+
+[sturgia_farmer_option]
+titel = { en = "Thracian farmers", de = "Bauern in Thrakien" }
+text = { en = "Your family farmed wheat, rice and roses on the plain of the Maritsa. They paid their tithe to the sipahi and their head tax to the Sultan and had just enough left to live on.", de = "Eure Familie baute in der Ebene der Maritza Weizen, Reis und Rosen an. Sie zahlten den Zehnten an den Sipahi und die Kopfsteuer an den Sultan und behielten gerade genug zum Leben." }
+
+[sturgia_artisan_option]
+titel = { en = "Craftsmen of Chiprovtsi", de = "Handwerker aus Tschiprowzi" }
+text = { en = "Your family were goldsmiths and weavers in Chiprovtsi, the Catholic town in the northwest. When the uprising of 1688 failed and the town was burned, they fled with what they could carry and started again elsewhere.", de = "Eure Familie waren Goldschmiede und Weber in Tschiprowzi, der katholischen Stadt im Nordwesten. Als der Aufstand von 1688 scheiterte und die Stadt niedergebrannt wurde, flohen sie mit dem, was sie tragen konnten, und begannen anderswo neu." }
+
+[sturgia_hunter_option]
+titel = { en = "Mountain folk", de = "Bergleute aus dem Balkan" }
+text = { en = "Your family lived in a village high in the Balkan mountains, far from the officials of the plain. They kept goats, hunted in the beech forests and guided travellers over the passes.", de = "Eure Familie lebte in einem Dorf hoch im Balkangebirge, weit weg von den Beamten der Ebene. Sie hielten Ziegen, jagten in den Buchenwäldern und führten Reisende über die Pässe." }
+
+[sturgia_vagabond_option]
+titel = { en = "Friends of the hajduks", de = "Freunde der Hajduken" }
+text = { en = "Your family were poor and owned nothing but debts. They carried bread and news to the hajduks in the forests and sold what the hajduks took from the tax collectors. You learned early whom to trust and whom to fear.", de = "Eure Familie war arm und besaß nichts außer Schulden. Sie brachten den Hajduken in den Wäldern Brot und Nachrichten und verkauften, was die Hajduken den Steuereintreibern abnahmen. Ihr habt früh gelernt, wem man trauen kann und wen man fürchten muss." }
