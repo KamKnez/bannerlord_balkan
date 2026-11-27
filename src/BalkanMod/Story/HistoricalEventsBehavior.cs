@@ -25,12 +25,26 @@ namespace BalkanMod.Story
         /// <summary>false bei Spielständen von vor dieser Version: vergangene Ereignisse dann still überspringen.</summary>
         private bool _started;
 
+        /// <summary>
+        /// Bei einer neuen Kampagne erst prüfen, wenn die Karte läuft: Ein Fenster, das schon beim Anlegen der
+        /// Kampagne aufgeht, liegt über der Charaktererstellung, und das Spiel stürzt beim Schließen ab.
+        /// </summary>
+        private bool _checkOnFirstTick;
+
         public override void RegisterEvents()
         {
             CampaignEvents.OnNewGameCreatedEvent.AddNonSerializedListener(this, _ =>
             {
                 _started = true;
-                Check();
+                _checkOnFirstTick = true;
+            });
+            CampaignEvents.HourlyTickEvent.AddNonSerializedListener(this, () =>
+            {
+                if (_checkOnFirstTick)
+                {
+                    _checkOnFirstTick = false;
+                    Check();
+                }
             });
             CampaignEvents.DailyTickEvent.AddNonSerializedListener(this, Check);
         }
