@@ -7,6 +7,8 @@
 # Die Mechanik ist überall die der Armbrüste des Spiels (siehe docs/design.md, Abschnitt 6). Die Werte sind Richtwerte und werden nach
 # Spieltests angepasst. Zum Vergleich die schwere Armbrust (crossbow_d) des Spiels:
 # Schaden 93, Geschossgeschwindigkeit 90, Genauigkeit 99, Tempo 92, Handhabung 62.
+# Die Geschossgeschwindigkeit liegt bei etwa dem Dreieinhalbfachen der Armbrust, damit die Kugel flach fliegt
+# (Spieltest 27.11.: mit 180 bis 230 fiel sie noch ab wie ein Bolzen).
 # Feuerwaffen treffen härter als Armbrüste, laden aber langsamer und streuen mehr. Der Schaden liegt
 # knapp darüber (90 bis 115 plus Kugel), damit nicht jeder Treffer auch schwer gepanzerte Truppen tötet.
 #
@@ -40,7 +42,7 @@ kultur = "vlandia"
 gewicht = 3.2
 preis = 800
 schaden = 90
-geschoss = 180
+geschoss = 300
 genauigkeit = 78
 tempo = 66
 handhabung = 50
@@ -55,7 +57,7 @@ kultur = "vlandia"
 gewicht = 4.5
 preis = 1200
 schaden = 100
-geschoss = 200
+geschoss = 330
 genauigkeit = 80
 tempo = 60
 handhabung = 45
@@ -70,7 +72,7 @@ kultur = "aserai"
 gewicht = 4.2
 preis = 1800
 schaden = 100
-geschoss = 230
+geschoss = 380
 genauigkeit = 90
 tempo = 60
 handhabung = 45
@@ -85,7 +87,7 @@ kultur = "vlandia"
 gewicht = 5.5
 preis = 2000
 schaden = 115
-geschoss = 210
+geschoss = 350
 genauigkeit = 82
 tempo = 55
 handhabung = 40
@@ -100,7 +102,7 @@ kultur = "vlandia"
 gewicht = 1.6
 preis = 900
 schaden = 85
-geschoss = 150
+geschoss = 220
 genauigkeit = 75
 tempo = 70
 handhabung = 60
