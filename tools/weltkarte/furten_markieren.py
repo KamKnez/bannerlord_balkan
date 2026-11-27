@@ -3,7 +3,8 @@
 Aufruf: python3 furten_markieren.py <scene.xscene> <furten.csv> <siedlungen.csv>
 
 furten.csv schreibt navmesh_bauen.py (Mitte, Richtung der Querung, Länge). Der Steg besteht aus Stücken des
-Kartenmodells mi_emp_bridge_wooden, wie Calradias Holzbrücken; die Endstücke sind als Rampe geneigt. Die Stege
+Kartenmodells mi_emp_bridge_wooden samt Kollisionskörper (ohne ihn läuft der Trupp unter dem Steg durch), wie
+Calradias Holzbrücken; die Endstücke sind als Rampe geneigt. Die Stege
 sind nur Zeichen: Begehbar ist die Furt durch das Navmesh. Furten direkt an einem Ort bekommen keinen Steg (dort ist
 nur das Feld des Orts selbst begehbar gemacht, der Steg läge auf dem Ortsmodell). Ein zweiter Lauf ersetzt die
 vorhandenen Stege.
@@ -47,6 +48,7 @@ for furt in csv.DictReader(open(liste, encoding="utf-8"), delimiter=";"):
         zeilen += ['\t\t\t\t<game_entity name="map_bridge_b" old_prefab_name="">',
                    f'\t\t\t\t\t<transform position="0.000, {lage:.3f}, {tief:.3f}" rotation_euler="{neigung:.3f}, 0.000, 0.000"'
                    f' scale="{GROESSE:.3f}, {GROESSE:.3f}, {GROESSE:.3f}"/>',
+                   '\t\t\t\t\t<physics shape="bo_mi_emp_bridge_wooden"/>',
                    "\t\t\t\t\t<components>",
                    '\t\t\t\t\t\t<meta_mesh_component name="mi_emp_bridge_wooden"/>',
                    "\t\t\t\t\t</components>",
