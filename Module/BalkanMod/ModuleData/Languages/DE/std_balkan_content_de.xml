@@ -73,6 +73,22 @@
     <string id="balkan_gr_militia_shooter" text="Griechischer Milizschütze" />
     <string id="balkan_gr_militia_veteran_spearman" text="Griechischer Milizspeerträger (Veteran)" />
     <string id="balkan_gr_militia_veteran_shooter" text="Griechischer Milizschütze (Veteran)" />
+    <string id="balkan_it_peasant" text="Italienischer Bauer" />
+    <string id="balkan_it_piquero" text="Tercio-Pikenier" />
+    <string id="balkan_it_veteran_piquero" text="Erfahrener Tercio-Pikenier" />
+    <string id="balkan_it_cabo" text="Cabo de Escuadra (Korporal)" />
+    <string id="balkan_it_arcabucero" text="Arcabucero (Arkebusier)" />
+    <string id="balkan_it_mosquetero" text="Mosquetero (Musketier)" />
+    <string id="balkan_it_sargento" text="Sargento (Feldwebel)" />
+    <string id="balkan_it_abanderado" text="Abanderado (Fahnenträger)" />
+    <string id="balkan_it_alferez" text="Alférez (Fähnrich)" />
+    <string id="balkan_it_corazza" text="Päpstlicher Kürassier (Corazza)" />
+    <string id="balkan_it_capitan" text="Capitán (Hauptmann)" />
+    <string id="balkan_it_maestre_de_campo" text="Maestre de Campo (Oberst)" />
+    <string id="balkan_it_militia_pikeman" text="Italienischer Milizpikenier" />
+    <string id="balkan_it_militia_shooter" text="Italienischer Milizschütze" />
+    <string id="balkan_it_militia_veteran_pikeman" text="Italienischer Milizpikenier (Veteran)" />
+    <string id="balkan_it_militia_veteran_shooter" text="Italienischer Milizschütze (Veteran)" />
     <string id="balkan_hr_peasant" text="Kroatischer Bauer" />
     <string id="balkan_hr_haramija" text="Haramija" />
     <string id="balkan_hr_border_musketeer" text="Grenz-Musketier" />
@@ -89,6 +105,21 @@
     <string id="balkan_hr_militia_shooter" text="Grenzmiliz-Schütze" />
     <string id="balkan_hr_militia_veteran_spearman" text="Grenzmiliz-Veteran mit Speer" />
     <string id="balkan_hr_militia_veteran_shooter" text="Grenzmiliz-Veteran mit Arkebuse" />
+    <string id="balkan_pl_peasant" text="Polnischer Bauer" />
+    <string id="balkan_pl_wybraniec" text="Wybraniecka-Fußsoldat" />
+    <string id="balkan_pl_veteran_wybraniec" text="Erfahrener Wybraniecka-Fußsoldat" />
+    <string id="balkan_pl_hajduk" text="Polnischer Hajduk" />
+    <string id="balkan_pl_musketeer" text="Musketier nach fremder Art" />
+    <string id="balkan_pl_dragoon" text="Polnischer Dragoner" />
+    <string id="balkan_pl_pancerny_retainer" text="Pancerni-Gefolgsmann" />
+    <string id="balkan_pl_pancerny" text="Gepanzerter Kamerad (Pancerny)" />
+    <string id="balkan_pl_hussar_retainer" text="Husaren-Gefolgsmann (Poczet)" />
+    <string id="balkan_pl_hussar" text="Flügelhusar" />
+    <string id="balkan_pl_royal_hussar" text="Husar des königlichen Banners" />
+    <string id="balkan_pl_militia_spearman" text="Polnischer Milizspeerträger" />
+    <string id="balkan_pl_militia_shooter" text="Polnischer Milizschütze" />
+    <string id="balkan_pl_militia_veteran_spearman" text="Polnischer Milizspeerträger (Veteran)" />
+    <string id="balkan_pl_militia_veteran_shooter" text="Polnischer Milizschütze (Veteran)" />
     <string id="balkan_ra_recruit" text="Ragusanischer Rekrut" />
     <string id="balkan_ra_city_guard" text="Stadtwache" />
     <string id="balkan_ra_halberdier" text="Hellebardier" />
@@ -119,6 +150,21 @@
     <string id="balkan_sr_militia_shooter" text="Serbischer Milizschütze" />
     <string id="balkan_sr_militia_veteran_spearman" text="Serbischer Milizspeerträger (Veteran)" />
     <string id="balkan_sr_militia_veteran_shooter" text="Serbischer Milizschütze (Veteran)" />
+    <string id="balkan_kt_herdsman" text="Tatarischer Hirte" />
+    <string id="balkan_kt_nogai_horseman" text="Nogai-Reiter" />
+    <string id="balkan_kt_raider" text="Çapul-Reiter (Raubzug)" />
+    <string id="balkan_kt_outrider" text="Tatarischer Vorreiter" />
+    <string id="balkan_kt_circassian" text="Tscherkessischer Rekrut" />
+    <string id="balkan_kt_circassian_mercenary" text="Tscherkessischer Söldner" />
+    <string id="balkan_kt_mirza_retainer" text="Gefolgsmann eines Mirza" />
+    <string id="balkan_kt_mirza" text="Mirza" />
+    <string id="balkan_kt_veteran_mirza" text="Erfahrener Mirza" />
+    <string id="balkan_kt_clan_bey" text="Clan-Bey" />
+    <string id="balkan_kt_qaraci_bey" text="Qaraçı-Bey" />
+    <string id="balkan_kt_militia_spearman" text="Tatarischer Milizspeerträger" />
+    <string id="balkan_kt_militia_archer" text="Tatarischer Milizbogenschütze" />
+    <string id="balkan_kt_militia_veteran_spearman" text="Tatarischer Milizspeerträger (Veteran)" />
+    <string id="balkan_kt_militia_veteran_archer" text="Tatarischer Milizbogenschütze (Veteran)" />
     <string id="balkan_tr_peasant" text="Türkischer Bauer" />
     <string id="balkan_tr_azap" text="Türkischer Azap" />
     <string id="balkan_tr_sekban" text="Sekban" />
@@ -179,12 +225,18 @@
     <string id="balkan_culture_deutsche_text" text="Deutsche Siedler kamen als Bauern, Handwerker und Soldaten in die Grenzländer der Steiermark, Krains und der zurückeroberten Ebenen. Die kaiserlichen Regimenter werben unter ihnen Pikeniere und Musketiere, und aus ihrem Adel stammen die schweren Kürassiere des Kaisers." />
     <string id="balkan_culture_griechen" text="Griechen" />
     <string id="balkan_culture_griechen_text" text="Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Griechische Reeder befördern einen großen Teil des Seehandels des Reiches, und Phanarioten-Familien in Konstantinopel dienen der Pforte als Dragomane, ihre Dolmetscher. In den Dörfern vertreten die Kotzabasides die Gemeinde und treiben die Steuern ein. In den Bergen bewachen die Armatolen im Auftrag der Osmanen die Pässe, während die Klephten als Räuber leben; viele Armatolen waren vorher selbst Klephten." />
+    <string id="balkan_culture_italiener" text="Italiener" />
+    <string id="balkan_culture_italiener_text" text="Italien südlich von Venedig ist zwischen dem Papst und der spanischen Krone geteilt. Der Kirchenstaat erreichte 1649 seine größte Ausdehnung, Neapel und Sizilien schicken eigene Tercios aus Pikenieren und Musketieren in die Kriege des spanischen Königs. Seit der Mitte des Jahrhunderts stellen Adlige diese Tercios auf eigene Kosten auf, und der Papst unterhält Kürassiere aus Bologna." />
     <string id="balkan_culture_kroaten" text="Kroaten" />
     <string id="balkan_culture_kroaten_text" text="Kroatien, Slawonien und Dalmatien nennen sich ein eigenes Königreich unter der habsburgischen Krone. Seit dem 16. Jahrhundert hält die Militärgrenze die Grenze gegen die Osmanen: Ihre Siedler erhalten Land, Religionsfreiheit und niedrigere Steuern und müssen dafür für das Reich kämpfen. Der Adel reitet noch als gepanzerte Reiterei, die Grenzer kämpfen mit Säbel und Arkebuse." />
+    <string id="balkan_culture_polen" text="Polen" />
+    <string id="balkan_culture_polen_text" text="Polen-Litauen ist ein Bund von Adligen, die ihren König wählen. 1683 führte König Jan III. Sobieski das Entsatzheer vor Wien, und seine Flügelhusaren, der Stolz des reichen Adels, ritten im großen Angriff mit. Der niedere Adel dient als gepanzerte Kameraden in Kettenhemd mit Säbel und Bogen, die Infanterie wird nun nach fremder Art mit Musketen und als Dragoner aufgestellt." />
     <string id="balkan_culture_ragusaner" text="Ragusaner" />
     <string id="balkan_culture_ragusaner_text" text="Die Republik Ragusa wahrt ihre Freiheit eher mit Gold als mit Stahl. Seit 1458 zahlt sie dem Sultan Tribut, und ihre Schiffe fahren unter eigener Flagge. Hinter den großen Mauern der Stadt dient eine kleine Wache aus Hellebardieren und Arkebusieren dem Rektor, der nur einen Monat im Amt bleibt, damit keiner allein herrscht." />
     <string id="balkan_culture_serben" text="Serben" />
     <string id="balkan_culture_serben_text" text="1690 führte Patriarch Arsenije III. mehr als 30.000 Serben aus Belgrad in die habsburgischen Länder, und Kaiser Leopold I. gewährte ihnen Privilegien. Wie die anderen Siedler der Militärgrenze erhalten sie Land, Religionsfreiheit und niedrigere Steuern und verteidigen dafür die Grenze. Andere blieben unter dem Sultan." />
+    <string id="balkan_culture_tataren" text="Krimtataren" />
+    <string id="balkan_culture_tataren_text" text="Das Krimkhanat wird von Khanen aus dem Haus Giray regiert, die gemeinsam mit den Beys der großen Clans Şirin, Barın, Arğın und Qıpçaq herrschen. Das Khanat steht unter dem Schutz des osmanischen Sultans, der seit 1524 seine Khane ernennt, und seine Reiter ziehen jedem osmanischen Feldzug voraus. Die Nogai-Horden der Steppe dienen dem Khan als Vasallen. Zwei Jahrhunderte lang brachten Raubzüge Gefangene aus Polen und Russland, bis der Frieden von Karlowitz 1699 sie verbot." />
     <string id="balkan_culture_tuerken" text="Türken" />
     <string id="balkan_culture_tuerken_text" text="Türkische Siedler, Beamte und Soldaten leben seit der Eroberung in den Städten des Balkans. Die Janitscharen, das stehende Fußvolk des Sultans, sind die berühmtesten Musketiere des Reichs, während die Sipahi ihr Land für den Dienst zu Pferd erhalten." />
     <string id="balkan_culture_ungarn" text="Ungarn" />
@@ -199,12 +251,18 @@
     <string id="balkan_culture_deutsche_desc" text="Deutsche Siedler kamen als Bauern, Handwerker und Soldaten in die Grenzländer der Steiermark, Krains und der zurückeroberten Ebenen. Die kaiserlichen Regimenter werben unter ihnen Pikeniere und Musketiere, und aus ihrem Adel stammen die schweren Kürassiere des Kaisers." />
     <string id="balkan_culture_griechen_rich" text="Griechen" />
     <string id="balkan_culture_griechen_desc" text="Die Griechen Makedoniens, Thessaliens und der Inseln leben als orthodoxe Untertanen unter dem Sultan. Griechische Reeder befördern einen großen Teil des Seehandels des Reiches, und Phanarioten-Familien in Konstantinopel dienen der Pforte als Dragomane, ihre Dolmetscher. In den Dörfern vertreten die Kotzabasides die Gemeinde und treiben die Steuern ein. In den Bergen bewachen die Armatolen im Auftrag der Osmanen die Pässe, während die Klephten als Räuber leben; viele Armatolen waren vorher selbst Klephten." />
+    <string id="balkan_culture_italiener_rich" text="Italiener" />
+    <string id="balkan_culture_italiener_desc" text="Italien südlich von Venedig ist zwischen dem Papst und der spanischen Krone geteilt. Der Kirchenstaat erreichte 1649 seine größte Ausdehnung, Neapel und Sizilien schicken eigene Tercios aus Pikenieren und Musketieren in die Kriege des spanischen Königs. Seit der Mitte des Jahrhunderts stellen Adlige diese Tercios auf eigene Kosten auf, und der Papst unterhält Kürassiere aus Bologna." />
     <string id="balkan_culture_kroaten_rich" text="Kroaten" />
     <string id="balkan_culture_kroaten_desc" text="Kroatien, Slawonien und Dalmatien nennen sich ein eigenes Königreich unter der habsburgischen Krone. Seit dem 16. Jahrhundert hält die Militärgrenze die Grenze gegen die Osmanen: Ihre Siedler erhalten Land, Religionsfreiheit und niedrigere Steuern und müssen dafür für das Reich kämpfen. Der Adel reitet noch als gepanzerte Reiterei, die Grenzer kämpfen mit Säbel und Arkebuse." />
+    <string id="balkan_culture_polen_rich" text="Polen" />
+    <string id="balkan_culture_polen_desc" text="Polen-Litauen ist ein Bund von Adligen, die ihren König wählen. 1683 führte König Jan III. Sobieski das Entsatzheer vor Wien, und seine Flügelhusaren, der Stolz des reichen Adels, ritten im großen Angriff mit. Der niedere Adel dient als gepanzerte Kameraden in Kettenhemd mit Säbel und Bogen, die Infanterie wird nun nach fremder Art mit Musketen und als Dragoner aufgestellt." />
     <string id="balkan_culture_ragusaner_rich" text="Ragusaner" />
     <string id="balkan_culture_ragusaner_desc" text="Die Republik Ragusa wahrt ihre Freiheit eher mit Gold als mit Stahl. Seit 1458 zahlt sie dem Sultan Tribut, und ihre Schiffe fahren unter eigener Flagge. Hinter den großen Mauern der Stadt dient eine kleine Wache aus Hellebardieren und Arkebusieren dem Rektor, der nur einen Monat im Amt bleibt, damit keiner allein herrscht." />
     <string id="balkan_culture_serben_rich" text="Serben" />
     <string id="balkan_culture_serben_desc" text="1690 führte Patriarch Arsenije III. mehr als 30.000 Serben aus Belgrad in die habsburgischen Länder, und Kaiser Leopold I. gewährte ihnen Privilegien. Wie die anderen Siedler der Militärgrenze erhalten sie Land, Religionsfreiheit und niedrigere Steuern und verteidigen dafür die Grenze. Andere blieben unter dem Sultan." />
+    <string id="balkan_culture_tataren_rich" text="Krimtataren" />
+    <string id="balkan_culture_tataren_desc" text="Das Krimkhanat wird von Khanen aus dem Haus Giray regiert, die gemeinsam mit den Beys der großen Clans Şirin, Barın, Arğın und Qıpçaq herrschen. Das Khanat steht unter dem Schutz des osmanischen Sultans, der seit 1524 seine Khane ernennt, und seine Reiter ziehen jedem osmanischen Feldzug voraus. Die Nogai-Horden der Steppe dienen dem Khan als Vasallen. Zwei Jahrhunderte lang brachten Raubzüge Gefangene aus Polen und Russland, bis der Frieden von Karlowitz 1699 sie verbot." />
     <string id="balkan_culture_tuerken_rich" text="Türken" />
     <string id="balkan_culture_tuerken_desc" text="Türkische Siedler, Beamte und Soldaten leben seit der Eroberung in den Städten des Balkans. Die Janitscharen, das stehende Fußvolk des Sultans, sind die berühmtesten Musketiere des Reichs, während die Sipahi ihr Land für den Dienst zu Pferd erhalten." />
     <string id="balkan_culture_ungarn_rich" text="Ungarn" />

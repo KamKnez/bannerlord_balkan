@@ -1,0 +1,337 @@
+# Italiener (Kirchenstaat und spanisches Königreich Neapel). Ersetzt die Calradia-Kultur Battania.
+# Einfacher erster Truppenbaum.
+# Quellen (Wikipedia, geprüft):
+#   https://en.wikipedia.org/wiki/Tercio  Tercios von Neapel und Sizilien seit 1536, von Lombardei; Kompanie aus
+#     Piqueros, Arcabuceros (später Musketiere) und Coseletes; Ränge Maestre de Campo, Sargento mayor, Capitán,
+#     Alférez, Sargento, Cabo de escuadra, Abanderado; ab Mitte des 17. Jh. von Adligen auf eigene Kosten
+#     aufgestellt; 1704 in Regimenter umgewandelt
+#   https://en.wikipedia.org/wiki/Corsican_Guard  Korsische Garde des Papstes (1603 bis 1662/64) und die Corazze,
+#     ein päpstliches Korps fast ganz aus Bologna (belegt 1642)
+#   https://en.wikipedia.org/wiki/Papal_Army  Kirchenstaat in seiner größten Ausdehnung seit 1649 (Castro)
+# Die Ränge im Adelsbaum als berittene Truppen sind eine Spielvereinfachung.
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "italiener"
+bild = "empire"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
+kultur_id = "battania"
+art = "anpassen"
+praefix = "it"
+namensliste = "italiener"
+farben = ["0xffF2C230", "0xffFFFFFF"]
+gesicht = "fighter_empire"
+zivil = ["empire_troop_civilian_template_t1", "empire_troop_civilian_template_t2", "empire_troop_civilian_template_t3"]
+basis_truppe = "peasant"
+elite_truppe = "abanderado"
+
+[name]
+en = "Italians"
+de = "Italiener"
+
+[text]
+en = """
+Italy south of Venice is divided between the Pope and the Spanish crown. The Papal States reached their greatest \
+extent in 1649, while Naples and Sicily send their own tercios of pikemen and musketeers into the King of Spain's \
+wars. Since the middle of the century nobles raise these tercios at their own expense, and the Pope keeps \
+cuirassiers recruited in Bologna.
+"""
+de = """
+Italien südlich von Venedig ist zwischen dem Papst und der spanischen Krone geteilt. Der Kirchenstaat erreichte \
+1649 seine größte Ausdehnung, Neapel und Sizilien schicken eigene Tercios aus Pikenieren und Musketieren in die \
+Kriege des spanischen Königs. Seit der Mitte des Jahrhunderts stellen Adlige diese Tercios auf eigene Kosten auf, \
+und der Papst unterhält Kürassiere aus Bologna.
+"""
+
+[miliz]
+nahkampf = "militia_pikeman"
+fernkampf = "militia_shooter"
+nahkampf_elite = "militia_veteran_pikeman"
+fernkampf_elite = "militia_veteran_shooter"
+
+[[lord_partei]]
+truppe = "peasant"
+min = 4
+max = 8
+[[lord_partei]]
+truppe = "piquero"
+min = 3
+max = 6
+[[lord_partei]]
+truppe = "arcabucero"
+min = 3
+max = 6
+[[lord_partei]]
+truppe = "mosquetero"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "abanderado"
+min = 1
+max = 2
+[[lord_partei]]
+truppe = "corazza"
+min = 0
+max = 2
+
+# ---------------------------------------------------------------- normaler Baum (Tercio)
+
+[[truppe]]
+id = "peasant"
+name = { en = "Italian Peasant", de = "Italienischer Bauer" }
+stufe = 1
+gruppe = "Infantry"
+profil = "bauer"
+basis = true
+aufwerten = ["piquero", "arcabucero"]
+[[truppe.ausruestung]]
+Item0 = "peasant_pitchfork_1_t1"
+Head = "leather_cap"
+Body = "tunic_with_rolled_cloth"
+Leg = "leather_shoes"
+[[truppe.ausruestung]]
+Item0 = "peasant_sickle_1_t1"
+Head = "padded_cap"
+Body = "long_woolen_tunic"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "piquero"
+name = { en = "Tercio Pikeman", de = "Tercio-Pikenier" }
+stufe = 2
+gruppe = "Infantry"
+profil = "pike"
+aufwerten = ["veteran_piquero"]
+[[truppe.ausruestung]]
+Item0 = "simple_pike_t2"
+Item1 = "empire_sword_1_t2"
+Head = "imperial_cloth_coif"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "veteran_piquero"
+name = { en = "Veteran Tercio Pikeman", de = "Erfahrener Tercio-Pikenier" }
+stufe = 3
+gruppe = "Infantry"
+profil = "pike"
+aufwerten = ["cabo"]
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "empire_sword_2_t3"
+Head = "kettle_hat_over_padded_cloth"
+Body = "imperial_mail_over_leather"
+Gloves = "padded_mitten"
+Leg = "reinforced_suede_boots"
+
+[[truppe]]
+id = "cabo"
+name = { en = "Cabo de Escuadra", de = "Cabo de Escuadra (Korporal)" }
+stufe = 4
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "empire_sword_3_t3"
+Head = "kettle_hat_over_mail_coif"
+Body = "coat_of_plates_over_mail"
+Gloves = "guarded_padded_vambrace"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "arcabucero"
+name = { en = "Arcabucero", de = "Arcabucero (Arkebusier)" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["mosquetero"]
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_1_t2"
+Head = "imperial_cloth_coif"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "mosquetero"
+name = { en = "Mosquetero", de = "Mosquetero (Musketier)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+aufwerten = ["sargento"]
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_2_t3"
+Head = "merchants_hat"
+Cape = "empire_cape_a"
+Body = "padded_coat"
+Leg = "reinforced_suede_boots"
+
+[[truppe]]
+id = "sargento"
+name = { en = "Sargento", de = "Sargento (Feldwebel)" }
+stufe = 4
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_heavy_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_3_t3"
+Head = "kettle_hat_over_padded_cloth"
+Cape = "empire_cape_a"
+Body = "imperial_padded_cloth"
+Gloves = "padded_mitten"
+Leg = "reinforced_suede_boots"
+
+# ---------------------------------------------------------------- Adelsbaum (Offiziere und Corazze)
+
+[[truppe]]
+id = "abanderado"
+name = { en = "Abanderado", de = "Abanderado (Fahnenträger)" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+basis = true
+gesicht = "fighter_empire_tall"
+aufwerten = ["alferez"]
+pferd = { Horse = "empire_horse", HorseHarness = "light_harness" }
+[[truppe.ausruestung]]
+Item0 = "imperial_spear_t2"
+Item1 = "empire_sword_1_t2"
+Item2 = "light_horsemans_kite_shield"
+Head = "imperial_padded_coif"
+Body = "padded_coat"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "alferez"
+name = { en = "Alférez", de = "Alférez (Fähnrich)" }
+stufe = 3
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+gesicht = "fighter_empire_tall"
+aufwerten = ["corazza"]
+pferd = { Horse = "t2_empire_horse", HorseHarness = "stripped_leather_harness" }
+[[truppe.ausruestung]]
+Item0 = "empire_sword_3_t3"
+Item1 = "balkan_pistol"
+Item2 = "balkan_pistol_balls"
+Head = "roundkettle_over_imperial_leather"
+Body = "basic_imperial_leather_armor"
+Gloves = "padded_mitten"
+Leg = "leather_cavalier_boots"
+
+[[truppe]]
+id = "corazza"
+name = { en = "Papal Corazza", de = "Päpstlicher Kürassier (Corazza)" }
+stufe = 4
+gruppe = "Cavalry"
+profil = "reiter"
+benoetigt = "kriegspferd"
+gesicht = "fighter_empire_tall"
+aufwerten = ["capitan"]
+pferd = { Horse = "t3_empire_horse", HorseHarness = "half_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_2_t4"
+Item1 = "empire_sword_5_t4"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "roundkettle_over_imperial_mail"
+Body = "imperial_mail_over_leather"
+Gloves = "guarded_padded_vambrace"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "capitan"
+name = { en = "Capitán", de = "Capitán (Hauptmann)" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+aufwerten = ["maestre_de_campo"]
+pferd = { Horse = "t3_empire_horse", HorseHarness = "half_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_sword_6_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "peaked_helmet_over_mail_coif"
+Cape = "empire_cape_a"
+Body = "coat_of_plates_over_mail"
+Gloves = "eastern_plated_leather_vambraces"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "maestre_de_campo"
+name = { en = "Maestre de Campo", de = "Maestre de Campo (Oberst)" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_empire_tall"
+pferd = { Horse = "noble_horse_imperial", HorseHarness = "imperial_scale_barding" }
+[[truppe.ausruestung]]
+Item0 = "empire_lance_3_t5"
+Item1 = "empire_noble_sword_2_t5"
+Item2 = "balkan_pistol"
+Item3 = "balkan_pistol_balls"
+Head = "southern_noble_helmet"
+Cape = "empire_cape_a"
+Body = "imperial_scale_armor"
+Gloves = "decorated_imperial_gauntlets"
+Leg = "mail_cavalier_boots"
+
+# ---------------------------------------------------------------- Miliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_pikeman"
+name = { en = "Italian Militia Pikeman", de = "Italienischer Milizpikenier" }
+stufe = 2
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "simple_pike_t2"
+Item1 = "peasant_hatchet_1_t1"
+Head = "imperial_cloth_coif"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_shooter"
+name = { en = "Italian Militia Shooter", de = "Italienischer Milizschütze" }
+stufe = 2
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_arquebus"
+Item1 = "balkan_musket_balls"
+Item2 = "peasant_hatchet_1_t1"
+Head = "padded_cap"
+Body = "sleeveless_padded_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_veteran_pikeman"
+name = { en = "Veteran Italian Militia Pikeman", de = "Italienischer Milizpikenier (Veteran)" }
+stufe = 3
+gruppe = "Infantry"
+profil = "pike"
+[[truppe.ausruestung]]
+Item0 = "vlandia_pike_1_t5"
+Item1 = "empire_sword_2_t3"
+Head = "kettle_hat_over_padded_cloth"
+Body = "padded_coat"
+Leg = "reinforced_suede_boots"
+
+[[truppe]]
+id = "militia_veteran_shooter"
+name = { en = "Veteran Italian Militia Shooter", de = "Italienischer Milizschütze (Veteran)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "schuetze"
+[[truppe.ausruestung]]
+Item0 = "balkan_musket"
+Item1 = "balkan_musket_balls"
+Item2 = "empire_sword_2_t3"
+Head = "imperial_padded_coif"
+Body = "woven_leather_coat"
+Leg = "reinforced_suede_boots"

@@ -1,0 +1,321 @@
+# Krimtataren (Krimkhanat). Ersetzt die Calradia-Kultur Khuzait. Einfacher erster Truppenbaum.
+# Quellen (Wikipedia, geprüft):
+#   https://en.wikipedia.org/wiki/Crimean_Khanate  Khane aus dem Haus Giray, Schutzstaat der Osmanen, Qaraçı Beys der
+#     Clans Şirin, Barın, Arğın, Qıpçaq, darunter Mirzas; Nogai-Horden als Vasallen stellen einen großen Teil des
+#     Heers; tscherkessische Söldner und Rekruten; Feldzüge (Sefer) unter dem Khan und Raubzüge (Çapul) des Adels;
+#     Reiterei als Vorhut der osmanischen Feldzüge; Karlowitz 1699 verbietet weitere Raubzüge
+#   https://en.wikipedia.org/wiki/Crimean_Tatars  Nogai ohne eigenen Khan, Vasallen der Krim
+#   https://en.wikipedia.org/wiki/Lipka_Tatars  tatarische leichte Reiterei und Bogenschützen zu Pferd
+# Waffen (Bogen, Säbel, Lanze) stehen auf diesen Seiten nicht im Einzelnen, Ausrüstung daher allgemein nach Steppenart.
+# Die Ränge im Adelsbaum (Mirza vor Bey) folgen der Rangordnung auf der Seite, als Truppen sind sie eine Vereinfachung.
+# Aufbau der Datei: siehe data/kulturen/README.md
+
+schluessel = "tataren"
+bild = "khuzait"  # Bild bei der Charaktererstellung (Kulturbild des Spiels)
+kultur_id = "khuzait"
+art = "anpassen"
+praefix = "kt"
+namensliste = "tataren"
+farben = ["0xff2B7A9E", "0xffE8C547"]
+gesicht = "fighter_khuzait"
+zivil = ["khuzait_troop_civilian_template_t1", "khuzait_troop_civilian_template_t2", "khuzait_troop_civilian_template_t3"]
+basis_truppe = "herdsman"
+elite_truppe = "mirza_retainer"
+
+[name]
+en = "Crimean Tatars"
+de = "Krimtataren"
+
+[text]
+en = """
+The Crimean Khanate is ruled by khans of the house of Giray, who govern together with the beys of the great clans \
+Şirin, Barın, Arğın and Qıpçaq. The khanate stands under the protection of the Ottoman Sultan, who has appointed \
+its khans since 1524, and its horsemen ride ahead of every Ottoman campaign. The Nogai hordes of the steppe serve the khan as \
+vassals. For two centuries raids brought captives from Poland and Russia, until the Peace of Karlowitz in 1699 \
+forbade them.
+"""
+de = """
+Das Krimkhanat wird von Khanen aus dem Haus Giray regiert, die gemeinsam mit den Beys der großen Clans Şirin, Barın, \
+Arğın und Qıpçaq herrschen. Das Khanat steht unter dem Schutz des osmanischen Sultans, der seit 1524 seine Khane \
+ernennt, und seine Reiter ziehen jedem osmanischen Feldzug voraus. Die Nogai-Horden der Steppe dienen dem Khan als Vasallen. \
+Zwei Jahrhunderte lang brachten Raubzüge Gefangene aus Polen und Russland, bis der Frieden von Karlowitz 1699 \
+sie verbot.
+"""
+
+[miliz]
+nahkampf = "militia_spearman"
+fernkampf = "militia_archer"
+nahkampf_elite = "militia_veteran_spearman"
+fernkampf_elite = "militia_veteran_archer"
+
+[[lord_partei]]
+truppe = "herdsman"
+min = 3
+max = 6
+[[lord_partei]]
+truppe = "nogai_horseman"
+min = 4
+max = 8
+[[lord_partei]]
+truppe = "raider"
+min = 2
+max = 4
+[[lord_partei]]
+truppe = "circassian"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "mirza_retainer"
+min = 1
+max = 3
+[[lord_partei]]
+truppe = "mirza"
+min = 0
+max = 2
+
+# ---------------------------------------------------------------- normaler Baum
+
+[[truppe]]
+id = "herdsman"
+name = { en = "Tatar Herdsman", de = "Tatarischer Hirte" }
+stufe = 1
+gruppe = "Ranged"
+profil = "bogen_infanterie"
+basis = true
+aufwerten = ["nogai_horseman", "circassian"]
+[[truppe.ausruestung]]
+Item0 = "hunting_bow"
+Item1 = "default_arrows"
+Item2 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "hemp_tunic"
+Leg = "wrapped_shoes"
+
+[[truppe]]
+id = "nogai_horseman"
+name = { en = "Nogai Horseman", de = "Nogai-Reiter" }
+stufe = 2
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+benoetigt = "pferd"
+aufwerten = ["raider"]
+pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "default_arrows"
+Item2 = "simple_sabre_sword_t2"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "steppe_leather_boots"
+
+[[truppe]]
+id = "raider"
+name = { en = "Çapul Raider", de = "Çapul-Reiter (Raubzug)" }
+stufe = 3
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+aufwerten = ["outrider"]
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "piercing_arrows"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "padded_coat"
+Leg = "khuzait_curved_boots"
+
+[[truppe]]
+id = "outrider"
+name = { en = "Tatar Outrider", de = "Tatarischer Vorreiter" }
+stufe = 4
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "piercing_arrows"
+Item2 = "khuzait_sword_3_t3"
+Head = "spiked_helmet"
+Body = "eastern_studded_leather"
+Gloves = "woven_leather_bracers"
+Leg = "khuzait_curved_boots"
+
+[[truppe]]
+id = "circassian"
+name = { en = "Circassian Recruit", de = "Tscherkessischer Rekrut" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+aufwerten = ["circassian_mercenary"]
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "simple_sabre_sword_t2"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "circassian_mercenary"
+name = { en = "Circassian Mercenary", de = "Tscherkessischer Söldner" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "khuzait_sword_3_t3"
+Item1 = "light_horsemans_kite_shield"
+Head = "spiked_helmet"
+Body = "stitched_leather_over_mail"
+Gloves = "woven_leather_bracers"
+Leg = "eastern_leather_boots"
+
+# ---------------------------------------------------------------- Adelsbaum (Mirzas und Beys)
+
+[[truppe]]
+id = "mirza_retainer"
+name = { en = "Mirza's Retainer", de = "Gefolgsmann eines Mirza" }
+stufe = 2
+gruppe = "Cavalry"
+profil = "leichte_reiter"
+basis = true
+gesicht = "fighter_khuzait"
+aufwerten = ["mirza"]
+pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_1_t3"
+Item1 = "simple_sabre_sword_t2"
+Item2 = "light_horsemans_kite_shield"
+Head = "fur_hat"
+Body = "padded_coat"
+Leg = "steppe_leather_boots"
+
+[[truppe]]
+id = "mirza"
+name = { en = "Mirza", de = "Mirza" }
+stufe = 3
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+gesicht = "fighter_khuzait"
+aufwerten = ["veteran_mirza"]
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_harness" }
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "piercing_arrows"
+Item2 = "khuzait_sword_2_t3"
+Head = "spiked_helmet"
+Body = "leather_coat"
+Leg = "khuzait_curved_boots"
+
+[[truppe]]
+id = "veteran_mirza"
+name = { en = "Veteran Mirza", de = "Erfahrener Mirza" }
+stufe = 4
+gruppe = "HorseArcher"
+profil = "berittene_schuetzen"
+benoetigt = "kriegspferd"
+gesicht = "fighter_khuzait"
+aufwerten = ["clan_bey"]
+pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "piercing_arrows"
+Item2 = "ridged_sabre_sword_t4"
+Head = "spiked_helmet"
+Cape = "empire_cape_a"
+Body = "stitched_leather_over_mail"
+Gloves = "studded_leather_vambraces"
+Leg = "khuzait_curved_boots"
+
+[[truppe]]
+id = "clan_bey"
+name = { en = "Clan Bey", de = "Clan-Bey" }
+stufe = 5
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_khuzait"
+aufwerten = ["qaraci_bey"]
+pferd = { Horse = "t3_khuzait_horse", HorseHarness = "steppe_half_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_2_t4"
+Item1 = "khuzait_noble_sword_1_t5"
+Item2 = "composite_steppe_bow"
+Item3 = "piercing_arrows"
+Head = "khuzait_noble_helmet_with_fur"
+Cape = "leopard_pelt"
+Body = "northern_brass_lamellar_over_mail"
+Gloves = "reinforced_leather_vambraces"
+Leg = "mail_cavalier_boots"
+
+[[truppe]]
+id = "qaraci_bey"
+name = { en = "Qaraçı Bey", de = "Qaraçı-Bey" }
+stufe = 6
+gruppe = "Cavalry"
+profil = "reiter"
+gesicht = "fighter_khuzait"
+pferd = { Horse = "noble_horse_eastern", HorseHarness = "chain_barding" }
+[[truppe.ausruestung]]
+Item0 = "khuzait_lance_3_t5"
+Item1 = "khuzait_noble_sword_2_t5"
+Item2 = "composite_steppe_bow"
+Item3 = "piercing_arrows"
+Head = "khuzait_noble_helmet_with_feathers"
+Cape = "leopard_pelt"
+Body = "brass_lamellar_over_mail"
+Gloves = "lordly_mail_mitten"
+Leg = "mail_cavalier_boots"
+
+# ---------------------------------------------------------------- Miliz (Besatzung der Städte und Burgen)
+
+[[truppe]]
+id = "militia_spearman"
+name = { en = "Tatar Militia Spearman", de = "Tatarischer Milizspeerträger" }
+stufe = 2
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "padded_short_coat"
+Leg = "leather_boots"
+
+[[truppe]]
+id = "militia_archer"
+name = { en = "Tatar Militia Archer", de = "Tatarischer Milizbogenschütze" }
+stufe = 2
+gruppe = "Ranged"
+profil = "bogen_infanterie"
+[[truppe.ausruestung]]
+Item0 = "hunting_bow"
+Item1 = "default_arrows"
+Item2 = "peasant_hatchet_1_t1"
+Head = "fur_hat"
+Body = "sleeveless_padded_coat"
+Leg = "steppe_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_spearman"
+name = { en = "Veteran Tatar Militia Spearman", de = "Tatarischer Milizspeerträger (Veteran)" }
+stufe = 3
+gruppe = "Infantry"
+profil = "infanterie"
+[[truppe.ausruestung]]
+Item0 = "eastern_spear_1_t2"
+Item1 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "padded_coat"
+Leg = "eastern_leather_boots"
+
+[[truppe]]
+id = "militia_veteran_archer"
+name = { en = "Veteran Tatar Militia Archer", de = "Tatarischer Milizbogenschütze (Veteran)" }
+stufe = 3
+gruppe = "Ranged"
+profil = "bogen_infanterie"
+[[truppe.ausruestung]]
+Item0 = "composite_steppe_bow"
+Item1 = "piercing_arrows"
+Item2 = "khuzait_sword_2_t3"
+Head = "northern_fur_cap"
+Body = "woven_leather_coat"
+Leg = "khuzait_curved_boots"

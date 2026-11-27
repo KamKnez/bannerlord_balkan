@@ -1,0 +1,39 @@
+# Krimtataren. Männliche Namen nach den Khanen und Prinzen der Giray (https://en.wikipedia.org/wiki/Crimean_Khanate),
+# weibliche allgemein muslimische Namen der Zeit. Familien: die Giray und die Clans der Qaraçı Beys
+# (Şirin, Barın, Arğın, Qıpçaq, laut https://en.wikipedia.org/wiki/Crimean_Khanate).
+[maennlich]
+Devlet
+Selim
+Gazi
+Mehmed
+İslam
+Adil
+Murad
+Hacı
+Sahib
+Canibek
+Kaplan
+Saadet
+Mengli
+Bahadır
+Safa
+Azamat
+[weiblich]
+Fatma
+Ayşe
+Emine
+Hatice
+Zeynep
+Şerife
+Nazlı
+Hanike
+Melek
+Saliha
+Ümmügülsüm
+Esma
+[familien]
+Giray
+Şirin
+Barın
+Arğın
+Qıpçaq
