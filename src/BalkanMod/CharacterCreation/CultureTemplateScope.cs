@@ -28,6 +28,9 @@ namespace BalkanMod.CharacterCreation
         private const string WidgetType =
             "TaleWorlds.MountAndBlade.GauntletUI.Widgets.CharacterCreation.Culture.CharacterCreationCultureVisualBrushWidget";
 
+        private const string CultureStageType =
+            "TaleWorlds.CampaignSystem.ViewModelCollection.CharacterCreation.CharacterCreationCultureStageVM";
+
         private static readonly MethodInfo SelectedCultureSetter =
             AccessTools.PropertySetter(typeof(CharacterCreationContent), nameof(CharacterCreationContent.SelectedCulture));
 
@@ -45,12 +48,25 @@ namespace BalkanMod.CharacterCreation
                 harmony.Patch(method, prefix, postfix);
             }
 
+            // Die Kulturauswahl sortiert fest nach den sechs Kulturen des Spiels (Single(...)) und stürzt ab, wenn
+            // eine davon fehlt. Die Reihenfolge der Mod kommt aus data/kulturen/, das Sortieren entfällt.
+            var sort = AccessTools.Method(AccessTools.TypeByName(CultureStageType), "SortCultureList");
+            if (sort != null)
+            {
+                harmony.Patch(sort, new HarmonyMethod(AccessTools.Method(typeof(CultureTemplateScope), nameof(SkipSort))));
+            }
+
             var widget = AccessTools.TypeByName(WidgetType);
             var setter = widget == null ? null : AccessTools.PropertySetter(widget, "CurrentCultureId");
             if (setter != null)
             {
                 harmony.Patch(setter, new HarmonyMethod(AccessTools.Method(typeof(CultureTemplateScope), nameof(ImagePrefix))));
             }
+        }
+
+        private static bool SkipSort()
+        {
+            return false;
         }
 
         private static IEnumerable<MethodBase> TargetMethods()
