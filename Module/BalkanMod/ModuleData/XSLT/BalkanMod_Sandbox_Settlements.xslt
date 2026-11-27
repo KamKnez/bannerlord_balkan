@@ -630,8 +630,8 @@
 	<xsl:template match="Settlement[@id='castle_village_A3_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Pirot</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_2_text}Pirot belongs to the district of Niš. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Prokuplje</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_castle_village_A3_2_text}Prokuplje belongs to the district of Niš. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -834,8 +834,8 @@
 	<xsl:template match="Settlement[@id='village_A5_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*" />
-			<xsl:attribute name="name">{=!}Lüleburgaz</xsl:attribute>
-			<xsl:attribute name="text">{=balkan_settlement_village_A5_2_text}Lüleburgaz belongs to the district of Edirne. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
+			<xsl:attribute name="name">{=!}Swilengrad</xsl:attribute>
+			<xsl:attribute name="text">{=balkan_settlement_village_A5_2_text}Swilengrad belongs to the district of Edirne. Its people keep orchards of plums and walnuts and sell cheese and wool at the town market.</xsl:attribute>
 			<xsl:attribute name="culture">Culture.turks</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
@@ -2738,7 +2738,7 @@
 	<xsl:template match="Settlement[@id='village_B1_4']">
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
-			<xsl:attribute name="name">{=!}Civitavecchia</xsl:attribute>
+			<xsl:attribute name="name">{=!}Palestrina</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2850,7 +2850,7 @@
 	<xsl:template match="Settlement[@id='village_EN1_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
-			<xsl:attribute name="name">{=!}Silivri</xsl:attribute>
+			<xsl:attribute name="name">{=!}Kadıköy</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -2997,7 +2997,7 @@
 	<xsl:template match="Settlement[@id='village_K4_3']">
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
-			<xsl:attribute name="name">{=!}Kertsch</xsl:attribute>
+			<xsl:attribute name="name">{=!}Staryj Krym</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -3067,7 +3067,7 @@
 	<xsl:template match="Settlement[@id='village_S2_1']">
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
-			<xsl:attribute name="name">{=!}Zamość</xsl:attribute>
+			<xsl:attribute name="name">{=!}Lubartów</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
@@ -3137,7 +3137,7 @@
 	<xsl:template match="Settlement[@id='village_S6_2']">
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
-			<xsl:attribute name="name">{=!}Tokaj</xsl:attribute>
+			<xsl:attribute name="name">{=!}Medzev</xsl:attribute>
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
