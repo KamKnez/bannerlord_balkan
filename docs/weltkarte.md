@@ -121,6 +121,11 @@ Die Schritte unten gelten sinngemäß für `balkan_karte` mit den Bildern aus `l
   es nur, wo man laufen kann (1 Ebene, 4 Wald, 6 Furt), Gebirge, Flüsse, Seen und Meer bleiben Lücken. Flüsse
   haben etwa alle 50 km eine Furt, Bosporus und Dardanellen je einen Übergang, und alle Orte samt Toren liegen in
   einem zusammenhängenden Gebiet. Feinarbeit von Hand im Editor ist weiter möglich.
+- **Furten sichtbar.** `navmesh_bauen.py` schreibt die Furten nach `furten.csv`, `furten_markieren.py` setzt an
+  jede einen Holzsteg in die Szenendatei (nur Zeichen, begehbar macht die Furt das Navmesh).
+- **Schnee.** Die Szene braucht `MapSnowAndRainDefiner` (sonst Absturz bei neuer Kampagne), sein Bild ist aber
+  Calradias Schneekarte und färbt die Balkankarte weiß. Die Mod gibt das Bild nicht an die Szene weiter
+  (`src/BalkanMod/Map/NoCalradiaSnow.cs`); ein eigenes Schneebild steht aus.
 - **Inseln.** Ohne Schiffe sind Inseln nur erreichbar, wenn das Navmesh einen Übergang übers Wasser bekommt.
   Derzeit stehen dort Hvar und ein paar Dörfer. Kreta, Zypern, Sizilien und die Ägäis sind Gelände ohne Orte.
 - Danach im Editor am Objekt `settlements_scripts`: *CheckPositions*, dann
