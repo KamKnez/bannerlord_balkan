@@ -1,8 +1,8 @@
 # Königreiche, Clans und Lords
 
 Eine Datei pro Königreich. `tools/gen_content.py` erzeugt daraus XSLT-Patches für die Calradia-Reiche
-(`Module/BalkanMod/ModuleData/XSLT/BalkanMod_Sandbox_*.xslt`). Ids, Wappen, Familienbande, Gesichter und
-Fähigkeiten der Lords bleiben wie im Spiel, wir ändern nur Namen, Texte, Farben, Herrscher und Kultur.
+(`Module/BalkanMod/ModuleData/XSLT/BalkanMod_Sandbox_*.xslt`). Ids, Familienbande, Gesichter und
+Fähigkeiten der Lords bleiben wie im Spiel, wir ändern nur Namen, Texte, Farben, Herrscher, Kultur und (wo belegt) Wappen.
 
 | Datei | Königreich | Im Spiel |
 |---|---|---|
@@ -24,7 +24,8 @@ Fähigkeiten der Lords bleiben wie im Spiel, wir ändern nur Namen, Texte, Farbe
 | `[text]`, `[herrscher_text]` | Beschreibung des Reichs und Lebenslauf des Herrschers |
 | `siedlungen` | Städte, Burgen und Dörfer, deren Kultur wechselt |
 | `krieg_mit` | Königreiche, mit denen das Reich zu Spielbeginn im Krieg ist; muss auf beiden Seiten stehen. Andere Calradia-Kriege dieses Reichs entfallen, auch die, die andere Reiche gegen es führen |
-| `[wappen]` | Wappen des Reichs: `zeichen` (Nummer des Zeichens), `groesse`, `hintergrund` und `farbe` als `[Nummer, "0xffRRGGBB"]` aus der Farbpalette des Spiels. Die Clans übernehmen die Farben im Spiel |
+| `[wappen]` | Wappen des Reichs: `zeichen` (Nummer des Zeichens), `groesse`, `hintergrund` und `farbe` als `[Nummer, "0xffRRGGBB"]` aus der Farbpalette des Spiels. Die Clans übernehmen die Farben im Spiel, außer sie haben ein eigenes Wappen |
+| `[clan.wappen]` | Historisches Wappen eines Clans: `quelle` (Beleg), `feld` (Grundfarbe) und `figuren` mit `zeichen`, `farbe`, `x`, `y`, `groesse` oder `breite`/`hoehe`, `drehung`, `spiegeln`. Farben: rot, weiss, gold, blau, schwarz, gruen, braun. Siehe `tools/wappen.py` und `docs/wappen.md`. Solche Clans behalten ihre Farben auch in einem Reich |
 | `[orte]` | neue Namen der Städte, Burgen und Dörfer: `town_V1 = "Zagreb"` (Eigenname) oder `{ en, de }`. Der Kommentar dahinter nennt den Calradia-Namen |
 | `[dorfkultur]` | Orte mit eigener Kultur: `village_V8_1 = "germans"`, auch Städte und Burgen (`town_V8 = "germans"`). Die Notabeln bekommen die Kultur ihres Orts (C#: `NotableCultureBehavior`) und bieten Rekruten dieser Kultur an |
 | `[dorftyp]` | Erzeugnis einzelner Dörfer (VillageType des Spiels): `village_A2_3 = "europe_horse_ranch"`. Ersetzt Datteln, Wüstenpferde und Oliven im Binnenland |

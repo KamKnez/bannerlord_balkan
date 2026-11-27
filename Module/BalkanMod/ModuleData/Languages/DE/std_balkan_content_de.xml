@@ -14,7 +14,7 @@
     <string id="balkan_item_pistol_balls" text="Pistolenpatronen" />
     <string id="balkan_bs_peasant" text="Bosnischer Bauer" />
     <string id="balkan_bs_azap" text="Azap" />
-    <string id="balkan_bs_tufekci" text="Tüfekçi" />
+    <string id="balkan_bs_tufekci" text="Bosnischer Musketier" />
     <string id="balkan_bs_kapetanije_marksman" text="Kapetanije-Schütze" />
     <string id="balkan_bs_kapetanije_veteran" text="Kapetanije-Veteran" />
     <string id="balkan_bs_deli" text="Deli" />
@@ -46,7 +46,7 @@
     <string id="balkan_de_peasant" text="Deutscher Bauer" />
     <string id="balkan_de_recruit" text="Deutscher Rekrut" />
     <string id="balkan_de_pikeman" text="Deutscher Pikenier" />
-    <string id="balkan_de_doppelsoeldner" text="Doppelsöldner" />
+    <string id="balkan_de_doppelsoeldner" text="Erfahrener deutscher Pikenier" />
     <string id="balkan_de_musketeer" text="Deutscher Musketier" />
     <string id="balkan_de_veteran_musketeer" text="Deutscher Veteran-Musketier" />
     <string id="balkan_de_squire" text="Deutscher Junker" />
@@ -84,7 +84,7 @@
     <string id="balkan_hr_noble_rider" text="Adeliger Reiter" />
     <string id="balkan_hr_cuirassier" text="Kürassier" />
     <string id="balkan_hr_veteran_cuirassier" text="Kürassier-Veteran" />
-    <string id="balkan_hr_ban_guard" text="Garde des Banus" />
+    <string id="balkan_hr_ban_guard" text="Kürassier-Hauptmann" />
     <string id="balkan_hr_militia_spearman" text="Grenzmiliz-Speerträger" />
     <string id="balkan_hr_militia_shooter" text="Grenzmiliz-Schütze" />
     <string id="balkan_hr_militia_veteran_spearman" text="Grenzmiliz-Veteran mit Speer" />
@@ -111,10 +111,10 @@
     <string id="balkan_sr_rider" text="Serbischer Reiter" />
     <string id="balkan_sr_hussar" text="Raizischer Husar" />
     <string id="balkan_sr_plemic" text="Serbischer Edelmann" />
-    <string id="balkan_sr_momak" text="Momak (Gefolgsreiter)" />
+    <string id="balkan_sr_noble_hussar" text="Serbischer Adelshusar" />
+    <string id="balkan_sr_kapetan" text="Hauptmann der Serbischen Miliz" />
+    <string id="balkan_sr_podvojvoda" text="Podvojvoda (Vize-Vojvoda)" />
     <string id="balkan_sr_vojvoda" text="Vojvoda" />
-    <string id="balkan_sr_serdar" text="Serdar" />
-    <string id="balkan_sr_barjaktar" text="Barjaktar (Bannerträger)" />
     <string id="balkan_sr_militia_spearman" text="Serbischer Milizspeerträger" />
     <string id="balkan_sr_militia_shooter" text="Serbischer Milizschütze" />
     <string id="balkan_sr_militia_veteran_spearman" text="Serbischer Milizspeerträger (Veteran)" />
@@ -125,16 +125,16 @@
     <string id="balkan_tr_acemi" text="Acemi Oğlan" />
     <string id="balkan_tr_janissary" text="Janitschar" />
     <string id="balkan_tr_veteran_janissary" text="Janitscharen-Veteran" />
-    <string id="balkan_tr_odabasi" text="Janitscharen-Odabaşı" />
+    <string id="balkan_tr_odabasi" text="Janitscharenoffizier" />
     <string id="balkan_tr_timarli_sipahi" text="Türkischer Timarli-Sipahi" />
     <string id="balkan_tr_cebelu" text="Cebelü (Gefolgsreiter)" />
     <string id="balkan_tr_sipahi" text="Kapıkulu-Sipahi" />
     <string id="balkan_tr_zaim" text="Zaim" />
     <string id="balkan_tr_silahdar" text="Silahdar (Hofreiter des Sultans)" />
-    <string id="balkan_tr_militia_spearman" text="Yerli-Speerträger" />
-    <string id="balkan_tr_militia_shooter" text="Yerli-Tüfekçi" />
-    <string id="balkan_tr_militia_veteran_spearman" text="Yerli-Speerträger (Veteran)" />
-    <string id="balkan_tr_militia_veteran_shooter" text="Yerli-Tüfekçi (Veteran)" />
+    <string id="balkan_tr_militia_spearman" text="Yerliyya-Speerträger" />
+    <string id="balkan_tr_militia_shooter" text="Yerliyya-Musketier" />
+    <string id="balkan_tr_militia_veteran_spearman" text="Yerliyya-Speerträger (Veteran)" />
+    <string id="balkan_tr_militia_veteran_shooter" text="Yerliyya-Musketier (Veteran)" />
     <string id="balkan_hu_peasant" text="Ungarischer Bauer" />
     <string id="balkan_hu_hajdu_recruit" text="Junger Hajdú" />
     <string id="balkan_hu_hajdu" text="Hajdú" />
@@ -166,7 +166,7 @@
     <string id="balkan_ve_cavaliere" text="Cavaliere" />
     <string id="balkan_ve_corazza" text="Corazza" />
     <string id="balkan_ve_veteran_corazza" text="Corazza-Veterano" />
-    <string id="balkan_ve_condottiero" text="Condottiero" />
+    <string id="balkan_ve_condottiero" text="Venezianischer Reiterhauptmann" />
     <string id="balkan_ve_militia_pikeman" text="Venezianischer Milizpikenier" />
     <string id="balkan_ve_militia_shooter" text="Venezianischer Milizarkebusier" />
     <string id="balkan_ve_militia_veteran_pikeman" text="Venezianischer Milizpikenier-Veteran" />
@@ -446,19 +446,19 @@
     <string id="balkan_retreat_name" text="Kloster Ostrog" />
     <string id="balkan_retreat_text" text="Das Kloster Ostrog steht an einer fast senkrechten Wand, hoch oben im großen Felsen Ostroška Greda über der Ebene der Zeta. Vasilije, Metropolit der Herzegowina, gründete es 1656 und starb hier 1671. Es ist ein Treffpunkt aller Bekenntnisse: Orthodoxe, Katholiken und Muslime." />
     <string id="balkan_event_karlowitz_1699" text="Der Friede von Karlowitz" />
-    <string id="balkan_event_karlowitz_1699_text" text="In Karlowitz hat der Sultan Frieden mit dem Kaiser und mit Venedig geschlossen. Slawonien und die Lika sind wieder habsburgisch, Venedig behält seine Eroberungen in Dalmatien. Die Grenzen sind entlang von Una, Save und den Dinarischen Bergen gezogen, doch niemand an der Grenze glaubt, dass der Frieden hält." />
+    <string id="balkan_event_karlowitz_1699_text" text="In Karlowitz hat der Sultan Frieden mit dem Kaiser und mit Venedig geschlossen. Der Kaiser behält den größten Teil Ungarns, Venedig behält Morea. Die Kommissare stecken noch die Grenzen bei Kroatien und Bihać ab, doch niemand an der Grenze glaubt, dass der Frieden hält." />
     <string id="balkan_event_venedig_krieg_1714" text="Der Sultan erklärt Venedig den Krieg" />
-    <string id="balkan_event_venedig_krieg_1714_text" text="Die Pforte will Morea zurück. Großwesir Silahdar Ali Pascha hat der Republik den Krieg erklärt, und die Grenzbegs Bosniens sammeln schon ihre Männer gegen Dalmatien." />
+    <string id="balkan_event_venedig_krieg_1714_text" text="Die Pforte will Morea zurück. Am 9. Dezember 1714 hat der Sultan der Republik den Krieg erklärt. Großwesir Silahdar Damat Ali Pascha führt das Heer nach Morea, und der Pascha von Bosnien sammelt Männer gegen Dalmatien." />
     <string id="balkan_event_habsburg_krieg_1716" text="Der Kaiser tritt in den Krieg ein" />
-    <string id="balkan_event_habsburg_krieg_1716_text" text="Kaiser Karl VI. hat sein Bündnis mit Venedig erneuert. Prinz Eugen von Savoyen sammelt das kaiserliche Heer bei Peterwardein, und entlang der ganzen Militärgrenze greifen die Grenzer zu ihren Musketen." />
+    <string id="balkan_event_habsburg_krieg_1716_text" text="Am 13. April 1716 hat Kaiser Karl VI. sein Bündnis mit Venedig erneuert, und der Sultan hat ihm den Krieg erklärt. Prinz Eugen von Savoyen führt das kaiserliche Heer gegen die Osmanen." />
     <string id="balkan_event_passarowitz_1718" text="Der Friede von Passarowitz" />
-    <string id="balkan_event_passarowitz_1718_text" text="In Passarowitz haben der Kaiser, Venedig und der Sultan Frieden geschlossen. Der Kaiser gewinnt Belgrad und das Banat, Venedig verliert Morea, behält aber seine Gewinne in Dalmatien. An der Grenze wird es wieder still, vorerst." />
+    <string id="balkan_event_passarowitz_1718_text" text="In Passarowitz haben der Kaiser, Venedig und der Sultan Frieden geschlossen. Der Kaiser gewinnt Belgrad und das Banat, Venedig verliert Morea, gewinnt aber Imotski und Vrgorac in Dalmatien. An der Grenze wird es wieder still, vorerst." />
     <string id="balkan_rise_grenzer" text="Grenzer an der Militärgrenze" />
-    <string id="balkan_rise_grenzer_text" text="Eure Familie hat Land an der Militärgrenze, frei von Leibeigenschaft gegen Kriegsdienst. Ihr habt Euch mit ein paar Männern aus Eurem Dorf beim Generalat in Karlovac gemeldet. Der General hat Euch eine Hauptmannsstelle versprochen, wenn Ihr Euch im Dienst des Kaisers bewährt." />
+    <string id="balkan_rise_grenzer_text" text="Eure Familie hat Land an der Militärgrenze, gegen Kriegsdienst. Ihr habt Euch mit ein paar Männern aus Eurem Dorf beim Generalkommando in Karlovac gemeldet. Der General hat Euch eine Hauptmannsstelle versprochen, wenn Ihr Euch im Dienst des Kaisers bewährt." />
     <string id="balkan_rise_grenzer_goal" text="Werdet Hauptmann der Militärgrenze: Dient den Habsburgern, bis sie Euch als Vasall aufnehmen." />
-    <string id="balkan_rise_grenzer_success" text="Das Generalat hat Euch zum Hauptmann der Militärgrenze gemacht. Von nun an geht Ihr Euren eigenen Weg." />
+    <string id="balkan_rise_grenzer_success" text="Das Generalkommando hat Euch zum Hauptmann der Militärgrenze gemacht. Von nun an geht Ihr Euren eigenen Weg." />
     <string id="balkan_rise_kapetan" text="Aus dem Haus eines Grenzbegs" />
-    <string id="balkan_rise_kapetan_text" text="Eure Familie dient seit Generationen den Kapetanije der Krajina. Mit ein paar Azaps aus dem Dorf Eures Vaters seid Ihr nach Banja Luka gekommen. Der Beylerbey braucht Männer, die eine Festung gegen die Deutschen halten können, und es kümmert ihn nicht, aus welchem Haus Ihr kommt." />
+    <string id="balkan_rise_kapetan_text" text="Eure Familie dient seit Generationen den Kapetanije der Krajina. Mit ein paar Azaps aus dem Dorf Eures Vaters seid Ihr nach Travnik gekommen, dem neuen Sitz des Paschas. Der Beylerbey braucht Männer, die eine Festung gegen die Deutschen halten können, und es kümmert ihn nicht, aus welchem Haus Ihr kommt." />
     <string id="balkan_rise_kapetan_goal" text="Werdet Kapetan einer Grenzfestung: Besitzt als Mitglied des Osmanischen Reichs eine eigene Burg." />
     <string id="balkan_rise_kapetan_success" text="Eine Festung der Grenze gehört Euch, und man nennt Euch Kapetan. Von nun an geht Ihr Euren eigenen Weg." />
     <string id="balkan_rise_hajduk" text="Hajduk in den Bergen" />
@@ -468,7 +468,7 @@
     <string id="balkan_rise_bauer" text="Bauer an der Save" />
     <string id="balkan_rise_bauer_text" text="Ihr seid in Županja geboren, einem Dorf der Militärgrenze an der Save. Jenseits des Flusses liegt das osmanische Bosnien, und jeden Abend seht Ihr den Rauch seiner Wachfeuer. Eurer Familie gehören eine Hütte, ein Acker und die Pflicht, zur Waffe zu greifen, sobald die Trommel schlägt. Die Ernte ist verdorben, der Steuereintreiber kam trotzdem, und Ihr habt beschlossen, dass das Leben mehr sein muss als Pflügen und Warten auf den nächsten Überfall. Zwei Burschen aus dem Dorf kommen mit Euch." />
     <string id="balkan_rise_bauer_goal" text="Werdet Offizier der Grenzer: Dient den Habsburgern, als Söldner oder Vasall, und bringt Euren Clan auf Stufe {COUNT}." />
-    <string id="balkan_rise_bauer_success" text="Die Männer des Broder Regiments grüßen Euch nun als Offizier. Von einer Hütte in Županja bis zur Offiziersschärpe habt Ihr einen weiten Weg hinter Euch. Von nun an geht Ihr Euren eigenen Weg." />
+    <string id="balkan_rise_bauer_success" text="Die Grenzer an der Save grüßen Euch nun als Offizier. Von einer Hütte in Županja bis zur Offiziersschärpe habt Ihr einen weiten Weg hinter Euch. Von nun an geht Ihr Euren eigenen Weg." />
     <string id="balkan_bg_bosniaken_aserai_kinsfolk" text="die Sippe eines Begs" />
     <string id="balkan_bg_bosniaken_aserai_kinsfolk_text" text="Eure Familie war ein Nebenzweig eines alten bosnischen Begs-Hauses. Der Timar Eures Vaters reichte für ein gutes Pferd, nicht aber für die Rüstung der schweren Reiterei, und so ritt er mit den leichten Reitern, die über die Grenze streifen." />
     <string id="balkan_bg_bosniaken_aserai_slave" text="das Haus eines Kapetans" />
@@ -494,9 +494,9 @@
     <string id="balkan_bg_bulgaren_sturgia_vagabond" text="Freunde der Hajduken" />
     <string id="balkan_bg_bulgaren_sturgia_vagabond_text" text="Eure Familie war arm und besaß nichts außer Schulden. Sie brachten den Hajduken in den Wäldern Brot und Nachrichten und verkauften, was die Hajduken den Steuereintreibern abnahmen. Ihr habt früh gelernt, wem man trauen kann und wen man fürchten muss." />
     <string id="balkan_bg_deutsche_vlandia_retainer" text="das Gefolge eines Grafen" />
-    <string id="balkan_bg_deutsche_vlandia_retainer_text" text="Euer Vater war Verwalter eines Reichsgrafen, der nach der Vertreibung der Türken Güter in Slawonien erhalten hatte. Er kümmerte sich um die Güter, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit den Kürassieren des Grafen." />
+    <string id="balkan_bg_deutsche_vlandia_retainer_text" text="Euer Vater war Verwalter eines kaiserlichen Grafen, der Land in den zurückeroberten Teilen Ungarns erhalten hatte. Er kümmerte sich um die Güter, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit den Kürassieren des Grafen." />
     <string id="balkan_bg_deutsche_vlandia_merchant" text="Bürger" />
-    <string id="balkan_bg_deutsche_vlandia_merchant_text" text="Eure Familie waren Kaufleute, die an der Donau zwischen Wien, Ofen und Belgrad handelten. Sie brachten Tuch und Eisenwaren flussabwärts, kamen mit Häuten und Vieh zurück und saßen in der Kaufmannsgilde ihrer Stadt." />
+    <string id="balkan_bg_deutsche_vlandia_merchant_text" text="Eure Familie waren Kaufleute, die entlang der Donau handelten. Sie verschifften Tuch und Eisenwaren flussabwärts, brachten Häute und Vieh zurück und saßen in der Kaufmannsgilde ihrer Stadt." />
     <string id="balkan_bg_deutsche_vlandia_farmer" text="Siedler" />
     <string id="balkan_bg_deutsche_vlandia_farmer_text" text="Eure Familie gehörte zu den schwäbischen Siedlern, die nach der Vertreibung der Türken Land an der Donau nahmen. Sie rodeten das Land, bauten ihren Hof und hatten genug zum Leben und ein wenig zum Verkaufen. Die Männer dienten in der Landwehr." />
     <string id="balkan_bg_deutsche_vlandia_blacksmith" text="Schmiede in der Stadt" />
@@ -524,13 +524,13 @@
     <string id="balkan_bg_kroaten_vlandia_farmer" text="Grenzer" />
     <string id="balkan_bg_kroaten_vlandia_farmer_text" text="Eure Familie hatte Land an der Militärgrenze. Sie schuldeten keinem Herrn Fron, doch jeder Mann im Haus griff zur Muskete, wenn die Türken über die Una kamen. Sie hatten genug zum Leben und ein wenig zum Verkaufen." />
     <string id="balkan_bg_kroaten_vlandia_blacksmith" text="Schmiede in der Stadt" />
-    <string id="balkan_bg_kroaten_vlandia_blacksmith_text" text="Eure Familie besaß eine Schmiede in Karlovac, der sternförmigen Festung an der Kupa. Euer Vater hatte eine kleine Stimme im Stadtrat und diente in der Bürgerwehr." />
+    <string id="balkan_bg_kroaten_vlandia_blacksmith_text" text="Eure Familie besaß eine Schmiede in Karlovac, der 1579 erbauten sechszackigen Sternfestung am Zusammenfluss von Korana und Kupa. Euer Vater hatte eine kleine Stimme im Stadtrat und diente in der Bürgermiliz." />
     <string id="balkan_bg_kroaten_vlandia_hunter" text="Jäger" />
     <string id="balkan_bg_kroaten_vlandia_hunter_text" text="Eure Familie lebte in einem Dorf in den Wäldern des Gorski Kotar, besaß aber kein Land. Euer Vater nahm jede Arbeit an, die er fand, und verbrachte lange Tage jagend und Fallen stellend im Wald, immer auf der Hut vor den Jägern des Grafen." />
-    <string id="balkan_bg_kroaten_vlandia_mercenary" text="Söldner" />
-    <string id="balkan_bg_kroaten_vlandia_mercenary_text" text="Euer Vater diente in einer der kroatischen Kompanien, die der Kaiser in ganz Europa einsetzte, Männer, die den Krieg so lange kannten, dass sie mit dem Frieden nie zurechtkamen. Ihre Schützen waren vom Rhein bis zur Donau gefragt. Eure Mutter zog mit dem Tross und nahm Euch mit auf blutige Feldzüge." />
+    <string id="balkan_bg_kroaten_vlandia_mercenary" text="Kroatische Reiter" />
+    <string id="balkan_bg_kroaten_vlandia_mercenary_text" text="Euer Großvater ritt mit den Kroaten, der leichten Reiterei mit Karabiner und Pistolen, die im Dreißigjährigen Krieg für den Kaiser quer durch Deutschland kämpfte. Euer Vater folgte ihm in den Dienst des Kaisers, und der Krieg ließ ihn nie mehr los. Eure Mutter zog mit dem Tross und nahm Euch mit auf blutige Feldzüge." />
     <string id="balkan_bg_ragusaner_empire_lanlord" text="das Gefolge eines Patriziers" />
-    <string id="balkan_bg_ragusaner_empire_lanlord_text" text="Euer Vater war ein Vertrauter einer Patrizierfamilie aus Dubrovnik und verwaltete ihre Güter in Konavle. Wenn die Republik ihre wenigen Reiter zum Schutz der Grenze rief, ritt er als Lanzenreiter mit." />
+    <string id="balkan_bg_ragusaner_empire_lanlord_text" text="Euer Vater war ein Vertrauter einer Patrizierfamilie aus Dubrovnik und verwaltete ihre Güter in Konavle. Wenn die Republik ihre wenigen Reiter zur Grenzwache rief, ritt er mit ihnen." />
     <string id="balkan_bg_ragusaner_empire_merchant" text="Kaufleute" />
     <string id="balkan_bg_ragusaner_empire_merchant_text" text="Eure Familie waren Kaufleute aus Dubrovnik, die zwischen dem osmanischen Balkan und Italien handelten. Sie schickten Karawanen ins Landesinnere nach Sarajevo und Belgrad und gehörten zur Bruderschaft des heiligen Antonius, der Vereinigung der reichen Bürger der Stadt." />
     <string id="balkan_bg_ragusaner_empire_farmer" text="Kleinbauern" />
@@ -542,7 +542,7 @@
     <string id="balkan_bg_ragusaner_empire_vagabond" text="Arme am Hafen" />
     <string id="balkan_bg_ragusaner_empire_vagabond_text" text="Eure Familie gehörte zu den Armen, die sich am Hafen von Dubrovnik drängten und von Gelegenheitsarbeit auf den Kais und in den Werften von Gruž lebten. Manchmal schafften sie Ware für Schmuggler, und Ihr habt früh die dunkle Seite des Lebens gesehen." />
     <string id="balkan_bg_serben_sturgia_companion" text="das Gefolge eines Vojvoden" />
-    <string id="balkan_bg_serben_sturgia_companion_text" text="Euer Vater gehörte zum bewaffneten Haus eines serbischen Vojvoden. Er saß an der Tafel seines Herrn, kümmerte sich um dessen Dörfer und stand im Kampf in der ersten Reihe an seiner Seite. Als der Patriarch das Volk nach Norden über die Donau führte, zogen sie mit ihm." />
+    <string id="balkan_bg_serben_sturgia_companion_text" text="Euer Vater gehörte zum bewaffneten Haus eines serbischen Vojvoden. Er saß an der Tafel seines Herrn, kümmerte sich um dessen Dörfer und stand in der Schlacht in der ersten Reihe an seiner Seite. Als der Patriarch 1690 das Volk aus Belgrad führte, zogen sie mit ihm." />
     <string id="balkan_bg_serben_sturgia_trader" text="Flusshändler" />
     <string id="balkan_bg_serben_sturgia_trader_text" text="Eure Familie waren Kaufleute in einer der Städte an Donau und Save. Sie verschifften Wolle, Häute, Wachs und Honig flussaufwärts in die habsburgischen Länder und brachten Tuch und Eisen zurück." />
     <string id="balkan_bg_serben_sturgia_farmer" text="Bauern einer Zadruga" />
@@ -566,23 +566,23 @@
     <string id="balkan_bg_tuerken_aserai_artisan" text="Raufbolde der Gassen" />
     <string id="balkan_bg_tuerken_aserai_artisan_text" text="Euer Vater arbeitete für einen Kabadayı, einen der starken Männer, die in den ärmeren Vierteln der Städte für Ordnung sorgen. Er schlichtete Streit um Schulden, Würfel und Beleidigungen, und den Rest erledigte sein schwerer Stab." />
     <string id="balkan_bg_ungarn_vlandia_retainer" text="das Gefolge eines Magnaten" />
-    <string id="balkan_bg_ungarn_vlandia_retainer_text" text="Euer Vater war Verwalter der Güter eines ungarischen Magnaten. Er kümmerte sich um die Ländereien, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er im Banderium seines Herrn, der gepanzerten Reiterei, die jedes große Haus stellt." />
+    <string id="balkan_bg_ungarn_vlandia_retainer_text" text="Euer Vater war Verwalter der Güter eines ungarischen Magnaten. Er kümmerte sich um das Land, schlichtete Streit in den Dörfern und bildete das Aufgebot aus. Im Krieg ritt er mit den bewaffneten Reitern seines Herrn." />
     <string id="balkan_bg_ungarn_vlandia_merchant" text="Bürger" />
-    <string id="balkan_bg_ungarn_vlandia_merchant_text" text="Eure Familie waren Kaufleute in einer königlichen Freistadt der Großen Tiefebene. Sie trieben graue Rinder auf die Märkte von Wien und Nürnberg, verkauften Wein aus Tokaj und saßen in der Kaufmannsgilde der Stadt." />
+    <string id="balkan_bg_ungarn_vlandia_merchant_text" text="Eure Familie waren Kaufleute in einer Stadt der Großen Tiefebene. Sie trieben Graurinder zu Fuß auf die Märkte von Wien und Nürnberg und saßen in der Kaufmannsgilde der Stadt." />
     <string id="balkan_bg_ungarn_vlandia_farmer" text="Heiducken-Bauern" />
-    <string id="balkan_bg_ungarn_vlandia_farmer_text" text="Eure Familie waren Heiducken, Bauern, die vor langer Zeit für ihren Dienst gegen die Türken aus der Leibeigenschaft entlassen worden waren. Sie hatten genug Land zum Leben und ein wenig zum Verkaufen, und über dem Herd hing eine Muskete für den Tag, an dem zu den Waffen gerufen wurde." />
+    <string id="balkan_bg_ungarn_vlandia_farmer_text" text="Eure Familie waren Hajdúk, deren Vorfahren Fürst Bocskai für ihren Dienst aus der Gewalt ihrer Herren befreite und mit Land beschenkte. Sie hatten gerade genug Land zum Leben und ein wenig zum Verkaufen, und über dem Herd hing eine Muskete für den Ruf zu den Waffen." />
     <string id="balkan_bg_ungarn_vlandia_blacksmith" text="Schmiede in der Stadt" />
     <string id="balkan_bg_ungarn_vlandia_blacksmith_text" text="Eure Familie besaß eine Schmiede in Debrecen, der großen Marktstadt der Tiefebene. Euer Vater hatte eine kleine Stimme im Stadtrat und diente in der Bürgerwehr." />
     <string id="balkan_bg_ungarn_vlandia_hunter" text="Jäger" />
     <string id="balkan_bg_ungarn_vlandia_hunter_text" text="Eure Familie lebte in einem Dorf in den Sümpfen an der Theiß, besaß aber kein Land. Euer Vater nahm jede Arbeit an, die er fand, und verbrachte lange Tage jagend und fischend im Schilf, immer auf der Hut vor den Jägern des Herrn." />
     <string id="balkan_bg_ungarn_vlandia_mercenary" text="Kuruzen" />
-    <string id="balkan_bg_ungarn_vlandia_mercenary_text" text="Euer Vater ritt mit den Kuruzen Imre Thökölys, Männern, die seit ihrer Jugend gegen Kaiser wie Sultan kämpften und mit dem Frieden nie zurechtkamen. Ihre Schützen waren auf allen Seiten gefürchtet. Eure Mutter zog mit dem Lager und nahm Euch mit auf blutige Feldzüge." />
+    <string id="balkan_bg_ungarn_vlandia_mercenary_text" text="Euer Vater ritt mit den Kuruzen Imre Thökölys, den Aufständischen, die gegen die Habsburger kämpften und sich unter Thököly auf die Seite des Sultans stellten. Mit dem Frieden kam er nie zurecht. Eure Mutter zog mit dem Lager und nahm Euch mit auf blutige Feldzüge." />
     <string id="balkan_bg_venezianer_empire_lanlord" text="das Gefolge eines Adligen" />
-    <string id="balkan_bg_venezianer_empire_lanlord_text" text="Euer Vater war ein Vertrauter einer Adelsfamilie aus Zadar und verwaltete ihre Güter auf dem Land. Im Krieg ritt er mit der kroatischen Reiterei, die die Republik in Dalmatien aufstellt, als Lanzenreiter." />
+    <string id="balkan_bg_venezianer_empire_lanlord_text" text="Euer Vater war ein Vertrauter einer Adelsfamilie aus Zadar und verwaltete ihre Güter auf dem Land. Im Krieg ritt er mit den Cappelletti, der leichten Reiterei, die die Republik unter den dalmatinischen Kroaten aufstellt." />
     <string id="balkan_bg_venezianer_empire_merchant" text="Kaufleute" />
-    <string id="balkan_bg_venezianer_empire_merchant_text" text="Eure Familie waren Kaufleute in Split, die dalmatinischen Wein, Öl und Salz nach Venedig verschifften und Karawanen ins bosnische Hinterland schickten. Sie hatten einen Sitz im Stadtrat." />
+    <string id="balkan_bg_venezianer_empire_merchant_text" text="Eure Familie waren Kaufleute in Split, die dalmatinischen Wein, Öl und Salz nach Venedig verschifften. Sie hatten einen Sitz im Stadtrat." />
     <string id="balkan_bg_venezianer_empire_farmer" text="Kolonisten" />
-    <string id="balkan_bg_venezianer_empire_farmer_text" text="Eure Familie nahm Land in dem Gebiet, das die Republik gerade hinter der Küste gewonnen hatte. Sie hatten genug zum Leben und ein wenig zum Verkaufen, und die Männer dienten in den Cernide, der Landmiliz." />
+    <string id="balkan_bg_venezianer_empire_farmer_text" text="Eure Familie nahm nach dem Krieg Land hinter der Küste. Sie hatten gerade genug, um sich zu ernähren und ein wenig zu verkaufen, und die Männer dienten in den Cranide, wie die Landmiliz in Dalmatien heißt." />
     <string id="balkan_bg_venezianer_empire_artisan" text="Handwerker" />
     <string id="balkan_bg_venezianer_empire_artisan_text" text="Eure Familie besaß eine Werkstatt in einer dalmatinischen Stadt und baute Boote, webte Segel oder drehte Seile. Euer Vater hatte eine kleine Stimme in seiner Scuola, der Bruderschaft seines Handwerks, und diente in der Stadtmiliz." />
     <string id="balkan_bg_venezianer_empire_hunter" text="Waldleute" />

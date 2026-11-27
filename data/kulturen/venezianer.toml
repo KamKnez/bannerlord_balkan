@@ -475,7 +475,7 @@ Leg = "mail_cavalier_boots"
 
 [[truppe]]
 id = "condottiero"
-name = { en = "Condottiero", de = "Condottiero" }
+name = { en = "Venetian Cavalry Captain", de = "Venezianischer Reiterhauptmann" }
 stufe = 6
 gruppe = "Cavalry"
 profil = "reiter"

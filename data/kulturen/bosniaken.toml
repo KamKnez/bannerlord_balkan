@@ -124,7 +124,7 @@ Leg = "eastern_leather_boots"
 
 [[truppe]]
 id = "tufekci"
-name = { en = "Tüfekçi", de = "Tüfekçi" }
+name = { en = "Bosnian Musketeer", de = "Bosnischer Musketier" }
 stufe = 3
 gruppe = "Ranged"
 profil = "schuetze"

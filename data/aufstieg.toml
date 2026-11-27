@@ -23,9 +23,9 @@ gold = 300
 ziel = "vasall"
 belohnung = { gold = 2000, ruhm = 50 }
 name = { en = "Grenzer of the Military Frontier", de = "Grenzer an der Militärgrenze" }
-text = { en = "Your family holds land on the Military Frontier, free of serfdom in return for service. You have reported to the Generalate in Karlovac with a few men from your village. The general has promised you a captaincy if you prove yourself in the Emperor's service.", de = "Eure Familie hat Land an der Militärgrenze, frei von Leibeigenschaft gegen Kriegsdienst. Ihr habt Euch mit ein paar Männern aus Eurem Dorf beim Generalat in Karlovac gemeldet. Der General hat Euch eine Hauptmannsstelle versprochen, wenn Ihr Euch im Dienst des Kaisers bewährt." }
+text = { en = "Your family holds land on the Military Frontier, in return for military service. You have reported to the general command in Karlovac with a few men from your village. The general has promised you a captaincy if you prove yourself in the Emperor's service.", de = "Eure Familie hat Land an der Militärgrenze, gegen Kriegsdienst. Ihr habt Euch mit ein paar Männern aus Eurem Dorf beim Generalkommando in Karlovac gemeldet. Der General hat Euch eine Hauptmannsstelle versprochen, wenn Ihr Euch im Dienst des Kaisers bewährt." }
 ziel_text = { en = "Become a captain of the Military Frontier: serve the Habsburgs until they take you in as a vassal.", de = "Werdet Hauptmann der Militärgrenze: Dient den Habsburgern, bis sie Euch als Vasall aufnehmen." }
-erfolg_text = { en = "The Generalate has made you a captain of the Military Frontier. From now on your path is your own.", de = "Das Generalat hat Euch zum Hauptmann der Militärgrenze gemacht. Von nun an geht Ihr Euren eigenen Weg." }
+erfolg_text = { en = "The general command has made you a captain of the Military Frontier. From now on your path is your own.", de = "Das Generalkommando hat Euch zum Hauptmann der Militärgrenze gemacht. Von nun an geht Ihr Euren eigenen Weg." }
 [start.truppen]
 vlandia = { balkan_hr_haramija = 4, balkan_hr_peasant = 3 }
 serbs = { balkan_sr_shooter = 4, balkan_sr_peasant = 3 }
@@ -33,14 +33,14 @@ serbs = { balkan_sr_shooter = 4, balkan_sr_peasant = 3 }
 [[start]]
 id = "kapetan"
 kulturen = ["aserai"]
-ort = "town_A6"            # Banja Luka
+ort = "town_A8"            # Travnik, ab 1697/1703 Sitz des Paschas (Bosnia_Eyalet, Travnik)
 reich = "aserai"
 beziehung = 10
 gold = 300
 ziel = "burg"
 belohnung = { gold = 2000, ruhm = 50 }
 name = { en = "From a house of frontier begs", de = "Aus dem Haus eines Grenzbegs" }
-text = { en = "Your family has served the captaincies of the Krajina for generations. With a few azaps from your father's village you have come to Banja Luka. The beylerbey needs men who can hold a fortress against the Germans, and he does not care whose child you are.", de = "Eure Familie dient seit Generationen den Kapetanije der Krajina. Mit ein paar Azaps aus dem Dorf Eures Vaters seid Ihr nach Banja Luka gekommen. Der Beylerbey braucht Männer, die eine Festung gegen die Deutschen halten können, und es kümmert ihn nicht, aus welchem Haus Ihr kommt." }
+text = { en = "Your family has served the captaincies of the Krajina for generations. With a few azaps from your father's village you have come to Travnik, the pasha's new seat. The beylerbey needs men who can hold a fortress against the Germans, and he does not care whose child you are.", de = "Eure Familie dient seit Generationen den Kapetanije der Krajina. Mit ein paar Azaps aus dem Dorf Eures Vaters seid Ihr nach Travnik gekommen, dem neuen Sitz des Paschas. Der Beylerbey braucht Männer, die eine Festung gegen die Deutschen halten können, und es kümmert ihn nicht, aus welchem Haus Ihr kommt." }
 ziel_text = { en = "Become kapetan of a border fortress: hold a castle of your own as a member of the Ottoman realm.", de = "Werdet Kapetan einer Grenzfestung: Besitzt als Mitglied des Osmanischen Reichs eine eigene Burg." }
 erfolg_text = { en = "A fortress of the frontier is yours, and men call you kapetan. From now on your path is your own.", de = "Eine Festung der Grenze gehört Euch, und man nennt Euch Kapetan. Von nun an geht Ihr Euren eigenen Weg." }
 [start.truppen]
@@ -68,7 +68,7 @@ vlandia = { balkan_hr_haramija = 3, balkan_hr_peasant = 3 }
 [[start]]
 id = "bauer"
 kulturen = ["vlandia", "serbs"]
-# Županja an der Save (Brod-Abschnitt der Militärgrenze), das Dorf der Burg Brod.
+# Županja an der Save (nach Karlowitz Teil der Militärgrenze an der Save; Brod-Regiment erst später), das Dorf der Burg Brod.
 ort = "castle_village_V1_1"   # Županja
 reich = "vlandia"
 auftraggeber = "ort"
@@ -79,7 +79,7 @@ belohnung = { gold = 1500, ruhm = 50 }
 name = { en = "Peasant on the Sava", de = "Bauer an der Save" }
 text = { en = "You were born in Županja, a village of the Military Frontier on the Sava. Across the river lies Ottoman Bosnia, and every evening you can see the smoke of its watch fires. Your family owns a hut, a field and the duty to take up arms whenever the drum sounds. The harvest has failed, the tax collector came anyway, and you have decided that life must hold more than ploughing and waiting for the next raid. Two lads from the village are coming with you.", de = "Ihr seid in Županja geboren, einem Dorf der Militärgrenze an der Save. Jenseits des Flusses liegt das osmanische Bosnien, und jeden Abend seht Ihr den Rauch seiner Wachfeuer. Eurer Familie gehören eine Hütte, ein Acker und die Pflicht, zur Waffe zu greifen, sobald die Trommel schlägt. Die Ernte ist verdorben, der Steuereintreiber kam trotzdem, und Ihr habt beschlossen, dass das Leben mehr sein muss als Pflügen und Warten auf den nächsten Überfall. Zwei Burschen aus dem Dorf kommen mit Euch." }
 ziel_text = { en = "Become an officer of the Grenzer: serve the Habsburgs, as a mercenary or a vassal, and raise your clan to tier {COUNT}.", de = "Werdet Offizier der Grenzer: Dient den Habsburgern, als Söldner oder Vasall, und bringt Euren Clan auf Stufe {COUNT}." }
-erfolg_text = { en = "The men of the Brod regiment now salute you as an officer. From a hut in Županja to an officer's sash, you have come a long way. From now on your path is your own.", de = "Die Männer des Broder Regiments grüßen Euch nun als Offizier. Von einer Hütte in Županja bis zur Offiziersschärpe habt Ihr einen weiten Weg hinter Euch. Von nun an geht Ihr Euren eigenen Weg." }
+erfolg_text = { en = "The Grenzer of the Sava now salute you as an officer. From a hut in Županja to an officer's sash, you have come a long way. From now on your path is your own.", de = "Die Grenzer an der Save grüßen Euch nun als Offizier. Von einer Hütte in Županja bis zur Offiziersschärpe habt Ihr einen weiten Weg hinter Euch. Von nun an geht Ihr Euren eigenen Weg." }
 [start.truppen]
 vlandia = { balkan_hr_peasant = 2 }
 serbs = { balkan_sr_peasant = 2 }

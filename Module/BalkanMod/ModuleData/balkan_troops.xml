@@ -99,7 +99,7 @@
 		id="balkan_bs_tufekci"
 		default_group="Ranged"
 		level="16"
-		name="{=balkan_bs_tufekci}Tüfekçi"
+		name="{=balkan_bs_tufekci}Bosnian Musketeer"
 		occupation="Soldier"
 		culture="Culture.aserai">
 		<face>
@@ -1400,7 +1400,7 @@
 		id="balkan_de_doppelsoeldner"
 		default_group="Infantry"
 		level="21"
-		name="{=balkan_de_doppelsoeldner}Doppelsöldner"
+		name="{=balkan_de_doppelsoeldner}German Veteran Pikeman"
 		occupation="Soldier"
 		culture="Culture.germans">
 		<face>
@@ -2979,7 +2979,7 @@
 		id="balkan_hr_ban_guard"
 		default_group="Cavalry"
 		level="31"
-		name="{=balkan_hr_ban_guard}Ban's Guard"
+		name="{=balkan_hr_ban_guard}Cuirassier Captain"
 		occupation="Soldier"
 		culture="Culture.vlandia">
 		<face>
@@ -4079,7 +4079,7 @@
 			<skill id="Throwing" value="10" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_sr_momak" />
+			<upgrade_target id="NPCCharacter.balkan_sr_noble_hussar" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -4096,10 +4096,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_sr_momak"
+		id="balkan_sr_noble_hussar"
 		default_group="Cavalry"
 		level="16"
-		name="{=balkan_sr_momak}Momak"
+		name="{=balkan_sr_noble_hussar}Serbian Noble Hussar"
 		occupation="Soldier"
 		culture="Culture.serbs">
 		<face>
@@ -4116,7 +4116,7 @@
 			<skill id="Throwing" value="20" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_sr_vojvoda" />
+			<upgrade_target id="NPCCharacter.balkan_sr_kapetan" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -4135,10 +4135,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_sr_vojvoda"
+		id="balkan_sr_kapetan"
 		default_group="Cavalry"
 		level="21"
-		name="{=balkan_sr_vojvoda}Vojvoda"
+		name="{=balkan_sr_kapetan}Militia Captain"
 		occupation="Soldier"
 		upgrade_requires="ItemCategory.war_horse"
 		culture="Culture.serbs">
@@ -4156,7 +4156,7 @@
 			<skill id="Throwing" value="30" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_sr_serdar" />
+			<upgrade_target id="NPCCharacter.balkan_sr_podvojvoda" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -4189,10 +4189,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_sr_serdar"
+		id="balkan_sr_podvojvoda"
 		default_group="Cavalry"
 		level="26"
-		name="{=balkan_sr_serdar}Serdar"
+		name="{=balkan_sr_podvojvoda}Podvojvoda"
 		occupation="Soldier"
 		culture="Culture.serbs">
 		<face>
@@ -4209,7 +4209,7 @@
 			<skill id="Throwing" value="40" />
 		</skills>
 		<upgrade_targets>
-			<upgrade_target id="NPCCharacter.balkan_sr_barjaktar" />
+			<upgrade_target id="NPCCharacter.balkan_sr_vojvoda" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -4229,10 +4229,10 @@
 		</Equipments>
 	</NPCCharacter>
 	<NPCCharacter
-		id="balkan_sr_barjaktar"
+		id="balkan_sr_vojvoda"
 		default_group="Cavalry"
 		level="31"
-		name="{=balkan_sr_barjaktar}Barjaktar"
+		name="{=balkan_sr_vojvoda}Vojvoda"
 		occupation="Soldier"
 		culture="Culture.serbs">
 		<face>
@@ -4648,7 +4648,7 @@
 		id="balkan_tr_odabasi"
 		default_group="Ranged"
 		level="26"
-		name="{=balkan_tr_odabasi}Janissary Odabaşı"
+		name="{=balkan_tr_odabasi}Janissary Officer"
 		occupation="Soldier"
 		culture="Culture.turks">
 		<face>
@@ -4899,7 +4899,7 @@
 		id="balkan_tr_militia_spearman"
 		default_group="Infantry"
 		level="11"
-		name="{=balkan_tr_militia_spearman}Yerli Spearman"
+		name="{=balkan_tr_militia_spearman}Yerliyya Spearman"
 		occupation="Soldier"
 		culture="Culture.turks">
 		<face>
@@ -4932,7 +4932,7 @@
 		id="balkan_tr_militia_shooter"
 		default_group="Ranged"
 		level="11"
-		name="{=balkan_tr_militia_shooter}Yerli Tüfekçi"
+		name="{=balkan_tr_militia_shooter}Yerliyya Musketeer"
 		occupation="Soldier"
 		culture="Culture.turks">
 		<face>
@@ -4966,7 +4966,7 @@
 		id="balkan_tr_militia_veteran_spearman"
 		default_group="Infantry"
 		level="16"
-		name="{=balkan_tr_militia_veteran_spearman}Veteran Yerli Spearman"
+		name="{=balkan_tr_militia_veteran_spearman}Veteran Yerliyya Spearman"
 		occupation="Soldier"
 		culture="Culture.turks">
 		<face>
@@ -4999,7 +4999,7 @@
 		id="balkan_tr_militia_veteran_shooter"
 		default_group="Ranged"
 		level="16"
-		name="{=balkan_tr_militia_veteran_shooter}Veteran Yerli Tüfekçi"
+		name="{=balkan_tr_militia_veteran_shooter}Veteran Yerliyya Musketeer"
 		occupation="Soldier"
 		culture="Culture.turks">
 		<face>
@@ -6415,7 +6415,7 @@
 		id="balkan_ve_condottiero"
 		default_group="Cavalry"
 		level="31"
-		name="{=balkan_ve_condottiero}Condottiero"
+		name="{=balkan_ve_condottiero}Venetian Cavalry Captain"
 		occupation="Soldier"
 		culture="Culture.venice">
 		<face>

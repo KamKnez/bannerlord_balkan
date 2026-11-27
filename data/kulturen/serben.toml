@@ -219,7 +219,7 @@ gruppe = "Cavalry"
 profil = "reiter"
 basis = true
 gesicht = "fighter_sturgia_elite"
-aufwerten = ["momak"]
+aufwerten = ["noble_hussar"]
 pferd = { Horse = "khuzait_horse", HorseHarness = "steppe_harness" }
 [[truppe.ausruestung]]
 Item0 = "khuzait_sword_2_t3"
@@ -230,13 +230,13 @@ Body = "padded_coat"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
-id = "momak"
-name = { en = "Momak", de = "Momak (Gefolgsreiter)" }
+id = "noble_hussar"
+name = { en = "Serbian Noble Hussar", de = "Serbischer Adelshusar" }
 stufe = 3
 gruppe = "Cavalry"
 profil = "reiter"
 gesicht = "fighter_sturgia_elite"
-aufwerten = ["vojvoda"]
+aufwerten = ["kapetan"]
 pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_harness" }
 [[truppe.ausruestung]]
 Item0 = "khuzait_sword_3_t3"
@@ -249,12 +249,12 @@ Gloves = "studded_leather_vambraces"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
-id = "vojvoda"
-name = { en = "Vojvoda", de = "Vojvoda" }
+id = "kapetan"
+name = { en = "Militia Captain", de = "Hauptmann der Serbischen Miliz" }
 stufe = 4
 gruppe = "Cavalry"
 profil = "reiter"
-aufwerten = ["serdar"]
+aufwerten = ["podvojvoda"]
 benoetigt = "kriegspferd"
 gesicht = "fighter_sturgia_elite"
 pferd = { Horse = "t2_khuzait_horse", HorseHarness = "steppe_half_barding" }
@@ -280,12 +280,12 @@ Gloves = "studded_leather_vambraces"
 Leg = "leather_cavalier_boots"
 
 [[truppe]]
-id = "serdar"
-name = { en = "Serdar", de = "Serdar" }
+id = "podvojvoda"
+name = { en = "Podvojvoda", de = "Podvojvoda (Vize-Vojvoda)" }
 stufe = 5
 gruppe = "Cavalry"
 profil = "reiter"
-aufwerten = ["barjaktar"]
+aufwerten = ["vojvoda"]
 gesicht = "fighter_sturgia_elite"
 pferd = { Horse = "t3_khuzait_horse", HorseHarness = "steppe_half_barding" }
 [[truppe.ausruestung]]
@@ -300,8 +300,8 @@ Gloves = "reinforced_leather_vambraces"
 Leg = "mail_cavalier_boots"
 
 [[truppe]]
-id = "barjaktar"
-name = { en = "Barjaktar", de = "Barjaktar (Bannerträger)" }
+id = "vojvoda"
+name = { en = "Vojvoda", de = "Vojvoda" }
 stufe = 6
 gruppe = "Cavalry"
 profil = "reiter"
