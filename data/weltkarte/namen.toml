@@ -233,3 +233,6 @@ castle_S3 = "hungarians"   # Esztergom
 castle_S4 = "hungarians"   # Eger
 castle_S5 = "hungarians"   # Großwardein
 castle_S7 = "germans"      # Hermannstadt
+
+# Namen der Calradia-Reiche ohne eigene Datei in data/reiche/ können hier als [reich.<id>] stehen (name, kurzname,
+# titel, herrschertitel, text je { en, de } und quelle). Zurzeit haben alle Reiche eine eigene Datei.

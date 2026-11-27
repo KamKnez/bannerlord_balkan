@@ -325,6 +325,544 @@
 			<xsl:apply-templates select="node()" />
 		</xsl:copy>
 	</xsl:template>
+	<!-- Krim-Khanat (data/reiche/krim.toml) -->
+	<xsl:template match="Hero[@id='dead_lord_6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="text">{=balkan_hero_lord_6_1_text}Devlet II Giray, eldest son of Khan Selim I Giray, became Khan of Crimea in 1699.</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_10']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_101']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_13']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='dead_lord_6_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_81']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_11']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='dead_lord_6_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='dead_lord_6_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_51']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_9']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_12']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_15']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_15_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_15_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_16']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_16_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_16_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_24']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_17']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_17_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_17_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_21']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_21_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_18']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_18_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_18_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_22']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_22_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_19']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_19_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_19_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_23']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_20']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_6_20_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_K8_u']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_K9_l']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_K9_s']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_K9_c1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_K9_c2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Königreich Neapel (data/reiche/neapel.toml) -->
+	<xsl:template match="Hero[@id='lord_5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="text">{=balkan_hero_lord_5_1_text}Luis Francisco de la Cerda y Aragón has been Viceroy of Naples since 1696, first for King Charles II of Spain.</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_1_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_10']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_13']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_13_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_131']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_3_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_3_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_11']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_5_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_9']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_91']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_12']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_14']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_14_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_19']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_22']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_16']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_16_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_16_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_20']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_17']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_17_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_21']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_21_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_21_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_15']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_15_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_15_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_15_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_18']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_5_18_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_B8_l']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_B8_s']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_B8_c']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
 	<!-- Osmanisches Reich (data/reiche/osmanen.toml) -->
 	<xsl:template match="Hero[@id='lord_3_1']">
 		<xsl:copy>
@@ -640,6 +1178,338 @@
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="Hero[@id='lord_A9_u']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<!-- Polen-Litauen (data/reiche/polen.toml) -->
+	<xsl:template match="Hero[@id='lord_2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*" />
+			<xsl:attribute name="text">{=balkan_hero_lord_2_1_text}Frederick Augustus of Saxony was elected King of Poland in June 1697 and crowned as Augustus II in September.</xsl:attribute>
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_13_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_13_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_13_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_13_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_7']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_7_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_10']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_13']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='dead_lord_2_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='dead_lord_2_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_4_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_8']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_11']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_111']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_5']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_6']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_9']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_12']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_121']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_14']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_14_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_14_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_14_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_16']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_16_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_21']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_21_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_17']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_17_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_22']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_22_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_24']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_24_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_18']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_18_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_23']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_23_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_15']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_15_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_15_2']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_15_3']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_15_4']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_19']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_19_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_20']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_2_20_1']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_S8_u']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_S9_l']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_S9_m']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_S9_c']">
+		<xsl:copy>
+			<xsl:copy-of select="@*[name() != 'text']" />
+			<xsl:apply-templates select="node()" />
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="Hero[@id='lord_S9_u']">
 		<xsl:copy>
 			<xsl:copy-of select="@*[name() != 'text']" />
 			<xsl:apply-templates select="node()" />

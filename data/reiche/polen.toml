@@ -1,0 +1,259 @@
+# Polen-Litauen. Ersetzt Sturgia.
+# Quellen: https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth (Wahlmonarchie, Friedrich August 1697
+# gewählt und als August II. gekrönt), https://en.wikipedia.org/wiki/Magnates_of_Poland_and_Lithuania (Magnatenfamilien
+# Czartoryski, Potocki, Wiśniowiecki, Zamoyski, Radziwiłł, Pac, Sapieha, Koniecpolski; Litauischer Bürgerkrieg 1700
+# um die Sapieha). Die Vornamen der Lords sind reihum aus data/namen/polen.txt verteilt.
+# Aufbau der Datei: siehe data/reiche/README.md
+
+reich_id = "sturgia"
+kultur_id = "sturgia"
+kultur_wechseln = false
+farben = ["FFDC143C", "FFF4F1EA"]
+herrscher = "lord_2_1"
+siedlungen = []
+
+name = { en = "Polish–Lithuanian Commonwealth", de = "Polen-Litauen" }
+kurzname = { en = "Poles", de = "Polen" }
+titel = { en = "Commonwealth of the Two Nations", de = "Republik beider Völker" }
+herrschertitel = { en = "King", de = "König" }
+
+[text]
+en = """
+The Commonwealth of Poland and Lithuania is an elective monarchy: its nobles elect the king for life and guard their Golden Liberty. Since the second half of the 17th century the great magnate families hold the real power, and in 1700 the Sapieha fight the other Lithuanian nobles in open civil war.
+"""
+de = """
+Polen-Litauen ist eine Wahlmonarchie: Der Adel wählt den König auf Lebenszeit und wacht über seine Goldene Freiheit. Seit der zweiten Hälfte des 17. Jahrhunderts haben die großen Magnatenfamilien die eigentliche Macht, und 1700 kämpfen die Sapieha in offenem Bürgerkrieg gegen den übrigen litauischen Adel.
+"""
+
+[herrscher_text]
+en = "Frederick Augustus of Saxony was elected King of Poland in June 1697 and crowned as Augustus II in September."
+de = "Friedrich August von Sachsen wurde im Juni 1697 zum König von Polen gewählt und im September als August II. gekrönt."
+
+[[clan]]
+id = "clan_sturgia_1"  # vorher Gundaroving, Oberhaupt Hero.lord_2_1
+name = { en = "of Saxony", de = "von Sachsen" }
+[[clan.lord]]
+id = "lord_2_1"
+name = "August"  # vorher Raganvad
+[[clan.lord]]
+id = "lord_2_2"
+name = "Maria"
+weiblich = true  # vorher Asta
+[[clan.lord]]
+id = "lord_2_13_1"
+name = "Anna"
+weiblich = true  # vorher Lilizha
+[[clan.lord]]
+id = "lord_2_13_2"
+name = "Katarzyna"
+weiblich = true  # vorher Andruta
+[[clan.lord]]
+id = "lord_2_13_3"
+name = "Zofia"
+weiblich = true  # vorher Luda
+[[clan.lord]]
+id = "lord_2_13_4"
+name = "Barbara"
+weiblich = true  # vorher Teta
+[[clan.lord]]
+id = "lord_2_7"
+name = "Jan"  # vorher Simir
+[[clan.lord]]
+id = "lord_2_7_1"
+name = "Michał"  # vorher Mimir
+[[clan.lord]]
+id = "lord_2_10"
+name = "Elżbieta"
+weiblich = true  # vorher Valla
+[[clan.lord]]
+id = "lord_2_13"
+name = "Władysław"  # vorher Vidar
+
+[[clan]]
+id = "clan_sturgia_2"  # vorher Kuloving, Oberhaupt Hero.lord_2_3
+name = "Sapieha"
+[[clan.lord]]
+id = "dead_lord_2_1"
+name = "Zygmunt"  # vorher Olek the Old
+[[clan.lord]]
+id = "dead_lord_2_2"
+name = "Jadwiga"
+weiblich = true  # vorher Varra
+[[clan.lord]]
+id = "lord_2_3"
+name = "Kazimierz"  # vorher Olek
+[[clan.lord]]
+id = "lord_2_4"
+name = "Konstancja"
+weiblich = true  # vorher Siga
+[[clan.lord]]
+id = "lord_2_4_1"
+name = "Ludwika"
+weiblich = true  # vorher Apolanea
+[[clan.lord]]
+id = "lord_2_8"
+name = "Stanisław"  # vorher Urik
+[[clan.lord]]
+id = "lord_2_11"
+name = "Eleonora"
+weiblich = true  # vorher Idrun
+[[clan.lord]]
+id = "lord_2_111"
+name = "Aleksander"  # vorher Rozhivol
+
+[[clan]]
+id = "clan_sturgia_3"  # vorher Vagiroving, Oberhaupt Hero.lord_2_5
+name = "Radziwiłł"
+[[clan.lord]]
+id = "lord_2_5"
+name = "Stefan"  # vorher Godun
+[[clan.lord]]
+id = "lord_2_6"
+name = "Cecylia"
+weiblich = true  # vorher Erta
+[[clan.lord]]
+id = "lord_2_9"
+name = "Jakub"  # vorher Lek
+[[clan.lord]]
+id = "lord_2_12"
+name = "Teresa"
+weiblich = true  # vorher Svana
+[[clan.lord]]
+id = "lord_2_121"
+name = "Jerzy"  # vorher Osven
+
+[[clan]]
+id = "clan_sturgia_4"  # vorher Ormidoving, Oberhaupt Hero.lord_2_16
+name = "Potocki"
+[[clan.lord]]
+id = "lord_2_14"
+name = "Krzysztof"  # vorher Isvan
+[[clan.lord]]
+id = "lord_2_14_1"
+name = "Maria"
+weiblich = true  # vorher Valkava
+[[clan.lord]]
+id = "lord_2_14_2"
+name = "Anna"
+weiblich = true  # vorher Zaverena
+[[clan.lord]]
+id = "lord_2_14_3"
+name = "Katarzyna"
+weiblich = true  # vorher Vizhduna
+[[clan.lord]]
+id = "lord_2_16"
+name = "Marek"  # vorher Yorig
+[[clan.lord]]
+id = "lord_2_16_1"
+name = "Zofia"
+weiblich = true  # vorher Tyaska
+[[clan.lord]]
+id = "lord_2_21"
+name = "Mikołaj"  # vorher Svedorn
+[[clan.lord]]
+id = "lord_2_21_1"
+name = "Barbara"
+weiblich = true  # vorher Izdenka
+
+[[clan]]
+id = "clan_sturgia_5"  # vorher Togaroving, Oberhaupt Hero.lord_2_17
+name = "Pac"
+[[clan.lord]]
+id = "lord_2_17"
+name = "Andrzej"  # vorher Vyldur
+[[clan.lord]]
+id = "lord_2_17_1"
+name = "Elżbieta"
+weiblich = true  # vorher Dracha
+[[clan.lord]]
+id = "lord_2_22"
+name = "Piotr"  # vorher Lashonek
+[[clan.lord]]
+id = "lord_2_22_1"
+name = "Jadwiga"
+weiblich = true  # vorher Zheneva
+[[clan.lord]]
+id = "lord_2_24"
+name = "Wojciech"  # vorher Alvar
+[[clan.lord]]
+id = "lord_2_24_1"
+name = "Konstancja"
+weiblich = true  # vorher Zorina
+
+[[clan]]
+id = "clan_sturgia_6"  # vorher Isyaroving, Oberhaupt Hero.lord_2_18
+name = "Czartoryski"
+[[clan.lord]]
+id = "lord_2_18"
+name = "Dymitr"  # vorher Fafen
+[[clan.lord]]
+id = "lord_2_18_1"
+name = "Ludwika"
+weiblich = true  # vorher Zorika
+[[clan.lord]]
+id = "lord_2_23"
+name = "Jan"  # vorher Galden
+[[clan.lord]]
+id = "lord_2_23_1"
+name = "Eleonora"
+weiblich = true  # vorher Zlatka
+
+[[clan]]
+id = "clan_sturgia_7"  # vorher Vezhoving, Oberhaupt Hero.lord_2_19
+name = "Wiśniowiecki"
+[[clan.lord]]
+id = "lord_2_15"
+name = "Michał"  # vorher Ratagost
+[[clan.lord]]
+id = "lord_2_15_1"
+name = "Cecylia"
+weiblich = true  # vorher Yachana
+[[clan.lord]]
+id = "lord_2_15_2"
+name = "Teresa"
+weiblich = true  # vorher Milanka
+[[clan.lord]]
+id = "lord_2_15_3"
+name = "Maria"
+weiblich = true  # vorher Velina
+[[clan.lord]]
+id = "lord_2_15_4"
+name = "Władysław"  # vorher Bovan
+[[clan.lord]]
+id = "lord_2_19"
+name = "Zygmunt"  # vorher Vashorki
+[[clan.lord]]
+id = "lord_2_19_1"
+name = "Anna"
+weiblich = true  # vorher Vitomira
+
+[[clan]]
+id = "clan_sturgia_8"  # vorher Ubroving, Oberhaupt Hero.lord_2_20
+name = "Zamoyski"
+[[clan.lord]]
+id = "lord_2_20"
+name = "Kazimierz"  # vorher Tovir
+[[clan.lord]]
+id = "lord_2_20_1"
+name = "Katarzyna"
+weiblich = true  # vorher Kisha
+[[clan.lord]]
+id = "lord_S8_u"
+name = "Stanisław"  # vorher Galyk
+
+[[clan]]
+id = "clan_sturgia_9"  # vorher Kostoroving, Oberhaupt Hero.lord_S9_l
+name = "Koniecpolski"
+[[clan.lord]]
+id = "lord_S9_l"
+name = "Aleksander"  # vorher Rolan
+[[clan.lord]]
+id = "lord_S9_m"
+name = "Zofia"
+weiblich = true  # vorher Dakhila
+[[clan.lord]]
+id = "lord_S9_c"
+name = "Stefan"  # vorher Forim
+[[clan.lord]]
+id = "lord_S9_u"
+name = "Jakub"  # vorher Chastimir

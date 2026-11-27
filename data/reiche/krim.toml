@@ -1,0 +1,231 @@
+# Krim-Khanat. Ersetzt Khuzait.
+# Quellen: https://en.wikipedia.org/wiki/List_of_Crimean_khans und https://en.wikipedia.org/wiki/Devlet_II_Giray
+# (Devlet II. Giray Khan 1699 bis 1702, ältester Sohn Selims I. Giray), https://en.wikipedia.org/wiki/Crimean_Khanate
+# (Clans der Qaraçı Beys Şirin, Barın, Arğın, Qıpçaq; Nogai-Horden Budschak, Yedisan, Dschamboiluk, Yedickul als
+# Vasallen; Hauptstadt Bahçeseray). Die Vornamen der Lords sind reihum aus data/namen/tataren.txt verteilt.
+# Aufbau der Datei: siehe data/reiche/README.md
+
+reich_id = "khuzait"
+kultur_id = "khuzait"
+kultur_wechseln = false
+farben = ["FF2B7A9E", "FFE8C547"]
+herrscher = "lord_6_1"
+siedlungen = []
+
+name = { en = "Crimean Khanate", de = "Krim-Khanat" }
+kurzname = { en = "Crimean Tatars", de = "Krimtataren" }
+titel = { en = "Khanate of Crimea", de = "Khanat der Krim" }
+herrschertitel = { en = "Khan", de = "Khan" }
+
+[text]
+en = """
+The khans of the house of Giray rule from Bahçeseray under the protection of the Ottoman Sultan, together with the beys of the clans Şirin, Barın, Arğın and Qıpçaq. The Nogai hordes of the steppe serve them as vassals. The Peace of Karlowitz in 1699 forbade further raids into the lands of their neighbours.
+"""
+de = """
+Die Khane aus dem Haus Giray herrschen von Bachtschyssaraj aus unter dem Schutz des osmanischen Sultans, gemeinsam mit den Beys der Clans Şirin, Barın, Arğın und Qıpçaq. Die Nogai-Horden der Steppe dienen ihnen als Vasallen. Der Frieden von Karlowitz 1699 verbot weitere Raubzüge in die Länder der Nachbarn.
+"""
+
+[herrscher_text]
+en = "Devlet II Giray, eldest son of Khan Selim I Giray, became Khan of Crimea in 1699."
+de = "Devlet II. Giray, ältester Sohn des Khans Selim I. Giray, wurde 1699 Khan der Krim."
+
+[[clan]]
+id = "clan_khuzait_1"  # vorher Urkhunait, Oberhaupt Hero.lord_6_1
+name = "Giray"
+[[clan.lord]]
+id = "dead_lord_6_1"
+name = "Devlet"  # vorher Urkhun
+[[clan.lord]]
+id = "lord_6_1"
+name = "Devlet"  # vorher Monchug
+[[clan.lord]]
+id = "lord_6_2"
+name = "Fatma"
+weiblich = true  # vorher Anat
+[[clan.lord]]
+id = "lord_6_7"
+name = "Selim"  # vorher Chaghan
+[[clan.lord]]
+id = "lord_6_10"
+name = "Ayşe"
+weiblich = true  # vorher Alijin
+[[clan.lord]]
+id = "lord_6_101"
+name = "Emine"
+weiblich = true  # vorher Bolat
+[[clan.lord]]
+id = "lord_6_13"
+name = "Gazi"  # vorher Bortu
+
+[[clan]]
+id = "clan_khuzait_2"  # vorher Khergit, Oberhaupt Hero.lord_6_4
+name = "Şirin"
+[[clan.lord]]
+id = "dead_lord_6_2"
+name = "Mehmed"  # vorher Solun
+[[clan.lord]]
+id = "lord_6_3"
+name = "İslam"  # vorher Bagai
+[[clan.lord]]
+id = "lord_6_4"
+name = "Hatice"
+weiblich = true  # vorher Mesui
+[[clan.lord]]
+id = "lord_6_8"
+name = "Adil"  # vorher Esur
+[[clan.lord]]
+id = "lord_6_81"
+name = "Murad"  # vorher Nayantai
+[[clan.lord]]
+id = "lord_6_11"
+name = "Zeynep"
+weiblich = true  # vorher Yana
+
+[[clan]]
+id = "clan_khuzait_3"  # vorher Arkit, Oberhaupt Hero.lord_6_5
+name = "Barın"
+[[clan.lord]]
+id = "dead_lord_6_3"
+name = "Hacı"  # vorher Kuyug
+[[clan.lord]]
+id = "dead_lord_6_4"
+name = "Sahib"  # vorher Undul
+[[clan.lord]]
+id = "lord_6_5"
+name = "Canibek"  # vorher Tulag
+[[clan.lord]]
+id = "lord_6_51"
+name = "Kaplan"  # vorher Khada
+[[clan.lord]]
+id = "lord_6_9"
+name = "Saadet"  # vorher Temun
+[[clan.lord]]
+id = "lord_6_12"
+name = "Şerife"
+weiblich = true  # vorher Abagai
+[[clan.lord]]
+id = "lord_6_15"
+name = "Mengli"  # vorher Oragur
+[[clan.lord]]
+id = "lord_6_15_1"
+name = "Nazlı"
+weiblich = true  # vorher Khorijin
+[[clan.lord]]
+id = "lord_6_15_2"
+name = "Hanike"
+weiblich = true  # vorher Sechen
+
+[[clan]]
+id = "clan_khuzait_4"  # vorher Tigrit, Oberhaupt Hero.lord_6_16
+name = "Arğın"
+[[clan.lord]]
+id = "lord_6_6"
+name = "Bahadır"  # vorher Suran
+[[clan.lord]]
+id = "lord_6_16"
+name = "Safa"  # vorher Hurunag
+[[clan.lord]]
+id = "lord_6_16_1"
+name = "Melek"
+weiblich = true  # vorher Chambui
+[[clan.lord]]
+id = "lord_6_16_2"
+name = "Saliha"
+weiblich = true  # vorher Unagen
+[[clan.lord]]
+id = "lord_6_24"
+name = "Azamat"  # vorher Mehir
+
+[[clan]]
+id = "clan_khuzait_5"  # vorher Harfit, Oberhaupt Hero.lord_6_17
+name = "Qıpçaq"
+[[clan.lord]]
+id = "lord_6_17"
+name = "Devlet"  # vorher Akrum
+[[clan.lord]]
+id = "lord_6_17_1"
+name = "Ümmügülsüm"
+weiblich = true  # vorher Ergene
+[[clan.lord]]
+id = "lord_6_17_2"
+name = "Esma"
+weiblich = true  # vorher Yesum
+[[clan.lord]]
+id = "lord_6_21"
+name = "Selim"  # vorher Ulman
+[[clan.lord]]
+id = "lord_6_21_1"
+name = "Fatma"
+weiblich = true  # vorher Esachei
+
+[[clan]]
+id = "clan_khuzait_6"  # vorher Baltait, Oberhaupt Hero.lord_6_18
+name = { en = "of the Budjak Horde", de = "von der Budschak-Horde" }
+[[clan.lord]]
+id = "lord_6_18"
+name = "Gazi"  # vorher Ilatar
+[[clan.lord]]
+id = "lord_6_18_1"
+name = "Ayşe"
+weiblich = true  # vorher Tilun
+[[clan.lord]]
+id = "lord_6_18_2"
+name = "Emine"
+weiblich = true  # vorher Chagun
+[[clan.lord]]
+id = "lord_6_22"
+name = "Mehmed"  # vorher Achaku
+[[clan.lord]]
+id = "lord_6_22_1"
+name = "Hatice"
+weiblich = true  # vorher Eselen
+
+[[clan]]
+id = "clan_khuzait_7"  # vorher Koltit, Oberhaupt Hero.lord_6_19
+name = { en = "of the Yedisan Horde", de = "von der Yedisan-Horde" }
+[[clan.lord]]
+id = "lord_6_19"
+name = "İslam"  # vorher Kanujan
+[[clan.lord]]
+id = "lord_6_19_1"
+name = "Zeynep"
+weiblich = true  # vorher Sokhatai
+[[clan.lord]]
+id = "lord_6_19_2"
+name = "Şerife"
+weiblich = true  # vorher Korte
+[[clan.lord]]
+id = "lord_6_23"
+name = "Adil"  # vorher Kinteg
+
+[[clan]]
+id = "clan_khuzait_8"  # vorher Yanserit, Oberhaupt Hero.lord_6_20
+name = { en = "of the Jamboyluk Horde", de = "von der Dschamboiluk-Horde" }
+[[clan.lord]]
+id = "lord_6_20"
+name = "Murad"  # vorher Taslur
+[[clan.lord]]
+id = "lord_6_20_1"
+name = "Nazlı"
+weiblich = true  # vorher Jigur
+[[clan.lord]]
+id = "lord_K8_u"
+name = "Hacı"  # vorher Boronchar
+
+[[clan]]
+id = "clan_khuzait_9"  # vorher Oburit, Oberhaupt Hero.lord_K9_l
+name = { en = "of the Yedickul Horde", de = "von der Yedickul-Horde" }
+[[clan.lord]]
+id = "lord_K9_l"
+name = "Sahib"  # vorher Gusukan
+[[clan.lord]]
+id = "lord_K9_s"
+name = "Hanike"
+weiblich = true  # vorher Sevin
+[[clan.lord]]
+id = "lord_K9_c1"
+name = "Canibek"  # vorher Altu
+[[clan.lord]]
+id = "lord_K9_c2"
+name = "Melek"
+weiblich = true  # vorher Mela

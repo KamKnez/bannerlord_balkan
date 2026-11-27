@@ -331,6 +331,22 @@
     <string id="balkan_settlement_village_V8_3_text" text="Gleisdorf ist ein Dorf bei Graz. Seine Familien schulden Dienst an der Grenze: Die Männer halten abwechselnd Wache, und jedes Haus hat eine Muskete." />
     <string id="balkan_settlement_village_V9_1_text" text="Mohács liegt im Umland von Pécs. Nach dem langen Krieg werden die Felder wieder gerodet, und jedes Frühjahr kommen neue Siedler." />
     <string id="balkan_settlement_village_V9_2_text" text="Siklós gehört zu den Ländereien von Pécs. Die Bauern bauen Weizen und Mais an, halten Schweine in den Eichenwäldern und zahlen ihre Abgaben an Grundherrn und Kirche." />
+    <string id="balkan_kingdom_khuzait" text="Krim-Khanat" />
+    <string id="balkan_kingdom_khuzait_short" text="Krimtataren" />
+    <string id="balkan_kingdom_khuzait_title" text="Khanat der Krim" />
+    <string id="balkan_kingdom_khuzait_ruler" text="Khan" />
+    <string id="balkan_kingdom_khuzait_text" text="Die Khane aus dem Haus Giray herrschen von Bachtschyssaraj aus unter dem Schutz des osmanischen Sultans, gemeinsam mit den Beys der Clans Şirin, Barın, Arğın und Qıpçaq. Die Nogai-Horden der Steppe dienen ihnen als Vasallen. Der Frieden von Karlowitz 1699 verbot weitere Raubzüge in die Länder der Nachbarn." />
+    <string id="balkan_hero_lord_6_1_text" text="Devlet II. Giray, ältester Sohn des Khans Selim I. Giray, wurde 1699 Khan der Krim." />
+    <string id="balkan_clan_khuzait_6" text="von der Budschak-Horde" />
+    <string id="balkan_clan_khuzait_7" text="von der Yedisan-Horde" />
+    <string id="balkan_clan_khuzait_8" text="von der Dschamboiluk-Horde" />
+    <string id="balkan_clan_khuzait_9" text="von der Yedickul-Horde" />
+    <string id="balkan_kingdom_battania" text="Königreich Neapel" />
+    <string id="balkan_kingdom_battania_short" text="Neapolitaner" />
+    <string id="balkan_kingdom_battania_title" text="Vizekönigreich Neapel unter der spanischen Krone" />
+    <string id="balkan_kingdom_battania_ruler" text="Vizekönig" />
+    <string id="balkan_kingdom_battania_text" text="Seit 1504 gehört das Königreich Neapel mit Kampanien, Kalabrien, Apulien, der Basilikata, den Abruzzen und Molise zur spanischen Krone und wird von einem spanischen Vizekönig regiert. Seine großen Häuser, die Carafa, Caracciolo, Pignatelli und Sanseverino, sitzen in der Hauptstadt. Im Spiel gehören auch Rom und die Städte des Kirchenstaats an der Adria dazu." />
+    <string id="balkan_hero_lord_5_1_text" text="Luis Francisco de la Cerda y Aragón ist seit 1696 Vizekönig von Neapel, zuerst für König Karl II. von Spanien." />
     <string id="balkan_kingdom_aserai" text="Osmanisches Reich" />
     <string id="balkan_kingdom_aserai_short" text="Osmanen" />
     <string id="balkan_kingdom_aserai_title" text="Eyalet Bosnien" />
@@ -395,6 +411,13 @@
     <string id="balkan_settlement_village_A7_4_text" text="Žitomislić liegt im Land von Mostar. Muslimische und christliche Familien leben hier Seite an Seite, und man hört sowohl die Glocken als auch den Gebetsruf." />
     <string id="balkan_settlement_village_A8_1_text" text="Vitez gehört zum Bezirk von Travnik. Seine Bewohner pflegen Pflaumen- und Walnussgärten und verkaufen Käse und Wolle auf dem Markt der Stadt." />
     <string id="balkan_settlement_village_A8_2_text" text="Busovača ist ein Dorf bei Travnik. Seine Felder gehören zu einem Timar, dessen Sipahi in den Krieg reitet, wenn der Sultan ruft." />
+    <string id="balkan_kingdom_sturgia" text="Polen-Litauen" />
+    <string id="balkan_kingdom_sturgia_short" text="Polen" />
+    <string id="balkan_kingdom_sturgia_title" text="Republik beider Völker" />
+    <string id="balkan_kingdom_sturgia_ruler" text="König" />
+    <string id="balkan_kingdom_sturgia_text" text="Polen-Litauen ist eine Wahlmonarchie: Der Adel wählt den König auf Lebenszeit und wacht über seine Goldene Freiheit. Seit der zweiten Hälfte des 17. Jahrhunderts haben die großen Magnatenfamilien die eigentliche Macht, und 1700 kämpfen die Sapieha in offenem Bürgerkrieg gegen den übrigen litauischen Adel." />
+    <string id="balkan_clan_sturgia_1" text="von Sachsen" />
+    <string id="balkan_hero_lord_2_1_text" text="Friedrich August von Sachsen wurde im Juni 1697 zum König von Polen gewählt und im September als August II. gekrönt." />
     <string id="balkan_kingdom_empire_s" text="Republik Ragusa" />
     <string id="balkan_kingdom_empire_s_short" text="Ragusaner" />
     <string id="balkan_kingdom_empire_s_title" text="Republik Ragusa" />

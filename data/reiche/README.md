@@ -10,6 +10,9 @@ Fähigkeiten der Lords bleiben wie im Spiel, wir ändern nur Namen, Texte, Farbe
 | `osmanen.toml` | Osmanisches Reich (Eyalet Bosnien) | Aserai (`aserai`) |
 | `venedig.toml` | Republik Venedig | Westliches Imperium (`empire_w`) |
 | `ragusa.toml` | Republik Ragusa | Südliches Imperium (`empire_s`) |
+| `polen.toml` | Polen-Litauen | Sturgia (`sturgia`) |
+| `krim.toml` | Krim-Khanat | Khuzait (`khuzait`) |
+| `neapel.toml` | Königreich Neapel | Battania (`battania`) |
 
 ## Felder
 
